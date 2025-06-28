@@ -1,0 +1,667 @@
+{  
+  "prologin":{
+     "Notlogin": "Please login first",
+     "DeviceId": "Device ID: "
+  },
+  "scorecard": {
+    "VIP": "VIP",
+    "score": "Your Points",
+    "maxscore": "Max Points:",
+    "pointsRequired": "Requires {points} points",
+    "noDescription": "No description available",
+    "achieved": "Achieved",
+    "notAchieved": "Not achieved",
+    "redeemNow": "Redeem Now"
+  },
+  "settings": {
+    "title": "Settings",
+    "personalSettings": "Personal Settings",
+    "myInfo": "My Info",
+    "mySubscriptions": "My Subscriptions",
+    "changeChatBackground": "Change Chat Background",
+    "appSettings": "App Settings",
+    "notifications": "Notifications",
+    "darkMode": "Dark Mode",
+    "clearCache": "Clear Cache",
+    "clearChatDB": "Clear Chat Database",
+    "system": "System",
+    "updateChannel": "Update Channel",
+    "checkForUpdates": "Check for Updates",
+    "restartApp": "Restart App",
+    "logout": "Logout",
+    "editProfile": "Edit Profile",
+    "pleaseLoginFirst": "Please login first",
+    "avatar": "Avatar",
+    "view": "View",
+    "change": "Change",
+    "uploadSuccess": "Avatar uploaded successfully",
+    "uploadFailed": "Avatar upload failed, please try again",
+    "confirmLogout": "Confirm logout?",
+    "logoutWarning": "After logout, you will lose all drafts",
+    "confirmClearCache": "Confirm clear cache?",
+    "clearCacheWarning": "This will delete all cache",
+    "confirmClearDB": "Confirm clear chat database?",
+    "clearDBWarning": "This will delete all chat records",
+    "confirmRestart": "Confirm restart app?",
+    "switchUpdateChannel": "Switch Update Channel",
+    "switchChannelWarning": "Are you sure you want to switch to {channel} channel?\n\nApp restart required after switching.",
+    "alphaChannel": "Alpha (Beta)",
+    "stableChannel": "Stable",
+    "channelChanged": "Update channel changed",
+    "restartRequired": "App restart required to apply changes.",
+    "restartNow": "Restart Now",
+    "selectChannel": "Select Channel",
+    "currentChannel": "Current: {channel}",
+    "updateAvailable": "New update available!",
+    "latestVersion": "Already latest version",
+    "updateSuccess": "Update successful",
+    "restartPrompt": "Please restart app\n(Version: {version})",
+    "updateInfo": "Update Info",
+    "userIdLabel": "User ID: ",
+    "notLoggedInUser": "Not logged in user",
+    "notLoggedIn": "Not logged in",
+    "successofsettingchatbg":"Modification of chat backgroud completed",
+    "failedtosettingchatbg":"Failed to change the chat background",
+    "changeLanguage":"Change the language"
+  },
+  "userInfo": {
+    "title": "My Info",
+    "accountInfo": "Account Info",
+    "editableHint": "Items with icons can be edited",
+    "fields": {
+      "username": "Username",
+      "nickname": "Nickname",
+      "email": "Email", 
+      "userId": "User ID",
+      "registerTime": "Register Time",
+      "invitationCode": "My Invitation Code",
+      "deviceToken": "Device Token",
+      "password": "Password"
+    },
+    "edit": {
+      "editTitle": "Edit",
+      "newField": "New",
+      "newnickname": "New Nickname",
+      "currentPassword": "Current Password",
+      "currentNickname": "Current Nickname",
+      "newPassword": "New Password", 
+      "confirmPassword": "Confirm New Password",
+      "confirmEdit": "Confirm Edit",
+      "restartWarning": "App will restart after successful info update to apply changes",
+      "passwordRestartWarning": "App will restart after successful password update to apply changes"
+    },
+    "validation": {
+      "usernameFormat": "Username can only contain letters and numbers",
+      "passwordFormat": "Password must contain at least 8 characters, including letters and numbers",
+      "passwordMismatch": "Passwords do not match",
+      "passwordInvalid": "New password must contain at least 8 characters, including letters and numbers"
+    },
+    "success": {
+      "updateSuccess": "Update successful",
+      "passwordUpdateSuccess": "Password update successful",
+      "restartPrompt": "App will restart to apply changes"
+    },
+    "errors": {
+      "usernameExists": "Username already exists",
+      "wrongPassword": "Wrong password",
+      "currentPasswordWrong": "Current password is wrong",
+      "updateFailed": "Update failed"
+    }
+  },
+  "login": {
+    "username": "Username",
+    "password": "Password",
+    "loginButton": "Login",
+    "forgetPassword": "Forgot Password?",
+    "resetPassword": "Reset Password",
+    "cancel": "Cancel",
+    "usernameOrEmail": "Username or Email",
+    "loginSuccess": "Login successful",
+    "loginFailed": "Login failed",
+    "offlineLogin": "Offline Login",
+    "serverUnavailable": "Server temporarily unavailable, switched to offline mode",
+    "noLocalCache": "Server connection failed and no local cached login info found",
+    "resetEmailSent": "Password reset email sent",
+    "checkEmail": "Please check your email",
+    "userNotFound": "User or email not found",
+    "resetFailed": "Password reset failed, please try again later"
+  },
+  "register": {
+    "username": "Username",
+    "password": "Password",
+    "email": "Email",
+    "registerButton": "Register",
+    "hasAccount": "Already have an account? Login",
+    "success": "Registration successful, please click the link in the email to activate your account",
+    "failed": "Registration failed",
+    "usernameExists": "Username already exists",
+    "emailExists": "Email already exists",
+    "readTermsFirst": "Please read and click the link first",
+    "readTerms": "Read Terms",
+    "agreeTerms": "I have read and agree to the terms",
+    "validation": {
+      "usernameFormat": "Username can only contain letters and numbers",
+      "passwordFormat": "Password must contain at least 8 characters, including letters and numbers",
+      "emailFormat": "Invalid email format"
+    }
+  },
+  "profile": {
+    "profileCenter": "Profile Center",
+    "cardWallet": "Card Wallet",
+    "mutualFollows": "Friends",
+    "becomeProvider": "Become Provider",
+    "contactUs": "Contact Us",
+    "settings": "Settings",
+    "help": "Help",
+    "feedback": "Feedback",
+    "productDetails": "Product Details",
+    "kaoPuCoins": "KaoPu Coins",
+    "secondHand": "Second Hand",
+    "kaoPuCard": "KaoPu Card",
+    "myQRCode": "My QR Code",
+    "scanQRCodeTip": "Scan QR code to share my profile",
+    "close": "Close",
+    "endofpage": "No more",
+    "unknowuser": "Unknown user"
+  },
+  "userSettings": {
+    "title": "Account Info",
+    "subtitle": "Items with {icon} icon can be edited",
+    "notLoggedIn": "Not logged in",
+    "notLoggedInUser": "Not logged in user",
+    "fields": {
+      "username": "Username",
+      "nickname": "Nickname",
+      "email": "Email",
+      "userId": "User ID",
+      "registerTime": "Register Time",
+      "invitationCode": "My Invitation Code",
+      "deviceToken": "Device Token",
+      "password": "Password"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "recentMessages": "Messages",
+    "provider": "Provider",
+    "profile": "Profile",
+    "admin": "Admin",
+    "secondhand": "Second Hand"
+  },
+  "system": {
+    "healthChecking": "System health check in progress...",
+    "updateSuccess": "Update successful",
+    "updateFailed": "Update failed",
+    "restartApp": "Please restart app",
+    "version": "Version",
+    "confirm": "Confirm",
+    "forceLogout": "Please login again",
+    "forceLogoutMessage": "You have been forced to logout due to login on another device",
+    "messageFrom": "Message from {nickname}",
+    "networkOffline": "Network connection lost",
+    "offlineModeEnabled": "Switched to offline mode",
+    "networkRestored": "Network connection restored",
+    "dataReadError": "Unable to read local data",
+    "restartAppPrompt": "Please restart the application",
+    "dontturnoffdivice": "Please do not close this application"
+  },
+  "validation": {
+    "usernameRequired": "Username cannot be empty",
+    "passwordRequired": "Password cannot be empty",
+    "usernameOrEmailRequired": "Username or email cannot be empty"
+  },
+  "api": {
+    "loginFailed": "Login failed",
+    "userBanned": "User has been banned, please contact administrator",
+    "emailNotValidated": "User email not verified, please check your email verification link and login again",
+    "userNotFound": "Please check your username or password",
+    "passwordNotMatch": "Please check your username or password",
+    "deviceVerificationFailed": "Device verification failed, please login again",
+    "loginExpired": "Login expired, please login again",
+    "networkError": "Network connection error",
+    "serverConnectionFailed": "Unable to connect to server",
+    "requestTimeout": "Request timeout",
+    "scorecardFailtobecreated": "Scorecard creation failed"
+  },
+  "network": {
+    "offlineMode": "Offline Mode",
+    "tapToReconnect": "Tap to try reconnecting",
+    "connecting": "Trying to connect to server...",
+    "pleaseWait": "Please wait",
+    "backOnline": "Back online",
+    "connectionSuccess": "Connection successful",
+    "stillOffline": "Still in offline mode",
+    "connectionFailed": "Failed to connect to server, please check your network",
+    "networkConnectionError": "Network connection error"
+  },
+  "socialrelationship": {
+    "mutuallike": "Friends",
+    "fans": "Fans",
+    "Like": "Like",
+    "Followable": "Follow",
+    "CancelFollow": "Following",
+    "timeoffollow": "Date : ",
+    "Nofollower" : "No follower",
+    "Nolike" : "You don't follow any users",
+    "Nofriend" : "You don't have any mutual follow"
+  },
+  "common": {
+    "error": "Error",
+    "confirm": "Confirm",
+    "loading": "Loading...",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "tip": "Tip",
+    "success": "Success",
+    "warning": "Warning",
+    "confirmDelete": "Confirm delete",
+    "gotIt": "Got it"
+  },
+  "secondhand": {
+    "loginToViewProductDetails": "Login to view product details",
+    "imageLoadFailed": "Image load failed"
+  },
+  "message": {
+    "sendmessage": "Send message",
+    "restoremessage": "Restore message",
+    "typehere": "Type message here",
+    "writeinmessagehistory": "Loading messages"
+  },
+  "mainContent": {
+    "navigation": {
+      "eatFood": "Eat",
+      "drink": "Drink",
+      "placeholder": "Placeholder",
+      "button1": "Button 1",
+      "button2": "Button 2",
+      "button3": "Button 3",
+      "button4": "Button 4",
+      "button5": "Button 5",
+      "button6": "Button 6",
+      "button7": "Button 7",
+      "button8": "Button 8",
+      "button9": "Button 9",
+      "button10": "Button 10",
+      "button11": "Button 11",
+      "button12": "Button 12"
+    },
+    "more": "More",
+    "collapse": "Collapse",
+    "moreButtons": "More buttons",
+    "adjustButtons": "Adjust button positions",
+    "done": "Done",
+    "dragTip": "Drag icons to adjust positions, first three buttons shown in main navigation",
+    "location": {
+      "grenoble": "Grenoble"
+    },
+    "search": {
+      "placeholder": "Search"
+    },
+    "scanner": {
+      "scanResult": "Scan Result",
+      "type": "Type",
+      "data": "Data",
+      "cameraPermissionTitle": "Camera permission required",
+      "cameraPermissionMessage": "Please allow camera access in settings",
+      "scanInstruction": "Place QR code within the frame"
+    },
+    "discounts": {
+      "title": "Discounts %",
+      "beefNoodles": "Lanzhou Beef Noodles",
+      "noodleCategory": "Food·Noodles",
+      "twentyPercent": "20% Off",
+      "jiuRamen": "Jiu Ramen"
+    }
+  },
+  "provider": {
+    "main": {
+      "completeStoreInfo": "Please complete store information first. If not completed, users will not be able to search for your store",
+      "overview": "Overall Overview",
+      "totalActivations": "Total Score Card Activations",
+      "totalViews": "Total Views",
+      "overallTrend": "Overall Trend",
+      "totalMembers": "Total Members",
+      "totalRevenue": "Total Revenue",
+      "moreData": "More Overall Data",
+      "avgOrderAmount": "Average Order Amount",
+      "totalVisitors": "Total Visitors",
+      "couponsIssued": "Total Coupons Issued",
+      "couponsUsed": "Total Coupons Used",
+      "recentActivity": "Recent Activity"
+    },
+    "stats": {
+      "yoy": "YoY",
+      "mom": "MoM"
+    },
+    "period": {
+      "overview": "Overview",
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "week": "Past 7 Days",
+      "month": "Past 30 Days",
+      "periodData": "Period Data",
+      "todayData": "Today's Data",
+      "yesterdayData": "Yesterday's Data",
+      "weekData": "This Week's Data",
+      "monthData": "This Month's Data",
+      "asOfToday": "As of today",
+      "completeStats": "Complete Statistics",
+      "last7Days": "Last 7 days",
+      "last30Days": "Last 30 days",
+      "scorecardUsage": "Score Card Usage",
+      "visits": "Visits",
+      "visitors": "Visitors",
+      "monday": "Mon",
+      "tuesday": "Tue",
+      "wednesday": "Wed",
+      "thursday": "Thu",
+      "friday": "Fri",
+      "saturday": "Sat",
+      "sunday": "Sun"
+    },
+    "customer": {
+      "searchCustomer": "Search Customer",
+      "sortBy": "Sort By",
+      "sortTime": "Time",
+      "sortPoints": "Points",
+      "sortName": "Name",
+      "totalPoints": "Total Points",
+      "averagePoints": "Average Points",
+      "customerCount": "Customer Count",
+      "activatedCustomers": "Score Card Activated Customers",
+      "usageCustomers": "Score Card Usage Customers",
+      "activated": "Activated",
+      "used": "Used",
+      "lastUsed": "Last Used",
+      "points": "Points",
+      "viewAll": "View All",
+      "scorecardDetail": "Score Card Detail",
+      "customerInfo": "Customer Information",
+      "name": "Name",
+      "activationTime": "Activation Time",
+      "pointsHistory": "Points History",
+      "firstActivationReward": "First Activation Reward",
+      "purchaseReward": "Purchase Reward",
+      "couponRedemption": "Coupon Redemption",
+      "actions": "Actions",
+      "addPoints": "Add Points",
+      "redeemReward": "Redeem Reward",
+      "sendNotification": "Send Notification"
+    },
+    "search": {
+      "placeholder": "Search coffee, milk tea...",
+      "noResults": "No search results",
+      "tryAdjusting": "Try adjusting search criteria",
+      "advancedSearch": "Advanced search",
+      "searchKeyword": "Search keyword",
+      "resultLimit": "Result limit",
+      "searchWeight": "Search weight (0.0 - 1.0)",
+      "alphaValue": "Alpha value",
+      "categoryFilter": "Category filter",
+      "applySearch": "Apply search"
+    },
+    "categories": {
+      "coffee": "Coffee",
+      "dessert": "Dessert",
+      "meal": "Meal",
+      "snack": "Snack",
+      "milkTea": "Milk Tea"
+    },
+    "notifications": {
+      "getRecommendationsFailed": "Failed to get recommendations",
+      "tryAgainLater": "Please try again later"
+    },
+    "activity": {
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "scorecardActivated": "{{name}} activated score card",
+      "newReview": "Received 1 new review",
+      "newRegularCustomers": "Added {{count}} new regular customers",
+      "couponsIssued": "Issued {{count}} coupons today"
+    },
+    "drawer": {
+      "businessManagement": "Business Management",
+      "home": "Home",
+      "growth": "Growth",
+      "orders": "Orders",
+      "more": "More"
+    },
+    "more": {
+      "title": "More Options",
+      "editBusinessInfo": "Edit Business Info",
+      "businessSettings": "Business Settings",
+      "businessHours": "Business Hours",
+      "menuManagement": "Menu & Product Management",
+      "scorecardManagement": "Score Card Management",
+      "eventSettings": "Event Settings",
+      "voucherManagement": "Voucher Management",
+      "appSettings": "App Settings",
+      "notifications": "Notifications",
+      "darkMode": "Dark Mode",
+      "language": "Language",
+      "helpSupport": "Help & Support",
+      "help": "Help",
+      "feedback": "Feedback",
+      "contactUs": "Contact Us",
+      "about": "About",
+      "accountManagement": "Account Management",
+      "accountSettings": "Account Settings",
+      "privacy": "Privacy Settings",
+      "logout": "Logout"
+    }
+  },
+  "secondhandSearch": {
+    "search": {
+      "placeholder": "Search second-hand items...",
+      "filter": "Filter",
+      "reset": "Reset",
+      "searchButton": "Search",
+      "searchFailed": "Search failed",
+      "searchFailedMessage": "Please try again later",
+      "noResults": "No related items found",
+      "noResultsSubText": "Try other search terms or filter criteria"
+    },
+    "sorting": {
+      "title": "Sort by",
+      "default": "Default",
+      "newest": "Newest",
+      "mostLiked": "Most liked",
+      "priceAsc": "Price: Low to High",
+      "priceDesc": "Price: High to Low"
+    },
+    "timeRange": {
+      "title": "Published time",
+      "unlimited": "Unlimited",
+      "1day": "Within 1 day",
+      "1week": "Within 1 week",
+      "1month": "Within 1 month",
+      "6months": "Within 6 months"
+    },
+    "priceRange": {
+      "title": "Price range",
+      "minPrice": "Min price",
+      "maxPrice": "Max price"
+    },
+    "categories": {
+      "title": "Product category",
+      "electronics": "Electronics",
+      "furniture": "Furniture",
+      "clothing": "Clothing",
+      "books": "Books",
+      "others": "Others"
+    },
+    "product": {
+      "group": "Product group",
+      "updateFailed": "Update failed",
+      "imageLoadFailed": "Image load failed"
+    }
+  },
+  "secondhandMain": {
+    "searchPlaceholder": "Search second-hand items...",
+    "myLikes": "My Likes",
+    "productList": "Second-hand product list",
+    "productGroup": "Product group",
+    "singleProduct": "Single second-hand product",
+    "multipleProducts": "Multiple second-hand products",
+    "warning": "Warning",
+    "notImplemented": "Not implemented yet"
+  },
+  "secondhandPublish": {
+    "fields": {
+      "uploadImages": "Upload images",
+      "productName": "Product name",
+      "contactMethod": "Contact method",
+      "productPrice": "Product price",
+      "negotiablePrice": "Accept price negotiation",
+      "productDescription": "Product description",
+      "descriptionPreview": "Product description preview"
+    },
+    "preview": {
+      "negotiable": "Negotiable",
+      "category": "Product category",
+      "condition": "Product condition",
+      "contact": "Contact method",
+      "unknown": "Unknown"
+    },
+    "categories": {
+      "furniture": "Furniture & Decoration",
+      "electronics": "Electronics",
+      "fashion": "Fashion & Clothing",
+      "beauty": "Beauty & Skincare",
+      "books": "Books & Media",
+      "sports": "Sports & Outdoor",
+      "crafts": "Handicrafts",
+      "others": "Others"
+    },
+    "conditions": {
+      "productStatus": "Product status",
+      "brandNew": "Brand new",
+      "slightWear": "Slight wear",
+      "normalWear": "Normal wear",
+      "damaged": "Damaged",
+      "incomplete": "Incomplete"
+    },
+    "options": {
+      "yes": "Yes",
+      "no": "No"
+    },
+    "placeholders": {
+      "selectCategory": "Select product category",
+      "selectCondition": "Select product condition"
+    },
+    "actions": {
+      "preview": "Preview",
+      "saveDraft": "Save draft",
+      "publish": "Publish"
+    },
+    "permissions": {
+      "photoTitle": "Photo permission required",
+      "photoMessage": "Please allow photo access in settings",
+      "goSettings": "Go to settings"
+    },
+    "status": {
+      "online": "Online",
+      "offline": "Offline"
+    },
+    "errors": {
+      "imageSelectionFailed": "Image selection failed",
+      "aspectRatioTooLarge": "Image {{index}} aspect ratio too large, please select again",
+      "imageTooSmall": "Image {{index}} size less than 10kb, does not meet requirements",
+      "saveDraftFailed": "Save draft failed"
+    },
+    "validation": {
+      "nameRequired": "Please enter product name",
+      "priceRequired": "Please enter product price",
+      "descriptionRequired": "Please enter product description",
+      "categoryRequired": "Please select product category",
+      "conditionRequired": "Please select product condition",
+      "contactRequired": "Please enter contact method",
+      "imageRequired": "Please upload at least one image"
+    },
+    "success": {
+      "title": "Success",
+      "draftSaved": "Draft saved"
+    }
+  },
+  "secondhandMultiple": {
+    "titles": {
+      "multiplePublish": "Batch publish",
+      "supplementMode": "Supplement mode"
+    },
+    "banner": {
+      "supplementModeText": "Currently in supplement mode, you can only modify existing drafts and resend.",
+      "groupIdInfo": "All products will be added to the same product group (Group ID: {groupId}).",
+      "addNewProductTip": "To add new products, please exit supplement mode first.",
+      "exitSupplementMode": "Exit supplement mode"
+    },
+    "coverImage": {
+      "changeCover": "Change cover image",
+      "addCover": "Add cover image",
+      "imageError": "Image size less than 10kb, does not meet requirements"
+    },
+    "groupInfo": {
+      "groupName": "Group name",
+      "groupDescription": "Group description",
+      "groupNameRequired": "Please enter group name",
+      "groupDescriptionRequired": "Please enter group description"
+    },
+    "publishing": {
+      "publishingText": "Publishing ({current}/{total})",
+      "progressPercentage": "{percentage}%",
+      "publishAll": "Publish all",
+      "supplement": "Supplement",
+      "noDraftsToPublish": "No drafts to publish"
+    },
+    "dialogs": {
+      "confirmDelete": "Are you sure you want to delete this draft?",
+      "supplementModeHelp": "In supplement mode, you can only modify existing drafts and resend.\n\nIf you need to add new products:\n1. Please exit supplement mode first\n2. After exiting, existing drafts will be sent to a new product group",
+      "exitSupplementModeTitle": "Exit supplement mode",
+      "exitSupplementModeMessage": "Supplement mode explanation:\n\n1. This mode ensures all products are published to the same product group\n2. In this mode, you can only modify existing drafts and resend\n3. After exiting this mode:\n   - You can add new products\n   - All existing drafts will be sent to a new product group\n\nAre you sure you want to exit supplement mode?",
+      "confirmExit": "Confirm exit"
+    },
+    "results": {
+      "allSuccess": "All products published",
+      "partialSuccess": "Successfully published {success} products, failed {failed}\n\nEntered supplement mode, subsequent publications will be added to the same product group (Group ID: {groupId})",
+      "publishError": "Error occurred during publishing",
+      "getGroupIdFailed": "Failed to get group ID",
+      "uploadCoverFailed": "Failed to upload cover image"
+    }
+  },
+  "admin": {
+    "dashboard": {
+      "title": "Admin Panel",
+      "stats": {
+        "pendingProviderRequests": "Pending Provider Requests",
+        "pendingReports": "Pending Reports",
+        "newUsersToday": "New Users Today"
+      }
+    },
+    "userManagement": {
+      "title": "User Management",
+      "searchUsers": "Search Users",
+      "userManagement": "User Management",
+      "userDetail": "User Detail"
+    },
+    "providerManagement": {
+      "title": "Provider Management",
+      "providerRequests": "Provider Requests",
+      "providerAudit": "Provider Audit",
+      "providerList": "Provider List",
+      "providerRequestDetail": "Provider Request Detail",
+      "providerAuditDetail": "Provider Audit Detail"
+    },
+    "systemManagement": {
+      "title": "System Management",
+      "reportHandling": "Report Handling",
+      "dataStatistics": "Data Statistics",
+      "systemNotifications": "System Notifications"
+    },
+    "navigation": {
+      "userSearch": "Search Users",
+      "providerRequests": "Provider Requests",
+      "providerAudit": "Provider Audit"
+    }
+  }
+}

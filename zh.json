@@ -1,0 +1,667 @@
+{  
+  "prologin":{
+     "Notlogin": "请先登录",
+     "DeviceId": "设备ID : "
+  },
+  "scorecard": {
+    "VIP": "VIP",
+    "score": "你的积分",
+    "maxscore": "最大积分：",
+    "pointsRequired": "需要 {points} 积分",
+    "noDescription": "无详细描述",
+    "achieved": "已达成",
+    "notAchieved": "未达成",
+    "redeemNow": "立即兑换"
+  },
+  "settings": {
+    "title": "设置",
+    "personalSettings": "个人设置",
+    "myInfo": "我的信息",
+    "mySubscriptions": "我的订阅",
+    "changeChatBackground": "修改聊天背景",
+    "appSettings": "应用设置",
+    "notifications": "通知设置",
+    "darkMode": "深色模式",
+    "clearCache": "清除缓存",
+    "clearChatDB": "清除聊天数据库",
+    "system": "系统",
+    "updateChannel": "更新通道",
+    "checkForUpdates": "检查更新",
+    "restartApp": "重启应用",
+    "logout": "退出登录",
+    "editProfile": "编辑个人信息",
+    "pleaseLoginFirst": "请先登录",
+    "avatar": "头像",
+    "view": "查看",
+    "change": "更换",
+    "uploadSuccess": "头像上传成功",
+    "uploadFailed": "头像上传失败，请稍后重试",
+    "confirmLogout": "确定注销？",
+    "logoutWarning": "注销后，你将失去所有草稿",
+    "confirmClearCache": "确定清除缓存？",
+    "clearCacheWarning": "这将删除所有缓存",
+    "confirmClearDB": "确定清除聊天数据库？",
+    "clearDBWarning": "这将删除所有聊天记录",
+    "confirmRestart": "确定重启应用？",
+    "switchUpdateChannel": "切换更新通道",
+    "switchChannelWarning": "确定要切换到{channel}通道吗？\n\n切换后需要重启应用。",
+    "alphaChannel": "Alpha (测试版)",
+    "stableChannel": "Stable (稳定版)",
+    "channelChanged": "更新通道已更改",
+    "restartRequired": "需要重启应用以应用更改。",
+    "restartNow": "立即重启",
+    "selectChannel": "选择通道",
+    "currentChannel": "当前: {channel}",
+    "updateAvailable": "有新的更新！",
+    "latestVersion": "已是最新版本",
+    "updateSuccess": "更新成功",
+    "restartPrompt": "请重启应用\n(Version: {version})",
+    "updateInfo": "更新信息",
+    "userIdLabel": "用户ID: ",
+    "notLoggedInUser": "未登录用户",
+    "notLoggedIn": "未登录",
+    "successofsettingchatbg":"聊天背景设置成功",
+    "failedtosettingchatbg":"图片压缩失败，请稍后重试",
+    "changeLanguage":"修改语言"
+  },
+  "userInfo": {
+    "title": "我的信息",
+    "accountInfo": "账户信息",
+    "editableHint": "带有图标的项目可以编辑",
+    "fields": {
+      "username": "用户名",
+      "nickname": "昵称",
+      "email": "邮箱", 
+      "userId": "用户ID",
+      "registerTime": "注册时间",
+      "invitationCode": "我的邀请码",
+      "deviceToken": "设备令牌",
+      "password": "密码"
+    },
+    "edit": {
+      "editTitle": "编辑",
+      "newField": "新",
+      "newnickname": "新昵称",
+      "currentPassword": "当前密码",
+      "currentNickname": "当前昵称",
+      "newPassword": "新密码", 
+      "confirmPassword": "确认新密码",
+      "confirmEdit": "确认修改",
+      "restartWarning": "信息更新成功后将会重启应用以应用更改",
+      "passwordRestartWarning": "密码更新成功后将会重启应用以应用更改"
+    },
+    "validation": {
+      "usernameFormat": "用户名只能包含字母和数字",
+      "passwordFormat": "密码必须包含至少8个字符，包括字母和数字",
+      "passwordMismatch": "两次输入的密码不一致",
+      "passwordInvalid": "新密码必须包含至少8个字符，包括字母和数字"
+    },
+    "success": {
+      "updateSuccess": "更新成功",
+      "passwordUpdateSuccess": "密码更新成功",
+      "restartPrompt": "应用将重新启动以应用更改"
+    },
+    "errors": {
+      "usernameExists": "用户名已存在",
+      "wrongPassword": "密码错误",
+      "currentPasswordWrong": "当前密码错误",
+      "updateFailed": "更新失败"
+    }
+  },
+  "login": {
+    "username": "用户名",
+    "password": "密码",
+    "loginButton": "登录",
+    "forgetPassword": "忘记密码？",
+    "resetPassword": "重置密码",
+    "cancel": "取消",
+    "usernameOrEmail": "用户名或邮箱",
+    "loginSuccess": "登录成功",
+    "loginFailed": "登录失败",
+    "offlineLogin": "离线登录",
+    "serverUnavailable": "服务器暂时不可用，已切换到离线模式",
+    "noLocalCache": "服务器连接失败且未找到本地缓存的登录信息",
+    "resetEmailSent": "密码重置邮件已发送",
+    "checkEmail": "请检查您的邮箱",
+    "userNotFound": "用户或邮箱未找到",
+    "resetFailed": "密码重置失败，请稍后重试"
+  },
+  "register": {
+    "username": "用户名",
+    "password": "密码",
+    "email": "邮箱",
+    "registerButton": "注册",
+    "hasAccount": "已有账户？登录",
+    "success": "注册成功，请点击邮件中的链接激活您的账户",
+    "failed": "注册失败",
+    "usernameExists": "用户名已存在",
+    "emailExists": "邮箱已存在",
+    "readTermsFirst": "请先阅读并点击链接",
+    "readTerms": "阅读条款",
+    "agreeTerms": "我已阅读并同意条款",
+    "validation": {
+      "usernameFormat": "用户名只能包含字母和数字",
+      "passwordFormat": "密码必须包含至少8个字符，包括字母和数字",
+      "emailFormat": "邮箱格式无效"
+    }
+  },
+  "profile": {
+    "profileCenter": "个人中心",
+    "cardWallet": "卡包",
+    "mutualFollows": "好友",
+    "becomeProvider": "成为服务商",
+    "contactUs": "联系我们",
+    "settings": "设置",
+    "help": "帮助",
+    "feedback": "反馈",
+    "productDetails": "商品详情",
+    "kaoPuCoins": "靠谱币",
+    "secondHand": "二手",
+    "kaoPuCard": "靠谱卡",
+    "myQRCode": "我的二维码",
+    "scanQRCodeTip": "扫描二维码分享我的资料",
+    "close": "关闭",
+    "endofpage": "没有更多了",
+    "unknowuser": "未知用户"
+  },
+  "userSettings": {
+    "title": "账户信息",
+    "subtitle": "带有 {icon} 图标的项目可以编辑",
+    "notLoggedIn": "未登录",
+    "notLoggedInUser": "未登录用户",
+    "fields": {
+      "username": "用户名",
+      "nickname": "昵称",
+      "email": "邮箱",
+      "userId": "用户ID",
+      "registerTime": "注册时间",
+      "invitationCode": "我的邀请码",
+      "deviceToken": "设备令牌",
+      "password": "密码"
+    }
+  },
+  "navigation": {
+    "home": "首页",
+    "recentMessages": "消息",
+    "provider": "服务商",
+    "profile": "个人",
+    "admin": "管理",
+    "secondhand": "二手"
+  },
+  "system": {
+    "healthChecking": "系统健康检查进行中...",
+    "updateSuccess": "更新成功",
+    "updateFailed": "更新失败",
+    "restartApp": "请重启应用",
+    "version": "版本",
+    "confirm": "确定",
+    "forceLogout": "请重新登录",
+    "forceLogoutMessage": "由于您在其他设备上登录，您已被强制登出",
+    "messageFrom": "来自 {nickname} 的消息",
+    "networkOffline": "网络连接丢失",
+    "offlineModeEnabled": "已切换到离线模式",
+    "networkRestored": "网络连接已恢复",
+    "dataReadError": "无法读取本地数据",
+    "restartAppPrompt": "请重启应用程序",
+    "dontturnoffdivice": "请不要关闭此应用程序"
+  },
+  "validation": {
+    "usernameRequired": "用户名不能为空",
+    "passwordRequired": "密码不能为空",
+    "usernameOrEmailRequired": "用户名或邮箱不能为空"
+  },
+  "api": {
+    "loginFailed": "登录失败",
+    "userBanned": "用户已被封禁，请联系管理员",
+    "emailNotValidated": "用户邮箱未验证，请检查您的邮箱验证链接并重新登录",
+    "userNotFound": "请检查您的用户名或密码",
+    "passwordNotMatch": "请检查您的用户名或密码",
+    "deviceVerificationFailed": "设备验证失败，请重新登录",
+    "loginExpired": "登录已过期，请重新登录",
+    "networkError": "网络连接错误",
+    "serverConnectionFailed": "无法连接到服务器",
+    "requestTimeout": "请求超时",
+    "scorecardFailtobecreated": "积分卡创建失败"
+  },
+  "network": {
+    "offlineMode": "离线模式",
+    "tapToReconnect": "点击尝试重新连接",
+    "connecting": "正在尝试连接服务器...",
+    "pleaseWait": "请稍等",
+    "backOnline": "已重新上线",
+    "connectionSuccess": "连接成功",
+    "stillOffline": "仍在离线模式",
+    "connectionFailed": "连接服务器失败，请检查您的网络",
+    "networkConnectionError": "网络连接错误"
+  },
+  "socialrelationship": {
+    "mutuallike": "好友",
+    "fans": "粉丝",
+    "Like": "点赞",
+    "Followable": "关注",
+    "CancelFollow": "已关注",
+    "timeoffollow": "关注时间 ",
+    "Nofollower" : "暂无粉丝",
+     "Nolike" : "暂无关注",
+    "Nofriend" : "暂无互关"
+  },
+  "common": {
+    "error": "错误",
+    "confirm": "确定",
+    "loading": "加载中...",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "add": "添加",
+    "tip": "提示",
+    "success": "成功",
+    "warning": "警告",
+    "confirmDelete": "确认删除",
+    "gotIt": "知道了"
+  },
+  "secondhand": {
+    "loginToViewProductDetails": "登录后才能查看商品详情",
+    "imageLoadFailed": "图片加载失败"
+  },
+  "message": {
+    "sendmessage": "发送消息",
+    "restoremessage": "恢复消息",
+    "typehere": "在此输入消息",
+    "writeinmessagehistory": "正在加载消息"
+  },
+  "mainContent": {
+    "navigation": {
+      "eatFood": "淦饭",
+      "drink": "吨吨",
+      "placeholder": "占位",
+      "button1": "按钮1",
+      "button2": "按钮2",
+      "button3": "按钮3",
+      "button4": "按钮4",
+      "button5": "按钮5",
+      "button6": "按钮6",
+      "button7": "按钮7",
+      "button8": "按钮8",
+      "button9": "按钮9",
+      "button10": "按钮10",
+      "button11": "按钮11",
+      "button12": "按钮12"
+    },
+    "more": "更多",
+    "collapse": "收起",
+    "moreButtons": "更多按钮",
+    "adjustButtons": "调整按钮位置",
+    "done": "完成",
+    "dragTip": "拖动图标可调整位置，前三个按钮显示在主导航",
+    "location": {
+      "grenoble": "格勒"
+    },
+    "search": {
+      "placeholder": "搜索"
+    },
+    "scanner": {
+      "scanResult": "扫描结果",
+      "type": "类型",
+      "data": "数据",
+      "cameraPermissionTitle": "需要相机权限",
+      "cameraPermissionMessage": "请在设置中允许访问相机",
+      "scanInstruction": "将二维码放入框内"
+    },
+    "discounts": {
+      "title": "优惠折扣 %",
+      "beefNoodles": "兰州牛肉面",
+      "noodleCategory": "淦饭·面食",
+      "twentyPercent": "20% 折扣",
+      "jiuRamen": "玖拉面"
+    }
+  },
+   "provider": {
+    "main": {
+      "completeStoreInfo": "请先完善店铺信息，如果不完善店铺信息，将无法被用户搜索到",
+      "overview": "总体概览",
+      "totalActivations": "积分卡总激活数",
+      "totalViews": "总浏览量",
+      "overallTrend": "总体趋势",
+      "totalMembers": "会员总数",
+      "totalRevenue": "总交易额",
+      "moreData": "更多总体数据",
+      "avgOrderAmount": "平均订单金额",
+      "totalVisitors": "总访客数",
+      "couponsIssued": "优惠券总发放",
+      "couponsUsed": "优惠券总使用",
+      "recentActivity": "最近动态"
+    },
+    "stats": {
+      "yoy": "同比",
+      "mom": "环比"
+    },
+    "period": {
+      "overview": "概览",
+      "today": "今天",
+      "yesterday": "昨天",
+      "week": "过去7天",
+      "month": "过去30天",
+      "periodData": "时段数据",
+      "todayData": "今日数据",
+      "yesterdayData": "昨日数据",
+      "weekData": "本周数据",
+      "monthData": "本月数据",
+      "asOfToday": "截至今天",
+      "completeStats": "完整统计",
+      "last7Days": "近7天",
+      "last30Days": "近30天",
+      "scorecardUsage": "积分卡使用次数",
+      "visits": "访问量",
+      "visitors": "访客数",
+      "monday": "一",
+      "tuesday": "二",
+      "wednesday": "三",
+      "thursday": "四",
+      "friday": "五",
+      "saturday": "六",
+      "sunday": "日"
+    },
+    "customer": {
+      "searchCustomer": "搜索顾客",
+      "sortBy": "排序方式",
+      "sortTime": "时间",
+      "sortPoints": "积分",
+      "sortName": "姓名",
+      "totalPoints": "总积分",
+      "averagePoints": "平均积分",
+      "customerCount": "顾客数",
+      "activatedCustomers": "积分卡激活顾客",
+      "usageCustomers": "积分卡使用顾客",
+      "activated": "激活",
+      "used": "使用",
+      "lastUsed": "上次使用",
+      "points": "积分",
+      "viewAll": "查看全部",
+      "scorecardDetail": "积分卡详情",
+      "customerInfo": "顾客信息",
+      "name": "姓名",
+      "activationTime": "激活时间",
+      "pointsHistory": "积分历史",
+      "firstActivationReward": "首次激活奖励",
+      "purchaseReward": "消费奖励",
+      "couponRedemption": "兑换优惠券",
+      "actions": "操作",
+      "addPoints": "增加积分",
+      "redeemReward": "兑换奖励",
+      "sendNotification": "发送通知"
+    },
+    "search": {
+      "placeholder": "搜索咖啡、奶茶...",
+      "noResults": "没有搜索结果",
+      "tryAdjusting": "试试调整搜索条件",
+      "advancedSearch": "高级搜索",
+      "searchKeyword": "搜索关键词",
+      "resultLimit": "显示结果数量",
+      "searchWeight": "搜索权重 (0.0 - 1.0)",
+      "alphaValue": "Alpha值",
+      "categoryFilter": "类别过滤",
+      "applySearch": "应用搜索"
+    },
+    "categories": {
+      "coffee": "咖啡",
+      "dessert": "甜品",
+      "meal": "正餐",
+      "snack": "小吃",
+      "milkTea": "奶茶"
+    },
+    "notifications": {
+      "getRecommendationsFailed": "获取推荐失败",
+      "tryAgainLater": "请稍后再试"
+    },
+    "activity": {
+      "today": "今天",
+      "yesterday": "昨天",
+      "scorecardActivated": "{{name}} 激活了积分卡",
+      "newReview": "收到1条新评价",
+      "newRegularCustomers": "新增{{count}}名常客",
+      "couponsIssued": "当日发放了{{count}}张优惠券"
+    },
+    "drawer": {
+      "businessManagement": "商家管理",
+      "home": "主页",
+      "growth": "发展",
+      "orders": "订单",
+      "more": "更多"
+    },
+    "more": {
+      "title": "更多选项",
+      "editBusinessInfo": "编辑商家信息",
+      "businessSettings": "商家设置",
+      "businessHours": "营业时间设置",
+      "menuManagement": "菜单与商品管理",
+      "scorecardManagement": "积分卡管理",
+      "eventSettings": "活动设置",
+      "voucherManagement": "靠谱券添加与管理",
+      "appSettings": "应用设置",
+      "notifications": "通知设置",
+      "darkMode": "深色模式",
+      "language": "语言设置",
+      "helpSupport": "帮助与支持",
+      "help": "帮助",
+      "feedback": "反馈",
+      "contactUs": "联系我们",
+      "about": "关于",
+      "accountManagement": "账户管理",
+      "accountSettings": "账户设置",
+      "privacy": "隐私设置",
+      "logout": "退出登录"
+    }
+  },
+  "secondhandSearch": {
+    "search": {
+      "placeholder": "搜索二手商品...",
+      "filter": "筛选",
+      "reset": "重置",
+      "searchButton": "搜索",
+      "searchFailed": "搜索失败",
+      "searchFailedMessage": "请稍后重试",
+      "noResults": "没有找到相关商品",
+      "noResultsSubText": "试试其他搜索词或筛选条件"
+    },
+    "sorting": {
+      "title": "排序方式",
+      "default": "综合排序",
+      "newest": "最新发布",
+      "mostLiked": "最多点赞",
+      "priceAsc": "价格从低到高",
+      "priceDesc": "价格从高到低"
+    },
+    "timeRange": {
+      "title": "发布时间",
+      "unlimited": "不限时间",
+      "1day": "一天内",
+      "1week": "一周内",
+      "1month": "一个月内",
+      "6months": "半年内"
+    },
+    "priceRange": {
+      "title": "价格范围",
+      "minPrice": "最低价",
+      "maxPrice": "最高价"
+    },
+    "categories": {
+      "title": "商品分类",
+      "electronics": "电子产品",
+      "furniture": "家具",
+      "clothing": "衣物",
+      "books": "书籍",
+      "others": "其他"
+    },
+    "product": {
+      "group": "商品组",
+      "updateFailed": "更新失败",
+      "imageLoadFailed": "图片加载失败"
+    }
+  },
+  "secondhandMain": {
+    "searchPlaceholder": "搜索二手商品...",
+    "myLikes": "我的喜欢",
+    "productList": "二手商品列表",
+    "productGroup": "商品组",
+    "singleProduct": "单个二手商品",
+    "multipleProducts": "多个二手商品",
+    "warning": "警告",
+    "notImplemented": "尚未实现"
+  },
+  "secondhandPublish": {
+    "fields": {
+      "uploadImages": "上传图片",
+      "productName": "商品名称",
+      "contactMethod": "联系方式",
+      "productPrice": "商品价格",
+      "negotiablePrice": "是否接受价格面议",
+      "productDescription": "商品描述",
+      "descriptionPreview": "商品简介预览"
+    },
+    "preview": {
+      "negotiable": "可议价",
+      "category": "商品类别",
+      "condition": "商品成色",
+      "contact": "联系方式",
+      "unknown": "未知"
+    },
+    "categories": {
+      "furniture": "家具装饰",
+      "electronics": "电子产品",
+      "fashion": "时尚服饰",
+      "beauty": "美妆护肤",
+      "books": "书籍音像",
+      "sports": "运动户外",
+      "crafts": "手工艺品",
+      "others": "其他"
+    },
+    "conditions": {
+      "productStatus": "商品状态",
+      "brandNew": "全新",
+      "slightWear": "略有磨损",
+      "normalWear": "有磨损",
+      "damaged": "破损",
+      "incomplete": "残缺"
+    },
+    "options": {
+      "yes": "是",
+      "no": "否"
+    },
+    "placeholders": {
+      "selectCategory": "选择商品类别",
+      "selectCondition": "选择商品成色"
+    },
+    "actions": {
+      "preview": "预览",
+      "saveDraft": "保存草稿",
+      "publish": "发布"
+    },
+    "permissions": {
+      "photoTitle": "需要照片权限",
+      "photoMessage": "请在设置中允许访问照片",
+      "goSettings": "去设置"
+    },
+    "status": {
+      "online": "上架",
+      "offline": "下架"
+    },
+    "errors": {
+      "imageSelectionFailed": "图片选择失败",
+      "aspectRatioTooLarge": "第{{index}}张图片长宽比例过大，请重新选择",
+      "imageTooSmall": "第{{index}}张图片大小小于10kb, 不符合要求",
+      "saveDraftFailed": "保存草稿失败"
+    },
+    "validation": {
+      "nameRequired": "请输入商品名称",
+      "priceRequired": "请输入商品价格",
+      "descriptionRequired": "请输入商品描述",
+      "categoryRequired": "请选择商品类别",
+      "conditionRequired": "请选择商品成色",
+      "contactRequired": "请输入联系方式",
+      "imageRequired": "请至少上传一张图片"
+    },
+    "success": {
+      "title": "成功",
+      "draftSaved": "草稿已保存"
+    }
+  },
+  "secondhandMultiple": {
+    "titles": {
+      "multiplePublish": "批量发布",
+      "supplementMode": "补充发送模式"
+    },
+    "banner": {
+      "supplementModeText": "当前处于补充发送模式，您只能修改现有草稿并重新发送。",
+      "groupIdInfo": "所有商品将被添加到同一商品组中（组ID: {groupId}）。",
+      "addNewProductTip": "如需添加新商品，请先退出补充发送模式。",
+      "exitSupplementMode": "退出补充发送模式"
+    },
+    "coverImage": {
+      "changeCover": "更换封面图",
+      "addCover": "添加封面图",
+      "imageError": "图片大小小于10kb, 不符合要求"
+    },
+    "groupInfo": {
+      "groupName": "组名称",
+      "groupDescription": "组描述",
+      "groupNameRequired": "请填写组名称",
+      "groupDescriptionRequired": "请填写组描述"
+    },
+    "publishing": {
+      "publishingText": "正在发布 ({current}/{total})",
+      "progressPercentage": "{percentage}%",
+      "publishAll": "发布全部",
+      "supplement": "补充发送",
+      "noDraftsToPublish": "没有待发布的物品"
+    },
+    "dialogs": {
+      "confirmDelete": "确定要删除这个草稿吗？",
+      "supplementModeHelp": "在补充发送模式下，您只能修改现有草稿并重新发送。\n\n如果您需要添加新的商品：\n1. 请先退出补充发送模式\n2. 退出后，现有草稿将会被发送到新的商品组中",
+      "exitSupplementModeTitle": "退出补充发送模式",
+      "exitSupplementModeMessage": "补充发送模式说明：\n\n1. 此模式用于确保所有商品都发布到同一个商品组中\n2. 在此模式下，您只能修改现有草稿并重新发送\n3. 退出此模式后：\n   - 您可以添加新的商品\n   - 所有现有草稿将被发送到新的商品组中\n\n确定要退出补充发送模式吗？",
+      "confirmExit": "确定退出"
+    },
+    "results": {
+      "allSuccess": "所有商品已发布",
+      "partialSuccess": "成功发布 {success} 个商品，失败 {failed} 个\n\n已进入补充发送模式，后续发布将添加到同一商品组中（组ID: {groupId}）",
+      "publishError": "发布过程中出现错误",
+      "getGroupIdFailed": "获取分组ID失败",
+      "uploadCoverFailed": "上传封面图失败"
+    }
+  },
+  "admin": {
+    "dashboard": {
+      "title": "管理员面板",
+      "stats": {
+        "pendingProviderRequests": "待处理商户申请",
+        "pendingReports": "待处理举报",
+        "newUsersToday": "今日新增用户"
+      }
+    },
+    "userManagement": {
+      "title": "用户管理",
+      "searchUsers": "用户搜索",
+      "userManagement": "用户管理",
+      "userDetail": "用户详情"
+    },
+    "providerManagement": {
+      "title": "商户管理",
+      "providerRequests": "商户申请",
+      "providerAudit": "商户更新审核",
+      "providerList": "商户列表",
+      "providerRequestDetail": "商户申请详情",
+      "providerAuditDetail": "商户更新详情"
+    },
+    "systemManagement": {
+      "title": "系统管理",
+      "reportHandling": "举报处理",
+      "dataStatistics": "数据统计",
+      "systemNotifications": "系统通知"
+    },
+    "navigation": {
+      "userSearch": "用户搜索",
+      "providerRequests": "商户申请",
+      "providerAudit": "商户更新审核"
+    }
+  }
+}
