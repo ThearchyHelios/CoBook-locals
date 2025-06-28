@@ -1,667 +1,667 @@
-{  
-  "prologin":{
-     "Notlogin": "Veuillez vous connecter d'abord",
-     "DeviceId": "ID de l'appareil : "
-  },
-  "scorecard": {
-    "VIP": "VIP",
-    "score": "Vos Points",
-    "maxscore": "Points Max :",
-    "pointsRequired": "Nécessite {points} points",
-    "noDescription": "Aucune description disponible",
-    "achieved": "Obtenu",
-    "notAchieved": "Non obtenu",
-    "redeemNow": "Échanger Maintenant"
-  },
-  "settings": {
-    "title": "Paramètres",
-    "personalSettings": "Paramètres Personnels",
-    "myInfo": "Mes Informations",
-    "mySubscriptions": "Mes Abonnements",
-    "changeChatBackground": "Changer l'Arrière-plan du Chat",
-    "appSettings": "Paramètres de l'Application",
-    "notifications": "Notifications",
-    "darkMode": "Mode Sombre",
-    "clearCache": "Vider le Cache",
-    "clearChatDB": "Vider la Base de Données du Chat",
-    "system": "Système",
-    "updateChannel": "Canal de Mise à Jour",
-    "checkForUpdates": "Vérifier les Mises à Jour",
-    "restartApp": "Redémarrer l'Application",
-    "logout": "Déconnexion",
-    "editProfile": "Modifier le Profil",
-    "pleaseLoginFirst": "Veuillez vous connecter d'abord",
-    "avatar": "Avatar",
-    "view": "Voir",
-    "change": "Changer",
-    "uploadSuccess": "Avatar téléchargé avec succès",
-    "uploadFailed": "Échec du téléchargement de l'avatar, veuillez réessayer",
-    "confirmLogout": "Confirmer la déconnexion ?",
-    "logoutWarning": "Après la déconnexion, vous perdrez tous les brouillons",
-    "confirmClearCache": "Confirmer la suppression du cache ?",
-    "clearCacheWarning": "Cela supprimera tout le cache",
-    "confirmClearDB": "Confirmer la suppression de la base de données du chat ?",
-    "clearDBWarning": "Cela supprimera tous les enregistrements de chat",
-    "confirmRestart": "Confirmer le redémarrage de l'application ?",
-    "switchUpdateChannel": "Changer de Canal de Mise à Jour",
-    "switchChannelWarning": "Êtes-vous sûr de vouloir passer au canal {channel} ?\n\nRedémarrage de l'application requis après le changement.",
-    "alphaChannel": "Alpha (Bêta)",
-    "stableChannel": "Stable",
-    "channelChanged": "Canal de mise à jour modifié",
-    "restartRequired": "Redémarrage de l'application requis pour appliquer les modifications.",
-    "restartNow": "Redémarrer Maintenant",
-    "selectChannel": "Sélectionner le Canal",
-    "currentChannel": "Actuel : {channel}",
-    "updateAvailable": "Nouvelle mise à jour disponible !",
-    "latestVersion": "Déjà la dernière version",
-    "updateSuccess": "Mise à jour réussie",
-    "restartPrompt": "Veuillez redémarrer l'application\n(Version : {version})",
-    "updateInfo": "Informations de Mise à Jour",
-    "userIdLabel": "ID Utilisateur : ",
-    "notLoggedInUser": "Utilisateur non connecté",
-    "notLoggedIn": "Non connecté",
-    "successofsettingchatbg": "Modification de l'arrière-plan du chat terminée",
-    "failedtosettingchatbg": "Échec de la modification de l'arrière-plan du chat",
-    "changeLanguage":"Modifier la langue"
-  },
-  "userInfo": {
-    "title": "Mes Informations",
-    "accountInfo": "Informations du Compte",
-    "editableHint": "Les éléments avec des icônes peuvent être modifiés",
-    "fields": {
-      "username": "Nom d'utilisateur",
-      "nickname": "Pseudonyme",
-      "email": "Email", 
-      "userId": "ID Utilisateur",
-      "registerTime": "Date d'inscription",
-      "invitationCode": "Mon Code d'Invitation",
-      "deviceToken": "Jeton de l'Appareil",
-      "password": "Mot de Passe"
+{
+    "prologin": {
+        "Notlogin": "Veuillez vous connecter d'abord",
+        "DeviceId": "ID de l'appareil : "
     },
-    "edit": {
-      "editTitle": "Modifier",
-      "newField": "Nouveau",
-      "newnickname": "Nouveau Pseudonyme",
-      "currentPassword": "Mot de Passe Actuel",
-      "currentNickname": "Pseudonyme Actuel",
-      "newPassword": "Nouveau Mot de Passe", 
-      "confirmPassword": "Confirmer le Nouveau Mot de Passe",
-      "confirmEdit": "Confirmer la Modification",
-      "restartWarning": "L'application redémarrera après la mise à jour réussie des informations pour appliquer les modifications",
-      "passwordRestartWarning": "L'application redémarrera après la mise à jour réussie du mot de passe pour appliquer les modifications"
+    "scorecard": {
+        "VIP": "VIP",
+        "score": "Vos Points",
+        "maxscore": "Points Max :",
+        "pointsRequired": "Nécessite {points} points",
+        "noDescription": "Aucune description disponible",
+        "achieved": "Obtenu",
+        "notAchieved": "Non obtenu",
+        "redeemNow": "Échanger Maintenant"
     },
-    "validation": {
-      "usernameFormat": "Le nom d'utilisateur ne peut contenir que des lettres et des chiffres",
-      "passwordFormat": "Le mot de passe doit contenir au moins 8 caractères, incluant des lettres et des chiffres",
-      "passwordMismatch": "Les mots de passe ne correspondent pas",
-      "passwordInvalid": "Le nouveau mot de passe doit contenir au moins 8 caractères, incluant des lettres et des chiffres"
+    "settings": {
+        "title": "Paramètres",
+        "personalSettings": "Paramètres Personnels",
+        "myInfo": "Mes Informations",
+        "mySubscriptions": "Mes Abonnements",
+        "changeChatBackground": "Changer l'Arrière-plan du Chat",
+        "appSettings": "Paramètres de l'Application",
+        "notifications": "Notifications",
+        "darkMode": "Mode Sombre",
+        "clearCache": "Vider le Cache",
+        "clearChatDB": "Vider la Base de Données du Chat",
+        "system": "Système",
+        "updateChannel": "Canal de Mise à Jour",
+        "checkForUpdates": "Vérifier les Mises à Jour",
+        "restartApp": "Redémarrer l'Application",
+        "logout": "Déconnexion",
+        "editProfile": "Modifier le Profil",
+        "pleaseLoginFirst": "Veuillez vous connecter d'abord",
+        "avatar": "Avatar",
+        "view": "Voir",
+        "change": "Changer",
+        "uploadSuccess": "Avatar téléchargé avec succès",
+        "uploadFailed": "Échec du téléchargement de l'avatar, veuillez réessayer",
+        "confirmLogout": "Confirmer la déconnexion ?",
+        "logoutWarning": "Après la déconnexion, vous perdrez tous les brouillons",
+        "confirmClearCache": "Confirmer la suppression du cache ?",
+        "clearCacheWarning": "Cela supprimera tout le cache",
+        "confirmClearDB": "Confirmer la suppression de la base de données du chat ?",
+        "clearDBWarning": "Cela supprimera tous les enregistrements de chat",
+        "confirmRestart": "Confirmer le redémarrage de l'application ?",
+        "switchUpdateChannel": "Changer de Canal de Mise à Jour",
+        "switchChannelWarning": "Êtes-vous sûr de vouloir passer au canal {channel} ?\n\nRedémarrage de l'application requis après le changement.",
+        "alphaChannel": "Alpha (Bêta)",
+        "stableChannel": "Stable",
+        "channelChanged": "Canal de mise à jour modifié",
+        "restartRequired": "Redémarrage de l'application requis pour appliquer les modifications.",
+        "restartNow": "Redémarrer Maintenant",
+        "selectChannel": "Sélectionner le Canal",
+        "currentChannel": "Actuel : {channel}",
+        "updateAvailable": "Nouvelle mise à jour disponible !",
+        "latestVersion": "Déjà la dernière version",
+        "updateSuccess": "Mise à jour réussie",
+        "restartPrompt": "Veuillez redémarrer l'application\n(Version : {version})",
+        "updateInfo": "Informations de Mise à Jour",
+        "userIdLabel": "ID Utilisateur : ",
+        "notLoggedInUser": "Utilisateur non connecté",
+        "notLoggedIn": "Non connecté",
+        "successofsettingchatbg": "Modification de l'arrière-plan du chat terminée",
+        "failedtosettingchatbg": "Échec de la modification de l'arrière-plan du chat",
+        "changeLanguage": "Modifier la langue"
     },
-    "success": {
-      "updateSuccess": "Mise à jour réussie",
-      "passwordUpdateSuccess": "Mise à jour du mot de passe réussie",
-      "restartPrompt": "L'application va redémarrer pour appliquer les modifications"
+    "userInfo": {
+        "title": "Mes Informations",
+        "accountInfo": "Informations du Compte",
+        "editableHint": "Les éléments avec des icônes peuvent être modifiés",
+        "fields": {
+            "username": "Nom d'utilisateur",
+            "nickname": "Pseudonyme",
+            "email": "Email",
+            "userId": "ID Utilisateur",
+            "registerTime": "Date d'inscription",
+            "invitationCode": "Mon Code d'Invitation",
+            "deviceToken": "Jeton de l'Appareil",
+            "password": "Mot de Passe"
+        },
+        "edit": {
+            "editTitle": "Modifier",
+            "newField": "Nouveau",
+            "newnickname": "Nouveau Pseudonyme",
+            "currentPassword": "Mot de Passe Actuel",
+            "currentNickname": "Pseudonyme Actuel",
+            "newPassword": "Nouveau Mot de Passe",
+            "confirmPassword": "Confirmer le Nouveau Mot de Passe",
+            "confirmEdit": "Confirmer la Modification",
+            "restartWarning": "L'application redémarrera après la mise à jour réussie des informations pour appliquer les modifications",
+            "passwordRestartWarning": "L'application redémarrera après la mise à jour réussie du mot de passe pour appliquer les modifications"
+        },
+        "validation": {
+            "usernameFormat": "Le nom d'utilisateur ne peut contenir que des lettres et des chiffres",
+            "passwordFormat": "Le mot de passe doit contenir au moins 8 caractères, incluant des lettres et des chiffres",
+            "passwordMismatch": "Les mots de passe ne correspondent pas",
+            "passwordInvalid": "Le nouveau mot de passe doit contenir au moins 8 caractères, incluant des lettres et des chiffres"
+        },
+        "success": {
+            "updateSuccess": "Mise à jour réussie",
+            "passwordUpdateSuccess": "Mise à jour du mot de passe réussie",
+            "restartPrompt": "L'application va redémarrer pour appliquer les modifications"
+        },
+        "errors": {
+            "usernameExists": "Le nom d'utilisateur existe déjà",
+            "wrongPassword": "Mot de passe incorrect",
+            "currentPasswordWrong": "Le mot de passe actuel est incorrect",
+            "updateFailed": "Échec de la mise à jour"
+        }
     },
-    "errors": {
-      "usernameExists": "Le nom d'utilisateur existe déjà",
-      "wrongPassword": "Mot de passe incorrect",
-      "currentPasswordWrong": "Le mot de passe actuel est incorrect",
-      "updateFailed": "Échec de la mise à jour"
-    }
-  },
-  "login": {
-    "username": "Nom d'utilisateur",
-    "password": "Mot de passe",
-    "loginButton": "Connexion",
-    "forgetPassword": "Mot de passe oublié ?",
-    "resetPassword": "Réinitialiser le Mot de Passe",
-    "cancel": "Annuler",
-    "usernameOrEmail": "Nom d'utilisateur ou Email",
-    "loginSuccess": "Connexion réussie",
-    "loginFailed": "Échec de la connexion",
-    "offlineLogin": "Connexion Hors Ligne",
-    "serverUnavailable": "Serveur temporairement indisponible, basculement en mode hors ligne",
-    "noLocalCache": "Échec de la connexion au serveur et aucune information de connexion en cache local trouvée",
-    "resetEmailSent": "Email de réinitialisation du mot de passe envoyé",
-    "checkEmail": "Veuillez vérifier votre email",
-    "userNotFound": "Utilisateur ou email introuvable",
-    "resetFailed": "Échec de la réinitialisation du mot de passe, veuillez réessayer plus tard"
-  },
-  "register": {
-    "username": "Nom d'utilisateur",
-    "password": "Mot de passe",
-    "email": "Email",
-    "registerButton": "S'inscrire",
-    "hasAccount": "Vous avez déjà un compte ? Connexion",
-    "success": "Inscription réussie, veuillez cliquer sur le lien dans l'email pour activer votre compte",
-    "failed": "Échec de l'inscription",
-    "usernameExists": "Le nom d'utilisateur existe déjà",
-    "emailExists": "L'email existe déjà",
-    "readTermsFirst": "Veuillez d'abord lire et cliquer sur le lien",
-    "readTerms": "Lire les Conditions",
-    "agreeTerms": "J'ai lu et j'accepte les conditions",
-    "validation": {
-      "usernameFormat": "Le nom d'utilisateur ne peut contenir que des lettres et des chiffres",
-      "passwordFormat": "Le mot de passe doit contenir au moins 8 caractères, incluant des lettres et des chiffres",
-      "emailFormat": "Format d'email invalide"
-    }
-  },
-  "profile": {
-    "profileCenter": "Centre de Profil",
-    "cardWallet": "Portefeuille de Cartes",
-    "mutualFollows": "Amis",
-    "becomeProvider": "Devenir Fournisseur",
-    "contactUs": "Nous Contacter",
-    "settings": "Paramètres",
-    "help": "Aide",
-    "feedback": "Commentaires",
-    "productDetails": "Détails du Produit",
-    "kaoPuCoins": "Pièces KaoPu",
-    "secondHand": "Seconde Main",
-    "kaoPuCard": "Carte KaoPu",
-    "myQRCode": "Mon Code QR",
-    "scanQRCodeTip": "Scanner le code QR pour partager mon profil",
-    "close": "Fermer",
-    "endofpage": "Plus rien",
-    "unknowuser": "Utilisateur inconnu"
-  },
-  "userSettings": {
-    "title": "Informations du Compte",
-    "subtitle": "Les éléments avec l'icône {icon} peuvent être modifiés",
-    "notLoggedIn": "Non connecté",
-    "notLoggedInUser": "Utilisateur non connecté",
-    "fields": {
-      "username": "Nom d'utilisateur",
-      "nickname": "Pseudonyme",
-      "email": "Email",
-      "userId": "ID Utilisateur",
-      "registerTime": "Date d'inscription",
-      "invitationCode": "Mon Code d'Invitation",
-      "deviceToken": "Jeton de l'Appareil",
-      "password": "Mot de Passe"
-    }
-  },
-  "navigation": {
-    "home": "Accueil",
-    "recentMessages": "Messages",
-    "provider": "Fournisseur",
-    "profile": "Profil",
-    "admin": "Admin",
-    "secondhand": "Seconde Main"
-  },
-  "system": {
-    "healthChecking": "Vérification de l'état du système en cours...",
-    "updateSuccess": "Mise à jour réussie",
-    "updateFailed": "Échec de la mise à jour",
-    "restartApp": "Veuillez redémarrer l'application",
-    "version": "Version",
-    "confirm": "Confirmer",
-    "forceLogout": "Veuillez vous reconnecter",
-    "forceLogoutMessage": "Vous avez été forcé à vous déconnecter en raison d'une connexion sur un autre appareil",
-    "messageFrom": "Message de {nickname}",
-    "networkOffline": "Connexion réseau perdue",
-    "offlineModeEnabled": "Basculement en mode hors ligne",
-    "networkRestored": "Connexion réseau restaurée",
-    "dataReadError": "Impossible de lire les données locales",
-    "restartAppPrompt": "Veuillez redémarrer l'application",
-    "dontturnoffdivice": "Veuillez ne pas fermer cette application"
-  },
-  "validation": {
-    "usernameRequired": "Le nom d'utilisateur ne peut pas être vide",
-    "passwordRequired": "Le mot de passe ne peut pas être vide",
-    "usernameOrEmailRequired": "Le nom d'utilisateur ou l'email ne peut pas être vide"
-  },
-  "api": {
-    "loginFailed": "Échec de la connexion",
-    "userBanned": "L'utilisateur a été banni, veuillez contacter l'administrateur",
-    "emailNotValidated": "Email utilisateur non vérifié, veuillez vérifier votre lien de vérification d'email et vous reconnecter",
-    "userNotFound": "Veuillez vérifier votre nom d'utilisateur ou mot de passe",
-    "passwordNotMatch": "Veuillez vérifier votre nom d'utilisateur ou mot de passe",
-    "deviceVerificationFailed": "Échec de la vérification de l'appareil, veuillez vous reconnecter",
-    "loginExpired": "Connexion expirée, veuillez vous reconnecter",
-    "networkError": "Erreur de connexion réseau",
-    "serverConnectionFailed": "Impossible de se connecter au serveur",
-    "requestTimeout": "Délai d'attente de la requête",
-    "scorecardFailtobecreated": "Échec de la création de la carte de score"
-  },
-  "network": {
-    "offlineMode": "Mode Hors Ligne",
-    "tapToReconnect": "Appuyez pour essayer de vous reconnecter",
-    "connecting": "Tentative de connexion au serveur...",
-    "pleaseWait": "Veuillez patienter",
-    "backOnline": "De retour en ligne",
-    "connectionSuccess": "Connexion réussie",
-    "stillOffline": "Toujours en mode hors ligne",
-    "connectionFailed": "Échec de la connexion au serveur, veuillez vérifier votre réseau",
-    "networkConnectionError": "Erreur de connexion réseau"
-  },
-  "socialrelationship": {
-    "mutuallike": "Amis",
-    "fans": "Fans",
-    "Like": "J'aime",
-    "Followable": "Suivre",
-    "CancelFollow": "Suivi",
-    "timeoffollow": "Date : ",
-    "Nofollower": "Aucun abonné",
-    "Nolike": "Vous ne suivez aucun utilisateur",
-    "Nofriend": "Vous n'avez aucun suivi mutuel"
-  },
-  "common": {
-    "error": "Erreur",
-    "confirm": "Confirmer",
-    "loading": "Chargement...",
-    "cancel": "Annuler",
-    "delete": "Supprimer",
-    "edit": "Modifier",
-    "add": "Ajouter",
-    "tip": "Conseil",
-    "success": "Succès",
-    "warning": "Avertissement",
-    "confirmDelete": "Confirmer la suppression",
-    "gotIt": "Compris"
-  },
-  "secondhand": {
-    "loginToViewProductDetails": "Connectez-vous pour voir les détails du produit",
-    "imageLoadFailed": "Échec du chargement de l'image"
-  },
-  "message": {
-    "sendmessage": "Envoyer un message",
-    "restoremessage": "Restaurer le message",
-    "typehere": "Tapez votre message ici",
-    "writeinmessagehistory": "Chargement des messages"
-  },
-  "mainContent": {
-    "navigation": {
-      "eatFood": "Manger",
-      "drink": "Boire",
-      "placeholder": "Espace réservé",
-      "button1": "Bouton 1",
-      "button2": "Bouton 2",
-      "button3": "Bouton 3",
-      "button4": "Bouton 4",
-      "button5": "Bouton 5",
-      "button6": "Bouton 6",
-      "button7": "Bouton 7",
-      "button8": "Bouton 8",
-      "button9": "Bouton 9",
-      "button10": "Bouton 10",
-      "button11": "Bouton 11",
-      "button12": "Bouton 12"
+    "login": {
+        "username": "Nom d'utilisateur",
+        "password": "Mot de passe",
+        "loginButton": "Connexion",
+        "forgetPassword": "Mot de passe oublié ?",
+        "resetPassword": "Réinitialiser le Mot de Passe",
+        "cancel": "Annuler",
+        "usernameOrEmail": "Nom d'utilisateur ou Email",
+        "loginSuccess": "Connexion réussie",
+        "loginFailed": "Échec de la connexion",
+        "offlineLogin": "Connexion Hors Ligne",
+        "serverUnavailable": "Serveur temporairement indisponible, basculement en mode hors ligne",
+        "noLocalCache": "Échec de la connexion au serveur et aucune information de connexion en cache local trouvée",
+        "resetEmailSent": "Email de réinitialisation du mot de passe envoyé",
+        "checkEmail": "Veuillez vérifier votre email",
+        "userNotFound": "Utilisateur ou email introuvable",
+        "resetFailed": "Échec de la réinitialisation du mot de passe, veuillez réessayer plus tard"
     },
-    "more": "Plus",
-    "collapse": "Réduire",
-    "moreButtons": "Plus de boutons",
-    "adjustButtons": "Ajuster les positions des boutons",
-    "done": "Terminé",
-    "dragTip": "Glissez les icônes pour ajuster les positions, les trois premiers boutons sont affichés dans la navigation principale",
-    "location": {
-      "grenoble": "Grenoble"
+    "register": {
+        "username": "Nom d'utilisateur",
+        "password": "Mot de passe",
+        "email": "Email",
+        "registerButton": "S'inscrire",
+        "hasAccount": "Vous avez déjà un compte ? Connexion",
+        "success": "Inscription réussie, veuillez cliquer sur le lien dans l'email pour activer votre compte",
+        "failed": "Échec de l'inscription",
+        "usernameExists": "Le nom d'utilisateur existe déjà",
+        "emailExists": "L'email existe déjà",
+        "readTermsFirst": "Veuillez d'abord lire et cliquer sur le lien",
+        "readTerms": "Lire les Conditions",
+        "agreeTerms": "J'ai lu et j'accepte les conditions",
+        "validation": {
+            "usernameFormat": "Le nom d'utilisateur ne peut contenir que des lettres et des chiffres",
+            "passwordFormat": "Le mot de passe doit contenir au moins 8 caractères, incluant des lettres et des chiffres",
+            "emailFormat": "Format d'email invalide"
+        }
     },
-    "search": {
-      "placeholder": "Rechercher"
+    "profile": {
+        "profileCenter": "Centre de Profil",
+        "cardWallet": "Portefeuille de Cartes",
+        "mutualFollows": "Amis",
+        "becomeProvider": "Devenir Fournisseur",
+        "contactUs": "Nous Contacter",
+        "settings": "Paramètres",
+        "help": "Aide",
+        "feedback": "Commentaires",
+        "productDetails": "Détails du Produit",
+        "kaoPuCoins": "Pièces KaoPu",
+        "secondHand": "Seconde Main",
+        "kaoPuCard": "Carte KaoPu",
+        "myQRCode": "Mon Code QR",
+        "scanQRCodeTip": "Scanner le code QR pour partager mon profil",
+        "close": "Fermer",
+        "endofpage": "Plus rien",
+        "unknowuser": "Utilisateur inconnu"
     },
-    "scanner": {
-      "scanResult": "Résultat du Scan",
-      "type": "Type",
-      "data": "Données",
-      "cameraPermissionTitle": "Autorisation de caméra requise",
-      "cameraPermissionMessage": "Veuillez autoriser l'accès à la caméra dans les paramètres",
-      "scanInstruction": "Placez le code QR dans le cadre"
-    },
-    "discounts": {
-      "title": "Réductions %",
-      "beefNoodles": "Nouilles de Bœuf de Lanzhou",
-      "noodleCategory": "Nourriture·Nouilles",
-      "twentyPercent": "20% de Réduction",
-      "jiuRamen": "Jiu Ramen"
-    }
-  },
-  "provider": {
-    "main": {
-      "completeStoreInfo": "Veuillez d'abord compléter les informations du magasin. Si non complétées, les utilisateurs ne pourront pas rechercher votre magasin",
-      "overview": "Vue d'Ensemble Générale",
-      "totalActivations": "Total des Activations de Carte de Score",
-      "totalViews": "Total des Vues",
-      "overallTrend": "Tendance Générale",
-      "totalMembers": "Total des Membres",
-      "totalRevenue": "Chiffre d'Affaires Total",
-      "moreData": "Plus de Données Générales",
-      "avgOrderAmount": "Montant Moyen de Commande",
-      "totalVisitors": "Total des Visiteurs",
-      "couponsIssued": "Total des Coupons Émis",
-      "couponsUsed": "Total des Coupons Utilisés",
-      "recentActivity": "Activité Récente"
-    },
-    "stats": {
-      "yoy": "Annuel",
-      "mom": "Mensuel"
-    },
-    "period": {
-      "overview": "Vue d'ensemble",
-      "today": "Aujourd'hui",
-      "yesterday": "Hier",
-      "week": "7 Derniers Jours",
-      "month": "30 Derniers Jours",
-      "periodData": "Données de Période",
-      "todayData": "Données d'Aujourd'hui",
-      "yesterdayData": "Données d'Hier",
-      "weekData": "Données de Cette Semaine",
-      "monthData": "Données de Ce Mois",
-      "asOfToday": "À ce jour",
-      "completeStats": "Statistiques Complètes",
-      "last7Days": "7 derniers jours",
-      "last30Days": "30 derniers jours",
-      "scorecardUsage": "Utilisation de la Carte de Score",
-      "visits": "Visites",
-      "visitors": "Visiteurs",
-      "monday": "Lun",
-      "tuesday": "Mar",
-      "wednesday": "Mer",
-      "thursday": "Jeu",
-      "friday": "Ven",
-      "saturday": "Sam",
-      "sunday": "Dim"
-    },
-    "customer": {
-      "searchCustomer": "Rechercher un Client",
-      "sortBy": "Trier Par",
-      "sortTime": "Heure",
-      "sortPoints": "Points",
-      "sortName": "Nom",
-      "totalPoints": "Points Totaux",
-      "averagePoints": "Points Moyens",
-      "customerCount": "Nombre de Clients",
-      "activatedCustomers": "Clients Ayant Activé la Carte de Score",
-      "usageCustomers": "Clients Utilisant la Carte de Score",
-      "activated": "Activé",
-      "used": "Utilisé",
-      "lastUsed": "Dernière Utilisation",
-      "points": "Points",
-      "viewAll": "Voir Tout",
-      "scorecardDetail": "Détail de la Carte de Score",
-      "customerInfo": "Informations Client",
-      "name": "Nom",
-      "activationTime": "Heure d'Activation",
-      "pointsHistory": "Historique des Points",
-      "firstActivationReward": "Récompense de Première Activation",
-      "purchaseReward": "Récompense d'Achat",
-      "couponRedemption": "Échange de Coupon",
-      "actions": "Actions",
-      "addPoints": "Ajouter des Points",
-      "redeemReward": "Échanger une Récompense",
-      "sendNotification": "Envoyer une Notification"
-    },
-    "search": {
-      "placeholder": "Rechercher café, thé au lait...",
-      "noResults": "Aucun résultat de recherche",
-      "tryAdjusting": "Essayez d'ajuster les critères de recherche",
-      "advancedSearch": "Recherche avancée",
-      "searchKeyword": "Mot-clé de recherche",
-      "resultLimit": "Limite de résultats",
-      "searchWeight": "Poids de recherche (0.0 - 1.0)",
-      "alphaValue": "Valeur Alpha",
-      "categoryFilter": "Filtre de catégorie",
-      "applySearch": "Appliquer la recherche"
-    },
-    "categories": {
-      "coffee": "Café",
-      "dessert": "Dessert",
-      "meal": "Repas",
-      "snack": "Collation",
-      "milkTea": "Thé au Lait"
-    },
-    "notifications": {
-      "getRecommendationsFailed": "Échec de l'obtention des recommandations",
-      "tryAgainLater": "Veuillez réessayer plus tard"
-    },
-    "activity": {
-      "today": "Aujourd'hui",
-      "yesterday": "Hier",
-      "scorecardActivated": "{{name}} a activé la carte de score",
-      "newReview": "Reçu 1 nouveau commentaire",
-      "newRegularCustomers": "Ajouté {{count}} nouveaux clients réguliers",
-      "couponsIssued": "Émis {{count}} coupons aujourd'hui"
-    },
-    "drawer": {
-      "businessManagement": "Gestion d'Entreprise",
-      "home": "Accueil",
-      "growth": "Croissance",
-      "orders": "Commandes",
-      "more": "Plus"
-    },
-    "more": {
-      "title": "Plus d'Options",
-      "editBusinessInfo": "Modifier les Informations de l'Entreprise",
-      "businessSettings": "Paramètres de l'Entreprise",
-      "businessHours": "Heures d'Ouverture",
-      "menuManagement": "Gestion du Menu et des Produits",
-      "scorecardManagement": "Gestion de la Carte de Score",
-      "eventSettings": "Paramètres d'Événement",
-      "voucherManagement": "Gestion des Bons",
-      "appSettings": "Paramètres de l'Application",
-      "notifications": "Notifications",
-      "darkMode": "Mode Sombre",
-      "language": "Langue",
-      "helpSupport": "Aide et Support",
-      "help": "Aide",
-      "feedback": "Commentaires",
-      "contactUs": "Nous Contacter",
-      "about": "À Propos",
-      "accountManagement": "Gestion du Compte",
-      "accountSettings": "Paramètres du Compte",
-      "privacy": "Paramètres de Confidentialité",
-      "logout": "Déconnexion"
-    }
-  },
-  "secondhandSearch": {
-    "search": {
-      "placeholder": "Rechercher des articles d'occasion...",
-      "filter": "Filtrer",
-      "reset": "Réinitialiser",
-      "searchButton": "Rechercher",
-      "searchFailed": "Échec de la recherche",
-      "searchFailedMessage": "Veuillez réessayer plus tard",
-      "noResults": "Aucun article associé trouvé",
-      "noResultsSubText": "Essayez d'autres termes de recherche ou critères de filtre"
-    },
-    "sorting": {
-      "title": "Trier par",
-      "default": "Par défaut",
-      "newest": "Plus récent",
-      "mostLiked": "Plus aimé",
-      "priceAsc": "Prix : Croissant",
-      "priceDesc": "Prix : Décroissant"
-    },
-    "timeRange": {
-      "title": "Date de publication",
-      "unlimited": "Illimitée",
-      "1day": "Dans 1 jour",
-      "1week": "Dans 1 semaine",
-      "1month": "Dans 1 mois",
-      "6months": "Dans 6 mois"
-    },
-    "priceRange": {
-      "title": "Gamme de prix",
-      "minPrice": "Prix min",
-      "maxPrice": "Prix max"
-    },
-    "categories": {
-      "title": "Catégorie de produit",
-      "electronics": "Électronique",
-      "furniture": "Mobilier",
-      "clothing": "Vêtements",
-      "books": "Livres",
-      "others": "Autres"
-    },
-    "product": {
-      "group": "Groupe de produits",
-      "updateFailed": "Échec de la mise à jour",
-      "imageLoadFailed": "Échec du chargement de l'image"
-    }
-  },
-  "secondhandMain": {
-    "searchPlaceholder": "Rechercher des articles d'occasion...",
-    "myLikes": "Mes J'aime",
-    "productList": "Liste des produits d'occasion",
-    "productGroup": "Groupe de produits",
-    "singleProduct": "Produit d'occasion unique",
-    "multipleProducts": "Produits d'occasion multiples",
-    "warning": "Avertissement",
-    "notImplemented": "Pas encore implémenté"
-  },
-  "secondhandPublish": {
-    "fields": {
-      "uploadImages": "Télécharger des images",
-      "productName": "Nom du produit",
-      "contactMethod": "Méthode de contact",
-      "productPrice": "Prix du produit",
-      "negotiablePrice": "Accepter la négociation de prix",
-      "productDescription": "Description du produit",
-      "descriptionPreview": "Aperçu de la description du produit"
-    },
-    "preview": {
-      "negotiable": "Négociable",
-      "category": "Catégorie de produit",
-      "condition": "État du produit",
-      "contact": "Méthode de contact",
-      "unknown": "Inconnu"
-    },
-    "categories": {
-      "furniture": "Mobilier et Décoration",
-      "electronics": "Électronique",
-      "fashion": "Mode et Vêtements",
-      "beauty": "Beauté et Soins",
-      "books": "Livres et Médias",
-      "sports": "Sport et Plein Air",
-      "crafts": "Artisanat",
-      "others": "Autres"
-    },
-    "conditions": {
-      "productStatus": "État du produit",
-      "brandNew": "Tout neuf",
-      "slightWear": "Légère usure",
-      "normalWear": "Usure normale",
-      "damaged": "Endommagé",
-      "incomplete": "Incomplet"
-    },
-    "options": {
-      "yes": "Oui",
-      "no": "Non"
-    },
-    "placeholders": {
-      "selectCategory": "Sélectionner la catégorie de produit",
-      "selectCondition": "Sélectionner l'état du produit"
-    },
-    "actions": {
-      "preview": "Aperçu",
-      "saveDraft": "Sauvegarder le brouillon",
-      "publish": "Publier"
-    },
-    "permissions": {
-      "photoTitle": "Autorisation photo requise",
-      "photoMessage": "Veuillez autoriser l'accès aux photos dans les paramètres",
-      "goSettings": "Aller aux paramètres"
-    },
-    "status": {
-      "online": "En ligne",
-      "offline": "Hors ligne"
-    },
-    "errors": {
-      "imageSelectionFailed": "Échec de la sélection d'image",
-      "aspectRatioTooLarge": "Ratio d'aspect de l'image {{index}} trop grand, veuillez sélectionner à nouveau",
-      "imageTooSmall": "Taille de l'image {{index}} inférieure à 10kb, ne répond pas aux exigences",
-      "saveDraftFailed": "Échec de la sauvegarde du brouillon"
-    },
-    "validation": {
-      "nameRequired": "Veuillez entrer le nom du produit",
-      "priceRequired": "Veuillez entrer le prix du produit",
-      "descriptionRequired": "Veuillez entrer la description du produit",
-      "categoryRequired": "Veuillez sélectionner la catégorie de produit",
-      "conditionRequired": "Veuillez sélectionner l'état du produit",
-      "contactRequired": "Veuillez entrer la méthode de contact",
-      "imageRequired": "Veuillez télécharger au moins une image"
-    },
-    "success": {
-      "title": "Succès",
-      "draftSaved": "Brouillon sauvegardé"
-    }
-  },
-  "secondhandMultiple": {
-    "titles": {
-      "multiplePublish": "Publication en lot",
-      "supplementMode": "Mode complément"
-    },
-    "banner": {
-      "supplementModeText": "Actuellement en mode complément, vous ne pouvez que modifier les brouillons existants et renvoyer.",
-      "groupIdInfo": "Tous les produits seront ajoutés au même groupe de produits (ID de groupe : {groupId}).",
-      "addNewProductTip": "Pour ajouter de nouveaux produits, veuillez d'abord quitter le mode complément.",
-      "exitSupplementMode": "Quitter le mode complément"
-    },
-    "coverImage": {
-      "changeCover": "Changer l'image de couverture",
-      "addCover": "Ajouter une image de couverture",
-      "imageError": "Taille de l'image inférieure à 10kb, ne répond pas aux exigences"
-    },
-    "groupInfo": {
-      "groupName": "Nom du groupe",
-      "groupDescription": "Description du groupe",
-      "groupNameRequired": "Veuillez entrer le nom du groupe",
-      "groupDescriptionRequired": "Veuillez entrer la description du groupe"
-    },
-    "publishing": {
-      "publishingText": "Publication ({current}/{total})",
-      "progressPercentage": "{percentage}%",
-      "publishAll": "Publier tout",
-      "supplement": "Complément",
-      "noDraftsToPublish": "Aucun brouillon à publier"
-    },
-    "dialogs": {
-      "confirmDelete": "Êtes-vous sûr de vouloir supprimer ce brouillon ?",
-      "supplementModeHelp": "En mode complément, vous ne pouvez que modifier les brouillons existants et renvoyer.\n\nSi vous devez ajouter de nouveaux produits :\n1. Veuillez d'abord quitter le mode complément\n2. Après avoir quitté, les brouillons existants seront envoyés à un nouveau groupe de produits",
-      "exitSupplementModeTitle": "Quitter le mode complément",
-      "exitSupplementModeMessage": "Explication du mode complément :\n\n1. Ce mode garantit que tous les produits sont publiés dans le même groupe de produits\n2. Dans ce mode, vous ne pouvez que modifier les brouillons existants et renvoyer\n3. Après avoir quitté ce mode :\n   - Vous pouvez ajouter de nouveaux produits\n   - Tous les brouillons existants seront envoyés à un nouveau groupe de produits\n\nÊtes-vous sûr de vouloir quitter le mode complément ?",
-      "confirmExit": "Confirmer la sortie"
-    },
-    "results": {
-      "allSuccess": "Tous les produits publiés",
-      "partialSuccess": "Publication réussie de {success} produits, échec de {failed}\n\nEntré en mode complément, les publications suivantes seront ajoutées au même groupe de produits (ID de groupe : {groupId})",
-      "publishError": "Erreur survenue pendant la publication",
-      "getGroupIdFailed": "Échec de l'obtention de l'ID de groupe",
-      "uploadCoverFailed": "Échec du téléchargement de l'image de couverture"
-    }
-  },
-  "admin": {
-    "dashboard": {
-      "title": "Panneau d'Administration",
-      "stats": {
-        "pendingProviderRequests": "Demandes de Fournisseur en Attente",
-        "pendingReports": "Rapports en Attente",
-        "newUsersToday": "Nouveaux Utilisateurs Aujourd'hui"
-      }
-    },
-    "userManagement": {
-      "title": "Gestion des Utilisateurs",
-      "searchUsers": "Rechercher des Utilisateurs",
-      "userManagement": "Gestion des Utilisateurs",
-      "userDetail": "Détail de l'Utilisateur"
-    },
-    "providerManagement": {
-      "title": "Gestion des Fournisseurs",
-      "providerRequests": "Demandes de Fournisseur",
-      "providerAudit": "Audit de Fournisseur",
-      "providerList": "Liste des Fournisseurs",
-      "providerRequestDetail": "Détail de la Demande de Fournisseur",
-      "providerAuditDetail": "Détail de l'Audit de Fournisseur"
-    },
-    "systemManagement": {
-      "title": "Gestion du Système",
-      "reportHandling": "Traitement des Rapports",
-      "dataStatistics": "Statistiques de Données",
-      "systemNotifications": "Notifications Système"
+    "userSettings": {
+        "title": "Informations du Compte",
+        "subtitle": "Les éléments avec l'icône {icon} peuvent être modifiés",
+        "notLoggedIn": "Non connecté",
+        "notLoggedInUser": "Utilisateur non connecté",
+        "fields": {
+            "username": "Nom d'utilisateur",
+            "nickname": "Pseudonyme",
+            "email": "Email",
+            "userId": "ID Utilisateur",
+            "registerTime": "Date d'inscription",
+            "invitationCode": "Mon Code d'Invitation",
+            "deviceToken": "Jeton de l'Appareil",
+            "password": "Mot de Passe"
+        }
     },
     "navigation": {
-      "userSearch": "Rechercher des Utilisateurs",
-      "providerRequests": "Demandes de Fournisseur",
-      "providerAudit": "Audit de Fournisseur"
+        "home": "Accueil",
+        "recentMessages": "Messages",
+        "provider": "Fournisseur",
+        "profile": "Profil",
+        "admin": "Admin",
+        "secondhand": "Seconde Main"
+    },
+    "system": {
+        "healthChecking": "Vérification de l'état du système en cours...",
+        "updateSuccess": "Mise à jour réussie",
+        "updateFailed": "Échec de la mise à jour",
+        "restartApp": "Veuillez redémarrer l'application",
+        "version": "Version",
+        "confirm": "Confirmer",
+        "forceLogout": "Veuillez vous reconnecter",
+        "forceLogoutMessage": "Vous avez été forcé à vous déconnecter en raison d'une connexion sur un autre appareil",
+        "messageFrom": "Message de {nickname}",
+        "networkOffline": "Connexion réseau perdue",
+        "offlineModeEnabled": "Basculement en mode hors ligne",
+        "networkRestored": "Connexion réseau restaurée",
+        "dataReadError": "Impossible de lire les données locales",
+        "restartAppPrompt": "Veuillez redémarrer l'application",
+        "dontturnoffdivice": "Veuillez ne pas fermer cette application"
+    },
+    "validation": {
+        "usernameRequired": "Le nom d'utilisateur ne peut pas être vide",
+        "passwordRequired": "Le mot de passe ne peut pas être vide",
+        "usernameOrEmailRequired": "Le nom d'utilisateur ou l'email ne peut pas être vide"
+    },
+    "api": {
+        "loginFailed": "Échec de la connexion",
+        "userBanned": "L'utilisateur a été banni, veuillez contacter l'administrateur",
+        "emailNotValidated": "Email utilisateur non vérifié, veuillez vérifier votre lien de vérification d'email et vous reconnecter",
+        "userNotFound": "Veuillez vérifier votre nom d'utilisateur ou mot de passe",
+        "passwordNotMatch": "Veuillez vérifier votre nom d'utilisateur ou mot de passe",
+        "deviceVerificationFailed": "Échec de la vérification de l'appareil, veuillez vous reconnecter",
+        "loginExpired": "Connexion expirée, veuillez vous reconnecter",
+        "networkError": "Erreur de connexion réseau",
+        "serverConnectionFailed": "Impossible de se connecter au serveur",
+        "requestTimeout": "Délai d'attente de la requête",
+        "scorecardFailtobecreated": "Échec de la création de la carte de score"
+    },
+    "network": {
+        "offlineMode": "Mode Hors Ligne",
+        "tapToReconnect": "Appuyez pour essayer de vous reconnecter",
+        "connecting": "Tentative de connexion au serveur...",
+        "pleaseWait": "Veuillez patienter",
+        "backOnline": "De retour en ligne",
+        "connectionSuccess": "Connexion réussie",
+        "stillOffline": "Toujours en mode hors ligne",
+        "connectionFailed": "Échec de la connexion au serveur, veuillez vérifier votre réseau",
+        "networkConnectionError": "Erreur de connexion réseau"
+    },
+    "socialrelationship": {
+        "mutuallike": "Amis",
+        "fans": "Fans",
+        "Like": "J'aime",
+        "Followable": "Suivre",
+        "CancelFollow": "Suivi",
+        "timeoffollow": "Date : ",
+        "Nofollower": "Aucun abonné",
+        "Nolike": "Vous ne suivez aucun utilisateur",
+        "Nofriend": "Vous n'avez aucun suivi mutuel"
+    },
+    "common": {
+        "error": "Erreur",
+        "confirm": "Confirmer",
+        "loading": "Chargement...",
+        "cancel": "Annuler",
+        "delete": "Supprimer",
+        "edit": "Modifier",
+        "add": "Ajouter",
+        "tip": "Conseil",
+        "success": "Succès",
+        "warning": "Avertissement",
+        "confirmDelete": "Confirmer la suppression",
+        "gotIt": "Compris"
+    },
+    "secondhand": {
+        "loginToViewProductDetails": "Connectez-vous pour voir les détails du produit",
+        "imageLoadFailed": "Échec du chargement de l'image"
+    },
+    "message": {
+        "sendmessage": "Envoyer un message",
+        "restoremessage": "Restaurer le message",
+        "typehere": "Tapez votre message ici",
+        "writeinmessagehistory": "Chargement des messages"
+    },
+    "mainContent": {
+        "navigation": {
+            "eatFood": "Manger",
+            "drink": "Boire",
+            "placeholder": "Espace réservé",
+            "button1": "Bouton 1",
+            "button2": "Bouton 2",
+            "button3": "Bouton 3",
+            "button4": "Bouton 4",
+            "button5": "Bouton 5",
+            "button6": "Bouton 6",
+            "button7": "Bouton 7",
+            "button8": "Bouton 8",
+            "button9": "Bouton 9",
+            "button10": "Bouton 10",
+            "button11": "Bouton 11",
+            "button12": "Bouton 12"
+        },
+        "more": "Plus",
+        "collapse": "Réduire",
+        "moreButtons": "Plus de boutons",
+        "adjustButtons": "Ajuster les positions des boutons",
+        "done": "Terminé",
+        "dragTip": "Glissez les icônes pour ajuster les positions, les trois premiers boutons sont affichés dans la navigation principale",
+        "location": {
+            "grenoble": "Grenoble"
+        },
+        "search": {
+            "placeholder": "Rechercher"
+        },
+        "scanner": {
+            "scanResult": "Résultat du Scan",
+            "type": "Type",
+            "data": "Données",
+            "cameraPermissionTitle": "Autorisation de caméra requise",
+            "cameraPermissionMessage": "Veuillez autoriser l'accès à la caméra dans les paramètres",
+            "scanInstruction": "Placez le code QR dans le cadre"
+        },
+        "discounts": {
+            "title": "Réductions %",
+            "beefNoodles": "Nouilles de Bœuf de Lanzhou",
+            "noodleCategory": "Nourriture·Nouilles",
+            "twentyPercent": "20% de Réduction",
+            "jiuRamen": "Jiu Ramen"
+        }
+    },
+    "provider": {
+        "main": {
+            "completeStoreInfo": "Veuillez d'abord compléter les informations du magasin. Si non complétées, les utilisateurs ne pourront pas rechercher votre magasin",
+            "overview": "Vue d'Ensemble Générale",
+            "totalActivations": "Total des Activations de Carte de Score",
+            "totalViews": "Total des Vues",
+            "overallTrend": "Tendance Générale",
+            "totalMembers": "Total des Membres",
+            "totalRevenue": "Chiffre d'Affaires Total",
+            "moreData": "Plus de Données Générales",
+            "avgOrderAmount": "Montant Moyen de Commande",
+            "totalVisitors": "Total des Visiteurs",
+            "couponsIssued": "Total des Coupons Émis",
+            "couponsUsed": "Total des Coupons Utilisés",
+            "recentActivity": "Activité Récente"
+        },
+        "stats": {
+            "yoy": "Annuel",
+            "mom": "Mensuel"
+        },
+        "period": {
+            "overview": "Vue d'ensemble",
+            "today": "Aujourd'hui",
+            "yesterday": "Hier",
+            "week": "7 Derniers Jours",
+            "month": "30 Derniers Jours",
+            "periodData": "Données de Période",
+            "todayData": "Données d'Aujourd'hui",
+            "yesterdayData": "Données d'Hier",
+            "weekData": "Données de Cette Semaine",
+            "monthData": "Données de Ce Mois",
+            "asOfToday": "À ce jour",
+            "completeStats": "Statistiques Complètes",
+            "last7Days": "7 derniers jours",
+            "last30Days": "30 derniers jours",
+            "scorecardUsage": "Utilisation de la Carte de Score",
+            "visits": "Visites",
+            "visitors": "Visiteurs",
+            "monday": "Lun",
+            "tuesday": "Mar",
+            "wednesday": "Mer",
+            "thursday": "Jeu",
+            "friday": "Ven",
+            "saturday": "Sam",
+            "sunday": "Dim"
+        },
+        "customer": {
+            "searchCustomer": "Rechercher un Client",
+            "sortBy": "Trier Par",
+            "sortTime": "Heure",
+            "sortPoints": "Points",
+            "sortName": "Nom",
+            "totalPoints": "Points Totaux",
+            "averagePoints": "Points Moyens",
+            "customerCount": "Nombre de Clients",
+            "activatedCustomers": "Clients Ayant Activé la Carte de Score",
+            "usageCustomers": "Clients Utilisant la Carte de Score",
+            "activated": "Activé",
+            "used": "Utilisé",
+            "lastUsed": "Dernière Utilisation",
+            "points": "Points",
+            "viewAll": "Voir Tout",
+            "scorecardDetail": "Détail de la Carte de Score",
+            "customerInfo": "Informations Client",
+            "name": "Nom",
+            "activationTime": "Heure d'Activation",
+            "pointsHistory": "Historique des Points",
+            "firstActivationReward": "Récompense de Première Activation",
+            "purchaseReward": "Récompense d'Achat",
+            "couponRedemption": "Échange de Coupon",
+            "actions": "Actions",
+            "addPoints": "Ajouter des Points",
+            "redeemReward": "Échanger une Récompense",
+            "sendNotification": "Envoyer une Notification"
+        },
+        "search": {
+            "placeholder": "Rechercher café, thé au lait...",
+            "noResults": "Aucun résultat de recherche",
+            "tryAdjusting": "Essayez d'ajuster les critères de recherche",
+            "advancedSearch": "Recherche avancée",
+            "searchKeyword": "Mot-clé de recherche",
+            "resultLimit": "Limite de résultats",
+            "searchWeight": "Poids de recherche (0.0 - 1.0)",
+            "alphaValue": "Valeur Alpha",
+            "categoryFilter": "Filtre de catégorie",
+            "applySearch": "Appliquer la recherche"
+        },
+        "categories": {
+            "coffee": "Café",
+            "dessert": "Dessert",
+            "meal": "Repas",
+            "snack": "Collation",
+            "milkTea": "Thé au Lait"
+        },
+        "notifications": {
+            "getRecommendationsFailed": "Échec de l'obtention des recommandations",
+            "tryAgainLater": "Veuillez réessayer plus tard"
+        },
+        "activity": {
+            "today": "Aujourd'hui",
+            "yesterday": "Hier",
+            "scorecardActivated": "{{name}} a activé la carte de score",
+            "newReview": "Reçu 1 nouveau commentaire",
+            "newRegularCustomers": "Ajouté {{count}} nouveaux clients réguliers",
+            "couponsIssued": "Émis {{count}} coupons aujourd'hui"
+        },
+        "drawer": {
+            "businessManagement": "Gestion d'Entreprise",
+            "home": "Accueil",
+            "growth": "Croissance",
+            "orders": "Commandes",
+            "more": "Plus"
+        },
+        "more": {
+            "title": "Plus d'Options",
+            "editBusinessInfo": "Modifier les Informations de l'Entreprise",
+            "businessSettings": "Paramètres de l'Entreprise",
+            "businessHours": "Heures d'Ouverture",
+            "menuManagement": "Gestion du Menu et des Produits",
+            "scorecardManagement": "Gestion de la Carte de Score",
+            "eventSettings": "Paramètres d'Événement",
+            "voucherManagement": "Gestion des Bons",
+            "appSettings": "Paramètres de l'Application",
+            "notifications": "Notifications",
+            "darkMode": "Mode Sombre",
+            "language": "Langue",
+            "helpSupport": "Aide et Support",
+            "help": "Aide",
+            "feedback": "Commentaires",
+            "contactUs": "Nous Contacter",
+            "about": "À Propos",
+            "accountManagement": "Gestion du Compte",
+            "accountSettings": "Paramètres du Compte",
+            "privacy": "Paramètres de Confidentialité",
+            "logout": "Déconnexion"
+        }
+    },
+    "secondhandSearch": {
+        "search": {
+            "placeholder": "Rechercher des articles d'occasion...",
+            "filter": "Filtrer",
+            "reset": "Réinitialiser",
+            "searchButton": "Rechercher",
+            "searchFailed": "Échec de la recherche",
+            "searchFailedMessage": "Veuillez réessayer plus tard",
+            "noResults": "Aucun article associé trouvé",
+            "noResultsSubText": "Essayez d'autres termes de recherche ou critères de filtre"
+        },
+        "sorting": {
+            "title": "Trier par",
+            "default": "Par défaut",
+            "newest": "Plus récent",
+            "mostLiked": "Plus aimé",
+            "priceAsc": "Prix : Croissant",
+            "priceDesc": "Prix : Décroissant"
+        },
+        "timeRange": {
+            "title": "Date de publication",
+            "unlimited": "Illimitée",
+            "1day": "Dans 1 jour",
+            "1week": "Dans 1 semaine",
+            "1month": "Dans 1 mois",
+            "6months": "Dans 6 mois"
+        },
+        "priceRange": {
+            "title": "Gamme de prix",
+            "minPrice": "Prix min",
+            "maxPrice": "Prix max"
+        },
+        "categories": {
+            "title": "Catégorie de produit",
+            "electronics": "Électronique",
+            "furniture": "Mobilier",
+            "clothing": "Vêtements",
+            "books": "Livres",
+            "others": "Autres"
+        },
+        "product": {
+            "group": "Groupe de produits",
+            "updateFailed": "Échec de la mise à jour",
+            "imageLoadFailed": "Échec du chargement de l'image"
+        }
+    },
+    "secondhandMain": {
+        "searchPlaceholder": "Rechercher des articles d'occasion...",
+        "myLikes": "Mes J'aime",
+        "productList": "Liste des produits d'occasion",
+        "productGroup": "Groupe de produits",
+        "singleProduct": "Produit d'occasion unique",
+        "multipleProducts": "Produits d'occasion multiples",
+        "warning": "Avertissement",
+        "notImplemented": "Pas encore implémenté"
+    },
+    "secondhandPublish": {
+        "fields": {
+            "uploadImages": "Télécharger des images",
+            "productName": "Nom du produit",
+            "contactMethod": "Méthode de contact",
+            "productPrice": "Prix du produit",
+            "negotiablePrice": "Accepter la négociation de prix",
+            "productDescription": "Description du produit",
+            "descriptionPreview": "Aperçu de la description du produit"
+        },
+        "preview": {
+            "negotiable": "Négociable",
+            "category": "Catégorie de produit",
+            "condition": "État du produit",
+            "contact": "Méthode de contact",
+            "unknown": "Inconnu"
+        },
+        "categories": {
+            "furniture": "Mobilier et Décoration",
+            "electronics": "Électronique",
+            "fashion": "Mode et Vêtements",
+            "beauty": "Beauté et Soins",
+            "books": "Livres et Médias",
+            "sports": "Sport et Plein Air",
+            "crafts": "Artisanat",
+            "others": "Autres"
+        },
+        "conditions": {
+            "productStatus": "État du produit",
+            "brandNew": "Tout neuf",
+            "slightWear": "Légère usure",
+            "normalWear": "Usure normale",
+            "damaged": "Endommagé",
+            "incomplete": "Incomplet"
+        },
+        "options": {
+            "yes": "Oui",
+            "no": "Non"
+        },
+        "placeholders": {
+            "selectCategory": "Sélectionner la catégorie de produit",
+            "selectCondition": "Sélectionner l'état du produit"
+        },
+        "actions": {
+            "preview": "Aperçu",
+            "saveDraft": "Sauvegarder le brouillon",
+            "publish": "Publier"
+        },
+        "permissions": {
+            "photoTitle": "Autorisation photo requise",
+            "photoMessage": "Veuillez autoriser l'accès aux photos dans les paramètres",
+            "goSettings": "Aller aux paramètres"
+        },
+        "status": {
+            "online": "En ligne",
+            "offline": "Hors ligne"
+        },
+        "errors": {
+            "imageSelectionFailed": "Échec de la sélection d'image",
+            "aspectRatioTooLarge": "Ratio d'aspect de l'image {{index}} trop grand, veuillez sélectionner à nouveau",
+            "imageTooSmall": "Taille de l'image {{index}} inférieure à 10kb, ne répond pas aux exigences",
+            "saveDraftFailed": "Échec de la sauvegarde du brouillon"
+        },
+        "validation": {
+            "nameRequired": "Veuillez entrer le nom du produit",
+            "priceRequired": "Veuillez entrer le prix du produit",
+            "descriptionRequired": "Veuillez entrer la description du produit",
+            "categoryRequired": "Veuillez sélectionner la catégorie de produit",
+            "conditionRequired": "Veuillez sélectionner l'état du produit",
+            "contactRequired": "Veuillez entrer la méthode de contact",
+            "imageRequired": "Veuillez télécharger au moins une image"
+        },
+        "success": {
+            "title": "Succès",
+            "draftSaved": "Brouillon sauvegardé"
+        }
+    },
+    "secondhandMultiple": {
+        "titles": {
+            "multiplePublish": "Publication en lot",
+            "supplementMode": "Mode complément"
+        },
+        "banner": {
+            "supplementModeText": "Actuellement en mode complément, vous ne pouvez que modifier les brouillons existants et renvoyer.",
+            "groupIdInfo": "Tous les produits seront ajoutés au même groupe de produits (ID de groupe : {groupId}).",
+            "addNewProductTip": "Pour ajouter de nouveaux produits, veuillez d'abord quitter le mode complément.",
+            "exitSupplementMode": "Quitter le mode complément"
+        },
+        "coverImage": {
+            "changeCover": "Changer l'image de couverture",
+            "addCover": "Ajouter une image de couverture",
+            "imageError": "Taille de l'image inférieure à 10kb, ne répond pas aux exigences"
+        },
+        "groupInfo": {
+            "groupName": "Nom du groupe",
+            "groupDescription": "Description du groupe",
+            "groupNameRequired": "Veuillez entrer le nom du groupe",
+            "groupDescriptionRequired": "Veuillez entrer la description du groupe"
+        },
+        "publishing": {
+            "publishingText": "Publication ({current}/{total})",
+            "progressPercentage": "{percentage}%",
+            "publishAll": "Publier tout",
+            "supplement": "Complément",
+            "noDraftsToPublish": "Aucun brouillon à publier"
+        },
+        "dialogs": {
+            "confirmDelete": "Êtes-vous sûr de vouloir supprimer ce brouillon ?",
+            "supplementModeHelp": "En mode complément, vous ne pouvez que modifier les brouillons existants et renvoyer.\n\nSi vous devez ajouter de nouveaux produits :\n1. Veuillez d'abord quitter le mode complément\n2. Après avoir quitté, les brouillons existants seront envoyés à un nouveau groupe de produits",
+            "exitSupplementModeTitle": "Quitter le mode complément",
+            "exitSupplementModeMessage": "Explication du mode complément :\n\n1. Ce mode garantit que tous les produits sont publiés dans le même groupe de produits\n2. Dans ce mode, vous ne pouvez que modifier les brouillons existants et renvoyer\n3. Après avoir quitté ce mode :\n   - Vous pouvez ajouter de nouveaux produits\n   - Tous les brouillons existants seront envoyés à un nouveau groupe de produits\n\nÊtes-vous sûr de vouloir quitter le mode complément ?",
+            "confirmExit": "Confirmer la sortie"
+        },
+        "results": {
+            "allSuccess": "Tous les produits publiés",
+            "partialSuccess": "Publication réussie de {success} produits, échec de {failed}\n\nEntré en mode complément, les publications suivantes seront ajoutées au même groupe de produits (ID de groupe : {groupId})",
+            "publishError": "Erreur survenue pendant la publication",
+            "getGroupIdFailed": "Échec de l'obtention de l'ID de groupe",
+            "uploadCoverFailed": "Échec du téléchargement de l'image de couverture"
+        }
+    },
+    "admin": {
+        "dashboard": {
+            "title": "Panneau d'Administration",
+            "stats": {
+                "pendingProviderRequests": "Demandes de Fournisseur en Attente",
+                "pendingReports": "Rapports en Attente",
+                "newUsersToday": "Nouveaux Utilisateurs Aujourd'hui"
+            }
+        },
+        "userManagement": {
+            "title": "Gestion des Utilisateurs",
+            "searchUsers": "Rechercher des Utilisateurs",
+            "userManagement": "Gestion des Utilisateurs",
+            "userDetail": "Détail de l'Utilisateur"
+        },
+        "providerManagement": {
+            "title": "Gestion des Fournisseurs",
+            "providerRequests": "Demandes de Fournisseur",
+            "providerAudit": "Audit de Fournisseur",
+            "providerList": "Liste des Fournisseurs",
+            "providerRequestDetail": "Détail de la Demande de Fournisseur",
+            "providerAuditDetail": "Détail de l'Audit de Fournisseur"
+        },
+        "systemManagement": {
+            "title": "Gestion du Système",
+            "reportHandling": "Traitement des Rapports",
+            "dataStatistics": "Statistiques de Données",
+            "systemNotifications": "Notifications Système"
+        },
+        "navigation": {
+            "userSearch": "Rechercher des Utilisateurs",
+            "providerRequests": "Demandes de Fournisseur",
+            "providerAudit": "Audit de Fournisseur"
+        }
     }
-  }
 }
