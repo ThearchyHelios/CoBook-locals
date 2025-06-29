@@ -1,1 +1,19 @@
-{}
+{
+    "prologin": {
+        "Notlogin": "Bitte melden Sie sich zunächst an",
+        "DeviceId": "Gerät-ID: "
+    },
+    "scorecard": {
+        "VIP": "VIP",
+        "score": "Deine Punkte",
+        "maxscore": "Maximaler Punktestand:",
+        "pointsRequired": "Sie benötigen {points} Punkte",
+        "noDescription": "Ohne detaillierte Beschreibung",
+        "achieved": "Abgeschlossen",
+        "notAchieved": "nicht erreicht"
+    },
+    "settings": {
+        "title": "Einstellungen",
+        "changeLanguage": "Sprache ändern"
+    }
+}
