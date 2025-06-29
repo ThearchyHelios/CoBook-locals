@@ -30,6 +30,8 @@
         "myInfo": "Meine Nachrichten",
         "appSettings": "Anwendungs-Einstellungen",
         "checkForUpdates": "Überprüfen Sie auf Updates",
-        "editProfile": "Persönliche Informationen bearbeiten"
+        "editProfile": "Persönliche Informationen bearbeiten",
+        "logout": "Abmelden",
+        "logoutWarning": "Nachdem Sie sich abgemeldet haben, verlieren Sie alle Entwürfe"
     }
 }
