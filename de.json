@@ -10,10 +10,26 @@
         "pointsRequired": "Sie benötigen {points} Punkte",
         "noDescription": "Ohne detaillierte Beschreibung",
         "achieved": "Abgeschlossen",
-        "notAchieved": "nicht erreicht"
+        "notAchieved": "nicht erreicht",
+        "redeemNow": "Sofort umtauschen"
     },
     "settings": {
         "title": "Einstellungen",
-        "changeLanguage": "Sprache ändern"
+        "changeLanguage": "Sprache ändern",
+        "mySubscriptions": "Meine Abonnements",
+        "changeChatBackground": "Chat-Hintergrund ändern",
+        "notifications": "Benachrichtigungs-Einstellungen",
+        "darkMode": "Dunkelmodus",
+        "clearCache": "Cache leeren",
+        "clearChatDB": "Chat-Datenbank leeren",
+        "system": "System",
+        "updateChannel": "Aktualisieren Sie den Kanal",
+        "restartApp": "Die Anwendung neu starten",
+        "userIdLabel": "Benutzer-ID: ",
+        "personalSettings": "Persönliche Einstellungen",
+        "myInfo": "Meine Nachrichten",
+        "appSettings": "Anwendungs-Einstellungen",
+        "checkForUpdates": "Überprüfen Sie auf Updates",
+        "editProfile": "Persönliche Informationen bearbeiten"
     }
 }
