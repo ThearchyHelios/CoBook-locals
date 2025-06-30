@@ -236,14 +236,24 @@
   },
   "socialrelationship": {
     "mutuallike": "好友",
-    "fans": "粉丝",
+    "followers": {
+      "followers": "粉丝",
+      "followersCount": "粉丝数"
+    },
+    "following": {
+      "following": "关注",
+      "followingCount": "关注数",
+      "noFollowing": "暂无关注"
+    },
     "Like": "点赞",
     "Followable": "关注",
     "CancelFollow": "已关注",
     "timeoffollow": "关注时间 ",
     "Nofollower" : "暂无粉丝",
-     "Nolike" : "暂无关注",
-    "Nofriend" : "暂无互关"
+    "Nolike" : "暂无关注",
+    "Nofriend" : "暂无互关",
+    "cancelFollow": "取消关注",
+    "Date": "添加时间"
   },
   "common": {
     "error": "错误",
@@ -316,6 +326,26 @@
     }
   },
    "provider": {
+    "latitude": "纬度",
+    "longitude": "经度",
+    "dialog": {
+      "submitSuccess": "提交成功",
+      "submitFailed": "提交失败",
+      "title": "提交申请"
+    },
+    "info": {
+      "title": "店铺信息",
+      "storeName": "店铺名称",
+      "address": "店铺地址",
+      "phone": "店铺电话",
+      "email": "店铺邮箱",
+      "description": "店铺描述",
+      "location": "店铺位置",
+      "rejectReason": "驳回原因",
+      "submitTime": "提交时间",
+      "updateTime": "更新时间",
+      "notFilled": "未填写"
+    },
     "main": {
       "completeStoreInfo": "请先完善店铺信息，如果不完善店铺信息，将无法被用户搜索到",
       "overview": "总体概览",
@@ -331,9 +361,22 @@
       "couponsUsed": "优惠券总使用",
       "recentActivity": "最近动态"
     },
+    "map": {
+      "cancel": "取消",
+      "confirm": "确定",
+      "useMyLocation": "使用我的当前位置"
+    },
     "stats": {
       "yoy": "同比",
       "mom": "环比"
+    },
+    "status": {
+      "pending": "待审核",
+      "approved": "已通过",
+      "rejected": "已驳回",
+      "reviewing": "审核中",
+      "title": "状态",
+      "unknown": "未知"
     },
     "period": {
       "overview": "概览",
@@ -450,6 +493,36 @@
       "accountSettings": "账户设置",
       "privacy": "隐私设置",
       "logout": "退出登录"
+    },
+    "request": {
+      "title": "申请成为服务商",
+      "subtitle": "请填写以下信息",
+      "storeName": "店铺名称",
+      "address": "店铺地址",
+      "phone": "店铺电话",
+      "email": "店铺邮箱",
+      "description": "店铺描述",
+      "location": "店铺位置",
+      "rejectReason": "驳回原因",
+      "submitTime": "提交时间",
+      "updateTime": "更新时间",
+      "notFilled": "未填写",
+      "cancel": "取消",
+      "submit": "提交",
+      "editApplication": "编辑申请",
+      "latitude": "纬度",
+      "longitude": "经度",
+      "resubmit": "重新提交"
+    },
+    "validation": {
+      "addressRequired": "请输入店铺地址",
+      "descriptionRequired": "请输入店铺描述",
+      "emailInvalid": "请输入有效的邮箱地址",
+      "emailRequired": "请输入店铺邮箱",
+      "locationRequired": "请选择店铺位置",
+      "phoneInvalid": "请输入有效的手机号码",
+      "phoneRequired": "请输入店铺电话",
+      "storeNameRequired": "请输入店铺名称"
     }
   },
   "secondhandSearch": {
@@ -554,7 +627,9 @@
     "actions": {
       "preview": "预览",
       "saveDraft": "保存草稿",
-      "publish": "发布"
+      "publish": "发布",
+      "deleteDraft": "删除草稿",
+      "leave": "离开"
     },
     "permissions": {
       "photoTitle": "需要照片权限",
@@ -569,7 +644,9 @@
       "imageSelectionFailed": "图片选择失败",
       "aspectRatioTooLarge": "第{{index}}张图片长宽比例过大，请重新选择",
       "imageTooSmall": "第{{index}}张图片大小小于10kb, 不符合要求",
-      "saveDraftFailed": "保存草稿失败"
+      "saveDraftFailed": "保存草稿失败",
+      "sendpicturefailed": "发送图片失败",
+      "failed": "失败"
     },
     "validation": {
       "nameRequired": "请输入商品名称",
@@ -583,6 +660,13 @@
     "success": {
       "title": "成功",
       "draftSaved": "草稿已保存"
+    },
+    "notification": {
+      "areusuretoleave": "确定要离开吗？",
+      "loadtheunfinishedPublish": "加载未完成的发布",
+      "savethedraft": "保存草稿",
+      "takeitseriously": "确认要离开吗？",
+      "unfinishedPublish": "未完成的发布"
     }
   },
   "secondhandMultiple": {
