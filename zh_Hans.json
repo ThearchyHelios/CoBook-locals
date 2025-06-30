@@ -1,7 +1,7 @@
-{  
-  "prologin":{
-     "Notlogin": "请先登录",
-     "DeviceId": "设备ID : "
+{
+  "prologin": {
+    "Notlogin": "请先登录",
+    "DeviceId": "设备ID : "
   },
   "scorecard": {
     "VIP": "VIP",
@@ -60,72 +60,72 @@
     "userIdLabel": "用户ID: ",
     "notLoggedInUser": "未登录用户",
     "notLoggedIn": "未登录",
-    "successofsettingchatbg":"聊天背景设置成功",
-    "failedtosettingchatbg":"图片压缩失败，请稍后重试",
-    "changeLanguage":"修改语言",
-    "showTranslationKeys":"显示翻译键值",
-    "showTranslationKeysDesc":"开发者模式：显示国际化键值而不是翻译文本",
-    "LanguageSelector":{
-      "title":"语言选择",
-      "local":"本地",
-      "community":"社区",
-      "language":"语言",
-      "languageCode":"语言代码",
-      "loadLocalLanguageFailed":"加载本地语言失败",
-      "loadCommunityLanguageFailed":"加载社区语言失败",
-      "loadLanguageFailed":"加载语言失败，请检查网络连接后重试",
-      "reloadLocalLanguage":"重新加载本地语言",
-      "reloadLocalLanguageMessage":"您当前正在使用 {{languageName}}，是否要重新加载此本地语言包？",
-      "reloadLocalLanguageConfirm":"重新加载",
-      "switchToLocalLanguage":"切换到内置语言",
-      "switchToLocalLanguageMessage":"是否要切换到内置语言 {{languageName}}？",
-      "switchToLocalLanguageConfirm":"切换",
-      "updateCurrentLanguage":"更新当前语言",
-      "updateCurrentLanguageMessage":"您当前正在使用 {{languageName}}，是否要重新下载并更新此语言的翻译？",
-      "updateCurrentLanguageConfirm":"更新",
-      "downloadNewLanguage":"下载新语言",
-      "downloadNewLanguageMessage":"{{languageName}} 尚未下载。是否要下载此语言的翻译文件并切换？",
-      "downloadNewLanguageConfirm":"下载并切换",
-      "unsupportedLocalLanguage":"不支持的本地语言: {{languageCode}}",
-      "languageSwitchedSuccess":"语言已切换",
-      "languageSwitchedSuccessMessage":"已成功切换到内置语言 {{languageName}}",
-      "languageSwitchedSuccessConfirm":"确定",
-      "reloadLocalLanguageSuccess":"重新加载完成",
-      "reloadLocalLanguageSuccessMessage":"本地语言包 {{languageName}} 已重新加载",
-      "updateLanguageSuccess":"更新完成",
-      "updateLanguageSuccessMessage":"{{languageName}} 的翻译已成功更新",
-      "switchLanguage":"切换语言",
-      "switchLanguageMessage":"是否要切换到 {{languageName}}？",
-      "switchLanguageConfirm":"切换",
-      "downloadLanguageSuccess":"下载完成",
-      "downloadLanguageSuccessMessage":"{{languageName}} 的翻译已成功下载",
-      "downloadLanguageFailed":"下载失败，请检查网络连接后重试",
-      "downloadLanguageFailedMessage":"无法下载 {{languageName}} 语言文件，请稍后重试",
-      "languageOperationFailed":"语言操作失败，请重试",
-      "languageOperationFailedMessage":"语言操作失败，请重试",
-      "loadingLanguageList":"正在加载语言列表...",
-      "translationSource":"翻译类型",
-      "localTranslationPackage":"内置语言",
-      "communityTranslationPackage":"社区翻译语言",
-      "localTranslationPackageDescription":"内置翻译说明",
-      "communityTranslationPackageDescription":"社区翻译说明",
-      "localTranslationPackageDescription.blue":"蓝色：内置语言（完整可用）",
-      "localTranslationPackageDescription.localTranslationPackage":"内置语言已内置在应用中，无需下载",
-      "localTranslationPackageDescription.offline":"可离线使用，加载速度快",
-      "localTranslationPackageDescription.maintainedByDevelopmentTeam":"翻译内容由开发团队维护",
-      "communityTranslationPackageDescription.green":"绿色：翻译完成度 ≥ 90%",
-      "communityTranslationPackageDescription.orange":"橙色：翻译完成度 ≥ 70%",
-      "communityTranslationPackageDescription.red":"红色：翻译完成度 < 70%",
-      "communityTranslationPackageDescription.communityTranslationPackage":"社区翻译语言需要联网下载",
-      "communityTranslationPackageDescription.maintainedByCommunity":"翻译内容由社区贡献者维护",
-      "localLanguagePackage":"内置语言",
-      "communityLanguagePackage":"社区语言",
-      "cachedLanguage":"已缓存的语言",
-      "cachedLanguageDescription":"这些语言已下载到本地，可以离线使用",
-      "loaded":"语言已加载",
-      "localPackage":"内置语言",
-      "fuzzy":"模糊 (翻译不完整)",
-      "refreshing":"正在刷新语言列表..."
+    "successofsettingchatbg": "聊天背景设置成功",
+    "failedtosettingchatbg": "图片压缩失败，请稍后重试",
+    "changeLanguage": "修改语言",
+    "showTranslationKeys": "显示翻译键值",
+    "showTranslationKeysDesc": "开发者模式：显示国际化键值而不是翻译文本",
+    "LanguageSelector": {
+      "title": "语言选择",
+      "local": "本地",
+      "community": "社区",
+      "language": "语言",
+      "languageCode": "语言代码",
+      "loadLocalLanguageFailed": "加载本地语言失败",
+      "loadCommunityLanguageFailed": "加载社区语言失败",
+      "loadLanguageFailed": "加载语言失败，请检查网络连接后重试",
+      "reloadLocalLanguage": "重新加载本地语言",
+      "reloadLocalLanguageMessage": "您当前正在使用 {{languageName}}，是否要重新加载此本地语言包？",
+      "reloadLocalLanguageConfirm": "重新加载",
+      "switchToLocalLanguage": "切换到内置语言",
+      "switchToLocalLanguageMessage": "是否要切换到内置语言 {{languageName}}？",
+      "switchToLocalLanguageConfirm": "切换",
+      "updateCurrentLanguage": "更新当前语言",
+      "updateCurrentLanguageMessage": "您当前正在使用 {{languageName}}，是否要重新下载并更新此语言的翻译？",
+      "updateCurrentLanguageConfirm": "更新",
+      "downloadNewLanguage": "下载新语言",
+      "downloadNewLanguageMessage": "{{languageName}} 尚未下载。是否要下载此语言的翻译文件并切换？",
+      "downloadNewLanguageConfirm": "下载并切换",
+      "unsupportedLocalLanguage": "不支持的本地语言: {{languageCode}}",
+      "languageSwitchedSuccess": "语言已切换",
+      "languageSwitchedSuccessMessage": "已成功切换到内置语言 {{languageName}}",
+      "languageSwitchedSuccessConfirm": "确定",
+      "reloadLocalLanguageSuccess": "重新加载完成",
+      "reloadLocalLanguageSuccessMessage": "本地语言包 {{languageName}} 已重新加载",
+      "updateLanguageSuccess": "更新完成",
+      "updateLanguageSuccessMessage": "{{languageName}} 的翻译已成功更新",
+      "switchLanguage": "切换语言",
+      "switchLanguageMessage": "是否要切换到 {{languageName}}？",
+      "switchLanguageConfirm": "切换",
+      "downloadLanguageSuccess": "下载完成",
+      "downloadLanguageSuccessMessage": "{{languageName}} 的翻译已成功下载",
+      "downloadLanguageFailed": "下载失败，请检查网络连接后重试",
+      "downloadLanguageFailedMessage": "无法下载 {{languageName}} 语言文件，请稍后重试",
+      "languageOperationFailed": "语言操作失败，请重试",
+      "languageOperationFailedMessage": "语言操作失败，请重试",
+      "loadingLanguageList": "正在加载语言列表...",
+      "translationSource": "翻译类型",
+      "localTranslationPackage": "内置语言",
+      "communityTranslationPackage": "社区翻译语言",
+      "localTranslationPackageDescription": "内置翻译说明",
+      "communityTranslationPackageDescription": "社区翻译说明",
+      "localTranslationPackageDescription.blue": "蓝色：内置语言（完整可用）",
+      "localTranslationPackageDescription.localTranslationPackage": "内置语言已内置在应用中，无需下载",
+      "localTranslationPackageDescription.offline": "可离线使用，加载速度快",
+      "localTranslationPackageDescription.maintainedByDevelopmentTeam": "翻译内容由开发团队维护",
+      "communityTranslationPackageDescription.green": "绿色：翻译完成度 ≥ 90%",
+      "communityTranslationPackageDescription.orange": "橙色：翻译完成度 ≥ 70%",
+      "communityTranslationPackageDescription.red": "红色：翻译完成度 < 70%",
+      "communityTranslationPackageDescription.communityTranslationPackage": "社区翻译语言需要联网下载",
+      "communityTranslationPackageDescription.maintainedByCommunity": "翻译内容由社区贡献者维护",
+      "localLanguagePackage": "内置语言",
+      "communityLanguagePackage": "社区语言",
+      "cachedLanguage": "已缓存的语言",
+      "cachedLanguageDescription": "这些语言已下载到本地，可以离线使用",
+      "loaded": "语言已加载",
+      "localPackage": "内置语言",
+      "fuzzy": "模糊 (翻译不完整)",
+      "refreshing": "正在刷新语言列表..."
     }
   },
   "userInfo": {
@@ -135,7 +135,7 @@
     "fields": {
       "username": "用户名",
       "nickname": "昵称",
-      "email": "邮箱", 
+      "email": "邮箱",
       "userId": "用户ID",
       "registerTime": "注册时间",
       "invitationCode": "我的邀请码",
@@ -148,7 +148,7 @@
       "newnickname": "新昵称",
       "currentPassword": "当前密码",
       "currentNickname": "当前昵称",
-      "newPassword": "新密码", 
+      "newPassword": "新密码",
       "confirmPassword": "确认新密码",
       "confirmEdit": "确认修改",
       "restartWarning": "信息更新成功后将会重启应用以应用更改",
@@ -313,9 +313,9 @@
     "Followable": "关注",
     "CancelFollow": "已关注",
     "timeoffollow": "关注时间 ",
-    "Nofollower" : "暂无粉丝",
-    "Nolike" : "暂无关注",
-    "Nofriend" : "暂无互关",
+    "Nofollower": "暂无粉丝",
+    "Nolike": "暂无关注",
+    "Nofriend": "暂无互关",
     "cancelFollow": "取消关注",
     "Date": "添加时间"
   },
@@ -331,7 +331,18 @@
     "success": "成功",
     "warning": "警告",
     "confirmDelete": "确认删除",
-    "gotIt": "知道了"
+    "gotIt": "知道了",
+    "yes": "是",
+    "no": "否",
+    "weekday": {
+      "monday": "周一",
+      "tuesday": "周二",
+      "wednesday": "周三",
+      "thursday": "周四",
+      "friday": "周五",
+      "saturday": "周六",
+      "sunday": "周日"
+    }
   },
   "secondhand": {
     "loginToViewProductDetails": "登录后才能查看商品详情",
@@ -389,7 +400,7 @@
       "jiuRamen": "玖拉面"
     }
   },
-   "provider": {
+  "provider": {
     "latitude": "纬度",
     "longitude": "经度",
     "dialog": {
@@ -587,6 +598,89 @@
       "phoneInvalid": "请输入有效的手机号码",
       "phoneRequired": "请输入店铺电话",
       "storeNameRequired": "请输入店铺名称"
+    },
+    "detail": {
+      "operatingHours": "营业时间",
+      "notOpen": "不营业",
+      "title": "商家详情",
+      "description": "简介",
+      "scorecard": "点卡",
+      "review": "评论",
+      "description2": "简介2 (测试)"
+    },
+    "scorecard": {
+      "title": "积分卡",
+      "loading": "正在加载积分卡信息...",
+      "providerTermsConditions": {
+        "title": "积分卡服务条款",
+        "description1": "1. 积分卡一旦开通，将可以在商家处累积积分。",
+        "description2": "2. 您可以通过积分兑换商家提供的奖励和优惠。",
+        "description3": "3. 积分有效期、兑换规则和可兑换商品由商家决定。",
+        "description4": "4. 若发现商家存在违规或欺诈行为，请向平台举报。",
+        "description5": "5. 平台仅提供积分系统工具，不对商家提供的积分兑换商品承担责任。",
+        "description6": "6. 您的个人信息将被用于积分卡服务，但不会被用于其他用途。",
+        "description7": "7. 您可以随时查看积分明细和兑换历史。"
+      },
+      "error": {
+        "title": "错误",
+        "message": "获取积分卡信息失败，请稍后重试",
+        "noData": "无法加载积分卡信息",
+        "providerNotActivatedScorecard": "该商家暂未开通积分卡功能"
+      },
+      "activation": {
+        "success": {
+          "title": "成功",
+          "message": "积分卡开通成功！"
+        },
+        "failed": {
+          "title": "错误",
+          "message": "积分卡开通失败，请稍后重试"
+        }
+      },
+      "redeemableProducts": "可兑换项目",
+      "userNotActivatedCurrentProviderScorecard": "您还没有该商家的积分卡",
+      "userNotActivatedCurrentProviderScorecardSubText": "开通积分卡即可累积积分并兑换商家提供的奖励",
+      "activateScorecard": "开通积分卡",
+      "points": "积分",
+      "activationRequired": "需开通积分卡",
+      "noRedeemableProducts": "暂无可兑换项目",
+      "activationModalTitle": "积分卡开通",
+      "userTermsConditions": {
+        "title": "用户积分卡服务条款",
+        "description1": "1. 积分卡一旦开通，将可以在商家处累积积分。",
+        "description2": "2. 您可以通过积分兑换商家提供的奖励和优惠。",
+        "description3": "3. 积分有效期、兑换规则和可兑换商品由商家决定。",
+        "description4": "4. 若发现商家存在违规或欺诈行为，请向平台举报。",
+        "description5": "5. 平台仅提供积分系统工具，不对商家提供的积分兑换商品承担责任。",
+        "description6": "6. 您的个人信息将被用于积分卡服务，但不会被用于其他用途。",
+        "description7": "7. 您可以随时查看积分明细和兑换历史。"
+      },
+      "userActivationConfirm": {
+        "title": "确认开通积分卡",
+        "message": "您即将为{{providerName}}开通积分卡，开通后即可累积积分并兑换奖励。"
+      },
+      "pointsNotEnough": "积分不足",
+      "redeem": "立即兑换"
+    },
+    "voucher": {
+      "title": "靠谱券",
+      "attention": "注意",
+      "redeem": {
+        "title": "兑换",
+        "requestConfirm": "确定要兑换此商品吗？",
+        "failed": {
+          "title": "错误",
+          "message": "兑换失败，请稍后重试",
+          "noVoucher": "该商品暂无兑换券信息"
+        },
+        "success": {
+          "title": "成功",
+          "message": "兑换成功！"
+        }
+      },
+      "detail": {
+        "title": "券详情"
+      }
     }
   },
   "secondhandSearch": {
@@ -790,7 +884,29 @@
       "title": "用户管理",
       "searchUsers": "用户搜索",
       "userManagement": "用户管理",
-      "userDetail": "用户详情"
+      "userDetail": {
+        "title": "用户详情",
+        "userID": "用户ID",
+        "username": "用户名",
+        "userPassword": "用户密码",
+        "userEmail": "用户邮箱",
+        "userRegisterTime": "用户注册时间",
+        "userSubscribeUntil": "用户订阅截止时间",
+        "userInvitationCode": "用户邀请码",
+        "userIsBanned": "用户是否封禁",
+        "userIsAdmin": "用户是否为管理员",
+        "userIsProvider": "用户是否为商家",
+        "userOnetimeCount": "用户单次使用次数",
+        "userAgreeCondition": "用户是否同意协议",
+        "cardID": "用户卡片ID",
+        "userEmailValidated": "用户邮箱是否已验证",
+        "deviceToken": "用户设备Token",
+        "userVerificationCode": "用户临时验证码",
+        "userLongitude": "用户的经度",
+        "userLatitude": "用户的纬度",
+        "unknown": "未知"
+      },
+      "userDetailTitle": "用户详情"
     },
     "providerManagement": {
       "title": "商户管理",
@@ -810,6 +926,94 @@
       "userSearch": "用户搜索",
       "providerRequests": "商户申请",
       "providerAudit": "商户更新审核"
+    },
+    "auditDetail": {
+      "status": {
+        "pending": "待审核",
+        "approved": "已通过",
+        "rejected": "已拒绝",
+        "unknown": "未知状态"
+      },
+      "informationChanged": "信息已变更",
+      "originalData": "原数据",
+      "valueNotSet": "未设置",
+      "noImage": "无图片",
+      "updateData": "更新数据",
+      "loadFailed": "加载失败，未找到相关审核信息",
+      "title": "商户更新审核",
+      "noProviderName": "未提供商家名称",
+      "noProviderAddress": "未提供地址",
+      "auditInfo": "审核信息",
+      "auditID": "审核编号",
+      "providerID": "商户ID",
+      "submitTime": "提交时间",
+      "updateTime": "更新时间",
+      "auditComment": "审核意见",
+      "changeComparison": "变更对比",
+      "clickItemToExpand": "点击项目可展开查看详情",
+      "providerLogo": "商家图标",
+      "providerImage": "商家照片",
+      "providerAddress": "商家地址",
+      "providerContactName": "联系人",
+      "providerContactPhone": "联系电话",
+      "providerEmail": "电子邮箱",
+      "providerLatitude": "位置坐标",
+      "providerDescription": "商家描述",
+      "reviewGuide": {
+        "title": "审核指南",
+        "description": "请仔细审核商户提交的更新信息，确保内容符合平台规范。",
+        "description1": "已变更的内容会默认展开并高亮显示",
+        "description2": "检查图片是否清晰且与商户相关",
+        "description3": "确认联系信息是否真实有效",
+        "description4": "审核商户描述是否合规、无误导性信息",
+        "description5": "若拒绝审核，请务必提供明确的拒绝原因"
+      },
+      "rejectReason": "拒绝原因",
+      "rejectReasonInput": "请输入拒绝原因",
+      "updateType": "更新类型",
+      "updateTypeValue": "商户信息更新",
+      "noAudit": "暂无商户信息更新审核"
+    },
+    "providerRequestDetail": {
+      "status": {
+        "title": "状态",
+        "pending": "未审核",
+        "reviewing": "审核中",
+        "approved": "已通过",
+        "rejected": "已拒绝",
+        "unknown": "未知状态"
+      },
+      "startReview": "开始审核",
+      "approve": "审核通过",
+      "reject": "审核拒绝",
+      "loadFailed": "加载失败",
+      "applicantInfo": "申请人信息",
+      "userID": "用户ID",
+      "userNickname": "昵称",
+      "providerInfo": "商户信息",
+      "providerName": "商户名称",
+      "providerAddress": "商户地址",
+      "providerTelephone": "商户电话",
+      "providerEmail": "商户邮箱",
+      "providerIntro": "商户简介",
+      "providerLatitude": "商户位置",
+      "applyInfo": "申请信息",
+      "applyTime": "申请时间",
+      "lastUpdate": "最后更新",
+      "rejectReason": "拒绝原因",
+      "rejectReasonInput": "请输入拒绝原因",
+      "title": "商户申请详情",
+      "updateStatus": {
+        "title": "更新申请状态",
+        "description": "请选择操作：",
+        "reviewing": "正在审核",
+        "approved": "审核通过",
+        "rejected": "审核拒绝"
+      }
     }
+  },
+  "unknown": {
+    "provider": "未知商户",
+    "user": "未知用户"
   }
 }
