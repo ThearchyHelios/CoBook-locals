@@ -55,7 +55,7 @@
         "updateAvailable": "Nouvelle mise à jour disponible !",
         "latestVersion": "Déjà la dernière version",
         "updateSuccess": "Mise à jour réussie",
-        "restartPrompt": "Veuillez redémarrer l'application\n(Version : {version})",
+        "restartPrompt": "Veuillez redémarrer l'application\n(Version : {{version}})",
         "updateInfo": "Informations de Mise à Jour",
         "userIdLabel": "ID Utilisateur : ",
         "notLoggedInUser": "Utilisateur non connecté",
@@ -73,7 +73,8 @@
             "language": "Langue",
             "loadLocalLanguageFailed": "Échec du chargement de la langue locale",
             "reloadLocalLanguage": "Recharger la langue locale",
-            "reloadLocalLanguageMessage": "Vous utilisez actuellement {{languageName}}, voulez-vous recharger ce package de langue locale ?"
+            "reloadLocalLanguageMessage": "Vous utilisez actuellement {{languageName}}, voulez-vous recharger ce package de langue locale ?",
+            "reloadLocalLanguageConfirm": "Recharger"
         }
     },
     "userInfo": {
