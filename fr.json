@@ -44,7 +44,7 @@
         "clearDBWarning": "Cela supprimera tous les enregistrements de chat",
         "confirmRestart": "Confirmer le redémarrage de l'application ?",
         "switchUpdateChannel": "Changer de Canal de Mise à Jour",
-        "switchChannelWarning": "Êtes-vous sûr de vouloir passer au canal {channel} ?\n\nRedémarrage de l'application requis après le changement.",
+        "switchChannelWarning": "Êtes-vous sûr de vouloir passer au canal {{channel}} ?\n\nRedémarrage de l'application requis après le changement.",
         "alphaChannel": "Alpha (Bêta)",
         "stableChannel": "Stable",
         "channelChanged": "Canal de mise à jour modifié",
@@ -62,7 +62,19 @@
         "notLoggedIn": "Non connecté",
         "successofsettingchatbg": "Modification de l'arrière-plan du chat terminée",
         "failedtosettingchatbg": "Échec de la modification de l'arrière-plan du chat",
-        "changeLanguage": "Modifier la langue"
+        "changeLanguage": "Modifier la langue",
+        "LanguageSelector": {
+            "title": "Choix de langue",
+            "languageCode": "code de langue",
+            "loadCommunityLanguageFailed": "Échec du chargement de la langue communautaire",
+            "loadLanguageFailed": "Chargement de la langue échoué, veuillez vérifier la connexion réseau et réessayer",
+            "local": "Local",
+            "community": "Communauté",
+            "language": "Langue",
+            "loadLocalLanguageFailed": "Échec du chargement de la langue locale",
+            "reloadLocalLanguage": "Recharger la langue locale",
+            "reloadLocalLanguageMessage": "Vous utilisez actuellement {{languageName}}, voulez-vous recharger ce package de langue locale ?"
+        }
     },
     "userInfo": {
         "title": "Mes Informations",
