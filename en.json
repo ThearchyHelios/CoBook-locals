@@ -646,7 +646,8 @@
             "aspectRatioTooLarge": "Image {{index}} aspect ratio too large, please select again",
             "imageTooSmall": "Image {{index}} size less than 10kb, does not meet requirements",
             "saveDraftFailed": "Save draft failed",
-            "sendpicturefailed": "Failed to send image"
+            "sendpicturefailed": "Failed to send image",
+            "uploadFailed": "Upload failed, please try again later"
         },
         "validation": {
             "nameRequired": "Please enter product name",
