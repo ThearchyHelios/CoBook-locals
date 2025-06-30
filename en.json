@@ -243,7 +243,18 @@
         "timeoffollow": "Date : ",
         "Nofollower": "No follower",
         "Nolike": "You don't follow any users",
-        "Nofriend": "You don't have any mutual follow"
+        "Nofriend": "You don't have any mutual follow",
+        "followers": {
+            "followers": "Followers",
+            "followersCount": "Followers count"
+        },
+        "following": {
+            "following": "Following",
+            "noFollowing": "No following",
+            "followingCount": "Follow count"
+        },
+        "Date": "Add time",
+        "cancelFollow": "Unfollow"
     },
     "common": {
         "error": "Error",
@@ -450,6 +461,69 @@
             "accountSettings": "Account Settings",
             "privacy": "Privacy Settings",
             "logout": "Logout"
+        },
+        "latitude": "Latitude",
+        "info": {
+            "title": "Provider information",
+            "updateTime": "Last updated time",
+            "storeName": "Provider Name",
+            "address": "Provider address",
+            "phone": "Provider phone number",
+            "email": "Provider email address",
+            "description": "Provider description",
+            "location": "Provider location",
+            "rejectReason": "Reason for rejection",
+            "submitTime": "Submission time",
+            "notFilled": "Not filled in"
+        },
+        "request": {
+            "title": "Apply to become a service provider",
+            "email": "Provider email address",
+            "editApplication": "Edit application",
+            "longitude": "Longitude",
+            "subtitle": "Please fill in the following information",
+            "storeName": "Provider Name",
+            "address": "Provider address",
+            "phone": "Provider phone number",
+            "description": "Provider description",
+            "location": "Provider location",
+            "rejectReason": "Reason for rejection",
+            "submitTime": "Submission time",
+            "updateTime": "Last updated time",
+            "notFilled": "Not filled in",
+            "cancel": "Cancel",
+            "submit": "Submit",
+            "latitude": "Latitude",
+            "resubmit": "Resubmit"
+        },
+        "validation": {
+            "addressRequired": "Please enter the provider address",
+            "phoneInvalid": "Please enter a valid phone number",
+            "descriptionRequired": "Please enter provider description",
+            "emailInvalid": "Please enter a valid email address",
+            "emailRequired": "Please enter the provider email address",
+            "locationRequired": "Please select the provider location",
+            "phoneRequired": "Please enter the provider phone number",
+            "storeNameRequired": "Please enter the provider name"
+        },
+        "longitude": "Longitude",
+        "dialog": {
+            "submitSuccess": "Submission successful",
+            "submitFailed": "Submission failed",
+            "title": "Submit the application"
+        },
+        "map": {
+            "cancel": "Cancel",
+            "confirm": "Confirm",
+            "useMyLocation": "Use my current location"
+        },
+        "status": {
+            "pending": "Under review",
+            "approved": "Passed",
+            "rejected": "Rejected",
+            "reviewing": "Reviewing",
+            "title": "Status",
+            "unknown": "Unknown"
         }
     },
     "secondhandSearch": {
@@ -554,7 +628,9 @@
         "actions": {
             "preview": "Preview",
             "saveDraft": "Save draft",
-            "publish": "Publish"
+            "publish": "Publish",
+            "deleteDraft": "Delete draft",
+            "leave": "Leave"
         },
         "permissions": {
             "photoTitle": "Photo permission required",
@@ -569,7 +645,8 @@
             "imageSelectionFailed": "Image selection failed",
             "aspectRatioTooLarge": "Image {{index}} aspect ratio too large, please select again",
             "imageTooSmall": "Image {{index}} size less than 10kb, does not meet requirements",
-            "saveDraftFailed": "Save draft failed"
+            "saveDraftFailed": "Save draft failed",
+            "sendpicturefailed": "Failed to send image"
         },
         "validation": {
             "nameRequired": "Please enter product name",
@@ -583,6 +660,13 @@
         "success": {
             "title": "Success",
             "draftSaved": "Draft saved"
+        },
+        "notification": {
+            "areusuretoleave": "Are you sure you want to leave?",
+            "loadtheunfinishedPublish": "Load the incomplete release",
+            "savethedraft": "Save draft",
+            "takeitseriously": "Are you sure you want to leave?",
+            "unfinishedPublish": "Unfinished release"
         }
     },
     "secondhandMultiple": {
