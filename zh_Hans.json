@@ -646,7 +646,7 @@
       "imageTooSmall": "第{{index}}张图片大小小于10kb, 不符合要求",
       "saveDraftFailed": "保存草稿失败",
       "sendpicturefailed": "发送图片失败",
-      "failed": "失败"
+      "uploadFailed": "上传失败，请稍后重试"
     },
     "validation": {
       "nameRequired": "请输入商品名称",
