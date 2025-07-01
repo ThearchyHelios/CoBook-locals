@@ -5,12 +5,12 @@
     },
     "scorecard": {
         "VIP": "VIP",
-        "score": "Vos Points",
-        "maxscore": "Points Max :",
+        "score": "Votre Points",
+        "maxscore": "Points Max :",
         "pointsRequired": "Nécessite {{points}} points",
-        "noDescription": "Aucune description disponible",
-        "achieved": "Obtenu",
-        "notAchieved": "Non obtenu",
+        "noDescription": "Aucune description détaillée",
+        "achieved": "Atteint",
+        "notAchieved": "Non atteint",
         "redeemNow": "Échanger Maintenant"
     },
     "settings": {
@@ -30,19 +30,19 @@
         "restartApp": "Redémarrer l'Application",
         "logout": "Déconnexion",
         "editProfile": "Modifier le Profil",
-        "pleaseLoginFirst": "Veuillez vous connecter d'abord",
+        "pleaseLoginFirst": "Veuillez connecter d'abord",
         "avatar": "Avatar",
         "view": "Voir",
         "change": "Changer",
         "uploadSuccess": "Avatar téléchargé avec succès",
         "uploadFailed": "Échec du téléchargement de l'avatar, veuillez réessayer",
-        "confirmLogout": "Confirmer la déconnexion ?",
+        "confirmLogout": "Confirmer la déconnexion ?",
         "logoutWarning": "Après la déconnexion, vous perdrez tous les brouillons",
-        "confirmClearCache": "Confirmer la suppression du cache ?",
+        "confirmClearCache": "Confirmer la suppression du cache ?",
         "clearCacheWarning": "Cela supprimera tout le cache",
-        "confirmClearDB": "Confirmer la suppression de la base de données du chat ?",
+        "confirmClearDB": "Confirmer la suppression de la base de données du chat ?",
         "clearDBWarning": "Cela supprimera tous les enregistrements de chat",
-        "confirmRestart": "Confirmer le redémarrage de l'application ?",
+        "confirmRestart": "Confirmer le redémarrage de l'application ?",
         "switchUpdateChannel": "Changer de Canal de Mise à Jour",
         "switchChannelWarning": "Êtes-vous sûr de vouloir passer au canal {{channel}} ?\n\nRedémarrage de l'application requis après le changement.",
         "alphaChannel": "Alpha (Bêta)",
@@ -52,22 +52,22 @@
         "restartNow": "Redémarrer Maintenant",
         "selectChannel": "Sélectionner le Canal",
         "currentChannel": "Actuel : {channel}",
-        "updateAvailable": "Nouvelle mise à jour disponible !",
+        "updateAvailable": "Nouvelle mise à jour disponible !",
         "latestVersion": "Déjà la dernière version",
         "updateSuccess": "Mise à jour réussie",
         "restartPrompt": "Veuillez redémarrer l'application\n(Version : {{version}})",
-        "updateInfo": "Informations de Mise à Jour",
-        "userIdLabel": "ID Utilisateur : ",
+        "updateInfo": "Informations Mise à Jour",
+        "userIdLabel": "ID Utilisateur : ",
         "notLoggedInUser": "Utilisateur non connecté",
         "notLoggedIn": "Non connecté",
-        "successofsettingchatbg": "Modification de l'arrière-plan du chat terminée",
-        "failedtosettingchatbg": "Échec de la modification de l'arrière-plan du chat",
+        "successofsettingchatbg": "Modification de l'arrière-plan du chat réussie",
+        "failedtosettingchatbg": "Modification de l'arrière-plan du chat échouée",
         "changeLanguage": "Modifier la langue",
         "LanguageSelector": {
             "title": "Choix de langue",
             "languageCode": "code de langue",
             "loadCommunityLanguageFailed": "Échec du chargement de la langue communautaire",
-            "loadLanguageFailed": "Chargement de la langue échoué, veuillez vérifier la connexion réseau et réessayer",
+            "loadLanguageFailed": "Chargement de la langue échoué, veuillez vérifier la connexion et réessayer",
             "local": "Local",
             "community": "Communauté",
             "language": "Langue",
@@ -317,7 +317,8 @@
             "followersCount": "Nombre d’abonnés",
             "followers": "Abonnés"
         },
-        "cancelFollow": "Désabonner"
+        "cancelFollow": "Désabonner",
+        "Date": "Date ajoutée"
     },
     "common": {
         "error": "Erreur",
@@ -331,7 +332,18 @@
         "success": "Succès",
         "warning": "Avertissement",
         "confirmDelete": "Confirmer la suppression",
-        "gotIt": "Compris"
+        "gotIt": "Compris",
+        "yes": "Oui",
+        "weekday": {
+            "monday": "Lundi",
+            "tuesday": "Mardi",
+            "wednesday": "Mercredi",
+            "thursday": "Jeudi",
+            "friday": "Vendredi",
+            "saturday": "Samedi",
+            "sunday": "Dimanche"
+        },
+        "no": "Non"
     },
     "secondhand": {
         "loginToViewProductDetails": "Connectez-vous pour voir les détails du produit",
@@ -524,7 +536,153 @@
             "accountSettings": "Paramètres du Compte",
             "privacy": "Paramètres de Confidentialité",
             "logout": "Déconnexion"
-        }
+        },
+        "info": {
+            "submitTime": "Date de soumission",
+            "rejectReason": "Raison du rejet",
+            "storeName": "Nom commercial",
+            "title": "Informations commerciales",
+            "address": "Adresse",
+            "phone": "Téléphone",
+            "email": "email",
+            "description": "Description",
+            "location": "Localisation",
+            "updateTime": "Dernière mise à jour",
+            "notFilled": "Non rempli"
+        },
+        "map": {
+            "cancel": "Annuler",
+            "confirm": "Confirmer",
+            "useMyLocation": "Utiliser ma position actuelle"
+        },
+        "status": {
+            "pending": "En cours d’évaluation",
+            "approved": "Accepté",
+            "rejected": "Rejeté",
+            "reviewing": "En cours d’examen",
+            "title": "État",
+            "unknown": "Inconnu"
+        },
+        "latitude": "Latitude",
+        "dialog": {
+            "submitSuccess": "Soumission réussie",
+            "submitFailed": "Soumission échouée",
+            "title": "Soumettre la demande"
+        },
+        "detail": {
+            "scorecard": "Carte de fidélité",
+            "review": "Commentaire",
+            "description2": "Introduction 2 (test)",
+            "operatingHours": "Horaires d’ouverture",
+            "notOpen": "Fermé",
+            "title": "Détails du commerçant",
+            "description": "Introduction"
+        },
+        "scorecard": {
+            "title": "Carte de fidélité",
+            "providerTermsConditions": {
+                "title": "Conditions d'utilisation de la carte de fidélité",
+                "description2": "Vous pouvez échanger vos points contre des récompenses et des avantages proposés par le commerçant.",
+                "description5": "La plateforme fournit uniquement l’outil de gestion des points et n’est pas responsable des récompenses proposées par le commerçant.",
+                "description1": "Dès l’activation de la carte de fidélité, il sera possible de cumuler des points auprès du commerçant.",
+                "description3": "La validité des points, les règles d’échange et les récompenses disponibles sont déterminées par le commerçant.",
+                "description4": "En cas de comportement frauduleux ou non conforme du commerçant, veuillez le signaler à la plateforme.",
+                "description6": "Vos informations personnelles seront utilisées uniquement pour le service de la carte de fidélité et ne seront pas utilisées à d’autres fins.",
+                "description7": "Vous pouvez consulter à tout moment les détails de vos points et l’historique des échanges."
+            },
+            "error": {
+                "message": "La récupération des informations de la carte de fidélité a échoué, veuillez réessayer plus tard",
+                "title": "Erreur",
+                "noData": "Chargement des infos de la carte de fidélité impossible",
+                "providerNotActivatedScorecard": "La fonction carte de fidélité n’est pas encore disponible pour ce commerçant"
+            },
+            "activation": {
+                "failed": {
+                    "message": "Échec de l’activation de la carte de fidélité, veuillez réessayer plus tard",
+                    "title": "Erreur"
+                },
+                "success": {
+                    "title": "Succès",
+                    "message": "Carte de fidélité activée avec succès !"
+                }
+            },
+            "userNotActivatedCurrentProviderScorecardSubText": "Activez la carte de fidélité pour cumuler des points et échanger les récompenses proposées par le commerçant",
+            "userTermsConditions": {
+                "description2": "2. Vous pouvez échanger vos points contre des récompenses et des avantages proposés par le commerçant.",
+                "description5": "5. La plateforme fournit uniquement l’outil de gestion des points et n’est pas responsable des récompenses proposées par le commerçant.",
+                "title": "Conditions d’utilisation de la carte fidélité",
+                "description4": "4. En cas de comportement frauduleux ou non conforme du commerçant, veuillez le signaler à la plateforme.",
+                "description3": "3. La validité des points, les règles d’échange et les récompenses disponibles sont déterminées par le commerçant.",
+                "description1": "1. Dès l’activation de la carte de fidélité, il sera possible de cumuler des points auprès du commerçant.",
+                "description6": "6. Vos informations personnelles seront utilisées uniquement pour le service de la carte de fidélité et ne seront pas utilisées à d’autres fins.",
+                "description7": "7. Vous pouvez consulter à tout moment les détails de vos points et l’historique des échanges."
+            },
+            "userActivationConfirm": {
+                "message": "Vous allez activer la carte de fidélité pour {{providerName}}. Une fois activée, vous pourrez cumuler des points et les échanger contre des récompenses.",
+                "title": "Confirmer l’activation de la carte de fidélité"
+            },
+            "loading": "Chargement de la carte de fidélité...",
+            "redeemableProducts": "Articles échangeables",
+            "userNotActivatedCurrentProviderScorecard": "Vous n’avez pas encore de carte de fidélité pour ce commerçant",
+            "activateScorecard": "Activer la carte de fidélité",
+            "points": "Points",
+            "activationRequired": "Carte de fidélité à activer",
+            "noRedeemableProducts": "Aucun article échangeable",
+            "activationModalTitle": "Activation de la carte de fidélité",
+            "pointsNotEnough": "Points insuffisants",
+            "redeem": "Échanger Maintenant"
+        },
+        "voucher": {
+            "attention": "Attention",
+            "redeem": {
+                "failed": {
+                    "message": "Échec de l’échange, veuillez réessayer plus tard",
+                    "title": "Erreur",
+                    "noVoucher": "Aucun bon d’échange disponible pour cet article"
+                },
+                "title": "Échanger",
+                "requestConfirm": "Confirmez-vous l’échange de cet article ?",
+                "success": {
+                    "title": "Succès",
+                    "message": "Échange réussi !"
+                }
+            },
+            "title": "COBOOK Coupon",
+            "detail": {
+                "title": "Détail du coupon"
+            }
+        },
+        "request": {
+            "location": "Localisation",
+            "title": "Demander à devenir commerçant",
+            "subtitle": "Veuillez remplir les informations suivantes",
+            "storeName": "Nom commercial",
+            "address": "Adresse",
+            "phone": "Téléphone",
+            "email": "email",
+            "description": "Description",
+            "rejectReason": "Raison du rejet",
+            "submitTime": "Date de soumission",
+            "updateTime": "Dernière mise à jour",
+            "notFilled": "Non rempli",
+            "cancel": "Annuler",
+            "submit": "Soumettre",
+            "latitude": "Latitude",
+            "longitude": "Longitude",
+            "resubmit": "Resoumettre",
+            "editApplication": "Modifier la demande"
+        },
+        "validation": {
+            "addressRequired": "Veuillez saisir l'adresse du commerçant",
+            "locationRequired": "Veuillez sélectionner la localisation du commerçant",
+            "descriptionRequired": "Veuillez saisir la description du commerçant",
+            "emailInvalid": "Veuillez saisir une adresse e-mail valide",
+            "emailRequired": "Veuillez saisir l’e-mail du commerçant",
+            "phoneInvalid": "Veuillez saisir un numéro de téléphone valide",
+            "phoneRequired": "Veuillez saisir le téléphone du commerçant",
+            "storeNameRequired": "Veuillez saisir le nom du commerçant"
+        },
+        "longitude": "Longitude"
     },
     "secondhandSearch": {
         "search": {
@@ -627,8 +785,10 @@
         },
         "actions": {
             "preview": "Aperçu",
-            "saveDraft": "Sauvegarder le brouillon",
-            "publish": "Publier"
+            "saveDraft": "Enregistrer le brouillon",
+            "publish": "Publier",
+            "deleteDraft": "Supprimer le brouillon",
+            "leave": "Quitter"
         },
         "permissions": {
             "photoTitle": "Autorisation photo requise",
@@ -643,7 +803,9 @@
             "imageSelectionFailed": "Échec de la sélection d'image",
             "aspectRatioTooLarge": "Ratio d'aspect de l'image {{index}} trop grand, veuillez sélectionner à nouveau",
             "imageTooSmall": "Taille de l'image {{index}} inférieure à 10kb, ne répond pas aux exigences",
-            "saveDraftFailed": "Échec de la sauvegarde du brouillon"
+            "saveDraftFailed": "Échec de la sauvegarde du brouillon",
+            "sendpicturefailed": "Échec de l'envoi d'image",
+            "uploadFailed": "Échec du téléchargement, veuillez réessayer plus tard"
         },
         "validation": {
             "nameRequired": "Veuillez entrer le nom du produit",
@@ -657,6 +819,13 @@
         "success": {
             "title": "Succès",
             "draftSaved": "Brouillon sauvegardé"
+        },
+        "notification": {
+            "areusuretoleave": "Êtes-vous sûr de vouloir quitter ?",
+            "loadtheunfinishedPublish": "Chargement d'une publication incomplète",
+            "savethedraft": "Enregistrer le brouillon",
+            "unfinishedPublish": "Publication inachevée",
+            "takeitseriously": "Êtes-vous sûr de vouloir quitter ?"
         }
     },
     "secondhandMultiple": {
@@ -716,12 +885,34 @@
             "title": "Gestion des Utilisateurs",
             "searchUsers": "Rechercher des Utilisateurs",
             "userManagement": "Gestion des Utilisateurs",
-            "userDetail": "Détail de l'Utilisateur"
+            "userDetail": {
+                "title": "Détails de l’utilisateur",
+                "userInvitationCode": "Code d'invitation",
+                "userAgreeCondition": "L’utilisateur a accepté les conditions ou non",
+                "deviceToken": "Token de l'appareil utilisateur",
+                "userLatitude": "La latitude de l'utilisateur",
+                "userID": "ID Utilisateur",
+                "username": "Nom d'utilisateur",
+                "userPassword": "Mot de passe",
+                "userEmail": "E-mail",
+                "userRegisterTime": "Date d’inscription",
+                "userSubscribeUntil": "Date de fin d’abonnement",
+                "userIsBanned": "L'utilisateur est banni ou non",
+                "userIsAdmin": "L'utilisateur est administrateur ou non",
+                "userIsProvider": "L'utilisateur est commerçant ou non",
+                "userOnetimeCount": "Nombre d’utilisations par session de l’utilisateur",
+                "cardID": "ID carte utilisateur",
+                "userEmailValidated": "L'e-mail de l'utilisateur a-t-elle été vérifiée",
+                "userVerificationCode": "Code de vérification temporaire de l'utilisateur",
+                "userLongitude": "La longitude de l'utilisateur",
+                "unknown": "Inconnu"
+            },
+            "userDetailTitle": "Détails de l’utilisateur"
         },
         "providerManagement": {
             "title": "Gestion des Fournisseurs",
             "providerRequests": "Demandes de Fournisseur",
-            "providerAudit": "Audit de Fournisseur",
+            "providerAudit": "Audit Commercial",
             "providerList": "Liste des Fournisseurs",
             "providerRequestDetail": "Détail de la Demande de Fournisseur",
             "providerAuditDetail": "Détail de l'Audit de Fournisseur"
@@ -736,6 +927,77 @@
             "userSearch": "Rechercher des Utilisateurs",
             "providerRequests": "Demandes de Fournisseur",
             "providerAudit": "Audit de Fournisseur"
+        },
+        "auditDetail": {
+            "noImage": "Aucune image",
+            "noProviderAddress": "Adresse non fournie",
+            "clickItemToExpand": "Cliquez pour voir les détails",
+            "reviewGuide": {
+                "title": "Guide d'audit",
+                "description": "Veuillez examiner attentivement les informations mises à jour soumises par le commerçant afin de vous assurer qu'elles sont conformes aux normes de la plateforme.",
+                "description2": "Vérifiez si l'image est claire et pertinente par rapport au commerçant",
+                "description5": "Veuillez impérativement fournir une raison claire de refus si vous refusez la vérification",
+                "description1": "Les modifications seront automatiquement en mode développé et en surbrillance",
+                "description3": "Vérifiez si les informations de contact sont vraies et valides",
+                "description4": "Vérifier si la description du commerçant est conforme et ne contient pas d'informations trompeuses"
+            },
+            "status": {
+                "pending": "En attente de validation",
+                "approved": "Accepté",
+                "rejected": "Refusé",
+                "unknown": "État inconnu"
+            },
+            "informationChanged": "L'information a été modifiée",
+            "originalData": "Les données originales",
+            "valueNotSet": "Non configuré",
+            "updateData": "Mettre à jour les données",
+            "loadFailed": "Chargement échoué, aucune information d'audit pertinente trouvée",
+            "noProviderName": "Nom du commerçant non fourni",
+            "auditInfo": "Informations d’audit",
+            "auditID": "Numéro d'audit",
+            "providerID": "ID commerçant",
+            "submitTime": "Date de soumission",
+            "updateTime": "Dernière mise à jour",
+            "auditComment": "Retour d’audit",
+            "changeComparison": "Comparaison des changements",
+            "providerLogo": "Icône du commerçant",
+            "providerImage": "Photo du commerçant",
+            "providerAddress": "Adresse du commerçant",
+            "providerContactName": "Contacteur",
+            "providerContactPhone": "Numéro de téléphone",
+            "providerEmail": "E-mail",
+            "providerLatitude": "Coordonnées de position",
+            "providerDescription": "Description du commerçant",
+            "title": "Audit Commercial",
+            "rejectReason": "Raison du refus",
+            "rejectReasonInput": "Veuillez entrer la raison du refus",
+            "updateType": "Type de mise à jour",
+            "updateTypeValue": "Mise à jour des informations du commerçant",
+            "noAudit": "Aucune mise à jour des informations commerçantes à valider"
+        },
+        "providerRequestDetail": {
+            "providerName": "Nom du commerçant",
+            "status": {
+                "title": "État",
+                "reviewing": "En cours d’examen",
+                "approved": "Accepté",
+                "rejected": "Refusé",
+                "unknown": "État inconnu",
+                "pending": "Non validé"
+            },
+            "startReview": "Commencez l‘audit",
+            "approve": "Validé",
+            "reject": "Refusé",
+            "loadFailed": "Chargement échoué",
+            "applicantInfo": "Informations du demandeur",
+            "userID": "ID Utilisateur",
+            "userNickname": "Pseudonyme",
+            "providerInfo": "Informations du commerçant",
+            "providerTelephone": "Téléphone",
+            "providerAddress": "Adresse",
+            "providerEmail": "E-mail",
+            "providerIntro": "Aperçu",
+            "providerLatitude": "Localisation"
         }
     }
 }
