@@ -1,7 +1,7 @@
 {
     "prologin": {
         "Notlogin": "Veuillez vous connecter d'abord",
-        "DeviceId": "ID de l'appareil : "
+        "DeviceId": "ID de l'appareil : "
     },
     "scorecard": {
         "VIP": "VIP",
@@ -378,7 +378,7 @@
         "moreButtons": "Plus de boutons",
         "adjustButtons": "Ajuster les positions des boutons",
         "done": "Terminé",
-        "dragTip": "Glissez les icônes pour ajuster les positions, les trois premiers boutons sont affichés dans la navigation principale",
+        "dragTip": "Glissez les icônes pour ajuster les positions, les trois premiers boutons sont affichés dans la page principale",
         "location": {
             "grenoble": "Grenoble"
         },
@@ -404,7 +404,7 @@
     "provider": {
         "main": {
             "completeStoreInfo": "Veuillez d'abord compléter les informations du magasin. Si non complétées, les utilisateurs ne pourront pas rechercher votre magasin",
-            "overview": "Vue d'Ensemble Générale",
+            "overview": "Aperçu",
             "totalActivations": "Total des Activations de Carte de Score",
             "totalViews": "Total des Vues",
             "overallTrend": "Tendance Générale",
