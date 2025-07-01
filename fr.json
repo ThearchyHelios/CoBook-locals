@@ -7,7 +7,7 @@
         "VIP": "VIP",
         "score": "Vos Points",
         "maxscore": "Points Max :",
-        "pointsRequired": "Nécessite {points} points",
+        "pointsRequired": "Nécessite {{points}} points",
         "noDescription": "Aucune description disponible",
         "achieved": "Obtenu",
         "notAchieved": "Non obtenu",
@@ -80,7 +80,7 @@
             "reloadLocalLanguageSuccessMessage": "Le package de langue locale {{languageName}} a été rechargé",
             "downloadLanguageSuccessMessage": "La traduction de {{languageName}} a été téléchargée avec succès",
             "downloadLanguageFailedMessage": "Impossible de télécharger le fichier de langue {{languageName}}, veuillez réessayer plus tard",
-            "languageOperationFailed": "",
+            "languageOperationFailed": "Opération échouée",
             "switchToLocalLanguageConfirm": "Basculer",
             "updateCurrentLanguage": "Mettre à jour la langue actuelle",
             "updateCurrentLanguageConfirm": "Mise à jour",
@@ -98,8 +98,35 @@
             "switchLanguageMessage": "Voulez-vous basculer vers {{languageName}} ?",
             "switchLanguageConfirm": "Basculer",
             "downloadLanguageSuccess": "Téléchargement terminé",
-            "downloadLanguageFailed": "Échec du téléchargement, veuillez vérifier la connexion réseau et réessayer"
-        }
+            "downloadLanguageFailed": "Échec du téléchargement, veuillez vérifier la connexion réseau et réessayer",
+            "languageOperationFailedMessage": "Opération échouée, veuillez réessayer plus tard",
+            "localTranslationPackageDescription.maintainedByDevelopmentTeam": "La traduction est maintenue par l'équipe de développement",
+            "cachedLanguageDescription": "Ces langues sont téléchargées localement et peuvent être utilisées en mode hors ligne",
+            "communityTranslationPackageDescription": "Directives de traduction communautaire",
+            "localTranslationPackageDescription.blue": "Bleu : Langue intégrée (pleinement utilisable)",
+            "localTranslationPackageDescription.localTranslationPackage": "La langue intégrée est déjà incluse dans l’application et ne nécessite pas de téléchargement",
+            "communityTranslationPackageDescription.communityTranslationPackage": "La langue de traduction communautaire nécessite un téléchargement",
+            "localLanguagePackage": "Langue intégrée",
+            "communityLanguagePackage": "Langue communautaire",
+            "localPackage": "Langue intégrée",
+            "switchToLocalLanguage": "Basculer vers la langue intégrée",
+            "loadingLanguageList": "Chargement de la liste des langues...",
+            "translationSource": "Type",
+            "localTranslationPackage": "Langue intégrée",
+            "communityTranslationPackage": "Traduction de langue communautaire",
+            "localTranslationPackageDescription": "Instructions pour la traduction intégrée",
+            "localTranslationPackageDescription.offline": "Utilisable hors ligne avec chargement rapide",
+            "communityTranslationPackageDescription.green": "Vert : Taux de traduction ≥ 90%",
+            "communityTranslationPackageDescription.orange": "Orange : Taux de traduction ≥ 70 %",
+            "communityTranslationPackageDescription.red": "Rouge : Taux de traduction < 70%",
+            "communityTranslationPackageDescription.maintainedByCommunity": "Le contenu est maintenu par des contributeurs de la communauté",
+            "cachedLanguage": "Langue mise en cache",
+            "loaded": "Chargé",
+            "fuzzy": "Incomplète",
+            "refreshing": "Actualisation en cours de la liste des langues..."
+        },
+        "showTranslationKeys": "Afficher la clé de traduction",
+        "showTranslationKeysDesc": "Mode développeur : Afficher i18n clés de traduction au lieu des textes traduits"
     },
     "userInfo": {
         "title": "Mes Informations",
@@ -280,7 +307,17 @@
         "timeoffollow": "Date : ",
         "Nofollower": "Aucun abonné",
         "Nolike": "Vous ne suivez aucun utilisateur",
-        "Nofriend": "Vous n'avez aucun suivi mutuel"
+        "Nofriend": "Vous n'avez aucun suivi mutuel",
+        "following": {
+            "followingCount": "Nombre d’abonnements",
+            "following": "Abonnements",
+            "noFollowing": "Aucun abonnement"
+        },
+        "followers": {
+            "followersCount": "Nombre d’abonnés",
+            "followers": "Abonnés"
+        },
+        "cancelFollow": "Désabonner"
     },
     "common": {
         "error": "Erreur",
