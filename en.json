@@ -97,7 +97,35 @@
             "communityTranslationPackageDescription.communityTranslationPackage": "Community translation language needs to be downloaded",
             "localLanguagePackage": "Built-in language",
             "communityLanguagePackage": "Community language",
-            "localPackage": "Built-in language"
+            "localPackage": "Built-in language",
+            "updateCurrentLanguageMessage": "Are you currently using {{languageName}}, and would you like to download and update the translation for this language?",
+            "languageCode": "Language Code",
+            "loadLocalLanguageFailed": "Failed to load local language",
+            "loadCommunityLanguageFailed": "Failed to load community language",
+            "loadLanguageFailed": "Failed to load language, please check your network connection and retry",
+            "reloadLocalLanguage": "Reload local language",
+            "reloadLocalLanguageMessage": "Are you currently using {{languageName}}, and would you like to reload this local language package?",
+            "reloadLocalLanguageConfirm": "Reload",
+            "switchToLocalLanguageConfirm": "Switch",
+            "updateCurrentLanguage": "Update current language",
+            "updateCurrentLanguageConfirm": "Update",
+            "downloadNewLanguage": "Download new language",
+            "downloadNewLanguageMessage": "The language {{languageName}} has not been downloaded. Do you want to download the translation file for this language and switch?",
+            "downloadNewLanguageConfirm": "Download and switch",
+            "unsupportedLocalLanguage": "Unsupported local language: {{languageCode}}",
+            "languageSwitchedSuccess": "The language has been switched",
+            "languageSwitchedSuccessConfirm": "Confirm",
+            "reloadLocalLanguageSuccess": "Reload completed",
+            "reloadLocalLanguageSuccessMessage": "The local language pack {{languageName}} has been reloaded",
+            "updateLanguageSuccess": "Update complete",
+            "updateLanguageSuccessMessage": "The translation for {{languageName}} has been successfully updated",
+            "switchLanguage": "Switch language",
+            "switchLanguageMessage": "Do you want to switch to {{languageName}}?",
+            "switchLanguageConfirm": "Switch",
+            "downloadLanguageSuccess": "Download complete",
+            "switchToLocalLanguage": "Switch to built-in language",
+            "switchToLocalLanguageMessage": "Do you want to switch to the built-in language {{languageName}}?",
+            "languageSwitchedSuccessMessage": "Successfully switched to built-in language {{languageName}}"
         }
     },
     "userInfo": {
@@ -185,7 +213,7 @@
         "profileCenter": "Profile Center",
         "cardWallet": "Card Wallet",
         "mutualFollows": "Friends",
-        "becomeProvider": "Become Provider",
+        "becomeProvider": "Become Commercial",
         "contactUs": "Contact Us",
         "settings": "Settings",
         "help": "Help Center",
@@ -195,7 +223,7 @@
         "secondHand": "Second Hand",
         "kaoPuCard": "CoBook Card",
         "myQRCode": "My QR Code",
-        "scanQRCodeTip": "Scan QR code to share my profile",
+        "scanQRCodeTip": "Scan QR code to view my profile",
         "close": "Close",
         "endofpage": "No more",
         "unknowuser": "Unknown user"
@@ -257,7 +285,7 @@
         "networkError": "Network connection error",
         "serverConnectionFailed": "Unable to connect to server",
         "requestTimeout": "Request timeout",
-        "scorecardFailtobecreated": "Scorecard creation failed"
+        "scorecardFailtobecreated": "Score Card creation failed"
     },
     "network": {
         "offlineMode": "Offline Mode",
@@ -304,7 +332,18 @@
         "success": "Success",
         "warning": "Warning",
         "confirmDelete": "Confirm delete",
-        "gotIt": "Got it"
+        "gotIt": "Got it",
+        "yes": "Yes",
+        "no": "No",
+        "weekday": {
+            "monday": "Monday",
+            "tuesday": "Tuesday",
+            "wednesday": "Wednesday",
+            "thursday": "Thursday",
+            "friday": "Friday",
+            "saturday": "Saturday",
+            "sunday": "Sunday"
+        }
     },
     "secondhand": {
         "loginToViewProductDetails": "Login to view product details",
@@ -380,7 +419,19 @@
         },
         "stats": {
             "yoy": "YoY",
-            "mom": "MoM"
+            "mom": "MoM",
+            "overview": "Overview",
+            "totalActivations": "Total activated Score Card count",
+            "totalViews": "Total pageviews",
+            "overallTrend": "Overall trend",
+            "totalMembers": "Total number of members",
+            "totalRevenue": "Total transaction volume",
+            "moreData": "More overall data",
+            "avgOrderAmount": "Average order value",
+            "totalVisitors": "Total visitor count",
+            "couponsIssued": "Total Vouchers Issued",
+            "couponsUsed": "Total Vouchers Used",
+            "recentActivity": "Recent updates"
         },
         "period": {
             "overview": "Overview",
@@ -513,16 +564,16 @@
             "notFilled": "Not filled in"
         },
         "request": {
-            "title": "Apply to become a service provider",
-            "email": "Provider email address",
+            "title": "Apply to become a Commercial",
+            "email": "Commercial email address",
             "editApplication": "Edit application",
             "longitude": "Longitude",
             "subtitle": "Please fill in the following information",
-            "storeName": "Provider Name",
-            "address": "Provider address",
-            "phone": "Provider phone number",
-            "description": "Provider description",
-            "location": "Provider location",
+            "storeName": "Commercial Name",
+            "address": "Commercial address",
+            "phone": "Commercial phone number",
+            "description": "Commercial description",
+            "location": "Commercial location",
             "rejectReason": "Reason for rejection",
             "submitTime": "Submission time",
             "updateTime": "Last updated time",
@@ -533,14 +584,14 @@
             "resubmit": "Resubmit"
         },
         "validation": {
-            "addressRequired": "Please enter the provider address",
+            "addressRequired": "Please enter the commercial address",
             "phoneInvalid": "Please enter a valid phone number",
-            "descriptionRequired": "Please enter provider description",
+            "descriptionRequired": "Please enter commercial description",
             "emailInvalid": "Please enter a valid email address",
-            "emailRequired": "Please enter the provider email address",
-            "locationRequired": "Please select the provider location",
-            "phoneRequired": "Please enter the provider phone number",
-            "storeNameRequired": "Please enter the provider name"
+            "emailRequired": "Please enter the commercial email address",
+            "locationRequired": "Please select the commercial location",
+            "phoneRequired": "Please enter the commercial phone number",
+            "storeNameRequired": "Please enter the commercial name"
         },
         "longitude": "Longitude",
         "dialog": {
@@ -560,6 +611,89 @@
             "reviewing": "Reviewing",
             "title": "Status",
             "unknown": "Unknown"
+        },
+        "scorecard": {
+            "userActivationConfirm": {
+                "message": "You are about to activate the Score Card for {{providerName}}, and after activation, you can accumulate scores and redeem rewards.",
+                "title": "Confirm to activate Score Card"
+            },
+            "title": "Score Card",
+            "loading": "Loading score card information...",
+            "providerTermsConditions": {
+                "title": "Score Card Service Terms",
+                "description1": "1. Once the points card is activated, scores can be accumulated at commercial locations.",
+                "description2": "2. You can redeem scores to exchange for rewards and discounts provided by commercials.",
+                "description3": "3. The validity period of points, exchange rules, and the list of redeemable items are determined by the commercial.",
+                "description4": "4. If you find that a commercial is engaging in violations or fraudulent activities, please report it to the platform.",
+                "description5": "5. The platform provides only the score system and does not assume responsibility for the score exchange goods provided by commercials.",
+                "description6": "6. Your personal information will be used for the score card service, but will not be used for any other purposes.",
+                "description7": "7. You can always view your score details and redemption history at any time."
+            },
+            "error": {
+                "title": "Error",
+                "message": "Failed to retrieve score card information, please try again later",
+                "noData": "Unable to load score card information",
+                "providerNotActivatedScorecard": "This merchant has not yet activated the points card feature"
+            },
+            "activation": {
+                "success": {
+                    "title": "Success",
+                    "message": "Score card activated successfully!"
+                },
+                "failed": {
+                    "title": "Error",
+                    "message": "Score card activation failed, please try again later"
+                }
+            },
+            "redeemableProducts": "Exchangeable items",
+            "userNotActivatedCurrentProviderScorecard": "You don't have a scorecard for this commercial yet",
+            "userNotActivatedCurrentProviderScorecardSubText": "Open an score card to accumulate scores and redeem rewards provided by commercials",
+            "activateScorecard": "Activate score card",
+            "points": "Scores",
+            "userTermsConditions": {
+                "description1": "1. Once the score card is activated, scores can be accumulated at commercial locations.",
+                "description2": "2. You can redeem scores to exchange for rewards and discounts provided by commercials.",
+                "description3": "3. The validity period of points, exchange rules, and the list of redeemable items are determined by the commercial.",
+                "description4": "4. If you find that a commercial is engaging in violations or fraudulent activities, please report it to the platform.",
+                "description5": "5. The platform provides only the score system and does not assume responsibility for the score exchange goods provided by commercials.",
+                "description6": "6. Your personal information will be used for the score card service, but will not be used for any other purposes.",
+                "description7": "7. You can always view your score details and redemption history at any time.",
+                "title": "User Score Card Service Terms"
+            },
+            "activationRequired": "You need to activate the score card",
+            "noRedeemableProducts": "No redeemable items available",
+            "activationModalTitle": "Score card activation",
+            "pointsNotEnough": "Insufficient scores",
+            "redeem": "Redeem now"
+        },
+        "detail": {
+            "operatingHours": "Business hours",
+            "notOpen": "Not open for business",
+            "title": "Commercial details",
+            "description": "Description",
+            "scorecard": "Score Card",
+            "review": "Comment",
+            "description2": "Introduction 2 (Test)"
+        },
+        "voucher": {
+            "title": "CoBook vouchers",
+            "attention": "Attention",
+            "redeem": {
+                "title": "Redeem",
+                "requestConfirm": "Are you sure you want to redeem this item?",
+                "failed": {
+                    "title": "Error",
+                    "message": "Redeem failed, please try again later",
+                    "noVoucher": "There is currently no information available about vouchers for this item"
+                },
+                "success": {
+                    "title": "Success",
+                    "message": "Redeem successful!"
+                }
+            },
+            "detail": {
+                "title": "Voucher details"
+            }
         }
     },
     "secondhandSearch": {
@@ -575,7 +709,7 @@
         },
         "sorting": {
             "title": "Sort by",
-            "default": "Default",
+            "default": "Best Match",
             "newest": "Newest",
             "mostLiked": "Most liked",
             "priceAsc": "Price: Low to High",
@@ -583,7 +717,7 @@
         },
         "timeRange": {
             "title": "Published time",
-            "unlimited": "Unlimited",
+            "unlimited": "Anytime",
             "1day": "Within 1 day",
             "1week": "Within 1 week",
             "1month": "Within 1 month",
@@ -624,7 +758,7 @@
             "productName": "Product name",
             "contactMethod": "Contact method",
             "productPrice": "Product price",
-            "negotiablePrice": "Accept price negotiation",
+            "negotiablePrice": "Accept price negotiation or not",
             "productDescription": "Product description",
             "descriptionPreview": "Product description preview"
         },
@@ -674,13 +808,13 @@
             "goSettings": "Go to settings"
         },
         "status": {
-            "online": "Online",
-            "offline": "Offline"
+            "online": "Make Available",
+            "offline": "Make unavailable"
         },
         "errors": {
             "imageSelectionFailed": "Image selection failed",
             "aspectRatioTooLarge": "Image {{index}} aspect ratio too large, please select again",
-            "imageTooSmall": "Image {{index}} size less than 10kb, does not meet requirements",
+            "imageTooSmall": "Image {{index}} size less than 10kb, does not reach requirements",
             "saveDraftFailed": "Save draft failed",
             "sendpicturefailed": "Failed to send image",
             "uploadFailed": "Upload failed, please try again later"
@@ -712,8 +846,8 @@
             "supplementMode": "Supplement mode"
         },
         "banner": {
-            "supplementModeText": "Currently in supplement mode, you can only modify existing drafts and resend.",
-            "groupIdInfo": "All products will be added to the same product group (Group ID: {groupId}).",
+            "supplementModeText": "Currently in supplement mode, you can only modify existing drafts and resend",
+            "groupIdInfo": "All products will be added to the same product group (Group ID: {{groupId}}).",
             "addNewProductTip": "To add new products, please exit supplement mode first.",
             "exitSupplementMode": "Exit supplement mode"
         },
@@ -729,8 +863,8 @@
             "groupDescriptionRequired": "Please enter group description"
         },
         "publishing": {
-            "publishingText": "Publishing ({current}/{total})",
-            "progressPercentage": "{percentage}%",
+            "publishingText": "Publishing ({{current}/{total}})",
+            "progressPercentage": "{{percentage}}%",
             "publishAll": "Publish all",
             "supplement": "Supplement",
             "noDraftsToPublish": "No drafts to publish"
@@ -744,7 +878,7 @@
         },
         "results": {
             "allSuccess": "All products published",
-            "partialSuccess": "Successfully published {success} products, failed {failed}\n\nEntered supplement mode, subsequent publications will be added to the same product group (Group ID: {groupId})",
+            "partialSuccess": "Successfully published {{success}} products, failed {{failed}}\n\nEntered supplement mode, subsequent publications will be added to the same product group (Group ID: {{groupId}})",
             "publishError": "Error occurred during publishing",
             "getGroupIdFailed": "Failed to get group ID",
             "uploadCoverFailed": "Failed to upload cover image"
@@ -754,7 +888,7 @@
         "dashboard": {
             "title": "Admin Panel",
             "stats": {
-                "pendingProviderRequests": "Pending Provider Requests",
+                "pendingProviderRequests": "Pending Commercial Applications",
                 "pendingReports": "Pending Reports",
                 "newUsersToday": "New Users Today"
             }
@@ -763,14 +897,36 @@
             "title": "User Management",
             "searchUsers": "Search Users",
             "userManagement": "User Management",
-            "userDetail": "User Detail"
+            "userDetail": {
+                "title": "User details",
+                "userID": "User ID",
+                "username": "Username",
+                "userPassword": "User password",
+                "userEmail": "User email address",
+                "userRegisterTime": "User registration time",
+                "userSubscribeUntil": "Subscription end time",
+                "userInvitationCode": "User invitation code",
+                "userIsBanned": "Is the user banned",
+                "userIsAdmin": "Is the user an administrator",
+                "userIsProvider": "Is the user a commercial entity",
+                "userOnetimeCount": "Number of times a user can use it once",
+                "userAgreeCondition": "Has the user agreed to the terms",
+                "cardID": "User card ID",
+                "userEmailValidated": "Has the user's email address been verified",
+                "deviceToken": "User device Token",
+                "userVerificationCode": "Temporary verification code for user",
+                "userLongitude": "The user's longitude",
+                "userLatitude": "The user's latitude",
+                "unknown": "Unknown"
+            },
+            "userDetailTitle": "User details"
         },
         "providerManagement": {
             "title": "Commercial Management",
-            "providerRequests": "Commercial Requests",
+            "providerRequests": "Commercial application",
             "providerAudit": "Commercial Audit",
             "providerList": "Commercial List",
-            "providerRequestDetail": "Commercial Request Detail",
+            "providerRequestDetail": "Commercial Application Details",
             "providerAuditDetail": "Commercial Audit Detail"
         },
         "systemManagement": {
@@ -781,8 +937,21 @@
         },
         "navigation": {
             "userSearch": "Search Users",
-            "providerRequests": "Provider Requests",
-            "providerAudit": "Provider Audit"
+            "providerRequests": "Commercial application",
+            "providerAudit": "Commercial Audit"
+        },
+        "auditDetail": {
+            "status": {
+                "pending": "Under review",
+                "approved": "Passed",
+                "rejected": "Rejected",
+                "unknown": "Unknown status"
+            },
+            "informationChanged": "The information has been updated",
+            "originalData": "Original data",
+            "valueNotSet": "Not set",
+            "noImage": "No image",
+            "updateData": "Update data"
         }
     }
 }
