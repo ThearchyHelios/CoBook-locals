@@ -422,7 +422,14 @@
       "notFilled": "未填写"
     },
     "main": {
-      "completeStoreInfo": "请先完善商家信息，如果不完善商家信息，将无法被用户搜索到",
+      "completeStoreInfo": "请先完善商家信息，如果不完善商家信息，将无法被用户搜索到"
+    },
+    "map": {
+      "cancel": "取消",
+      "confirm": "确定",
+      "useMyLocation": "使用我的当前位置"
+    },
+    "stats": {
       "overview": "总体概览",
       "totalActivations": "积分卡总激活数",
       "totalViews": "总浏览量",
@@ -434,14 +441,7 @@
       "totalVisitors": "总访客数",
       "couponsIssued": "优惠券总发放",
       "couponsUsed": "优惠券总使用",
-      "recentActivity": "最近动态"
-    },
-    "map": {
-      "cancel": "取消",
-      "confirm": "确定",
-      "useMyLocation": "使用我的当前位置"
-    },
-    "stats": {
+      "recentActivity": "最近动态",
       "yoy": "同比",
       "mom": "环比"
     },
