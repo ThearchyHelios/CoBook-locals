@@ -202,7 +202,7 @@
     },
     "userSettings": {
         "title": "Account Info",
-        "subtitle": "Items with {icon} icon can be edited",
+        "subtitle": "Items with {{icon}} icon can be edited",
         "notLoggedIn": "Not logged in",
         "notLoggedInUser": "Not logged in user",
         "fields": {
@@ -219,7 +219,7 @@
     "navigation": {
         "home": "Home",
         "recentMessages": "Messages",
-        "provider": "Provider",
+        "provider": "Commercial",
         "profile": "Profile",
         "admin": "Admin",
         "secondhand": "Second Hand"
@@ -233,7 +233,7 @@
         "confirm": "Confirm",
         "forceLogout": "Please login again",
         "forceLogoutMessage": "You have been forced to logout due to login on another device",
-        "messageFrom": "Message from {nickname}",
+        "messageFrom": "Message from {{nickname}}",
         "networkOffline": "Network connection lost",
         "offlineModeEnabled": "Switched to offline mode",
         "networkRestored": "Network connection restored",
@@ -287,9 +287,9 @@
         "following": {
             "following": "Following",
             "noFollowing": "No following",
-            "followingCount": "Follow count"
+            "followingCount": "Following count"
         },
-        "Date": "Add time",
+        "Date": "Added time",
         "cancelFollow": "Unfollow"
     },
     "common": {
@@ -339,7 +339,7 @@
         "moreButtons": "More buttons",
         "adjustButtons": "Adjust button positions",
         "done": "Done",
-        "dragTip": "Drag icons to adjust positions, first three buttons shown in main navigation",
+        "dragTip": "Drag icons to adjust positions, first three buttons shown in main page",
         "location": {
             "grenoble": "Grenoble"
         },
@@ -359,13 +359,13 @@
             "beefNoodles": "Lanzhou Beef Noodles",
             "noodleCategory": "Food·Noodles",
             "twentyPercent": "20% Off",
-            "jiuRamen": "Jiu Ramen"
+            "jiuRamen": "Neuf Ramen"
         }
     },
     "provider": {
         "main": {
             "completeStoreInfo": "Please complete store information first. If not completed, users will not be able to search for your store",
-            "overview": "Overall Overview",
+            "overview": "Overview",
             "totalActivations": "Total Score Card Activations",
             "totalViews": "Total Views",
             "overallTrend": "Overall Trend",
@@ -374,8 +374,8 @@
             "moreData": "More Overall Data",
             "avgOrderAmount": "Average Order Amount",
             "totalVisitors": "Total Visitors",
-            "couponsIssued": "Total Coupons Issued",
-            "couponsUsed": "Total Coupons Used",
+            "couponsIssued": "Total Vouchers Issued",
+            "couponsUsed": "Total Vouchers Used",
             "recentActivity": "Recent Activity"
         },
         "stats": {
@@ -469,7 +469,7 @@
             "couponsIssued": "Issued {{count}} coupons today"
         },
         "drawer": {
-            "businessManagement": "Business Management",
+            "businessManagement": "Commercial Management",
             "home": "Home",
             "growth": "Growth",
             "orders": "Orders",
@@ -500,14 +500,14 @@
         },
         "latitude": "Latitude",
         "info": {
-            "title": "Provider information",
+            "title": "Commercial information",
             "updateTime": "Last updated time",
-            "storeName": "Provider Name",
-            "address": "Provider address",
-            "phone": "Provider phone number",
-            "email": "Provider email address",
-            "description": "Provider description",
-            "location": "Provider location",
+            "storeName": "Commercial name",
+            "address": "Address",
+            "phone": "Phone number",
+            "email": "Email address",
+            "description": "Description",
+            "location": "Location",
             "rejectReason": "Reason for rejection",
             "submitTime": "Submission time",
             "notFilled": "Not filled in"
@@ -546,7 +546,7 @@
         "dialog": {
             "submitSuccess": "Submission successful",
             "submitFailed": "Submission failed",
-            "title": "Submit the application"
+            "title": "Submit application"
         },
         "map": {
             "cancel": "Cancel",
@@ -766,12 +766,12 @@
             "userDetail": "User Detail"
         },
         "providerManagement": {
-            "title": "Provider Management",
-            "providerRequests": "Provider Requests",
-            "providerAudit": "Provider Audit",
-            "providerList": "Provider List",
-            "providerRequestDetail": "Provider Request Detail",
-            "providerAuditDetail": "Provider Audit Detail"
+            "title": "Commercial Management",
+            "providerRequests": "Commercial Requests",
+            "providerAudit": "Commercial Audit",
+            "providerList": "Commercial List",
+            "providerRequestDetail": "Commercial Request Detail",
+            "providerAuditDetail": "Commercial Audit Detail"
         },
         "systemManagement": {
             "title": "System Management",
