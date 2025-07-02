@@ -419,7 +419,8 @@
         },
         "stats": {
             "yoy": "Annuel",
-            "mom": "Mensuel"
+            "mom": "Mensuel",
+            "overview": "Aperçu"
         },
         "period": {
             "overview": "Vue d'ensemble",
@@ -894,7 +895,7 @@
                 "userID": "ID Utilisateur",
                 "username": "Nom d'utilisateur",
                 "userPassword": "Mot de Passe",
-                "userEmail": "E-mail",
+                "userEmail": "Email",
                 "userRegisterTime": "Date d’inscription",
                 "userSubscribeUntil": "Date de fin d’abonnement",
                 "userIsBanned": "L'utilisateur est banni ou non",
@@ -902,7 +903,7 @@
                 "userIsProvider": "L'utilisateur est commerçant ou non",
                 "userOnetimeCount": "Nombre d’utilisations par session de l’utilisateur",
                 "cardID": "ID carte utilisateur",
-                "userEmailValidated": "L'e-mail de l'utilisateur a-t-elle été vérifiée",
+                "userEmailValidated": "L'email de l'utilisateur a-t-elle été vérifiée",
                 "userVerificationCode": "Code de vérification temporaire de l'utilisateur",
                 "userLongitude": "La longitude de l'utilisateur",
                 "unknown": "Inconnu"
@@ -965,7 +966,7 @@
             "providerAddress": "Adresse du commerçant",
             "providerContactName": "Contacteur",
             "providerContactPhone": "Numéro de téléphone",
-            "providerEmail": "E-mail",
+            "providerEmail": "Email",
             "providerLatitude": "Coordonnées de position",
             "providerDescription": "Description du commerçant",
             "title": "Audit Commercial",
@@ -995,7 +996,7 @@
             "providerInfo": "Informations du commerçant",
             "providerTelephone": "Téléphone",
             "providerAddress": "Adresse",
-            "providerEmail": "E-mail",
+            "providerEmail": "Email",
             "providerIntro": "Aperçu",
             "providerLatitude": "Localisation",
             "applyInfo": "Informations de demande",
