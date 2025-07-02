@@ -167,16 +167,16 @@
         },
         "errors": {
             "usernameExists": "Le nom d'utilisateur existe déjà",
-            "wrongPassword": "Mot de passe incorrect",
+            "wrongPassword": "Mot de Passe incorrect",
             "currentPasswordWrong": "Le mot de passe actuel est incorrect",
             "updateFailed": "Échec de la mise à jour"
         }
     },
     "login": {
         "username": "Nom d'utilisateur",
-        "password": "Mot de passe",
+        "password": "Mot de Passe",
         "loginButton": "Connexion",
-        "forgetPassword": "Mot de passe oublié ?",
+        "forgetPassword": "Mot de Passe oublié ?",
         "resetPassword": "Réinitialiser le Mot de Passe",
         "cancel": "Annuler",
         "usernameOrEmail": "Nom d'utilisateur ou Email",
@@ -192,10 +192,10 @@
     },
     "register": {
         "username": "Nom d'utilisateur",
-        "password": "Mot de passe",
+        "password": "Mot de Passe",
         "email": "Email",
         "registerButton": "S'inscrire",
-        "hasAccount": "Vous avez déjà un compte ? Connexion",
+        "hasAccount": "Vous avez déjà un compte ? Connexion",
         "success": "Inscription réussie, veuillez cliquer sur le lien dans l'email pour activer votre compte",
         "failed": "Échec de l'inscription",
         "usernameExists": "Le nom d'utilisateur existe déjà",
@@ -556,7 +556,7 @@
             "useMyLocation": "Utiliser ma position actuelle"
         },
         "status": {
-            "pending": "En cours d’évaluation",
+            "pending": "En attente",
             "approved": "Accepté",
             "rejected": "Rejeté",
             "reviewing": "En cours d’examen",
@@ -784,7 +784,7 @@
             "selectCondition": "Sélectionner l'état du produit"
         },
         "actions": {
-            "preview": "Aperçu",
+            "preview": "Prévisualiser",
             "saveDraft": "Enregistrer le brouillon",
             "publish": "Publier",
             "deleteDraft": "Supprimer le brouillon",
@@ -893,7 +893,7 @@
                 "userLatitude": "La latitude de l'utilisateur",
                 "userID": "ID Utilisateur",
                 "username": "Nom d'utilisateur",
-                "userPassword": "Mot de passe",
+                "userPassword": "Mot de Passe",
                 "userEmail": "E-mail",
                 "userRegisterTime": "Date d’inscription",
                 "userSubscribeUntil": "Date de fin d’abonnement",
@@ -942,7 +942,7 @@
                 "description4": "Vérifier si la description du commerçant est conforme et ne contient pas d'informations trompeuses"
             },
             "status": {
-                "pending": "En attente de validation",
+                "pending": "En attente",
                 "approved": "Accepté",
                 "rejected": "Refusé",
                 "unknown": "État inconnu"
@@ -997,7 +997,24 @@
             "providerAddress": "Adresse",
             "providerEmail": "E-mail",
             "providerIntro": "Aperçu",
-            "providerLatitude": "Localisation"
+            "providerLatitude": "Localisation",
+            "applyInfo": "Informations de demande",
+            "applyTime": "Date de demande",
+            "lastUpdate": "Dernière mise à jour",
+            "rejectReason": "Raison du refus",
+            "rejectReasonInput": "Veuillez entrer la raison du refus",
+            "title": "Détails de la demande du commerçant",
+            "updateStatus": {
+                "title": "Statut de la demande",
+                "reviewing": "En attente",
+                "approved": "Validé",
+                "description": "Veuillez sélectionner :",
+                "rejected": "Refusé"
+            }
         }
+    },
+    "unknown": {
+        "provider": "Commerçant inconnu",
+        "user": "Utilisateur inconnu"
     }
 }
