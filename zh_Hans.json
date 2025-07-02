@@ -213,7 +213,7 @@
     "profileCenter": "个人中心",
     "cardWallet": "卡包",
     "mutualFollows": "好友",
-    "becomeProvider": "成为服务商",
+    "becomeProvider": "成为商家",
     "contactUs": "联系我们",
     "settings": "设置",
     "help": "帮助",
@@ -247,7 +247,7 @@
   "navigation": {
     "home": "首页",
     "recentMessages": "消息",
-    "provider": "服务商",
+    "provider": "商家",
     "profile": "个人",
     "admin": "管理",
     "secondhand": "二手"
@@ -570,7 +570,7 @@
       "logout": "退出登录"
     },
     "request": {
-      "title": "申请成为服务商",
+      "title": "申请成为商家",
       "subtitle": "请填写以下信息",
       "storeName": "商家名称",
       "address": "商家地址",
