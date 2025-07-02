@@ -51,7 +51,7 @@
         "restartRequired": "Redémarrage de l'application requis pour appliquer les modifications.",
         "restartNow": "Redémarrer Maintenant",
         "selectChannel": "Sélectionner le Canal",
-        "currentChannel": "Actuel : {channel}",
+        "currentChannel": "Actuel : {{channel}}",
         "updateAvailable": "Nouvelle mise à jour disponible !",
         "latestVersion": "Déjà la dernière version",
         "updateSuccess": "Mise à jour réussie",
@@ -213,17 +213,17 @@
         "profileCenter": "Centre de Profil",
         "cardWallet": "Portefeuille de Cartes",
         "mutualFollows": "Amis",
-        "becomeProvider": "Devenir Fournisseur",
+        "becomeProvider": "Devenir commerçant",
         "contactUs": "Nous Contacter",
         "settings": "Paramètres",
         "help": "Centre d'aide",
-        "feedback": "Commentaires",
+        "feedback": "Feedback",
         "productDetails": "Détails du Produit",
-        "kaoPuCoins": "Pièces KaoPu",
-        "secondHand": "Seconde Main",
-        "kaoPuCard": "Carte KaoPu",
+        "kaoPuCoins": "Points CoBook",
+        "secondHand": "D’occasion",
+        "kaoPuCard": "Carte CoBook",
         "myQRCode": "Mon Code QR",
-        "scanQRCodeTip": "Scanner le code QR pour partager mon profil",
+        "scanQRCodeTip": "Scanner le code QR pour voir mon profil",
         "close": "Fermer",
         "endofpage": "Plus rien",
         "unknowuser": "Utilisateur inconnu"
@@ -247,10 +247,10 @@
     "navigation": {
         "home": "Accueil",
         "recentMessages": "Messages",
-        "provider": "Fournisseur",
+        "provider": "Commerçant",
         "profile": "Profil",
         "admin": "Admin",
-        "secondhand": "Seconde Main"
+        "secondhand": "D’occasion"
     },
     "system": {
         "healthChecking": "Vérification de l'état du système en cours...",
@@ -260,7 +260,7 @@
         "version": "Version",
         "confirm": "Confirmer",
         "forceLogout": "Veuillez vous reconnecter",
-        "forceLogoutMessage": "Vous avez été forcé à vous déconnecter en raison d'une connexion sur un autre appareil",
+        "forceLogoutMessage": "Vous avez été forcé de vous déconnecter en raison d’une connexion sur un autre appareil",
         "messageFrom": "Message de {nickname}",
         "networkOffline": "Connexion réseau perdue",
         "offlineModeEnabled": "Basculement en mode hors ligne",
@@ -285,11 +285,11 @@
         "networkError": "Erreur de connexion réseau",
         "serverConnectionFailed": "Impossible de se connecter au serveur",
         "requestTimeout": "Délai d'attente de la requête",
-        "scorecardFailtobecreated": "Échec de la création de la carte de score"
+        "scorecardFailtobecreated": "Échec de la création de la carte de fidélité"
     },
     "network": {
         "offlineMode": "Mode Hors Ligne",
-        "tapToReconnect": "Appuyez pour essayer de vous reconnecter",
+        "tapToReconnect": "Appuyez pour réessayer la connexion",
         "connecting": "Tentative de connexion au serveur...",
         "pleaseWait": "Veuillez patienter",
         "backOnline": "De retour en ligne",
@@ -302,12 +302,12 @@
         "mutuallike": "Amis",
         "fans": "Fans",
         "Like": "J'aime",
-        "Followable": "Suivre",
-        "CancelFollow": "Suivi",
-        "timeoffollow": "Date : ",
+        "Followable": "Abonnements",
+        "CancelFollow": "Abonné",
+        "timeoffollow": "Date : ",
         "Nofollower": "Aucun abonné",
-        "Nolike": "Vous ne suivez aucun utilisateur",
-        "Nofriend": "Vous n'avez aucun suivi mutuel",
+        "Nolike": "Aucun abonnement",
+        "Nofriend": "Aucun suivi mutuel",
         "following": {
             "followingCount": "Nombre d’abonnements",
             "following": "Abonnements",
@@ -398,12 +398,12 @@
             "beefNoodles": "Nouilles de Bœuf de Lanzhou",
             "noodleCategory": "Nourriture·Nouilles",
             "twentyPercent": "20% de Réduction",
-            "jiuRamen": "Jiu Ramen"
+            "jiuRamen": "Neuf Ramen"
         }
     },
     "provider": {
         "main": {
-            "completeStoreInfo": "Veuillez d'abord compléter les informations du magasin. Si non complétées, les utilisateurs ne pourront pas rechercher votre magasin",
+            "completeStoreInfo": "Veuillez compléter les infos commerçant pour être visible par les utilisateurs",
             "overview": "Aperçu",
             "totalActivations": "Total des Activations de Carte de Score",
             "totalViews": "Total des Vues",
@@ -420,7 +420,18 @@
         "stats": {
             "yoy": "Annuel",
             "mom": "Mensuel",
-            "overview": "Aperçu"
+            "overview": "Aperçu",
+            "moreData": "Plus de données générales",
+            "totalActivations": "Total d’activations de cartes de fidélité",
+            "totalViews": "Vues totales",
+            "overallTrend": "Tendance générale",
+            "totalMembers": "Nombre total de membres",
+            "totalRevenue": "Volume total des transactions",
+            "avgOrderAmount": "Valeur moyenne des commandes",
+            "totalVisitors": "Total de visiteurs",
+            "couponsIssued": "Total des coupons distribués",
+            "couponsUsed": "Total des coupons utilisés",
+            "recentActivity": "Activités récentes"
         },
         "period": {
             "overview": "Vue d'ensemble",
@@ -437,7 +448,7 @@
             "completeStats": "Statistiques Complètes",
             "last7Days": "7 derniers jours",
             "last30Days": "30 derniers jours",
-            "scorecardUsage": "Utilisation de la Carte de Score",
+            "scorecardUsage": "Utilisations de la carte de fidélité",
             "visits": "Visites",
             "visitors": "Visiteurs",
             "monday": "Lun",
@@ -457,14 +468,14 @@
             "totalPoints": "Points Totaux",
             "averagePoints": "Points Moyens",
             "customerCount": "Nombre de Clients",
-            "activatedCustomers": "Clients Ayant Activé la Carte de Score",
-            "usageCustomers": "Clients Utilisant la Carte de Score",
+            "activatedCustomers": "Clients carte fidélité activée",
+            "usageCustomers": "Clients carte fidélité utilisée",
             "activated": "Activé",
             "used": "Utilisé",
             "lastUsed": "Dernière Utilisation",
             "points": "Points",
             "viewAll": "Voir Tout",
-            "scorecardDetail": "Détail de la Carte de Score",
+            "scorecardDetail": "Détails de la carte de fidélité",
             "customerInfo": "Informations Client",
             "name": "Nom",
             "activationTime": "Heure d'Activation",
@@ -493,7 +504,7 @@
             "coffee": "Café",
             "dessert": "Dessert",
             "meal": "Repas",
-            "snack": "Collation",
+            "snack": "Snack",
             "milkTea": "Thé au Lait"
         },
         "notifications": {
@@ -503,13 +514,13 @@
         "activity": {
             "today": "Aujourd'hui",
             "yesterday": "Hier",
-            "scorecardActivated": "{{name}} a activé la carte de score",
+            "scorecardActivated": "{{name}} a activé la carte de fidélité",
             "newReview": "Reçu 1 nouveau commentaire",
             "newRegularCustomers": "Ajouté {{count}} nouveaux clients réguliers",
             "couponsIssued": "Émis {{count}} coupons aujourd'hui"
         },
         "drawer": {
-            "businessManagement": "Gestion d'Entreprise",
+            "businessManagement": "Gestion des Commerçants",
             "home": "Accueil",
             "growth": "Croissance",
             "orders": "Commandes",
@@ -517,20 +528,20 @@
         },
         "more": {
             "title": "Plus d'Options",
-            "editBusinessInfo": "Modifier les Informations de l'Entreprise",
-            "businessSettings": "Paramètres de l'Entreprise",
+            "editBusinessInfo": "Modifier les infos commerçant",
+            "businessSettings": "Paramètres",
             "businessHours": "Heures d'Ouverture",
             "menuManagement": "Gestion du Menu et des Produits",
-            "scorecardManagement": "Gestion de la Carte de Score",
+            "scorecardManagement": "Gestion des cartes de fidélité",
             "eventSettings": "Paramètres d'Événement",
-            "voucherManagement": "Gestion des Bons",
+            "voucherManagement": "Gestion des Coupons",
             "appSettings": "Paramètres de l'Application",
             "notifications": "Notifications",
             "darkMode": "Mode Sombre",
-            "language": "Langue",
+            "language": "Paramètres de langue",
             "helpSupport": "Aide et Support",
             "help": "Aide",
-            "feedback": "Commentaires",
+            "feedback": "Feedback",
             "contactUs": "Nous Contacter",
             "about": "À Propos",
             "accountManagement": "Gestion du Compte",
@@ -648,7 +659,7 @@
                     "message": "Échange réussi !"
                 }
             },
-            "title": "COBOOK Coupon",
+            "title": "CoBook Coupon",
             "detail": {
                 "title": "Détail du coupon"
             }
@@ -697,12 +708,12 @@
             "noResultsSubText": "Essayez d'autres termes de recherche ou critères de filtre"
         },
         "sorting": {
-            "title": "Trier par",
-            "default": "Par défaut",
+            "title": "Trier Par",
+            "default": "Résultat optimal",
             "newest": "Plus récent",
             "mostLiked": "Plus aimé",
-            "priceAsc": "Prix : Croissant",
-            "priceDesc": "Prix : Décroissant"
+            "priceAsc": "Prix : Croissant",
+            "priceDesc": "Prix : Décroissant"
         },
         "timeRange": {
             "title": "Date de publication",
@@ -713,7 +724,7 @@
             "6months": "Dans 6 mois"
         },
         "priceRange": {
-            "title": "Gamme de prix",
+            "title": "Fourchette de prix",
             "minPrice": "Prix min",
             "maxPrice": "Prix max"
         },
@@ -797,14 +808,14 @@
             "goSettings": "Aller aux paramètres"
         },
         "status": {
-            "online": "En ligne",
-            "offline": "Hors ligne"
+            "online": "Mettre en vente",
+            "offline": "Retirer de la vente"
         },
         "errors": {
             "imageSelectionFailed": "Échec de la sélection d'image",
             "aspectRatioTooLarge": "Ratio d'aspect de l'image {{index}} trop grand, veuillez sélectionner à nouveau",
             "imageTooSmall": "Taille de l'image {{index}} inférieure à 10kb, ne répond pas aux exigences",
-            "saveDraftFailed": "Échec de la sauvegarde du brouillon",
+            "saveDraftFailed": "Échec de l’enregistrement du brouillon",
             "sendpicturefailed": "Échec de l'envoi d'image",
             "uploadFailed": "Échec du téléchargement, veuillez réessayer plus tard"
         },
@@ -819,7 +830,7 @@
         },
         "success": {
             "title": "Succès",
-            "draftSaved": "Brouillon sauvegardé"
+            "draftSaved": "Brouillon enregistré"
         },
         "notification": {
             "areusuretoleave": "Êtes-vous sûr de vouloir quitter ?",
@@ -832,13 +843,13 @@
     "secondhandMultiple": {
         "titles": {
             "multiplePublish": "Publication en lot",
-            "supplementMode": "Mode complément"
+            "supplementMode": "Mode complémentaire"
         },
         "banner": {
-            "supplementModeText": "Actuellement en mode complément, vous ne pouvez que modifier les brouillons existants et renvoyer.",
-            "groupIdInfo": "Tous les produits seront ajoutés au même groupe de produits (ID de groupe : {groupId}).",
-            "addNewProductTip": "Pour ajouter de nouveaux produits, veuillez d'abord quitter le mode complément.",
-            "exitSupplementMode": "Quitter le mode complément"
+            "supplementModeText": "Actuellement en mode complémentaire, vous ne pouvez que modifier les brouillons existants et renvoyer.",
+            "groupIdInfo": "Tous les produits seront ajoutés au même groupe de produits (ID de groupe : {{groupId}}).",
+            "addNewProductTip": "Pour ajouter de nouveaux produits, veuillez d'abord quitter le mode complémentaire.",
+            "exitSupplementMode": "Quitter le mode complémentaire"
         },
         "coverImage": {
             "changeCover": "Changer l'image de couverture",
@@ -852,22 +863,22 @@
             "groupDescriptionRequired": "Veuillez entrer la description du groupe"
         },
         "publishing": {
-            "publishingText": "Publication ({current}/{total})",
-            "progressPercentage": "{percentage}%",
+            "publishingText": "Publication en cours ({{current}/{total}})",
+            "progressPercentage": "{{percentage}}%",
             "publishAll": "Publier tout",
             "supplement": "Complément",
             "noDraftsToPublish": "Aucun brouillon à publier"
         },
         "dialogs": {
-            "confirmDelete": "Êtes-vous sûr de vouloir supprimer ce brouillon ?",
-            "supplementModeHelp": "En mode complément, vous ne pouvez que modifier les brouillons existants et renvoyer.\n\nSi vous devez ajouter de nouveaux produits :\n1. Veuillez d'abord quitter le mode complément\n2. Après avoir quitté, les brouillons existants seront envoyés à un nouveau groupe de produits",
-            "exitSupplementModeTitle": "Quitter le mode complément",
-            "exitSupplementModeMessage": "Explication du mode complément :\n\n1. Ce mode garantit que tous les produits sont publiés dans le même groupe de produits\n2. Dans ce mode, vous ne pouvez que modifier les brouillons existants et renvoyer\n3. Après avoir quitté ce mode :\n   - Vous pouvez ajouter de nouveaux produits\n   - Tous les brouillons existants seront envoyés à un nouveau groupe de produits\n\nÊtes-vous sûr de vouloir quitter le mode complément ?",
+            "confirmDelete": "Êtes-vous sûr de vouloir supprimer ce brouillon ?",
+            "supplementModeHelp": "En mode complémentaire, vous ne pouvez que modifier les brouillons existants et renvoyer.\n\nSi vous devez ajouter de nouveaux produits :\n1. Veuillez d'abord quitter le mode complémentaire\n2. Après avoir quitté, les brouillons existants seront envoyés à un nouveau groupe de produits",
+            "exitSupplementModeTitle": "Quitter le mode complémentaire",
+            "exitSupplementModeMessage": "Explication du mode complémentaire :\n\n1. Ce mode garantit que tous les produits sont publiés dans le même groupe de produits\n2. Dans ce mode, vous ne pouvez que modifier les brouillons existants et renvoyer\n3. Après avoir quitté ce mode :\n   - Vous pouvez ajouter de nouveaux produits\n   - Tous les brouillons existants seront envoyés à un nouveau groupe de produits\n\nÊtes-vous sûr de vouloir quitter le mode complémentaire ?",
             "confirmExit": "Confirmer la sortie"
         },
         "results": {
             "allSuccess": "Tous les produits publiés",
-            "partialSuccess": "Publication réussie de {success} produits, échec de {failed}\n\nEntré en mode complément, les publications suivantes seront ajoutées au même groupe de produits (ID de groupe : {groupId})",
+            "partialSuccess": "Publication réussie de {{success}} produits, échec de {{failed}}\n\nEntré en mode complémentaire, les publications suivantes seront ajoutées au même groupe de produits (ID de groupe : {{groupId}})",
             "publishError": "Erreur survenue pendant la publication",
             "getGroupIdFailed": "Échec de l'obtention de l'ID de groupe",
             "uploadCoverFailed": "Échec du téléchargement de l'image de couverture"
@@ -877,7 +888,7 @@
         "dashboard": {
             "title": "Panneau d'Administration",
             "stats": {
-                "pendingProviderRequests": "Demandes de Fournisseur en Attente",
+                "pendingProviderRequests": "Demandes Commerciales en attente",
                 "pendingReports": "Rapports en Attente",
                 "newUsersToday": "Nouveaux Utilisateurs Aujourd'hui"
             }
@@ -911,12 +922,12 @@
             "userDetailTitle": "Détails de l’utilisateur"
         },
         "providerManagement": {
-            "title": "Gestion des Fournisseurs",
-            "providerRequests": "Demandes de Fournisseur",
+            "title": "Gestion des Commerçants",
+            "providerRequests": "Demande de Commerçant",
             "providerAudit": "Audit Commercial",
-            "providerList": "Liste des Fournisseurs",
-            "providerRequestDetail": "Détail de la Demande de Fournisseur",
-            "providerAuditDetail": "Détail de l'Audit de Fournisseur"
+            "providerList": "Liste des Commerçants",
+            "providerRequestDetail": "Détail de la Demande du Commerçant",
+            "providerAuditDetail": "Détail de l'Audit de Commercial"
         },
         "systemManagement": {
             "title": "Gestion du Système",
@@ -926,8 +937,8 @@
         },
         "navigation": {
             "userSearch": "Rechercher des Utilisateurs",
-            "providerRequests": "Demandes de Fournisseur",
-            "providerAudit": "Audit de Fournisseur"
+            "providerRequests": "Demande de Commerçant",
+            "providerAudit": "Audit Commercial"
         },
         "auditDetail": {
             "noImage": "Aucune image",
@@ -935,7 +946,7 @@
             "clickItemToExpand": "Cliquez pour voir les détails",
             "reviewGuide": {
                 "title": "Guide d'audit",
-                "description": "Veuillez examiner attentivement les informations mises à jour soumises par le commerçant afin de vous assurer qu'elles sont conformes aux normes de la plateforme.",
+                "description": "Veuillez vérifier attentivement les informations mises à jour soumises par le commerçant, afin de garantir leur conformité aux normes de la plateforme.",
                 "description2": "Vérifiez si l'image est claire et pertinente par rapport au commerçant",
                 "description5": "Veuillez impérativement fournir une raison claire de refus si vous refusez la vérification",
                 "description1": "Les modifications seront automatiquement en mode développé et en surbrillance",
@@ -973,11 +984,11 @@
             "rejectReason": "Raison du refus",
             "rejectReasonInput": "Veuillez entrer la raison du refus",
             "updateType": "Type de mise à jour",
-            "updateTypeValue": "Mise à jour des informations du commerçant",
-            "noAudit": "Aucune mise à jour des informations commerçantes à valider"
+            "updateTypeValue": "Mise à jour des infos commerçant",
+            "noAudit": "Aucune mise à jour des infos commerçant à valider"
         },
         "providerRequestDetail": {
-            "providerName": "Nom du commerçant",
+            "providerName": "Nom commercial",
             "status": {
                 "title": "État",
                 "reviewing": "En cours d’examen",
@@ -993,7 +1004,7 @@
             "applicantInfo": "Informations du demandeur",
             "userID": "ID Utilisateur",
             "userNickname": "Pseudonyme",
-            "providerInfo": "Informations du commerçant",
+            "providerInfo": "Informations commerciales",
             "providerTelephone": "Téléphone",
             "providerAddress": "Adresse",
             "providerEmail": "Email",
@@ -1004,7 +1015,7 @@
             "lastUpdate": "Dernière mise à jour",
             "rejectReason": "Raison du refus",
             "rejectReasonInput": "Veuillez entrer la raison du refus",
-            "title": "Détails de la demande du commerçant",
+            "title": "Détail de la Demande du Commerçant",
             "updateStatus": {
                 "title": "Statut de la demande",
                 "reviewing": "En attente",
