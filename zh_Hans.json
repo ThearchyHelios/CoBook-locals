@@ -409,20 +409,20 @@
       "title": "提交申请"
     },
     "info": {
-      "title": "店铺信息",
-      "storeName": "店铺名称",
-      "address": "店铺地址",
-      "phone": "店铺电话",
-      "email": "店铺邮箱",
-      "description": "店铺描述",
-      "location": "店铺位置",
+      "title": "商家信息",
+      "storeName": "商家名称",
+      "address": "商家地址",
+      "phone": "商家电话",
+      "email": "商家邮箱",
+      "description": "商家描述",
+      "location": "商家位置",
       "rejectReason": "驳回原因",
       "submitTime": "提交时间",
       "updateTime": "更新时间",
       "notFilled": "未填写"
     },
     "main": {
-      "completeStoreInfo": "请先完善店铺信息，如果不完善店铺信息，将无法被用户搜索到",
+      "completeStoreInfo": "请先完善商家信息，如果不完善商家信息，将无法被用户搜索到",
       "overview": "总体概览",
       "totalActivations": "积分卡总激活数",
       "totalViews": "总浏览量",
@@ -572,12 +572,12 @@
     "request": {
       "title": "申请成为服务商",
       "subtitle": "请填写以下信息",
-      "storeName": "店铺名称",
-      "address": "店铺地址",
-      "phone": "店铺电话",
-      "email": "店铺邮箱",
-      "description": "店铺描述",
-      "location": "店铺位置",
+      "storeName": "商家名称",
+      "address": "商家地址",
+      "phone": "商家电话",
+      "email": "商家邮箱",
+      "description": "商家描述",
+      "location": "商家位置",
       "rejectReason": "驳回原因",
       "submitTime": "提交时间",
       "updateTime": "更新时间",
@@ -590,14 +590,14 @@
       "resubmit": "重新提交"
     },
     "validation": {
-      "addressRequired": "请输入店铺地址",
-      "descriptionRequired": "请输入店铺描述",
+      "addressRequired": "请输入商家地址",
+      "descriptionRequired": "请输入商家描述",
       "emailInvalid": "请输入有效的邮箱地址",
-      "emailRequired": "请输入店铺邮箱",
-      "locationRequired": "请选择店铺位置",
+      "emailRequired": "请输入商家邮箱",
+      "locationRequired": "请选择商家位置",
       "phoneInvalid": "请输入有效的手机号码",
-      "phoneRequired": "请输入店铺电话",
-      "storeNameRequired": "请输入店铺名称"
+      "phoneRequired": "请输入商家电话",
+      "storeNameRequired": "请输入商家名称"
     },
     "detail": {
       "operatingHours": "营业时间",
@@ -875,7 +875,7 @@
     "dashboard": {
       "title": "管理员面板",
       "stats": {
-        "pendingProviderRequests": "待处理商户申请",
+        "pendingProviderRequests": "待处理商家申请",
         "pendingReports": "待处理举报",
         "newUsersToday": "今日新增用户"
       }
@@ -909,12 +909,12 @@
       "userDetailTitle": "用户详情"
     },
     "providerManagement": {
-      "title": "商户管理",
-      "providerRequests": "商户申请",
-      "providerAudit": "商户更新审核",
-      "providerList": "商户列表",
-      "providerRequestDetail": "商户申请详情",
-      "providerAuditDetail": "商户更新详情"
+      "title": "商家管理",
+      "providerRequests": "商家申请",
+      "providerAudit": "商家更新审核",
+      "providerList": "商家列表",
+      "providerRequestDetail": "商家申请详情",
+      "providerAuditDetail": "商家更新详情"
     },
     "systemManagement": {
       "title": "系统管理",
@@ -924,8 +924,8 @@
     },
     "navigation": {
       "userSearch": "用户搜索",
-      "providerRequests": "商户申请",
-      "providerAudit": "商户更新审核"
+      "providerRequests": "商家申请",
+      "providerAudit": "商家更新审核"
     },
     "auditDetail": {
       "status": {
@@ -940,12 +940,12 @@
       "noImage": "无图片",
       "updateData": "更新数据",
       "loadFailed": "加载失败，未找到相关审核信息",
-      "title": "商户更新审核",
+      "title": "商家更新审核",
       "noProviderName": "未提供商家名称",
       "noProviderAddress": "未提供地址",
       "auditInfo": "审核信息",
       "auditID": "审核编号",
-      "providerID": "商户ID",
+      "providerID": "商家ID",
       "submitTime": "提交时间",
       "updateTime": "更新时间",
       "auditComment": "审核意见",
@@ -961,18 +961,18 @@
       "providerDescription": "商家描述",
       "reviewGuide": {
         "title": "审核指南",
-        "description": "请仔细审核商户提交的更新信息，确保内容符合平台规范。",
+        "description": "请仔细审核商家提交的更新信息，确保内容符合平台规范。",
         "description1": "已变更的内容会默认展开并高亮显示",
-        "description2": "检查图片是否清晰且与商户相关",
+        "description2": "检查图片是否清晰且与商家相关",
         "description3": "确认联系信息是否真实有效",
-        "description4": "审核商户描述是否合规、无误导性信息",
+        "description4": "审核商家描述是否合规、无误导性信息",
         "description5": "若拒绝审核，请务必提供明确的拒绝原因"
       },
       "rejectReason": "拒绝原因",
       "rejectReasonInput": "请输入拒绝原因",
       "updateType": "更新类型",
-      "updateTypeValue": "商户信息更新",
-      "noAudit": "暂无商户信息更新审核"
+      "updateTypeValue": "商家信息更新",
+      "noAudit": "暂无商家信息更新审核"
     },
     "providerRequestDetail": {
       "status": {
@@ -990,19 +990,19 @@
       "applicantInfo": "申请人信息",
       "userID": "用户ID",
       "userNickname": "昵称",
-      "providerInfo": "商户信息",
-      "providerName": "商户名称",
-      "providerAddress": "商户地址",
-      "providerTelephone": "商户电话",
-      "providerEmail": "商户邮箱",
-      "providerIntro": "商户简介",
-      "providerLatitude": "商户位置",
+      "providerInfo": "商家信息",
+      "providerName": "商家名称",
+      "providerAddress": "商家地址",
+      "providerTelephone": "商家电话",
+      "providerEmail": "商家邮箱",
+      "providerIntro": "商家简介",
+      "providerLatitude": "商家位置",
       "applyInfo": "申请信息",
       "applyTime": "申请时间",
       "lastUpdate": "最后更新",
       "rejectReason": "拒绝原因",
       "rejectReasonInput": "请输入拒绝原因",
-      "title": "商户申请详情",
+      "title": "商家申请详情",
       "updateStatus": {
         "title": "更新申请状态",
         "description": "请选择操作：",
@@ -1013,7 +1013,7 @@
     }
   },
   "unknown": {
-    "provider": "未知商户",
+    "provider": "未知商家",
     "user": "未知用户"
   }
 }
