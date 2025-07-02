@@ -477,9 +477,9 @@
         },
         "more": {
             "title": "More Options",
-            "editBusinessInfo": "Edit Business Info",
-            "businessSettings": "Business Settings",
-            "businessHours": "Business Hours",
+            "editBusinessInfo": "Edit Commercial Info",
+            "businessSettings": "Settings",
+            "businessHours": "Opening Hours",
             "menuManagement": "Menu & Product Management",
             "scorecardManagement": "Score Card Management",
             "eventSettings": "Event Settings",
