@@ -285,7 +285,7 @@
         "networkError": "Network connection error",
         "serverConnectionFailed": "Unable to connect to server",
         "requestTimeout": "Request timeout",
-        "scorecardFailtobecreated": "Score Card creation failed"
+        "scorecardFailtobecreated": "Rewards Card creation failed"
     },
     "network": {
         "offlineMode": "Offline Mode",
@@ -421,7 +421,7 @@
             "yoy": "YoY",
             "mom": "MoM",
             "overview": "Overview",
-            "totalActivations": "Total activated Score Card count",
+            "totalActivations": "Total Activated Rewards Cards",
             "totalViews": "Total pageviews",
             "overallTrend": "Overall trend",
             "totalMembers": "Total number of members",
@@ -448,7 +448,7 @@
             "completeStats": "Complete Statistics",
             "last7Days": "Last 7 days",
             "last30Days": "Last 30 days",
-            "scorecardUsage": "Score Card Usage",
+            "scorecardUsage": "Rewards Card Usage",
             "visits": "Visits",
             "visitors": "Visitors",
             "monday": "Mon",
@@ -468,14 +468,14 @@
             "totalPoints": "Total Points",
             "averagePoints": "Average Points",
             "customerCount": "Customer Count",
-            "activatedCustomers": "Score Card Activated Customers",
-            "usageCustomers": "Score Card Usage Customers",
+            "activatedCustomers": "Rewards Card Activated Customers",
+            "usageCustomers": "Rewards Card Usage Customers",
             "activated": "Activated",
             "used": "Used",
             "lastUsed": "Last Used",
             "points": "Points",
             "viewAll": "View All",
-            "scorecardDetail": "Score Card Detail",
+            "scorecardDetail": "Rewards Card Detail",
             "customerInfo": "Customer Information",
             "name": "Name",
             "activationTime": "Activation Time",
@@ -514,7 +514,7 @@
         "activity": {
             "today": "Today",
             "yesterday": "Yesterday",
-            "scorecardActivated": "{{name}} activated score card",
+            "scorecardActivated": "{{name}} activated Rewards Card",
             "newReview": "Received 1 new review",
             "newRegularCustomers": "Added {{count}} new regular customers",
             "couponsIssued": "Issued {{count}} coupons today"
@@ -532,7 +532,7 @@
             "businessSettings": "Settings",
             "businessHours": "Opening Hours",
             "menuManagement": "Menu & Product Management",
-            "scorecardManagement": "Score Card Management",
+            "scorecardManagement": "Rewards Card Management",
             "eventSettings": "Event Management",
             "voucherManagement": "Voucher Management",
             "appSettings": "App Settings",
@@ -614,55 +614,55 @@
         },
         "scorecard": {
             "userActivationConfirm": {
-                "message": "You are about to activate the Score Card for {{providerName}}, and after activation, you can accumulate scores and redeem rewards.",
-                "title": "Confirm to activate Score Card"
+                "message": "You're about to activate a Rewards Card for {{providerName}}. Once activated, you can start earning points and redeeming rewards.",
+                "title": "Confirm Rewards Card Activation"
             },
-            "title": "Score Card",
-            "loading": "Loading score card information...",
+            "title": "Rewards Card",
+            "loading": "Loading Rewards Card Information...",
             "providerTermsConditions": {
-                "title": "Score Card Service Terms",
-                "description1": "1. Once the points card is activated, scores can be accumulated at commercial locations.",
+                "title": "Rewards Card Terms and Conditions",
+                "description1": "1. Once the Rewards Card is activated, points can be accumulated at participating merchants.",
                 "description2": "2. You can redeem scores to exchange for rewards and discounts provided by commercials.",
                 "description3": "3. The validity period of points, exchange rules, and the list of redeemable items are determined by the commercial.",
                 "description4": "4. If you find that a commercial is engaging in violations or fraudulent activities, please report it to the platform.",
                 "description5": "5. The platform provides only the score system and does not assume responsibility for the score exchange goods provided by commercials.",
-                "description6": "6. Your personal information will be used for the score card service, but will not be used for any other purposes.",
+                "description6": "6. Your personal information will be used for the Rewards Card service, but will not be used for any other purposes.",
                 "description7": "7. You can always view your score details and redemption history at any time."
             },
             "error": {
                 "title": "Error",
-                "message": "Failed to retrieve score card information, please try again later",
-                "noData": "Unable to load score card information",
-                "providerNotActivatedScorecard": "This merchant has not yet activated the points card feature"
+                "message": "Failed to retrieve Rewards Card information, please try again later",
+                "noData": "Unable to load Rewards Card information",
+                "providerNotActivatedScorecard": "Rewards Card feature is currently unavailable for this merchant"
             },
             "activation": {
                 "success": {
                     "title": "Success",
-                    "message": "Score card activated successfully!"
+                    "message": "Rewards Card activated successfully!"
                 },
                 "failed": {
                     "title": "Error",
-                    "message": "Score card activation failed, please try again later"
+                    "message": "Rewards Card activation failed, please try again later"
                 }
             },
             "redeemableProducts": "Exchangeable items",
-            "userNotActivatedCurrentProviderScorecard": "You don't have a scorecard for this commercial yet",
-            "userNotActivatedCurrentProviderScorecardSubText": "Open an score card to accumulate scores and redeem rewards provided by commercials",
-            "activateScorecard": "Activate score card",
+            "userNotActivatedCurrentProviderScorecard": "You don’t have a Rewards Card for this merchant yet",
+            "userNotActivatedCurrentProviderScorecardSubText": "Activate your Rewards Card to start earning points and redeem rewards offered by the merchant",
+            "activateScorecard": "Activate Rewards Card",
             "points": "Scores",
             "userTermsConditions": {
-                "description1": "1. Once the score card is activated, scores can be accumulated at commercial locations.",
+                "description1": "1. Once the Rewards Card is activated, points can be accumulated at participating merchants.",
                 "description2": "2. You can redeem scores to exchange for rewards and discounts provided by commercials.",
                 "description3": "3. The validity period of points, exchange rules, and the list of redeemable items are determined by the commercial.",
                 "description4": "4. If you find that a commercial is engaging in violations or fraudulent activities, please report it to the platform.",
                 "description5": "5. The platform provides only the score system and does not assume responsibility for the score exchange goods provided by commercials.",
-                "description6": "6. Your personal information will be used for the score card service, but will not be used for any other purposes.",
+                "description6": "6. Your personal information will be used for the Rewards Card service, but will not be used for any other purposes.",
                 "description7": "7. You can always view your score details and redemption history at any time.",
-                "title": "User Score Card Service Terms"
+                "title": "Rewards Card Terms and Conditions"
             },
-            "activationRequired": "You need to activate the score card",
+            "activationRequired": "Rewards Card activation required",
             "noRedeemableProducts": "No redeemable items available",
-            "activationModalTitle": "Score card activation",
+            "activationModalTitle": "Rewards Card Activation",
             "pointsNotEnough": "Insufficient scores",
             "redeem": "Redeem now"
         },
@@ -951,7 +951,10 @@
             "originalData": "Original data",
             "valueNotSet": "Not set",
             "noImage": "No image",
-            "updateData": "Update data"
+            "updateData": "Update data",
+            "loadFailed": "Loading failed, no relevant review information found",
+            "noProviderName": "Merchant name missing",
+            "title": "Commercial Audit"
         }
     }
 }
