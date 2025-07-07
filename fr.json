@@ -569,9 +569,9 @@
         },
         "status": {
             "pending": "En attente",
-            "approved": "Accepté",
+            "approved": "Approuvé",
             "rejected": "Rejeté",
-            "reviewing": "En cours d’examen",
+            "reviewing": "En cours de validation",
             "title": "État",
             "unknown": "Inconnu"
         },
@@ -949,13 +949,13 @@
                 "description": "Veuillez vérifier attentivement les informations mises à jour soumises par le commerçant, afin de garantir leur conformité aux normes de la plateforme.",
                 "description2": "Vérifiez si l'image est claire et pertinente par rapport au commerçant",
                 "description5": "Veuillez impérativement fournir une raison claire de refus si vous refusez la vérification",
-                "description1": "Les modifications seront automatiquement en mode développé et en surbrillance",
+                "description1": "Les modifications seront automatiquement développées et mises en surbrillance",
                 "description3": "Vérifiez si les informations de contact sont vraies et valides",
                 "description4": "Vérifier si la description du commerçant est conforme et ne contient pas d'informations trompeuses"
             },
             "status": {
                 "pending": "En attente",
-                "approved": "Accepté",
+                "approved": "Approuvé",
                 "rejected": "Refusé",
                 "unknown": "État inconnu"
             },
@@ -974,7 +974,7 @@
             "changeComparison": "Comparaison des changements",
             "providerLogo": "Icône du commerçant",
             "providerImage": "Photo du commerçant",
-            "providerAddress": "Adresse du commerçant",
+            "providerAddress": "Adresse",
             "providerContactName": "Contacteur",
             "providerContactPhone": "Numéro de téléphone",
             "providerEmail": "Email",
@@ -991,14 +991,14 @@
             "providerName": "Nom commercial",
             "status": {
                 "title": "État",
-                "reviewing": "En cours d’examen",
-                "approved": "Accepté",
+                "reviewing": "En cours de validation",
+                "approved": "Approuvé",
                 "rejected": "Refusé",
                 "unknown": "État inconnu",
                 "pending": "Non validé"
             },
             "startReview": "Commencez l‘audit",
-            "approve": "Validé",
+            "approve": "Approuvé",
             "reject": "Refusé",
             "loadFailed": "Chargement échoué",
             "applicantInfo": "Informations du demandeur",
@@ -1018,8 +1018,8 @@
             "title": "Détail de la Demande du Commerçant",
             "updateStatus": {
                 "title": "Statut de la demande",
-                "reviewing": "En attente",
-                "approved": "Validé",
+                "reviewing": "En cours de vérification",
+                "approved": "Approuvé",
                 "description": "Veuillez sélectionner :",
                 "rejected": "Refusé"
             }
