@@ -16,7 +16,7 @@
     "settings": {
         "title": "Settings",
         "personalSettings": "Personal Settings",
-        "myInfo": "My Personal Info",
+        "myInfo": "My Info",
         "mySubscriptions": "My Subscriptions",
         "changeChatBackground": "Change Chat Background",
         "appSettings": "App Settings",
@@ -403,7 +403,7 @@
     },
     "provider": {
         "main": {
-            "completeStoreInfo": "Please complete store information first. If not completed, users will not be able to search for your store",
+            "completeStoreInfo": "Please complete the commercial information to be visible to users",
             "overview": "Overview",
             "totalActivations": "Total Score Card Activations",
             "totalViews": "Total Views",
@@ -556,7 +556,7 @@
             "storeName": "Commercial name",
             "address": "Address",
             "phone": "Phone number",
-            "email": "Email address",
+            "email": "Email",
             "description": "Description",
             "location": "Location",
             "rejectReason": "Reason for rejection",
@@ -565,15 +565,15 @@
         },
         "request": {
             "title": "Apply to become a Commercial",
-            "email": "Commercial email address",
+            "email": "Email",
             "editApplication": "Edit application",
             "longitude": "Longitude",
             "subtitle": "Please fill in the following information",
             "storeName": "Commercial Name",
-            "address": "Commercial address",
-            "phone": "Commercial phone number",
+            "address": "Address",
+            "phone": "Phone number",
             "description": "Commercial description",
-            "location": "Commercial location",
+            "location": "商家位置",
             "rejectReason": "Reason for rejection",
             "submitTime": "Submission time",
             "updateTime": "Last updated time",
@@ -606,9 +606,9 @@
         },
         "status": {
             "pending": "Under review",
-            "approved": "Passed",
+            "approved": "Approved",
             "rejected": "Rejected",
-            "reviewing": "Reviewing",
+            "reviewing": "Under Review",
             "title": "Status",
             "unknown": "Unknown"
         },
@@ -652,7 +652,7 @@
             "points": "Scores",
             "userTermsConditions": {
                 "description1": "1. Once the Rewards Card is activated, points can be accumulated at participating merchants.",
-                "description2": "2. You can redeem scores to exchange for rewards and discounts provided by commercials.",
+                "description2": "2. You can redeem your points for rewards and offers provided by the merchant.",
                 "description3": "3. The validity period of points, exchange rules, and the list of redeemable items are determined by the commercial.",
                 "description4": "4. If you find that a commercial is engaging in violations or fraudulent activities, please report it to the platform.",
                 "description5": "5. The platform provides only the score system and does not assume responsibility for the score exchange goods provided by commercials.",
@@ -943,9 +943,9 @@
         "auditDetail": {
             "status": {
                 "pending": "Under review",
-                "approved": "Passed",
+                "approved": "Approved",
                 "rejected": "Rejected",
-                "unknown": "Unknown status"
+                "unknown": "Unknown Status"
             },
             "informationChanged": "The information has been updated",
             "originalData": "Original data",
@@ -953,8 +953,80 @@
             "noImage": "No image",
             "updateData": "Update data",
             "loadFailed": "Loading failed, no relevant review information found",
-            "noProviderName": "Merchant name missing",
-            "title": "Commercial Audit"
+            "noProviderName": "Commercial name not provided",
+            "title": "Commercial Audit",
+            "reviewGuide": {
+                "description": "Please carefully review the merchant’s submitted update information to ensure the content complies with platform guidelines.",
+                "description2": "Please check if the image is clear and relevant to the merchant",
+                "description4": "Verify that the merchant’s description is compliant and does not contain misleading information",
+                "title": "Review Guidelines",
+                "description1": "The changes will be automatically expanded and highlighted",
+                "description3": "Please verify if the contact information is true and valid",
+                "description5": "Please provide a clear reason for rejection if you refuse the verification"
+            },
+            "updateTypeValue": "Commercial Information Update",
+            "noAudit": "No commercial information update review available",
+            "noProviderAddress": "Address not provided",
+            "auditInfo": "Review Information",
+            "auditID": "Review ID",
+            "submitTime": "Submission time",
+            "updateTime": "Last updated time",
+            "auditComment": "Review Comments",
+            "changeComparison": "Change Comparison",
+            "clickItemToExpand": "Click to view details",
+            "providerLogo": "Merchant Icon",
+            "providerImage": "Merchant Photo",
+            "providerAddress": "Address",
+            "providerContactName": "Contact Person",
+            "providerContactPhone": "Phone Number",
+            "providerEmail": "Email",
+            "providerLatitude": "Location Coordinates",
+            "providerDescription": "Merchant Description",
+            "rejectReason": "Reason for Rejection",
+            "rejectReasonInput": "Please enter the reason for rejection",
+            "updateType": "Update Type",
+            "providerID": "Merchant ID"
+        },
+        "providerRequestDetail": {
+            "status": {
+                "title": "Status",
+                "pending": "Unreviewed",
+                "reviewing": "Under Review",
+                "approved": "Approved",
+                "rejected": "Rejected",
+                "unknown": "Unknown Status"
+            },
+            "providerAddress": "Address",
+            "startReview": "Start Review",
+            "approve": "Approved",
+            "reject": "Rejected",
+            "loadFailed": "Loading Failed",
+            "applicantInfo": "Applicant Information",
+            "userID": "User ID",
+            "userNickname": "Nickname",
+            "providerInfo": "Commercial information",
+            "providerName": "Commercial Name",
+            "providerTelephone": "Phone number",
+            "providerEmail": "Email",
+            "providerIntro": "Overview",
+            "providerLatitude": "Location",
+            "applyInfo": "Application Information",
+            "applyTime": "Application Time",
+            "lastUpdate": "Last Updated",
+            "rejectReason": "Reason for Rejection",
+            "rejectReasonInput": "Please enter the reason for rejection",
+            "title": "Commercial Application Details",
+            "updateStatus": {
+                "title": "Application Status",
+                "description": "Please select :",
+                "reviewing": "Under Review",
+                "approved": "Approved",
+                "rejected": "Rejected"
+            }
         }
+    },
+    "unknown": {
+        "provider": "Unknown Merchant",
+        "user": "Unknown User"
     }
 }
