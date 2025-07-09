@@ -125,7 +125,7 @@
             "downloadLanguageSuccess": "Download complete",
             "switchToLocalLanguage": "Switch to built-in language",
             "switchToLocalLanguageMessage": "Do you want to switch to the built-in language {{languageName}}?",
-            "languageSwitchedSuccessMessage": "Successfully switched to built-in language {{languageName}}"
+            "languageSwitchedSuccessMessage": "Successfully switched to language {{languageName}}"
         }
     },
     "userInfo": {
@@ -863,7 +863,7 @@
             "groupDescriptionRequired": "Please enter group description"
         },
         "publishing": {
-            "publishingText": "Publishing ({{current}/{total}})",
+            "publishingText": "Publishing ({{current}/{{total}})",
             "progressPercentage": "{{percentage}}%",
             "publishAll": "Publish all",
             "supplement": "Supplement",
