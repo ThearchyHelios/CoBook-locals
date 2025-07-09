@@ -89,7 +89,7 @@
             "downloadNewLanguageConfirm": "Télécharger et basculer",
             "unsupportedLocalLanguage": "Langue locale non prise en charge : {{languageCode}}",
             "languageSwitchedSuccess": "La langue a été changée",
-            "languageSwitchedSuccessMessage": "La langue intégrée {{languageName}} a été activée avec succès",
+            "languageSwitchedSuccessMessage": "La langue {{languageName}} a été activée avec succès",
             "languageSwitchedSuccessConfirm": "Confirmer",
             "reloadLocalLanguageSuccess": "Rechargement terminé",
             "updateLanguageSuccess": "Mise à jour terminée",
@@ -230,7 +230,7 @@
     },
     "userSettings": {
         "title": "Informations du Compte",
-        "subtitle": "Les éléments avec l'icône {icon} peuvent être modifiés",
+        "subtitle": "Les éléments avec l'icône {{icon}} peuvent être modifiés",
         "notLoggedIn": "Non connecté",
         "notLoggedInUser": "Utilisateur non connecté",
         "fields": {
@@ -863,7 +863,7 @@
             "groupDescriptionRequired": "Veuillez entrer la description du groupe"
         },
         "publishing": {
-            "publishingText": "Publication en cours ({{current}/{total}})",
+            "publishingText": "Publication en cours ({{current}/{{total}})",
             "progressPercentage": "{{percentage}}%",
             "publishAll": "Publier tout",
             "supplement": "Complément",
