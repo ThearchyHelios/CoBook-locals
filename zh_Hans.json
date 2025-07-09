@@ -88,7 +88,7 @@
       "downloadNewLanguageConfirm": "下载并切换",
       "unsupportedLocalLanguage": "不支持的本地语言: {{languageCode}}",
       "languageSwitchedSuccess": "语言已切换",
-      "languageSwitchedSuccessMessage": "已成功切换到内置语言 {{languageName}}",
+      "languageSwitchedSuccessMessage": "已成功切换到语言 {{languageName}}",
       "languageSwitchedSuccessConfirm": "确定",
       "reloadLocalLanguageSuccess": "重新加载完成",
       "reloadLocalLanguageSuccessMessage": "本地语言包 {{languageName}} 已重新加载",
@@ -230,7 +230,7 @@
   },
   "userSettings": {
     "title": "账户信息",
-    "subtitle": "带有 {icon} 图标的项目可以编辑",
+    "subtitle": "带有 {{icon}} 图标的项目可以编辑",
     "notLoggedIn": "未登录",
     "notLoggedInUser": "未登录用户",
     "fields": {
@@ -834,7 +834,7 @@
     },
     "banner": {
       "supplementModeText": "当前处于补充发送模式，您只能修改现有草稿并重新发送。",
-      "groupIdInfo": "所有商品将被添加到同一商品组中（组ID: {groupId}）。",
+      "groupIdInfo": "所有商品将被添加到同一商品组中（组ID: {{groupId}}）。",
       "addNewProductTip": "如需添加新商品，请先退出补充发送模式。",
       "exitSupplementMode": "退出补充发送模式"
     },
@@ -850,8 +850,8 @@
       "groupDescriptionRequired": "请填写组描述"
     },
     "publishing": {
-      "publishingText": "正在发布 ({current}/{total})",
-      "progressPercentage": "{percentage}%",
+      "publishingText": "正在发布 ({{current}}/{{total}})",
+      "progressPercentage": "{{percentage}}%",
       "publishAll": "发布全部",
       "supplement": "补充发送",
       "noDraftsToPublish": "没有待发布的物品"
@@ -865,7 +865,7 @@
     },
     "results": {
       "allSuccess": "所有商品已发布",
-      "partialSuccess": "成功发布 {success} 个商品，失败 {failed} 个\n\n已进入补充发送模式，后续发布将添加到同一商品组中（组ID: {groupId}）",
+      "partialSuccess": "成功发布 {{success}} 个商品，失败 {{failed}} 个\n\n已进入补充发送模式，后续发布将添加到同一商品组中（组ID: {{groupId}}）",
       "publishError": "发布过程中出现错误",
       "getGroupIdFailed": "获取分组ID失败",
       "uploadCoverFailed": "上传封面图失败"
