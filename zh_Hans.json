@@ -188,7 +188,9 @@
     "resetEmailSent": "密码重置邮件已发送",
     "checkEmail": "请检查您的邮箱",
     "userNotFound": "用户或邮箱未找到",
-    "resetFailed": "密码重置失败，请稍后重试"
+    "resetFailed": "密码重置失败，请稍后重试",
+    "googleSignInButton": "使用 Google 登录",
+    "appleSignInButton": "使用 Apple 登录"
   },
   "register": {
     "username": "用户名",
@@ -254,6 +256,21 @@
   },
   "system": {
     "healthChecking": "系统健康检查进行中...",
+    "initializing": "正在初始化应用程序...",
+    "checkingLoginInfo": "正在检查登录信息...",
+    "checkingNetworkStatus": "正在检查网络状态...",
+    "checkingServerConnection": "正在检查服务器连接...",
+    "loadingLocalData": "正在加载本地数据...",
+    "loggingIn": "正在登录...",
+    "savingUserData": "正在保存用户数据...",
+    "checkingLanguagePackages": "正在检查语言包更新...",
+    "cleaningOldLanguageCache": "正在清理旧的语言缓存...",
+    "downloadingLanguagePackages": "正在下载语言包...",
+    "updatingLanguageResources": "正在更新语言资源...",
+    "checkingUpdates": "正在检查应用更新...",
+    "downloadingUpdate": "正在下载更新...",
+    "requestingPermissions": "正在请求权限...",
+    "completed": "初始化完成",
     "updateSuccess": "更新成功",
     "updateFailed": "更新失败",
     "restartApp": "请重启应用",
