@@ -188,7 +188,9 @@
         "resetEmailSent": "Email de réinitialisation du mot de passe envoyé",
         "checkEmail": "Veuillez vérifier votre email",
         "userNotFound": "Utilisateur ou email introuvable",
-        "resetFailed": "Échec de la réinitialisation du mot de passe, veuillez réessayer plus tard"
+        "resetFailed": "Échec de la réinitialisation du mot de passe, veuillez réessayer plus tard",
+        "googleSignInButton": "Se connecter avec Google",
+        "appleSignInButton": "Se connecter avec Apple"
     },
     "register": {
         "username": "Nom d'utilisateur",
@@ -267,7 +269,22 @@
         "networkRestored": "Connexion réseau restaurée",
         "dataReadError": "Impossible de lire les données locales",
         "restartAppPrompt": "Veuillez redémarrer l'application",
-        "dontturnoffdivice": "Veuillez ne pas fermer cette application"
+        "dontturnoffdivice": "Veuillez ne pas fermer cette application",
+        "initializing": "Initialisation de l'application...",
+        "checkingLoginInfo": "Vérification des informations de connexion...",
+        "checkingNetworkStatus": "Vérification de l'état du réseau...",
+        "checkingServerConnection": "Vérification de la connexion au serveur...",
+        "loadingLocalData": "Chargement des données locales...",
+        "loggingIn": "Connexion en cours...",
+        "savingUserData": "Enregistrement des données utilisateur...",
+        "cleaningOldLanguageCache": "Nettoyage des anciens caches de langue...",
+        "updatingLanguageResources": "Mise à jour des ressources linguistiques...",
+        "checkingUpdates": "Vérification des mises à jour de l'application...",
+        "downloadingUpdate": "Téléchargement de la mise à jour...",
+        "requestingPermissions": "Demande d’autorisation en cours...",
+        "completed": "Initialisation terminée",
+        "downloadingLanguagePackages": "Téléchargement du package de langue...",
+        "checkingLanguagePackages": "Mise à jour du package de langue en cours..."
     },
     "validation": {
         "usernameRequired": "Le nom d'utilisateur ne peut pas être vide",
