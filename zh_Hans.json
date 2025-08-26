@@ -278,7 +278,7 @@
     "confirm": "确定",
     "forceLogout": "请重新登录",
     "forceLogoutMessage": "由于您在其他设备上登录，您已被强制登出",
-    "messageFrom": "来自 {nickname} 的消息",
+    "messageFrom": "来自 {{nickname}} 的消息",
     "networkOffline": "网络连接丢失",
     "offlineModeEnabled": "已切换到离线模式",
     "networkRestored": "网络连接已恢复",
