@@ -188,7 +188,9 @@
         "resetEmailSent": "Password reset email sent",
         "checkEmail": "Please check your email",
         "userNotFound": "User or email not found",
-        "resetFailed": "Password reset failed, please try again later"
+        "resetFailed": "Password reset failed, please try again later",
+        "googleSignInButton": "Sign in with Google",
+        "appleSignInButton": "Sign in with Apple"
     },
     "register": {
         "username": "Username",
@@ -267,7 +269,22 @@
         "networkRestored": "Network connection restored",
         "dataReadError": "Unable to read local data",
         "restartAppPrompt": "Please restart the application",
-        "dontturnoffdivice": "Please do not close this application"
+        "dontturnoffdivice": "Please do not close this application",
+        "initializing": "Initializing ...",
+        "checkingLoginInfo": "Checking for credentials ...",
+        "checkingNetworkStatus": "Checking network status...",
+        "checkingServerConnection": "Checking server connection...",
+        "loadingLocalData": "Loading local data...",
+        "loggingIn": "Logging in...",
+        "savingUserData": "Saving user data...",
+        "checkingLanguagePackages": "Checking for language updates...",
+        "cleaningOldLanguageCache": "Cleaning up old language caches...",
+        "downloadingLanguagePackages": "Downloading language...",
+        "updatingLanguageResources": "Updating language...",
+        "checkingUpdates": "Checking for OTA updates...",
+        "downloadingUpdate": "Downloading update...",
+        "requestingPermissions": "Requesting permissions...",
+        "completed": "Initialization complete"
     },
     "validation": {
         "usernameRequired": "Username cannot be empty",
