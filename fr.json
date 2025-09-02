@@ -263,7 +263,7 @@
         "confirm": "Confirmer",
         "forceLogout": "Veuillez vous reconnecter",
         "forceLogoutMessage": "Vous avez été forcé de vous déconnecter en raison d’une connexion sur un autre appareil",
-        "messageFrom": "Message de {nickname}",
+        "messageFrom": "Message de {{nickname}}",
         "networkOffline": "Connexion réseau perdue",
         "offlineModeEnabled": "Basculement en mode hors ligne",
         "networkRestored": "Connexion réseau restaurée",
