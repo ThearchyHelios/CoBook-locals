@@ -7,6 +7,10 @@
     "VIP": "VIP",
     "score": "你的积分",
     "maxscore": "最大积分：",
+    "memberCard": "会员卡",
+    "availablePoints": "可用积分",
+    "scanQRCode": "扫描积分卡二维码",
+    "cardNumber": "卡号",
     "pointsRequired": "需要 {{points}} 积分",
     "noDescription": "无详细描述",
     "achieved": "已达成",
@@ -214,6 +218,7 @@
   "profile": {
     "profileCenter": "个人中心",
     "cardWallet": "卡包",
+    "myVouchers": "我的优惠券",
     "mutualFollows": "好友",
     "becomeProvider": "成为商家",
     "contactUs": "联系我们",
@@ -228,7 +233,10 @@
     "scanQRCodeTip": "扫描二维码来查看我的资料",
     "close": "关闭",
     "endofpage": "没有更多了",
-    "unknowuser": "未知用户"
+    "unknowuser": "未知用户",
+    "failedToLoadScorecards": "加载积分卡失败",
+    "noScorecardsYet": "暂无积分卡",
+    "visitMerchantsToGetScorecards": "访问商家并消费获得积分卡"
   },
   "userSettings": {
     "title": "账户信息",
@@ -351,6 +359,7 @@
     "gotIt": "知道了",
     "yes": "是",
     "no": "否",
+    "retry": "重试",
     "weekday": {
       "monday": "周一",
       "tuesday": "周二",
@@ -460,7 +469,11 @@
       "couponsUsed": "优惠券总使用",
       "recentActivity": "最近动态",
       "yoy": "同比",
-      "mom": "环比"
+      "mom": "环比",
+      "totalUsage": "总使用次数",
+      "totalPointsRedeemed": "总积分兑换数",
+      "avgPointsPerRedemption": "平均每次兑换积分",
+      "couponsRedeemed": "优惠券兑换数"
     },
     "status": {
       "pending": "待审核",
@@ -554,7 +567,9 @@
       "scorecardActivated": "{{name}} 激活了积分卡",
       "newReview": "收到1条新评价",
       "newRegularCustomers": "新增{{count}}名常客",
-      "couponsIssued": "当日发放了{{count}}张优惠券"
+      "couponsIssued": "当日发放了{{count}}张优惠券",
+      "redeemed": "兑换了",
+      "points": "积分"
     },
     "drawer": {
       "businessManagement": "商家管理",
@@ -698,6 +713,13 @@
       "detail": {
         "title": "券详情"
       }
+    },
+    "points": {
+      "remainingBalance": "剩余积分",
+      "used": "使用积分"
+    },
+    "logs":{
+      "totalRecords": "总记录数"
     }
   },
   "secondhandSearch": {
