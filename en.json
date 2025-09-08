@@ -11,7 +11,11 @@
         "noDescription": "No description available",
         "achieved": "Achieved",
         "notAchieved": "Not achieved",
-        "redeemNow": "Redeem now"
+        "redeemNow": "Redeem now",
+        "memberCard": "Scorecard",
+        "availablePoints": "Available scores",
+        "scanQRCode": "Scan the QR code on the Score Card",
+        "cardNumber": "Score Card number"
     },
     "settings": {
         "title": "Settings",
