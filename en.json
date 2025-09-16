@@ -130,7 +130,8 @@
             "switchToLocalLanguage": "Switch to built-in language",
             "switchToLocalLanguageMessage": "Do you want to switch to the built-in language {{languageName}}?",
             "languageSwitchedSuccessMessage": "Successfully switched to language {{languageName}}"
-        }
+        },
+        "mySettings": "My settings"
     },
     "userInfo": {
         "title": "My Info",
@@ -194,7 +195,8 @@
         "userNotFound": "User or email not found",
         "resetFailed": "Password reset failed, please try again later",
         "googleSignInButton": "Sign in with Google",
-        "appleSignInButton": "Sign in with Apple"
+        "appleSignInButton": "Sign in with Apple",
+        "title": "Login"
     },
     "register": {
         "username": "Username",
@@ -213,7 +215,8 @@
             "usernameFormat": "Username can only contain letters and numbers",
             "passwordFormat": "Password must contain at least 8 characters, including letters and numbers",
             "emailFormat": "Invalid email format"
-        }
+        },
+        "title": "Sign Up"
     },
     "profile": {
         "profileCenter": "Profile Center",
@@ -232,7 +235,12 @@
         "scanQRCodeTip": "Scan QR code to view my profile",
         "close": "Close",
         "endofpage": "No more",
-        "unknowuser": "Unknown user"
+        "unknowuser": "Unknown user",
+        "myProfile": "My Homepage",
+        "myVouchers": "My CoBook Coupon",
+        "failedToLoadScorecards": "Failed to load Score Card",
+        "noScorecardsYet": "No score card available",
+        "visitMerchantsToGetScorecards": "Visit a Commercial and spend to get a Score Card"
     },
     "userSettings": {
         "title": "Account Info",
@@ -256,7 +264,10 @@
         "provider": "Commercial",
         "profile": "Profile",
         "admin": "Admin",
-        "secondhand": "Second Hand"
+        "secondhand": "Second Hand",
+        "mainView": "Main",
+        "userProfile": "User Homepage",
+        "testPage": "Test page"
     },
     "system": {
         "healthChecking": "System health check in progress...",
@@ -339,7 +350,8 @@
             "followingCount": "Following count"
         },
         "Date": "Added time",
-        "cancelFollow": "Unfollow"
+        "cancelFollow": "Unfollow",
+        "title": "Social relationships"
     },
     "common": {
         "error": "Error",
@@ -364,11 +376,29 @@
             "friday": "Friday",
             "saturday": "Saturday",
             "sunday": "Sunday"
-        }
+        },
+        "retry": "Retry"
     },
     "secondhand": {
         "loginToViewProductDetails": "Login to view product details",
-        "imageLoadFailed": "Image load failed"
+        "imageLoadFailed": "Image load failed",
+        "productDetail": "Second-hand product details",
+        "edit": "Edit Second-Hand products",
+        "singlePublish": "Sell a single second-hand item",
+        "batchPublishPreview": "Preview of bulk listing second-hand items",
+        "messageList": "Second-hand product message list",
+        "productGroupDetail": "Second-Hand product group details",
+        "singlePublishPreview": "Preview of publishing a single second-hand item",
+        "multiplePublish": "Multiple second-hand item publish",
+        "batchPublishNew": "Bulk listing of second-hand items new creation",
+        "batchPublishEdit": "Bulk edit of second-hand items",
+        "groupPublish": "Second-hand products group publish",
+        "publish": "Publish product",
+        "groupPublishPreview": "Preview for second-hand items within the group",
+        "previewProduct": "Preview product",
+        "watchlist": "Watchlist for second-hand items",
+        "search": "Second-Hand product search",
+        "draftEdit": "Draft editing of second-hand items"
     },
     "message": {
         "sendmessage": "Send message",
@@ -436,7 +466,8 @@
             "totalVisitors": "Total Visitors",
             "couponsIssued": "Total Vouchers Issued",
             "couponsUsed": "Total Vouchers Used",
-            "recentActivity": "Recent Activity"
+            "recentActivity": "Recent Activity",
+            "homepage": "Commercial Home Page"
         },
         "stats": {
             "yoy": "YoY",
@@ -450,9 +481,14 @@
             "moreData": "More overall data",
             "avgOrderAmount": "Average order value",
             "totalVisitors": "Total visitor count",
-            "couponsIssued": "Total Vouchers Issued",
-            "couponsUsed": "Total Vouchers Used",
-            "recentActivity": "Recent updates"
+            "couponsIssued": "Total CoBook Vouchers Issued",
+            "couponsUsed": "Total CoBook Vouchers Used",
+            "recentActivity": "Recent updates",
+            "totalUsage": "Total usage count",
+            "totalPointsRedeemed": "Total scores exchange count",
+            "avgPointsPerRedemption": "Average points exchanged per redemption",
+            "businessStats": "Sales data statistics",
+            "couponsRedeemed": "CoBook Coupon Redemption Count"
         },
         "period": {
             "overview": "Overview",
@@ -503,11 +539,12 @@
             "pointsHistory": "Points History",
             "firstActivationReward": "First Activation Reward",
             "purchaseReward": "Purchase Reward",
-            "couponRedemption": "Coupon Redemption",
+            "couponRedemption": "Exchange CoBook Coupon",
             "actions": "Actions",
             "addPoints": "Add Points",
             "redeemReward": "Redeem Reward",
-            "sendNotification": "Send Notification"
+            "sendNotification": "Send Notification",
+            "customerList": "Customer list"
         },
         "search": {
             "placeholder": "Search coffee, milk tea...",
@@ -538,7 +575,9 @@
             "scorecardActivated": "{{name}} activated Rewards Card",
             "newReview": "Received 1 new review",
             "newRegularCustomers": "Added {{count}} new regular customers",
-            "couponsIssued": "Issued {{count}} coupons today"
+            "couponsIssued": "Issued {{count}} CoBook coupons today",
+            "redeemed": "Redeemed",
+            "points": "Points"
         },
         "drawer": {
             "businessManagement": "Commercial Management",
@@ -656,16 +695,7 @@
                 "noData": "Unable to load Rewards Card information",
                 "providerNotActivatedScorecard": "Rewards Card feature is currently unavailable for this merchant"
             },
-            "activation": {
-                "success": {
-                    "title": "Success",
-                    "message": "Rewards Card activated successfully!"
-                },
-                "failed": {
-                    "title": "Error",
-                    "message": "Rewards Card activation failed, please try again later"
-                }
-            },
+            "activation": "Score Card activation",
             "redeemableProducts": "Exchangeable items",
             "userNotActivatedCurrentProviderScorecard": "You don’t have a Rewards Card for this merchant yet",
             "userNotActivatedCurrentProviderScorecardSubText": "Activate your Rewards Card to start earning points and redeem rewards offered by the merchant",
@@ -685,7 +715,23 @@
             "noRedeemableProducts": "No redeemable items available",
             "activationModalTitle": "Rewards Card Activation",
             "pointsNotEnough": "Insufficient scores",
-            "redeem": "Redeem now"
+            "redeem": "Redeem now",
+            "activationFlow": {
+                "success": {
+                    "message": "Score card activated successfully!",
+                    "title": "Success"
+                },
+                "failed": {
+                    "title": "Error",
+                    "message": "Score card activation failed, please try again later"
+                }
+            },
+            "productDetail": "Details of score items",
+            "productDetailEdit": "Edit score items detail",
+            "management": "Score Card Management",
+            "usageLogs": "Score usage log",
+            "pointLogs": "Score log",
+            "usageDetail": "Details of score usage"
         },
         "detail": {
             "operatingHours": "Business hours",
@@ -714,7 +760,44 @@
             },
             "detail": {
                 "title": "Voucher details"
-            }
+            },
+            "management": "Coupon Management",
+            "activityManagement": "Coupon activity management"
+        },
+        "logs": {
+            "operator": "Operator",
+            "totalRecords": "Total record count",
+            "usageLogs": "Usage logs",
+            "addLogs": "Addition log",
+            "combinedLogs": "Total log",
+            "noPointUsage": "No record of score usage is available",
+            "noPointUsageDesc": "It will be shown after customer redeems points to exchange for products",
+            "noPointAdd": "No record of scores addition",
+            "noPointAddDesc": "It will be shown after adding scores to customers",
+            "noCombinedLogs": "No score records available",
+            "noCombinedLogsDesc": "The usage and addition records of scores will be displayed here"
+        },
+        "businessHours": {
+            "title": "Business hours settings"
+        },
+        "title": "CoBook Commercial",
+        "completeInfo": "Complete the commercial information",
+        "points": {
+            "remainingBalance": "Remaining scores",
+            "used": "Scores used",
+            "added": "Add scores"
+        },
+        "editInfo": {
+            "title": "Edit Commercial Information"
+        },
+        "businessInfo": {
+            "settings": "Business information settings"
+        },
+        "store": {
+            "configManagement": "Store Configuration Management"
+        },
+        "review": {
+            "writeReply": "Write a restaurant response"
         }
     },
     "secondhandSearch": {
@@ -1049,5 +1132,10 @@
     "unknown": {
         "provider": "Unknown Merchant",
         "user": "Unknown User"
+    },
+    "voucher": {
+        "detail": {
+            "title": "CoBook Coupon Details"
+        }
     }
 }
