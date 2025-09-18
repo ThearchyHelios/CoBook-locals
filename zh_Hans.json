@@ -260,7 +260,10 @@
   },
   "navigation": {
     "home": "首页",
-    "recentMessages": "消息",
+    "recentMessages":{
+      "recentMessageListView": "最近消息",
+      "messageView": "消息"
+    },
     "provider": "商家",
     "profile": "个人",
     "admin": "管理",
@@ -785,7 +788,7 @@
       "configManagement": "门店配置管理"
     },
     "review": {
-      "writeReply": "写餐厅回复"
+      "writeReply": "餐厅回复"
     }
   },
   "secondhandSearch": {
