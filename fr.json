@@ -261,7 +261,7 @@
     "navigation": {
         "home": "Accueil",
         "recentMessages": {
-            "recentMessageListView": "Messages récents",
+            "recentMessageListView": "Messages",
             "messageView": "Message"
         },
         "provider": "Commerçant",
