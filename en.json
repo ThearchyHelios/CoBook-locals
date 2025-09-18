@@ -260,7 +260,10 @@
     },
     "navigation": {
         "home": "Home",
-        "recentMessages": "Messages",
+        "recentMessages": {
+            "messageView": "Message",
+            "recentMessageListView": "Recent Messages"
+        },
         "provider": "Commercial",
         "profile": "Profile",
         "admin": "Admin",
