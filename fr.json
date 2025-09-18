@@ -260,7 +260,10 @@
     },
     "navigation": {
         "home": "Accueil",
-        "recentMessages": "Messages",
+        "recentMessages": {
+            "recentMessageListView": "Messages récents",
+            "messageView": "Message"
+        },
         "provider": "Commerçant",
         "profile": "Profil",
         "admin": "Admin",
@@ -486,7 +489,9 @@
             "recentActivity": "Activités récentes",
             "businessStats": "Statistiques des ventes",
             "totalUsage": "Total utilisations",
-            "totalPointsRedeemed": "Total de points échangés"
+            "totalPointsRedeemed": "Total de points échangés",
+            "avgPointsPerRedemption": "Points moyens par échange",
+            "couponsRedeemed": "Échanges de coupons CoBook"
         },
         "period": {
             "overview": "Vue d'ensemble",
@@ -537,11 +542,12 @@
             "pointsHistory": "Historique des Points",
             "firstActivationReward": "Récompense de Première Activation",
             "purchaseReward": "Récompense d'Achat",
-            "couponRedemption": "Échange de Coupon",
+            "couponRedemption": "Échange de Coupon CoBook",
             "actions": "Actions",
             "addPoints": "Ajouter des Points",
             "redeemReward": "Échanger une Récompense",
-            "sendNotification": "Envoyer une Notification"
+            "sendNotification": "Envoyer une Notification",
+            "customerList": "Liste des clients"
         },
         "search": {
             "placeholder": "Rechercher café, thé au lait...",
@@ -572,7 +578,9 @@
             "scorecardActivated": "{{name}} a activé la carte de fidélité",
             "newReview": "Reçu 1 nouveau commentaire",
             "newRegularCustomers": "Ajouté {{count}} nouveaux clients réguliers",
-            "couponsIssued": "Émis {{count}} coupons aujourd'hui"
+            "couponsIssued": "Émis {{count}} coupons CoBook aujourd'hui",
+            "redeemed": "Échangé",
+            "points": "Points"
         },
         "drawer": {
             "businessManagement": "Gestion des Commerçants",
@@ -663,16 +671,7 @@
                 "noData": "Chargement des infos de la carte de fidélité impossible",
                 "providerNotActivatedScorecard": "La fonction carte de fidélité n’est pas encore disponible pour ce commerçant"
             },
-            "activation": {
-                "failed": {
-                    "message": "Échec de l’activation de la carte de fidélité, veuillez réessayer plus tard",
-                    "title": "Erreur"
-                },
-                "success": {
-                    "title": "Succès",
-                    "message": "Carte de fidélité activée avec succès !"
-                }
-            },
+            "activation": "Activation de la carte de fidélité",
             "userNotActivatedCurrentProviderScorecardSubText": "Activez la carte de fidélité pour cumuler des points et échanger les récompenses proposées par le commerçant",
             "userTermsConditions": {
                 "description2": "2. Vous pouvez échanger vos points contre des récompenses et des avantages proposés par le commerçant.",
@@ -711,7 +710,9 @@
             "management": "Gestion des cartes de fidélité",
             "usageLogs": "Journal d’utilisation des points",
             "usageDetail": "Détails de l’utilisation des points",
-            "pointLogs": "Journal des points"
+            "pointLogs": "Journal des points",
+            "productDetail": "Détails de l’article de récompense",
+            "productDetailEdit": "Modifier les détails de l’article de récompense"
         },
         "voucher": {
             "attention": "Attention",
@@ -781,7 +782,7 @@
         },
         "title": "CoBook Commercial",
         "completeInfo": "Compléter les informations du commerçant",
-        "platformConsultation": "Contacter la plateforme",
+        "platformConsultation": "Consulter la plateforme",
         "points": {
             "remainingBalance": "Points restants",
             "used": "Points utilisés",
@@ -1135,5 +1136,10 @@
     "unknown": {
         "provider": "Commerçant inconnu",
         "user": "Utilisateur inconnu"
+    },
+    "voucher": {
+        "detail": {
+            "title": "Détails du coupon CoBook"
+        }
     }
 }
