@@ -11,7 +11,11 @@
         "noDescription": "Aucune description détaillée",
         "achieved": "Atteint",
         "notAchieved": "Non atteint",
-        "redeemNow": "Échanger Maintenant"
+        "redeemNow": "Échanger Maintenant",
+        "memberCard": "Carte de fidélité",
+        "availablePoints": "Points disponibles",
+        "scanQRCode": "Scannez le code QR de la carte de fidélité",
+        "cardNumber": "Numéro de la carte de fidélité"
     },
     "settings": {
         "title": "Paramètres",
@@ -126,7 +130,8 @@
             "refreshing": "Actualisation en cours de la liste des langues..."
         },
         "showTranslationKeys": "Afficher la clé de traduction",
-        "showTranslationKeysDesc": "Mode développeur : Afficher i18n clés de traduction au lieu des textes traduits"
+        "showTranslationKeysDesc": "Mode développeur : Afficher i18n clés de traduction au lieu des textes traduits",
+        "mySettings": "Mes paramètres"
     },
     "userInfo": {
         "title": "Mes Informations",
@@ -190,7 +195,8 @@
         "userNotFound": "Utilisateur ou email introuvable",
         "resetFailed": "Échec de la réinitialisation du mot de passe, veuillez réessayer plus tard",
         "googleSignInButton": "Se connecter avec Google",
-        "appleSignInButton": "Se connecter avec Apple"
+        "appleSignInButton": "Se connecter avec Apple",
+        "title": "Connexion"
     },
     "register": {
         "username": "Nom d'utilisateur",
@@ -209,7 +215,8 @@
             "usernameFormat": "Le nom d'utilisateur ne peut contenir que des lettres et des chiffres",
             "passwordFormat": "Le mot de passe doit contenir au moins 8 caractères, incluant des lettres et des chiffres",
             "emailFormat": "Format d'email invalide"
-        }
+        },
+        "title": "S'inscrire"
     },
     "profile": {
         "profileCenter": "Centre de Profil",
@@ -228,7 +235,12 @@
         "scanQRCodeTip": "Scanner le code QR pour voir mon profil",
         "close": "Fermer",
         "endofpage": "Plus rien",
-        "unknowuser": "Utilisateur inconnu"
+        "unknowuser": "Utilisateur inconnu",
+        "myProfile": "Mon Page d'accueil",
+        "myVouchers": "Mes CoBook Coupons",
+        "noScorecardsYet": "Aucune carte de fidélité disponible",
+        "failedToLoadScorecards": "Échec du chargement de la carte de fidélité",
+        "visitMerchantsToGetScorecards": "Visitez un commerçant et effectuez un achat pour obtenir une carte de fidélité"
     },
     "userSettings": {
         "title": "Informations du Compte",
@@ -252,7 +264,10 @@
         "provider": "Commerçant",
         "profile": "Profil",
         "admin": "Admin",
-        "secondhand": "D’occasion"
+        "secondhand": "D’occasion",
+        "mainView": "Accueil",
+        "userProfile": "Profil utilisateur",
+        "testPage": "Test page"
     },
     "system": {
         "healthChecking": "Vérification de l'état du système en cours...",
@@ -335,7 +350,8 @@
             "followers": "Abonnés"
         },
         "cancelFollow": "Désabonner",
-        "Date": "Date ajoutée"
+        "Date": "Date ajoutée",
+        "title": "Relations sociales"
     },
     "common": {
         "error": "Erreur",
@@ -360,11 +376,29 @@
             "saturday": "Samedi",
             "sunday": "Dimanche"
         },
-        "no": "Non"
+        "no": "Non",
+        "retry": "Réessayer"
     },
     "secondhand": {
         "loginToViewProductDetails": "Connectez-vous pour voir les détails du produit",
-        "imageLoadFailed": "Échec du chargement de l'image"
+        "imageLoadFailed": "Échec du chargement de l'image",
+        "productDetail": "Détails des articles d'occasion",
+        "productGroupDetail": "Détails du groupe d’articles d’occasion",
+        "edit": "Modifier les articles d’occasion",
+        "draftEdit": "Modification des brouillons d’articles d’occasion",
+        "singlePublishPreview": "Aperçu de la publication d’un seul article d’occasion",
+        "search": "Recherche d'articles d'occasion",
+        "singlePublish": "Publier un seul article d’occasion",
+        "multiplePublish": "Publier plusieurs articles d’occasion",
+        "batchPublishNew": "Publication d’un nouveau lot d’articles d’occasion",
+        "batchPublishPreview": "Aperçu de la publication d’un lot d’articles d’occasion",
+        "batchPublishEdit": "Modifier un lot d’articles d’occasion",
+        "groupPublish": "Publier un groupe d’articles d’occasion",
+        "groupPublishPreview": "Aperçu de publication en groupe d'articles d'occasion",
+        "watchlist": "Liste d'articles d'occasion suivi",
+        "messageList": "Liste des messages d'articles d'occasion",
+        "previewProduct": "Aperçu des produits",
+        "publish": "Publier"
     },
     "message": {
         "sendmessage": "Envoyer un message",
@@ -432,7 +466,8 @@
             "totalVisitors": "Total des Visiteurs",
             "couponsIssued": "Total des Coupons Émis",
             "couponsUsed": "Total des Coupons Utilisés",
-            "recentActivity": "Activité Récente"
+            "recentActivity": "Activité Récente",
+            "homepage": "Accueil commerçant"
         },
         "stats": {
             "yoy": "Annuel",
@@ -448,7 +483,10 @@
             "totalVisitors": "Total de visiteurs",
             "couponsIssued": "Total des coupons distribués",
             "couponsUsed": "Total des coupons utilisés",
-            "recentActivity": "Activités récentes"
+            "recentActivity": "Activités récentes",
+            "businessStats": "Statistiques des ventes",
+            "totalUsage": "Total utilisations",
+            "totalPointsRedeemed": "Total de points échangés"
         },
         "period": {
             "overview": "Vue d'ensemble",
@@ -659,7 +697,21 @@
             "noRedeemableProducts": "Aucun article échangeable",
             "activationModalTitle": "Activation de la carte de fidélité",
             "pointsNotEnough": "Points insuffisants",
-            "redeem": "Échanger Maintenant"
+            "redeem": "Échanger Maintenant",
+            "activationFlow": {
+                "success": {
+                    "title": "Succès",
+                    "message": "Carte de fidélité activée avec succès !"
+                },
+                "failed": {
+                    "title": "Erreur",
+                    "message": "Échec de l’activation de la carte de fidélité, veuillez réessayer plus tard"
+                }
+            },
+            "management": "Gestion des cartes de fidélité",
+            "usageLogs": "Journal d’utilisation des points",
+            "usageDetail": "Détails de l’utilisation des points",
+            "pointLogs": "Journal des points"
         },
         "voucher": {
             "attention": "Attention",
@@ -679,7 +731,9 @@
             "title": "CoBook Coupon",
             "detail": {
                 "title": "Détail du coupon"
-            }
+            },
+            "management": "Gestion des coupons",
+            "activityManagement": "Gestion des activités de coupons"
         },
         "request": {
             "location": "Localisation",
@@ -711,7 +765,43 @@
             "phoneRequired": "Veuillez saisir le téléphone du commerçant",
             "storeNameRequired": "Veuillez saisir le nom du commerçant"
         },
-        "longitude": "Longitude"
+        "longitude": "Longitude",
+        "logs": {
+            "combinedLogs": "Journal combiné",
+            "noPointUsageDesc": "Sera affiché ici après que le client a échangé des points contre des produits",
+            "noCombinedLogsDesc": "L'utilisation et l'ajout des points seront affichés ici",
+            "totalRecords": "Total enregistrements",
+            "usageLogs": "Journal d’utilisation",
+            "addLogs": "Journal des ajouts",
+            "noPointUsage": "Aucun enregistrement d’utilisation des points disponible",
+            "noPointAdd": "Aucun enregistrement d’ajout de points disponible",
+            "noPointAddDesc": "Sera affiché ici après l’ajout de points aux clients",
+            "noCombinedLogs": "Aucun enregistrement de points disponible",
+            "operator": "Opérateur"
+        },
+        "title": "CoBook Commercial",
+        "completeInfo": "Compléter les informations du commerçant",
+        "platformConsultation": "Contacter la plateforme",
+        "points": {
+            "remainingBalance": "Points restants",
+            "used": "Points utilisés",
+            "added": "Ajouter des points"
+        },
+        "businessHours": {
+            "title": "Heures d'Ouverture"
+        },
+        "businessInfo": {
+            "settings": "Paramètres d'infos commerciales"
+        },
+        "editInfo": {
+            "title": "Modifier les infos commerçant"
+        },
+        "store": {
+            "configManagement": "Gestion de la configuration du commerçant"
+        },
+        "review": {
+            "writeReply": "Rédiger une réponse du restaurant"
+        }
     },
     "secondhandSearch": {
         "search": {
