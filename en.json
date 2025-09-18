@@ -262,7 +262,7 @@
         "home": "Home",
         "recentMessages": {
             "messageView": "Message",
-            "recentMessageListView": "Recent Messages"
+            "recentMessageListView": "Messages"
         },
         "provider": "Commercial",
         "profile": "Profile",
@@ -729,7 +729,7 @@
                     "message": "Score card activation failed, please try again later"
                 }
             },
-            "productDetail": "Details of score items",
+            "productDetail": "Reedemable items detail",
             "productDetailEdit": "Edit score items detail",
             "management": "Score Card Management",
             "usageLogs": "Score usage log",
@@ -800,7 +800,7 @@
             "configManagement": "Store Configuration Management"
         },
         "review": {
-            "writeReply": "Write a restaurant response"
+            "writeReply": "Write a comment"
         }
     },
     "secondhandSearch": {
