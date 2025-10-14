@@ -131,7 +131,11 @@
         },
         "showTranslationKeys": "Afficher la clé de traduction",
         "showTranslationKeysDesc": "Mode développeur : Afficher i18n clés de traduction au lieu des textes traduits",
-        "mySettings": "Mes paramètres"
+        "mySettings": "Mes paramètres",
+        "followSystem": "Suivre le système",
+        "light": "Clair",
+        "dark": "Sombre",
+        "select": "Sélectionnez"
     },
     "userInfo": {
         "title": "Mes Informations",
@@ -380,7 +384,10 @@
             "sunday": "Dimanche"
         },
         "no": "Non",
-        "retry": "Réessayer"
+        "retry": "Réessayer",
+        "search": "Rechercher",
+        "save": "Sauvegarder",
+        "create": "Créer"
     },
     "secondhand": {
         "loginToViewProductDetails": "Connectez-vous pour voir les détails du produit",
@@ -587,7 +594,8 @@
             "home": "Accueil",
             "growth": "Croissance",
             "orders": "Commandes",
-            "more": "Plus"
+            "more": "Plus",
+            "providerDetails": "Détails du commerçant"
         },
         "more": {
             "title": "Plus d'Options",
@@ -647,7 +655,7 @@
         "detail": {
             "scorecard": "Carte de fidélité",
             "review": "Commentaire",
-            "description2": "Introduction 2 (test)",
+            "description2": "Annonce d’événement",
             "operatingHours": "Horaires d’ouverture",
             "notOpen": "Fermé",
             "title": "Détails du commerçant",
@@ -802,7 +810,115 @@
         },
         "review": {
             "writeReply": "Rédiger une réponse du restaurant"
-        }
+        },
+        "switchSuccess": "Changement réussi",
+        "switchSuccessMessage": "Changement de commerçant réussi",
+        "employee": {
+            "title": "Gestion des employés",
+            "no_employees": "Aucun employé",
+            "load_failed": "Chargement de la liste des employés échoué",
+            "remove_confirm_message": "Voulez-vous vraiment supprimer l'employé {{name}} ?",
+            "select_new_role": "Veuillez sélectionner le nouveau rôle",
+            "suspendedWarning": "Votre compte d'employé a été gelé, aucun opération ne peut être effectuée",
+            "add_employee": "Ajouter un employé",
+            "no_permission": "Vous n'avez pas l'autorisation de gérer les employés",
+            "search_placeholder": "Entrez l'ID de l'utilisateur, le nom d'utilisateur ou le pseudo",
+            "search_failed": "Recherche d'utilisateur échouée",
+            "add_success": "L'ajout de l'employé a réussi",
+            "add_failed": "Échec de l'ajout de l'employé",
+            "remove_confirm_title": "Supprimer l'employé",
+            "remove_success": "Suppression réussie",
+            "remove_failed": "Échec de la suppression",
+            "role_updated": "Les rôles des employés ont été mis à jour",
+            "role_update_failed": "Échec de la mise à jour du rôle de l'employé",
+            "change_role": "Modifier le rôle",
+            "select_role": "Veuillez sélectionner un rôle",
+            "remove": "Supprimer l'employé",
+            "number": "Numéro d'employé",
+            "joined": "Date d’embauche",
+            "already_employee": "Déjà employé",
+            "enter_role": "Veuillez sélectionner un rôle",
+            "selected_user": "Utilisateur sélectionné"
+        },
+        "role": {
+            "load_failed": "Échec du chargement de la liste des rôles",
+            "enter_name": "Veuillez entrer le nom du rôle",
+            "category": {
+                "data_analytics": "Analyse des données",
+                "provider_management": "Gestion des Commerçants",
+                "user_management": "Gestion des Utilisateurs",
+                "system": "Système"
+            },
+            "title": "Gestion des rôles",
+            "create_role": "Créer un rôle",
+            "edit_permissions": "Droit d’édition",
+            "no_permission": "Vous n'avez pas l'autorisation de gérer les rôles",
+            "create_success": "Création du rôle réussie",
+            "create_failed": "Échec de la création du rôle",
+            "update_success": "Les droits des rôles ont été mis à jour",
+            "update_failed": "Échec de la mise à jour des autorisations du rôle",
+            "role_name": "Nom du rôle",
+            "role_description": "Description des rôle (optionnelle)",
+            "select_permissions": "Choisir les autorisations",
+            "system_role": "Rôle système",
+            "permissions": "Autorisations",
+            "more": "Plus"
+        },
+        "admin": {
+            "suspend_confirm_message": "Voulez-vous vraiment bloquer l'employé {{name}} ? Après le blocage, cet employé perdra temporairement toutes ses autorisations.",
+            "no_permission": "Vous ne disposez pas des droits d'administrateur",
+            "search_placeholder": "Rechercher le nom ou ID du restaurant",
+            "total_points": "Points Totaux",
+            "remove_employee": "Supprimer l'employé",
+            "suspend_success": "Employé suspendu",
+            "reactivate_employee": "Restaurer l’employé",
+            "provider_phone": "Numéro de téléphone",
+            "provider_list": "Liste des restaurants",
+            "provider_details": "Détails du restaurant",
+            "no_providers": "Aucun restaurant disponible",
+            "load_failed": "Échec du chargement de la liste des restaurants",
+            "filter_all": "Tout",
+            "filter_completed": "Déjà complété",
+            "filter_incomplete": "Non complété",
+            "active_employees": "Employés actifs",
+            "total_roles": "Nombre de rôle",
+            "view_details": "Voir les détails",
+            "basic_info": "Informations de base",
+            "employee_list": "Liste des employés",
+            "role_list": "Liste des rôle",
+            "operation_logs": "Journal des opérations",
+            "avg_points": "Points Moyens",
+            "max_points": "Points max",
+            "update_role": "Modifier le rôle",
+            "update_role_success": "Mise à jour du rôle de l'employé réussie",
+            "reactivate_confirm_message": "Confirmer la restauration de l'employé {{name}} ? Après restauration, cet employé recevra à nouveau ses autorisations d'origine.",
+            "update_role_failed": "Échec de la mise à jour du rôle de l'employé",
+            "select_new_role": "Choisir un nouveau rôle",
+            "remove_confirm_title": "Supprimer l'employé",
+            "remove_confirm_message": "Voulez-vous vraiment supprimer l'employé {{name}} ?",
+            "remove_failed": "Échec de la suppression",
+            "remove_success": "Suppression réussie",
+            "status_active": "En poste",
+            "status_suspended": "Suspendu",
+            "status_resigned": "Parti",
+            "suspend_employee": "Suspendre l’employé",
+            "suspend_confirm_title": "Suspendre l’employé",
+            "update_status_failed": "Échec de la mise à jour du statut de l'employé",
+            "reactivate_success": "Employé restauré",
+            "reactivate_confirm_title": "Restaurer l’employé",
+            "resign_success": "Employé marqué comme parti",
+            "resign_confirm_message": "Voulez-vous vraiment marquer {{name}} comme parti ?",
+            "resign_employee": "Employé parti",
+            "resign_confirm_title": "Employé parti",
+            "provider_name": "Nom du restaurant",
+            "provider_address": "Adresse du restaurant",
+            "provider_email": "Email",
+            "is_completed": "Complétion des informations",
+            "created_at": "Date de création"
+        },
+        "currentStore": "Magasin actuel",
+        "switchFailed": "Échec du changement",
+        "switchFailedMessage": "Changement de commerçant échoué. Réessayez plus tard"
     },
     "secondhandSearch": {
         "search": {
@@ -1141,5 +1257,21 @@
         "detail": {
             "title": "Détails du coupon CoBook"
         }
+    },
+    "completeSocialProfile": {
+        "subtitle": "Connexion via {{provider}}. Définissez votre nom d’utilisateur et votre mot de passe",
+        "failed": "Échec de la configuration, veuillez réessayer plus tard",
+        "passwordValidation": "Le mot de passe doit contenir au moins 8 caractères, incluant des lettres et des chiffres",
+        "title": "Compléter le profil du compte",
+        "emailLabel": "Email",
+        "username": "Nom d'utilisateur",
+        "password": "Mot de Passe",
+        "submit": "Terminer la configuration",
+        "success": "Configuration réussie",
+        "successMessage": "Configuration du compte réussie, connexion en cours...",
+        "usernameExists": "Ce nom d’utilisateur est déjà pris, veuillez en changer",
+        "tokenExpired": "Le lien a expiré, veuillez vous reconnecter",
+        "invalidInput": "Veuillez saisir un nom d'utilisateur et un mot de passe valides",
+        "usernameValidation": "Le nom d'utilisateur ne peut contenir que des lettres et des chiffres"
     }
 }
