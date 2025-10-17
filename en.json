@@ -131,7 +131,11 @@
             "switchToLocalLanguageMessage": "Do you want to switch to the built-in language {{languageName}}?",
             "languageSwitchedSuccessMessage": "Successfully switched to language {{languageName}}"
         },
-        "mySettings": "My settings"
+        "mySettings": "My settings",
+        "followSystem": "Follow the system",
+        "light": "Light",
+        "dark": "Dark",
+        "select": "Choose"
     },
     "userInfo": {
         "title": "My Info",
@@ -380,7 +384,10 @@
             "saturday": "Saturday",
             "sunday": "Sunday"
         },
-        "retry": "Retry"
+        "retry": "Retry",
+        "search": "Search",
+        "save": "Save",
+        "create": "Create"
     },
     "secondhand": {
         "loginToViewProductDetails": "Login to view product details",
@@ -587,7 +594,8 @@
             "home": "Home",
             "growth": "Growth",
             "orders": "Orders",
-            "more": "More"
+            "more": "More",
+            "providerDetails": "Commercial Details"
         },
         "more": {
             "title": "More Options",
@@ -801,7 +809,12 @@
         },
         "review": {
             "writeReply": "Write a comment"
-        }
+        },
+        "platformConsultation": "Platform Consulting",
+        "currentStore": "Current store",
+        "switchSuccess": "Switch successful",
+        "switchSuccessMessage": "Switched to the selected commercial",
+        "switchFailed": "Failed to switch"
     },
     "secondhandSearch": {
         "search": {
@@ -1140,5 +1153,21 @@
         "detail": {
             "title": "CoBook Coupon Details"
         }
+    },
+    "completeSocialProfile": {
+        "usernameExists": "The username already exists, please choose a different one",
+        "passwordValidation": "Password must contain at least 8 characters, including letters and numbers",
+        "title": "Complete account information",
+        "subtitle": "Welcome to login with {{provider}}! Please set your username and password",
+        "emailLabel": "Email",
+        "username": "Username",
+        "password": "Password",
+        "submit": "Complete setup",
+        "success": "Setup successfully",
+        "successMessage": "Account set up successfully, logging in...",
+        "failed": "Failed to set, please try again later",
+        "tokenExpired": "The link has expired, please log in again",
+        "invalidInput": "Please enter a valid username and password",
+        "usernameValidation": "Username can only contain letters and numbers"
     }
 }
