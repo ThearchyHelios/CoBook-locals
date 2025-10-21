@@ -847,7 +847,8 @@
                 "data_analytics": "Analyse des données",
                 "provider_management": "Gestion des Commerçants",
                 "user_management": "Gestion des Utilisateurs",
-                "system": "Système"
+                "system": "Système",
+                "scorecard_operations": "Actions sur la carte de fidélité"
             },
             "title": "Gestion des rôles",
             "create_role": "Créer un rôle",
