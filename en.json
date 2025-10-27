@@ -814,7 +814,42 @@
         "currentStore": "Current store",
         "switchSuccess": "Switch successful",
         "switchSuccessMessage": "Switched to the selected commercial",
-        "switchFailed": "Failed to switch"
+        "switchFailed": "Failed to switch",
+        "switchFailedMessage": "Failed to switch active commercial, please try again later",
+        "employee": {
+            "title": "Employee Management",
+            "add_employee": "Add Employee",
+            "no_employees": "No employees available",
+            "no_permission": "You do not have permission to manage employees",
+            "load_failed": "Failed to load employee list",
+            "search_placeholder": "Enter User ID, Username, or Nickname",
+            "search_failed": "Failed to search user",
+            "add_success": "Employee added successfully",
+            "add_failed": "Failed to add employee",
+            "remove_confirm_title": "Remove employee",
+            "remove_confirm_message": "Are you sure you want to remove employee {{name}}?",
+            "remove_success": "The employee has been removed",
+            "remove_failed": "Failed to remove employee",
+            "role_updated": "The employee role has been updated",
+            "role_update_failed": "Failed to update employee role",
+            "change_role": "Change Role",
+            "select_role": "Please select a role",
+            "select_new_role": "Please select a new role",
+            "remove": "Remove employee",
+            "number": "Employee Number",
+            "joined": "Employment date",
+            "already_employee": "Already an employee",
+            "enter_role": "Please select a role",
+            "selected_user": "Selected user",
+            "suspendedWarning": "Your employee account has been frozen and cannot perform any actions"
+        },
+        "role": {
+            "title": "Role Management",
+            "create_role": "Create Role",
+            "edit_permissions": "Edit permissions",
+            "no_permission": "You do not have permission to manage roles",
+            "load_failed": "Failed to load character list"
+        }
     },
     "secondhandSearch": {
         "search": {
