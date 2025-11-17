@@ -48,6 +48,13 @@
     "confirmClearDB": "确定清除聊天数据库？",
     "clearDBWarning": "这将删除所有聊天记录",
     "confirmRestart": "确定重启应用？",
+    "viewChangelog": "查看更新日志",
+    "currentUpdateInfo": "当前更新信息",
+    "runtimeVersion": "运行时版本",
+    "updateTime": "更新时间",
+    "releaseChannel": "发布通道",
+    "gitBranch": "Git 分支",
+    "gitCommit": "Git 提交",
     "switchUpdateChannel": "切换更新通道",
     "switchChannelWarning": "确定要切换到{{channel}}通道吗？\n\n切换后需要重启应用。",
     "alphaChannel": "Alpha (测试版)",
@@ -58,6 +65,7 @@
     "selectChannel": "选择更新通道",
     "currentChannel": "当前: {{channel}}",
     "updateAvailable": "有新的更新！",
+    "updateCheckFailed": "检查更新失败",
     "latestVersion": "已是最新版本",
     "updateSuccess": "更新成功",
     "restartPrompt": "请重启应用\n(Version: {{version}})",
@@ -506,10 +514,15 @@
       "homepage": "商家首页"
     },
     "map": {
+      "title": "附近餐厅",
       "cancel": "取消",
       "confirm": "确定",
       "useMyLocation": "使用我的当前位置"
     },
+    "viewDetails": "查看详情",
+    "loadingRestaurants": "正在加载餐厅...",
+    "noNearbyRestaurants": "附近暂无餐厅",
+    "retry": "重试",
     "stats": {
       "businessStats": "营业数据统计",
       "overview": "总体概览",
@@ -616,7 +629,8 @@
     },
     "notifications": {
       "getRecommendationsFailed": "获取推荐失败",
-      "tryAgainLater": "请稍后再试"
+      "tryAgainLater": "请稍后再试",
+      "fetchFailed": "获取数据失败"
     },
     "activity": {
       "today": "今天",
@@ -701,7 +715,7 @@
       "description": "简介",
       "scorecard": "点卡",
       "review": "评论",
-      "description2": "活动公告"
+      "description2": "活动日程"
     },
     "scorecard": {
       "title": "积分卡",
@@ -1245,6 +1259,13 @@
       },
       "rejectReason": "拒绝原因",
       "rejectReasonInput": "请输入拒绝原因",
+      "rejectReasonRequired": "请输入拒绝原因后再确认",
+      "rejectConfirmTitle": "确认拒绝审核",
+      "rejectConfirmMessage": "您确定要拒绝此商家的信息更新申请吗？",
+      "approve": "审核通过",
+      "reject": "审核拒绝",
+      "approveConfirmTitle": "确认通过审核",
+      "approveConfirmMessage": "您确定要通过此商家的信息更新申请吗？",
       "updateType": "更新类型",
       "updateTypeValue": "商家信息更新",
       "noAudit": "暂无商家信息更新审核"
@@ -1290,6 +1311,25 @@
   "unknown": {
     "provider": "未知商家",
     "user": "未知用户"
+  },
+  "update": {
+    "newVersionAvailable": "发现新版本",
+    "version": "版本",
+    "size": "大小",
+    "sizeUnknown": "未知",
+    "versionUnknown": "未知",
+    "wifiAutoDownload": "检测到 WiFi 连接，将免流量下载更新",
+    "mobileDataWarning": "当前使用移动数据，下载可能产生流量费用",
+    "remindLater": "稍后提醒",
+    "startUpdate": "开始更新",
+    "downloadUpdate": "下载更新",
+    "downloading": "正在下载更新...",
+    "downloadComplete": "下载完成",
+    "restartToApply": "需要重启应用以应用更新",
+    "restartNow": "立即重启",
+    "restartLater": "稍后重启",
+    "applyOnNextLaunch": "下次启动时自动应用",
+    "changelog": "更新日志"
   },
   "voucher": {
     "detail": {
