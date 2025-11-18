@@ -135,7 +135,15 @@
         "followSystem": "Follow the system",
         "light": "Light",
         "dark": "Dark",
-        "select": "Choose"
+        "select": "Choose",
+        "viewChangelog": "View update log",
+        "currentUpdateInfo": "Current update information",
+        "runtimeVersion": "Runtime version",
+        "updateTime": "Update time",
+        "releaseChannel": "Release channel",
+        "gitBranch": "Git Branch",
+        "gitCommit": "Git commit",
+        "updateCheckFailed": "Failed to check for updates"
     },
     "userInfo": {
         "title": "My Info",
@@ -577,7 +585,8 @@
         },
         "notifications": {
             "getRecommendationsFailed": "Failed to get recommendations",
-            "tryAgainLater": "Please try again later"
+            "tryAgainLater": "Please try again later",
+            "fetchFailed": "Failed to retrieve data"
         },
         "activity": {
             "today": "Today",
@@ -673,7 +682,8 @@
         "map": {
             "cancel": "Cancel",
             "confirm": "Confirm",
-            "useMyLocation": "Use my current location"
+            "useMyLocation": "Use my current location",
+            "title": "Nearby restaurants"
         },
         "status": {
             "pending": "Under review",
@@ -751,7 +761,7 @@
             "description": "Description",
             "scorecard": "Score Card",
             "review": "Comment",
-            "description2": "Introduction 2 (Test)"
+            "description2": "Event Schedule"
         },
         "voucher": {
             "title": "CoBook vouchers",
@@ -848,7 +858,54 @@
             "create_role": "Create Role",
             "edit_permissions": "Edit permissions",
             "no_permission": "You do not have permission to manage roles",
-            "load_failed": "Failed to load character list"
+            "load_failed": "Failed to load character list",
+            "create_success": "Role created successfully",
+            "create_failed": "Failed to create role",
+            "update_success": "Role permissions have been updated",
+            "update_failed": "Failed to update role permissions",
+            "enter_name": "Please enter the role title",
+            "role_name": "Role Title",
+            "role_description": "Role Description (Optional)",
+            "select_permissions": "Choose permissions",
+            "system_role": "System Role",
+            "permissions": "Permission",
+            "more": "More",
+            "category": {
+                "provider_management": "Commercial Management",
+                "scorecard_operations": "Score Card Operations",
+                "data_analytics": "Data Analysis",
+                "user_management": "User Management",
+                "system": "System"
+            }
+        },
+        "viewDetails": "View Details",
+        "loadingRestaurants": "Loading restaurant...",
+        "noNearbyRestaurants": "No restaurants nearby",
+        "retry": "Retry",
+        "admin": {
+            "title": "Administrator Restaurant Management",
+            "provider_list": "Restaurant List",
+            "provider_details": "Restaurant Details",
+            "no_providers": "No restaurants available",
+            "load_failed": "Failed to load restaurant list",
+            "search_placeholder": "Search for restaurant name or ID",
+            "filter_all": "All",
+            "filter_completed": "Already complete",
+            "filter_incomplete": "Incomplete",
+            "total_cards": "Total number of Score Cards",
+            "active_employees": "Active employees",
+            "total_roles": "Number of roles",
+            "view_details": "View Details",
+            "basic_info": "Basic Information",
+            "scorecard_config": "Score Card Configuration",
+            "employee_list": "Employee List",
+            "role_list": "Role List",
+            "operation_logs": "Operation Log",
+            "card_stats": "Score Card Statistics",
+            "unique_users": "Independent users",
+            "total_points": "Total Points",
+            "avg_points": "Average scores",
+            "max_points": "Highest scores"
         }
     },
     "secondhandSearch": {
