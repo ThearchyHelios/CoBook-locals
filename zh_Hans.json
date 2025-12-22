@@ -497,7 +497,7 @@
       "title": "提交申请"
     },
     "info": {
-      "title": "餐厅信息",
+      "title": "商家信息",
       "storeName": "商家名称",
       "address": "商家地址",
       "phone": "商家电话",
@@ -514,14 +514,14 @@
       "homepage": "商家首页"
     },
     "map": {
-      "title": "附近餐厅",
+      "title": "附近商家",
       "cancel": "取消",
       "confirm": "确定",
       "useMyLocation": "使用我的当前位置"
     },
     "viewDetails": "查看详情",
-    "loadingRestaurants": "正在加载餐厅...",
-    "noNearbyRestaurants": "附近暂无餐厅",
+    "loadingRestaurants": "正在加载商家...",
+    "noNearbyRestaurants": "附近暂无商家",
     "retry": "重试",
     "stats": {
       "businessStats": "营业数据统计",
@@ -883,12 +883,12 @@
       }
     },
     "admin": {
-      "title": "管理员餐厅管理",
-      "provider_list": "餐厅列表",
-      "provider_details": "餐厅详情",
-      "no_providers": "暂无餐厅",
-      "load_failed": "加载餐厅列表失败",
-      "search_placeholder": "搜索餐厅名称或ID",
+      "title": "管理员商家管理",
+      "provider_list": "商家列表",
+      "provider_details": "商家详情",
+      "no_providers": "暂无商家",
+      "load_failed": "加载商家列表失败",
+      "search_placeholder": "搜索商家名称或ID",
       "filter_all": "全部",
       "filter_completed": "已完善",
       "filter_incomplete": "未完善",
@@ -911,7 +911,7 @@
       "promote_success": "店长任命成功",
       "promote_failed": "任命店长失败",
       "promote_confirm_title": "任命店长",
-      "promote_confirm_message": "确定要任命 {{name}} 为该餐厅的店长吗？",
+      "promote_confirm_message": "确定要任命 {{name}} 为该商家的店长吗？",
       "update_role": "修改角色",
       "update_role_success": "员工角色更新成功",
       "update_role_failed": "更新员工角色失败",
@@ -937,8 +937,8 @@
       "reactivate_confirm_message": "确定要恢复员工 {{name}} 吗？恢复后该员工将重新获得原有权限。",
       "reactivate_success": "员工已恢复",
       "update_status_failed": "更新员工状态失败",
-      "provider_name": "餐厅名称",
-      "provider_address": "餐厅地址",
+      "provider_name": "商家名称",
+      "provider_address": "商家地址",
       "provider_phone": "联系电话",
       "provider_email": "联系邮箱",
       "is_completed": "信息完善",
@@ -964,12 +964,12 @@
       "add_employee_missing_fields": "请填写用户ID和选择角色",
       "add_employee_invalid_userid": "用户ID格式无效",
       "no_permission": "您没有管理员权限",
-      "add_employee_for_provider": "为以下餐厅添加员工",
+      "add_employee_for_provider": "为以下商家添加员工",
       "please_select_role": "请选择角色",
       "no_roles": "暂无角色"
     },
     "review": {
-      "writeReply": "餐厅回复"
+      "writeReply": "商家回复"
     }
   },
   "secondhandSearch": {
