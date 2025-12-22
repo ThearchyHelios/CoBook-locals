@@ -683,7 +683,7 @@
             "cancel": "Cancel",
             "confirm": "Confirm",
             "useMyLocation": "Use my current location",
-            "title": "Nearby restaurants"
+            "title": "Nearby commercials"
         },
         "status": {
             "pending": "Under review",
@@ -818,7 +818,7 @@
             "configManagement": "Store Configuration Management"
         },
         "review": {
-            "writeReply": "Write a comment"
+            "writeReply": "Commercial reply"
         },
         "platformConsultation": "Platform Consulting",
         "currentStore": "Current store",
@@ -879,16 +879,16 @@
             }
         },
         "viewDetails": "View Details",
-        "loadingRestaurants": "Loading restaurant...",
-        "noNearbyRestaurants": "No restaurants nearby",
+        "loadingRestaurants": "Loading commercials...",
+        "noNearbyRestaurants": "No commercials nearby",
         "retry": "Retry",
         "admin": {
-            "title": "Administrator Restaurant Management",
-            "provider_list": "Restaurant List",
-            "provider_details": "Restaurant Details",
-            "no_providers": "No restaurants available",
-            "load_failed": "Failed to load restaurant list",
-            "search_placeholder": "Search for restaurant name or ID",
+            "title": "Administrator Commercial Management",
+            "provider_list": "Commercial List",
+            "provider_details": "Commercial Details",
+            "no_providers": "No commercials available",
+            "load_failed": "Failed to load commercial list",
+            "search_placeholder": "Search for commercial name or ID",
             "filter_all": "All",
             "filter_completed": "Already complete",
             "filter_incomplete": "Incomplete",
@@ -911,7 +911,7 @@
             "promote_success": "The store manager appointment was successful",
             "promote_failed": "Failed to appoint store manager",
             "promote_confirm_title": "Appointing store manager",
-            "promote_confirm_message": "Are you sure you want to appoint {{name}} as the manager of this restaurant?",
+            "promote_confirm_message": "Are you sure you want to appoint {{name}} as the manager of this commercial?",
             "update_role": "Change Role",
             "update_role_success": "The employee role was updated successfully",
             "select_new_role": "Choose new role",
@@ -936,7 +936,35 @@
             "reactivate_confirm_title": "Restore employe",
             "reactivate_confirm_message": "Are you sure you want to restore employee {{name}}? After restoration, the employee will regain their original permissions.",
             "reactivate_success": "Employe have restored",
-            "update_status_failed": "Failed to update employee status"
+            "update_status_failed": "Failed to update employee status",
+            "provider_name": "Commercial Name",
+            "provider_address": "Commercial Address",
+            "provider_phone": "Contact Number",
+            "provider_email": "Contact Email",
+            "is_completed": "Information Completion",
+            "created_at": "Creation time",
+            "scorecard_name": "Score Card Name",
+            "points_per_visit": "Each visit score",
+            "points_per_currency": "Points per Euro spent",
+            "reward_points": "Points required for reward",
+            "no_scorecard": "Not configured Score Card",
+            "operation_type": "Operation Type",
+            "operator": "Operator",
+            "result": "Result",
+            "time": "Time",
+            "no_logs": "No operation logs available",
+            "completed": "Already complete",
+            "incomplete": "Incomplete",
+            "user_id": "User ID",
+            "enter_user_id": "Please enter user ID",
+            "add_employee_success": "Employee added successfully",
+            "add_employee_failed": "Failed to add employee",
+            "add_employee_missing_fields": "Please enter the user ID and select a role",
+            "add_employee_invalid_userid": "The user ID format is invalid",
+            "no_permission": "You do not have administrator privileges",
+            "add_employee_for_provider": "Add employees for the following commercial",
+            "please_select_role": "Please select a role",
+            "no_roles": "No roles available"
         }
     },
     "secondhandSearch": {
@@ -1003,7 +1031,9 @@
             "productPrice": "Product price",
             "negotiablePrice": "Accept price negotiation or not",
             "productDescription": "Product description",
-            "descriptionPreview": "Product description preview"
+            "descriptionPreview": "Product description preview",
+            "productCategory": "Product Category",
+            "productCondition": "Product condition"
         },
         "preview": {
             "negotiable": "Negotiable",
@@ -1043,7 +1073,9 @@
             "saveDraft": "Save draft",
             "publish": "Publish",
             "deleteDraft": "Delete draft",
-            "leave": "Leave"
+            "leave": "Leave",
+            "save": "Save",
+            "publishing": "Publishing..."
         },
         "permissions": {
             "photoTitle": "Photo permission required",
@@ -1128,7 +1160,9 @@
         },
         "validation": {
             "groupNameRequired": "Please enter group name",
-            "groupDescriptionRequired": "Please enter group description"
+            "groupDescriptionRequired": "Please enter group description",
+            "incompleteDraftsTitle": "Product information is incomplete",
+            "incompleteDraftsMessage": "The following products are missing necessary information and must be supplemented before publication:"
         }
     },
     "admin": {
