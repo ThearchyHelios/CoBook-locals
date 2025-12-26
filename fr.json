@@ -127,7 +127,21 @@
             "cachedLanguage": "Langue mise en cache",
             "loaded": "Chargé",
             "fuzzy": "Incomplète",
-            "refreshing": "Actualisation en cours de la liste des langues..."
+            "refreshing": "Actualisation en cours de la liste des langues...",
+            "systemLanguage": "Langue du système",
+            "followSystem": "Suivre le système",
+            "followSystemDescription": "Langue système actuelle: {{systemLanguage}}",
+            "followSystemMessage": "Voulez-vous suivre la langue du système ?\n\nLangue système actuelle: {{systemLanguage}}",
+            "followSystemSuccess": "Paramètres enregistrés",
+            "followSystemSuccessMessage": "Défini pour suivre la langue du système, utilisation actuelle: {{systemLanguage}}",
+            "current": "Actuel",
+            "retry": "Réessayer",
+            "networkError": "Erreur réseau",
+            "networkErrorMessage": "Impossible de se connecter au service de traduction, veuillez vérifier votre connexion réseau",
+            "configurationError": "Erreur de configuration",
+            "configurationErrorMessage": "Erreur de configuration du service de traduction, veuillez contacter le développeur",
+            "authenticationError": "Erreur d'authentification",
+            "authenticationErrorMessage": "Échec de l'authentification du service de traduction, veuillez contacter le développeur"
         },
         "showTranslationKeys": "Afficher la clé de traduction",
         "showTranslationKeysDesc": "Mode développeur : Afficher i18n clés de traduction au lieu des textes traduits",
@@ -1107,6 +1121,10 @@
             "publishError": "Erreur survenue pendant la publication",
             "getGroupIdFailed": "Échec de l'obtention de l'ID de groupe",
             "uploadCoverFailed": "Échec du téléchargement de l'image de couverture"
+        },
+        "validation": {
+            "groupNameRequired": "Veuillez entrer le nom du groupe",
+            "groupDescriptionRequired": "Veuillez entrer la description du groupe"
         }
     },
     "admin": {
