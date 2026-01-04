@@ -149,7 +149,12 @@
         "followSystem": "Suivre le système",
         "light": "Clair",
         "dark": "Sombre",
-        "select": "Sélectionnez"
+        "select": "Sélectionnez",
+        "viewChangelog": "Voir les mises à jour",
+        "currentUpdateInfo": "Mise à jour actuelle",
+        "runtimeVersion": "Version d’exécution",
+        "updateTime": "Dernière mise à jour",
+        "releaseChannel": "Canal de publication"
     },
     "userInfo": {
         "title": "Mes Informations",
