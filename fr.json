@@ -15,7 +15,8 @@
         "memberCard": "Carte de fidélité",
         "availablePoints": "Points disponibles",
         "scanQRCode": "Scannez le code QR de la carte de fidélité",
-        "cardNumber": "Numéro de la carte de fidélité"
+        "cardNumber": "Numéro de la carte de fidélité",
+        "tapToFlip": "Appuyez pour voir les détails"
     },
     "settings": {
         "title": "Paramètres",
@@ -154,7 +155,25 @@
         "currentUpdateInfo": "Mise à jour actuelle",
         "runtimeVersion": "Version d’exécution",
         "updateTime": "Dernière mise à jour",
-        "releaseChannel": "Canal de publication"
+        "releaseChannel": "Canal de publication",
+        "developerConsole": {
+            "title": "Console développeur",
+            "enterDeveloperKey": "Entrez la clé développeur",
+            "developerKeyPlaceholder": "Entrez la clé",
+            "incorrectDeveloperKey": "Clé incorrecte",
+            "roles": "Rôles",
+            "permissions": "Permissions",
+            "noRoles": "Aucun rôle",
+            "noPermissions": "Aucune permission",
+            "roleName": "Nom du rôle",
+            "roleLevel": "Niveau",
+            "scopeType": "Type de portée",
+            "scopeName": "Nom de la portée",
+            "permissionName": "Nom de la permission",
+            "permissionCategory": "Catégorie",
+            "priority": "Priorité",
+            "description": "Description"
+        }
     },
     "userInfo": {
         "title": "Mes Informations",
@@ -198,6 +217,24 @@
             "wrongPassword": "Mot de Passe incorrect",
             "currentPasswordWrong": "Le mot de passe actuel est incorrect",
             "updateFailed": "Échec de la mise à jour"
+        },
+        "forgotPassword": {
+            "title": "Mot de passe oublié",
+            "description": "Un code de vérification sera envoyé à votre email enregistré",
+            "sendCode": "Envoyer le code",
+            "resendCode": "Renvoyer",
+            "resendIn": "Renvoyer dans {{seconds}}s",
+            "codeSent": "Code envoyé à {{email}}",
+            "verificationCode": "Code de vérification",
+            "newPassword": "Nouveau mot de passe",
+            "confirmPassword": "Confirmer le nouveau mot de passe",
+            "confirmReset": "Confirmer la réinitialisation",
+            "emailNotVerified": "Votre email n'est pas vérifié. Veuillez d'abord vérifier votre email",
+            "invalidCode": "Code de vérification invalide",
+            "codeExpired": "Code expiré. Veuillez en demander un nouveau",
+            "tooManyRequests": "Trop de demandes. Veuillez réessayer plus tard",
+            "resetSuccess": "Réinitialisation du mot de passe réussie",
+            "sendFailed": "Échec de l'envoi du code. Veuillez réessayer plus tard"
         }
     },
     "login": {
@@ -213,13 +250,32 @@
         "offlineLogin": "Connexion Hors Ligne",
         "serverUnavailable": "Serveur temporairement indisponible, basculement en mode hors ligne",
         "noLocalCache": "Échec de la connexion au serveur et aucune information de connexion en cache local trouvée",
-        "resetEmailSent": "Email de réinitialisation du mot de passe envoyé",
-        "checkEmail": "Veuillez vérifier votre email",
+        "resetEmailSent": "Code de vérification envoyé",
+        "checkEmail": "Code de vérification envoyé à {{email}}",
         "userNotFound": "Utilisateur ou email introuvable",
         "resetFailed": "Échec de la réinitialisation du mot de passe, veuillez réessayer plus tard",
         "googleSignInButton": "Se connecter avec Google",
         "appleSignInButton": "Se connecter avec Apple",
-        "title": "Connexion"
+        "title": "Connexion",
+        "emailNotVerified": "L'email de ce compte n'est pas vérifié",
+        "tooManyRequests": "Trop de demandes, veuillez réessayer plus tard",
+        "emailSendFailed": "Échec de l'envoi de l'email, veuillez réessayer plus tard",
+        "verificationCode": "Code de vérification",
+        "newPassword": "Nouveau mot de passe",
+        "confirmReset": "Confirmer la réinitialisation",
+        "back": "Retour",
+        "codeSentTo": "Code envoyé à {{email}}",
+        "resetSuccess": "Mot de passe réinitialisé avec succès",
+        "resetSuccessMessage": "Veuillez vous connecter avec votre nouveau mot de passe",
+        "invalidCode": "Code de vérification invalide",
+        "codeExpired": "Code de vérification expiré, veuillez renvoyer",
+        "sendCode": "Envoyer le code",
+        "oidcLoginButton": "Se connecter avec CoBook SSO",
+        "orSignInWith": "ou se connecter avec",
+        "noAccount": "Pas encore de compte ?",
+        "welcomeTitle": "Bienvenue sur CoBook",
+        "welcomeSubtitle": "Connectez-vous pour commencer à utiliser CoBook",
+        "socialLoginInfo": "Connexion avec Google, Apple et autres comptes sociaux disponible"
     },
     "register": {
         "username": "Nom d'utilisateur",
@@ -406,7 +462,8 @@
         "retry": "Réessayer",
         "search": "Rechercher",
         "save": "Sauvegarder",
-        "create": "Créer"
+        "create": "Créer",
+        "close": "Fermer"
     },
     "secondhand": {
         "loginToViewProductDetails": "Connectez-vous pour voir les détails du produit",
@@ -479,7 +536,11 @@
             "noodleCategory": "Nourriture·Nouilles",
             "twentyPercent": "20% de Réduction",
             "jiuRamen": "Neuf Ramen"
-        }
+        },
+        "noNearbyWithFilter": "Aucun commerce à proximité",
+        "expandSearchRange": "Élargir la recherche",
+        "noProvidersAtAll": "Aucun commerce trouvé",
+        "goToAdvancedSearch": "Recherche avancée"
     },
     "provider": {
         "main": {
@@ -517,7 +578,8 @@
             "totalUsage": "Total utilisations",
             "totalPointsRedeemed": "Total de points échangés",
             "avgPointsPerRedemption": "Points moyens par échange",
-            "couponsRedeemed": "Échanges de coupons CoBook"
+            "couponsRedeemed": "Échanges de coupons CoBook",
+            "noRecentActivity": "Aucune activité récente"
         },
         "period": {
             "overview": "Vue d'ensemble",
@@ -614,7 +676,8 @@
             "growth": "Croissance",
             "orders": "Commandes",
             "more": "Plus",
-            "providerDetails": "Détails du commerçant"
+            "providerDetails": "Détails du commerçant",
+            "myPermissions": "Mes permissions"
         },
         "more": {
             "title": "Plus d'Options",
@@ -637,7 +700,8 @@
             "accountManagement": "Gestion du Compte",
             "accountSettings": "Paramètres du Compte",
             "privacy": "Paramètres de Confidentialité",
-            "logout": "Déconnexion"
+            "logout": "Déconnexion",
+            "myPermissions": "Mes permissions"
         },
         "info": {
             "submitTime": "Date de soumission",
@@ -739,7 +803,28 @@
             "usageDetail": "Détails de l’utilisation des points",
             "pointLogs": "Journal des points",
             "productDetail": "Détails de l’article de récompense",
-            "productDetailEdit": "Modifier les détails de l’article de récompense"
+            "productDetailEdit": "Modifier les détails de l’article de récompense",
+            "voucherPreview": {
+                "sectionTitle": "Vous recevrez",
+                "clickToViewDetail": "Appuyez pour voir les détails",
+                "redeemed": "Échangé",
+                "times": "fois",
+                "validityPeriod": "Validité",
+                "days": "jours",
+                "voucherDescription": "Description du coupon",
+                "tips": {
+                    "autoAdd": "Après l'échange, ce coupon sera automatiquement ajouté à \"Mes coupons\"",
+                    "validityFromRedeem": "Le coupon est valable {{days}} jours à partir de la date d'échange"
+                },
+                "voucherTypes": {
+                    "discount": "Réduction",
+                    "gift": "Cadeau",
+                    "service": "Service",
+                    "cash": "Espèces",
+                    "other": "Autre",
+                    "default": "Coupon"
+                }
+            }
         },
         "voucher": {
             "attention": "Attention",
@@ -857,7 +942,8 @@
             "joined": "Date d’embauche",
             "already_employee": "Déjà employé",
             "enter_role": "Veuillez sélectionner un rôle",
-            "selected_user": "Utilisateur sélectionné"
+            "selected_user": "Utilisateur sélectionné",
+            "must_be_suspended_before_removal": "L'employé doit être suspendu avant d'être supprimé"
         },
         "role": {
             "load_failed": "Échec du chargement de la liste des rôles",
@@ -882,7 +968,8 @@
             "select_permissions": "Choisir les autorisations",
             "system_role": "Rôle système",
             "permissions": "Autorisations",
-            "more": "Plus"
+            "more": "Plus",
+            "custom_role": "Rôle personnalisé"
         },
         "admin": {
             "suspend_confirm_message": "Voulez-vous vraiment bloquer l'employé {{name}} ? Après le blocage, cet employé perdra temporairement toutes ses autorisations.",
@@ -938,7 +1025,21 @@
         },
         "currentStore": "Magasin actuel",
         "switchFailed": "Échec du changement",
-        "switchFailedMessage": "Changement de commerçant échoué. Réessayez plus tard"
+        "switchFailedMessage": "Changement de commerçant échoué. Réessayez plus tard",
+        "myPermissions": {
+            "title": "Mes permissions",
+            "noProviders": "Vous n'êtes associé à aucun magasin",
+            "permissionCount": "{{count}} permissions",
+            "statusSuspended": "Suspendu",
+            "noPermissions": "Aucune permission",
+            "category": {
+                "provider_management": "Gestion du magasin",
+                "scorecard_operations": "Opérations de carte de fidélité",
+                "data_analytics": "Analyse des données",
+                "voucher_management": "Gestion des coupons",
+                "other": "Autre"
+            }
+        }
     },
     "secondhandSearch": {
         "search": {
@@ -1270,6 +1371,80 @@
                 "approved": "Approuvé",
                 "description": "Veuillez sélectionner :",
                 "rejected": "Refusé"
+            },
+            "username": "Nom d'utilisateur"
+        },
+        "stressTest": {
+            "title": "Test de charge",
+            "configuration": {
+                "title": "Configuration du test",
+                "testType": "Type de test",
+                "testTypes": {
+                    "database": "Base de données",
+                    "api_endpoint": "Endpoint API",
+                    "memory": "Mémoire",
+                    "cpu": "CPU",
+                    "mixed": "Mixte"
+                },
+                "concurrentUsers": "Utilisateurs simultanés",
+                "duration": "Durée",
+                "durationUnit": "secondes",
+                "targetEndpoint": "Endpoint cible",
+                "targetEndpointPlaceholder": "Entrez le chemin de l'endpoint API",
+                "start": "Démarrer le test",
+                "custom": "Personnalisé"
+            },
+            "status": {
+                "title": "Statut du test",
+                "pending": "En attente",
+                "running": "En cours",
+                "completed": "Terminé",
+                "aborted": "Annulé",
+                "failed": "Échoué",
+                "elapsed": "Écoulé",
+                "remaining": "Restant",
+                "abort": "Annuler le test",
+                "abortConfirm": "Êtes-vous sûr de vouloir annuler le test ?"
+            },
+            "metrics": {
+                "title": "Métriques en direct",
+                "qps": "QPS",
+                "qpsDesc": "Requêtes par seconde",
+                "errorRate": "Taux d'erreur",
+                "avgResponseTime": "Temps de réponse moyen",
+                "p95ResponseTime": "Temps P95",
+                "p99ResponseTime": "Temps P99",
+                "maxResponseTime": "Temps max",
+                "cpuUsage": "Utilisation CPU",
+                "memoryUsage": "Utilisation mémoire",
+                "dbPoolActive": "Pool DB actif",
+                "dbPoolWaiting": "Pool DB en attente",
+                "eventLoopLag": "Latence event loop",
+                "totalRequests": "Total requêtes",
+                "successfulRequests": "Réussies",
+                "failedRequests": "Échouées"
+            },
+            "charts": {
+                "qpsOverTime": "QPS au fil du temps",
+                "responseTimeOverTime": "Temps de réponse au fil du temps"
+            },
+            "report": {
+                "title": "Rapport du test",
+                "summary": "Résumé",
+                "resourcePeak": "Pic de ressources",
+                "verdict": "Verdict",
+                "passed": "Réussi",
+                "warning": "Avertissement",
+                "failed": "Échoué",
+                "avgQps": "QPS moyen",
+                "peakQps": "QPS pic"
+            },
+            "errors": {
+                "alreadyRunning": "Un test est déjà en cours",
+                "serverUnhealthy": "Le serveur est instable, impossible de démarrer",
+                "startFailed": "Échec du démarrage du test",
+                "statusFailed": "Échec de récupération du statut",
+                "abortFailed": "Échec de l'annulation du test"
             }
         }
     },
@@ -1297,5 +1472,21 @@
         "tokenExpired": "Le lien a expiré, veuillez vous reconnecter",
         "invalidInput": "Veuillez saisir un nom d'utilisateur et un mot de passe valides",
         "usernameValidation": "Le nom d'utilisateur ne peut contenir que des lettres et des chiffres"
+    },
+    "search": {
+        "title": "Recherche",
+        "placeholder": "Rechercher utilisateurs, commerces, événements, produits...",
+        "cancel": "Annuler",
+        "noResults": "Aucun résultat trouvé",
+        "emptyHint": "Entrez des mots-clés pour rechercher",
+        "sections": {
+            "users": "Utilisateurs",
+            "providers": "Commerces",
+            "events": "Événements",
+            "products": "Produits d'occasion"
+        }
+    },
+    "systemMessage": {
+        "title": "Messages système"
     }
 }
