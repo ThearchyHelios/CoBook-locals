@@ -15,7 +15,8 @@
         "memberCard": "Scorecard",
         "availablePoints": "Available scores",
         "scanQRCode": "Scan the QR code on the Score Card",
-        "cardNumber": "Score Card number"
+        "cardNumber": "Score Card number",
+        "tapToFlip": "Tap to flip for details"
     },
     "settings": {
         "title": "Settings",
@@ -157,7 +158,25 @@
         "releaseChannel": "Release channel",
         "gitBranch": "Git Branch",
         "gitCommit": "Git commit",
-        "updateCheckFailed": "Failed to check for updates"
+        "updateCheckFailed": "Failed to check for updates",
+        "developerConsole": {
+            "title": "Developer Console",
+            "enterDeveloperKey": "Enter developer key",
+            "developerKeyPlaceholder": "Enter key",
+            "incorrectDeveloperKey": "Incorrect key",
+            "roles": "Roles",
+            "permissions": "Permissions",
+            "noRoles": "No roles",
+            "noPermissions": "No permissions",
+            "roleName": "Role Name",
+            "roleLevel": "Level",
+            "scopeType": "Scope Type",
+            "scopeName": "Scope Name",
+            "permissionName": "Permission Name",
+            "permissionCategory": "Category",
+            "priority": "Priority",
+            "description": "Description"
+        }
     },
     "userInfo": {
         "title": "My Info",
@@ -201,6 +220,24 @@
             "wrongPassword": "Incorrect password",
             "currentPasswordWrong": "Current password is wrong",
             "updateFailed": "Update failed"
+        },
+        "forgotPassword": {
+            "title": "Forgot Current Password",
+            "description": "A verification code will be sent to your registered email",
+            "sendCode": "Send Code",
+            "resendCode": "Resend",
+            "resendIn": "Resend in {{seconds}}s",
+            "codeSent": "Code sent to {{email}}",
+            "verificationCode": "Verification Code",
+            "newPassword": "New Password",
+            "confirmPassword": "Confirm New Password",
+            "confirmReset": "Confirm Reset",
+            "emailNotVerified": "Your email is not verified. Please verify your email first",
+            "invalidCode": "Invalid verification code",
+            "codeExpired": "Code expired. Please request a new one",
+            "tooManyRequests": "Too many requests. Please try again later",
+            "resetSuccess": "Password reset successful",
+            "sendFailed": "Failed to send code. Please try again later"
         }
     },
     "login": {
@@ -216,13 +253,32 @@
         "offlineLogin": "Offline Login",
         "serverUnavailable": "Server temporarily unavailable, switched to offline mode",
         "noLocalCache": "Server connection failed and no local cached login info found",
-        "resetEmailSent": "Password reset email sent",
-        "checkEmail": "Please check your email",
+        "resetEmailSent": "Verification code sent",
+        "checkEmail": "Verification code sent to {{email}}",
         "userNotFound": "User or email not found",
         "resetFailed": "Password reset failed, please try again later",
         "googleSignInButton": "Sign in with Google",
         "appleSignInButton": "Sign in with Apple",
-        "title": "Login"
+        "title": "Login",
+        "emailNotVerified": "Email not verified for this account",
+        "tooManyRequests": "Too many requests, please try again later",
+        "emailSendFailed": "Failed to send email, please try again later",
+        "verificationCode": "Verification Code",
+        "newPassword": "New Password",
+        "confirmReset": "Confirm Reset",
+        "back": "Back",
+        "codeSentTo": "Code sent to {{email}}",
+        "resetSuccess": "Password reset successful",
+        "resetSuccessMessage": "Please log in with your new password",
+        "invalidCode": "Invalid verification code",
+        "codeExpired": "Verification code expired, please resend",
+        "sendCode": "Send Code",
+        "oidcLoginButton": "Sign in with CoBook SSO",
+        "orSignInWith": "or sign in with",
+        "noAccount": "Don't have an account?",
+        "welcomeTitle": "Welcome to CoBook",
+        "welcomeSubtitle": "Sign in to start using CoBook",
+        "socialLoginInfo": "Google, Apple and other social logins available"
     },
     "register": {
         "username": "Username",
@@ -409,7 +465,8 @@
         "retry": "Retry",
         "search": "Search",
         "save": "Save",
-        "create": "Create"
+        "create": "Create",
+        "close": "Close"
     },
     "secondhand": {
         "loginToViewProductDetails": "Login to view product details",
@@ -482,7 +539,11 @@
             "noodleCategory": "Food·Noodles",
             "twentyPercent": "20% Off",
             "jiuRamen": "Neuf Ramen"
-        }
+        },
+        "noNearbyWithFilter": "No nearby merchants",
+        "expandSearchRange": "Expand search range",
+        "noProvidersAtAll": "No merchants found",
+        "goToAdvancedSearch": "Go to advanced search"
     },
     "provider": {
         "main": {
@@ -520,7 +581,8 @@
             "totalPointsRedeemed": "Total scores exchange count",
             "avgPointsPerRedemption": "Average points exchanged per redemption",
             "businessStats": "Sales data statistics",
-            "couponsRedeemed": "CoBook Coupon Redemption Count"
+            "couponsRedeemed": "CoBook Coupon Redemption Count",
+            "noRecentActivity": "No recent activity"
         },
         "period": {
             "overview": "Overview",
@@ -618,7 +680,8 @@
             "growth": "Growth",
             "orders": "Orders",
             "more": "More",
-            "providerDetails": "Commercial Details"
+            "providerDetails": "Commercial Details",
+            "myPermissions": "My Permissions"
         },
         "more": {
             "title": "More Options",
@@ -641,7 +704,8 @@
             "accountManagement": "Account Management",
             "accountSettings": "Account Settings",
             "privacy": "Privacy Settings",
-            "logout": "Logout"
+            "logout": "Logout",
+            "myPermissions": "My Permissions"
         },
         "latitude": "Latitude",
         "info": {
@@ -766,7 +830,28 @@
             "management": "Score Card Management",
             "usageLogs": "Score usage log",
             "pointLogs": "Score log",
-            "usageDetail": "Details of score usage"
+            "usageDetail": "Details of score usage",
+            "voucherPreview": {
+                "sectionTitle": "You will receive",
+                "clickToViewDetail": "Tap to view details",
+                "redeemed": "Redeemed",
+                "times": "times",
+                "validityPeriod": "Validity",
+                "days": "days",
+                "voucherDescription": "Voucher Description",
+                "tips": {
+                    "autoAdd": "After redemption, this voucher will be automatically added to \"My Vouchers\"",
+                    "validityFromRedeem": "Voucher is valid for {{days}} days from the date of redemption"
+                },
+                "voucherTypes": {
+                    "discount": "Discount",
+                    "gift": "Gift",
+                    "service": "Service",
+                    "cash": "Cash",
+                    "other": "Other",
+                    "default": "Voucher"
+                }
+            }
         },
         "detail": {
             "operatingHours": "Business hours",
@@ -865,7 +950,8 @@
             "already_employee": "Already an employee",
             "enter_role": "Please select a role",
             "selected_user": "Selected user",
-            "suspendedWarning": "Your employee account has been suspended and cannot perform any actions"
+            "suspendedWarning": "Your employee account has been suspended and cannot perform any actions",
+            "must_be_suspended_before_removal": "Employee must be suspended before removal"
         },
         "role": {
             "title": "Role Management",
@@ -890,7 +976,8 @@
                 "data_analytics": "Data Analysis",
                 "user_management": "User Management",
                 "system": "System"
-            }
+            },
+            "custom_role": "Custom Role"
         },
         "viewDetails": "View Details",
         "loadingRestaurants": "Loading commercials...",
@@ -979,6 +1066,20 @@
             "add_employee_for_provider": "Add employees for the following commercial",
             "please_select_role": "Please select a role",
             "no_roles": "No roles available"
+        },
+        "myPermissions": {
+            "title": "My Permissions",
+            "noProviders": "You are not associated with any store",
+            "permissionCount": "{{count}} permissions",
+            "statusSuspended": "Suspended",
+            "noPermissions": "No permissions",
+            "category": {
+                "provider_management": "Store Management",
+                "scorecard_operations": "Rewards Card Operations",
+                "data_analytics": "Data Analytics",
+                "voucher_management": "Voucher Management",
+                "other": "Other"
+            }
         }
     },
     "secondhandSearch": {
@@ -1317,6 +1418,80 @@
                 "reviewing": "Under Review",
                 "approved": "Approved",
                 "rejected": "Rejected"
+            },
+            "username": "Username"
+        },
+        "stressTest": {
+            "title": "Stress Test",
+            "configuration": {
+                "title": "Test Configuration",
+                "testType": "Test Type",
+                "testTypes": {
+                    "database": "Database",
+                    "api_endpoint": "API Endpoint",
+                    "memory": "Memory",
+                    "cpu": "CPU",
+                    "mixed": "Mixed"
+                },
+                "concurrentUsers": "Concurrent Users",
+                "duration": "Duration",
+                "durationUnit": "seconds",
+                "targetEndpoint": "Target Endpoint",
+                "targetEndpointPlaceholder": "Enter API endpoint path",
+                "start": "Start Test",
+                "custom": "Custom"
+            },
+            "status": {
+                "title": "Test Status",
+                "pending": "Pending",
+                "running": "Running",
+                "completed": "Completed",
+                "aborted": "Aborted",
+                "failed": "Failed",
+                "elapsed": "Elapsed",
+                "remaining": "Remaining",
+                "abort": "Abort Test",
+                "abortConfirm": "Are you sure you want to abort the test?"
+            },
+            "metrics": {
+                "title": "Live Metrics",
+                "qps": "QPS",
+                "qpsDesc": "Queries Per Second",
+                "errorRate": "Error Rate",
+                "avgResponseTime": "Avg Response Time",
+                "p95ResponseTime": "P95 Response Time",
+                "p99ResponseTime": "P99 Response Time",
+                "maxResponseTime": "Max Response Time",
+                "cpuUsage": "CPU Usage",
+                "memoryUsage": "Memory Usage",
+                "dbPoolActive": "DB Pool Active",
+                "dbPoolWaiting": "DB Pool Waiting",
+                "eventLoopLag": "Event Loop Lag",
+                "totalRequests": "Total Requests",
+                "successfulRequests": "Successful",
+                "failedRequests": "Failed"
+            },
+            "charts": {
+                "qpsOverTime": "QPS Over Time",
+                "responseTimeOverTime": "Response Time Over Time"
+            },
+            "report": {
+                "title": "Test Report",
+                "summary": "Summary",
+                "resourcePeak": "Resource Peak",
+                "verdict": "Verdict",
+                "passed": "Passed",
+                "warning": "Warning",
+                "failed": "Failed",
+                "avgQps": "Avg QPS",
+                "peakQps": "Peak QPS"
+            },
+            "errors": {
+                "alreadyRunning": "A test is already running",
+                "serverUnhealthy": "Server is unhealthy, cannot start test",
+                "startFailed": "Failed to start test",
+                "statusFailed": "Failed to get test status",
+                "abortFailed": "Failed to abort test"
             }
         }
     },
@@ -1456,5 +1631,68 @@
             "honor": "Honor",
             "legend": "Legend"
         }
+    },
+    "search": {
+        "title": "Search",
+        "placeholder": "Search users, stores, events, products...",
+        "cancel": "Cancel",
+        "noResults": "No results found",
+        "emptyHint": "Enter keywords to search",
+        "sections": {
+            "users": "Users",
+            "providers": "Stores",
+            "events": "Events",
+            "products": "Second-hand Products"
+        }
+    },
+    "systemMessage": {
+        "title": "System Messages"
+    },
+    "scorecardManagement": {
+        "permissionError": "Permission Error",
+        "cameraPermissionRequired": "Camera permission is required to scan scorecard",
+        "cannotGetScorecardInfo": "Cannot get scorecard information",
+        "loadScorecardFailed": "Failed to load scorecard information",
+        "unrecognizedQRCode": "Unrecognized scorecard QR code",
+        "scanFailed": "Scan failed, please retry",
+        "refreshFailed": "Refresh failed, please retry",
+        "confirmOperation": "Confirm Operation",
+        "confirmAddPoints": "Are you sure you want to add {{points}} points for {{nickname}}?",
+        "quickAddPoints": "Quick add {{points}} points",
+        "currentOperator": "Current Operator",
+        "pointsAddedSuccess": "Added {{points}} points",
+        "operationFailedRetry": "Operation failed, please retry",
+        "operationFailed": "Operation failed",
+        "invalidPointsValue": "Please enter a valid points value",
+        "manualAddPoints": "Manual add points",
+        "manualSubtractPoints": "Manual subtract points",
+        "pointsAddSuccess": "Points added successfully",
+        "pointsSubtractSuccess": "Points subtracted successfully",
+        "pointsBalance": "Points Balance",
+        "activeDays": "Active Days",
+        "totalEarned": "Total Earned",
+        "totalSpent": "Total Spent",
+        "quickActions": "Quick Actions",
+        "customAdd": "Custom Add",
+        "subtractPoints": "Subtract Points",
+        "operationRecords": "Operation Records",
+        "totalRecords": "{{count}} records",
+        "filterAll": "All",
+        "filterAddPoints": "Add Points",
+        "filterUsePoints": "Use Points",
+        "noRecords": "No operation records",
+        "noAddRecords": "No add points records",
+        "noUseRecords": "No use points records",
+        "loadMore": "Load More",
+        "noMoreRecords": "No more records",
+        "scanScorecard": "Scan Scorecard",
+        "scanCustomerQRCode": "Please scan customer's scorecard QR code",
+        "startScan": "Start Scan",
+        "placeQRCodeInFrame": "Place QR code in the frame to scan",
+        "addPoints": "Add Points",
+        "enterPointsAmount": "Enter points amount",
+        "pointsUnit": "points",
+        "notesOptional": "Notes (optional)",
+        "confirm": "Confirm"
     }
 }
