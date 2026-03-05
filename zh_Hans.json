@@ -1,4 +1,17 @@
 {
+  "search": {
+    "title": "搜索",
+    "placeholder": "搜索用户、商家、活动、商品...",
+    "cancel": "取消",
+    "noResults": "没有找到相关结果",
+    "emptyHint": "输入关键词开始搜索",
+    "sections": {
+      "users": "用户",
+      "providers": "商家",
+      "events": "活动",
+      "products": "二手商品"
+    }
+  },
   "prologin": {
     "Notlogin": "请先登录",
     "DeviceId": "设备ID : "
@@ -15,7 +28,8 @@
     "noDescription": "无详细描述",
     "achieved": "已达成",
     "notAchieved": "未达成",
-    "redeemNow": "立即兑换"
+    "redeemNow": "立即兑换",
+    "tapToFlip": "点击翻转查看详情"
   },
   "settings": {
     "title": "设置",
@@ -157,7 +171,25 @@
     "followSystem": "跟随系统",
     "light": "浅色",
     "dark": "深色",
-    "select": "选择"
+    "select": "选择",
+    "developerConsole": {
+      "title": "开发者控制台",
+      "enterDeveloperKey": "请输入开发者密钥",
+      "developerKeyPlaceholder": "输入密钥",
+      "incorrectDeveloperKey": "密钥错误",
+      "roles": "角色",
+      "permissions": "权限",
+      "noRoles": "无角色",
+      "noPermissions": "无权限",
+      "roleName": "角色名称",
+      "roleLevel": "级别",
+      "scopeType": "范围类型",
+      "scopeName": "范围名称",
+      "permissionName": "权限名称",
+      "permissionCategory": "分类",
+      "priority": "优先级",
+      "description": "描述"
+    }
   },
   "userInfo": {
     "title": "我的信息",
@@ -201,6 +233,24 @@
       "wrongPassword": "密码错误",
       "currentPasswordWrong": "当前密码错误",
       "updateFailed": "更新失败"
+    },
+    "forgotPassword": {
+      "title": "忘记当前密码",
+      "description": "验证码将发送到您的注册邮箱",
+      "sendCode": "发送验证码",
+      "resendCode": "重新发送",
+      "resendIn": "{{seconds}}秒后可重新发送",
+      "codeSent": "验证码已发送到 {{email}}",
+      "verificationCode": "验证码",
+      "newPassword": "新密码",
+      "confirmPassword": "确认新密码",
+      "confirmReset": "确认重置",
+      "emailNotVerified": "您的邮箱未验证，请先验证邮箱",
+      "invalidCode": "验证码错误",
+      "codeExpired": "验证码已过期，请重新发送",
+      "tooManyRequests": "请求过于频繁，请稍后再试",
+      "resetSuccess": "密码重置成功",
+      "sendFailed": "验证码发送失败，请稍后再试"
     }
   },
   "login": {
@@ -217,12 +267,31 @@
     "offlineLogin": "离线登录",
     "serverUnavailable": "服务器暂时不可用，已切换到离线模式",
     "noLocalCache": "服务器连接失败且未找到本地缓存的登录信息",
-    "resetEmailSent": "密码重置邮件已发送",
-    "checkEmail": "请检查您的邮箱",
+    "resetEmailSent": "验证码已发送",
+    "checkEmail": "验证码已发送至 {{email}}",
     "userNotFound": "用户或邮箱未找到",
+    "emailNotVerified": "该账号邮箱尚未验证",
+    "tooManyRequests": "请求过于频繁，请稍后再试",
+    "emailSendFailed": "邮件发送失败，请稍后重试",
     "resetFailed": "密码重置失败，请稍后重试",
+    "verificationCode": "验证码",
+    "newPassword": "新密码",
+    "confirmReset": "确认重置",
+    "back": "返回",
+    "codeSentTo": "验证码已发送至 {{email}}",
+    "resetSuccess": "密码重置成功",
+    "resetSuccessMessage": "请使用新密码登录",
+    "invalidCode": "验证码错误",
+    "codeExpired": "验证码已过期，请重新发送",
+    "sendCode": "发送验证码",
     "googleSignInButton": "使用 Google 登录",
-    "appleSignInButton": "使用 Apple 登录"
+    "appleSignInButton": "使用 Apple 登录",
+    "oidcLoginButton": "通过 CoBook SSO 登录",
+    "orSignInWith": "或使用以下方式登录",
+    "noAccount": "还没有账号？",
+    "welcomeTitle": "欢迎来到 CoBook",
+    "welcomeSubtitle": "登录以开始使用 CoBook",
+    "socialLoginInfo": "支持 Google、Apple 等社交账号登录"
   },
   "register": {
     "title": "注册",
@@ -314,6 +383,12 @@
     "userProfile": "用户主页",
     "testPage": "测试页面"
   },
+  "systemMessage": {
+    "title": "系统消息",
+    "markAllAsRead": "全部已读",
+    "markAllAsReadConfirmTitle": "确认",
+    "markAllAsReadConfirmMessage": "确认将所有消息标记为已读？"
+  },
   "system": {
     "healthChecking": "系统健康检查进行中...",
     "initializing": "正在初始化应用程序...",
@@ -344,7 +419,22 @@
     "networkRestored": "网络连接已恢复",
     "dataReadError": "无法读取本地数据",
     "restartAppPrompt": "请重启应用程序",
-    "dontturnoffdivice": "请不要关闭此应用程序"
+    "dontturnoffdivice": "请不要关闭此应用程序",
+    "pointsModified": "积分变动",
+    "pointsModifiedDesc": "您在 {{providerName}} 的积分 {{change}}",
+    "voucherRedeemed": "优惠券已使用",
+    "voucherRedeemedDesc": "您的优惠券「{{voucherName}}」已被核销",
+    "employeeStatusChanged": "员工状态变更",
+    "employeeStatusChangedDesc": "您在「{{providerName}}」的状态已变更为 {{status}}",
+    "productStatusChanged": "商品状态变更",
+    "productStatusChangedDesc": "您收藏的商品「{{productName}}」已下架",
+    "reviewReplyPosted": "收到新回复",
+    "reviewReplyPostedDesc": "{{replierName}} 回复了您在「{{providerName}}」的评论",
+    "userFollowed": "有人关注了你",
+    "userFollowedDesc": "{{followerName}} 关注了你",
+    "mutualFollowDesc": "你们已互相关注，现在可以正常聊天了",
+    "subscriptionChanged": "账户变更",
+    "subscriptionChangedDesc": "您的账户订阅/次数已更新"
   },
   "validation": {
     "usernameRequired": "用户名不能为空",
@@ -416,6 +506,7 @@
     "search": "搜索",
     "save": "保存",
     "create": "创建",
+    "close": "关闭",
     "weekday": {
       "monday": "周一",
       "tuesday": "周二",
@@ -497,7 +588,11 @@
       "noodleCategory": "淦饭·面食",
       "twentyPercent": "20% 折扣",
       "jiuRamen": "玖拉面"
-    }
+    },
+    "noNearbyWithFilter": "附近暂无商家",
+    "expandSearchRange": "扩大搜索范围",
+    "noProvidersAtAll": "暂无商家",
+    "goToAdvancedSearch": "进入高级搜索"
   },
   "provider": {
     "title": "靠谱商家",
@@ -556,7 +651,8 @@
       "totalUsage": "总使用次数",
       "totalPointsRedeemed": "总积分兑换数",
       "avgPointsPerRedemption": "平均每次兑换积分",
-      "couponsRedeemed": "靠谱券兑换数"
+      "couponsRedeemed": "靠谱券兑换数",
+      "noRecentActivity": "暂无最近动态"
     },
     "status": {
       "pending": "待审核",
@@ -662,7 +758,8 @@
       "growth": "发展",
       "orders": "订单",
       "more": "更多",
-      "providerDetails": "商家详情"
+      "providerDetails": "商家详情",
+      "myPermissions": "我的权限"
     },
     "currentStore": "当前门店",
     "switchSuccess": "切换成功",
@@ -688,6 +785,7 @@
       "contactUs": "联系我们",
       "about": "关于",
       "accountManagement": "账户管理",
+      "myPermissions": "我的权限",
       "accountSettings": "账户设置",
       "privacy": "隐私设置",
       "logout": "退出登录"
@@ -790,7 +888,28 @@
         "message": "您即将为{{providerName}}开通积分卡，开通后即可累积积分并兑换奖励。"
       },
       "pointsNotEnough": "积分不足",
-      "redeem": "立即兑换"
+      "redeem": "立即兑换",
+      "voucherPreview": {
+        "sectionTitle": "兑换后获得",
+        "clickToViewDetail": "点击查看详情",
+        "redeemed": "已兑换",
+        "times": "次",
+        "validityPeriod": "有效期",
+        "days": "天",
+        "voucherDescription": "券说明",
+        "tips": {
+          "autoAdd": "兑换商品后，此券将自动添加到'我的优惠券'中",
+          "validityFromRedeem": "券有效期从兑换之日起 {{days}} 天内有效"
+        },
+        "voucherTypes": {
+          "discount": "折扣券",
+          "gift": "礼品券",
+          "service": "服务券",
+          "cash": "现金券",
+          "other": "其他",
+          "default": "优惠券"
+        }
+      }
     },
     "voucher": {
       "title": "靠谱券",
@@ -858,6 +977,7 @@
       "remove_confirm_message": "确定要移除员工 {{name}} 吗？",
       "remove_success": "员工已移除",
       "remove_failed": "移除员工失败",
+      "must_be_suspended_before_removal": "员工必须先冻结才能移除",
       "role_updated": "员工角色已更新",
       "role_update_failed": "更新员工角色失败",
       "change_role": "修改角色",
@@ -886,6 +1006,7 @@
       "role_description": "角色描述（可选）",
       "select_permissions": "选择权限",
       "system_role": "系统角色",
+      "custom_role": "自定义角色",
       "permissions": "权限",
       "more": "更多",
       "category": {
@@ -894,6 +1015,20 @@
         "data_analytics": "数据分析",
         "user_management": "用户管理",
         "system": "系统"
+      }
+    },
+    "myPermissions": {
+      "title": "我的权限",
+      "noProviders": "您还没有关联任何商家",
+      "permissionCount": "共 {{count}} 项权限",
+      "statusSuspended": "已冻结",
+      "noPermissions": "暂无权限",
+      "category": {
+        "provider_management": "商家管理",
+        "scorecard_operations": "积分卡操作",
+        "data_analytics": "数据分析",
+        "voucher_management": "卡券管理",
+        "other": "其他"
       }
     },
     "admin": {
@@ -911,7 +1046,14 @@
       "total_roles": "角色数量",
       "view_details": "查看详情",
       "basic_info": "基本信息",
-      "scorecard_config": "积分卡配置",
+      "scorecard_config": {
+        "title": "积分卡配置",
+        "description": "管理积分卡颜色、样式、可兑换商品等"
+      },
+      "voucher_management": {
+        "title": "卡券管理",
+        "description": "管理优惠券、代金券等"
+      },
       "employee_list": "员工列表",
       "role_list": "角色列表",
       "operation_logs": "操作日志",
@@ -1311,6 +1453,7 @@
       "loadFailed": "加载失败",
       "applicantInfo": "申请人信息",
       "userID": "用户ID",
+      "username": "用户名",
       "userNickname": "昵称",
       "providerInfo": "商家信息",
       "providerName": "商家名称",
@@ -1331,6 +1474,79 @@
         "reviewing": "正在审核",
         "approved": "审核通过",
         "rejected": "审核拒绝"
+      }
+    },
+    "stressTest": {
+      "title": "压力测试",
+      "configuration": {
+        "title": "测试配置",
+        "testType": "测试类型",
+        "testTypes": {
+          "database": "数据库压力",
+          "api_endpoint": "API端点压力",
+          "memory": "内存压力",
+          "cpu": "CPU压力",
+          "mixed": "混合负载"
+        },
+        "concurrentUsers": "并发用户数",
+        "duration": "测试时长",
+        "durationUnit": "秒",
+        "targetEndpoint": "目标端点",
+        "targetEndpointPlaceholder": "输入API端点路径",
+        "start": "开始测试",
+        "custom": "自定义"
+      },
+      "status": {
+        "title": "测试状态",
+        "pending": "准备中",
+        "running": "运行中",
+        "completed": "已完成",
+        "aborted": "已中止",
+        "failed": "失败",
+        "elapsed": "已运行",
+        "remaining": "剩余",
+        "abort": "中止测试",
+        "abortConfirm": "确定要中止当前测试吗？"
+      },
+      "metrics": {
+        "title": "实时指标",
+        "qps": "QPS",
+        "qpsDesc": "每秒查询数",
+        "errorRate": "错误率",
+        "avgResponseTime": "平均响应时间",
+        "p95ResponseTime": "P95响应时间",
+        "p99ResponseTime": "P99响应时间",
+        "maxResponseTime": "最大响应时间",
+        "cpuUsage": "CPU使用率",
+        "memoryUsage": "内存使用",
+        "dbPoolActive": "DB连接池活跃",
+        "dbPoolWaiting": "DB连接池等待",
+        "eventLoopLag": "事件循环延迟",
+        "totalRequests": "总请求数",
+        "successfulRequests": "成功请求数",
+        "failedRequests": "失败请求数"
+      },
+      "charts": {
+        "qpsOverTime": "QPS趋势",
+        "responseTimeOverTime": "响应时间趋势"
+      },
+      "report": {
+        "title": "测试报告",
+        "summary": "测试摘要",
+        "resourcePeak": "资源峰值",
+        "verdict": "评估结果",
+        "passed": "通过",
+        "warning": "警告",
+        "failed": "未通过",
+        "avgQps": "平均QPS",
+        "peakQps": "峰值QPS"
+      },
+      "errors": {
+        "alreadyRunning": "已有测试正在运行中",
+        "serverUnhealthy": "服务器状态异常，无法启动测试",
+        "startFailed": "启动测试失败",
+        "statusFailed": "获取测试状态失败",
+        "abortFailed": "中止测试失败"
       }
     }
   },
@@ -1473,5 +1689,52 @@
       "honor": "荣耀",
       "legend": "传奇"
     }
+  },
+  "scorecardManagement": {
+    "permissionError": "权限错误",
+    "cameraPermissionRequired": "需要相机权限才能扫描积分卡",
+    "cannotGetScorecardInfo": "无法获取积分卡信息",
+    "loadScorecardFailed": "加载积分卡信息失败",
+    "unrecognizedQRCode": "无法识别的积分卡二维码",
+    "scanFailed": "扫码失败，请重试",
+    "refreshFailed": "刷新失败，请重试",
+    "confirmOperation": "确认操作",
+    "confirmAddPoints": "确定要为 {{nickname}} 增加 {{points}} 积分吗？",
+    "quickAddPoints": "快速增加{{points}}积分",
+    "currentOperator": "当前操作员",
+    "pointsAddedSuccess": "已增加 {{points}} 积分",
+    "operationFailedRetry": "操作失败，请重试",
+    "operationFailed": "操作失败",
+    "invalidPointsValue": "请输入有效的积分数值",
+    "manualAddPoints": "手动增加积分",
+    "manualSubtractPoints": "手动扣除积分",
+    "pointsAddSuccess": "积分增加成功",
+    "pointsSubtractSuccess": "积分扣除成功",
+    "pointsBalance": "积分余额",
+    "activeDays": "活跃天数",
+    "totalEarned": "累计获得",
+    "totalSpent": "累计消费",
+    "quickActions": "快速操作",
+    "customAdd": "自定义增加",
+    "subtractPoints": "扣除积分",
+    "operationRecords": "操作记录",
+    "totalRecords": "共 {{count}} 条",
+    "filterAll": "全部",
+    "filterAddPoints": "添加积分",
+    "filterUsePoints": "使用积分",
+    "noRecords": "暂无操作记录",
+    "noAddRecords": "暂无添加积分记录",
+    "noUseRecords": "暂无使用积分记录",
+    "loadMore": "加载更多",
+    "noMoreRecords": "没有更多记录了",
+    "scanScorecard": "扫描积分卡",
+    "scanCustomerQRCode": "请扫描客户的积分卡二维码",
+    "startScan": "开始扫描",
+    "placeQRCodeInFrame": "将二维码放入框内扫描",
+    "addPoints": "增加积分",
+    "enterPointsAmount": "输入积分数量",
+    "pointsUnit": "积分",
+    "notesOptional": "备注说明（选填）",
+    "confirm": "确认操作"
   }
 }
