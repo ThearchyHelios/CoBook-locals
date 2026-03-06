@@ -565,12 +565,12 @@
             "overview": "Aperçu",
             "moreData": "Plus de données générales",
             "totalActivations": "Total d’activations de cartes de fidélité",
-            "totalViews": "Vues totales",
+            "totalViews": "Vues (30 jours)",
             "overallTrend": "Tendance générale",
             "totalMembers": "Nombre total de membres",
             "totalRevenue": "Volume total des transactions",
             "avgOrderAmount": "Valeur moyenne des commandes",
-            "totalVisitors": "Total de visiteurs",
+            "totalVisitors": "Visiteurs uniques (30j)",
             "couponsIssued": "Total des coupons distribués",
             "couponsUsed": "Total des coupons utilisés",
             "recentActivity": "Activités récentes",
@@ -579,7 +579,10 @@
             "totalPointsRedeemed": "Total de points échangés",
             "avgPointsPerRedemption": "Points moyens par échange",
             "couponsRedeemed": "Échanges de coupons CoBook",
-            "noRecentActivity": "Aucune activité récente"
+            "noRecentActivity": "Aucune activité récente",
+            "voucherVerification": "Statistiques de vérification",
+            "totalVerifications": "Total vérifié",
+            "avgRating": "Note moyenne"
         },
         "period": {
             "overview": "Vue d'ensemble",
@@ -597,7 +600,7 @@
             "last7Days": "7 derniers jours",
             "last30Days": "30 derniers jours",
             "scorecardUsage": "Utilisations de la carte de fidélité",
-            "visits": "Visites",
+            "visits": "Vues (30 jours)",
             "visitors": "Visiteurs",
             "monday": "Lun",
             "tuesday": "Mar",
@@ -1039,6 +1042,28 @@
                 "voucher_management": "Gestion des coupons",
                 "other": "Autre"
             }
+        },
+        "growth": {
+            "title": "Analyse de croissance",
+            "coreMetrics": "Indicateurs clés de croissance",
+            "monthlyGrowth": "Croissance mensuelle",
+            "newCustomers": "Nouveaux clients ce mois",
+            "customerGrowthRate": "Croissance clients",
+            "retentionRate": "Taux de rétention",
+            "peakHours": "Heures de pointe",
+            "peakHourTip": "Basé sur les données des 30 derniers jours",
+            "monthlyTrends": "Tendances mensuelles",
+            "operations": "Opérations",
+            "customers": "Nouveaux clients",
+            "pointsIssued": "Points émis",
+            "pointsRedeemed": "Points échangés",
+            "vouchersRedeemed": "Bons échangés",
+            "recommendations": "Conseils commerciaux",
+            "noData": "Aucune donnée",
+            "noDataDesc": "L'analyse de croissance s'affichera ici lorsque le magasin aura des données",
+            "loadFailed": "Échec du chargement",
+            "retry": "Réessayer",
+            "hourFormat": "{{hour}}h00"
         }
     },
     "secondhandSearch": {
@@ -1392,7 +1417,14 @@
                 "targetEndpoint": "Endpoint cible",
                 "targetEndpointPlaceholder": "Entrez le chemin de l'endpoint API",
                 "start": "Démarrer le test",
-                "custom": "Personnalisé"
+                "custom": "Personnalisé",
+                "testTypeDescriptions": {
+                    "database": "Exécute des requêtes SELECT simultanées pour tester le débit et la latence du pool de connexions, tout en réservant des connexions pour les opérations normales.",
+                    "api_endpoint": "Envoie un grand nombre de requêtes HTTP simultanées vers un endpoint API public, mesurant le temps de réponse et le taux d'erreur.",
+                    "memory": "Alloue et libère de grands tampons mémoire pour tester la gestion du tas Node.js et les performances du ramasse-miettes, plafonné à 500 Mo.",
+                    "cpu": "Génère une charge CPU intensive via des opérations cryptographiques (PBKDF2), testant la latence de la boucle d'événements sous forte charge de calcul.",
+                    "mixed": "Charge combinée (60% BDD + 20% API + 10% mémoire + 10% CPU), simulant des scénarios de requêtes mixtes en production réelle."
+                }
             },
             "status": {
                 "title": "Statut du test",
@@ -1488,5 +1520,13 @@
     },
     "systemMessage": {
         "title": "Messages système"
+    },
+    "recommendation": {
+        "retention_low": "Le taux de rétention est faible. Envisagez des campagnes de fidélité comme des points doublés ou des offres limitées.",
+        "retention_excellent": "Excellent taux de rétention ! Maintenez votre niveau de service actuel.",
+        "peak_lunch": "Les heures de pointe sont à midi. Prévoyez plus de personnel pendant cette période.",
+        "peak_dinner": "Les heures de pointe sont le soir. Prévoyez plus de personnel pendant cette période.",
+        "growth_declining": "Le volume d'opérations est en baisse. Envisagez des promotions ou de nouveaux produits.",
+        "growth_strong": "Forte croissance (>20%). Envisagez d'élargir vos activités ou votre gamme de produits."
     }
 }
