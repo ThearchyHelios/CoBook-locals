@@ -567,13 +567,13 @@
             "mom": "MoM",
             "overview": "Overview",
             "totalActivations": "Total Activated Rewards Cards",
-            "totalViews": "Total pageviews",
+            "totalViews": "Page Views (30 Days)",
             "overallTrend": "Overall trend",
             "totalMembers": "Total number of members",
             "totalRevenue": "Total transaction volume",
             "moreData": "More overall data",
             "avgOrderAmount": "Average order value",
-            "totalVisitors": "Total visitor count",
+            "totalVisitors": "Unique Visitors (30d)",
             "couponsIssued": "Total CoBook Vouchers Issued",
             "couponsUsed": "Total CoBook Vouchers Used",
             "recentActivity": "Recent updates",
@@ -582,7 +582,10 @@
             "avgPointsPerRedemption": "Average points exchanged per redemption",
             "businessStats": "Sales data statistics",
             "couponsRedeemed": "CoBook Coupon Redemption Count",
-            "noRecentActivity": "No recent activity"
+            "noRecentActivity": "No recent activity",
+            "voucherVerification": "Voucher Verification Stats",
+            "totalVerifications": "Total Verified",
+            "avgRating": "Avg Rating"
         },
         "period": {
             "overview": "Overview",
@@ -600,7 +603,7 @@
             "last7Days": "Last 7 days",
             "last30Days": "Last 30 days",
             "scorecardUsage": "Rewards Card Usage",
-            "visits": "Visits",
+            "visits": "Page Views (30 Days)",
             "visitors": "Visitors",
             "monday": "Mon",
             "tuesday": "Tue",
@@ -1080,6 +1083,28 @@
                 "voucher_management": "Voucher Management",
                 "other": "Other"
             }
+        },
+        "growth": {
+            "title": "Growth Analytics",
+            "coreMetrics": "Core Growth Metrics",
+            "monthlyGrowth": "Monthly Growth",
+            "newCustomers": "New Customers This Month",
+            "customerGrowthRate": "Customer Growth",
+            "retentionRate": "Retention Rate",
+            "peakHours": "Peak Hours",
+            "peakHourTip": "Based on operation data from the last 30 days",
+            "monthlyTrends": "Monthly Trends",
+            "operations": "Operations",
+            "customers": "New Customers",
+            "pointsIssued": "Points Issued",
+            "pointsRedeemed": "Points Redeemed",
+            "vouchersRedeemed": "Vouchers Redeemed",
+            "recommendations": "Business Insights",
+            "noData": "No Data",
+            "noDataDesc": "Growth analytics will be shown here once the store has business data",
+            "loadFailed": "Failed to load data",
+            "retry": "Retry",
+            "hourFormat": "{{hour}}:00"
         }
     },
     "secondhandSearch": {
@@ -1439,7 +1464,14 @@
                 "targetEndpoint": "Target Endpoint",
                 "targetEndpointPlaceholder": "Enter API endpoint path",
                 "start": "Start Test",
-                "custom": "Custom"
+                "custom": "Custom",
+                "testTypeDescriptions": {
+                    "database": "Runs concurrent SELECT queries to test database connection pool throughput and latency, while reserving connections for normal operations.",
+                    "api_endpoint": "Sends massive concurrent HTTP requests to a specified public API endpoint, measuring end-to-end response time and error rate.",
+                    "memory": "Allocates and releases large memory buffers to test Node.js heap management and garbage collection performance, capped at 500MB.",
+                    "cpu": "Generates CPU-intensive load via cryptographic operations (PBKDF2), testing event loop latency under heavy computation.",
+                    "mixed": "Combined load (60% database + 20% API + 10% memory + 10% CPU), simulating real production mixed-request scenarios."
+                }
             },
             "status": {
                 "title": "Test Status",
@@ -1694,5 +1726,13 @@
         "pointsUnit": "points",
         "notesOptional": "Notes (optional)",
         "confirm": "Confirm"
+    },
+    "recommendation": {
+        "retention_low": "Retention rate is low. Consider loyalty campaigns like double points or limited-time offers to boost repeat visits.",
+        "retention_excellent": "Excellent retention rate! Keep up your current service quality and member engagement strategy.",
+        "peak_lunch": "Peak hours are during lunch time. Schedule more staff during this period to maintain service quality.",
+        "peak_dinner": "Peak hours are during dinner time. Schedule more staff during this period to improve service efficiency.",
+        "growth_declining": "Operation volume is declining. Consider launching promotions or new products to attract customers.",
+        "growth_strong": "Strong growth momentum (>20%). Consider expanding operations or adding new product lines."
     }
 }
