@@ -371,7 +371,7 @@
   },
   "navigation": {
     "home": "首页",
-    "recentMessages":{
+    "recentMessages": {
       "recentMessageListView": "最近消息",
       "messageView": "消息"
     },
@@ -636,13 +636,13 @@
       "businessStats": "营业数据统计",
       "overview": "总体概览",
       "totalActivations": "积分卡总激活数",
-      "totalViews": "总浏览量",
+      "totalViews": "近30天浏览量",
       "overallTrend": "总体趋势",
       "totalMembers": "会员总数",
       "totalRevenue": "总交易额",
       "moreData": "更多总体数据",
       "avgOrderAmount": "平均订单金额",
-      "totalVisitors": "总访客数",
+      "totalVisitors": "独立访客数(30天)",
       "couponsIssued": "靠谱券总发放",
       "couponsUsed": "靠谱券总使用",
       "recentActivity": "最近动态",
@@ -652,7 +652,10 @@
       "totalPointsRedeemed": "总积分兑换数",
       "avgPointsPerRedemption": "平均每次兑换积分",
       "couponsRedeemed": "靠谱券兑换数",
-      "noRecentActivity": "暂无最近动态"
+      "noRecentActivity": "暂无最近动态",
+      "voucherVerification": "靠谱券核销统计",
+      "totalVerifications": "总核销",
+      "avgRating": "平均评分"
     },
     "status": {
       "pending": "待审核",
@@ -678,7 +681,7 @@
       "last7Days": "近7天",
       "last30Days": "近30天",
       "scorecardUsage": "积分卡使用次数",
-      "visits": "访问量",
+      "visits": "近30天浏览量",
       "visitors": "访客数",
       "monday": "一",
       "tuesday": "二",
@@ -938,7 +941,7 @@
       "used": "使用积分",
       "added": "添加积分"
     },
-    "logs":{
+    "logs": {
       "totalRecords": "总记录数",
       "usageLogs": "使用日志",
       "addLogs": "添加日志",
@@ -1126,6 +1129,28 @@
     },
     "review": {
       "writeReply": "商家回复"
+    },
+    "growth": {
+      "title": "增长分析",
+      "coreMetrics": "核心增长指标",
+      "monthlyGrowth": "操作量环比",
+      "newCustomers": "本月新增顾客",
+      "customerGrowthRate": "新客环比",
+      "retentionRate": "顾客留存率",
+      "peakHours": "顾客高峰时段",
+      "peakHourTip": "基于最近30天的操作数据分析得出",
+      "monthlyTrends": "月度趋势",
+      "operations": "操作数",
+      "customers": "新增顾客",
+      "pointsIssued": "发放积分",
+      "pointsRedeemed": "兑换积分",
+      "vouchersRedeemed": "兑换券数",
+      "recommendations": "经营建议",
+      "noData": "暂无数据",
+      "noDataDesc": "当商家有经营数据后，增长分析将在此展示",
+      "loadFailed": "加载数据失败",
+      "retry": "重试",
+      "hourFormat": "{{hour}}:00"
     }
   },
   "secondhandSearch": {
@@ -1488,6 +1513,13 @@
           "cpu": "CPU压力",
           "mixed": "混合负载"
         },
+        "testTypeDescriptions": {
+          "database": "并发执行 SELECT 查询，测试数据库连接池的吞吐能力和响应延迟，同时保留连接供正常业务使用。",
+          "api_endpoint": "向指定的公开 API 端点发送大量并发 HTTP 请求，测量端到端响应时间与错误率。",
+          "memory": "分配和释放大量内存缓冲区，测试 Node.js 堆内存管理与垃圾回收性能，上限 500MB。",
+          "cpu": "通过加密运算（PBKDF2）制造 CPU 密集型负载，测试事件循环在高计算压力下的延迟表现。",
+          "mixed": "综合负载（60% 数据库 + 20% API + 10% 内存 + 10% CPU），模拟真实生产环境下的混合请求场景。"
+        },
         "concurrentUsers": "并发用户数",
         "duration": "测试时长",
         "durationUnit": "秒",
@@ -1736,5 +1768,13 @@
     "pointsUnit": "积分",
     "notesOptional": "备注说明（选填）",
     "confirm": "确认操作"
+  },
+  "recommendation": {
+    "retention_low": "留存率偏低，建议开展会员回馈活动，如积分加倍、限时优惠等，提升顾客复购率。",
+    "retention_excellent": "顾客留存率表现优异，持续保持当前的服务水平和会员关怀策略。",
+    "peak_lunch": "营业高峰集中在午餐时段，建议在该时段增加员工排班，确保服务质量。",
+    "peak_dinner": "营业高峰集中在晚餐时段，建议在该时段增加员工排班，提高服务效率。",
+    "growth_declining": "操作量增长呈下降趋势，建议推出促销活动或新品吸引顾客。",
+    "growth_strong": "增长势头良好（>20%），可以考虑扩大经营规模或增加商品种类。"
   }
 }
