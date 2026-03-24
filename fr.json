@@ -571,14 +571,14 @@
             "totalRevenue": "Volume total des transactions",
             "avgOrderAmount": "Valeur moyenne des commandes",
             "totalVisitors": "Visiteurs uniques (30j)",
-            "couponsIssued": "Total des coupons distribués",
+            "couponsIssued": "Coupons actifs",
             "couponsUsed": "Total des coupons utilisés",
             "recentActivity": "Activités récentes",
             "businessStats": "Statistiques des ventes",
             "totalUsage": "Total utilisations",
             "totalPointsRedeemed": "Total de points échangés",
             "avgPointsPerRedemption": "Points moyens par échange",
-            "couponsRedeemed": "Échanges de coupons CoBook",
+            "couponsRedeemed": "Total coupons réclamés",
             "noRecentActivity": "Aucune activité récente",
             "voucherVerification": "Statistiques de vérification",
             "totalVerifications": "Total vérifié",
@@ -1486,7 +1486,7 @@
     },
     "voucher": {
         "detail": {
-            "title": "Détails du coupon CoBook"
+            "title": "Détails du coupon"
         }
     },
     "completeSocialProfile": {
@@ -1519,7 +1519,10 @@
         }
     },
     "systemMessage": {
-        "title": "Messages système"
+        "title": "Messages système",
+        "markAllAsRead": "Tout marquer comme lu",
+        "markAllAsReadConfirmTitle": "Confirmer",
+        "markAllAsReadConfirmMessage": "Êtes-vous sûr de vouloir marquer tous les messages comme lus ?"
     },
     "recommendation": {
         "retention_low": "Le taux de rétention est faible. Envisagez des campagnes de fidélité comme des points doublés ou des offres limitées.",
