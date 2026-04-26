@@ -16,7 +16,15 @@
         "availablePoints": "Points disponibles",
         "scanQRCode": "Scannez le code QR de la carte de fidélité",
         "cardNumber": "Numéro de la carte de fidélité",
-        "tapToFlip": "Appuyez pour voir les détails"
+        "tapToFlip": "Appuyez pour voir les détails",
+        "earnedPoints": "{{points}} points obtenus",
+        "nextRewardHint": "Encore {{points}} pts pour {{name}}",
+        "nextRewardHintNoName": "Encore {{points}} pts pour la prochaine récompense",
+        "allRewardsUnlocked": "Toutes les récompenses débloquées",
+        "noRewardsConfigured": "Aucune récompense configurée",
+        "readyToRedeem": "Échangeable",
+        "milestoneAccessibilityLabel": "Palier {{name}}, {{points}} points requis",
+        "milestoneReachedAccessibilityLabel": "Palier {{name}} atteint, échangeable"
     },
     "settings": {
         "title": "Paramètres",
@@ -195,7 +203,8 @@
             "tokenInvalid": "Lien invalide",
             "username": "Nom d'utilisateur",
             "email": "E-mail"
-        }
+        },
+        "devChannel": "Dev (Développement)"
     },
     "userInfo": {
         "title": "Mes Informations",
@@ -513,7 +522,20 @@
         "watchlist": "Liste d'articles d'occasion suivi",
         "messageList": "Liste des messages d'articles d'occasion",
         "previewProduct": "Aperçu des produits",
-        "publish": "Publier"
+        "publish": "Publier",
+        "delist": "Retirer",
+        "relist": "Remettre en vente",
+        "delete": "Supprimer le produit",
+        "deleteConfirmTitle": "Confirmer la suppression",
+        "deleteConfirmMessage": "Cette action est irréversible. Les images, likes et autres données du produit seront définitivement supprimés. Êtes-vous sûr ?",
+        "deleteConfirmCancel": "Annuler",
+        "deleteConfirmOk": "Supprimer",
+        "delistSuccess": "Produit retiré",
+        "relistSuccess": "Produit remis en vente",
+        "deleteSuccess": "Produit supprimé",
+        "statusOnSale": "En vente",
+        "statusDelisted": "Retiré",
+        "delisted": "Retiré"
     },
     "message": {
         "sendmessage": "Envoyer un message",
@@ -839,7 +861,8 @@
             "description": "Description",
             "location": "Localisation",
             "updateTime": "Dernière mise à jour",
-            "notFilled": "Non rempli"
+            "notFilled": "Non rempli",
+            "revisionNote": "Note du validateur"
         },
         "map": {
             "cancel": "Annuler",
@@ -852,13 +875,20 @@
             "rejected": "Rejeté",
             "reviewing": "En cours de validation",
             "title": "État",
-            "unknown": "Inconnu"
+            "unknown": "Inconnu",
+            "needsRevision": "Modifications requises"
         },
         "latitude": "Latitude",
         "dialog": {
             "submitSuccess": "Soumission réussie",
             "submitFailed": "Soumission échouée",
-            "title": "Soumettre la demande"
+            "title": "Soumettre la demande",
+            "approvedJumpHint": "Votre demande de commerçant a été approuvée. Aller au tableau de bord maintenant ?",
+            "approvedTitle": "Candidature approuvée 🎉",
+            "approvedGuide": "Félicitations ! Vous êtes maintenant gérant(e) du commerce.\n\nEncore 2 étapes avant l'ouverture officielle :\n1. Ouvrez le tableau de bord et complétez les détails (horaires, description, photos…).\n2. Soumettez les modifications pour une seconde validation administrateur.\n\nTant que cette seconde validation n'est pas approuvée, votre commerce n'apparaît pas dans les résultats de recherche.",
+            "goToDashboard": "Aller maintenant",
+            "later": "Plus tard",
+            "validationFailed": "Veuillez remplir tous les champs obligatoires avant de soumettre."
         },
         "detail": {
             "scorecard": "Carte de fidélité",
@@ -867,7 +897,8 @@
             "operatingHours": "Horaires d’ouverture",
             "notOpen": "Fermé",
             "title": "Détails du commerçant",
-            "description": "Introduction"
+            "description": "Introduction",
+            "activityPages": "Activités"
         },
         "scorecard": {
             "title": "Carte de fidélité",
@@ -982,7 +1013,10 @@
                 "alertRedeemSuccessMsg": "\"{{name}}\" échangé avec succès !\nPoints utilisés : {{used}}\nSolde : {{balance}}",
                 "alertRedeemFailed": "Échec de l'échange",
                 "alertUnknownError": "Erreur inconnue, veuillez réessayer",
-                "alertNetworkError": "Erreur réseau, veuillez vérifier votre connexion"
+                "alertNetworkError": "Erreur réseau, veuillez vérifier votre connexion",
+                "conditionRefundEligible": "Les points seront remboursés à l'expiration du coupon",
+                "conditionRefundNotEligible": "Les points ne seront pas remboursés à l'expiration du coupon",
+                "goToProvider": "Aller au commerçant"
             }
         },
         "voucher": {
@@ -1025,7 +1059,25 @@
             "latitude": "Latitude",
             "longitude": "Longitude",
             "resubmit": "Resoumettre",
-            "editApplication": "Modifier la demande"
+            "editApplication": "Modifier la demande",
+            "primaryCategoryId": "Catégorie principale (obligatoire)",
+            "primaryCategoryIdHint": "Veuillez choisir une catégorie principale — obligatoire. Les administrateurs ne la rempliront pas à votre place.",
+            "reviseApplication": "Modifier et resoumettre",
+            "secondName": "Nom secondaire (optionnel)",
+            "secondNameHint": "Souvent un nom dans une langue secondaire.",
+            "sourceLangLabel": "Langue principale du contenu (source pour la traduction automatique)",
+            "addMultiLang": "Ajouter d'autres langues",
+            "hideMultiLang": "Masquer les autres langues",
+            "multiLangHint": "Les langues laissées vides seront complétées par l'IA après approbation (selon l'abonnement).",
+            "mediaSectionLabel": "Téléverser des fichiers (tous optionnels)",
+            "logo": "Logo de la boutique",
+            "license": "Licence commerciale",
+            "storefront": "Photos de la boutique",
+            "storefrontHint": "5 maximum",
+            "storefrontMaxHint": "Vous pouvez téléverser 5 photos de boutique au maximum.",
+            "pickFile": "Choisir un fichier",
+            "removeFile": "Supprimer",
+            "replaceFile": "Remplacer"
         },
         "validation": {
             "addressRequired": "Veuillez saisir l'adresse du commerçant",
@@ -1335,7 +1387,9 @@
             "announcementTitle": "Gestion des annonces",
             "announcementDescription": "Publier et gérer les annonces du commerçant",
             "noFeatures": "Aucune fonctionnalité disponible",
-            "noPermission": "Vous n'avez pas la permission d'accéder aux fonctionnalités"
+            "noPermission": "Vous n'avez pas la permission d'accéder aux fonctionnalités",
+            "activityPagesTitle": "Pages d'activité",
+            "activityPagesDescription": "Créer et gérer les pages promotionnelles"
         },
         "announcement": {
             "error": "Erreur",
@@ -1467,6 +1521,18 @@
             "loading": "Chargement...",
             "noEvents": "Aucun événement",
             "noEventsHint": "Appuyez sur le bouton \"Ajouter\" en haut à droite pour créer votre premier événement"
+        },
+        "incompleteBanner": {
+            "title": "Fiche commerçant incomplète",
+            "body": "Votre fiche commerçant n'est pas encore complète. Complétez-la puis soumettez pour une seconde validation administrateur — votre commerce n'apparaîtra pas dans les résultats de recherche tant que cette validation n'est pas approuvée.",
+            "cta": "Modifier la fiche →"
+        },
+        "rejectionCategory": {
+            "insufficientInfo": "Informations incomplètes",
+            "invalidDocs": "Documents non valides",
+            "duplicate": "Candidature en double",
+            "policy": "Non conforme à la politique",
+            "other": "Autre"
         }
     },
     "secondhandSearch": {
@@ -1801,7 +1867,18 @@
                 "description": "Veuillez sélectionner :",
                 "rejected": "Refusé"
             },
-            "username": "Nom d'utilisateur"
+            "username": "Nom d'utilisateur",
+            "rejectCategoryLabel": "Catégorie de refus",
+            "requestRevisions": "Demander des modifications",
+            "sendRevisionNote": "Envoyer une demande de modification",
+            "revisionHint": "Indiquez au candidat les documents à compléter. Ne compte pas dans le nombre de tentatives.",
+            "primaryCategoryId": "ID de catégorie principale",
+            "primaryCategory": "Catégorie principale",
+            "applicantCategory": "Catégorie choisie par le commerçant",
+            "categoryMissing": "Le commerçant n'a pas choisi de catégorie",
+            "subscriptionTier": "Niveau d'abonnement",
+            "reviewerNote": "Note du validateur (optionnel)",
+            "uploadedMedia": "Fichiers téléversés"
         },
         "stressTest": {
             "title": "Test de charge",
@@ -1959,6 +2036,30 @@
             "usageNotice1": "Les bons échangés sont consultables dans « Mon compte - Bons »",
             "usageNotice2": "Veuillez utiliser avant la date d'expiration",
             "usageNotice3": "Le droit d'interprétation finale appartient au commerçant"
+        },
+        "template": {
+            "title": "Détails du coupon",
+            "validity": "Validité",
+            "validityDays": "Jours de validité",
+            "days": "jours",
+            "redeemed": "Échangé",
+            "totalRedeemed": "Total échangé",
+            "times": "fois",
+            "inactive": "Désactivé",
+            "available": "Disponible",
+            "unavailable": "Désactivé",
+            "status": "Statut",
+            "points": "points",
+            "howToGet": "Comment obtenir",
+            "step1": "Visitez la page du commerçant et obtenez une carte de fidélité",
+            "step2": "Gagnez des points en dépensant chez le commerçant",
+            "step3": "Échangez ce coupon avec vos points",
+            "terms": "Conditions d'utilisation",
+            "term1": "Valable {{days}} jours après échange",
+            "term2": "Présentez le code en magasin pour utiliser",
+            "term3": "Chaque coupon ne peut être utilisé qu'une seule fois",
+            "term4": "Les points seront remboursés après expiration",
+            "viewProvider": "Aller chez le commerçant"
         }
     },
     "completeSocialProfile": {
@@ -2271,5 +2372,226 @@
         "voucherSearch": {
             "title": "Aucun coupon correspondant"
         }
+    },
+    "captcha": {
+        "title": "Vérification humaine",
+        "subtitle": "Trop de requêtes — résolvez ce calcul pour continuer.",
+        "answerLabel": "Réponse",
+        "submit": "Vérifier",
+        "verified": "Vérifié",
+        "verifiedHint": "Vous êtes reconnu comme humain. Les prochaines requêtes ne seront plus bloquées.",
+        "verifyFailed": "Échec de la vérification — réessayez",
+        "invalidAnswer": "Mauvaise réponse — réessayez",
+        "rateLimited": "Trop de tentatives — réessayez dans {{seconds}}s",
+        "trackerMismatch": "Session expirée — fermez et réessayez",
+        "answerMustBeNumber": "Veuillez saisir un nombre"
+    },
+    "localization": {
+        "contentLangTitle": "Langue du contenu",
+        "contentLangDesc": "Choisissez la langue utilisée pour afficher les descriptions des commerçants, les bons et autres contenus multilingues. Ce paramètre est indépendant de la langue de l'interface.",
+        "sourceLanguage": "Langue source",
+        "autoTranslate": "Traduction IA automatique",
+        "autoTranslateHint": "Quand activé, ne remplissez que la langue source — les autres langues sont générées par IA et non modifiables.",
+        "autoTranslateHint2": "Remplissez uniquement la langue source ; le serveur traduira vers les autres langues après l'enregistrement.",
+        "source": "source",
+        "machineTranslated": "traduit par machine",
+        "pendingTranslation": "traduction en cours...",
+        "tapToEdit": "Toucher pour modifier",
+        "editContent": "Modifier le contenu",
+        "shownIn": "Affiché en : {{lang}}",
+        "switchToAITitle": "Passer au mode IA ?",
+        "switchToAIDesc": "Les autres langues seront réinitialisées et retraduites par IA à l'enregistrement. Le contenu de la langue source est conservé.",
+        "sourceRequired": "Veuillez d'abord remplir la langue source",
+        "atLeastOneRequired": "Au moins une langue est requise",
+        "footerAi": "Après enregistrement, le serveur utilisera l'IA pour traduire (généralement 3-8 s).",
+        "footerManual": "Mode manuel : vous remplissez chaque langue vous-même.",
+        "overLimit": "Limite dépassée",
+        "overLimitAlert": "Le contenu dépasse la limite de {{max}} caractères. Veuillez le raccourcir avant d'enregistrer.",
+        "aiTierLocked": "La traduction IA n'est pas disponible dans votre formule actuelle ({{tier}}). Passez à Basic ou supérieur pour l'activer."
+    },
+    "activityPage": {
+        "title": "Activité",
+        "notFound": "Page d'activité introuvable ou terminée",
+        "expired": "Activité terminée",
+        "notStarted": "Activité pas encore commencée",
+        "noContent": "Aucun contenu",
+        "views": "vues",
+        "redeem": "Obtenir",
+        "editor": {
+            "create": "Créer une page d'activité",
+            "edit": "Modifier la page d'activité",
+            "pageTitle": "Titre de la page",
+            "pageDescription": "Description de la page",
+            "startDate": "Date de début",
+            "endDate": "Date de fin",
+            "addSection": "Ajouter une section",
+            "editSection": "Modifier la section",
+            "pickItem": "Choisir un élément",
+            "reorder": "Réorganiser",
+            "publish": "Publier",
+            "archive": "Archiver",
+            "delete": "Supprimer",
+            "confirmDelete": "Êtes-vous sûr de vouloir supprimer cette page ?",
+            "confirmPublish": "Êtes-vous sûr de vouloir publier cette page ?",
+            "saved": "Enregistré",
+            "published": "Publié",
+            "archived": "Archivé",
+            "deleted": "Supprimé",
+            "selectProvider": "Sélectionner commerçant",
+            "uploadImage": "Télécharger image",
+            "addMetric": "Ajouter indicateur",
+            "addFaq": "Ajouter FAQ",
+            "advancedEdit": "Édition avancée",
+            "topMargin": "Marge supérieure",
+            "bottomMargin": "Marge inférieure",
+            "duplicateSection": "Dupliquer la section",
+            "duplicated": "Dupliqué",
+            "searchKeyword": "Mot-clé de recherche",
+            "noProvider": "Veuillez sélectionner un commerçant",
+            "layoutOverlay": "Superposition",
+            "layoutImageTop": "Image en haut",
+            "layoutImageBottom": "Image en bas",
+            "replaceImage": "Remplacer image",
+            "addImage": "Ajouter image",
+            "carouselImages": "Images du carrousel",
+            "editRichText": "Ouvrir l'éditeur de texte riche"
+        },
+        "sectionType": {
+            "hero_banner": "Bannière",
+            "voucher_list": "Bons",
+            "redemption_list": "Articles d'échange",
+            "product_grid": "Grille de produits",
+            "provider_list": "Liste de commerces",
+            "rich_text": "Texte riche",
+            "countdown": "Compte à rebours",
+            "image_carousel": "Carrousel d'images",
+            "divider": "Séparateur",
+            "notice_bar": "Barre de notification",
+            "coupon_rain": "Pluie de coupons",
+            "video": "Vidéo",
+            "stats_counter": "Compteur de stats",
+            "category_nav": "Navigation par catégorie",
+            "featured_single": "Mise en avant",
+            "map_location": "Carte",
+            "social_proof": "Preuve sociale",
+            "faq_accordion": "FAQ"
+        }
+    },
+    "subscription": {
+        "limitReached": "Limite atteinte",
+        "limitReachedDesc": "{{feature}} a atteint la limite de votre forfait actuel ({{limit}})",
+        "featureDisabled": "Mise à niveau requise",
+        "featureDisabledDesc": "{{feature}} nécessite un forfait supérieur",
+        "upgrade": "Mettre à niveau",
+        "currentTier": "Forfait actuel : {{tier}}",
+        "features": {
+            "employees": "Employés",
+            "voucherTemplates": "Modèles de bons",
+            "announcementsActive": "Annonces",
+            "activityPages": "Pages d'activité",
+            "scorecardProducts": "Produits de fidélité",
+            "galleryImages": "Images de la galerie",
+            "customRoles": "Rôles personnalisés",
+            "activityPageBlocks": "Blocs de page d'activité",
+            "roleStoreFinance": "Rôle financier",
+            "roleStoreViewer": "Rôle observateur",
+            "fineGrainedPermissions": "Permissions détaillées",
+            "roleExpiry": "Expiration du rôle",
+            "scorecardProductLimits": "Limites d'échange",
+            "scorecardProductTimeWindow": "Fenêtre de disponibilité",
+            "scorecardProductSortOrder": "Ordre de tri",
+            "announcementPriority": "Priorité d'annonce",
+            "announcementScheduling": "Publication programmée",
+            "activityPagePinning": "Épingler la page",
+            "activityPageExposureControl": "Contrôle d'exposition",
+            "activityPageBlockCopy": "Copie de bloc",
+            "messageImage": "Images dans les messages",
+            "messageNavigationLink": "Liens de navigation",
+            "socialFollowersList": "Liste d'abonnés",
+            "socialViewCount": "Nombre de vues",
+            "customerVisitCount": "Nombre de visites",
+            "customerLevelView": "Niveau client",
+            "customerSorting": "Tri des clients",
+            "detailedOperationLog": "Journal détaillé",
+            "walletPasses": "Portefeuille numérique",
+            "merchantLevels": "Niveaux marchands",
+            "reviewReplies": "Réponses aux avis",
+            "pointsRefund": "Remboursement de points",
+            "scorecardCustomColors": "Couleurs personnalisées",
+            "holidayHours": "Horaires des jours fériés",
+            "broadcastMessages": "Messages diffusés",
+            "dataExport": "Export de données",
+            "dataExportFull": "Export complet",
+            "analyticsFull": "Analyses complètes",
+            "analyticsWeekly": "Analyses hebdomadaires",
+            "analyticsCustomRange": "Période personnalisée",
+            "subCategories": "Sous-catégories",
+            "messageHistoryDays": "Historique des messages",
+            "pointsCustomExpiryMax": "Durée d'expiration personnalisée des points (jours)",
+            "activityPageAllBlockTypes": "Tous les types de blocs",
+            "aiAutoTranslate": "Traduction IA auto."
+        },
+        "tierNames": {
+            "free": "Gratuit",
+            "basic": "Basique",
+            "premium": "Premium",
+            "business": "Business"
+        },
+        "unlimited": "Illimité",
+        "expiresAt": "Expire le",
+        "tierUpdated": "Forfait mis à jour",
+        "dashboard": {
+            "title": "Forfait d'abonnement",
+            "subtitle": "Voir votre forfait actuel et l'utilisation des ressources",
+            "currentPlan": "Forfait actuel",
+            "current": "Actuel",
+            "contactSales": "Contacter les ventes",
+            "freeForever": "Gratuit pour toujours",
+            "resourceUsage": "Utilisation des ressources",
+            "featureStatus": "État des fonctionnalités",
+            "comparison": "Comparaison des forfaits",
+            "feature": "Fonctionnalité",
+            "group": {
+                "storeBasic": "Boutique",
+                "scorecard": "Carte de fidélité",
+                "voucher": "Bons",
+                "level": "Niveaux et portefeuille",
+                "employee": "Personnel et rôles",
+                "announcement": "Annonces",
+                "activityPage": "Pages d'activité",
+                "review": "Avis",
+                "analytics": "Analyses et export",
+                "message": "Messagerie",
+                "social": "Social et clients",
+                "content": "Localisation du contenu"
+            }
+        }
+    },
+    "achievement": {
+        "tab": {
+            "all": "Tous",
+            "food": "Gastronomie",
+            "secondhand": "Seconde main",
+            "social": "Social",
+            "milestone": "Jalons",
+            "special": "Spécial"
+        },
+        "unlockedSummary": "Débloqués {{unlocked}} / {{total}}",
+        "empty": "Aucun succès dans cette catégorie",
+        "unlockedAt": "Débloqué le {{date}}",
+        "equip": "Équiper sur le profil",
+        "unequip": "Retirer",
+        "lockedHint": "Débloquez en remplissant les conditions",
+        "replaceTitle": "Remplacer un badge",
+        "replacePrompt": "Les 3 emplacements sont pleins. Choisissez un badge à remplacer :",
+        "errorTitle": "Erreur",
+        "title": "Succès",
+        "toast": {
+            "unlocked": "Débloqué : {{name}}",
+            "leveledUp": "Niveau supérieur ! Niveau {{level}}"
+        },
+        "xpProgress": "{{current}} / {{next}} XP",
+        "xpMax": "{{current}} XP (max)",
+        "equipHint": "Équipez depuis le détail du succès"
     }
 }
