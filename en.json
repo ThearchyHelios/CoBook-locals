@@ -16,7 +16,15 @@
         "availablePoints": "Available scores",
         "scanQRCode": "Scan the QR code on the Score Card",
         "cardNumber": "Score Card number",
-        "tapToFlip": "Tap to flip for details"
+        "tapToFlip": "Tap to flip for details",
+        "earnedPoints": "Earned {{points}} points",
+        "nextRewardHint": "{{points}} more to redeem {{name}}",
+        "nextRewardHintNoName": "{{points}} more to unlock the next reward",
+        "allRewardsUnlocked": "All rewards unlocked",
+        "noRewardsConfigured": "No rewards configured",
+        "readyToRedeem": "Redeemable",
+        "milestoneAccessibilityLabel": "Milestone {{name}}, requires {{points}} points",
+        "milestoneReachedAccessibilityLabel": "Milestone {{name}} reached, ready to redeem"
     },
     "settings": {
         "title": "Settings",
@@ -198,7 +206,8 @@
             "tokenInvalid": "Invalid link",
             "username": "Username",
             "email": "Email"
-        }
+        },
+        "devChannel": "Dev (Development)"
     },
     "userInfo": {
         "title": "My Info",
@@ -516,7 +525,20 @@
         "previewProduct": "Preview product",
         "watchlist": "Watchlist for second-hand items",
         "search": "Second-Hand product search",
-        "draftEdit": "Draft editing of second-hand items"
+        "draftEdit": "Draft editing of second-hand items",
+        "delist": "Delist",
+        "relist": "Relist",
+        "delete": "Delete Product",
+        "deleteConfirmTitle": "Confirm Delete",
+        "deleteConfirmMessage": "This action cannot be undone. The product's images, likes and other data will be permanently removed. Are you sure?",
+        "deleteConfirmCancel": "Cancel",
+        "deleteConfirmOk": "Delete",
+        "delistSuccess": "Product delisted",
+        "relistSuccess": "Product relisted",
+        "deleteSuccess": "Product deleted",
+        "statusOnSale": "For Sale",
+        "statusDelisted": "Delisted",
+        "delisted": "Delisted"
     },
     "message": {
         "sendmessage": "Send message",
@@ -844,7 +866,8 @@
             "location": "Location",
             "rejectReason": "Reason for rejection",
             "submitTime": "Submission time",
-            "notFilled": "Not filled in"
+            "notFilled": "Not filled in",
+            "revisionNote": "Reviewer note"
         },
         "request": {
             "title": "Apply to become a Commercial",
@@ -864,7 +887,25 @@
             "cancel": "Cancel",
             "submit": "Submit",
             "latitude": "Latitude",
-            "resubmit": "Resubmit"
+            "resubmit": "Resubmit",
+            "primaryCategoryId": "Primary category (required)",
+            "primaryCategoryIdHint": "Please pick a primary category — required. Admins will not assign one for you.",
+            "reviseApplication": "Revise and resubmit",
+            "secondName": "Second name (optional)",
+            "secondNameHint": "Often an English or secondary-language display name.",
+            "sourceLangLabel": "Primary content language (used as AI translation source)",
+            "addMultiLang": "Add other-language versions",
+            "hideMultiLang": "Hide other-language versions",
+            "multiLangHint": "Languages left blank will be filled in by AI after approval (requires subscription tier).",
+            "mediaSectionLabel": "Upload files (all optional)",
+            "logo": "Storefront logo",
+            "license": "Business license",
+            "storefront": "Storefront photos",
+            "storefrontHint": "Up to 5",
+            "storefrontMaxHint": "You can upload at most 5 storefront photos.",
+            "pickFile": "Pick file",
+            "removeFile": "Remove",
+            "replaceFile": "Replace"
         },
         "validation": {
             "addressRequired": "Please enter the commercial address",
@@ -880,7 +921,13 @@
         "dialog": {
             "submitSuccess": "Submission successful",
             "submitFailed": "Submission failed",
-            "title": "Submit application"
+            "title": "Submit application",
+            "approvedJumpHint": "Your merchant application has been approved. Go to the provider dashboard now?",
+            "approvedTitle": "Merchant application approved 🎉",
+            "approvedGuide": "Congratulations! You're now a store manager.\n\nTwo more steps before your store goes live:\n1. Open the provider dashboard and fill in the remaining details (opening hours, full description, photos, etc.)\n2. Submit the changes and wait for admin re-approval.\n\n Until that second review is approved, your store will NOT appear in other users' search results.",
+            "goToDashboard": "Go now",
+            "later": "Later",
+            "validationFailed": "Please complete every required field before submitting."
         },
         "map": {
             "cancel": "Cancel",
@@ -894,7 +941,8 @@
             "rejected": "Rejected",
             "reviewing": "Under Review",
             "title": "Status",
-            "unknown": "Unknown"
+            "unknown": "Unknown",
+            "needsRevision": "Needs revisions"
         },
         "scorecard": {
             "userActivationConfirm": {
@@ -1009,7 +1057,10 @@
                 "alertRedeemSuccessMsg": "Successfully redeemed \"{{name}}\"!\nPoints used: {{used}}\nRemaining: {{balance}}",
                 "alertRedeemFailed": "Redemption Failed",
                 "alertUnknownError": "Unknown error, please try again",
-                "alertNetworkError": "Network error, please check your connection"
+                "alertNetworkError": "Network error, please check your connection",
+                "conditionRefundEligible": "Points will be refunded when voucher expires",
+                "conditionRefundNotEligible": "Points will not be refunded when voucher expires",
+                "goToProvider": "Go to Provider"
             }
         },
         "detail": {
@@ -1019,7 +1070,8 @@
             "description": "Description",
             "scorecard": "Score Card",
             "review": "Comment",
-            "description2": "Introduction 2 (Test)"
+            "description2": "Introduction 2 (Test)",
+            "activityPages": "Activities"
         },
         "voucher": {
             "title": "CoBook vouchers",
@@ -1376,7 +1428,9 @@
             "announcementTitle": "Announcement Management",
             "announcementDescription": "Publish and manage store announcements",
             "noFeatures": "No features available",
-            "noPermission": "You do not have permission to access any features"
+            "noPermission": "You do not have permission to access any features",
+            "activityPagesTitle": "Activity Pages",
+            "activityPagesDescription": "Create and manage promotional landing pages"
         },
         "announcement": {
             "error": "Error",
@@ -1508,6 +1562,18 @@
             "loading": "Loading...",
             "noEvents": "No events",
             "noEventsHint": "Tap the \"Add\" button in the top right to create your first event"
+        },
+        "incompleteBanner": {
+            "title": "Merchant info incomplete",
+            "body": "Your merchant profile still needs more details. Complete it and submit for a second admin review — your store won't appear in search until that review is approved.",
+            "cta": "Edit info →"
+        },
+        "rejectionCategory": {
+            "insufficientInfo": "Incomplete information",
+            "invalidDocs": "Invalid documents",
+            "duplicate": "Duplicate application",
+            "policy": "Policy violation",
+            "other": "Other"
         }
     },
     "secondhandSearch": {
@@ -1848,7 +1914,18 @@
                 "approved": "Approved",
                 "rejected": "Rejected"
             },
-            "username": "Username"
+            "username": "Username",
+            "rejectCategoryLabel": "Rejection category",
+            "requestRevisions": "Request revisions",
+            "sendRevisionNote": "Send revision note",
+            "revisionHint": "Tell the applicant which documents to update. This does not count toward reapply attempts.",
+            "primaryCategoryId": "Primary category ID",
+            "primaryCategory": "Primary category",
+            "applicantCategory": "Applicant's category",
+            "categoryMissing": "Applicant didn't pick a category",
+            "subscriptionTier": "Subscription tier",
+            "reviewerNote": "Reviewer note (optional)",
+            "uploadedMedia": "Uploaded files"
         },
         "stressTest": {
             "title": "Stress Test",
@@ -2006,6 +2083,30 @@
             "usageNotice1": "Redeemed vouchers can be viewed in \"My - Vouchers\"",
             "usageNotice2": "Please use within the validity period, expired vouchers are void",
             "usageNotice3": "Final interpretation rights belong to the merchant"
+        },
+        "template": {
+            "title": "Voucher Details",
+            "validity": "Validity",
+            "validityDays": "Valid Days",
+            "days": "days",
+            "redeemed": "Redeemed",
+            "totalRedeemed": "Total Redeemed",
+            "times": "times",
+            "inactive": "Inactive",
+            "available": "Available",
+            "unavailable": "Inactive",
+            "status": "Status",
+            "points": "points",
+            "howToGet": "How to Get",
+            "step1": "Visit the provider page and get a loyalty card",
+            "step2": "Earn points by spending at the provider",
+            "step3": "Redeem this voucher with your points",
+            "terms": "Terms of Use",
+            "term1": "Valid for {{days}} days after redemption",
+            "term2": "Show voucher code at the store to use",
+            "term3": "Each voucher can only be used once",
+            "term4": "Points will be refunded after expiry",
+            "viewProvider": "Go to Provider to Redeem"
         }
     },
     "completeSocialProfile": {
@@ -2529,5 +2630,226 @@
         "voucherSearch": {
             "title": "No matching vouchers found"
         }
+    },
+    "captcha": {
+        "title": "Human check",
+        "subtitle": "Too many requests — solve the puzzle below to continue.",
+        "answerLabel": "Answer",
+        "submit": "Verify",
+        "verified": "Verified",
+        "verifiedHint": "You're confirmed as human. Subsequent requests won't be blocked.",
+        "verifyFailed": "Verification failed — try again",
+        "invalidAnswer": "Wrong answer — try again",
+        "rateLimited": "Too many attempts — retry in {{seconds}}s",
+        "trackerMismatch": "Session expired — close and try again",
+        "answerMustBeNumber": "Please enter a number"
+    },
+    "localization": {
+        "contentLangTitle": "Content Language",
+        "contentLangDesc": "Choose the language used to display merchant descriptions, vouchers, and other multilingual content. This setting is independent of the app UI language.",
+        "sourceLanguage": "Source language",
+        "autoTranslate": "AI auto-translate",
+        "autoTranslateHint": "When enabled, only fill in the source language — other languages are generated by AI and not editable.",
+        "autoTranslateHint2": "Only fill the source language; the backend will translate to other languages after saving.",
+        "source": "source",
+        "machineTranslated": "machine-translated",
+        "pendingTranslation": "translating...",
+        "tapToEdit": "Tap to edit",
+        "editContent": "Edit content",
+        "shownIn": "Shown in: {{lang}}",
+        "switchToAITitle": "Switch to AI mode?",
+        "switchToAIDesc": "Other languages will be reset and re-translated by AI on save. Your source-language content is preserved.",
+        "sourceRequired": "Please fill in the source language first",
+        "atLeastOneRequired": "At least one language is required",
+        "footerAi": "After saving, the backend will use AI to translate to other languages (typically 3-8s).",
+        "footerManual": "Manual mode: you fill every language yourself.",
+        "overLimit": "Exceeds limit",
+        "overLimitAlert": "Content exceeds the {{max}}-character limit. Please trim it before saving.",
+        "aiTierLocked": "AI auto-translate is not available on your current plan ({{tier}}). Upgrade to Basic or higher to enable it."
+    },
+    "activityPage": {
+        "title": "Activity",
+        "notFound": "Activity page not found or has ended",
+        "expired": "Activity has ended",
+        "notStarted": "Activity has not started",
+        "noContent": "No content",
+        "views": "views",
+        "redeem": "Get",
+        "editor": {
+            "create": "Create Activity Page",
+            "edit": "Edit Activity Page",
+            "pageTitle": "Page Title",
+            "pageDescription": "Page Description",
+            "startDate": "Start Date",
+            "endDate": "End Date",
+            "addSection": "Add Section",
+            "editSection": "Edit Section",
+            "pickItem": "Pick Item",
+            "reorder": "Reorder",
+            "publish": "Publish",
+            "archive": "Archive",
+            "delete": "Delete",
+            "confirmDelete": "Are you sure you want to delete this activity page?",
+            "confirmPublish": "Are you sure you want to publish this activity page?",
+            "saved": "Saved",
+            "published": "Published",
+            "archived": "Archived",
+            "deleted": "Deleted",
+            "selectProvider": "Select Provider",
+            "uploadImage": "Upload Image",
+            "addMetric": "Add Metric",
+            "addFaq": "Add FAQ",
+            "advancedEdit": "Advanced Edit",
+            "topMargin": "Top Margin",
+            "bottomMargin": "Bottom Margin",
+            "duplicateSection": "Duplicate Section",
+            "duplicated": "Duplicated",
+            "searchKeyword": "Search keyword",
+            "noProvider": "Please select a provider first",
+            "layoutOverlay": "Overlay",
+            "layoutImageTop": "Image Top",
+            "layoutImageBottom": "Image Bottom",
+            "replaceImage": "Replace Image",
+            "addImage": "Add Image",
+            "carouselImages": "Carousel Images",
+            "editRichText": "Open Rich Text Editor"
+        },
+        "sectionType": {
+            "hero_banner": "Banner",
+            "voucher_list": "Vouchers",
+            "redemption_list": "Redemption Items",
+            "product_grid": "Product Grid",
+            "provider_list": "Provider List",
+            "rich_text": "Rich Text",
+            "countdown": "Countdown",
+            "image_carousel": "Image Carousel",
+            "divider": "Divider",
+            "notice_bar": "Notice Bar",
+            "coupon_rain": "Coupon Rain",
+            "video": "Video",
+            "stats_counter": "Stats Counter",
+            "category_nav": "Category Nav",
+            "featured_single": "Featured Single",
+            "map_location": "Map Location",
+            "social_proof": "Social Proof",
+            "faq_accordion": "FAQ"
+        }
+    },
+    "subscription": {
+        "limitReached": "Limit Reached",
+        "limitReachedDesc": "{{feature}} has reached the limit for your current plan ({{limit}})",
+        "featureDisabled": "Upgrade Required",
+        "featureDisabledDesc": "{{feature}} requires a higher subscription tier",
+        "upgrade": "Upgrade Plan",
+        "currentTier": "Current Plan: {{tier}}",
+        "features": {
+            "employees": "Employees",
+            "voucherTemplates": "Voucher Templates",
+            "announcementsActive": "Announcements",
+            "activityPages": "Activity Pages",
+            "scorecardProducts": "Scorecard Products",
+            "galleryImages": "Gallery Images",
+            "customRoles": "Custom Roles",
+            "activityPageBlocks": "Activity Page Blocks",
+            "roleStoreFinance": "Store Finance Role",
+            "roleStoreViewer": "Store Viewer Role",
+            "fineGrainedPermissions": "Fine-grained Permissions",
+            "roleExpiry": "Role Expiry",
+            "scorecardProductLimits": "Redemption Limits",
+            "scorecardProductTimeWindow": "Availability Window",
+            "scorecardProductSortOrder": "Sort Order",
+            "announcementPriority": "Announcement Priority",
+            "announcementScheduling": "Scheduled Publishing",
+            "activityPagePinning": "Page Pinning",
+            "activityPageExposureControl": "Exposure Control",
+            "activityPageBlockCopy": "Block Copy",
+            "messageImage": "Message Images",
+            "messageNavigationLink": "Navigation Links",
+            "socialFollowersList": "Followers List",
+            "socialViewCount": "View Count",
+            "customerVisitCount": "Visit Count",
+            "customerLevelView": "Customer Level",
+            "customerSorting": "Customer Sorting",
+            "detailedOperationLog": "Detailed Logs",
+            "walletPasses": "Digital Wallet",
+            "merchantLevels": "Merchant Levels",
+            "reviewReplies": "Review Replies",
+            "pointsRefund": "Points Refund",
+            "scorecardCustomColors": "Custom Card Colors",
+            "holidayHours": "Holiday Hours",
+            "broadcastMessages": "Broadcast Messages",
+            "dataExport": "Data Export",
+            "dataExportFull": "Full Data Export",
+            "analyticsFull": "Full Analytics",
+            "analyticsWeekly": "Weekly Analytics",
+            "analyticsCustomRange": "Custom Date Range",
+            "subCategories": "Sub-categories",
+            "messageHistoryDays": "Message History",
+            "pointsCustomExpiryMax": "Custom Points Expiry Time (Days)",
+            "activityPageAllBlockTypes": "All Block Types",
+            "aiAutoTranslate": "AI Auto-translate"
+        },
+        "tierNames": {
+            "free": "Free",
+            "basic": "Basic",
+            "premium": "Premium",
+            "business": "Business"
+        },
+        "unlimited": "Unlimited",
+        "expiresAt": "Expires",
+        "tierUpdated": "Subscription tier updated",
+        "dashboard": {
+            "title": "Subscription Plan",
+            "subtitle": "View your current plan and resource usage",
+            "currentPlan": "Current Plan",
+            "current": "Current",
+            "contactSales": "Contact Sales",
+            "freeForever": "Free Forever",
+            "resourceUsage": "Resource Usage",
+            "featureStatus": "Feature Status",
+            "comparison": "Plan Comparison",
+            "feature": "Feature",
+            "group": {
+                "storeBasic": "Store Basics",
+                "scorecard": "Scorecard",
+                "voucher": "Vouchers",
+                "level": "Levels & Wallet",
+                "employee": "Staff & Roles",
+                "announcement": "Announcements",
+                "activityPage": "Activity Pages",
+                "review": "Reviews",
+                "analytics": "Analytics & Export",
+                "message": "Messaging",
+                "social": "Social & Customers",
+                "content": "Content Localization"
+            }
+        }
+    },
+    "achievement": {
+        "tab": {
+            "all": "All",
+            "food": "Food",
+            "secondhand": "Marketplace",
+            "social": "Social",
+            "milestone": "Milestones",
+            "special": "Special"
+        },
+        "unlockedSummary": "Unlocked {{unlocked}} / {{total}}",
+        "empty": "No achievements in this category yet",
+        "unlockedAt": "Unlocked on {{date}}",
+        "equip": "Equip to Profile",
+        "unequip": "Unequip",
+        "lockedHint": "Unlock by completing requirements",
+        "replaceTitle": "Replace Badge",
+        "replacePrompt": "Display slots are full (3). Choose a badge to replace:",
+        "errorTitle": "Error",
+        "title": "Achievements",
+        "toast": {
+            "unlocked": "Unlocked: {{name}}",
+            "leveledUp": "Level Up! Now Lv {{level}}"
+        },
+        "xpProgress": "{{current}} / {{next}} XP",
+        "xpMax": "{{current}} XP (Max)",
+        "equipHint": "Equip badges from detail view"
     }
 }
