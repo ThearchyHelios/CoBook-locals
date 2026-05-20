@@ -24,7 +24,98 @@
         "noRewardsConfigured": "No rewards configured",
         "readyToRedeem": "Redeemable",
         "milestoneAccessibilityLabel": "Milestone {{name}}, requires {{points}} points",
-        "milestoneReachedAccessibilityLabel": "Milestone {{name}} reached, ready to redeem"
+        "milestoneReachedAccessibilityLabel": "Milestone {{name}} reached, ready to redeem",
+        "manage": {
+            "defaultName": "New redemption item",
+            "saving": "Saving…",
+            "saved": "Saved",
+            "saveFailed": "Save failed — tap to retry",
+            "nameRequired": "Redemption name cannot be empty — not saved",
+            "timeRangeRequired": "Time limit enabled — set start and end time",
+            "created": "Redemption item created — edits save automatically",
+            "createFailed": "Failed to create redemption item, please retry",
+            "imageUpdated": "Image updated",
+            "imageUploadFailed": "Image upload failed, please retry",
+            "reorderSaved": "Order saved",
+            "reorderFailed": "Failed to save order, please retry",
+            "needVoucher": "No voucher bound yet — not redeemable by users",
+            "statusLabel": "Status",
+            "listed": "Listed",
+            "unlisted": "Unlisted"
+        },
+        "setup": {
+            "title": "Getting started",
+            "subtitle": "Complete in order to open redemptions to users",
+            "progress": "{{done}}/{{total}} done",
+            "allDone": "All set — your scorecard is ready 🎉",
+            "createVoucher": "Create your first voucher",
+            "createRedemption": "Create a redemption item",
+            "bindVoucher": "Bind a voucher to redemption items",
+            "go": "Complete",
+            "unboundHint": "{{count}} redemption item(s) still without a voucher",
+            "collapse": "Collapse",
+            "expand": "Expand"
+        },
+        "template": {
+            "screenTitle": "Scorecard Template",
+            "entryTitle": "Card Template",
+            "heading": "Choose a Scorecard Template",
+            "intro": "Templates control both the card's visual style and its color palette. Basic and higher tiers can pick artistic templates; Free always falls back to a Bronze (or current tier) palette.",
+            "tierBanner": "Upgrade to Basic or above to unlock all templates",
+            "tierLocked": "Basic+ required",
+            "tune": "Customize",
+            "upgradeRequired": "This template requires a Basic subscription or higher. Please upgrade first.",
+            "supportsLevelBadge": "Supports level badge",
+            "selectedDescription": "The selected template has been applied to your scorecard.",
+            "clearedDescription": "Template cleared. The card will render with the merchant level color (or Bronze).",
+            "requiresActivationFirst": "Activate the scorecard first (save its basic info), then pick a template.",
+            "noTemplate": {
+                "name": "No Template",
+                "description": "Use the merchant tier color; falls back to Bronze when the level system is off.",
+                "subtitle": "No template (level color / Bronze fallback)",
+                "previewLabel": "BRONZE"
+            },
+            "color": {
+                "advanced": "Custom color",
+                "preset": "Preset palette"
+            }
+        },
+        "templates": {
+            "catPaw": {
+                "name": "Cat Paw Trail",
+                "description": "A winding stamp path animated with walking cat paws.",
+                "fields": {
+                    "stampCount": {
+                        "label": "Stamp Count",
+                        "hint": "Milestones drawn along the trail (2-10)"
+                    },
+                    "maxPoints": {
+                        "label": "Points to Fill",
+                        "hint": "Total points needed to fill all stamps"
+                    },
+                    "primaryColor": {
+                        "label": "Primary Color",
+                        "hint": "Pick a preset swatch or tap + for a custom hex"
+                    },
+                    "accentColor": {
+                        "label": "Accent Color",
+                        "hint": "Used for the provider name and the full-card glow"
+                    },
+                    "backgroundImage": {
+                        "label": "Background Image",
+                        "hint": "Optional: upload an image to replace the color background. A white translucent veil is layered on top so paws and stamps stay readable.",
+                        "empty": "No background image (uses primary color gradient)",
+                        "pick": "Upload background",
+                        "replace": "Replace background",
+                        "remove": "Remove",
+                        "removeTitle": "Remove Background",
+                        "removeMessage": "Remove the background image? The card will fall back to the primary color gradient.",
+                        "uploadFailed": "Background upload failed, please retry",
+                        "cropTitle": "Adjust Background"
+                    }
+                }
+            }
+        }
     },
     "settings": {
         "title": "Settings",
@@ -309,7 +400,8 @@
         "noAccount": "Don't have an account?",
         "welcomeTitle": "Welcome to CoBook",
         "welcomeSubtitle": "Sign in to start using CoBook",
-        "socialLoginInfo": "Google, Apple and other social logins available"
+        "socialLoginInfo": "Google, Apple and other social logins available",
+        "rememberThisDevice": "Remember this device (skip 2FA next time)"
     },
     "register": {
         "username": "Username",
@@ -421,7 +513,9 @@
         "checkingUpdates": "Checking for OTA updates...",
         "downloadingUpdate": "Downloading update...",
         "requestingPermissions": "Requesting permissions...",
-        "completed": "Initialization complete"
+        "completed": "Initialization complete",
+        "fetchingResources": "Fetching latest resources...",
+        "preparingApp": "Preparing your app..."
     },
     "validation": {
         "usernameRequired": "Username cannot be empty",
@@ -504,7 +598,19 @@
         "save": "Save",
         "create": "Create",
         "close": "Close",
-        "all": "All"
+        "all": "All",
+        "time": {
+            "seconds": "sec",
+            "minutes": "min",
+            "hours": "h",
+            "days": "d",
+            "ago": "{{n}} {{unit}} ago",
+            "inFuture": "in {{n}} {{unit}}"
+        },
+        "back": "Back",
+        "tryAgainLater": "Please try again later",
+        "failed": "Operation failed",
+        "disabled": "Disabled"
     },
     "secondhand": {
         "loginToViewProductDetails": "Login to view product details",
@@ -538,7 +644,22 @@
         "deleteSuccess": "Product deleted",
         "statusOnSale": "For Sale",
         "statusDelisted": "Delisted",
-        "delisted": "Delisted"
+        "delisted": "Delisted",
+        "draftBadge": "Draft",
+        "groupDraftBadge": "Batch Draft",
+        "groupBadge": "Group",
+        "groupItemCount": "{{n}} items",
+        "untitledGroup": "Untitled group",
+        "partOfGroup": "Part of a group",
+        "publishedBadge": "Published",
+        "sellerTrust": {
+            "title": "Seller Info",
+            "daysOnPlatform": "Joined {{days}} days ago",
+            "totalListings": "{{count}} listings total",
+            "activeListings": "{{count}} listed",
+            "moderationWarning": "This account has been restricted by the platform — proceed with caution"
+        },
+        "safetyTip": "Meet in daylight at a public location; inspect before paying; never transfer or scan an unknown QR code in advance."
     },
     "message": {
         "sendmessage": "Send message",
@@ -581,7 +702,12 @@
             "button9": "Button 9",
             "button10": "Button 10",
             "button11": "Button 11",
-            "button12": "Button 12"
+            "button12": "Button 12",
+            "coffee": "Coffee",
+            "bubbleTea": "Bubble Tea",
+            "retail": "Retail",
+            "service": "Services",
+            "other": "Other"
         },
         "more": "More",
         "collapse": "Collapse",
@@ -723,7 +849,9 @@
             "totalEvents": "Total Events",
             "avgFillRate": "Avg Fill Rate",
             "utilizationRate": "Utilization Rate",
-            "utilizationRateDesc": "Utilization Rate = Verified vouchers ÷ Total redeemed vouchers, reflecting actual voucher usage"
+            "utilizationRateDesc": "Utilization Rate = Verified vouchers ÷ Total redeemed vouchers, reflecting actual voucher usage",
+            "favoriteCount": "Favorites",
+            "favoriteCountDesc": "Total times users added this provider to their favorites"
         },
         "period": {
             "overview": "Overview",
@@ -852,7 +980,10 @@
             "accountSettings": "Account Settings",
             "privacy": "Privacy Settings",
             "logout": "Logout",
-            "myPermissions": "My Permissions"
+            "myPermissions": "My Permissions",
+            "exchangeRule": "Points Exchange Rule",
+            "businessHelpdesk": "Business Help Desk",
+            "businessHelpdeskDesc": "Reach CoBook about partnership, subscription, and compliance"
         },
         "latitude": "Latitude",
         "info": {
@@ -1061,6 +1192,25 @@
                 "conditionRefundEligible": "Points will be refunded when voucher expires",
                 "conditionRefundNotEligible": "Points will not be refunded when voucher expires",
                 "goToProvider": "Go to Provider"
+            },
+            "redeemSheet": {
+                "title": "Confirm Redemption",
+                "subtitle": "Please review the order details below",
+                "scorecardInfo": "Scorecard",
+                "productInfo": "Item",
+                "voucherInfo": "Voucher You Will Receive",
+                "summary": "Points Change",
+                "balanceBefore": "Current Balance",
+                "pointsToSpend": "Points to Spend",
+                "balanceAfter": "Balance After",
+                "levelChange": "Membership Level",
+                "levelUnchanged": "Level is based on lifetime points and is unaffected",
+                "voucherValidity": "Valid for {{days}} days",
+                "confirmRedeem": "Confirm Redemption",
+                "noScorecard": "You don't have a scorecard for this merchant yet. Activate one first.",
+                "activateButton": "Activate Scorecard",
+                "unknownProvider": "Merchant",
+                "loadingScorecard": "Loading scorecard..."
             }
         },
         "detail": {
@@ -1336,7 +1486,13 @@
             "announcementManagement": "Announcement Management",
             "voucherVerificationLogs": "Voucher Verification Logs",
             "voucherVerification": "Voucher Verification",
-            "sortByPoints": "Sort by Points"
+            "sortByPoints": "Sort by Points",
+            "businessDataTitle": "Business Data",
+            "viewFullStats": "View full report",
+            "metricCustomers": "Customers",
+            "metricPointsIssued": "Points Issued",
+            "metricViews": "Views",
+            "metricFavorites": "Favorites"
         },
         "products": {
             "voucherManagement": "Voucher Management",
@@ -1412,7 +1568,13 @@
             "contactPhone": "Contact Phone *",
             "contactPhonePlaceholder": "Enter contact phone",
             "email": "Email *",
-            "emailPlaceholder": "Enter email address"
+            "emailPlaceholder": "Enter email address",
+            "loadingInfo": "Loading business info…",
+            "loadInfoFailed": "Failed to load business info",
+            "rejectedTitle": "Previous submission rejected",
+            "rejectedAskCta": "Questions about this decision? Contact the review team",
+            "rejectedPrefillIntro": "Regarding the previous submission being rejected, I would like to clarify:",
+            "rejectedPrefillReviewerNote": "Reviewer note"
         },
         "consultation": {
             "helpGuideTitle": "Help Guide",
@@ -1420,7 +1582,9 @@
             "helpGuideInProgress": "Help documentation is under development...",
             "platformServiceTitle": "Platform Service Center",
             "platformServiceDescription": "Contact support for technical assistance",
-            "platformServiceInProgress": "Service center is under development..."
+            "platformServiceInProgress": "Service center is under development...",
+            "businessHelpdeskTitle": "Business Help Desk",
+            "businessHelpdeskDescription": "Reach CoBook about partnership, subscription, and compliance"
         },
         "marketing": {
             "promotionTitle": "Promotion Management",
@@ -1574,6 +1738,10 @@
             "duplicate": "Duplicate application",
             "policy": "Policy violation",
             "other": "Other"
+        },
+        "scanCta": {
+            "title": "Scan & Verify",
+            "subtitle": "Scorecards & vouchers in one tap"
         }
     },
     "secondhandSearch": {
@@ -1585,7 +1753,9 @@
             "searchFailed": "Search failed",
             "searchFailedMessage": "Please try again later",
             "noResults": "No related items found",
-            "noResultsSubText": "Try other search terms or filter criteria"
+            "noResultsSubText": "Try other search terms or filter criteria",
+            "emptyHintTitle": "Start typing to search",
+            "emptyHintDescription": "Find the second-hand items you want"
         },
         "sorting": {
             "title": "Sort by",
@@ -1722,6 +1892,20 @@
             "savethedraft": "Save draft",
             "takeitseriously": "Are you sure you want to leave?",
             "unfinishedPublish": "Unfinished release"
+        },
+        "draft": {
+            "saving": "Saving…",
+            "saved": "Draft auto-saved",
+            "saveFailed": "Save failed, please retry",
+            "offlineRetry": "Network error — edits will auto-save once back online",
+            "imageRetry": "Image upload failed, please retry",
+            "resumeTitle": "Resume unfinished draft?",
+            "resumeBody": "An unfinished draft was found. Continue editing it or start a new one?",
+            "resumeBodyV2": "You have an unfinished secondhand draft. Choose \"Continue editing\" to pick up where you left off, or \"Save & new\" — the current draft stays in My Secondhand, available any time.",
+            "resumeNew": "New",
+            "resumeSaveAndNew": "Save & new",
+            "resumeContinue": "Continue editing",
+            "savedToProfile": "Draft saved to My Secondhand"
         }
     },
     "secondhandMultiple": {
@@ -1758,21 +1942,32 @@
             "supplementModeHelp": "In supplement mode, you can only modify existing drafts and resend.\n\nIf you need to add new products:\n1. Please exit supplement mode first\n2. After exiting, existing drafts will be sent to a new product group",
             "exitSupplementModeTitle": "Exit supplement mode",
             "exitSupplementModeMessage": "Supplement mode explanation:\n\n1. This mode ensures all products are published to the same product group\n2. In this mode, you can only modify existing drafts and resend\n3. After exiting this mode:\n   - You can add new products\n   - All existing drafts will be sent to a new product group\n\nAre you sure you want to exit supplement mode?",
-            "confirmExit": "Confirm exit"
+            "confirmExit": "Confirm exit",
+            "deleteGroup": "Delete group",
+            "confirmDelistTitle": "Delist selected items?",
+            "confirmDelistBody": "Delisted items are hidden from others. You can relist them any time from My Secondhand.\n\nSelected: {{count}}",
+            "confirmDelistAction": "Delist selected"
         },
         "results": {
             "allSuccess": "All products published",
             "partialSuccess": "Successfully published {{success}} products, failed {{failed}}\n\nEntered supplement mode, subsequent publications will be added to the same product group (Group ID: {{groupId}})",
             "publishError": "Error occurred during publishing",
             "getGroupIdFailed": "Failed to get group ID",
-            "uploadCoverFailed": "Failed to upload cover image"
+            "uploadCoverFailed": "Failed to upload cover image",
+            "allDelisted": "All selected items delisted",
+            "partialDelisted": "Delisted {{success}}, {{failed}} failed",
+            "delistError": "Error occurred during delisting"
         },
         "validation": {
             "groupNameRequired": "Please enter group name",
             "groupDescriptionRequired": "Please enter group description",
             "incompleteDraftsTitle": "Product information is incomplete",
             "incompleteDraftsMessage": "The following products are missing necessary information and must be supplemented before publication:"
-        }
+        },
+        "resumeTitle": "Resume unfinished group?",
+        "resumeBody": "You have an unfinished secondhand group. Choose \"Continue editing\" to pick up where you left off, or \"Save & new\" — the current group stays in My Secondhand, available any time.",
+        "resumeContinue": "Continue editing",
+        "resumeSaveAndNew": "Save & new"
     },
     "admin": {
         "dashboard": {
@@ -1780,8 +1975,23 @@
             "stats": {
                 "pendingProviderRequests": "Pending Commercial Applications",
                 "pendingReports": "Pending Reports",
-                "newUsersToday": "New Users Today"
-            }
+                "newUsersToday": "New Users Today",
+                "pendingProviderAudits": "Pending Profile Updates",
+                "reviewingReports": "Reports In Review",
+                "newUsersThisWeek": "New Users (7d)",
+                "totalUsers": "Total Users",
+                "totalProviders": "Total Providers"
+            },
+            "sections": {
+                "overview": "Overview",
+                "moderation": "Moderation",
+                "users": "Users & Permissions",
+                "providers": "Providers & Subscription",
+                "content": "Content & Marketing",
+                "system": "System & Tools"
+            },
+            "refresh": "Refresh",
+            "loadError": "Failed to load statistics"
         },
         "userManagement": {
             "title": "User Management",
@@ -1835,7 +2045,9 @@
                 "pending": "Under review",
                 "approved": "Approved",
                 "rejected": "Rejected",
-                "unknown": "Unknown Status"
+                "unknown": "Unknown Status",
+                "cancelled": "Cancelled",
+                "expired": "Expired"
             },
             "informationChanged": "The information has been updated",
             "originalData": "Original data",
@@ -1876,7 +2088,59 @@
             "rejectReasonInput": "Please enter the reason for rejection",
             "updateType": "Update Type",
             "providerID": "Merchant ID",
-            "providerCategories": "Category Tags"
+            "providerCategories": "Category Tags",
+            "providerEntity": "Merchant",
+            "outcome": "Review outcome",
+            "reviewerUserId": "Reviewer",
+            "reviewedAt": "Reviewed at",
+            "reviewerNote": "Reviewer note",
+            "fieldChanges": "Field changes",
+            "before": "Before",
+            "after": "After",
+            "mediaAdd": "Added images",
+            "mediaAddDesc": "These images will become public after approval.",
+            "mediaRemove": "Removed images",
+            "mediaRemoveDesc": "These images will be soft-deleted after approval.",
+            "mediaReorder": "Reordered",
+            "aiPending": "AI translating",
+            "aiTranslated": "AI translated",
+            "approveSuccess": "Approved",
+            "approveFailed": "Approve failed",
+            "rejectSuccess": "Rejected",
+            "rejectFailed": "Reject failed",
+            "confirmApprove": "Confirm approval",
+            "confirmApproveDesc": "Patch will be applied atomically: field changes + media add/remove + reorder.",
+            "notFound": "Audit not found",
+            "notePlaceholder": "Reviewer note (required when rejecting)",
+            "summaryMediaAdd": "added",
+            "summaryMediaRemove": "removed",
+            "summaryFields": "fields",
+            "summaryReorder": "reorder",
+            "summaryEmptyPatch": "(empty patch)",
+            "originalDataDesc": "Full snapshot of the merchant's current values (not the patch). Tap to expand.",
+            "willChange": "will change",
+            "field": {
+                "providerName": "Merchant name",
+                "providerSecondName": "Subname",
+                "providerDescription": "Description",
+                "providerAddress": "Address",
+                "providerLatitude": "Latitude",
+                "providerLongitude": "Longitude",
+                "providerContactName": "Contact name",
+                "providerContactPhone": "Contact phone",
+                "providerContactEmail": "Contact email",
+                "providerSchedule": "Schedule",
+                "categoryIds": "Categories",
+                "primaryCategoryId": "Primary category"
+            },
+            "askQuestion": "Ask a question",
+            "askQuestionCancel": "Collapse",
+            "askQuestionEmpty": "Please enter your question",
+            "askQuestionHint": "A ticket will be created with the submitter as reporter; they will receive a push notification.",
+            "askQuestionPlaceholder": "Describe what you want to clarify…",
+            "askQuestionSend": "Send",
+            "askQuestionSuccess": "Ticket created",
+            "askQuestionFailed": "Failed to create ticket"
         },
         "providerRequestDetail": {
             "status": {
@@ -1925,7 +2189,20 @@
             "categoryMissing": "Applicant didn't pick a category",
             "subscriptionTier": "Subscription tier",
             "reviewerNote": "Reviewer note (optional)",
-            "uploadedMedia": "Uploaded files"
+            "uploadedMedia": "Uploaded files",
+            "contact": {
+                "open": "Contact applicant",
+                "close": "Close",
+                "hint": "A ticket will be created with the applicant as reporter; they'll receive a push notification.",
+                "summaryLabel": "Subject",
+                "summaryPlaceholder": "e.g., About the uploaded business license",
+                "summaryDefault": "About application:",
+                "bodyPlaceholder": "Describe what you want to clarify…",
+                "send": "Send",
+                "successTitle": "Ticket sent",
+                "failTitle": "Send failed",
+                "emptyError": "Please enter a message"
+            }
         },
         "stressTest": {
             "title": "Stress Test",
@@ -2006,6 +2283,311 @@
                 "statusFailed": "Failed to get test status",
                 "abortFailed": "Failed to abort test"
             }
+        },
+        "complianceHold": {
+            "entry": "Compliance holds",
+            "title": "Compliance Hold Center"
+        },
+        "feedbackInbox": {
+            "title": "Helpdesk Inbox",
+            "titleUser": "User Tickets",
+            "titleBusiness": "Business Tickets",
+            "empty": "No tickets yet",
+            "openedBy": "by",
+            "applicantContext": "Registration",
+            "noMessages": "No messages yet",
+            "inlineClaim": "Claim",
+            "search": {
+                "placeholder": "Search tickets (YouTrack full-text)"
+            },
+            "sort": {
+                "toggle": "Toggle sort",
+                "byUpdated": "Last updated",
+                "byCreated": "Created date"
+            },
+            "assignmentFilter": {
+                "all": "All",
+                "mine": "Assigned to me",
+                "unassigned": "Unassigned"
+            },
+            "assignee": {
+                "me": "Handled by me",
+                "unclaimed": "Unassigned"
+            },
+            "filter": {
+                "open": "Filter",
+                "title": "Filter",
+                "apply": "Apply",
+                "reset": "Reset",
+                "assignment": "Assignment",
+                "assignmentMine": "Mine",
+                "assignmentUnassigned": "Unassigned",
+                "assignmentAll": "All",
+                "state": "State",
+                "stateAll": "All states",
+                "type": "Type",
+                "typeAll": "All types",
+                "all": "All",
+                "merchantSelfServe": "From merchant",
+                "providerRequest": "Registration",
+                "auditRequest": "Audit",
+                "activityReview": "Activity",
+                "providerOutreach": "Outreach"
+            },
+            "refType": {
+                "providerRequest": "Registration",
+                "auditRequest": "Audit",
+                "activityReview": "Activity",
+                "provider": "Merchant",
+                "merchantSelfServe": "From merchant",
+                "userSelfServe": "From user"
+            }
+        },
+        "feedbackHub": {
+            "title": "Helpdesk Inbox",
+            "intro": "Pick the ticket type to handle",
+            "userTickets": "User tickets",
+            "userTicketsSubtitle": "Support requests submitted directly by users (HELP)",
+            "businessTickets": "Business tickets",
+            "businessTicketsSubtitle": "Collaboration between merchants and the platform (HELPBUS)",
+            "pending": "Pending"
+        },
+        "providerDetails": {
+            "contact": {
+                "open": "Contact merchant",
+                "dialogTitle": "Contact merchant",
+                "dialogHint": "The ticket reporter is the merchant's shared helpdesk account; every colleague holding helpdesk view permission will be notified.",
+                "summaryLabel": "Subject (optional)",
+                "summaryPlaceholder": "e.g., Confirm today's opening status",
+                "summaryDefault": "Contact:",
+                "bodyPlaceholder": "Write the message to the merchant…",
+                "send": "Send",
+                "successTitle": "Ticket sent",
+                "emptyError": "Please enter a message"
+            }
+        },
+        "activityReview": {
+            "subpages": {
+                "title": "Subpages (published with this page — review them too)",
+                "preview": "Preview",
+                "sectionCount": "{{n}} blocks"
+            },
+            "title": "Activity Review",
+            "tab": {
+                "pending": "Pending",
+                "all": "All",
+                "published": "Live",
+                "paused": "Paused",
+                "expired": "Ended",
+                "rejected": "Rejected",
+                "archived": "Archived"
+            },
+            "searchPlaceholder": "Search by activity title or merchant…",
+            "budget": {
+                "title": "Exposure Budget",
+                "preset": {
+                    "low": "Trial",
+                    "medium": "Normal",
+                    "high": "High"
+                },
+                "derivedImpressions": "Impression cap: {{count}}",
+                "derivedReach": "Reach cap: {{count}}",
+                "derivedDays": "Duration: {{days}} days",
+                "customCaps": "Custom caps",
+                "customHint": "Leave blank to derive from budget; enter a number to override the default.",
+                "overrideHint": "Overridden (default {{count}})",
+                "impressionCapLabel": "Impression cap (count)",
+                "uniqueReachCapLabel": "Reach cap (users)",
+                "exposureDaysLabel": "Duration (days)",
+                "resetToDefault": "Reset to default",
+                "pricingTitle": "Unit pricing (caps → budget)",
+                "pricingImpression": "+{{unit}} impressions = +1 budget",
+                "pricingReach": "+{{unit}} unique users = +1 budget",
+                "pricingDays": "Days are exponential: day 1 = +{{base}} budget, each extra day costs ×{{growth}} the previous",
+                "computedCost": "These custom caps cost ~{{cost}} budget (you set {{set}})"
+            },
+            "audience": {
+                "title": "Audience Targeting",
+                "estimateReach": "Estimated reach ~{{count}}",
+                "modeSimple": "Simple",
+                "modeAdvanced": "Advanced rules",
+                "matchAny": "Match any rule (OR)",
+                "matchAll": "Match all rules (AND)",
+                "addRule": "+ Add rule",
+                "exclusions": "Exclusion rules (blacklist)",
+                "addExclusion": "+ Add exclusion",
+                "removeRule": "Remove",
+                "ruleType": {
+                    "all": "Everyone",
+                    "language": "Language",
+                    "geo_radius": "Geo radius",
+                    "geo_region": "Geo region",
+                    "follow_provider": "Follows provider",
+                    "follow_user": "Follows user",
+                    "category_interest": "Category interest",
+                    "browsing_history": "Browsing history",
+                    "consumption_level": "Consumption level",
+                    "user_age_days": "Account age (days)",
+                    "last_seen_within_days": "Last seen (days)"
+                },
+                "fieldLabel": {
+                    "lat": "Latitude",
+                    "lng": "Longitude",
+                    "radiusKm": "Radius (km)",
+                    "regionIds": "Region IDs",
+                    "userIds": "User IDs",
+                    "categoryIds": "Category IDs",
+                    "lookbackDays": "Lookback days",
+                    "withinDays": "Within (days)",
+                    "minTotalPoints": "Min total points",
+                    "minVoucherCount": "Min voucher count",
+                    "min": "min",
+                    "max": "max",
+                    "days": "Days",
+                    "providerID": "Provider ID",
+                    "selfPublisher": "Followers of this provider",
+                    "entityType": "Entity type"
+                }
+            },
+            "adminNote": "Internal note (admin only)",
+            "approveAndPublish": "Approve & Publish",
+            "reject": "Reject",
+            "rejectReasonRequired": "Please enter rejection reason",
+            "merchantSuggestion": {
+                "title": "Merchant Preferences"
+            },
+            "pauseConfirm": "Pause this activity?",
+            "resumeConfirm": "Resume this activity?",
+            "forceArchiveConfirm": "Force archive? This is irreversible.",
+            "forceArchive": "Force archive",
+            "approveConfirmTitle": "Approve and publish?",
+            "approveConfirmDesc": "Budget: {{budget}}  /  Window: {{start}} – {{end}}",
+            "publishedTitle": "Published",
+            "publishedDesc": "Activity is now live to users",
+            "pause": "Pause",
+            "platformPublish": {
+                "publish": "Publish",
+                "republish": "Save & publish",
+                "publishTitle": "Publish this activity?",
+                "republishTitle": "Save config and republish?",
+                "errDates": "Set the activity start and end dates on the edit page first",
+                "errEndPast": "The end date is in the past — pick a future date",
+                "errEndBeforeStart": "End date must be later than the start date",
+                "errNoSections": "An activity needs at least one block before it can be published",
+                "errState": "Cannot publish in the current state (expired / archived must be duplicated first)"
+            },
+            "rejectedTitle": "Rejected",
+            "rejectedDesc": "The merchant has been notified",
+            "archivedTitle": "Archived",
+            "saveConfirmTitle": "Save changes?",
+            "saveConfirmDesc": "Budget, caps, audience, time window, internal note and pinned state will be updated",
+            "saveSuccess": "Saved",
+            "saveFailed": "Save failed. Please try again later.",
+            "loadFailed": "Load failed",
+            "loadFailedDesc": "Activity page not found or network error",
+            "actionFailed": "Operation failed",
+            "slots": {
+                "title": "Display Slots",
+                "full": "Full",
+                "empty": "No slots configured yet",
+                "fullAlert": "This slot is full. Remove another activity first.",
+                "disabledAlert": "This slot is currently disabled.",
+                "removeUnsupported": "Cannot remove slot binding instantly. Please use the Slot Management screen."
+            },
+            "askQuestion": "Ask a question",
+            "askQuestionEmpty": "Please enter your question",
+            "askQuestionMissingContext": "Cannot locate submitter or merchant",
+            "askQuestionHint": "A ticket will be created with the submitter as reporter; they will receive a push notification.",
+            "askQuestionPlaceholder": "Describe what you want to clarify…",
+            "askQuestionSend": "Send",
+            "askQuestionSuccess": "Ticket created",
+            "askQuestionFailed": "Failed to create ticket"
+        },
+        "slotManagement": {
+            "title": "Activity Slot Management",
+            "create": "New Slot",
+            "edit": "Edit",
+            "delete": "Delete",
+            "deleteConfirm": "Delete slot {{slotKey}}? Linked assignments will be removed.",
+            "maxItems": "Max items",
+            "maxItemsInvalid": "Max items must be a positive integer",
+            "slotKeyRequired": "Please enter a slot key",
+            "rotationStrategy": {
+                "priority": "By priority",
+                "random": "Random",
+                "round_robin": "Round robin"
+            },
+            "strategy": "Rotation strategy",
+            "enabled": "Enabled",
+            "usage": "{{used}}/{{max}} used",
+            "full": "Full",
+            "empty": "No slots yet",
+            "assignFromReview": "Tick a slot when approving an activity from the Review queue to assign it.",
+            "assignments": {
+                "title": "Current activities",
+                "empty": "No activities",
+                "removeConfirm": "Remove this activity from the slot?",
+                "add": "+ Add an activity",
+                "fullHint": "Slot is full — remove an activity first",
+                "disabledHint": "Slot is currently disabled",
+                "pickTitle": "Pick an activity for this slot",
+                "pickHint": "Showing only published or paused activities",
+                "pickEmpty": "No eligible activities",
+                "alreadyIn": "already here",
+                "assignFailed": "Failed to add — slot may be full"
+            },
+            "contractNote": "Slots are a system-level rendering contract (fixed enum). Only properties and activity bindings can be edited; adding/deleting slots requires a frontend code change + database seed.",
+            "field": {
+                "slotKey": "Slot key (must be unique)",
+                "displayZh": "Name (Chinese)",
+                "displayEn": "Name (English)",
+                "displayFr": "Name (French)",
+                "description": "Description (optional)"
+            }
+        },
+        "activityPlatformAnalytics": {
+            "title": "Platform Activity Analytics",
+            "dateRange": {
+                "last7days": "Last 7 days",
+                "last30days": "Last 30 days",
+                "custom": "Custom"
+            },
+            "kpi": {
+                "section": "Key Metrics",
+                "totalImpressions": "Total Impressions",
+                "totalUniqueUsers": "Unique Users",
+                "totalClicks": "Total Clicks",
+                "totalConversions": "Total Conversions",
+                "averageCTR": "Average CTR",
+                "averageConversionRate": "Avg. Conversion Rate"
+            },
+            "pendingAlert": {
+                "title": "Review Backlog",
+                "body": "{{count}} activities awaiting review, {{overdue}} past 48h SLA",
+                "oldest": "Oldest pending: {{hours}}h",
+                "action": "Handle now"
+            },
+            "leaderboard": {
+                "title": "Top 20 Provider Impressions",
+                "empty": "No data yet"
+            },
+            "refresh": "Refresh",
+            "error": {
+                "fetchFailed": "Failed to load. Tap to retry."
+            }
+        },
+        "forceLogout": {
+            "button": "Force sign-out",
+            "confirmTitle": "Force sign-out this user?",
+            "confirmDescription": "Immediately revokes every session for {{username}} across all devices (web browser, Scalar admin, Expo Dashboard, etc).",
+            "warningTitle": "This action will",
+            "warningBody": "• Kill all JWT sessions (mobile / web) instantly\n• Kill all OIDC cookie sessions instantly\n• Kill all dashboard cookies instantly\n• Disconnect every Socket.IO connection\n• Write an entry to the securityEvents audit log",
+            "reasonLabel": "Reason / note (optional)",
+            "reasonPlaceholder": "e.g. User reported a lost device — kick every session",
+            "confirmButton": "Confirm force sign-out",
+            "successTitle": "Done",
+            "successMessage": "Revoked {{count}} active session(s) for {{username}}",
+            "cannotKickSelf": "You cannot force-logout yourself"
         }
     },
     "unknown": {
@@ -2106,7 +2688,24 @@
             "term2": "Show voucher code at the store to use",
             "term3": "Each voucher can only be used once",
             "term4": "Points will be refunded after expiry",
-            "viewProvider": "Go to Provider to Redeem"
+            "viewProvider": "Go to Provider to Redeem",
+            "redeemNow": "Redeem Now"
+        },
+        "manage": {
+            "defaultName": "New voucher",
+            "saving": "Saving…",
+            "saved": "Saved",
+            "saveFailed": "Save failed — tap to retry",
+            "titleRequired": "Voucher name cannot be empty — not saved",
+            "created": "Voucher created — edits save automatically",
+            "createFailed": "Failed to create voucher, please retry",
+            "imageUpdated": "Image updated",
+            "imageUploadFailed": "Image upload failed, please retry",
+            "reorderSaved": "Order saved",
+            "reorderFailed": "Failed to save order, please retry",
+            "listed": "Listed",
+            "unlisted": "Unlisted",
+            "cannotUnlistTitle": "Cannot unlist"
         }
     },
     "completeSocialProfile": {
@@ -2213,7 +2812,15 @@
             "noBenefits": "No exclusive benefits",
             "loadFailed": "Unable to load level info",
             "loadFailedRetry": "Loading failed, please retry",
-            "noLevelInfo": "No level information"
+            "noLevelInfo": "No level information",
+            "previewTitle": "Earning Preview",
+            "previewSampleAmount": "Sample purchase",
+            "previewEnterAmount": "Enter a sample amount to see what the member actually gets.",
+            "previewPays": "Customer pays",
+            "previewEarns": "Points earned",
+            "previewSaved": "Saves {{saved}} {{currency}}",
+            "previewBreakdown": "Base {{base}} + level bonus {{bonus}}",
+            "previewDisclaimer": "Assumes 1 € = 1 pt; the actual rate set on the scorecard manager applies at the till."
         },
         "platform": {
             "growthValue": "Growth Value",
@@ -2269,7 +2876,13 @@
             "good": "Good",
             "fair": "Fair",
             "used": "Used"
-        }
+        },
+        "openMap": "Nearby providers map",
+        "nearbyProviders": "Nearby providers",
+        "backToList": "Back to list",
+        "searchThisArea": "Search this area",
+        "viewAsList": "View as list",
+        "allProviders": "All providers"
     },
     "systemMessage": {
         "title": "System Messages",
@@ -2321,9 +2934,23 @@
         "placeQRCodeInFrame": "Place QR code in the frame to scan",
         "addPoints": "Add Points",
         "enterPointsAmount": "Enter points amount",
-        "pointsUnit": "points",
+        "pointsUnit": "pts",
         "notesOptional": "Notes (optional)",
-        "confirm": "Confirm"
+        "confirm": "Confirm",
+        "earnToastTitle": "+{{points}} points added",
+        "subtractToastTitle": "Points deducted",
+        "filteredRecords": "{{count}} filtered",
+        "pointsActions": "Points Actions",
+        "addByAmount": "Add by Amount",
+        "enterAmountPlaceholder": "Enter consumption amount",
+        "amountPreview": "≈ {{points}} pts ({{remaining}} {{currency}} not credited)",
+        "amountBelowThreshold": "Amount too low: current rule is {{amountPerPoint}} {{currency}} = 1 pt. No points earned.",
+        "amountEarnDefault": "Earned by amount",
+        "amountEarnSuccess": "Added {{points}} pts (spent {{amount}} {{currency}}, {{remaining}} {{currency}} not credited)",
+        "invalidAmountValue": "Please enter a valid consumption amount",
+        "currentRuleHint": "Current rule: {{amountPerPoint}} {{currency}} = 1 pt (tap to view / change)",
+        "historyAmountInfo": "Spent {{amount}} {{currency}} · {{rate}} {{currency}}/pt",
+        "freeRedeem": "Free"
     },
     "recommendation": {
         "retention_low": "Retention rate is low. Consider loyalty campaigns like double points or limited-time offers to boost repeat visits.",
@@ -2376,7 +3003,9 @@
         "list": {
             "title": "My Tickets",
             "empty": "No tickets yet",
-            "createFirst": "Create your first ticket"
+            "createFirst": "Create your first ticket",
+            "titleBusiness": "Business Help Desk",
+            "emptyBusiness": "No business tickets yet"
         },
         "create": {
             "title": "New Ticket",
@@ -2385,7 +3014,9 @@
             "summaryPlaceholder": "Briefly describe your issue",
             "descriptionLabel": "Description",
             "descriptionPlaceholder": "Please describe your issue or suggestion in detail...",
-            "submit": "Submit"
+            "submit": "Submit",
+            "titleBusiness": "New Business Ticket",
+            "contextLabel": "Related"
         },
         "detail": {
             "title": "Ticket Detail",
@@ -2398,12 +3029,32 @@
             "replyFailed": "Failed to send reply. Please try again.",
             "send": "Send",
             "sending": "Sending...",
-            "you": "You"
+            "you": "You",
+            "adminBadge": "CoBook Support",
+            "backToContextLabel": "Open the linked business item",
+            "contextLabel": "Related",
+            "attachmentLimitReached": "Up to 10 attachments per reply",
+            "attachmentUploadFailed": "Attachment upload failed",
+            "confirmDeleteAttachmentTitle": "Delete attachment",
+            "confirmDeleteAttachmentMsg": "This attachment will be removed from the ticket. Self-delete is only available within 7 days of upload AND before the other party replies — once they respond, the attachment is preserved as part of the record. Continue?",
+            "confirmDelete": "Delete",
+            "cancel": "Cancel",
+            "attachmentDeleteFailed": "Delete failed",
+            "attachmentDeleteCounterpartyReplied": "The other party has replied — the attachment is now part of the conversation record and can't be self-withdrawn. Contact support if you need it removed.",
+            "attachmentDeleteWindowExpired": "Self-withdraw window has expired (7 days after upload). Contact support if you need it removed.",
+            "attachmentDeletedLabel": "Attachment deleted by uploader"
         },
         "type": {
             "question": "Question",
             "bug": "Bug",
-            "featureRequest": "Feature Request"
+            "featureRequest": "Feature Request",
+            "businessRequest": "Business Request",
+            "onboarding": "Onboarding",
+            "compliance": "Compliance",
+            "auditQuestion": "Audit Question",
+            "billing": "Billing",
+            "partnership": "Partnership",
+            "other": "Other"
         },
         "state": {
             "new": "New",
@@ -2411,7 +3062,8 @@
             "pending": "Pending",
             "on_hold": "On Hold",
             "solved": "Solved",
-            "duplicate": "Duplicate"
+            "duplicate": "Duplicate",
+            "in_progress": "In Progress"
         },
         "success": {
             "title": "Success",
@@ -2421,7 +3073,107 @@
             "title": "Error",
             "summaryRequired": "Please enter a title",
             "descriptionRequired": "Please enter a description",
-            "createFailed": "Submission failed. Please try again later."
+            "createFailed": "Submission failed. Please try again later.",
+            "businessProviderMissing": "Please select a merchant",
+            "noCreatePerm": "You do not have permission to open business tickets for this merchant"
+        },
+        "timeline": {
+            "open": "Open",
+            "inProgress": "In Progress",
+            "solved": "Solved"
+        },
+        "assignment": {
+            "headline": {
+                "unclaimedEligible": "This ticket is not yet claimed",
+                "unclaimedIneligible": "Waiting for a team member to handle it",
+                "mine": "You are handling this ticket",
+                "other": "Handled by {{name}}",
+                "solved": "This ticket is solved",
+                "solvedBy": "Solved by {{name}}"
+            },
+            "action": {
+                "claim": "Claim this ticket",
+                "transfer": "Transfer",
+                "release": "Release",
+                "override": "Force takeover",
+                "solve": "Mark as solved",
+                "reopen": "Reopen"
+            },
+            "solveConfirmTitle": "Mark this ticket as solved?",
+            "solveConfirmMsg": "The ticket state will become \"Solved\". If follow-up is needed later, click \"Reopen\" on the solved ticket to bring it back into the queue.",
+            "confirmSolve": "Confirm",
+            "reopenConfirmTitle": "Reopen this ticket?",
+            "reopenConfirmMsgWithAssignee": "The ticket will move back to \"In Progress\" and the original assignee {{name}} will be notified to continue.",
+            "reopenConfirmMsgNoAssignee": "The ticket will move back to \"Open\" and a team member will need to claim it again.",
+            "confirmReopen": "Confirm reopen",
+            "viewFullHistory": "View full history ›",
+            "overrideConfirmTitle": "Force-take this ticket?",
+            "overrideConfirmMsg": "This action is recorded as a security audit event. Use only when the original assignee is unreachable.",
+            "confirmOverride": "Confirm takeover",
+            "releaseConfirmTitle": "Release this ticket?",
+            "releaseConfirmMsg": "The ticket will become unassigned again and another team member will need to claim it.",
+            "confirmRelease": "Confirm release",
+            "replyClaimHint": "Sending will automatically claim this ticket",
+            "replyMustClaimFirstHint": "Ticket is unclaimed — tap \"Claim this ticket\" above first",
+            "replyWaitingHint": "This ticket is unclaimed; only team members can reply",
+            "replyOverrideHint": "{{name}} is handling this ticket. Your reply will be audited as a forced takeover",
+            "replyOverrideRequiresClaimHint": "Handled by {{name}}. Use \"Force takeover\" first to reply",
+            "replyOtherClaimedHint": "Handled by {{name}}; only the assignee can reply",
+            "replyClaimingNow": "Claiming…",
+            "eligibilityLoading": "Loading assignment state…",
+            "event": {
+                "claim": "{{actor}} claimed",
+                "transfer": "Transferred from {{from}} to {{to}}",
+                "release": "{{actor}} released",
+                "override": "{{actor}} took over",
+                "ytSync": "Changed on YouTrack: {{from}} → {{to}}"
+            },
+            "eventType": {
+                "claim": "Claimed",
+                "auto_claim": "Auto-claimed",
+                "transfer": "Transferred",
+                "release": "Released",
+                "override": "Force takeover",
+                "yt_sync_change": "YouTrack sync",
+                "auto_reopen_on_reply": "Reopened on reply"
+            },
+            "transfer": {
+                "title": "Transfer ticket",
+                "subtitle": "Pick a team member to take over",
+                "overrideTitle": "Force takeover: pick the new assignee",
+                "overrideSubtitle": "This action is recorded as a security audit event",
+                "searchPlaceholder": "Search nickname / email",
+                "empty": "No team members available",
+                "noCobookAccount": "no cobook account",
+                "reasonLabel": "Optional note (visible to team only)",
+                "reasonPlaceholder": "e.g., I'm signing off / this is X's area"
+            },
+            "history": {
+                "title": "Assignment history",
+                "empty": "No assignment events yet",
+                "actorPrefix": "By:",
+                "reasonPrefix": "Reason:",
+                "fromTo": "{{from}} → {{to}}",
+                "claimedBy": "Claimed by {{actor}}",
+                "releasedBy": "Released by {{actor}}",
+                "reopenedBy": "Reopened by {{actor}}'s reply"
+            }
+        },
+        "assignmentError": {
+            "TICKET_NOT_CLAIMED": "Ticket is not claimed yet — please claim it first",
+            "NOT_TICKET_ASSIGNEE": "This ticket is held by another team member",
+            "NOT_PROJECT_TEAM_MEMBER": "You are not in the YouTrack team for this project",
+            "TARGET_NOT_PROJECT_TEAM_MEMBER": "Target user is not in the YouTrack team for this project",
+            "ALREADY_CLAIMED": "Ticket has already been claimed by another team member",
+            "HELPDESK_BACKEND_UNAVAILABLE": "Helpdesk backend is temporarily unavailable, please retry",
+            "UNKNOWN_ERROR": "Unknown error"
+        },
+        "context": {
+            "audit_request": "Audit Request",
+            "activity_review": "Activity Review",
+            "provider_audit": "Provider Audit",
+            "provider_request": "Provider Registration",
+            "merchant_self_serve": "Merchant Self-Serve"
         }
     },
     "maintenance": {
@@ -2647,7 +3399,7 @@
     "localization": {
         "contentLangTitle": "Content Language",
         "contentLangDesc": "Choose the language used to display merchant descriptions, vouchers, and other multilingual content. This setting is independent of the app UI language.",
-        "sourceLanguage": "Source language",
+        "sourceLanguage": "Sofurce language",
         "autoTranslate": "AI auto-translate",
         "autoTranslateHint": "When enabled, only fill in the source language — other languages are generated by AI and not editable.",
         "autoTranslateHint2": "Only fill the source language; the backend will translate to other languages after saving.",
@@ -2665,7 +3417,21 @@
         "footerManual": "Manual mode: you fill every language yourself.",
         "overLimit": "Exceeds limit",
         "overLimitAlert": "Content exceeds the {{max}}-character limit. Please trim it before saving.",
-        "aiTierLocked": "AI auto-translate is not available on your current plan ({{tier}}). Upgrade to Basic or higher to enable it."
+        "aiTierLocked": "AI auto-translate is not available on your current plan ({{tier}}). Upgrade to Basic or higher to enable it.",
+        "translation": {
+            "inProgress": "AI translating: {{langs}}",
+            "failedLangs": "Translation failed: {{langs}}",
+            "retry": "Retry",
+            "retryEnqueued": "Translation re-queued",
+            "retryFailed": "Retry failed, try again later",
+            "autoSynced": "Translation auto-synced",
+            "pullLatest": "Pull latest translation",
+            "refreshOk": "Latest translation synced",
+            "refreshFailed": "Failed to fetch latest content",
+            "refreshConfirmTitle": "Overwrite local unsaved edits?",
+            "refreshConfirmBody": "Pulling the latest server-side translation will overwrite your current edits.",
+            "refreshOverwrite": "Overwrite"
+        }
     },
     "activityPage": {
         "title": "Activity",
@@ -2712,7 +3478,53 @@
             "replaceImage": "Replace Image",
             "addImage": "Add Image",
             "carouselImages": "Carousel Images",
-            "editRichText": "Open Rich Text Editor"
+            "editRichText": "Open Rich Text Editor",
+            "saveFailed": "Save failed — please try again",
+            "pausedReReviewHint": "Paused. Any edit will automatically resubmit for review.",
+            "savedAndReReview": "Saved. The activity has been resubmitted for review.",
+            "confirmDuplicate": "Create a new draft based on this activity? All sections, items and images will be copied, but the new draft must be resubmitted for review.",
+            "duplicateFailed": "Duplicate failed — your subscription quota may be full",
+            "coverImage": "Cover image",
+            "coverPickHint": "Tap to choose a cover (16:9 recommended)",
+            "coverCropTitle": "Crop cover",
+            "coverReplace": "Replace",
+            "coverDelete": "Delete",
+            "coverDeleteConfirm": "Delete the cover image?",
+            "coverDeleteFailed": "Failed to delete cover",
+            "coverUploadFailed": "Failed to upload cover",
+            "imagePickFailed": "Image picker failed",
+            "submitForReview": "Submit for Review",
+            "platformPublishHint": "Platform activity pages are published directly by you — no review needed. Tap below to set audience, slots and exposure, then publish.",
+            "platformPublishConfig": "Publish & exposure settings",
+            "withdrawSubmission": "Withdraw Submission",
+            "viewAnalytics": "View Analytics",
+            "adminLocked": "Editing locked while in review",
+            "rejectionBanner": "Rejected: {{reason}}",
+            "endedHint": "Activity has ended",
+            "titleRequired": "Please enter a page title",
+            "needAtLeastOneSection": "Please add at least one section before submitting",
+            "submittedHint": "Submitted for review. Please wait for admin processing.",
+            "submitFailed": "Submission failed. Please try again later.",
+            "confirmWithdraw": "Withdraw will revert to draft. Confirm?",
+            "withdrawFailed": "Withdraw failed. Please try again later.",
+            "confirmSubmit": "Submit for review?",
+            "confirmArchive": "Archive this activity page?",
+            "suggestion": {
+                "title": "Exposure Preferences (Optional)",
+                "audienceQuestion": "I'd like this activity to be mainly shown to:",
+                "audienceAll": "Everyone",
+                "audienceFollowers": "My followers",
+                "audienceNearby": "Users nearby ({{km}} km)",
+                "audienceLanguage": "Users speaking selected languages",
+                "audienceLetAdmin": "Let operations decide",
+                "intensity": "Desired Promotion Intensity",
+                "intensityLow": "Trial",
+                "intensityMedium": "Standard",
+                "intensityHigh": "Featured",
+                "note": "Additional Notes",
+                "notePlaceholder": "e.g. Anniversary sale, hoping for around a week of exposure…",
+                "disclaimer": "These are suggestions only; final exposure configuration is decided by the operations team during review"
+            }
         },
         "sectionType": {
             "hero_banner": "Banner",
@@ -2732,7 +3544,197 @@
             "featured_single": "Featured Single",
             "map_location": "Map Location",
             "social_proof": "Social Proof",
-            "faq_accordion": "FAQ"
+            "faq_accordion": "FAQ",
+            "qr_code": "QR Code",
+            "points_progress": "Points Progress",
+            "loyalty_tier_showcase": "Loyalty Tier",
+            "flash_sale": "Flash Sale",
+            "bundle_deal": "Bundle Deal",
+            "subpage": "Subpage Link"
+        },
+        "pinned": "Pinned",
+        "viewDetail": "View",
+        "providerCardTitle": "Merchant of this activity",
+        "providerCardHint": "Tap to see merchant details, loyalty card, reviews",
+        "providerTab": {
+            "empty": "No activities yet"
+        },
+        "template": {
+            "galleryTitle": "Page Templates",
+            "empty": "No templates available",
+            "sectionCount": "{n} blocks",
+            "useThis": "Use this template",
+            "browseFromTemplate": "Start from a template",
+            "applyConfirmTitle": "Use this template?",
+            "applyConfirmBody": "A draft activity page will be created with preset blocks. You can then edit each block's content.",
+            "applied": "Draft created from template",
+            "appliedWithSkips": "Created (some blocks need an upgrade)",
+            "appliedWithSkipsHint": "Premium blocks or blocks over your plan limit were skipped; upgrade to add them.",
+            "applyFailed": "Failed to apply",
+            "applyFailedHint": "You may have reached the activity page limit. Upgrade your plan or delete old pages.",
+            "appliedBound": "Draft created — {n} item(s) auto-filled",
+            "appliedNeedsData": "Draft created, some content still needed",
+            "appliedNeedsDataHint": "Some blocks have no matching data yet; fill them in manually",
+            "checklist": {
+                "title": "Finish your activity page",
+                "go": "Complete",
+                "heroImage": "Upload the hero image",
+                "richText": "Write the text content",
+                "vouchers": "Add vouchers to show",
+                "redemptions": "Add points redemption rewards",
+                "carousel": "Upload carousel images",
+                "createVoucher": "Create a voucher first (none active yet)",
+                "createRedemption": "Create a redemption product first (none yet)",
+                "upgrade": "Upgrade your plan to unlock more blocks"
+            },
+            "reason": {
+                "ALL_BLOCK_TYPES": "Includes premium blocks",
+                "BLOCKS_LIMIT": "Blocks exceed plan limit",
+                "PAGES_LIMIT": "Page limit reached"
+            }
+        },
+        "subpage": {
+            "placeholder": "Subpage link (not linked yet — open the editor to create or pick a subpage)",
+            "defaultTitle": "See more",
+            "defaultCta": "Open",
+            "tooDeep": "Subpages are nested too deep to open further",
+            "newPageTitle": "Subpage",
+            "linkFailed": "Failed to link the subpage, please retry",
+            "created": "Subpage created",
+            "unlinkTitle": "Unlink subpage",
+            "unlinkMessage": "This only removes the link between this block and the subpage; the subpage content is not deleted. To delete the whole subpage, delete this block.",
+            "unlinked": "Link removed",
+            "linkedPage": "Linked subpage",
+            "loading": "Loading…",
+            "editChild": "Edit subpage",
+            "unlink": "Unlink",
+            "createChild": "Create & open subpage",
+            "entryStyle": "Entry style",
+            "styleCard": "Card",
+            "styleButton": "Button",
+            "styleBanner": "Banner",
+            "ctaText": "Button text",
+            "ctaPlaceholder": "Defaults to \"Open\"",
+            "breadcrumb": "Subpage · published with the main page. Back to: {{parent}}",
+            "parentFallback": "parent page",
+            "lifecycleHint": "Subpage content is published together with the main page — no separate submission or exposure setup. Just go back to the parent page when done."
+        },
+        "bundle": {
+            "redeemCountBadge": "{{count}} redeemed",
+            "originalPrice": "Original {{points}} pts",
+            "savings": "Save {{points}} pts",
+            "freeAddon": "Free addon",
+            "freeAddonWithQty": "Free addon × {{qty}}",
+            "perVoucher": "{{points}} pts",
+            "perVoucherWithQty": "{{points}} pts each · total {{total}} pts",
+            "ctaDefault": "Redeem bundle for {{price}} pts",
+            "ctaSoldOut": "Sold out",
+            "ctaUserMaxed": "Personal limit reached",
+            "limitPerUser": "{{limit}} per user",
+            "limitPerUserWithCount": "{{limit}} per user (you've redeemed {{count}})",
+            "limitTotal": "{{limit}} total ({{remaining}} left)",
+            "placeholderEmpty": "Bundle deal — link multiple vouchers in the editor",
+            "loginRequiredTitle": "Log in to redeem this bundle",
+            "loginAction": "Log in",
+            "confirmTitle": "Redeem bundle",
+            "confirmBody": "{{price}} pts will be deducted (original {{original}}). You'll receive {{count}} voucher(s):\n\n{{list}}",
+            "confirmAction": "Confirm",
+            "successTitle": "Redeemed",
+            "successBody": "{{paid}} pts deducted, {{balance}} remaining. {{count}} voucher(s) issued — see them in My Vouchers.",
+            "successView": "View",
+            "successDismiss": "OK",
+            "errorTotalLimit": "Bundle is sold out",
+            "errorUserLimit": "You've reached your personal limit for this bundle",
+            "errorItemMustBeVoucher": "Bundle config error: only voucher items are supported",
+            "errorGeneric": "Redemption failed: {{code}}",
+            "sheet": {
+                "title": "Redeem bundle",
+                "scorecardInfo": "Scorecard",
+                "contents": "Bundle contents",
+                "totalVouchers": "{{count}} voucher(s)",
+                "priceSummary": "Price summary",
+                "originalPriceLabel": "Original",
+                "bundlePriceLabel": "Bundle price",
+                "savingsLabel": "You save",
+                "balanceSummary": "Points change",
+                "limits": "Limits",
+                "noScorecard": "You don't have a scorecard for this merchant yet — activate one first",
+                "insufficient": "Not enough points: {{diff}} short",
+                "confirmRedeem": "Confirm — {{price}} pts",
+                "loginToRedeem": "Log in to redeem"
+            },
+            "editor": {
+                "originalLabel": "Original",
+                "bundlePriceLabel": "Bundle price",
+                "limitLabel": "Limits",
+                "containsVouchers": "Contains {{count}} voucher(s)",
+                "redeemedTimes": "Redeemed {{count}} time(s)",
+                "savingsWithPct": "Save {{points}} ({{pct}}%)",
+                "overOriginal": "⚠ Higher than original",
+                "noDiscount": "No discount",
+                "perUserCount": "{{n}} per user",
+                "perUserUnlimited": "Unlimited per user",
+                "totalCount": "{{n}} total ({{remaining}} left)",
+                "totalUnlimited": "No total limit",
+                "historyExceedsNewLimit": "⚠ Historical redemptions exceed the new limit",
+                "emptyHint": "Add vouchers below — original price is auto-summed from each voucher's points cost",
+                "freeAddonWarnTitle": "⚠ The vouchers below have no points price configured and will be granted as free addons",
+                "freeAddonWarnHint": "If you want them to count toward the original price, configure a redemption rule (pointsRequired) for the voucher in scorecard management"
+            }
+        },
+        "status": {
+            "draft": "Draft",
+            "pendingReview": "In Review",
+            "published": "Live",
+            "paused": "Paused",
+            "rejected": "Rejected",
+            "expired": "Ended",
+            "archived": "Archived"
+        },
+        "analytics": {
+            "subtree": {
+                "title": "Incl. {{n}} subpage(s) (deduplicated by user)",
+                "note": "A user who viewed both the parent and a subpage is counted once. ~90-day window; exposure budget still counts against the main page.",
+                "uniqueReach": "Unique reach",
+                "totalViews": "Total views"
+            },
+            "title": "Activity Analytics",
+            "todayImpressions": "Today",
+            "totalImpressions": "Total Impressions",
+            "uniqueUsers": "Unique Users",
+            "clickCount": "Clicks",
+            "conversionCount": "Conversions",
+            "ctr": "CTR",
+            "conversionRate": "Conv. Rate",
+            "budgetUsage": "{{used}} / {{total}} impressions",
+            "daysRemaining": "{{days}}d left",
+            "requestMoreBudget": "Request More Budget",
+            "requestMoreBudgetHint": "Will redirect to feedback module to create a ticket (coming soon)",
+            "trend7Days": "7-Day Impression Trend",
+            "impressions": "impressions",
+            "userProfile": "User Profile Distribution",
+            "byRegion": "Region",
+            "byPlatform": "Platform",
+            "byLanguage": "Language",
+            "byHour": "24-Hour Impression Distribution",
+            "advancedLocked": "User Profile + Hourly Analytics (Upgrade to Unlock)",
+            "advancedLockedHint": "Upgrade to Premium or Business plan to view more detailed data",
+            "noTrendData": "No trend data yet",
+            "loadFailed": "No data or failed to load"
+        },
+        "list": {
+            "viewAnalytics": "View Analytics",
+            "reachedUsers": "{{count}} reached"
+        },
+        "carousel": {
+            "viewAll": "View all"
+        },
+        "recommend": {
+            "title": "Featured activities",
+            "empty": "No activities yet",
+            "providerActivities": "This store's activities",
+            "categoryActivities": "Activities in this category",
+            "categoryLanding": "Related activities"
         }
     },
     "subscription": {
@@ -2787,7 +3789,8 @@
             "messageHistoryDays": "Message History",
             "pointsCustomExpiryMax": "Custom Points Expiry Time (Days)",
             "activityPageAllBlockTypes": "All Block Types",
-            "aiAutoTranslate": "AI Auto-translate"
+            "aiAutoTranslate": "AI Auto-translate",
+            "scorecardTemplates": "Scorecard Template Library"
         },
         "tierNames": {
             "free": "Free",
@@ -2851,5 +3854,692 @@
         "xpProgress": "{{current}} / {{next}} XP",
         "xpMax": "{{current}} XP (Max)",
         "equipHint": "Equip badges from detail view"
+    },
+    "share": {
+        "message": "Check out \"{{title}}\" on CoBook"
+    },
+    "myScorecards": {
+        "screenTitle": "My Loyalty Cards",
+        "drawerEntry": "My Loyalty Cards",
+        "summaryTitle": "Points Overview",
+        "cardCount": "Cards",
+        "totalPoints": "Total Points",
+        "tierMembers": "Tier Member",
+        "sortBy": "Sort by",
+        "sortPoints": "Points",
+        "sortName": "Name",
+        "emptyTitle": "No loyalty cards yet",
+        "emptyDescription": "Visit a merchant or scan their in-store QR code to open a loyalty card and start earning.",
+        "findMore": "Find Merchants",
+        "defaultCardName": "Membership Card"
+    },
+    "secondhandWizard": {
+        "next": "Next",
+        "stepCounter": "Step {{n}} of {{total}}",
+        "draftHint": "If you leave mid-way, what you've entered stays in My Secondhand → Drafts. You can come back any time.",
+        "step1": {
+            "heading": "Give it a name",
+            "hint": "A clear title helps more people discover your item.",
+            "titlePlaceholder": "Enter item name",
+            "descPlaceholder": "Description can come later — rich text supported"
+        },
+        "step2": {
+            "heading": "Upload photos",
+            "hint": "Selecting auto-uploads. Long-press to drag and reorder; the first photo is the cover."
+        },
+        "step3": {
+            "heading": "Category & condition",
+            "hint": "Helps buyers find your item while browsing."
+        },
+        "step4": {
+            "heading": "Price & contact",
+            "hint": "Price must be a positive integer; contact is how buyers will reach you."
+        },
+        "step5": {
+            "heading": "Ready to publish",
+            "hint": "Looks good? Hit Publish — you can still edit it later from My Secondhand.",
+            "hintV2": "The draft is saved server-side — only you can see it. Tap below to preview the real listing page; publish when ready.",
+            "negotiable": "Negotiable",
+            "previewCta": "Preview the real listing (only you can see)",
+            "untitled": "Untitled item"
+        },
+        "validation": {
+            "titleRequired": "Please enter the item name first",
+            "imageRequired": "Please upload at least one photo",
+            "categoryRequired": "Please choose a category",
+            "conditionRequired": "Please choose a condition",
+            "priceRequired": "Please enter a valid price (positive integer)",
+            "contactRequired": "Please enter a contact method"
+        }
+    },
+    "update": {
+        "postUpdate": {
+            "title": "What's new",
+            "subtitle": "Here's what we've prepared for you",
+            "ok": "OK"
+        }
+    },
+    "redeemSuccessModal": {
+        "title": "Redeemed!",
+        "subtitle": "You redeemed \"{{name}}\"",
+        "pointsUsed": "Points used",
+        "newBalance": "Balance left",
+        "codeLabel": "Redemption code",
+        "codeHint": "Show this QR code to the merchant",
+        "viewVouchers": "View voucher",
+        "done": "Done"
+    },
+    "voucherVerification": {
+        "invalidQr": "Invalid voucher QR code",
+        "noProvider": "Missing merchant info",
+        "cannotGetDetail": "Unable to load voucher details",
+        "getDetailFailed": "Failed to load voucher details",
+        "alreadyUsed": "This voucher has already been used",
+        "alreadyExpired": "This voucher has expired",
+        "confirmTitle": "Confirm redemption",
+        "confirmMsg": "Redeem \"{{title}}\" for {{customer}}?",
+        "unknownCustomer": "this customer",
+        "confirmVerify": "Confirm",
+        "verifyFailed": "Verification failed",
+        "unknownErrorRetry": "Unknown error, please try again",
+        "networkErrorRetry": "Network error, please check your connection and retry",
+        "loading": "Loading voucher info…",
+        "cannotLoad": "Unable to load voucher info",
+        "qrHint": "Show this QR code to the customer to verify",
+        "userInfo": "Customer",
+        "userID": "User ID",
+        "userNickname": "Nickname",
+        "voucherDetail": "Voucher details",
+        "code": "Code",
+        "voucherType": "Type",
+        "claimedAt": "Claimed at",
+        "expiresAt": "Expires at",
+        "usedAt": "Used at",
+        "daysLeft": "Days left",
+        "daysUnit": "{{n}} days",
+        "redeemInfo": "Redemption",
+        "redeemedProduct": "Product",
+        "pointsUsed": "Points used",
+        "pointsUnit": "{{n}} pts",
+        "providerInfo": "Merchant",
+        "providerName": "Name",
+        "providerAddress": "Address",
+        "verifyInfo": "Verification",
+        "operatorID": "Operator ID",
+        "operator": "Operator",
+        "verifiedAt": "Verified at",
+        "verifyButton": "Verify voucher",
+        "back": "Back",
+        "status": {
+            "active": "Valid",
+            "used": "Used",
+            "expired": "Expired"
+        },
+        "type": {
+            "discount": "Discount",
+            "gift": "Gift",
+            "service": "Service",
+            "cash": "Cash",
+            "default": "Voucher"
+        },
+        "receiptTitle": "Verified",
+        "receiptDesc": "\"{{title}}\" has been verified",
+        "done": "Done"
+    },
+    "scorecardExchangeRule": {
+        "screenTitle": "Currency-Points Exchange Rule",
+        "currentRule": "Current Rule",
+        "headline": "{{amount}} {{currency}} = 1 pt",
+        "usingDefault": "Using the system default (no custom rule)",
+        "lastModified": "Last modified: {{date}}",
+        "tierLockedBanner": "Free tier is locked to the system default (1 EUR = 1 pt). Upgrade to customize.",
+        "tierLocked": "Free tier cannot customize the exchange rule. Please upgrade.",
+        "cooldownBanner": "Next change available in {{days}} days (after {{date}})",
+        "cooldownActive": "Cooldown active — the rule can only be changed once every 6 months.",
+        "amountPerPointLabel": "Amount required for 1 point",
+        "helpText": "Consumption amounts are floor-divided by this rate. Leftover is not credited.",
+        "futureOnlyWarning": "⚠️ Changes apply to FUTURE earnings only. Existing points are not recalculated.",
+        "confirmTitle": "Confirm Change",
+        "confirmBody": "New rule will be {{amount}} {{currency}} = 1 pt, locked for 6 months. Affects future earnings only.",
+        "saved": "Rule saved",
+        "noChange": "No change",
+        "loadFailed": "Failed to load rule",
+        "invalidAmount": "Please enter a valid amount (> 0)",
+        "howItWorks": "How it works",
+        "howItWorksDetail": "When merchants choose \"Add by Amount\", the system converts the consumption amount at {{rate}} {{currency}} = 1 pt (rounded down). Example: 65 {{currency}} = 2 pts (5 {{currency}} not credited)."
+    },
+    "region": {
+        "region": "Region",
+        "switchRegion": "Switch region",
+        "currentRegion": "Current region",
+        "allRegions": "All regions",
+        "pickProviderRegion": "Pick the merchant's region",
+        "regionLockedAfterSubmit": "Region is locked after submission and can only be changed by platform admins.",
+        "regionRequired": "Please select a region",
+        "regionUpdateFailed": "Failed to switch region. Please try again."
+    },
+    "providerFavorites": {
+        "menuTitle": "My Favorite Providers",
+        "addToFavorites": "Add to Favorites",
+        "removeFromFavorites": "Remove from Favorites",
+        "favoriteCount": "Favorites",
+        "loginRequired": "Please sign in to favorite providers.",
+        "searchPlaceholder": "Search my favorites",
+        "filter": {
+            "hasScorecard": "Has scorecard",
+            "hasActivity": "Has activity",
+            "region": "Region",
+            "category": "Category",
+            "allCategories": "All categories"
+        },
+        "sort": {
+            "title": "Sort by",
+            "newestFavorited": "Newest favorited",
+            "oldestFavorited": "Oldest favorited",
+            "nameAsc": "Name A-Z",
+            "mostPopular": "Most popular"
+        },
+        "tag": {
+            "hasActivity": "Active event"
+        },
+        "matched": "Matched",
+        "total": "Total",
+        "allLoaded": "All loaded",
+        "empty": {
+            "title": "No favorite providers yet",
+            "description": "Browse providers and tap the heart to save the ones you love.",
+            "filteredTitle": "No matching favorites",
+            "filteredDescription": "Try adjusting your search or filters."
+        }
+    },
+    "legalHold": {
+        "thumbBadge": "Restricted",
+        "error": {
+            "title": "Action failed"
+        },
+        "menu": {
+            "title": "Attachment actions",
+            "subtitle": "Select an action",
+            "subtitleHeld": "This attachment is currently under legal restriction of processing",
+            "restrict": "Apply legal hold",
+            "restrictDesc": "GDPR Art 18 restriction of processing",
+            "reRestrict": "Update legal hold",
+            "reRestrictDesc": "Change visibility / legal basis / expiry",
+            "lift": "Lift restriction",
+            "liftDesc": "Restore normal visibility; writes legal_hold_lifted",
+            "refuseDeletion": "Refuse deletion request",
+            "refuseDesc": "Record an Art 17(3) refusal (audit only)",
+            "viewAuditLog": "View audit log",
+            "auditDesc": "Current hold + full event timeline",
+            "hardDelete": "Hard delete (GDPR Art 17)",
+            "hardDeleteDesc": "Irreversible — super_admin only",
+            "hardDeleteConfirmTitle": "Confirm hard delete?",
+            "hardDeleteConfirmMsg": "This action is irreversible. If the attachment is currently under a legal hold, the action is recorded as legal_hold_deletion_bypassed_hold.",
+            "confirmHardDelete": "Confirm delete"
+        },
+        "status": {
+            "active": "Active",
+            "lifted": "Lifted"
+        },
+        "entity": {
+            "helpdesk_attachment": "Helpdesk attachment"
+        },
+        "visibility": {
+            "admin_only": "Admins only",
+            "platform_only": "Platform staff only",
+            "platform_plus_uploader": "Platform + uploader (default)",
+            "platform_plus_provider_owner": "Platform + merchant staff",
+            "platform_plus_data_subject": "Platform + data subject",
+            "custom_allowlist": "Custom allowlist"
+        },
+        "basis": {
+            "gdpr_art_18_restriction": "GDPR Art 18 restriction of processing",
+            "gdpr_art_17_3_b": "GDPR Art 17(3)(b) public interest / official authority",
+            "gdpr_art_17_3_c": "GDPR Art 17(3)(c) public-health interest",
+            "gdpr_art_17_3_e": "GDPR Art 17(3)(e) establishment / exercise / defence of legal claims",
+            "lcen_obligation": "LCEN obligation (FR)",
+            "dsa_art_16": "DSA Art 16 notice and action",
+            "court_order": "Court order",
+            "investigation_internal": "Internal investigation",
+            "fraud_prevention": "Fraud prevention",
+            "other": "Other",
+            "unknown": "Unspecified"
+        },
+        "event": {
+            "legal_hold_set": "Legal hold applied",
+            "legal_hold_lifted": "Legal hold lifted",
+            "legal_hold_expired": "Legal hold auto-expired",
+            "legal_hold_deletion_bypassed_hold": "Hard-deleted (legal hold bypassed)",
+            "legal_hold_deletion_refused": "Deletion request refused",
+            "helpdesk_attachment_self_deleted": "Self-deleted by uploader",
+            "helpdesk_attachment_admin_deleted": "Deleted by admin",
+            "helpdesk_attachment_excessive_access": "Anomalous access rate",
+            "helpdesk_attachment_legacy_url_used": "Accessed via legacy URL",
+            "helpdesk_attachment_referer_blocked": "Referer check failed",
+            "helpdesk_attachment_ephemeral_minted": "Ephemeral URL issued"
+        },
+        "restrict": {
+            "title": "Apply restriction of processing",
+            "subtitle": "GDPR Art 18 — temporarily restrict processing of this attachment",
+            "visibility": "Visibility",
+            "legalBasis": "Legal basis",
+            "reason": "Reason (shown to data subject)",
+            "reasonPlaceholder": "Brief rationale visible to the user",
+            "hasExpiry": "Set automatic expiry",
+            "allowlist": "Allowlist user IDs (comma or space separated)",
+            "allowlistRequired": "custom_allowlist visibility requires at least one userID",
+            "allowlistTooLong": "Maximum 50 userIDs",
+            "submit": "Apply restriction",
+            "success": "Restriction applied"
+        },
+        "lift": {
+            "title": "Lift restriction of processing",
+            "subtitle": "After lifting, prior visibility and deletion behavior resume. Audit: legal_hold_lifted",
+            "reason": "Reason (recorded in audit log)",
+            "reasonPlaceholder": "Investigation closed / mistaken flag / dispute resolved",
+            "submit": "Confirm lift",
+            "success": "Restriction lifted"
+        },
+        "refuse": {
+            "title": "Refuse deletion request",
+            "subtitle": "Record a refusal of a user's GDPR Art 17 deletion request citing an Art 17(3) exception. Audit-only — does not change attachment state. Call \"Apply restriction\" separately if you also want to block automatic deletion.",
+            "requestedBy": "User ID who requested deletion",
+            "requestedByRequired": "Requesting userID is required",
+            "legalBasis": "Refusal basis",
+            "reason": "Reason (shown to the user)",
+            "reasonRequired": "Reason is required",
+            "reasonPlaceholder": "Specifics of the Art 17(3) exception invoked",
+            "submit": "Record refusal",
+            "success": "Refusal recorded"
+        },
+        "audit": {
+            "title": "Attachment audit log",
+            "noActiveHold": "No active legal hold",
+            "currentlyHeld": "Currently under legal hold",
+            "previouslyHeld": "Previous legal hold (lifted)",
+            "visibility": "Visibility",
+            "legalBasis": "Legal basis",
+            "reason": "Reason",
+            "until": "Expires at",
+            "setBy": "Set by",
+            "liftedBy": "Lifted by",
+            "cronLifted": "Auto-expired by system",
+            "actor": "Actor",
+            "eventsHeader": "Event timeline",
+            "noEvents": "No audit events",
+            "empty": "No records available"
+        },
+        "admin": {
+            "totalActiveHolds": "{{count}} active holds",
+            "byEntityType": "By type",
+            "byVisibility": "By visibility",
+            "byLegalBasis": "By legal basis",
+            "filterActive": "Active only",
+            "filterAll": "Include history",
+            "lift": "Lift",
+            "viewAuditLog": "Audit log",
+            "expiringSoon": "Expiring soon",
+            "emptyActive": "No active legal holds",
+            "emptyAll": "No legal hold records"
+        },
+        "placeholder": {
+            "title": "Attachment under legal restriction",
+            "visibilityPrefix": "Visible to:",
+            "byReason": {
+                "platform_only": "Platform compliance staff only",
+                "no_caller": "Sign in required",
+                "not_uploader": "Uploader and platform staff only",
+                "not_provider_owner": "Merchant staff and platform only",
+                "not_data_subject": "Data subject and platform only",
+                "not_allowlisted": "Contact dpo@cobook.org if you believe you should have access"
+            }
+        }
+    },
+    "privacyNotice": {
+        "common": {
+            "title": "Data Use Notice",
+            "summary": "Before continuing, please review briefly how CoBook handles the data you provide.",
+            "close": "Close",
+            "infoButtonA11y": "View data use notice",
+            "footerCta": "How CoBook uses your data",
+            "privacyPolicy": "Privacy Policy",
+            "termsOfService": "Terms of Service"
+        },
+        "feedbackCreate": {
+            "title": "Before submitting a ticket",
+            "summary": "The title, description, and context you enter in a ticket will be used by support to investigate; we use this information only as needed to resolve the issue.",
+            "dataLabel": "Data collected",
+            "dataValue": "Ticket title, description, selected category, and your account ID (so we can reply to you)",
+            "controllerLabel": "Data controller",
+            "controllerValue": "CoBook (the operator)",
+            "processorLabel": "Data processor",
+            "processorValue": "YouTrack support system (JetBrains s.r.o., EU GDPR DPA signed)",
+            "retentionLabel": "Retention",
+            "retentionValue": "Retained after the ticket is closed for review; automatically archived/deleted when retention expires or compliance requires it",
+            "sharingLabel": "Sharing",
+            "sharingValue": "Never sold; disclosed only when legally required or with your authorization"
+        },
+        "helpdeskAttachment": {
+            "title": "Before uploading attachments",
+            "summary": "Attachments may contain screenshots, documents, or personal information. Please avoid uploading sensitive data unrelated to the issue; you may request deletion or restriction at any time.",
+            "dataLabel": "Data you are about to upload",
+            "dataValue": "Image or PDF file content (including all information visible in it)",
+            "controllerLabel": "Data controller",
+            "controllerValue": "CoBook (the operator)",
+            "processorLabel": "Data processor",
+            "processorValue": "AWS S3 (EU region) + CloudFront CDN + YouTrack support system",
+            "retentionLabel": "Retention",
+            "retentionValue": "Retained for the ticket's lifecycle; drafts unsent for 30 days are auto-cleaned; deletion requests are hard-deleted after 7 days",
+            "sharingLabel": "Sharing",
+            "sharingValue": "Accessible only to authorized support staff; deletions are paused during compliance holds (GDPR Article 18)"
+        },
+        "onboarding": {
+            "title": "Welcome to CoBook — Data Use Notice",
+            "summary": "Before continuing, please review briefly how CoBook handles the data you generate in the app; continuing means you have read and agree to the Privacy Policy and Terms of Service.",
+            "dataLabel": "Data categories involved in the app",
+            "dataValue": "Account information, content (products/reviews/messages), device ID, action logs, and location/camera/photo library you authorize",
+            "controllerLabel": "Data controller",
+            "controllerValue": "CoBook (the operator); address and DPO contact in the Privacy Policy",
+            "processorLabel": "Data processor",
+            "processorValue": "AWS (EU region storage and CDN), Firebase (push), Sentry (crash logs), etc. — all with signed GDPR DPAs",
+            "retentionLabel": "Retention",
+            "retentionValue": "Retained while the account is active; after deletion, archived/anonymized per legal retention periods",
+            "sharingLabel": "Sharing",
+            "sharingValue": "Never sold; disclosed only when legally required or with your authorization"
+        },
+        "accountCreation": {
+            "title": "Before creating an account",
+            "summary": "Account creation involves processing your personal information. Continuing constitutes consent to use of this data as described below.",
+            "dataLabel": "Data collected",
+            "dataValue": "Username, password (hash only), linked email and social account IDs, and device identification information",
+            "controllerLabel": "Data controller",
+            "controllerValue": "CoBook (the operator)",
+            "processorLabel": "Data processor",
+            "processorValue": "Apple Sign In / Google OAuth (auth callbacks only), AWS (account database)",
+            "retentionLabel": "Retention",
+            "retentionValue": "Retained while the account exists; after deletion, archived/anonymized per legal retention periods",
+            "sharingLabel": "Sharing",
+            "sharingValue": "Never sold; disclosed only when legally required or with your authorization"
+        },
+        "providerOnboarding": {
+            "title": "Merchant onboarding — notice on credentials and personal information",
+            "summary": "Submitting an onboarding application involves sensitive credential information of the legal representative/operator. Please upload only application-related materials; the information will be reviewed by the platform compliance team.",
+            "dataLabel": "Data collected",
+            "dataValue": "Merchant name/address/contact info, business license, representative ID, storefront photos, and applicant account",
+            "controllerLabel": "Data controller",
+            "controllerValue": "CoBook (the operator)",
+            "processorLabel": "Data processor",
+            "processorValue": "AWS S3 (EU region, encrypted storage) + CloudFront CDN (originals accessible only to authorized reviewers)",
+            "retentionLabel": "Retention",
+            "retentionValue": "Retained during review; kept with the merchant profile if approved; rejections are soft-deleted after 30 days and hard-deleted after another 7 days",
+            "sharingLabel": "Sharing",
+            "sharingValue": "Visible only to platform compliance reviewers; not disclosed to third parties except as legally required or under judicial cooperation"
+        },
+        "secondhandPublish": {
+            "title": "Before publishing a product",
+            "summary": "The title, description, and photos you publish will be displayed publicly to all users. Do not upload information that can identify others (faces, ID numbers, addresses, etc.).",
+            "dataLabel": "Data you are about to publish",
+            "dataValue": "Product title, description, price, category, photos (including all information visible in them)",
+            "controllerLabel": "Data controller",
+            "controllerValue": "CoBook (the operator)",
+            "processorLabel": "Data processor",
+            "processorValue": "AWS S3 (EU region) + CloudFront CDN (public image cache)",
+            "retentionLabel": "Retention",
+            "retentionValue": "Kept 30 days after delisting for dispute handling; then soft-deleted + hard-deleted after 7 more days; location data is stripped from EXIF",
+            "sharingLabel": "Sharing",
+            "sharingValue": "Published publicly to all app users; never sold to third-party marketing"
+        },
+        "trustedDevice": {
+            "title": "Remember this device — data usage",
+            "summary": "Ticking \"Remember this device\" consents to CoBook storing a stable device identifier so this device can skip 2FA prompts and suppress new-device login emails.",
+            "dataLabel": "What we store",
+            "dataValue": "Browser: cobook_device_id (HttpOnly cookie, 2-year expiry). Mobile app: DeviceInfo.getUniqueId() reported via the X-Device-Id header. Linked only to your account ID; never exported to third parties.",
+            "controllerLabel": "Data controller",
+            "controllerValue": "CoBook (the operator)",
+            "processorLabel": "Data processor",
+            "processorValue": "AWS RDS (EU region, encrypted at rest)",
+            "retentionLabel": "Retention / legal basis",
+            "retentionValue": "Permanent trust until you revoke it from Active sessions, or until the device sits idle for 360 days (auto-revoked). Legal basis: GDPR Art 6(1)(f) legitimate interest — account security.",
+            "sharingLabel": "Sharing",
+            "sharingValue": "Not sold; used internally only for 2FA bypass decisions and new-device alert suppression."
+        }
+    },
+    "errorCodes": {
+        "USER_NOT_FOUND": "User not found",
+        "PROVIDER_NOT_FOUND": "Merchant not found",
+        "PRODUCT_NOT_FOUND": "Product not found",
+        "PRODUCT_NOT_FOUND_OR_INVALID": "Product not found or invalid",
+        "PRODUCT_NOT_FOUND_OR_UNLISTED": "Product not found or unlisted",
+        "REQUEST_NOT_FOUND": "Request not found",
+        "BANNER_NOT_FOUND": "Banner not found",
+        "VOUCHER_NOT_FOUND": "Voucher not found",
+        "VOUCHER_TEMPLATE_NOT_FOUND": "Voucher template not found",
+        "VOUCHER_ALREADY_USED": "Voucher already used",
+        "VOUCHER_EXPIRED": "Voucher expired",
+        "VOUCHER_NOT_OWNED_BY_PROVIDER": "This voucher does not belong to this merchant",
+        "SCORECARD_NOT_FOUND": "Scorecard not found",
+        "SCORECARD_NOT_FOUND_OR_INVALID": "Scorecard not found or invalidated",
+        "SCORECARD_NOT_FOUND_OR_QR_INVALID": "Scorecard not found or QR code invalid",
+        "SCORECARD_NOT_OWNED_BY_PROVIDER": "This membership card does not belong to the current merchant",
+        "SCORECARD_ALREADY_EXISTS": "A scorecard already exists for this merchant",
+        "SCORECARD_CONFIG_NOT_FOUND": "Scorecard configuration not found",
+        "SCORECARD_CONFIG_CREATE_FAILED": "Failed to create scorecard configuration",
+        "SCORECARD_HOLDER_NOT_FOUND": "No user found holding this card",
+        "SCORECARD_PRODUCT_NOT_FOUND": "Scorecard product not found",
+        "INSUFFICIENT_POINTS": "Insufficient points balance",
+        "USER_NO_SCORECARD_FOR_PROVIDER": "You don't have a scorecard for this merchant yet",
+        "PRODUCT_TOTAL_LIMIT_REACHED": "This product has reached its total redemption limit",
+        "PRODUCT_REDEMPTION_NOT_STARTED": "Redemption period for this product has not started",
+        "PRODUCT_REDEMPTION_ENDED": "Redemption period for this product has ended",
+        "OPERATION_RECORD_NOT_FOUND": "Operation record not found",
+        "COUPON_NOT_FOUND": "Coupon not found",
+        "COUPON_NOT_ENABLED": "Coupon is not enabled and cannot be issued",
+        "ACTIVITY_PAGE_NOT_FOUND": "Activity page not found",
+        "ACTIVITY_PAGE_NOT_PUBLISHED": "Activity page not found or not published",
+        "ACTIVITY_PAGE_NOT_EDITABLE": "Editing not allowed in the current state",
+        "ACTIVITY_PAGE_NOT_SUBMITTABLE": "Submission not allowed in the current state",
+        "ACTIVITY_PAGE_NO_SECTIONS": "Activity needs at least 1 section before submission",
+        "ACTIVITY_PAGE_NOT_WITHDRAWABLE": "Withdrawal not allowed in the current state",
+        "ACTIVITY_PAGE_APPROVAL_INVALID_STATE": "Only pending-review pages can be approved",
+        "ACTIVITY_PAGE_REJECT_REASON_REQUIRED": "Rejection reason is required",
+        "ACTIVITY_PAGE_REJECT_INVALID_STATE": "Only pending-review pages can be rejected",
+        "ACTIVITY_PAGE_PAUSE_INVALID_STATE": "Only published pages can be paused",
+        "ACTIVITY_PAGE_RESUME_INVALID_STATE": "Only paused pages can be resumed",
+        "ACTIVITY_PAGE_BUDGET_INVALID_STATE": "Budget can only be adjusted while published or paused",
+        "ACTIVITY_PAGE_AUDIENCE_INVALID_STATE": "Audience cannot be changed in the current state",
+        "ACTIVITY_PAGE_CONTENT_NOT_EDITABLE": "Activity content cannot be edited in the current state",
+        "ACTIVITY_SECTION_NOT_FOUND": "Section not found",
+        "ACTIVITY_ENDED": "Activity has ended",
+        "ACTIVITY_NOT_LIVE": "Activity is not live",
+        "ITEM_NOT_FOUND": "Item not found",
+        "TARGET_PAGE_NOT_FOUND": "Target page not found",
+        "BUNDLE_SECTION_NOT_FOUND": "Bundle section not found",
+        "BUNDLE_PARENT_ACTIVITY_NOT_FOUND": "Parent activity for this bundle not found",
+        "BUNDLE_PARENT_ACTIVITY_NOT_PROVIDER": "Bundle's parent activity not found or not a merchant activity",
+        "SECTION_NOT_BUNDLE_DEAL": "This section is not a bundle deal",
+        "BUNDLE_NO_VOUCHER_ITEMS": "Bundle has no voucher items",
+        "BUNDLE_VOUCHER_ONLY": "Bundle supports voucher items only",
+        "PARENT_CATEGORY_NOT_FOUND": "Parent category not found",
+        "CATEGORY_NOT_FOUND": "Category not found",
+        "AT_LEAST_ONE_CATEGORY_REQUIRED": "Please select at least one category",
+        "PRIMARY_CATEGORY_NOT_SELECTED": "Primary category must be among the selected categories",
+        "SOME_CATEGORIES_NOT_FOUND_OR_DISABLED": "Some categories do not exist or are disabled",
+        "ONLY_LEAF_CATEGORIES_ALLOWED": "Only leaf categories can be selected — not top-level categories",
+        "PROVIDER_SCORECARD_NOT_ENABLED": "This merchant has not enabled scorecards yet",
+        "LEVEL_SYSTEM_THRESHOLDS_LOCKED": "Level system is active — thresholds can no longer be modified",
+        "LEVEL_SYSTEM_NOT_ENABLED": "Please enable the level system first",
+        "INVALID_ROLE_TYPE": "Invalid role type",
+        "TARGET_ROLE_INVALID": "Target role not found or is not a merchant-level role",
+        "ROLE_NOT_FOUND_FOR_PROVIDER": "Role not found or does not belong to this merchant",
+        "USER_ALREADY_PROVIDER_EMPLOYEE": "User is already an employee of this merchant",
+        "EMAIL_VERIFICATION_FAILED": "Email verification failed — please contact support",
+        "INVALID_COORDINATES": "Valid latitude/longitude parameters are required",
+        "STRESS_TEST_NOT_FOUND": "Stress test not found",
+        "STRESS_TEST_NOT_RUNNING": "No running test found or test ID mismatch",
+        "STRESS_TEST_ALREADY_RUNNING": "A test is already running",
+        "STRESS_TEST_SERVER_UNAVAILABLE": "Server state is abnormal — cannot start stress test",
+        "ICON_FILE_REQUIRED": "Please upload an icon file",
+        "IMAGE_FILE_REQUIRED": "Please upload an image file",
+        "COVER_IMAGE_REQUIRED": "Please upload a cover image",
+        "IMAGE_UPLOAD_FAILED": "Image upload failed",
+        "PRODUCT_IMAGE_UPDATE_FAILED": "Failed to update product image",
+        "MISSING_PARAMETERS": "Missing parameters",
+        "MISSING_SECTION_ID": "Missing section ID",
+        "MISSING_PAGE_ID": "Missing page ID",
+        "MISSING_BANNER_ID": "Missing banner ID",
+        "MISSING_REQUEST_ID": "Missing request ID",
+        "MISSING_PROVIDER_ID": "Missing merchant ID",
+        "MISSING_PRODUCT_ID": "Missing product ID",
+        "MISSING_CONFIG_OR_PROVIDER_ID": "Missing config ID or merchant ID",
+        "MISSING_LEVEL_PARAMETERS": "levelNumber or levelBenefits is required",
+        "NO_FIELDS_TO_UPDATE": "No fields to update",
+        "RECOMMENDATION_FETCH_FAILED": "Failed to fetch recommendations — please try again later",
+        "MAP_PROVIDERS_FETCH_FAILED": "Failed to fetch merchants on the map — please try again later",
+        "PROVIDER_PREFIX_FETCH_FAILED": "Failed to fetch prefix",
+        "BUSINESS_HOURS_UPDATE_FAILED": "Failed to update business hours",
+        "VOTE_FAILED": "Vote failed",
+        "REPLY_FAILED": "Reply failed",
+        "REPLY_UPDATE_FAILED": "Failed to update reply",
+        "PERMISSIONS_LIST_FETCH_FAILED": "Failed to fetch permissions list",
+        "SYSTEM_ROLE_PERMISSIONS_FETCH_FAILED": "Failed to fetch system role default permissions",
+        "SYSTEM_ROLE_PERMISSIONS_UPDATE_FAILED": "Failed to update system role default permissions",
+        "SYSTEM_ROLES_BULK_SYNC_FAILED": "Failed to bulk sync system roles",
+        "NO_PERMISSION_FOR_OPERATION": "You don't have permission to perform this operation",
+        "NO_PERMISSION_LIST_USERS": "No permission to list users",
+        "NO_PERMISSION_VIEW_USER": "No permission to view user details",
+        "NO_PERMISSION_SEARCH_USERS": "No permission to search users",
+        "NO_PERMISSION_FIND_USERS": "No permission to look up users",
+        "NO_PERMISSION_BAN_USER": "No permission to ban users",
+        "NO_PERMISSION_MODIFY_USER": "No permission to modify user information",
+        "NO_PERMISSION_MANAGE_SUBSCRIPTION": "No permission to manage subscriptions",
+        "NO_PERMISSION_MANAGE_USAGE_QUOTA": "No permission to manage usage quota",
+        "NO_PERMISSION_MANAGE_REDEEM_CODES": "No permission to manage redeem codes",
+        "NO_PERMISSION_VIEW_REDEEM_CODES": "No permission to view redeem codes",
+        "NO_PERMISSION_SEND_NOTIFICATIONS": "No permission to send notifications",
+        "NO_PERMISSION_VIEW_CARDS": "No permission to view cards",
+        "NO_PERMISSION_CREATE_CARDS": "No permission to create cards",
+        "NO_PERMISSION_ACCESS_PROVIDER": "No permission to access this merchant",
+        "NO_PERMISSION_OPERATE_PROVIDER": "No permission to operate this merchant",
+        "NO_PERMISSION_MODIFY_PROVIDER": "No permission to modify this merchant",
+        "NO_PERMISSION_VIEW_PROVIDER_STATS": "No permission to view merchant statistics",
+        "NO_PERMISSION_VIEW_PROVIDER_GROWTH": "No permission to view merchant growth analytics",
+        "NO_PERMISSION_VIEW_PROVIDER_INSIGHTS": "No permission to view merchant business insights",
+        "NO_PERMISSION_VIEW_PROVIDER_ACTIVITY": "No permission to view merchant activity logs",
+        "NO_PERMISSION_VIEW_PROVIDER_CUSTOMERS": "No permission to view merchant customer information",
+        "NO_PERMISSION_VIEW_PROVIDER_SCORECARD_LOG": "No permission to view merchant scorecard logs",
+        "NO_PERMISSION_UPDATE_BUSINESS_HOURS": "No permission to update business hours",
+        "NO_PERMISSION_OPERATE_SCORECARD_CONFIG": "No permission to operate scorecard configuration",
+        "NO_PERMISSION_REPLY_COMMENT": "No permission to reply to comments",
+        "NO_PERMISSION_MANAGE_SYSTEM_ROLES": "No permission to manage system roles",
+        "NO_PERMISSION_SYNC_SYSTEM_ROLES": "No permission to sync system roles",
+        "NO_PERMISSION_VIEW_VOUCHERS": "No permission to view merchant vouchers",
+        "NO_PERMISSION_CREATE_VOUCHER": "No permission to create vouchers",
+        "NO_PERMISSION_MANAGE_VOUCHERS": "No permission to manage vouchers",
+        "NO_PERMISSION_DELETE_VOUCHER": "No permission to delete vouchers",
+        "NO_PERMISSION_VIEW_REDEMPTION_LOGS": "You don't have permission to view this merchant's redemption logs",
+        "NO_PERMISSION_UPLOAD_VOUCHER_IMAGE": "No permission to upload voucher images",
+        "NO_PERMISSION_OPERATE_PRODUCT_GROUP": "No permission to operate this product group",
+        "NO_PERMISSION_PUBLISH_SECONDHAND": "No permission to publish second-hand products",
+        "NO_PERMISSION_EDIT_PRODUCT": "No permission to edit this product",
+        "NO_PERMISSION_DELETE_PRODUCT": "No permission to delete products",
+        "NO_PERMISSION_SEARCH_SECONDHAND": "No permission to search second-hand products",
+        "NO_PERMISSION_MODIFY_PRODUCT": "No permission to modify this product",
+        "NO_PERMISSION_MANAGE_PRODUCT_IMAGES": "No permission to manage product images",
+        "NO_PERMISSION_MODIFY_PRODUCT_IMAGE": "No permission to modify this product image",
+        "NO_PERMISSION_VIEW_SCORECARD_PRODUCTS": "No permission to view merchant scorecard products",
+        "NO_PERMISSION_MANAGE_SCORECARD_PRODUCTS": "No permission to manage scorecard products",
+        "NO_PERMISSION_DELETE_SCORECARD_PRODUCT": "No permission to delete merchant scorecard product",
+        "NO_PERMISSION_UPLOAD_SCORECARD_PRODUCT_IMAGE": "No permission to upload scorecard product image",
+        "NO_PERMISSION_UPLOAD_SCORECARD_BACKGROUND": "No permission to upload scorecard background image",
+        "NO_PERMISSION_UPDATE_SCORECARD_CONFIG": "No permission to update scorecard configuration",
+        "NO_PERMISSION_ACCESS_SCORECARD_CONFIG": "You don't have permission to access this merchant's scorecard configuration",
+        "NO_PERMISSION_VIEW_OPERATION_RECORD": "No permission to view this operation record",
+        "NO_PERMISSION_ADD_SCORECARD_TO_WALLET": "No permission to add this scorecard to the wallet",
+        "TOTP_REQUIRED": "Please enter your two-factor code",
+        "TOTP_INVALID_CODE": "Invalid code, please try again",
+        "TOTP_NOT_ENABLED": "Two-factor authentication is not enabled for this account",
+        "TOTP_ALREADY_ENABLED": "Two-factor authentication is already enabled"
+    },
+    "twoFactor": {
+        "title": "Two-factor authentication",
+        "subtitle": "Add an extra layer of protection when signing in",
+        "statusEnabled": "Enabled",
+        "statusDisabled": "Disabled",
+        "enableButton": "Enable 2FA",
+        "disableButton": "Disable 2FA",
+        "regenerateBackupCodesButton": "Regenerate backup codes",
+        "introTitle": "Secure your account with an authenticator app",
+        "introBody": "Once enabled, every sign-in will require both your password and a 6-digit code from an authenticator app (Google Authenticator, Authy, 1Password, etc.). This makes account takeover much harder.",
+        "scanQRTitle": "Scan QR code",
+        "scanQRInstruction": "Scan the QR code below with your authenticator app. If you can't scan, enter the secret key manually.",
+        "secretFallbackLabel": "Manual secret key",
+        "copySecret": "Copy secret",
+        "verifyCodeTitle": "Enter 6-digit code",
+        "verifyCodeHint": "Enter the 6-digit code currently shown in your authenticator app",
+        "verifyButton": "Verify & enable",
+        "backupCodesTitle": "Save your backup codes",
+        "backupCodesWarning": "If you lose access to your authenticator app, you can use one of the codes below to sign in. Each code can only be used once. Copy or screenshot them now — they will not be shown again.",
+        "copyAllCodes": "Copy all codes",
+        "savedConfirmCheckbox": "I have saved my backup codes",
+        "rememberDeviceHintTitle": "Tip: trust your everyday device",
+        "rememberDeviceHintBody": "On the next login, tick \"Remember this device\" to permanently skip the verification code. You can untrust devices anytime from Active sessions.",
+        "doneButton": "Done",
+        "disableConfirmTitle": "Disable 2FA?",
+        "disableConfirmMessage": "Your account will only be protected by your password. Are you sure?",
+        "regenerateConfirmTitle": "Regenerate backup codes?",
+        "regenerateConfirmMessage": "All existing backup codes will be invalidated. Save the new ones carefully.",
+        "loginPromptTitle": "Two-factor authentication",
+        "loginPromptSubtitle": "Enter the 6-digit code from your authenticator app, or use a 10-character backup code.",
+        "loginCodeInputPlaceholder": "6-digit code or backup code",
+        "loginVerifyButton": "Verify",
+        "loginBackToPassword": "Back to password",
+        "loginInvalidCode": "Invalid code",
+        "setupFailed": "Setup failed, please try again",
+        "disableSuccess": "Two-factor authentication disabled",
+        "regenerateSuccess": "Backup codes regenerated",
+        "alreadyEnabled": "Two-factor authentication is already enabled",
+        "copied": "Copied",
+        "disableStepUpTitle": "Verify it's you to disable 2FA",
+        "disableStepUpBody": "Enter the 6-digit code from your authenticator app, or a 10-character backup code, to confirm it's really you.",
+        "regenerateStepUpTitle": "Verify it's you to regenerate backup codes",
+        "regenerateStepUpBody": "Enter the 6-digit code from your authenticator app, or a 10-character backup code. Once confirmed, your old backup codes are invalidated immediately and the new ones will appear.",
+        "stepUpInputLabel": "Enter your verification code",
+        "stepUpInputHint": "6-digit TOTP or 10-character backup code (case-insensitive, dash optional)",
+        "stepUpInputPlaceholder": "000000 / ABCDE-FGHIJ"
+    },
+    "sessions": {
+        "title": "Active sessions",
+        "subtitle": "Devices currently signed in to this account",
+        "currentDevice": "Current device",
+        "unknownDevice": "Unknown device",
+        "lastUsed": "Last active",
+        "createdAt": "Signed in",
+        "expiresAt": "Expires",
+        "noActiveSessions": "No other active sessions",
+        "logoutThisDevice": "Sign out",
+        "logoutThisDeviceConfirmTitle": "Sign out?",
+        "logoutThisDeviceConfirmMessage": "Sign out of this account on this device?",
+        "revokeSession": "Sign out this device",
+        "revokeSessionConfirmTitle": "Sign out this device?",
+        "revokeSessionConfirmMessage": "This device will be signed out of the account.",
+        "revokeAllOthers": "Sign out all other devices",
+        "revokeAllOthersConfirmTitle": "Sign out all other devices?",
+        "revokeAllOthersConfirmMessage": "Keeps the current device, revokes all others.",
+        "revokedSuccess": "Session signed out",
+        "revokedAllSuccess": "{{count}} other device(s) signed out",
+        "loadFailed": "Failed to load sessions",
+        "justNow": "Just now",
+        "minutesAgo": "{{count}} min ago",
+        "hoursAgo": "{{count}} h ago",
+        "daysAgo": "{{count}} d ago",
+        "knownDevicesTitle": "Known devices",
+        "knownDevicesSubtitle": "Browsers or phones where you ticked \"Remember this device\". These skip the 2FA prompt on future logins.",
+        "firstSeenAt": "First seen",
+        "trustedBadge": "Trusted",
+        "staleDeviceHint": "Idle 90+ days — consider revoking",
+        "knownDeviceRevokeAction": "This isn't me",
+        "knownDeviceRevokeConfirmTitle": "Revoke device trust?",
+        "knownDeviceRevokeConfirmMessage": "{{device}} will be signed out immediately and treated as a stranger next login: full 2FA prompt + re-tick \"Remember this device\" required.",
+        "knownDeviceRevokedSuccess": "Revoked. {{count}} session(s) signed out"
     }
 }
