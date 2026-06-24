@@ -1,6 +1,122 @@
 {
+  "merchantActivity": {
+    "title": "商家活跃度",
+    "overviewTitle": "区域商家健康概览",
+    "leaderboard": "商家健康榜",
+    "empty": "暂无已评分商家（评分每日重算）",
+    "manageTitle": "管理操作",
+    "action": {
+      "editInfo": "改基本信息",
+      "vouchers": "管理靠谱券",
+      "products": "兑换项目",
+      "exchangeRule": "积分规则",
+      "announcements": "公告",
+      "activities": "活动页"
+    },
+    "healthTitle": "健康评分",
+    "scoreCaption": "健康分 / 100",
+    "noScore": "该商家暂未生成健康分（评分每日重算）",
+    "regionRank": "区域第 {{rank}} 名",
+    "risk": "风险 -{{n}}",
+    "repeat": "复购 {{n}}",
+    "distinct": "独立客 {{n}}",
+    "gtvTrend": "30 天 GTV 趋势",
+    "scorecardTitle": "积分卡系统",
+    "scEnabled": "积分卡",
+    "scOn": "已开通",
+    "scOff": "未开通",
+    "scRule": "积分规则",
+    "scRuleValue": "每 {{amount}} {{currency}} = 1 分",
+    "scLevel": "等级系统",
+    "kpi": {
+      "scored": "已评分商家",
+      "avgScore": "平均健康分",
+      "atRisk": "需关注",
+      "windowGtv": "30天 GTV",
+      "windowVred": "30天券核销"
+    },
+    "tier": {
+      "thriving": "蓬勃",
+      "healthy": "健康",
+      "neutral": "一般",
+      "at_risk": "预警",
+      "dormant": "沉睡"
+    },
+    "dim": {
+      "value": "价值",
+      "engagement": "互动",
+      "reach": "触达",
+      "adoption": "平台使用",
+      "sentiment": "口碑",
+      "retention": "留存"
+    },
+    "inv": {
+      "products": "兑换项目",
+      "vouchers": "靠谱券",
+      "activities": "活动页",
+      "announcements": "公告",
+      "points": "{{n}} 分",
+      "none": "无",
+      "untitled": "（未命名）"
+    },
+    "criteria": {
+      "hint": "点按各维度查看评判标准",
+      "value": "综合你的真实成交额(GTV)与券/积分核销，衡量为平台带来的实际交易价值。",
+      "engagement": "衡量积分发放与新客户拉新等日常互动活跃度。",
+      "reach": "衡量触达广度：服务的独立客户数与新增收藏。",
+      "adoption": "衡量你对平台功能的使用：经营操作、新建券与活跃天数。",
+      "sentiment": "基于顾客评分的口碑（少评价时向基准回归，不奖励刷量）。",
+      "retention": "衡量复购：窗口内重复核销的客户数。",
+      "weightNote": "权重 {{pct}}% · 子分 {{score}}/100（本区域同行百分位，越高越靠前）",
+      "riskTitle": "风险扣分",
+      "riskDesc": "举报与违规标记会从总分直接扣分。",
+      "riskReports": "被举报 {{n}} 条（每条 −{{per}}）",
+      "riskFlaggedOn": "已被违规标记（−{{n}}）",
+      "riskFlaggedOff": "未被违规标记",
+      "riskCap": "扣分上限 −{{n}}",
+      "howScored": "评分说明",
+      "modelComposite": "总分 = 各维度子分 × 权重 之和 − 风险扣分。",
+      "modelPercentile": "各维度子分 = 你在本区域同行中的百分位（按维度内的实际数据排名，越高越靠前）。",
+      "modelRecency": "统计近 {{days}} 天，越近的活动权重越高（近因衰减）。",
+      "modelTiers": "分档：≥80 蓬勃 · ≥60 健康 · ≥40 一般 · ≥20 预警 · <20 沉睡。"
+    },
+    "driver": {
+      "windowDays": "统计天数",
+      "gtv": "成交额 GTV",
+      "voucherRedemptions": "券核销",
+      "scorecardRedemptions": "积分兑换",
+      "pointsIssued": "发放积分",
+      "newCustomers": "新客户",
+      "newFavorites": "新收藏",
+      "newReviews": "新评价",
+      "reviewScoreSum": "评分合计",
+      "sentimentAvg": "平均评分",
+      "merchantActions": "经营操作",
+      "vouchersCreated": "新建券",
+      "activeDays": "活跃天数",
+      "reportsCount": "被举报",
+      "repeatCustomers": "复购客户",
+      "distinctCustomers": "独立客户"
+    }
+  },
   "share": {
     "message": "快来看看「{{title}}」"
+  },
+  "adminUserHub": {
+    "open": "管理员操作",
+    "detail": "用户详细信息",
+    "usage": "使用情况 / 活跃分析",
+    "security": "安全审计事件",
+    "tickets": "该用户的工单",
+    "impersonate": "模拟登录",
+    "ban": "封禁 / 解除封禁",
+    "bannedBadge": "已封禁",
+    "externalUser": "非 CoBook 用户",
+    "externalNote": "此工单来自外部邮箱，不是 CoBook 注册用户。",
+    "unknownUser": "未知用户",
+    "filingColleague": "提交人",
+    "ticketSubject": "提交人",
+    "securityForUser": "用户安全审计"
   },
   "captcha": {
     "title": "人机验证",
@@ -40,6 +156,10 @@
       "products": "二手商品"
     },
     "trendingSearches": "热门搜索",
+    "discovery": {
+      "providers": "热门商家",
+      "products": "最新好物"
+    },
     "tags": {
       "events": "活动",
       "scorecardOwned": "已开通积分卡",
@@ -61,6 +181,8 @@
   },
   "scorecard": {
     "manage": {
+      "searchPlaceholder": "搜索靠谱券",
+      "addVoucher": "添加靠谱券",
       "defaultName": "新兑换项目",
       "saving": "保存中…",
       "saved": "已保存",
@@ -76,7 +198,34 @@
       "needVoucher": "尚未绑定靠谱券，用户暂不可兑换",
       "statusLabel": "状态",
       "listed": "上架中",
-      "unlisted": "已下架"
+      "unlisted": "已下架",
+      "addPointsTitle": "添加积分",
+      "modeByAmount": "按金额加",
+      "modeByPoints": "按积分加",
+      "amountLabel": "消费金额",
+      "amountPlaceholder": "输入消费金额",
+      "ruleLoading": "加载兑换规则…",
+      "amountPreview": "消费 {{amount}} → 获得 {{points}} 积分",
+      "amountBelowThreshold": "金额太小，无法获得积分",
+      "pointsLabel": "积分数",
+      "pointsPlaceholder": "输入积分数",
+      "pointsUnit": "积分",
+      "noteLabel": "备注（可选）",
+      "notePlaceholder": "填写备注…",
+      "addPointsSubmit": "确认添加",
+      "addPointsSuccessTitle": "加分成功",
+      "addPointsAmountSuccess": "已发放 {{points}} 积分",
+      "addPointsManualSuccess": "已发放 {{points}} 积分",
+      "amountEarnDefault": "消费积分",
+      "pointsEarnDefault": "手动加分",
+      "largeAddConfirmTitle": "确认大额加分",
+      "largeAddConfirmMessage": "将给该顾客发放 {{points}} 积分，确认？",
+      "redeemableItemsScreenTitle": "可兑换项目",
+      "manageRedeemableItems": "可兑换项目",
+      "redeemableItemsCountSubtitle": "已有 {{count}} 个兑换项目",
+      "redeemableItemsTitle": "可兑换项目",
+      "redeemableItemsEmptySubtitle": "添加、编辑兑换项目并绑定靠谱券",
+      "manageVouchersSubtitle": "创建并管理用于兑换的靠谱券"
     },
     "setup": {
       "title": "上手引导",
@@ -175,6 +324,7 @@
   },
   "settings": {
     "title": "设置",
+    "selectItemHint": "从左侧选择一项设置",
     "mySettings": "我的设置",
     "personalSettings": "个人设置",
     "myInfo": "我的信息",
@@ -201,6 +351,11 @@
     "change": "更换",
     "uploadSuccess": "头像上传成功",
     "uploadFailed": "头像上传失败，请稍后重试",
+    "dataExport": {
+      "button": "导出我的数据",
+      "requested": "导出已开始，完成后我们会把下载链接发送到你的邮箱。",
+      "rateLimited": "你最近已请求过导出，请 24 小时后再试。"
+    },
     "deleteAccount": {
       "title": "删除账号",
       "confirmTitle": "确认删除账号？",
@@ -354,7 +509,8 @@
       "permissionCategory": "分类",
       "priority": "优先级",
       "description": "描述"
-    }
+    },
+    "codeRequired": "请输入验证码"
   },
   "userInfo": {
     "title": "我的信息",
@@ -368,7 +524,8 @@
       "registerTime": "注册时间",
       "invitationCode": "我的邀请码",
       "deviceToken": "设备令牌",
-      "password": "密码"
+      "password": "密码",
+      "passwordNotSet": "未设置"
     },
     "edit": {
       "editTitle": "编辑",
@@ -415,7 +572,29 @@
       "codeExpired": "验证码已过期，请重新发送",
       "tooManyRequests": "请求过于频繁，请稍后再试",
       "resetSuccess": "密码重置成功",
-      "sendFailed": "验证码发送失败，请稍后再试"
+      "sendFailed": "验证码发送失败，请稍后再试",
+      "tooManyAttempts": "尝试次数过多，请稍后再试"
+    },
+    "stepUp": {
+      "description": "为保护账号安全，请输入发送到你邮箱的验证码完成验证。",
+      "title": "验证身份",
+      "subtitle": "为保护账号安全，请选择一种方式完成验证",
+      "methodPassword": "输入账号密码",
+      "methodEmailCode": "邮箱验证码",
+      "methodGoogle": "用 Google 重新验证",
+      "methodApple": "用 Apple 重新验证",
+      "passwordPlaceholder": "当前密码",
+      "verifying": "验证",
+      "wrongPassword": "密码错误",
+      "socialMismatch": "该 Google / Apple 账号未绑定到当前账号",
+      "failed": "验证失败，请重试"
+    },
+    "setPassword": {
+      "title": "设置密码",
+      "description": "为你的账号设置一个密码，作为额外的登录方式。设置前需先验证身份。",
+      "confirm": "设置密码",
+      "success": "密码设置成功",
+      "continue": "继续验证"
     }
   },
   "login": {
@@ -495,13 +674,41 @@
     "usernameValidation": "用户名只能包含字母和数字",
     "passwordValidation": "密码必须包含至少8个字符，包括字母和数字"
   },
+  "pointsEarned": {
+    "title": "积分到账",
+    "pointsUnit": "积分",
+    "previousBalance": "之前余额",
+    "newBalance": "现有余额",
+    "viewHistory": "查看积分记录",
+    "done": "完成"
+  },
+  "pointsHistory": {
+    "title": "积分记录",
+    "viewEntry": "积分记录",
+    "filter": {
+      "all": "全部",
+      "earned": "获得",
+      "used": "使用"
+    },
+    "typeAdd": "获得积分",
+    "typeDeduct": "扣除积分",
+    "typeRedeem": "兑换商品",
+    "typeAdjust": "积分调整",
+    "typeIssue": "开通积分卡",
+    "typeCancel": "注销积分卡",
+    "balanceAfter": "余额 {{balance}}",
+    "empty": "暂无积分记录",
+    "loadError": "加载积分记录失败"
+  },
   "myScorecards": {
-    "screenTitle": "我的积分卡",
-    "drawerEntry": "我的积分卡",
+    "screenTitle": "靠谱积分卡包",
+    "drawerEntry": "靠谱积分卡包",
     "summaryTitle": "积分概览",
     "cardCount": "积分卡数",
     "totalPoints": "总积分",
-    "tierMembers": "等级会员",
+    "tierMembers": "等级卡",
+    "searchPlaceholder": "搜索积分卡 / 商家",
+    "noResults": "没有匹配的积分卡",
     "sortBy": "排序",
     "sortPoints": "按积分",
     "sortName": "按名称",
@@ -558,6 +765,7 @@
   },
   "navigation": {
     "home": "首页",
+    "messages": "消息",
     "recentMessages": {
       "recentMessageListView": "最近消息",
       "messageView": "消息"
@@ -575,7 +783,8 @@
     "markAllAsRead": "全部已读",
     "markAllAsReadConfirmTitle": "确认",
     "markAllAsReadConfirmMessage": "确认将所有消息标记为已读？",
-    "empty": "暂无系统消息"
+    "empty": "暂无系统消息",
+    "selectHint": "选择一条消息查看"
   },
   "system": {
     "healthChecking": "系统健康检查进行中...",
@@ -609,7 +818,9 @@
     "networkRestored": "网络连接已恢复",
     "dataReadError": "无法读取本地数据",
     "restartAppPrompt": "请重启应用程序",
-    "dontturnoffdivice": "请不要关闭此应用程序",
+    "dontturnoffdivice": "请不要关闭此应用程序"
+  },
+  "notifications": {
     "pointsModified": "积分变动",
     "pointsModifiedDesc": "您在 {{providerName}} 的积分 {{change}}",
     "voucherRedeemed": "优惠券已使用",
@@ -693,6 +904,7 @@
     "delete": "删除",
     "edit": "编辑",
     "add": "添加",
+    "done": "完成",
     "tip": "提示",
     "success": "成功",
     "warning": "警告",
@@ -708,6 +920,8 @@
     "all": "全部",
     "back": "返回",
     "tryAgainLater": "请稍后重试",
+    "noMore": "没有更多了",
+    "loadFailedRetry": "加载失败，点击重试",
     "failed": "操作失败",
     "disabled": "已停用",
     "weekday": {
@@ -749,6 +963,13 @@
     "deleteConfirmOk": "删除",
     "delistSuccess": "商品已下架",
     "relistSuccess": "商品已重新上架",
+    "markSold": "标记为已售出",
+    "restoreFromSold": "恢复在售",
+    "statusSold": "已售出",
+    "markSoldConfirmTitle": "标记为已售出？",
+    "markSoldConfirmMessage": "标记后商品将从浏览和搜索中隐藏，但会以「已售出」显示在你的发布和买家的收藏里。可随时恢复在售。",
+    "markSoldConfirmOk": "标记已售出",
+    "markSoldSuccess": "已标记为售出",
     "deleteSuccess": "商品已删除",
     "statusOnSale": "在售",
     "statusDelisted": "已下架",
@@ -757,6 +978,7 @@
     "groupDraftBadge": "组草稿",
     "groupBadge": "组",
     "groupItemCount": "{{n}} 件",
+    "groupSoldCount": "已售 {{n}} 件",
     "untitledGroup": "未命名的组",
     "partOfGroup": "本商品属于商品组",
     "publishedBadge": "已发布",
@@ -801,7 +1023,7 @@
   "mainContent": {
     "navigation": {
       "eatFood": "餐厅",
-      "drink": "顿顿",
+      "drink": "吨吨",
       "coffee": "咖啡",
       "bubbleTea": "奶茶",
       "retail": "零售",
@@ -820,7 +1042,11 @@
       "data": "数据",
       "cameraPermissionTitle": "需要相机权限",
       "cameraPermissionMessage": "请在设置中允许访问相机",
-      "scanInstruction": "将二维码放入框内"
+      "scanInstruction": "将二维码放入框内",
+      "manualEntry": "手动输入核销码",
+      "manualEntryTitle": "手动输入核销码",
+      "manualEntryPlaceholder": "输入核销码或完整二维码内容",
+      "manualEntryConfirm": "核销"
     },
     "discounts": {
       "title": "优惠折扣 %",
@@ -861,10 +1087,51 @@
     "recommendedProductsSubtitle": "发现更多好物"
   },
   "provider": {
+    "selectItemHint": "从左侧选择一项管理",
     "title": "靠谱商家",
     "scanCta": {
       "title": "扫码核销",
       "subtitle": "积分卡 / 优惠券一扫即办"
+    },
+    "quick": {
+      "scan": "扫一扫",
+      "addPoints": "加积分",
+      "issueVoucher": "编辑靠谱券",
+      "lookup": "查找"
+    },
+    "group": {
+      "operations": "经营内容",
+      "membership": "会员与营销",
+      "team": "团队与设置",
+      "exchangeItems": "兑换项目",
+      "exchangeItemsDesc": "设置积分兑换比例与可兑换项目",
+      "exchangeRule": "兑换规则",
+      "exchangeRuleDesc": "设置积分兑换比例与冷却时间",
+      "subscriptionDesc": "查看订阅方案与用量",
+      "platformConsultDesc": "聚合平台咨询与帮助"
+    },
+    "lookup": {
+      "screenTitle": "查找",
+      "tabCustomer": "顾客",
+      "tabVoucher": "券码",
+      "searchPlaceholder": "昵称或用户名",
+      "customerHintTitle": "暂无顾客",
+      "customerHintBody": "输入昵称或用户名进行搜索",
+      "pointsBalance": "积分余额",
+      "errorTitle": "加载失败",
+      "errorHint": "请稍后重试",
+      "emptyTitle": "未找到顾客",
+      "emptyHint": "换个昵称或用户名试试",
+      "voucherSearchPlaceholder": "输入或粘贴券码",
+      "pendingOnlyNote": "这里只显示未核销的券，点此查看已核销 / 已退还记录",
+      "voucherHintTitle": "暂无待核销券码",
+      "voucherHintBody": "输入或粘贴券码进行核销",
+      "voucherEmptyTitle": "未找到券码",
+      "voucherEmptyHint": "换个券码试试",
+      "voucherPlaceholder": "输入或粘贴券码",
+      "verifyVoucher": "核销券码",
+      "or": "或",
+      "scanVoucher": "扫码核销"
     },
     "menu": {
       "businessStats": "营业数据统计",
@@ -876,6 +1143,7 @@
       "scanQR": "扫一扫",
       "roleManagement": "角色权限管理",
       "platformConsult": "聚合平台咨询",
+      "overview": "概览",
       "businessDataTitle": "商家数据",
       "viewFullStats": "查看完整数据",
       "metricCustomers": "顾客",
@@ -922,6 +1190,12 @@
       "iconDisplayHint": "商家图标将显示在积分卡和靠谱券上，建议使用清晰的品牌标志",
       "iconSizeHint": "建议的图标尺寸为256x256px",
       "iconRatioInvalid": "图标比例不合适，请使用正方形的图片",
+      "providerCover": "商家封面",
+      "changeCover": "更换封面",
+      "uploadCover": "上传商家封面",
+      "coverHint": "封面将作为商家主视觉，展示在列表、积分卡等位置，建议使用横版高清大图（16:9）",
+      "coverRequired": "请上传商家封面图",
+      "coverUploadFailed": "封面上传失败，请重试",
       "basicInfo": "基本信息",
       "uploadedPhotos": "已上传的商家照片",
       "pendingPhotos": "待上传的新照片",
@@ -962,6 +1236,7 @@
       "submitTime": "提交时间",
       "checkingAuditStatus": "正在检查审核状态...",
       "loadingInfo": "正在加载商家信息…",
+      "loadingDescription": "正在加载多语言内容…",
       "loadInfoFailed": "加载商家信息失败",
       "providerNameReadonly": "商家名称（只读）",
       "providerAddress": "商家地址 *",
@@ -991,7 +1266,9 @@
       "platformServiceDescription": "联系客服获取技术支持",
       "platformServiceInProgress": "客服中心功能开发中...",
       "businessHelpdeskTitle": "商务工单",
-      "businessHelpdeskDescription": "与 CoBook 商务支持沟通商户合作、订阅、合规等问题"
+      "businessHelpdeskDescription": "与 CoBook 商务支持沟通商户合作、订阅、合规等问题",
+      "customerHelpdeskTitle": "顾客工单",
+      "customerHelpdeskDescription": "查看并回复顾客发来的工单；需要时可申请平台管理员介入"
     },
     "latitude": "纬度",
     "longitude": "经度",
@@ -1006,6 +1283,12 @@
       "later": "稍后再说",
       "validationFailed": "请先完整填写所有必填字段。"
     },
+    "draft": {
+      "restoreTitle": "继续未完成的申请？",
+      "restoreMessage": "检测到上次未提交的商家申请内容，是否恢复继续填写？",
+      "restore": "恢复",
+      "discard": "放弃"
+    },
     "info": {
       "title": "商家信息",
       "storeName": "商家名称",
@@ -1018,7 +1301,9 @@
       "revisionNote": "管理员补充说明",
       "submitTime": "提交时间",
       "updateTime": "更新时间",
-      "notFilled": "未填写"
+      "notFilled": "未填写",
+      "contactOnCobook": "在 CoBook 联系商家",
+      "contactOnCobookHint": "通过工单与商家沟通"
     },
     "main": {
       "completeStoreInfo": "请先完善商家信息，如果不完善商家信息，将无法被用户搜索到",
@@ -1033,7 +1318,8 @@
       "title": "附近商家",
       "cancel": "取消",
       "confirm": "确定",
-      "useMyLocation": "使用我的当前位置"
+      "useMyLocation": "使用我的当前位置",
+      "instruction": "点击地图选择位置，拖动图钉可微调"
     },
     "viewDetails": "查看详情",
     "loadingRestaurants": "正在加载商家...",
@@ -1124,6 +1410,13 @@
       "policy": "不符合平台政策",
       "other": "其他"
     },
+    "dataExport": {
+      "confirmTitle": "导出营业数据？",
+      "confirmMessage": "将导出你的营业数据（含客户清单与邮箱、积分流水、券、菜单等）打包成压缩包，完成后把下载链接发送到你的邮箱。请妥善保管，遵守隐私法规。",
+      "confirmOk": "导出",
+      "requested": "导出已开始，完成后我们会把下载链接发送到你的邮箱。",
+      "rateLimited": "你最近已请求过导出，请 24 小时后再试。"
+    },
     "period": {
       "overview": "概览",
       "today": "今天",
@@ -1208,7 +1501,9 @@
     "notifications": {
       "getRecommendationsFailed": "获取推荐失败",
       "tryAgainLater": "请稍后再试",
-      "fetchFailed": "获取数据失败"
+      "fetchFailed": "获取数据失败",
+      "locationPermissionDenied": "位置权限被拒绝",
+      "enableLocationPermission": "请在系统设置中开启定位权限后重试"
     },
     "activity": {
       "today": "今天",
@@ -1289,15 +1584,33 @@
       "addMultiLang": "添加其他语言版本",
       "hideMultiLang": "收起其他语言版本",
       "multiLangHint": "为空的语言将由 AI 在审核通过后自动翻译（需对应订阅档位）。",
-      "mediaSectionLabel": "上传资料（均为选填）",
+      "mediaSectionLabel": "上传资料（封面必填，其余选填）",
       "logo": "店铺 Logo",
+      "cover": "店铺封面（必填）",
+      "coverRequired": "请上传店铺封面图后再提交",
       "license": "营业执照",
       "storefront": "店铺照片",
       "storefrontHint": "最多 5 张",
       "storefrontMaxHint": "最多只能上传 5 张店铺照片。",
       "pickFile": "选择文件",
       "removeFile": "删除",
-      "replaceFile": "替换"
+      "replaceFile": "替换",
+      "maxReached": "已达到上传数量上限。",
+      "licenseRequired": "请至少上传一张营业执照。",
+      "licenseHint": "营业执照（最多 10 张，必填）。",
+      "basicSection": "基本信息",
+      "contactSection": "联系方式",
+      "referralCode": "推荐码（选填）",
+      "referralLinked": "对接销售：{{name}}",
+      "referralReward": "将获得 {{tier}} {{days}} 天",
+      "referralInvalid": "推荐码无效",
+      "locationSection": "店铺位置",
+      "categorySection": "分类与地区",
+      "nameManualHint": "店铺名称请手动填写各语言版本（不使用 AI 翻译）。",
+      "descriptionRichHint": "支持富文本；填写主要语言后可自动翻译到其他语言。",
+      "locationEmpty": "点击在地图上选择商家位置",
+      "locationSelected": "已在地图上标记位置",
+      "adjustLocation": "调整位置"
     },
     "validation": {
       "addressRequired": "请输入商家地址",
@@ -1312,6 +1625,7 @@
     "detail": {
       "operatingHours": "营业时间",
       "notOpen": "不营业",
+      "nextDay": "次日",
       "title": "商家详情",
       "description": "简介",
       "scorecard": "点卡",
@@ -1342,7 +1656,8 @@
         "title": "错误",
         "message": "获取积分卡信息失败，请稍后重试",
         "noData": "无法加载积分卡信息",
-        "providerNotActivatedScorecard": "该商家暂未开通积分卡功能"
+        "providerNotActivatedScorecard": "该商家暂未开通积分卡功能",
+        "providerNotActivatedScorecardHint": "该商家开通积分卡后，你可在此累积并兑换积分"
       },
       "activationFlow": {
         "success": {
@@ -1397,6 +1712,7 @@
         "conditionTotalLimit": "商品总数量限制 {{limit}} 份",
         "conditionRefundEligible": "券过期后积分将自动退还",
         "conditionRefundNotEligible": "券过期后积分不予退还",
+        "conditionUsableWindow": "仅在 {{window}} 可到店核销（兑换不限时）",
         "productDescription": "商品说明",
         "redeemNow": "立即兑换",
         "goToProvider": "前往商家",
@@ -1432,7 +1748,9 @@
         "noScorecard": "您还没有该商家的积分卡，请先激活后再兑换",
         "activateButton": "去激活积分卡",
         "unknownProvider": "商家",
-        "loadingScorecard": "正在加载积分卡信息..."
+        "loadingScorecard": "正在加载积分卡信息...",
+        "usableWindowTitle": "可核销时段：每日 {{window}}",
+        "usableWindowHint": "此券仅在该时段到店核销有效（按商家时区），兑换本身不限时"
       },
       "voucherPreview": {
         "sectionTitle": "兑换后获得",
@@ -1532,6 +1850,16 @@
       "enter_role": "请选择角色",
       "selected_user": "已选择用户",
       "suspendedWarning": "您的员工账号已被冻结，无法执行任何操作"
+    },
+    "moderation": {
+      "flaggedTitle": "您的店铺已被标记观察",
+      "suspendedTitle": "您的店铺已被暂停",
+      "flaggedBody": "店铺仍可正常运营，但在搜索中的排序会降低。",
+      "suspendedBody": "暂停期间不会在搜索/推荐等公开页面展示。",
+      "reasonLabel": "原因",
+      "viewAppeal": "查看申诉工单 ›",
+      "submitAppeal": "提交申诉 / 与平台沟通 ›",
+      "appealFailed": "申诉提交失败"
     },
     "role": {
       "title": "角色管理",
@@ -1831,6 +2159,9 @@
       "loading": "加载中...",
       "noEvents": "暂无活动",
       "noEventsHint": "点击右上角\"添加\"按钮创建第一个活动"
+    },
+    "location": {
+      "locationPermissionDenied": "未授予定位权限，无法定位到当前位置"
     }
   },
   "secondhandSearch": {
@@ -2155,6 +2486,7 @@
     },
     "dashboard": {
       "title": "管理员面板",
+      "overview": "概览",
       "stats": {
         "pendingProviderRequests": "待审核商家申请",
         "pendingProviderAudits": "待审核资料更新",
@@ -2165,16 +2497,39 @@
         "totalUsers": "平台用户总数",
         "totalProviders": "平台商家总数"
       },
+      "scopes": {
+        "platform": "平台管理",
+        "regional": "区域管理",
+        "general": "工单与支持"
+      },
+      "greeting": "你好，{{name}}",
+      "adminChip": "管理",
+      "needsAttention": "需要处理",
+      "allClear": "暂无待处理事项",
+      "searchPlaceholder": "搜索管理功能…",
+      "searchEmpty": "无匹配功能",
       "sections": {
         "overview": "数据概览",
         "moderation": "内容审核",
+        "review": "审核中心",
         "users": "用户与权限",
         "providers": "商家与订阅",
         "content": "内容与运营",
-        "system": "系统与工具"
+        "system": "系统与工具",
+        "regionalOverview": "区域概览",
+        "regionalReview": "区域审核",
+        "regionalTeam": "区域团队",
+        "helpdesk": "工单中心"
       },
       "refresh": "刷新",
-      "loadError": "无法加载统计数据"
+      "loadError": "无法加载统计数据",
+      "helpdesk": {
+        "all": "全部"
+      },
+      "unclaimed": {
+        "title": "未认领工单",
+        "viewAll": "查看全部未认领"
+      }
     },
     "userManagement": {
       "title": "用户管理",
@@ -2338,8 +2693,10 @@
     },
     "feedbackInbox": {
       "title": "工单中心",
+      "selectHint": "选择一个工单查看",
       "titleUser": "用户工单",
       "titleBusiness": "商务工单",
+      "titleUserScoped": "该用户的工单",
       "empty": "暂无工单",
       "openedBy": "由",
       "applicantContext": "注册申请",
@@ -2380,7 +2737,10 @@
         "providerRequest": "注册审核",
         "auditRequest": "资料审核",
         "activityReview": "活动审核",
-        "providerOutreach": "主动联系"
+        "providerOutreach": "主动联系",
+        "escalation": "升级状态",
+        "escalationAll": "全部",
+        "escalationOnly": "仅已升级"
       },
       "refType": {
         "providerRequest": "注册申请",
@@ -2389,6 +2749,12 @@
         "provider": "商家",
         "merchantSelfServe": "商家来信",
         "userSelfServe": "用户求助"
+      },
+      "titleCustomer": "顾客工单",
+      "escalatedBadge": "已升级",
+      "level": {
+        "manager": "经理",
+        "director": "总监"
       }
     },
     "feedbackHub": {
@@ -2398,7 +2764,9 @@
       "userTicketsSubtitle": "用户直接提交的支持请求 (HELP)",
       "businessTickets": "商务工单",
       "businessTicketsSubtitle": "商家与平台之间的协作 (HELPBUS)",
-      "pending": "待处理"
+      "pending": "待处理",
+      "customerTickets": "顾客工单",
+      "customerTicketsSubtitle": "顾客↔商家工单，仅商家申请介入后可见 (HELPCUS)"
     },
     "providerDetails": {
       "contact": {
@@ -2428,6 +2796,11 @@
       "reject": "审核拒绝",
       "loadFailed": "加载失败",
       "applicantInfo": "申请人信息",
+      "salesRefInfo": "对接销售",
+      "salesRep": "销售",
+      "salesIncentive": "激励",
+      "incentiveSubscription": "{{tier}} {{days}} 天",
+      "noIncentive": "无",
       "userID": "用户ID",
       "username": "用户名",
       "userNickname": "昵称",
@@ -2441,6 +2814,7 @@
       "applyInfo": "申请信息",
       "applyTime": "申请时间",
       "lastUpdate": "最后更新",
+      "openInMaps": "在地图应用中打开",
       "rejectReason": "拒绝原因",
       "rejectReasonInput": "请输入拒绝原因",
       "rejectCategoryLabel": "拒绝原因分类",
@@ -2556,6 +2930,54 @@
         "abortFailed": "中止测试失败"
       }
     },
+    "socketStressTest": {
+      "title": "Socket 压测",
+      "notice": {
+        "body": "压测客户端运行在后端进程内，使用你当前的登录令牌建立连接。目标留空 = 本机实例（客户端与服务器共享 event loop，结果偏保守，适合握手风暴/相对压测）；填公网地址可把连接分散到其他实例，测单实例真实承载。要测绝对上限请用外部多机施压。"
+      },
+      "configuration": {
+        "title": "测试配置",
+        "concurrentConnections": "并发连接数",
+        "duration": "测试时长",
+        "targetUrl": "目标地址（可选）",
+        "targetUrlPlaceholder": "留空 = 本机；或填 https://app.cobook.org",
+        "targetUrlHint": "留空连接本机实例（含压测客户端开销）。填公网 ALB 地址可经负载均衡分散到其他实例。",
+        "start": "开始 Socket 压测",
+        "custom": "自定义"
+      },
+      "metrics": {
+        "title": "实时指标",
+        "liveConnections": "活跃连接",
+        "peakConnections": "峰值连接",
+        "connectThroughput": "握手吞吐",
+        "errorRate": "握手失败率",
+        "handshakeAvg": "平均握手延迟",
+        "handshakeP95": "P95 握手延迟",
+        "cpuUsage": "CPU 使用率",
+        "memoryUsage": "内存使用",
+        "dbPoolActive": "DB 连接池活跃",
+        "dbPoolWaiting": "DB 连接池等待",
+        "eventLoopLag": "事件循环延迟",
+        "totalHandshakes": "总握手数",
+        "successfulHandshakes": "成功握手",
+        "failedHandshakes": "失败握手"
+      },
+      "charts": {
+        "connectThroughput": "握手吞吐趋势",
+        "handshakeLatency": "握手延迟趋势"
+      },
+      "report": {
+        "avgConnectThroughput": "平均握手吞吐",
+        "peakConnectThroughput": "峰值握手吞吐",
+        "handshakeP99": "P99 握手延迟"
+      },
+      "errors": {
+        "usersRange": "并发连接数需在 1-2000 之间",
+        "durationRange": "测试时长需在 5-60 秒之间",
+        "startFailed": "启动 Socket 压测失败",
+        "abortFailed": "中止测试失败"
+      }
+    },
     "activityReview": {
       "subpages": {
         "title": "子页（跟随本页发布，请一并审核）",
@@ -2648,6 +3070,10 @@
       },
       "pauseConfirm": "确定暂停此活动？",
       "resumeConfirm": "确定恢复此活动？",
+      "reopen": "重新打开活动",
+      "reopenConfirmTitle": "重新打开此活动？",
+      "reopenConfirmDesc": "活动将以新的结束时间「{{date}}」重新上线并对用户曝光",
+      "reopenSuccess": "活动已重新开放",
       "forceArchiveConfirm": "确定强制下线？此操作不可逆",
       "forceArchive": "强制下线",
       "approveConfirmTitle": "确认通过并发布？",
@@ -2735,6 +3161,132 @@
         "description": "描述（可选）"
       }
     },
+    "userAnalytics": {
+      "title": "用户活跃分析",
+      "noPermission": "无权访问用户活跃分析",
+      "noData": "暂无数据",
+      "noOnline": "当前无人在线",
+      "trendTitle": "近 14 天活跃用户 (UTC)",
+      "onlineTitle": "当前在线用户",
+      "onlineSince": "在线自",
+      "userPrefix": "用户",
+      "loadMore": "加载更多",
+      "updatedAt": "更新于",
+      "kpi": {
+        "onlineNow": "当前在线",
+        "dau": "日活 (DAU)",
+        "wau": "周活 (WAU)",
+        "mau": "月活 (MAU)",
+        "avgSession": "今日平均时长",
+        "sessionsToday": "今日会话数"
+      }
+    },
+    "securityAudit": {
+      "title": "安全审计中心",
+      "eventsTitle": "审计事件",
+      "noPermission": "无权访问安全审计",
+      "noData": "暂无数据",
+      "noEvents": "无事件",
+      "lastNDays": "近 {{count}} 天",
+      "viewAllEvents": "全部事件",
+      "all": "全部",
+      "severityFilter": "严重级",
+      "categoryFilter": "类别",
+      "totalEvents": "共 {{count}} 条",
+      "trendTitle": "事件趋势（总数 / 高危）",
+      "bySeverity": "按严重级",
+      "byCategory": "按类别",
+      "topTypes": "Top 事件类型",
+      "topIps": "Top 来源 IP",
+      "kpi": {
+        "total": "事件总数",
+        "adminActions": "管理操作",
+        "authFailures": "认证失败",
+        "distinctIps": "来源 IP"
+      },
+      "severity": {
+        "critical": "严重",
+        "high": "高",
+        "medium": "中",
+        "low": "低",
+        "info": "信息"
+      },
+      "category": {
+        "auth": "认证",
+        "access_control": "访问控制",
+        "abuse": "滥用/风控",
+        "admin_action": "管理操作",
+        "compliance": "合规",
+        "trust_device": "信任设备",
+        "helpdesk": "工单",
+        "other": "其他"
+      },
+      "eventType": {
+        "auth_fail": "认证失败",
+        "rate_limit_hit": "限流命中",
+        "penalty_trigger": "风控降速",
+        "penalty_escalated": "风控升级封禁",
+        "suspicious_pattern": "可疑模式",
+        "blacklist_hit": "黑名单拦截",
+        "manual_block": "手动封禁",
+        "message_send_blocked": "消息被拦截",
+        "admin_force_logout": "强制登出用户",
+        "admin_view_user_analytics": "查看用户活跃分析",
+        "admin_level_system_reset": "重置等级体系",
+        "helpdesk_override_assignment": "工单接管越权",
+        "helpdesk_override_write": "工单写入越权",
+        "legal_hold_set": "设置合规限制",
+        "legal_hold_lifted": "解除合规限制",
+        "legal_hold_deletion_refused": "拒绝删除请求",
+        "trust_device_bypass": "信任设备免验",
+        "trust_device_recorded": "记住设备",
+        "trust_device_user_revoked": "撤销信任设备",
+        "new_device_email_sent": "新设备登录邮件"
+      }
+    },
+    "userUsage": {
+      "title": "用户使用明细",
+      "detailTitle": "使用详情",
+      "entryTitle": "使用记录与活跃",
+      "entrySubtitle": "在线时长、会话历史、每日活跃",
+      "searchPlaceholder": "搜索用户名 / 昵称",
+      "lastNDays": "近 {{count}} 天",
+      "onlineOnly": "仅在线",
+      "custom": "自定义",
+      "sortBy": "排序",
+      "totalCount": "共 {{count}} 名用户",
+      "lastSeen": "最近",
+      "neverSeen": "无记录",
+      "avgShort": "日均",
+      "sessionUnit": "次",
+      "empty": "暂无数据",
+      "online": "在线",
+      "registered": "注册",
+      "dailyChartTitle": "每日使用时长（分钟，UTC）",
+      "sessionsTitle": "使用记录",
+      "noSessions": "暂无会话记录",
+      "sort": {
+        "activeSeconds_desc": "总时长",
+        "avgDaily_desc": "日均",
+        "sessions_desc": "会话数",
+        "lastSeen_desc": "最近活跃"
+      },
+      "stat": {
+        "windowTotal": "窗口内总时长",
+        "avgDaily": "日均时长",
+        "avgSession": "平均会话",
+        "sessions": "会话数",
+        "activeDays": "活跃天数",
+        "allTime": "历史累计"
+      },
+      "closeReason": {
+        "heartbeat_timeout": "超时断开",
+        "disconnect": "断开连接",
+        "logout": "登出",
+        "app_background": "切后台",
+        "open": "进行中"
+      }
+    },
     "activityPlatformAnalytics": {
       "title": "活动数据看板",
       "dateRange": {
@@ -2778,6 +3330,14 @@
       "successTitle": "已强制下线",
       "successMessage": "已撤销 {{username}} 的 {{count}} 个活跃会话",
       "cannotKickSelf": "不能对自己执行强制下线"
+    },
+    "home": {
+      "platformOverview": "概览 · 全平台",
+      "regionContext": "区域概览",
+      "myRegions": "概览 · 我的区域",
+      "regionsSection": "区域",
+      "noRegions": "暂无可治理的区域",
+      "noRegionsDesc": "下方仍可使用你有权限的管理功能。"
     }
   },
   "unknown": {
@@ -2833,7 +3393,11 @@
       "reorderFailed": "排序保存失败，请重试",
       "listed": "上架中",
       "unlisted": "已下架",
-      "cannotUnlistTitle": "无法下架"
+      "cannotUnlistTitle": "无法下架",
+      "usableWindowLabel": "每日可核销时段",
+      "usableWindowHint": "仅在此时段到店核销有效（按商家所在时区），不影响兑换",
+      "usableWindowOvernight": "跨午夜：结束时间为次日",
+      "usableWindowEqual": "起止时间不能相同"
     },
     "detail": {
       "title": "靠谱券详情",
@@ -2842,6 +3406,7 @@
       "statusActive": "可使用",
       "statusUsed": "已使用",
       "statusExpired": "已过期",
+      "statusRevoked": "已撤销",
       "typeDiscount": "折扣券",
       "typeGift": "礼品券",
       "typeService": "服务券",
@@ -2853,9 +3418,16 @@
       "validityPeriod": "有效期长度",
       "days": "天",
       "expiringSoon": "即将过期",
+      "usableWindow": "可核销时段",
+      "usableWindowNextDay": "次日",
+      "usableWindowNotice": "仅 {{start}}–{{end}} 到店可核销",
+      "windowClosedTitle": "暂不在可核销时段",
+      "windowOpensAt": "{{time}} 开放",
       "qrSection": "使用凭证",
       "qrHint": "请向商家出示此二维码",
+      "refundHint": "如需退券，请联系商家协助处理。退券后积分将退还到您的积分卡。",
       "voucherCode": "券码",
+      "selectHint": "选择一张券查看",
       "provider": "适用商家",
       "instructions": "使用说明",
       "instruction1": "到店消费时向商家出示靠谱券",
@@ -2890,6 +3462,7 @@
       "term2": "到店出示券码即可使用",
       "term3": "每张券限使用一次，不可叠加",
       "term4": "过期后自动失效，积分将退回",
+      "usableWindowTerm": "兑换后仅可在每日 {{window}} 到店核销（按商家时区）",
       "viewProvider": "前往商家页面兑换",
       "redeemNow": "立即兑换"
     },
@@ -2902,7 +3475,8 @@
       "todayExpiry": "今天过期",
       "emptyActive": "暂无可用的靠谱券",
       "emptyUsed": "暂无已使用的靠谱券",
-      "emptyExpired": "暂无已过期的靠谱券",
+      "emptyExpired": "暂无已过期/已退还的靠谱券",
+      "refundedPoints": "已退还 {{points}} 积分",
       "emptyAll": "暂无靠谱券"
     },
     "redeemableDetail": {
@@ -3059,10 +3633,22 @@
     "newBalance": "剩余积分",
     "codeLabel": "核销码",
     "codeHint": "向商家出示此二维码核销",
+    "usableWindowNotice": "仅每日 {{start}}–{{end}} 到店可核销",
     "viewVouchers": "查看优惠券",
     "done": "完成"
   },
   "voucherVerification": {
+    "statusLabel": "券状态",
+    "validityTitle": "有效性",
+    "withinWindow": "当前在可核销时段内",
+    "outsideWindowNow": "当前不在可核销时段",
+    "sourceTitle": "兑换来源",
+    "sourceRedeemedWithPoints": "顾客用 {{points}} 积分兑换了「{{product}}」",
+    "sourceRedeemedProduct": "顾客兑换了「{{product}}」",
+    "sourceUnknownProduct": "兑换项目",
+    "sourcePointsRequired": "需 {{points}} 积分",
+    "sourceBundle": "套餐兑换：{{product}}",
+    "sourceBundleDefault": "套餐",
     "invalidQr": "无效的优惠券二维码",
     "noProvider": "缺少商家信息",
     "cannotGetDetail": "无法获取优惠券详情",
@@ -3075,6 +3661,7 @@
     "confirmVerify": "确认核销",
     "verifyFailed": "核销失败",
     "unknownErrorRetry": "未知错误，请重试",
+    "outsideUsableWindow": "当前不在可核销时段（{{start}}–{{end}}），请在该时段内到店核销",
     "networkErrorRetry": "网络错误，请检查网络连接后重试",
     "loading": "正在加载优惠券信息…",
     "cannotLoad": "无法加载优惠券信息",
@@ -3090,6 +3677,8 @@
     "usedAt": "使用时间",
     "daysLeft": "剩余天数",
     "daysUnit": "{{n}} 天",
+    "usableWindow": "可核销时段",
+    "usableWindowNextDay": "次日",
     "redeemInfo": "兑换信息",
     "redeemedProduct": "兑换商品",
     "pointsUsed": "使用积分",
@@ -3103,11 +3692,78 @@
     "verifiedAt": "核销时间",
     "verifyButton": "核销优惠券",
     "back": "返回",
-    "status": {"active": "可使用", "used": "已使用", "expired": "已过期"},
-    "type": {"discount": "折扣券", "gift": "礼品券", "service": "服务券", "cash": "现金券", "default": "优惠券"},
+    "status": {
+      "active": "可使用",
+      "used": "已使用",
+      "expired": "已过期",
+      "revoked": "已撤销"
+    },
+    "type": {
+      "discount": "折扣券",
+      "gift": "礼品券",
+      "service": "服务券",
+      "cash": "现金券",
+      "default": "优惠券"
+    },
+    "today": "今天",
+    "yesterday": "昨天",
+    "tabPending": "未核销",
+    "tabUsed": "已核销",
+    "pendingEmpty": "暂无待核销优惠券",
+    "pendingCount": "待核销 {{n}} 张",
+    "pointsRefundable": "可退 {{points}} 积分",
+    "statTotal": "总核销",
+    "statToday": "今日",
+    "statYesterday": "昨日",
+    "statWeek": "近7天",
+    "statMonth": "近30天",
+    "verifiedRecords": "核销记录",
+    "usedEmpty": "暂无核销记录",
+    "revokeButton": "撤销退券",
+    "cannotRevokeNotActive": "仅未核销的优惠券可撤销",
+    "confirmRevokeTitle": "确认撤销",
+    "confirmRevokeMsg": "撤销「{{title}}」后，{{points}} 积分将退还给用户，本次兑换不计入次数。确认撤销？",
+    "confirmRevokeMsgNoPoints": "撤销「{{title}}」后，本次兑换不计入次数。确认撤销？",
+    "confirmRevokeAction": "确认撤销",
+    "revokeSuccess": "已撤销退券",
+    "revokeRefunded": "已退还 {{points}} 积分给用户",
+    "revokeFailed": "撤销失败",
+    "tabRefunded": "已过期 / 已撤销",
+    "refundedAt": "退还时间",
+    "refundedEmpty": "暂无已退还记录",
+    "searchEmptyTitle": "未找到券码",
+    "searchEmptyHint": "换个券码试试",
+    "refundedCount": "已退还 {{n}} 张",
+    "refundReasonRevoked": "商家撤销",
+    "refundReasonExpired": "过期退还",
+    "pointsRefunded": "已退 {{points}} 积分",
     "receiptTitle": "核销成功",
     "receiptDesc": "「{{title}}」已核销",
-    "done": "完成"
+    "done": "完成",
+    "confirmTitleNamed": "确认核销「{{title}}」",
+    "confirmLineType": "类型：{{type}}",
+    "confirmLineExpires": "有效期至：{{date}}",
+    "confirmLineDaysLeft": "剩余 {{n}} 天",
+    "confirmLineCustomer": "顾客：{{customer}}",
+    "forceConfirmTitle": "强制核销",
+    "forceConfirmMsg": "当前不在可核销时段（{{start}}–{{end}}），强制核销将记入日志。确定核销「{{title}}」？",
+    "forceConfirmAction": "强制核销",
+    "forceVerifyButton": "强制核销（时段外）",
+    "scanNext": "继续扫下一张",
+    "forcedBadge": "时段外强制",
+    "claimLabel": "领取",
+    "verifyLabel": "核销",
+    "refundLabel": "退还",
+    "pointsRefundableLabel": "可退还积分",
+    "pointsRefundedLabel": "已退积分",
+    "statusPending": "待核销",
+    "statusUsed": "已核销",
+    "statusRevoked": "已撤销",
+    "statusExpired": "已过期",
+    "filterToday": "今日",
+    "filterWeek": "近7天",
+    "filterMonth": "近30天",
+    "filterAll": "全部"
   },
   "scorecardManagement": {
     "permissionError": "权限错误",
@@ -3168,7 +3824,14 @@
     "invalidAmountValue": "请输入有效的消费金额",
     "currentRuleHint": "当前规则：{{amountPerPoint}} {{currency}} = 1 积分（点击查看 / 修改）",
     "historyAmountInfo": "消费 {{amount}} {{currency}} · {{rate}} {{currency}}/积分",
-    "freeRedeem": "免费"
+    "freeRedeem": "免费",
+    "refundedBadge": "已撤回",
+    "reversalBadge": "撤回",
+    "refundAction": "撤回",
+    "refundConfirmTitle": "撤回加分",
+    "refundConfirmMessage": "将生成一条反向扣减以撤回本次加分，确定？",
+    "refundConfirmAction": "撤回",
+    "refundSuccessTitle": "已撤回"
   },
   "scorecardExchangeRule": {
     "screenTitle": "货币-积分兑换规则",
@@ -3243,9 +3906,13 @@
     "list": {
       "title": "我的工单",
       "empty": "暂无工单",
+      "selectHint": "选择一个工单查看",
       "createFirst": "创建第一个工单",
       "titleBusiness": "商务工单",
-      "emptyBusiness": "该商户暂无商务工单"
+      "emptyBusiness": "该商户暂无商务工单",
+      "titleCustomerMerchant": "顾客工单",
+      "titleCustomerMine": "我联系的商家",
+      "emptyCustomer": "暂无工单"
     },
     "create": {
       "title": "新建工单",
@@ -3256,7 +3923,8 @@
       "descriptionPlaceholder": "请详细描述您遇到的问题或建议...",
       "submit": "提交",
       "titleBusiness": "新建商务工单",
-      "contextLabel": "关联"
+      "contextLabel": "关联",
+      "titleCustomer": "联系商家"
     },
     "detail": {
       "title": "工单详情",
@@ -3282,7 +3950,14 @@
       "attachmentDeleteFailed": "删除失败",
       "attachmentDeleteCounterpartyReplied": "对方已回复，无法撤回。附件已成为对话记录的一部分，需联系客服处理。",
       "attachmentDeleteWindowExpired": "撤回窗口已过期（上传 7 天后），需联系客服处理。",
-      "attachmentDeletedLabel": "附件已被上传人删除"
+      "attachmentDeletedLabel": "附件已被上传人删除",
+      "requestIntervention": "申请管理员介入",
+      "requestInterventionConfirm": "申请平台管理员介入此工单？介入后管理员可查看并回复。",
+      "interventionRequestedBanner": "已申请平台管理员介入，管理员认领后会回复",
+      "startHandling": "开始处理",
+      "markSolved": "标记完成",
+      "stateUpdated": "状态已更新",
+      "reopen": "重新打开"
     },
     "error": {
       "title": "错误",
@@ -3290,7 +3965,10 @@
       "descriptionRequired": "请输入描述",
       "createFailed": "提交失败，请稍后重试",
       "businessProviderMissing": "请选择商户",
-      "noCreatePerm": "没有为该商户开商务工单的权限"
+      "noCreatePerm": "没有为该商户开商务工单的权限",
+      "interventionNotRequested": "需商家先申请管理员介入",
+      "interventionFailed": "申请失败，请重试",
+      "stateUpdateFailed": "状态更新失败，请重试"
     },
     "timeline": {
       "open": "未认领",
@@ -3308,11 +3986,18 @@
       },
       "action": {
         "claim": "认领此工单",
+        "pull": "提到平台并认领",
+        "takeover": "接管工单",
+        "takeoverPull": "提到平台并接管",
         "transfer": "转交",
         "release": "释放",
         "override": "强制接管",
         "solve": "完成工单",
-        "reopen": "重新打开"
+        "reopen": "重新打开",
+        "escalate": "上报平台",
+        "escalateToManager": "升级给经理",
+        "escalateToDirector": "升级给总监",
+        "escalateGeneric": "升级工单"
       },
       "solveConfirmTitle": "完成此工单？",
       "solveConfirmMsg": "工单状态将标记为「已完成」。如果之后还需要继续处理，可在「已完成」状态下点击「重新打开」恢复。",
@@ -3325,6 +4010,12 @@
       "overrideConfirmTitle": "强制接管此工单？",
       "overrideConfirmMsg": "此操作会被记入安全审计事件。仅在原 assignee 不可达时使用。",
       "confirmOverride": "确认接管",
+      "takeoverConfirmTitle": "接管此工单？",
+      "takeoverConfirmMsg": "工单将提级并指派给你，{{name}} 将收到接管通知。此操作会留痕。",
+      "takeoverPullConfirmTitle": "提到平台并接管此工单？",
+      "takeoverPullConfirmMsg": "工单将转入平台层级并指派给你，{{name}} 将收到接管通知。此操作会留痕。",
+      "confirmTakeover": "确认接管",
+      "replyTakeoverFirstHint": "工单由 {{name}} 处理中，请先「接管」才能回复",
       "releaseConfirmTitle": "释放此工单？",
       "releaseConfirmMsg": "工单将变为未认领状态，需要其他团队成员重新认领。",
       "confirmRelease": "确认释放",
@@ -3341,7 +4032,11 @@
         "transfer": "由 {{from}} 转交给 {{to}}",
         "release": "{{actor}} 释放",
         "override": "{{actor}} 强制接管",
-        "ytSync": "在 YouTrack 上变更：{{from}} → {{to}}"
+        "ytSync": "在 YouTrack 上变更：{{from}} → {{to}}",
+        "escalate": "{{actor}} 升级了工单{{detail}}",
+        "solve": "{{actor}} 完成并关闭了工单",
+        "reopen": "{{actor}} 重新打开了工单",
+        "autoReopen": "因新回复，工单自动重新打开"
       },
       "eventType": {
         "claim": "认领",
@@ -3350,7 +4045,10 @@
         "release": "释放",
         "override": "强制接管",
         "yt_sync_change": "YouTrack 同步",
-        "auto_reopen_on_reply": "回复后重新打开"
+        "auto_reopen_on_reply": "回复后重新打开",
+        "escalate": "升级",
+        "solve": "完成",
+        "reopen": "重新打开"
       },
       "transfer": {
         "title": "转交工单",
@@ -3372,6 +4070,22 @@
         "claimedBy": "由 {{actor}} 认领",
         "releasedBy": "由 {{actor}} 释放",
         "reopenedBy": "由 {{actor}} 的回复重新打开"
+      },
+      "escalateConfirmTitle": "上报平台处理？",
+      "escalateConfirmMsg": "此工单将移交平台团队处理，离开你的区域队列。请在确认本区域无法处理时再上报。",
+      "confirmEscalate": "确认上报",
+      "escalatedToast": "已上报平台处理",
+      "escalateReasonPlaceholder": "上报原因（可选，将记录在工单中）",
+      "escalatedToastGeneric": "已升级处理",
+      "escalateConfirmTitleNamed": "升级给{{target}}？",
+      "escalateMsgRegional": "此工单将交由{{target}}处理。",
+      "escalateOptionDirector": "升级给总监",
+      "escalateOptionPlatform": "上报平台协助",
+      "confirmEscalateGeneric": "确认升级",
+      "tierName": {
+        "manager": "经理",
+        "director": "总监",
+        "platform": "平台"
       }
     },
     "assignmentError": {
@@ -3379,7 +4093,11 @@
       "NOT_TICKET_ASSIGNEE": "工单已被其他成员认领，无法操作",
       "NOT_PROJECT_TEAM_MEMBER": "你不在该项目的处理团队中",
       "TARGET_NOT_PROJECT_TEAM_MEMBER": "目标用户不在该项目的处理团队中",
-      "ALREADY_CLAIMED": "工单已被其他成员认领",
+      "ALREADY_CLAIMED": "工单已被同级成员认领，无法接管（可改用转交）",
+      "NOT_STAFF": "你没有处理工单的权限",
+      "OUT_OF_SCOPE": "此工单不在你负责的区域内",
+      "CLAIM_REQUIRES_HIGHER_TIER": "此工单属于更高层级，需更高职级才能认领",
+      "ESCALATE_REQUIRES_HIGHER_TIER": "你的职级不足以升级此工单",
       "HELPDESK_BACKEND_UNAVAILABLE": "工单服务暂时不可用，请稍后重试",
       "UNKNOWN_ERROR": "未知错误"
     },
@@ -3393,7 +4111,11 @@
       "auditQuestion": "审核疑问",
       "billing": "账单",
       "partnership": "合作",
-      "other": "其他"
+      "other": "其他",
+      "order": "订单问题",
+      "product": "商品咨询",
+      "voucher": "卡券/积分",
+      "activity": "活动咨询"
     },
     "state": {
       "new": "新建",
@@ -3406,14 +4128,44 @@
     },
     "success": {
       "title": "成功",
-      "created": "工单已提交，我们会尽快处理"
+      "created": "工单已提交，我们会尽快处理",
+      "interventionRequested": "已申请管理员介入"
     },
     "context": {
       "audit_request": "审核请求",
       "activity_review": "活动审核",
       "provider_audit": "商户审核",
       "provider_request": "商户注册",
-      "merchant_self_serve": "商户自助"
+      "merchant_self_serve": "商户自助",
+      "merchant_moderation": "商家处置申诉",
+      "voucher": "卡券",
+      "product": "兑换项目",
+      "activity": "活动",
+      "order": "订单",
+      "provider": "商家"
+    },
+    "moderation": {
+      "cardTitle": "处置申诉裁决",
+      "cardHint": "解除将恢复商家并自动结单；维持则保留处置。",
+      "resolveTitle": "处理申诉",
+      "confirmRestore": "确认解除该商家的处置？",
+      "confirmUphold": "确认维持原处置？",
+      "restored": "已解除处置",
+      "upheld": "已维持处置",
+      "resolveFailed": "操作失败",
+      "action": {
+        "restore": "解除处置",
+        "uphold": "维持处置"
+      }
+    },
+    "contactMerchant": "向商家提问",
+    "prefill": {
+      "voucherSummary": "关于卡券：{{title}}",
+      "voucherBody": "卡券：{{title}}\n卡券编号：{{voucherId}}\n核销凭证号：{{redemptionId}}\n\n问题描述：\n",
+      "activitySummary": "关于活动：{{title}}",
+      "activityBody": "活动：{{title}}\n活动编号：{{activityId}}\n\n问题描述：\n",
+      "productSummary": "关于兑换项目：{{title}}",
+      "productBody": "兑换项目：{{title}}\n项目编号：{{productId}}\n\n问题描述：\n"
     }
   },
   "maintenance": {
@@ -3529,7 +4281,9 @@
       "refreshFailed": "拉取最新内容失败",
       "refreshConfirmTitle": "覆盖本地未保存的编辑？",
       "refreshConfirmBody": "拉取服务端最新翻译会覆盖你正在编辑的内容。",
-      "refreshOverwrite": "覆盖"
+      "refreshOverwrite": "覆盖",
+      "inProgressBlocked": "AI 翻译进行中，请稍后再试",
+      "inProgressBlockedLangs": "部分语言仍在翻译中（{{langs}}），请稍后再试"
     },
     "tapToEdit": "点击输入",
     "editContent": "编辑内容",
@@ -3604,6 +4358,36 @@
       "reviewing": "处理中",
       "resolved": "已处理",
       "dismissed": "已驳回"
+    },
+    "reportProvider": "举报商家",
+    "reportActivity": "举报活动页",
+    "reasonLabel": "原因",
+    "descriptionLabel": "补充说明（选填）",
+    "descriptionLabelRequired": "补充说明（必填）",
+    "descriptionPlaceholderRequired": "请填写举报原因详情",
+    "descriptionRequiredForOther": "选择「其他」时请填写补充说明",
+    "evidenceLabel": "截图证据 {{count}}/{{max}}（选填）",
+    "evidenceUploadFailed": "证据上传失败，请重试",
+    "submitFailed": "提交失败，请稍后重试",
+    "duplicateDismiss": "知道了",
+    "viewMyReports": "查看我的举报",
+    "alsoBlockTitle": "举报已提交",
+    "alsoBlockMessage": "要同时屏蔽该用户吗？屏蔽后将不再看到对方的内容。",
+    "alsoBlockMessageNamed": "要同时屏蔽 {{name}} 吗？屏蔽后将不再看到对方的内容。",
+    "alsoBlockCancel": "暂不",
+    "alsoBlockConfirm": "屏蔽",
+    "blockedSuccess": "已屏蔽",
+    "blockFailed": "屏蔽失败，请稍后重试",
+    "appeal": "申诉",
+    "appealPrefillSummary": "对举报 #{{reportID}} 处理结果的申诉",
+    "appealPrefillBody": "我想申诉举报 #{{reportID}} 的处理结果，原因如下：\n\n",
+    "targetTypeLabel": {
+      "product": "商品",
+      "user": "用户",
+      "review": "评价",
+      "message": "消息",
+      "provider": "商家",
+      "activity": "活动页"
     }
   },
   "block": {
@@ -3638,6 +4422,16 @@
     "offlineMode": "离线模式",
     "networkError": "网络连接错误",
     "networkErrorDesc": "无法连接到服务器"
+  },
+  "loginRequired": {
+    "bannerTitle": "登录后查看完整内容",
+    "bannerAction": "点击登录",
+    "cardTitle": "登录后查看",
+    "cardButton": "立即登录",
+    "scorecardTitle": "登录后查看积分卡",
+    "scorecardDesc": "登录即可领取并查看你在该商家的积分卡",
+    "reviewTitle": "登录后查看与发表评价",
+    "activitySectionTitle": "登录后查看此内容"
   },
   "emptyState": {
     "secondhand": {
@@ -3728,6 +4522,10 @@
       "carouselImages": "轮播图片",
       "editRichText": "打开富文本编辑器",
       "submitForReview": "提交审核",
+      "adminPublish": "直接发布",
+      "adminRepublish": "保存并发布",
+      "confirmAdminPublish": "直接发布该活动页（免审核，发布后仍可修改）？",
+      "adminPublished": "已发布",
       "platformPublishHint": "平台活动页由你直接发布，无需审核。点击下方设置受众、展示位与曝光后发布。",
       "platformPublishConfig": "发布与曝光配置",
       "withdrawSubmission": "撤回提交",
@@ -3815,7 +4613,32 @@
       "loyalty_tier_showcase": "会员等级",
       "flash_sale": "限时秒杀",
       "bundle_deal": "套餐组合",
-      "subpage": "子页入口"
+      "subpage": "子页入口",
+      "link_button": "按钮 / 链接"
+    },
+    "linkButton": {
+      "placeholder": "跳转按钮（未配置目标，进入编辑器设置）",
+      "defaultExternal": "打开链接",
+      "preset": {
+        "myVouchers": "我的靠谱券",
+        "myScorecards": "我的积分卡包",
+        "achievements": "我的成就",
+        "favoriteProviders": "收藏的商家",
+        "watchlist": "关注的二手",
+        "secondhandMarket": "逛二手市场",
+        "search": "搜索",
+        "thisProvider": "进入店铺",
+        "contactProvider": "联系商家",
+        "contactPlatform": "联系客服",
+        "contactHub": "联系我们"
+      }
+    },
+    "map": {
+      "myLocation": "我的位置",
+      "locateItem": "定位到此项目",
+      "locateFailed": "无法获取你的位置",
+      "viewDetail": "查看详情",
+      "viewStore": "查看商家"
     },
     "subpage": {
       "placeholder": "子页入口（暂未关联，进入编辑器创建或选择子页）",
@@ -3948,7 +4771,17 @@
     },
     "list": {
       "viewAnalytics": "查看效果",
-      "reachedUsers": "{{count}} 触达"
+      "reachedUsers": "{{count}} 触达",
+      "empty": "暂无活动页面",
+      "platformEmpty": "暂无平台活动页面",
+      "searchPlaceholder": "搜索活动标题",
+      "noSearchResults": "没有匹配的活动页面"
+    },
+    "sort": {
+      "label": "排序",
+      "createdAt": "创建时间",
+      "updatedAt": "修改时间",
+      "viewCount": "浏览量"
     },
     "carousel": {
       "viewAll": "查看全部"
@@ -3960,6 +4793,10 @@
       "categoryActivities": "本类目活动",
       "categoryLanding": "相关推荐活动"
     }
+  },
+  "permissionDenied": {
+    "title": "没有权限",
+    "description": "你没有执行此操作的权限。"
   },
   "subscription": {
     "limitReached": "已达上限",
@@ -4024,10 +4861,20 @@
     "unlimited": "无限制",
     "expiresAt": "到期时间",
     "tierUpdated": "订阅方案已更新",
+    "source": {
+      "paid": "付费",
+      "reward": "奖励",
+      "admin": "管理员",
+      "trial": "试用",
+      "legacy": "历史"
+    },
     "dashboard": {
       "title": "订阅方案",
       "subtitle": "查看当前方案和资源使用情况",
       "currentPlan": "当前方案",
+      "timeline": "订阅时间线",
+      "perpetual": "长期",
+      "daysLeft": "剩 {{n}} 天",
       "current": "当前",
       "contactSales": "联系商务",
       "freeForever": "永久免费",
@@ -4076,7 +4923,13 @@
     },
     "xpProgress": "{{current}} / {{next}} XP",
     "xpMax": "{{current}} XP (已满级)",
-    "equipHint": "从成就详情装备徽章"
+    "equipHint": "从成就详情装备徽章",
+    "defs": {
+      "beta_vanguard": {
+        "name": "先遣者",
+        "description": "在 CoBook 公测期间注册加入，成为最早与我们同行的先行者。"
+      }
+    }
   },
   "region": {
     "region": "地区",
@@ -4385,7 +5238,12 @@
     "VOUCHER_NOT_FOUND": "凭证不存在",
     "VOUCHER_TEMPLATE_NOT_FOUND": "凭证模板不存在",
     "VOUCHER_ALREADY_USED": "凭证已使用",
+    "VOUCHER_ALREADY_REVOKED": "凭证已撤销",
     "VOUCHER_EXPIRED": "凭证已过期",
+    "VOUCHER_OUTSIDE_USABLE_WINDOW": "当前不在该券的可核销时段",
+    "NO_PERMISSION_FORCE_VERIFY": "你没有时段外强制核销的权限",
+    "VOUCHER_USABLE_WINDOW_INCOMPLETE": "可核销时段需同时设置开始和结束时间",
+    "VOUCHER_USABLE_WINDOW_INVALID": "可核销时段的开始与结束时间不能相同",
     "VOUCHER_NOT_OWNED_BY_PROVIDER": "该凭证不属于此商家",
     "SCORECARD_NOT_FOUND": "积分卡不存在",
     "SCORECARD_NOT_FOUND_OR_INVALID": "积分卡不存在或已失效",
@@ -4418,6 +5276,7 @@
     "ACTIVITY_PAGE_BUDGET_INVALID_STATE": "仅已发布 / 已暂停状态可调整预算",
     "ACTIVITY_PAGE_AUDIENCE_INVALID_STATE": "当前状态不允许调整受众",
     "ACTIVITY_PAGE_CONTENT_NOT_EDITABLE": "当前状态不允许编辑活动内容",
+    "SECTION_TYPE_PLATFORM_ONLY": "该区块仅平台管理员可添加",
     "ACTIVITY_SECTION_NOT_FOUND": "区块不存在",
     "ACTIVITY_ENDED": "活动已结束",
     "ACTIVITY_NOT_LIVE": "活动未投放",
@@ -4528,7 +5387,15 @@
     "TOTP_REQUIRED": "请输入两步验证码",
     "TOTP_INVALID_CODE": "验证码无效，请重试",
     "TOTP_NOT_ENABLED": "此账号未启用两步验证",
-    "TOTP_ALREADY_ENABLED": "此账号已启用两步验证"
+    "TOTP_ALREADY_ENABLED": "此账号已启用两步验证",
+    "PROVIDER_NOT_LINKED": "该登录方式未绑定到当前账号",
+    "STEP_UP_TICKET_INVALID": "验证已过期，请重试",
+    "OPERATION_NOT_FOUND": "找不到该操作记录",
+    "OPERATION_NOT_OWNED": "无权撤回该操作",
+    "OPERATION_NOT_REFUNDABLE": "该操作不支持撤回",
+    "OPERATION_ALREADY_REFUNDED": "该加分已被撤回",
+    "OPERATION_OUTSIDE_REFUND_WINDOW": "已超过可撤回时限",
+    "INSUFFICIENT_BALANCE_FOR_REFUND": "顾客积分余额不足，无法撤回"
   },
   "twoFactor": {
     "title": "两步验证",
@@ -4611,5 +5478,485 @@
     "knownDeviceRevokeConfirmTitle": "撤销该设备的信任？",
     "knownDeviceRevokeConfirmMessage": "{{device}} 将被立即登出并视为陌生设备，下次登录需要重新输入 2FA 验证码并勾选\"记住此设备\"。",
     "knownDeviceRevokedSuccess": "已撤销并登出 {{count}} 个会话"
+  },
+  "menu": {
+    "management": "菜单管理",
+    "managementDescription": "管理餐厅菜单、菜品与套餐",
+    "categories": "分类",
+    "manageCategories": "管理分类",
+    "noCategories": "尚无分类",
+    "dishes": "菜品",
+    "addDish": "添加菜品",
+    "noDishes": "还没有菜品",
+    "combos": "套餐",
+    "addCombo": "添加套餐",
+    "noCombos": "还没有套餐",
+    "dishName": "菜名",
+    "dishDescription": "简介",
+    "price": "价格",
+    "category": "分类",
+    "uncategorized": "未分类",
+    "images": "图片",
+    "addImage": "添加图片",
+    "published": "上架",
+    "available": "可售",
+    "comboName": "套餐名称",
+    "comboDescription": "套餐简介",
+    "comboPrice": "套餐价",
+    "compareAtPrice": "原价（可选，留空按成员菜价合计）",
+    "comboMembers": "套餐含菜品",
+    "original": "原价",
+    "save": "立省",
+    "create": "创建",
+    "newCategory": "新建分类",
+    "renameCategory": "重命名分类",
+    "fromTemplate": "从模板快速添加",
+    "untitled": "（未命名）",
+    "deleted": "已删除",
+    "deleteDishTitle": "删除菜品",
+    "deleteComboTitle": "删除套餐",
+    "deleteCategoryTitle": "删除分类",
+    "createDishFailed": "创建菜品失败",
+    "createComboFailed": "创建套餐失败",
+    "imageUploadFailed": "图片上传失败",
+    "dishEditorTitle": "编辑菜品",
+    "comboEditorTitle": "编辑套餐",
+    "soldOut": "售罄",
+    "detailTitle": "详情",
+    "pageTitle": "菜单",
+    "viewMenu": "查看菜单",
+    "empty": "暂无菜单",
+    "dishCount": "{{count}} 道菜品",
+    "comboCount": "{{count}} 个套餐"
+  },
+  "contactUs": {
+    "title": "联系我们",
+    "platformTicketsTitle": "平台工单",
+    "platformTicketsDescription": "就 CoBook 平台问题联系官方支持",
+    "merchantTicketsTitle": "商家工单",
+    "merchantTicketsDescription": "查看你与商家沟通的工单"
+  },
+  "sales": {
+    "resource": {
+      "title": "激励资源",
+      "mine": "我的资源",
+      "none": "暂无激励资源",
+      "grant": "发放激励资源",
+      "granted": "资源已发放",
+      "grantFailed": "发放失败",
+      "label": "标签（如 Pro 120天激励）",
+      "labelPlaceholder": "Pro 120天激励",
+      "quantity": "数量（库存）",
+      "invalidQty": "请输入有效数量",
+      "remaining": "剩 {{n}}/{{total}}",
+      "give": "送资源",
+      "allocateTitle": "选择要送的资源",
+      "allocated": "已分配给商家",
+      "allocFailed": "分配失败",
+      "noneAvailable": "暂无可用资源",
+      "status": {
+        "exhausted": "已用尽",
+        "expired": "已过期",
+        "revoked": "已撤销"
+      },
+      "err": {
+        "RESOURCE_EXHAUSTED_OR_EXPIRED": "资源已用尽或过期",
+        "PROVIDER_NOT_OWN_REFERRAL": "只能分配给自己名下的商家",
+        "RESOURCE_DISPATCH_FAILED": "激励发放失败"
+      },
+      "eachUnit": "每单位：{{reward}}",
+      "validUntil": "有效期至 {{date}}"
+    },
+    "status": {
+      "label": "状态",
+      "active": "在职",
+      "inactive": "已停用",
+      "suspended": "已暂停"
+    },
+    "stage": {
+      "applying": "申请中",
+      "approvedNotActivated": "待完善",
+      "activated": "已激活"
+    },
+    "trigger": {
+      "merchant_approved": "申请通过",
+      "merchant_first_completed": "首次完善资料",
+      "merchant_first_transaction": "首次经营",
+      "merchant_retained_30d": "留存 30 天",
+      "merchant_subscribed_paid": "转付费订阅"
+    },
+    "reward": {
+      "subscription": "送订阅",
+      "points": "送积分",
+      "commission_waiver": "免佣",
+      "custom": "自定义",
+      "daysShort": "{{n}} 天"
+    },
+    "tier": {
+      "free": "免费版",
+      "basic": "基础版",
+      "premium": "高级版",
+      "business": "商务版"
+    },
+    "redemptionStatus": {
+      "granted": "已发放",
+      "pending": "待处理",
+      "reversed": "已撤销",
+      "failed": "失败"
+    },
+    "dashboard": {
+      "title": "销售看板",
+      "sectionTitle": "我的拉新",
+      "myCode": "我的推荐码",
+      "share": "分享推荐码",
+      "shareMessage": "用我的推荐码入驻 CoBook：{{code}}",
+      "copyCode": "推荐码",
+      "noProfile": "你还不是销售。请联系平台管理员开通。",
+      "myMerchants": "我拉来的商家",
+      "unnamed": "（未命名）",
+      "suspended": "已封停",
+      "emptyMerchants": "还没有商家通过你的推荐码入驻",
+      "shareContactPhone": "电话：{{phone}}",
+      "shareContactEmail": "邮箱：{{email}}",
+      "contactToggleFailed": "设置失败",
+      "regionLabel": "区域 #{{id}}",
+      "platformWide": "平台级",
+      "contactPublicTitle": "对商家公开联系方式",
+      "contactPublicSub": "开启后商家可看到你的电话/邮箱，分享文案也会附带",
+      "tierUntil": "到 {{date}}",
+      "tierPerpetual": "永久"
+    },
+    "admin": {
+      "title": "销售管理",
+      "sectionTitle": "销售管理",
+      "detailTitle": "销售详情",
+      "createRep": "新建销售",
+      "empty": "还没有销售",
+      "invalidUserId": "请输入有效的用户 ID",
+      "missingName": "请输入销售名称",
+      "created": "销售已创建",
+      "createFailed": "创建失败",
+      "userId": "用户 ID *",
+      "displayName": "销售名称 *",
+      "contactEmail": "邮箱",
+      "contactPhone": "电话",
+      "regionId": "区域 ID（选填，空=平台级）",
+      "notes": "备注",
+      "user": "用户",
+      "region": "区域",
+      "ruleAdded": "规则已添加",
+      "ruleFailed": "操作失败",
+      "deleteRuleTitle": "删除规则",
+      "deleteRuleMsg": "删除后已发放的激励不受影响。确定删除？",
+      "regenTitle": "重新生成推荐码",
+      "regenMsg": "旧码将失效。确定？",
+      "codeRegenerated": "推荐码已更新",
+      "deactivateTitle": "停用销售",
+      "deactivateMsg": "将撤销其销售角色。确定？",
+      "deactivate": "停用",
+      "deactivated": "已停用",
+      "notFound": "未找到销售",
+      "incentiveRules": "激励规则",
+      "noRules": "暂无激励规则",
+      "redemptions": "发放台账",
+      "noRedemptions": "暂无发放记录",
+      "inactive": "已停用",
+      "addRule": "添加激励规则",
+      "triggerLabel": "触发里程碑",
+      "rewardLabel": "奖励类型",
+      "tierLabel": "订阅档位",
+      "durationLabel": "时长（天）",
+      "rewardNotAutoGranted": "该奖励类型暂不自动发放（仅记录台账）",
+      "regenCode": "重发码",
+      "referralCode": "推荐码（选填，6 位数字，留空自动生成）",
+      "codeTaken": "该推荐码已被占用",
+      "invalidCode": "推荐码必须是 6 位数字",
+      "changeCode": "改推荐码",
+      "changeCodeTitle": "修改推荐码",
+      "reactivate": "启用",
+      "reactivated": "已启用",
+      "manualCodeLabel": "指定 6 位数字推荐码",
+      "randomCode": "随机生成",
+      "editInfo": "编辑信息",
+      "editInfoTitle": "编辑销售信息",
+      "nameRequired": "请填写显示名",
+      "infoSaved": "信息已保存"
+    },
+    "milestone": {
+      "title": "里程碑",
+      "toNext": "已激活 {{count}} 家 · 距下一级还差 {{remaining}} 家",
+      "maxed": "已激活 {{count}} 家 · 已达最高级",
+      "thresholdShort": "{{n}} 家",
+      "step": {
+        "applied": "已申请",
+        "approved": "已通过",
+        "activated": "已激活"
+      },
+      "incentiveGranted": "已发激励",
+      "rewardBenefit": "奖励：{{reward}} 充入你的资源池",
+      "honorBenefit": "荣誉徽章",
+      "rewardCount": "奖励 {{n}} 项",
+      "progressTitle": "进度",
+      "rewardHistory": "奖励历史",
+      "noRewards": "还没有发放过奖励"
+    },
+    "resourceStatus": {
+      "exhausted": "已用尽",
+      "expired": "已过期",
+      "revoked": "已撤销"
+    },
+    "milestoneAdmin": {
+      "title": "里程碑阶梯",
+      "create": "新建阶梯",
+      "createTitle": "新建阶梯",
+      "editTitle": "编辑阶梯",
+      "empty": "还没有里程碑阶梯",
+      "titleField": "阶梯名称",
+      "titlePlaceholder": "如：黄金拓展者",
+      "thresholdField": "阈值（激活商家数）",
+      "levelField": "阶梯序号",
+      "rewardModeField": "奖励形式",
+      "mode": {
+        "honor": "仅荣誉",
+        "reward": "挂奖励"
+      },
+      "rewardTierField": "充值订阅档位",
+      "durationField": "时长（天）",
+      "quantityField": "充值数量",
+      "badgeField": "徽章图标（可选，MCI 图标名）",
+      "activeField": "启用",
+      "saved": "已保存",
+      "saveFailed": "保存失败",
+      "deleteTitle": "删除阶梯",
+      "deleteMsg": "若已有销售解锁该阶梯将无法删除。确定？",
+      "deleted": "已删除",
+      "deleteFailed": "删除失败",
+      "hasUnlocks": "已有销售解锁，无法删除",
+      "inactive": "已停用",
+      "thresholdLabel": "满 {{n}} 家激活",
+      "rewardSummary": "奖励 {{tier}} {{days}}天 ×{{qty}}",
+      "honorOnly": "仅荣誉",
+      "invalidThreshold": "请输入有效阈值（≥1）",
+      "invalidLevel": "请输入有效阶梯序号（≥1）",
+      "titleRequired": "请填写阶梯名称",
+      "invalidDuration": "请输入有效天数（≥1）",
+      "invalidQuantity": "请输入有效数量（≥1）"
+    },
+    "rebind": {
+      "reasonRequired": "请填写改绑原因",
+      "done": "已更新对接销售",
+      "failed": "操作失败",
+      "cardTitle": "对接销售",
+      "organic": "无对接销售（自然入驻）",
+      "change": "变更对接销售",
+      "sheetTitle": "变更对接销售",
+      "note": "改绑只改未来归属，不重发也不追回已发激励；操作会留审计。",
+      "reasonLabel": "改绑原因（必填）",
+      "unbind": "解绑（移除归属）",
+      "pickRep": "选择新的对接销售",
+      "noReps": "暂无可用销售"
+    },
+    "accountManager": {
+      "title": "我的对接销售",
+      "code": "推荐码 {{code}}"
+    },
+    "rewardSource": {
+      "referral": "推荐激励",
+      "allocation": "资源分配"
+    }
+  },
+  "regional": {
+    "activity": {
+      "title": "区域活动页",
+      "empty": "暂无活动页",
+      "actionDone": "操作成功",
+      "actionFailed": "操作失败",
+      "defaultRejectReason": "内容不符合社区规范",
+      "forceOffline": "强制下线",
+      "forceOfflineTitle": "强制下线",
+      "forceOfflineMessage": "强制下线此活动？下线后将从曝光中移除并归档。",
+      "pause": "暂停",
+      "preview": "查看",
+      "reasonRequired": "驳回原因必填",
+      "reject": "驳回",
+      "rejectConfirmAndroid": "将以“内容不符合社区规范”驳回该活动页？",
+      "rejectReasonPrompt": "请输入驳回原因",
+      "rejectTitle": "驳回活动页",
+      "approve": "通过",
+      "approveTitle": "通过审核",
+      "approveMessage": "通过并发布此活动页？发布后将进入区域曝光。",
+      "resume": "恢复",
+      "share": "分享",
+      "viewAnalytics": "查看效果",
+      "filter": {
+        "paused": "已暂停",
+        "pending": "待审核",
+        "published": "已发布"
+      }
+    },
+    "analytics": {
+      "title": "区域分析",
+      "byRegion": "按区域",
+      "empty": "暂无数据",
+      "error": "加载失败，下拉刷新重试",
+      "row": {
+        "providers": "商家 {{n}}",
+        "rating": "评分 {{n}}",
+        "staff": "员工 {{m}}/{{o}}"
+      },
+      "totals": {
+        "avgRating": "平均评分",
+        "managers": "经理",
+        "newProviders": "近30天新增",
+        "operators": "运营",
+        "providers": "商家总数",
+        "reviews": "评价总数"
+      }
+    },
+    "dashboard": {
+      "title": "区域 Dashboard",
+      "error": "加载失败，下拉刷新重试",
+      "scope": "覆盖 {{count}} 个区域",
+      "stats": {
+        "openHelpdesk": "未结工单",
+        "pendingMerchantReports": "商家举报",
+        "pendingProviderAudits": "待审资料更新",
+        "pendingProviderRequests": "待审入驻申请",
+        "pendingReports": "待处理举报",
+        "providerCount": "区域内商家数"
+      },
+      "allRegions": "全部区域",
+      "manage": "管理"
+    },
+    "merchant": {
+      "actionTitle": "商家处置",
+      "manage": "管理商家",
+      "done": "操作成功",
+      "failed": "操作失败",
+      "flag": "标记观察",
+      "restore": "恢复",
+      "suspend": "暂停",
+      "statusActive": "正常",
+      "statusFlagged": "已标记",
+      "statusSuspended": "已暂停",
+      "currentStatusLabel": "当前状态",
+      "chooseAction": "处置动作",
+      "freezeLevelLabel": "封锁程度（三级防控）",
+      "freezeDiscovery": "仅隐藏",
+      "freezeEngagement": "冻结新增",
+      "freezeFull": "完全冻结",
+      "freezeDiscoveryDesc": "仅从搜索/推荐等公开页隐藏，交易照常",
+      "freezeEngagementDesc": "并冻结新积分/卡券发放与新钱包卡，已发放权益仍可使用",
+      "freezeFullDesc": "并冻结已发放卡券/积分的使用与核销",
+      "reasonRequired": "理由（必填，≥5 字）",
+      "reasonOptional": "说明（可选）",
+      "reasonPlaceholder": "填写处置理由，商家会看到此说明"
+    },
+    "merchantReports": {
+      "title": "区域商家举报",
+      "detailTitle": "商家举报详情",
+      "tabPending": "待处理",
+      "tabHistory": "历史",
+      "emptyHistory": "暂无历史举报记录",
+      "outcomeTitle": "处理结果",
+      "dismissConfirmTitle": "确认驳回此举报？",
+      "dismissConfirmMessage": "驳回后该举报将被关闭，且不对商家采取任何处置。",
+      "actionTitle": "处理商家举报",
+      "dismiss": "驳回举报",
+      "empty": "暂无待处理的商家举报",
+      "handleFailed": "处理失败",
+      "handled": "已处理",
+      "reportedBy": "举报人 {{name}}",
+      "resolveFlag": "结案并标记商家",
+      "resolveSuspend": "结案并暂停商家",
+      "sanction": "处置商家（标记/暂停）…"
+    },
+    "providers": {
+      "title": "区域商家",
+      "empty": "区域内暂无商家",
+      "regionLabel": "区域 #{{id}}",
+      "filterAll": "全部"
+    },
+    "reports": {
+      "title": "区域评价举报",
+      "actionTitle": "处理举报",
+      "dismiss": "驳回举报",
+      "empty": "暂无待处理的评价举报",
+      "handleFailed": "处理失败",
+      "handled": "已处理",
+      "reportedBy": "举报人 {{name}}",
+      "resolveDelete": "删除评价并结案"
+    },
+    "staff": {
+      "title": "区域员工",
+      "assignTitle": "任命员工",
+      "assignFailed": "任命失败",
+      "assigned": "已任命",
+      "confirmAssign": "确认任命",
+      "empty": "暂无区域员工",
+      "invalidUserId": "请输入有效的用户 ID",
+      "pickRegion": "请选择区域",
+      "region": "区域",
+      "revoke": "撤销",
+      "revokeFailed": "撤销失败",
+      "revokeMessage": "确定撤销 {{name}} 的 {{role}} 角色？",
+      "revokeTitle": "撤销员工",
+      "revoked": "已撤销",
+      "role": "角色",
+      "roleManager": "经理",
+      "roleOperator": "运营",
+      "userId": "用户 ID",
+      "roleDirector": "总监",
+      "viewRegion": "查看区域"
+    },
+    "overview": {
+      "title": "区域列表",
+      "providers": "商家",
+      "pending": "待审",
+      "reports": "举报",
+      "staff": "员工",
+      "platformTotals": "全平台汇总",
+      "myTotals": "我的区域汇总",
+      "flagged": "已标记 {{n}}",
+      "suspended": "已暂停 {{n}}",
+      "empty": "暂无可治理的区域",
+      "compareTitle": "各区域对比",
+      "others": "其他"
+    },
+    "regionSwitcher": {
+      "title": "切换区域"
+    },
+    "tier": {
+      "platform": "平台",
+      "director": "总监",
+      "manager": "经理",
+      "operator": "运营"
+    },
+    "helpdesk": {
+      "title": "区域工单中心",
+      "business": "商务工单",
+      "customer": "顾客工单",
+      "unresolved": "未完成",
+      "mine": "我认领",
+      "total": "总量"
+    }
+  },
+  "permission": {
+    "priming": {
+      "allow": "同意",
+      "deny": "暂不允许",
+      "camera": {
+        "title": "允许使用相机",
+        "body": "CoBook 需要使用相机来扫描商家积分卡二维码以累积和核销积分，并拍照设置头像或商家店铺图片。"
+      },
+      "location": {
+        "title": "允许使用位置",
+        "body": "CoBook 需要使用位置来为你推荐附近的商家和可领取积分卡的门店，并将地图定位到你所在区域。"
+      },
+      "photoLibrary": {
+        "title": "允许访问相册",
+        "body": "CoBook 需要访问相册，以便你设置头像、上传商家积分卡封面与店铺图片，并在消息中发送图片。"
+      }
+    }
   }
 }
