@@ -1,4 +1,95 @@
 {
+  "pointCredential": {
+    "issueEntry": "发放积分补偿",
+    "issueTitle": "为顾客生成积分补偿",
+    "issueDisclaimer": "此操作仅补记顾客本次到店消费应得的积分，不是一笔销售，也不涉及任何 App 内收款。",
+    "pointsLabel": "积分数",
+    "pointsPlaceholder": "请输入要发放的积分",
+    "amountLabel": "消费金额",
+    "amountPlaceholder": "如 28.50",
+    "pointsPreview": "≈ {{points}} 积分",
+    "pointsPreviewHint": "输入金额后自动换算积分",
+    "bonusHint": "等级加成将在顾客领取时按其等级追加",
+    "noteLabel": "备注（可选）",
+    "notePlaceholder": "例如：到店消费 · 桌号 5",
+    "invalidAmount": "请输入有效金额",
+    "amountTooSmall": "金额太小，不足 1 积分",
+    "generate": "生成积分补偿",
+    "invalidPoints": "请输入有效的积分数",
+    "generateError": "生成失败，请重试",
+    "pointsAwarded": "本次获得积分",
+    "basePointsAwarded": "本次基础积分",
+    "amountSummary": "消费金额",
+    "noteSummary": "备注",
+    "pointsUnit": "积分",
+    "pointsBreakdown": "基础 {{base}} + 等级奖励 {{bonus}}",
+    "numericCodeLabel": "或手动输入补偿码",
+    "numericCodeShort": "补偿码",
+    "expiresAt": "有效期至 {{date}}",
+    "photoHint": "📸 请拍照保存，有网络时打开 CoBook 领取",
+    "issueAnother": "再发一张",
+    "done": "完成",
+    "myRedemptionsTitle": "我领取过的积分补偿",
+    "issueHistoryTitle": "积分补偿历史",
+    "issueHistoryDesc": "查看已发的积分补偿及领取情况",
+    "emptyRedemptions": "还没有领取记录",
+    "emptyIssued": "还没有发出积分补偿",
+    "loadError": "加载失败，请重试",
+    "statusUnclaimed": "待领取",
+    "statusClaimed": "已领取",
+    "statusExpired": "已过期",
+    "statusRevoked": "已作废",
+    "claimedByShort": "领取人",
+    "unknownUser": "用户",
+    "redeemDrawerEntry": "积分补偿",
+    "detailTitle": "积分补偿详情",
+    "reshowTitle": "重新出示给顾客",
+    "reshowHint": "让顾客用相机扫码，或点下方分享链接发给顾客",
+    "shareLink": "分享领取链接",
+    "shareFailed": "分享失败",
+    "redemptionInfo": "领取信息",
+    "creditedPointsLabel": "实际入账积分",
+    "redeemedByLabel": "领取人",
+    "redeemedAtLabel": "领取时间",
+    "createdAtLabel": "生成时间",
+    "expiresAtLabel": "有效期至",
+    "unredeemableHint": "该积分补偿已过期或作废，无法再领取",
+    "redeemTitle": "积分补偿",
+    "redeemIntro": "输入商家给你的补偿码上的 8 位数字，或从相册选取二维码照片，即可把本次到店消费应得的积分补记到你的账户。",
+    "claimDisclaimer": "积分补偿仅用于补记你在实体门店消费时应得的忠诚度积分。积分是商家提供的免费奖励，不能被购买。",
+    "enterCodeTitle": "输入补偿码",
+    "redeemByCode": "领取",
+    "or": "或",
+    "scanFromAlbum": "从相册选取二维码",
+    "codeFormatHint": "请输入 8 位数字补偿码",
+    "noQrInImage": "未能从照片识别二维码",
+    "processing": "正在领取…",
+    "redeemSuccess": "领取成功",
+    "newBalance": "当前余额 {{balance}}",
+    "redeemAnother": "再领取一张",
+    "redeemFailed": "领取失败，请重试",
+    "pickMerchantTitle": "确认发放商家",
+    "pickMerchantHint": "请选择给你这张积分补偿的商家",
+    "cancel": "取消",
+    "error": {
+      "WRONG_MERCHANT_SELECTED": "商家选择错误，请重试",
+      "CREDENTIAL_ALREADY_CLAIMED": "该积分补偿已被领取",
+      "CREDENTIAL_EXPIRED": "该积分补偿已过期",
+      "CREDENTIAL_REVOKED": "该积分补偿已作废",
+      "CREDENTIAL_NOT_FOUND": "积分补偿不存在",
+      "CHALLENGE_EXPIRED": "操作超时，请重试",
+      "INVALID_QR_TOKEN": "二维码无效"
+    },
+    "revokeAction": "作废积分补偿",
+    "revokeConfirmTitle": "作废积分补偿？",
+    "revokeConfirmMessage": "作废后该积分补偿将无法再被领取，且操作不可恢复。",
+    "revokeConfirmAction": "作废",
+    "revokeSuccess": "积分补偿已作废",
+    "revokeFailed": "作废失败，请重试",
+    "revokeFailedClaimed": "该积分补偿已被顾客领取，无法作废",
+    "revokeFailedExpired": "该积分补偿已过期，无法作废",
+    "viewRedeemerScorecard": "查看领取人积分卡"
+  },
   "merchantActivity": {
     "title": "商家活跃度",
     "overviewTitle": "区域商家健康概览",
@@ -78,7 +169,7 @@
       "modelComposite": "总分 = 各维度子分 × 权重 之和 − 风险扣分。",
       "modelPercentile": "各维度子分 = 你在本区域同行中的百分位（按维度内的实际数据排名，越高越靠前）。",
       "modelRecency": "统计近 {{days}} 天，越近的活动权重越高（近因衰减）。",
-      "modelTiers": "分档：≥80 蓬勃 · ≥60 健康 · ≥40 一般 · ≥20 预警 · <20 沉睡。"
+      "modelTiers": "分档：≥80 蓬勃 · ≥60 健康 · ≥40 一般 · ≥20 预警 · <20 危险。"
     },
     "driver": {
       "windowDays": "统计天数",
@@ -108,15 +199,48 @@
     "usage": "使用情况 / 活跃分析",
     "security": "安全审计事件",
     "tickets": "该用户的工单",
-    "impersonate": "模拟登录",
-    "ban": "封禁 / 解除封禁",
     "bannedBadge": "已封禁",
     "externalUser": "非 CoBook 用户",
     "externalNote": "此工单来自外部邮箱，不是 CoBook 注册用户。",
     "unknownUser": "未知用户",
     "filingColleague": "提交人",
     "ticketSubject": "提交人",
-    "securityForUser": "用户安全审计"
+    "securityForUser": "用户安全审计",
+    "requestLogs": "查看请求日志",
+    "sectionOverview": "概览",
+    "sectionActions": "操作",
+    "emailUnverified": "未验证",
+    "unban": "解除封禁",
+    "unbanOk": "已解除封禁",
+    "unbanFailed": "解除封禁失败",
+    "unbanConfirmTitle": "解除封禁",
+    "unbanConfirmBody": "确定解除该用户的封禁吗？解除后立即恢复访问。",
+    "unbanConfirm": "解除",
+    "activeBan": "当前封禁",
+    "permanent": "永久",
+    "until": "至 {{time}}",
+    "bannedBy": "操作人：{{name}}",
+    "appealTicket": "申诉工单：{{id}}",
+    "pillBannedPerm": "永久封禁",
+    "pillMuted": "禁言中",
+    "pillAdmin": "管理员",
+    "pillProvider": "商家",
+    "pillTest": "测试账号",
+    "statRegistered": "注册于",
+    "statLastSeen": "最后在线",
+    "statEmail": "邮箱",
+    "noDetailPermission": "无权查看该用户的详细资料（需要用户管理权限）。",
+    "cFollowers": "粉丝",
+    "cFollowing": "关注",
+    "cAgeDays": "注册天数",
+    "rowLinked": "已绑定",
+    "linkedNone": "无",
+    "rowPush": "推送",
+    "pushRegistered": "已注册",
+    "pushNone": "未注册",
+    "rowMutedUntil": "禁言至",
+    "rowSubscribeUntil": "订阅至",
+    "rowProvider": "商家"
   },
   "captcha": {
     "title": "人机验证",
@@ -173,11 +297,15 @@
       "good": "良好",
       "fair": "一般",
       "used": "二手"
-    }
+    },
+    "removeFilter": "移除筛选"
   },
   "prologin": {
     "Notlogin": "请先登录",
     "DeviceId": "设备ID : "
+  },
+  "addPoints": {
+    "quickSelect": "快捷选择"
   },
   "scorecard": {
     "manage": {
@@ -199,6 +327,10 @@
       "statusLabel": "状态",
       "listed": "上架中",
       "unlisted": "已下架",
+      "listNow": "立即上架",
+      "listNowLocked": "补齐必填后上架",
+      "createAndBindVoucher": "新建靠谱券并绑定",
+      "voucherCreatedBound": "已新建并绑定靠谱券，可到靠谱券管理页完善",
       "addPointsTitle": "添加积分",
       "modeByAmount": "按金额加",
       "modeByPoints": "按积分加",
@@ -225,7 +357,8 @@
       "redeemableItemsCountSubtitle": "已有 {{count}} 个兑换项目",
       "redeemableItemsTitle": "可兑换项目",
       "redeemableItemsEmptySubtitle": "添加、编辑兑换项目并绑定靠谱券",
-      "manageVouchersSubtitle": "创建并管理用于兑换的靠谱券"
+      "manageVouchersSubtitle": "创建并管理用于兑换的靠谱券",
+      "sort": "排序"
     },
     "setup": {
       "title": "上手引导",
@@ -246,6 +379,7 @@
     "memberCard": "会员卡",
     "availablePoints": "可用积分",
     "scanQRCode": "扫描积分卡二维码",
+    "showToMerchant": "向商家出示此二维码核销积分",
     "cardNumber": "卡号",
     "pointsRequired": "需要 {{points}} 积分",
     "noDescription": "无详细描述",
@@ -320,7 +454,8 @@
           }
         }
       }
-    }
+    },
+    "showQrCode": "出示二维码"
   },
   "settings": {
     "title": "设置",
@@ -328,7 +463,6 @@
     "mySettings": "我的设置",
     "personalSettings": "个人设置",
     "myInfo": "我的信息",
-    "mySubscriptions": "我的订阅",
     "changeChatBackground": "修改聊天背景",
     "appSettings": "应用设置",
     "notifications": "通知设置",
@@ -492,24 +626,6 @@
     "light": "浅色",
     "dark": "深色",
     "select": "选择",
-    "developerConsole": {
-      "title": "开发者控制台",
-      "enterDeveloperKey": "请输入开发者密钥",
-      "developerKeyPlaceholder": "输入密钥",
-      "incorrectDeveloperKey": "密钥错误",
-      "roles": "角色",
-      "permissions": "权限",
-      "noRoles": "无角色",
-      "noPermissions": "无权限",
-      "roleName": "角色名称",
-      "roleLevel": "级别",
-      "scopeType": "范围类型",
-      "scopeName": "范围名称",
-      "permissionName": "权限名称",
-      "permissionCategory": "分类",
-      "priority": "优先级",
-      "description": "描述"
-    },
     "codeRequired": "请输入验证码"
   },
   "userInfo": {
@@ -587,7 +703,10 @@
       "verifying": "验证",
       "wrongPassword": "密码错误",
       "socialMismatch": "该 Google / Apple 账号未绑定到当前账号",
-      "failed": "验证失败，请重试"
+      "failed": "验证失败，请重试",
+      "totpRequired": "此账号已开启两步验证，请输入 6 位验证码",
+      "totpPlaceholder": "6 位验证码",
+      "totpInvalid": "验证码错误，请重试"
     },
     "setPassword": {
       "title": "设置密码",
@@ -636,7 +755,11 @@
     "noAccount": "还没有账号？",
     "welcomeTitle": "欢迎来到 CoBook",
     "welcomeSubtitle": "登录以开始使用 CoBook",
-    "socialLoginInfo": "支持 Google、Apple 等社交账号登录"
+    "socialLoginInfo": "支持 Google、Apple 等社交账号登录",
+    "oidcAuthorizationFailed": "OIDC 授权失败",
+    "oidcPkceVerifierMissing": "PKCE code verifier 缺失",
+    "retryWithReason": "请稍后重试；失败原因：{{reason}}",
+    "retryWithError": "请稍后重试；错误信息：{{error}}"
   },
   "register": {
     "title": "注册",
@@ -715,7 +838,12 @@
     "emptyTitle": "你还没有积分卡",
     "emptyDescription": "访问感兴趣的商家或扫描门店二维码开通积分卡，开始累积积分吧！",
     "findMore": "去发现商家",
-    "defaultCardName": "会员卡"
+    "defaultCardName": "会员卡",
+    "openProvider": "商家主页",
+    "showQrOf": "出示 {{name}} 的积分卡二维码",
+    "showMyCard": "出示积分卡",
+    "packSummary": "{{count}} 张卡 · 共 {{points}} 分",
+    "openCenter": "卡包中心"
   },
   "profile": {
     "myProfile": "我的主页",
@@ -835,7 +963,11 @@
     "userFollowedDesc": "{{followerName}} 关注了你",
     "mutualFollowDesc": "你们已互相关注，现在可以正常聊天了",
     "subscriptionChanged": "账户变更",
-    "subscriptionChangedDesc": "您的账户订阅/次数已更新"
+    "subscriptionChangedDesc": "您的账户订阅/次数已更新",
+    "offerNew": "收到新出价",
+    "offerNewDesc": "对方出价 {{amount}}，点击查看",
+    "offerStatusChanged": "出价状态更新",
+    "offerStatusChangedDesc": "出价 {{amount}}：{{status}}"
   },
   "validation": {
     "usernameRequired": "用户名不能为空",
@@ -881,12 +1013,14 @@
     "Like": "点赞",
     "Followable": "关注",
     "CancelFollow": "已关注",
+    "followsYou": "关注了你",
     "timeoffollow": "关注时间 ",
     "Nofollower": "暂无粉丝",
     "Nolike": "暂无关注",
     "Nofriend": "暂无互关",
     "cancelFollow": "取消关注",
-    "Date": "添加时间"
+    "Date": "添加时间",
+    "fans": "粉丝"
   },
   "common": {
     "error": "错误",
@@ -932,11 +1066,43 @@
       "friday": "周五",
       "saturday": "周六",
       "sunday": "周日"
-    }
+    },
+    "loadingSlowHint": "仍在加载，网络似乎较慢",
+    "userAvatar": "用户头像",
+    "backToTop": "回到顶部",
+    "editAvatar": "编辑头像",
+    "share": "分享",
+    "actionSuccess": "操作成功",
+    "networkError": "网络错误",
+    "operationFailed": "操作失败",
+    "ok": "确定",
+    "justNow": "刚刚",
+    "active": "生效中",
+    "inactive": "已停用",
+    "enabled": "已启用",
+    "loadFailed": "加载失败"
   },
   "secondhand": {
     "loginToViewProductDetails": "登录后才能查看商品详情",
     "imageLoadFailed": "图片加载失败",
+    "allRegions": "全地区",
+    "editSuccess": "修改成功",
+    "editFailed": "修改失败",
+    "unsavedTitle": "有未保存的修改",
+    "unsavedMessage": "离开前是否保存修改？",
+    "discardLeave": "放弃离开",
+    "saveChanges": "保存修改",
+    "imagePermissionTitle": "需要照片权限",
+    "imagePermissionMessage": "请在设置中允许访问照片",
+    "goToSettings": "去设置",
+    "imagePickFailed": "图片选择失败",
+    "imageValidateFailed": "图片验证失败",
+    "imageKeepAtLeastOne": "至少需要保留一张图片",
+    "imageDeleteTitle": "删除图片",
+    "imageDeleteMessage": "确定要删除这张图片吗？删除后无法恢复。",
+    "imageDeleteFailed": "删除失败",
+    "imageAspectRatioInvalid": "第{{index}}张图片长宽比例过大，请重新选择",
+    "imageTooSmall": "第{{index}}张图片大小小于10kb，不符合要求",
     "productDetail": "二手商品详情",
     "productGroupDetail": "商品组详情",
     "edit": "二手商品编辑",
@@ -989,7 +1155,86 @@
       "activeListings": "在售 {{count}} 件",
       "moderationWarning": "此账户曾被平台限制，请谨慎交易"
     },
-    "safetyTip": "面交建议在白天 / 公共场所；先验货后付款；切勿提前转账或扫描陌生收款码。"
+    "safetyTip": "面交建议在白天 / 公共场所；先验货后付款；切勿提前转账或扫描陌生收款码。",
+    "like": "收藏",
+    "unlike": "取消收藏",
+    "addImagesFailed": "添加图片失败",
+    "statusPickerLabel": "状态：",
+    "statusListed": "上架中",
+    "productImagesSection": "商品图片",
+    "productInfoSection": "商品信息",
+    "unsavedChanges": "未保存的修改",
+    "saved": "已保存",
+    "loginToLike": "登录后即可收藏商品",
+    "loginToMessageSeller": "登录后即可私信卖家",
+    "loginToViewContact": "登录后即可查看联系方式并联系卖家",
+    "loginToContactSeller": "登录后联系卖家",
+    "loginToViewGroup": "登录后即可查看商品组",
+    "viewsLabel": "浏览",
+    "likesLabel": "喜欢",
+    "sellerLabel": "卖家",
+    "descriptionTitle": "商品描述",
+    "contactMethodTitle": "联系方式",
+    "contactViaMessage": "请私信联系",
+    "adminInfoTitle": "管理员信息",
+    "adminProductId": "商品ID",
+    "adminSellerId": "发布者ID",
+    "productUnavailableTitle": "商品不可用",
+    "productUnavailableMessage": "该商品不存在或已下架。",
+    "loadFailedTitle": "加载失败",
+    "loadFailedMessage": "无法加载商品，请检查网络后重试。",
+    "filter": {
+      "categoryAll": "全部",
+      "category": {
+        "furniture": "家具装饰",
+        "electronics": "电子产品",
+        "fashion": "时尚服饰",
+        "beauty": "美妆护肤",
+        "booksMedia": "书籍音像",
+        "sports": "运动户外",
+        "crafts": "手工艺品",
+        "other": "其他"
+      },
+      "sort": {
+        "newest": "最新",
+        "mostLiked": "最热",
+        "priceAsc": "价格最低",
+        "priceDesc": "价格最高"
+      },
+      "time": {
+        "day1": "24小时内",
+        "week1": "一周内",
+        "month1": "一月内",
+        "months6": "半年内"
+      },
+      "condition": {
+        "new": "全新",
+        "slightWear": "略有磨损",
+        "worn": "有磨损",
+        "damaged": "破损",
+        "incomplete": "残缺"
+      },
+      "priceLabel": "价格",
+      "priceMin": "最低价",
+      "priceMax": "最高价"
+    },
+    "statusReserved": "已预订",
+    "loginToMakeOffer": "登录后即可出价",
+    "priceDrop": {
+      "a11y": "已降价",
+      "tag": "已降价 {{oldPrice}} → {{newPrice}}"
+    },
+    "similarProducts": "相似商品",
+    "moreFromSeller": "该卖家更多",
+    "terminalSoldBanner": "该商品已售出",
+    "terminalDelistedBanner": "该商品已下架",
+    "terminalBannerHint": "看看下面的相似商品吧",
+    "engagement": {
+      "views": "{{n}} 人看过",
+      "likes": "{{n}} 收藏",
+      "inquiries": "{{n}} 咨询中",
+      "pendingOffers": "{{n}} 待处理出价"
+    }
   },
   "message": {
     "sendmessage": "发送消息",
@@ -998,6 +1243,8 @@
     "writeinmessagehistory": "正在加载消息",
     "sending": "正在发送...",
     "sendFailed": "发送失败",
+    "resendFailed": "重发失败",
+    "checkNetworkRetry": "请检查网络连接后重试",
     "typing": "正在输入...",
     "noMessageRequests": "暂无消息请求",
     "noMessageRequestsHint": "当非好友给你发消息时，会显示在这里",
@@ -1017,7 +1264,47 @@
     "lastSeenDays": "{{count}}天前在线",
     "empty": {
       "title": "暂无消息",
-      "hint": "去关注好友，开始聊天吧！"
+      "hint": "去关注好友，开始聊天吧！",
+      "action": "找人聊天"
+    },
+    "pinConversation": "置顶",
+    "unpinConversation": "取消置顶",
+    "tapToResend": "点击重新发送",
+    "resendLabel": "重发",
+    "sendFailedTapResend": "发送失败 · 点击重发",
+    "pinnedSection": "置顶消息",
+    "mutualFollowBadge": "互关",
+    "chatWithUser": "与 {{name}} 的聊天",
+    "deleteConversationTitle": "删除聊天",
+    "deleteConversationConfirm": "将永久删除你与对方的全部聊天记录，双方都无法恢复。确定删除吗？",
+    "deleteConversationFailed": "删除失败",
+    "deleteConversationFailedDesc": "删除未完成，会话已保留，请检查网络后重试",
+    "selectConversationHint": "从左侧选择一个会话开始聊天",
+    "quickChips": {
+      "stillAvailable": "还在吗？",
+      "canNegotiate": "可以便宜点吗？",
+      "canInspect": "可以看实物吗？"
+    },
+    "productRefFallback": "[商品] {{title}}",
+    "productContext": {
+      "makeOffer": "出价"
+    },
+    "productRefCard": {
+      "untitled": "商品"
+    },
+    "imageFallback": "[图片]",
+    "imageExpired": "图片已过期",
+    "imageUploadFailed": "图片上传失败",
+    "imageLockedUntilReply": "对方回复后才能发送图片",
+    "sendImage": "发送图片"
+  },
+  "recentMessages": {
+    "searchPlaceholder": "搜索会话",
+    "noSearchResults": "无匹配会话",
+    "empty": {
+      "title": "暂无消息",
+      "hint": "去关注好友，开始聊天吧",
+      "action": "去关注好友"
     }
   },
   "mainContent": {
@@ -1043,10 +1330,17 @@
       "cameraPermissionTitle": "需要相机权限",
       "cameraPermissionMessage": "请在设置中允许访问相机",
       "scanInstruction": "将二维码放入框内",
+      "album": "相册",
+      "openingAlbum": "正在打开相册…",
+      "recognizing": "识别中…",
+      "noQrInImage": "未能从照片识别二维码",
+      "unrecognized": "无法识别的二维码",
+      "albumPermissionDenied": "无法访问相册，请在设置中允许照片权限",
       "manualEntry": "手动输入核销码",
       "manualEntryTitle": "手动输入核销码",
       "manualEntryPlaceholder": "输入核销码或完整二维码内容",
-      "manualEntryConfirm": "核销"
+      "manualEntryConfirm": "核销",
+      "rescan": "重新扫描"
     },
     "discounts": {
       "title": "优惠折扣 %",
@@ -1063,7 +1357,7 @@
     "expandSearchRange": "扩大搜索范围",
     "noProvidersAtAll": "暂无商家",
     "goToAdvancedSearch": "进入高级搜索",
-    "featuredDeals": "推荐好券",
+    "featuredDeals": "用积分换好券",
     "featuredDealsSubtitle": "精选优惠，轻松领取",
     "claimFree": "免费领取",
     "redeemPoints": "兑换",
@@ -1084,7 +1378,32 @@
     "youMayLikeSubtitle": "基于相似用户偏好推荐",
     "seeAll": "查看全部 >",
     "recommendedProducts": "为你推荐的二手好物",
-    "recommendedProductsSubtitle": "发现更多好物"
+    "recommendedProductsSubtitle": "发现更多好物",
+    "ratingNew": "新",
+    "distanceNearby": "附近",
+    "scorecardTag": "积分卡",
+    "pullToRefresh": "下拉刷新",
+    "loadFailedTitle": "首页加载失败",
+    "loadFailedHint": "请检查网络连接后重试",
+    "defaultLocationHint": "未能获取你的位置，正在展示默认地区附近的商家",
+    "showMoreProviders": "查看更多商家",
+    "a11y": {
+      "language": "切换语言",
+      "notifications": "系统消息",
+      "notificationsUnread": "系统消息，{{count}} 条未读",
+      "scan": "扫一扫",
+      "showCardHint": "点按出示会员码"
+    },
+    "myAssets": "我的卡券",
+    "staleLocationHint": "位置信息可能已过期，附近内容或不准确",
+    "newUser": {
+      "title": "领取你的第一张积分卡",
+      "body": "在附近商家激活积分卡，消费攒积分、兑换好券",
+      "scanAction": "扫码领卡",
+      "browseAction": "逛逛附近商家"
+    },
+    "showMembershipCode": "出示会员码",
+    "cardCount": "{{count}} 张卡"
   },
   "provider": {
     "selectItemHint": "从左侧选择一项管理",
@@ -1097,6 +1416,7 @@
       "scan": "扫一扫",
       "addPoints": "加积分",
       "issueVoucher": "编辑靠谱券",
+      "issueCredential": "发补偿",
       "lookup": "查找"
     },
     "group": {
@@ -1239,6 +1559,9 @@
       "loadingDescription": "正在加载多语言内容…",
       "loadInfoFailed": "加载商家信息失败",
       "providerNameReadonly": "商家名称（只读）",
+      "providerNameLabel": "店铺名称",
+      "tapToEditName": "点击编辑店铺名称",
+      "loadingName": "正在加载多语言内容…",
       "providerAddress": "商家地址 *",
       "addressPlaceholder": "输入详细地址",
       "latitude": "纬度 *",
@@ -1307,6 +1630,18 @@
     },
     "main": {
       "completeStoreInfo": "请先完善商家信息，如果不完善商家信息，将无法被用户搜索到",
+      "overview": "概览",
+      "totalActivations": "积分卡累计激活",
+      "totalViews": "页面浏览量（30 天）",
+      "overallTrend": "整体趋势",
+      "totalMembers": "会员总数",
+      "totalRevenue": "总营收",
+      "moreData": "更多整体数据",
+      "avgOrderAmount": "平均客单价",
+      "totalVisitors": "独立访客（30 天）",
+      "couponsIssued": "累计发放优惠券",
+      "couponsUsed": "累计核销优惠券",
+      "recentActivity": "近期动态",
       "homepage": "商家首页"
     },
     "incompleteBanner": {
@@ -1477,7 +1812,9 @@
       "actions": "操作",
       "addPoints": "增加积分",
       "redeemReward": "兑换奖励",
-      "sendNotification": "发送通知"
+      "sendNotification": "发送通知",
+      "lastVisit": "最近到访",
+      "visitCount": "到访次数"
     },
     "search": {
       "placeholder": "搜索咖啡、奶茶...",
@@ -1578,6 +1915,7 @@
       "primaryCategoryId": "主品类（必填）",
       "primaryCategoryIdHint": "请选择主品类（必填）。管理员不会代为填写，未选择将无法审核通过。",
       "reviseApplication": "修改并重新提交",
+      "noRejectComment": "管理员未填写具体说明。请检查申请内容后重新提交，如有疑问可联系客服。",
       "secondName": "副名称（选填）",
       "secondNameHint": "通常用于英文或第二语言名称；不填也可。",
       "sourceLangLabel": "信息填写语言（影响自动翻译源）",
@@ -1607,6 +1945,11 @@
       "locationSection": "店铺位置",
       "categorySection": "分类与地区",
       "nameManualHint": "店铺名称请手动填写各语言版本（不使用 AI 翻译）。",
+      "nameLangLabel": "店铺名称主语言",
+      "nameLangHint": "选择店铺名称的主要语言（必填其一），其余语言可留空。名称可在开通后到「编辑商家信息」修改。",
+      "ownerId": "身份证照片",
+      "ownerIdHint": "请上传申请人（店主）身份证正反面，最多 2 张，仅用于身份核验。",
+      "ownerIdRequired": "请上传身份证照片（正反面）",
       "descriptionRichHint": "支持富文本；填写主要语言后可自动翻译到其他语言。",
       "locationEmpty": "点击在地图上选择商家位置",
       "locationSelected": "已在地图上标记位置",
@@ -1630,7 +1973,22 @@
       "description": "简介",
       "scorecard": "点卡",
       "review": "评论",
-      "activityPages": "活动"
+      "activityPages": "活动",
+      "reviewsCount": "{{n}} 条评价",
+      "openNow": "营业中",
+      "closedNow": "已打烊",
+      "distanceKm": "{{km}}km",
+      "actionNavigate": "导航",
+      "actionCall": "电话",
+      "actionClaimCard": "领卡享积分",
+      "perksVouchersAvailable": "{{n}} 张券可领",
+      "perksPointsValue": "{{n}} 分",
+      "mapOpenFailed": "无法打开地图应用",
+      "holidayClosed": "节假日休息",
+      "specialHoursOpen": "营业中 · 特殊时段",
+      "specialSchedule": "特殊安排",
+      "overrideToday": "今日",
+      "overrideClosed": "休息"
     },
     "scorecard": {
       "title": "积分卡",
@@ -1667,7 +2025,10 @@
         "failed": {
           "title": "错误",
           "message": "积分卡开通失败，请稍后重试"
-        }
+        },
+        "viewTerms": "查看会员条款",
+        "hideTerms": "收起条款",
+        "agreeFootnote": "激活即表示同意会员条款"
       },
       "redeemableProducts": "可兑换项目",
       "userNotActivatedCurrentProviderScorecard": "您还没有该商家的积分卡",
@@ -1744,6 +2105,7 @@
         "levelChange": "积分卡等级",
         "levelUnchanged": "兑换不影响累计等级",
         "voucherValidity": "有效期 {{days}} 天",
+        "refundNotEligibleHint": "请在有效期内到店核销——券一旦过期，已支付的积分将不会返还。",
         "confirmRedeem": "确认兑换",
         "noScorecard": "您还没有该商家的积分卡，请先激活后再兑换",
         "activateButton": "去激活积分卡",
@@ -1772,6 +2134,24 @@
           "other": "其他",
           "default": "优惠券"
         }
+      },
+      "wallet": {
+        "activateFirst": "请先激活积分卡",
+        "appleUnavailable": "Apple Wallet 不可用，请确保您的设备支持此功能",
+        "generateFailed": "生成钱包卡片失败",
+        "appleAddSuccess": "已添加到 Apple Wallet",
+        "autoUpdateHint": "卡片会自动更新积分余额",
+        "addCancelled": "添加失败或已取消",
+        "unsupportedServer": "服务端暂不支持生成 Apple Wallet 卡片",
+        "addFailed": "添加到钱包失败，请稍后重试",
+        "cardInfoIncomplete": "积分卡信息不完整",
+        "googleUrlInvalid": "Google Wallet 链接无效，请稍后重试",
+        "googleOpenFailed": "无法打开 Google 钱包，请确认已安装 Google Pay",
+        "googleGenerateFailed": "生成 Google Wallet 凭证失败",
+        "googleAddFailed": "添加到 Google 钱包失败，请稍后重试",
+        "addToApple": "添加到 Apple Wallet",
+        "addToGoogle": "添加到 Google 钱包",
+        "productNotFound": "未找到对应的产品"
       }
     },
     "voucher": {
@@ -1816,6 +2196,47 @@
     },
     "businessHours": {
       "title": "营业时间设置"
+    },
+    "holidayHours": {
+      "title": "节假日营业时间",
+      "menuDesc": "节假日休息或特殊时段，提前告知顾客",
+      "customDate": "特殊日期",
+      "templatesTitle": "法定节假日快捷设置",
+      "upcomingTitle": "即将到来的特殊日期",
+      "addCustom": "自定义日期",
+      "addTitle": "添加特殊日期",
+      "editTitle": "编辑特殊日期",
+      "startDate": "开始日期",
+      "endDate": "结束日期",
+      "typeClosed": "全天休息",
+      "typeModified": "调整时段",
+      "labelPlaceholder": "原因（可选，如：店庆、装修）",
+      "invalidRangeTitle": "日期无效",
+      "invalidRangeDesc": "结束日期不能早于开始日期",
+      "zeroSlotDesc": "开始与结束时间不能相同",
+      "overlapDesc": "所选日期与已有特殊日期重叠",
+      "saveFailed": "保存失败，请稍后重试",
+      "savedDesc": "特殊日期已保存",
+      "deleteTitle": "删除特殊日期",
+      "deleteMessage": "删除后该日期将恢复常规营业时间。",
+      "deleteFailed": "删除失败，请稍后重试",
+      "deletedDesc": "特殊日期已删除",
+      "emptyTitle": "还没有特殊日期",
+      "emptyDesc": "节假日休息或临时调整营业时间时，提前告诉顾客，避免白跑一趟。",
+      "activeNow": "生效中"
+    },
+    "holidays": {
+      "jourDeLAn": "元旦",
+      "lundiDePaques": "复活节星期一",
+      "feteDuTravail": "劳动节",
+      "victoire1945": "二战胜利纪念日",
+      "ascension": "耶稣升天节",
+      "lundiDePentecote": "圣灵降临节星期一",
+      "feteNationale": "法国国庆日",
+      "assomption": "圣母升天节",
+      "toussaint": "诸圣节",
+      "armistice1918": "一战停战纪念日",
+      "noel": "圣诞节"
     },
     "editInfo": {
       "title": "编辑商家信息"
@@ -1992,7 +2413,8 @@
       "no_permission": "您没有管理员权限",
       "add_employee_for_provider": "为以下商家添加员工",
       "please_select_role": "请选择角色",
-      "no_roles": "暂无角色"
+      "no_roles": "暂无角色",
+      "select_role": "选择角色"
     },
     "review": {
       "writeReply": "商家回复"
@@ -2162,7 +2584,43 @@
     },
     "location": {
       "locationPermissionDenied": "未授予定位权限，无法定位到当前位置"
+    },
+    "todos": {
+      "title": "待办事项",
+      "unrepliedReviews": "未回复评价"
+    },
+    "materials": {
+      "title": "我的物料",
+      "menuDesc": "查看店铺物料、创建二维码并导出图片",
+      "selfQuota": "自建二维码 {{used}}/{{limit}}",
+      "createSelf": "创建我的二维码",
+      "createSelfDesc": "生成一个专属二维码物料，顾客扫码直达你的店铺页；也可导出为图片打印张贴。",
+      "createConfirmTitle": "创建二维码物料？",
+      "createConfirmMsg": "每个商家最多自建 {{limit}} 个二维码物料（平台发放的不占额度）。创建后立即生效。",
+      "created": "已创建",
+      "createFailed": "创建失败",
+      "selfLimitReached": "自建配额已用完",
+      "originSelf": "自建",
+      "originAdmin": "平台发放",
+      "savePng": "保存图片",
+      "saved": "已保存到相册",
+      "saveFailed": "保存失败",
+      "shareLink": "分享链接",
+      "copyLink": "复制链接",
+      "linkCopied": "链接已复制",
+      "scanCount": "扫码 {{count}} 次",
+      "empty": "暂无物料。创建一个二维码物料，或联系平台获取 NFC 物料。",
+      "footerHint": "导出的图片为正方形物料卡（含二维码与短码），可直接打印张贴。NFC 等实体物料由平台发放并绑定到店铺。",
+      "pickCardLang": "选择卡片语言",
+      "pickCardLangMsg": "导出图片上的文案将使用所选语言。"
     }
+  },
+  "providerHome": {
+    "todayTitle": "今日",
+    "todayVerifications": "核销",
+    "todayPointsIssued": "新增积分",
+    "todayNewCustomers": "新客",
+    "todayViews": "浏览"
   },
   "secondhandSearch": {
     "search": {
@@ -2173,6 +2631,10 @@
     "product": {
       "updateFailed": "更新失败",
       "imageLoadFailed": "图片加载失败"
+    },
+    "history": {
+      "title": "最近搜索",
+      "clear": "清空"
     }
   },
   "secondhandMain": {
@@ -2183,7 +2645,13 @@
     "singleProduct": "单个二手商品",
     "multipleProducts": "多个二手商品",
     "warning": "警告",
-    "notImplemented": "尚未实现"
+    "notImplemented": "尚未实现",
+    "publishEntry": {
+      "title": "发布闲置",
+      "subtitle": "选择一种发布方式，草稿都会自动保存",
+      "singleDesc": "快速发布一件闲置，三步完成",
+      "multipleDesc": "多件闲置整理成一个合集，逐件添加后一起发布"
+    }
   },
   "secondhandWizard": {
     "next": "下一步",
@@ -2221,7 +2689,17 @@
       "categoryRequired": "请选择商品分类",
       "conditionRequired": "请选择商品成色",
       "priceRequired": "请输入有效价格（正整数）",
-      "contactRequired": "请填写联系方式"
+      "contactRequired": "请填写联系方式",
+      "imagesUploading": "图片还未上传完成，请稍候片刻或重新上传"
+    },
+    "stepBasics": {
+      "heading": "介绍你的商品",
+      "hint": "清晰的标题和图片能让你的商品被更多人看到。",
+      "imagesPendingTitle": "图片已就绪 —— 填写商品名称后会自动上传"
+    },
+    "stepDetails": {
+      "heading": "详情与价格",
+      "hint": "分类、成色和地区帮助买家找到你；价格与联系方式促成交易。"
     }
   },
   "secondhandPublish": {
@@ -2237,7 +2715,10 @@
       "resumeNew": "新建",
       "resumeSaveAndNew": "保存并新建",
       "resumeContinue": "继续编辑",
-      "savedToProfile": "草稿已保存到「我的二手」"
+      "savedToProfile": "草稿已保存到「我的二手」",
+      "resumedBanner": "已自动恢复上次未完成的草稿",
+      "startNew": "新建",
+      "oldDraftKept": "旧草稿已保留在「我的二手」"
     },
     "fields": {
       "uploadImages": "上传图片",
@@ -2295,7 +2776,19 @@
     "permissions": {
       "photoTitle": "需要照片权限",
       "photoMessage": "请在设置中允许访问照片",
+      "cameraTitle": "需要相机权限",
+      "cameraMessage": "请在设置中允许使用相机",
       "goSettings": "去设置"
+    },
+    "uploader": {
+      "addImage": "添加图片",
+      "takePhoto": "拍照",
+      "chooseFromLibrary": "从相册选择",
+      "dragHint": "长按图片可拖拽排序，第一张将作为封面",
+      "keepAtLeastOne": "至少需要保留一张图片",
+      "deleteImageTitle": "删除图片",
+      "deleteImageMessage": "确定要删除这张图片吗？删除后无法恢复。",
+      "deleteFailed": "删除失败"
     },
     "status": {
       "online": "上架",
@@ -2303,6 +2796,8 @@
     },
     "errors": {
       "imageSelectionFailed": "图片选择失败",
+      "imageValidationFailed": "图片验证失败",
+      "cameraFailed": "拍照失败",
       "aspectRatioTooLarge": "第{{index}}张图片长宽比例过大，请重新选择",
       "imageTooSmall": "第{{index}}张图片大小小于10kb, 不符合要求",
       "saveDraftFailed": "保存草稿失败",
@@ -2316,7 +2811,8 @@
       "categoryRequired": "请选择商品类别",
       "conditionRequired": "请选择商品成色",
       "contactRequired": "请输入联系方式",
-      "imageRequired": "请至少上传一张图片"
+      "imageRequired": "请至少上传一张图片",
+      "statusRequired": "请选择商品状态"
     },
     "success": {
       "title": "成功",
@@ -2328,6 +2824,11 @@
       "savethedraft": "保存草稿",
       "takeitseriously": "确认要离开吗？",
       "unfinishedPublish": "未完成的发布"
+    },
+    "imageDedup": {
+      "title": "图片已存在",
+      "all": "你选的图片与该商品已有图片完全相同，已自动复用，未新增。",
+      "some": "你选的 {{total}} 张图片中有 {{deduped}} 张与已有图片相同，已自动复用。"
     }
   },
   "secondhandMultiple": {
@@ -2390,8 +2891,32 @@
       "partialSuccess": "成功发布 {{success}} 个商品，失败 {{failed}} 个\n\n已进入补充发送模式，后续发布将添加到同一商品组中（组ID: {{groupId}}）",
       "publishError": "发布过程中出现错误",
       "getGroupIdFailed": "获取分组ID失败",
-      "uploadCoverFailed": "上传封面图失败"
-    }
+      "uploadCoverFailed": "上传封面图失败",
+      "batchDelisted": "已下架 {{count}} 件",
+      "batchDelistedPartial": "已下架 {{success}} 件，{{skipped}} 件已跳过",
+      "batchAllSkipped": "所选商品均被跳过（可能已下架）"
+    },
+    "resumedBanner": "已自动恢复上次未完成的草稿组",
+    "oldGroupKept": "旧草稿组已保留在「我的二手」"
+  },
+  "adminServerConfig": {
+    "title": "后端服务器",
+    "noAccess": "仅平台管理员可访问",
+    "currentServer": "当前服务器",
+    "presets": "预设",
+    "recentlyUsed": "最近使用",
+    "customUrl": "自定义地址",
+    "invalidTitle": "地址无效",
+    "invalidUrl": "请输入以 http:// 或 https:// 开头的有效地址。",
+    "currentBadge": "当前",
+    "alreadyActive": "已是当前服务器",
+    "switchAndRestart": "切换并重启",
+    "confirmTitle": "切换并重启？",
+    "confirmMessage": "App 将连接到 {{url}}，并清除当前登录状态后重启。继续？",
+    "resetTitle": "恢复默认？",
+    "resetMessage": "恢复到默认地址 {{url}}，并清除当前登录状态后重启。继续？",
+    "resetDefault": "恢复默认",
+    "hint": "切换服务器会清除当前登录状态与本地缓存，并重启 App。重启后需重新登录。"
   },
   "admin": {
     "systemMessageAudit": {
@@ -2417,7 +2942,11 @@
         "provider": "所有商家",
         "user": "普通用户",
         "providerSpecific": "商家：{{id}}",
-        "regionSpecific": "区域：{{id}}"
+        "regionSpecific": "区域：{{id}}",
+        "permPrefix": "权限:{{name}}",
+        "personal": "个人",
+        "scopeProvider": "商家:{{id}}",
+        "scopeRegion": "区域:{{id}}"
       },
       "action": {
         "detail": "详情",
@@ -2482,6 +3011,10 @@
         "emptyRecipients": "暂无接收人",
         "emptyRead": "暂无已读用户",
         "emptyRows": "暂无存储 row"
+      },
+      "audienceFilter": {
+        "any": "全部类型",
+        "permPlaceholder": "权限筛选 (可选)"
       }
     },
     "dashboard": {
@@ -2529,7 +3062,9 @@
       "unclaimed": {
         "title": "未认领工单",
         "viewAll": "查看全部未认领"
-      }
+      },
+      "hasPending": "有需要执行的操作",
+      "noPending": "暂无处理事项"
     },
     "userManagement": {
       "title": "用户管理",
@@ -2689,7 +3224,10 @@
       "askQuestionPlaceholder": "请描述你想确认的内容…",
       "askQuestionSend": "发送",
       "askQuestionSuccess": "工单已发送",
-      "askQuestionFailed": "发送失败"
+      "askQuestionFailed": "发送失败",
+      "sourceSuffix": "（源）",
+      "aiSuffix": "（AI 翻译）",
+      "localizedPreview": "多语言预览"
     },
     "feedbackInbox": {
       "title": "工单中心",
@@ -2780,7 +3318,15 @@
         "send": "发送",
         "successTitle": "工单已发送",
         "emptyError": "请输入要发送的内容"
-      }
+      },
+      "revokeBenefitTitle": "吊销权益",
+      "revokeBenefitMessage": "确定吊销这条权益？",
+      "revokeAction": "吊销",
+      "daysPlaceholder": "天数（空=长期）"
+    },
+    "providerRequest": {
+      "emptyList": "暂无申请",
+      "loadError": "加载失败，请重试"
     },
     "providerRequestDetail": {
       "status": {
@@ -2928,7 +3474,9 @@
         "startFailed": "启动测试失败",
         "statusFailed": "获取测试状态失败",
         "abortFailed": "中止测试失败"
-      }
+      },
+      "concurrentUsersRange": "并发用户数需在 1-2000 之间",
+      "durationRange": "测试时长需在 5-60 秒之间"
     },
     "socketStressTest": {
       "title": "Socket 压测",
@@ -3117,7 +3665,18 @@
       "askQuestionPlaceholder": "请描述你想确认的内容…",
       "askQuestionSend": "发送",
       "askQuestionSuccess": "工单已发送",
-      "askQuestionFailed": "发送失败"
+      "askQuestionFailed": "发送失败",
+      "notePlaceholder": "审核思考、特殊放量原因、注意事项等",
+      "rejectReasonPlaceholder": "比如：图片不清晰；内容包含违规词；……",
+      "forceOffline": "强制下线",
+      "forceOfflineConfirm": "强制下线此活动？下线后将从曝光中移除并归档。",
+      "forceOfflineDone": "已下线",
+      "approveConfirmDescUnlimited": "预算：{{budget}}  /  时段：不限（全天曝光）",
+      "dailyExposureWindow": "每日曝光时段",
+      "unlimitedTitle": "不限时段（全天曝光）",
+      "unlimitedSubtitle": "开启后该活动不受时段限制",
+      "startAt": "开始",
+      "endAt": "结束"
     },
     "slotManagement": {
       "title": "活动展示位管理",
@@ -3180,6 +3739,90 @@
         "avgSession": "今日平均时长",
         "sessionsToday": "今日会话数"
       }
+    },
+    "blacklist": {
+      "title": "黑名单管理",
+      "noPermission": "无权管理黑名单",
+      "segList": "黑名单",
+      "segPreview": "风险扫描",
+      "dimIp": "IP 地址",
+      "dimDevice": "设备",
+      "dimUser": "用户",
+      "empty": "当前没有生效中的封禁",
+      "emptyNote": "数据库不可用时后端会放行并返回空列表 —— 那种情况下封禁暂不生效。",
+      "wouldBlockCount": "开启拦截后本窗口会新增 {{n}} 条封禁",
+      "sourceManual": "人工",
+      "sourceAuto": "自动检测",
+      "sourcePenalty": "限流累犯",
+      "permanent": "永久",
+      "permanentBadge": "永久封禁",
+      "expiring": "即将解除",
+      "remaining": "剩余 {{time}}",
+      "blockedAt": "封禁于 {{time}}",
+      "operator": "操作人 #{{id}}",
+      "remainDH": "{{d}}天{{h}}小时",
+      "remainHM": "{{h}}小时{{m}}分",
+      "remainM": "{{m}}分",
+      "unblock": "解除封禁",
+      "unblockTitle": "解除封禁",
+      "unblockBody": "确定解除对 {{id}} 的封禁吗？解除后立即恢复访问。",
+      "unblockConfirm": "解除",
+      "unblockOk": "已解除封禁",
+      "unblockFailed": "解除失败",
+      "addTitle": "手动封禁",
+      "addSubmit": "确认封禁",
+      "addOk": "已封禁",
+      "addFailed": "封禁失败",
+      "formIncomplete": "请填写标识与原因",
+      "reasonPlaceholder": "封禁原因（会记入审计，请写清楚）",
+      "duration": "时长",
+      "ttl1h": "1 小时",
+      "ttl6h": "6 小时",
+      "ttl1d": "1 天",
+      "ttl7d": "7 天",
+      "ttlPerm": "永久",
+      "permWarning": "永久封禁不会自动解除。若该地址是运营商共享出口，会长期影响一批真实用户。",
+      "modeOff": "自动检测未启用。黑名单中只有人工与限流累犯产生的条目。",
+      "modeObserve": "自动检测运行中，但只观察不封禁 —— 判定结果只写审计事件，不会有自动来源的条目。",
+      "modeEnforce": "自动检测已开启拦截 —— 达阈值的 IP 会被自动封禁（时长按累犯递增，最长 7 天）。",
+      "previewNote": "用与定时任务完全相同的算法对最近窗口做一次只读扫描，不会封禁任何 IP、也不写审计事件。开启拦截前先看这里。",
+      "previewFailed": "风险扫描失败",
+      "previewEmpty": "窗口内没有达到阈值的流量。",
+      "previewSummary": "候选 {{candidates}} 个，判定 {{decisions}} 条",
+      "vetoed": "一票否决：{{reason}}",
+      "wouldBlock": "开启拦截后：会被封禁",
+      "statsLoaded": "已加载 {{n}}",
+      "statsPermanent": "永久 {{n}}",
+      "statsAuto": "自动来源 {{n}}",
+      "expiresAtLine": "到期时刻 {{time}}",
+      "ttlMismatch": "应于 {{time}} 解除，但执行缓存无 TTL —— 不会自动解除，需手动解封",
+      "userIdNumeric": "用户维度只接受纯数字用户 ID",
+      "formTooLong": "标识最长 128 字符，原因最长 255 字符",
+      "win15m": "15 分钟",
+      "win1h": "1 小时",
+      "win6h": "6 小时",
+      "win24h": "24 小时",
+      "windowRange": "窗口 {{from}} – {{to}}",
+      "featTotal": "总请求",
+      "featUnmatched": "未匹配",
+      "featUnmatchedPaths": "未匹配路径",
+      "featProbeHits": "探测路径命中",
+      "featAuthFail": "认证失败",
+      "featServerError": "5xx",
+      "featSuccessAuthed": "登录态成功",
+      "featDistinctUsers": "不同用户",
+      "featScannerUa": "扫描器 UA",
+      "featMissingUa": "无 UA",
+      "banTtl": "若封禁：{{time}}",
+      "priorOffences": "累犯 {{n}} 次（时长按累犯递增）",
+      "searchPlaceholder": "搜索标识 / 原因",
+      "alreadyBlocked": "已在黑名单",
+      "banNow": "加入黑名单",
+      "banNowConfirm": "封禁",
+      "banNowConfirmTitle": "封禁 IP",
+      "banNowConfirmBody": "确定将 {{ip}} 加入黑名单？时长 {{time}}。",
+      "banNowOk": "已加入黑名单",
+      "banNowFailed": "封禁失败"
     },
     "securityAudit": {
       "title": "安全审计中心",
@@ -3316,6 +3959,17 @@
       "refresh": "刷新",
       "error": {
         "fetchFailed": "加载失败，请重试"
+      },
+      "slotAnalytics": {
+        "title": "展示位效果",
+        "hint": "按展示位聚合的投放效果（近 30 天明细，仅统计 feed 曝光）",
+        "empty": "暂无展示位数据",
+        "impressions": "曝光",
+        "reach": "触达",
+        "conversion": "转化",
+        "deleted": "已删除",
+        "disabled": "已停用",
+        "noImpressions": "未投放"
       }
     },
     "forceLogout": {
@@ -3338,6 +3992,864 @@
       "regionsSection": "区域",
       "noRegions": "暂无可治理的区域",
       "noRegionsDesc": "下方仍可使用你有权限的管理功能。"
+    },
+    "scoreBreakdown": {
+      "title": "排序分构成",
+      "finalScore": "最终排序分",
+      "notPublished": "未发布，不参与平台排序",
+      "budget": "预算基数",
+      "baseScore": "配额基础分",
+      "factorsTitle": "配额剩余因子",
+      "remainingDays": "剩余天数",
+      "remainingImpression": "剩余曝光",
+      "remainingReach": "剩余触达",
+      "avgRemaining": "平均剩余",
+      "freshness": "鲜度 ×{{mult}}",
+      "freshnessTier": {
+        "day1": "首日",
+        "day2_3": "1–3 天",
+        "stable": "稳定期",
+        "not_published": "未发布"
+      },
+      "pinned": "已置顶",
+      "afterFreshness": "鲜度加成后",
+      "pinnedBonus": "置顶加成",
+      "cachedNote": "当前缓存分 {{cached}}，将在下次重算（每 10 分钟）后同步",
+      "loadFailed": "加载失败",
+      "refresh": "重试"
+    },
+    "tasksQueues": {
+      "title": "计划任务与队列",
+      "segTasks": "计划任务",
+      "segQueues": "队列",
+      "loading": "加载中…",
+      "loadFailedTitle": "加载失败",
+      "loadFailedTasksDesc": "无法获取计划任务状态",
+      "loadFailedQueuesDesc": "无法获取队列状态",
+      "tasksOverview": "调度概览",
+      "queuesOverview": "队列概览",
+      "engineTitle": "BullMQ 调度引擎",
+      "redisConnected": "Redis 已连接",
+      "redisDisconnected": "Redis 断开",
+      "taskCount": "{{count}} 个任务",
+      "nodeLabel": "节点 #{{id}}",
+      "kpiActive": "执行中",
+      "kpiWaiting": "排队中",
+      "kpiDelayed": "待触发",
+      "kpiCompleted": "已完成",
+      "kpiFailed": "失败",
+      "filterAll": "全部",
+      "filterRunning": "运行中",
+      "filterFailed": "失败",
+      "statusRunning": "执行中",
+      "statusLastFailed": "上次失败",
+      "statusReady": "就绪",
+      "statusPending": "待运行",
+      "runSuccess": "成功",
+      "runFailed": "失败",
+      "runRunning": "运行中",
+      "runSkipped": "跳过",
+      "nextRun": "下次触发",
+      "lastRun": "上次运行",
+      "never": "从未",
+      "justNow": "刚刚",
+      "soon": "即将",
+      "minutesAgo": "{{count}} 分钟前",
+      "hoursAgo": "{{count}} 小时前",
+      "daysAgo": "{{count}} 天前",
+      "inSeconds": "{{count}} 秒后",
+      "inMinutes": "{{count}} 分钟后",
+      "inHours": "{{count}} 小时后",
+      "inDays": "{{count}} 天后",
+      "heavyLoad": "重负载",
+      "sensitive": "敏感",
+      "manualTriggered": "手动触发",
+      "cronTriggered": "定时触发",
+      "notRunYet": "尚未运行",
+      "runNow": "立即执行",
+      "runNowConfirmTitle": "立即执行",
+      "runNowConfirmMessage": "确定立即执行「{{name}}」吗？\n将作为一个 manual 任务入队，稍后可在执行历史查看结果。",
+      "runNowConfirm": "执行",
+      "triggerFailedTitle": "触发失败",
+      "triggerFailedDesc": "任务触发失败",
+      "enqueuedTitle": "已入队",
+      "triggerErrorDesc": "触发时发生异常",
+      "recentRuns": "最近执行",
+      "noRuns": "暂无执行记录",
+      "noFailedTasks": "没有失败的任务 🎉",
+      "noMatchingTasks": "没有匹配的任务",
+      "updatedAt": "更新于 {{time}}",
+      "redisUnavailable": "Redis 不可用，无法获取队列信息",
+      "noQueues": "尚未发现任何队列",
+      "queueEmpty": "队列空闲，没有待处理任务",
+      "jobsHeader": "任务明细",
+      "jobSampleHint": "共 {{total}} 条待处理，仅显示前 {{shown}} 条",
+      "pendingBadge": "待处理 {{count}}",
+      "queueIdleBadge": "空闲",
+      "stateActive": "执行中",
+      "stateWaiting": "等待中",
+      "statePrioritized": "优先",
+      "stateDelayed": "延迟",
+      "stateFailed": "失败",
+      "statePaused": "已暂停",
+      "completedCount": "已完成 {{count}}",
+      "attempts": "已尝试 {{count}} 次",
+      "enqueuedAgo": "{{ago}}入队",
+      "viewPayload": "查看数据",
+      "hidePayload": "收起数据",
+      "stateCompleted": "已完成",
+      "completedAgo": "{{ago}}完成",
+      "failedAgo": "{{ago}}失败",
+      "viewReturn": "查看返回值",
+      "hideReturn": "收起返回值",
+      "recentCompletedHeader": "最近完成",
+      "completedSampleHint": "显示最近 {{shown}} 条（Redis 保留 {{total}} 条）",
+      "queueNames": {
+        "scheduledTasks": "计划任务（默认）",
+        "scheduledTasksHeavy": "计划任务（重负载）",
+        "pushNotifications": "推送通知",
+        "translation": "AI 翻译",
+        "mediaProcessing": "媒体处理",
+        "searchIndex": "搜索索引",
+        "achievement": "成就系统",
+        "activityPageEvents": "活动页事件",
+        "dataExports": "数据导出",
+        "expoPatchGen": "OTA 补丁生成",
+        "appclipSync": "App Clip 同步"
+      },
+      "statusDisabled": "已停用",
+      "disableConfirmTitle": "停用定时任务",
+      "disableConfirmMessage": "确定停用「{{name}}」吗？\n停用后将不再自动执行（重启后保持停用），仍可手动触发试跑。",
+      "disableConfirm": "停用",
+      "taskEnabledToast": "任务已启用",
+      "taskDisabledToast": "任务已停用",
+      "toggleFailedTitle": "切换失败"
+    },
+    "logs": {
+      "title": "系统日志",
+      "noPermission": "无权访问系统日志",
+      "loadFailed": "日志加载失败",
+      "segStream": "日志流",
+      "segOverview": "概览",
+      "segPipeline": "管线",
+      "filters": "筛选",
+      "resetAll": "全部重置",
+      "clear": "清除",
+      "apply": "完成",
+      "customRange": "自定义",
+      "searchPlaceholder": "搜索消息 / 错误 / 路径",
+      "onlyErrors": "仅异常",
+      "slowOnly": "仅慢请求 >1s",
+      "requestChain": "请求链路",
+      "viewChain": "查看该请求的完整日志链路",
+      "noData": "该时间范围内没有日志",
+      "presetMinutes": "近 {{count}} 分钟",
+      "presetHours": "近 {{count}} 小时",
+      "presetDays": "近 {{count}} 天",
+      "justNow": "刚刚",
+      "minutesAgo": "{{count}} 分钟前",
+      "hoursAgo": "{{count}} 小时前",
+      "daysAgo": "{{count}} 天前",
+      "levelFilter": "级别",
+      "kindFilter": "种类",
+      "instanceFilter": "容器实例",
+      "moduleFilter": "业务模块",
+      "statusFilter": "状态码段",
+      "methodFilter": "HTTP 方法",
+      "minDuration": "最小耗时",
+      "noLimit": "不限",
+      "userFilter": "用户 ID",
+      "userPlaceholder": "例如 1024",
+      "kpiTotal": "日志总量",
+      "kpiErrors": "异常",
+      "kpiErrorRate": "5xx 占比",
+      "kpiHttp": "HTTP 请求",
+      "kpiMax": "最慢",
+      "percentilesSkipped": "数据量过大，已跳过分位数计算以保护数据库。缩小时间范围后可查看 P50/P95/P99。",
+      "timeline": "时间分布",
+      "bucketHint": "每格 {{minutes}} 分钟",
+      "legendNormal": "正常",
+      "legendWarn": "警告",
+      "legendError": "异常",
+      "byModule": "按业务模块",
+      "byInstance": "按容器实例",
+      "byLevel": "按级别",
+      "byStatus": "按状态码段",
+      "slowestRoutes": "最慢接口",
+      "busiestRoutes": "最繁忙接口",
+      "routeMeta": "{{count}} 次 · 最慢 {{max}} · 失败 {{errors}}",
+      "topErrors": "Top 异常",
+      "unnamedError": "未命名异常",
+      "timingSplit": "总 {{total}} · 应用 {{app}} · 前置 {{pre}}",
+      "level": {
+        "debug": "DEBUG",
+        "info": "INFO",
+        "warn": "WARN",
+        "error": "ERROR",
+        "fatal": "FATAL"
+      },
+      "kind": {
+        "http": "HTTP",
+        "app": "业务",
+        "task": "定时任务",
+        "queue": "队列",
+        "security": "安全",
+        "system": "系统"
+      },
+      "field": {
+        "route": "路由",
+        "path": "路径",
+        "context": "来源",
+        "instance": "容器",
+        "timing": "耗时拆分",
+        "size": "响应体",
+        "errorName": "异常",
+        "user": "用户"
+      },
+      "pipe": {
+        "title": "日志管线",
+        "on": "采集中",
+        "off": "已关闭",
+        "scopeNote": "内存与累计类指标只属于响应本次请求的那个容器（可能每次刷新都不同）；队列积压是全局共享的。",
+        "respondingBy": "本次由容器",
+        "queueDepth": "Redis 队列积压",
+        "redisDown": "Redis 不可用",
+        "pending": "本容器内存暂存",
+        "pushed": "本容器累计推送",
+        "inserted": "本容器累计落库",
+        "droppedMem": "内存溢出丢弃",
+        "droppedRetry": "重试后丢弃",
+        "restored": "失败回灌队列",
+        "lastFlush": "最近落库",
+        "retention": "保留天数",
+        "tableRows": "表行数（估算）",
+        "oldest": "最早日志",
+        "lastError": "最近管线错误"
+      },
+      "retentionWarnAll": "所选范围 {{days}} 天超出低级别日志的保留期（{{levels}}），这些级别只会返回各自保留期内的数据。",
+      "retentionWarnSelected": "所选范围 {{days}} 天超出所选级别的保留期（{{levels}}），这些级别只会返回各自保留期内的数据。",
+      "responseBody": "响应体",
+      "redacted": "敏感字段已脱敏",
+      "responseBodyOff": "错误响应会自动记录；成功响应默认不采集（避免体积膨胀与凭证入库）。需要时在后端 LOG_CAPTURE_BODY_ROUTES 配置路由前缀。",
+      "ipFilter": "来源 IP",
+      "ipPlaceholder": "203.0.113.7 或 192.168.1.（整段）",
+      "ipHint": "以 . 或 * 结尾按前缀匹配整个网段；通配符只能放结尾。",
+      "topIps": "Top 来源 IP",
+      "tapToFilter": "点击筛选",
+      "ipMeta": "{{users}} 个用户 · {{errors}} 条异常 · {{last}}",
+      "anonymous": "匿名",
+      "anonymousFull": "匿名（未登录请求）",
+      "openUserHub": "用户操作（详情 / 分析 / 审计 / 封禁）",
+      "kindAll": "全部来源"
+    },
+    "reportDetail": {
+      "action": {
+        "none": "不处罚",
+        "warn": "警告",
+        "mute": "禁言",
+        "banTemporary": "临时封禁",
+        "banPermanent": "永久封禁",
+        "deleteContent": "删除内容"
+      },
+      "confirmResolveTitle": "确认处理",
+      "confirmResolveMessage": "确定要处理这条举报吗？",
+      "confirmDismissTitle": "确认驳回",
+      "confirmDismissMessage": "确定要驳回这条举报吗？",
+      "resolvedToast": "举报已处理",
+      "dismissedToast": "举报已驳回",
+      "notFound": "举报不存在",
+      "sectionInfo": "举报信息",
+      "labelType": "类型",
+      "labelTargetId": "对象 ID",
+      "labelReason": "原因",
+      "labelTime": "时间",
+      "labelDescription": "详细描述",
+      "sectionUsers": "相关用户",
+      "labelReporter": "举报人",
+      "labelTarget": "被举报人",
+      "unknownUser": "未知",
+      "reporterHistoryTitle": "举报人历史 — {{name}} #{{id}}",
+      "targetHistoryTitle": "被举报人历史 — {{name}} #{{id}}",
+      "sectionHandled": "处理信息",
+      "labelHandler": "处理人",
+      "labelAction": "措施",
+      "labelHandledAt": "处理时间",
+      "labelHandlerNote": "处理备注",
+      "sectionHandle": "处理举报",
+      "primaryPenalty": "主要处罚",
+      "muteDaysLabel": "禁言天数: {{days}} 天",
+      "banDaysLabel": "封禁天数: {{days}} 天",
+      "minDays": "1 天",
+      "maxDays": "90 天",
+      "alsoDeleteContent": "同时删除被举报内容",
+      "handlerNoteOptional": "处理备注（选填）",
+      "handlerNotePlaceholder": "记录处理原因和细节...",
+      "dismissButton": "驳回",
+      "resolveButton": "确认处理",
+      "preview": {
+        "sectionContent": "被举报内容",
+        "deleted": "内容已被删除或不存在",
+        "sectionProduct": "被举报商品",
+        "viewProduct": "查看商品",
+        "seller": "卖家: {{name}}",
+        "statusLabel": "状态: {{status}}",
+        "sectionReview": "被举报评价",
+        "anonymous": "匿名",
+        "provider": "商家: {{name}}",
+        "deletedByReport": "已被举报删除",
+        "sectionChat": "聊天记录（举报时上传）",
+        "chatNotice": "聊天内容仅供 CoBook 审查使用",
+        "messageCount": "共 {{count}} 条消息",
+        "sectionUser": "被举报用户资料",
+        "userStats": "关注 {{follow}} · 粉丝 {{follower}} · 商品 {{products}}",
+        "reportedTimes": "被举报 {{count}} 次",
+        "muted": "禁言中",
+        "sectionActivity": "被举报活动页",
+        "platform": "平台",
+        "reportedBadge": "被举报",
+        "staleMessage": "原消息已删除（快照文本）",
+        "imageUnavailable": "证据图片不可用（{{reason}}）",
+        "snapshotReason": {
+          "sourceMissing": "原图已删除",
+          "copyFailed": "保全失败",
+          "unknown": "原因未知"
+        },
+        "snapshotWarning": "部分证据图片未能保全",
+        "productRefLabel": "[商品] {{content}}",
+        "viewReview": "查看评价",
+        "viewProvider": "查看商家",
+        "sectionProvider": "被举报商家",
+        "reviewSnapshotsTitle": "评价图片快照",
+        "reviewSnapshotPartial": "部分评价图片未能保全",
+        "reviewSnapshotFailed": "评价图片快照保全失败",
+        "viewActivity": "查看活动页",
+        "activityTakenDown": "已下架",
+        "takedownActivity": "同时下架该活动页"
+      },
+      "history": {
+        "viewAll": "查看全部",
+        "empty": "暂无记录",
+        "asReporter": "发起的举报",
+        "asTarget": "被举报记录"
+      }
+    },
+    "systemHealth": {
+      "status": {
+        "healthy": "健康",
+        "degraded": "降级",
+        "unhealthy": "异常",
+        "warning": "警告",
+        "notConfigured": "未配置",
+        "error": "错误"
+      },
+      "loadFailed": "加载系统状态失败",
+      "loading": "加载系统状态...",
+      "currentNode": "当前节点",
+      "nodeN": "节点 {{n}}",
+      "uptimeValue": "运行时间: {{value}}",
+      "connectionsValue": "连接数: {{count}} / 已认证: {{auth}}",
+      "stale": "数据已过期",
+      "poolValue": "连接池: {{active}}/{{total}} (空闲: {{idle}}, 等待: {{waiting}})",
+      "cpuMetric": "CPU: {{usage}}% ({{cores}} 核)",
+      "memoryMetric": "内存: {{usage}}% (Heap: {{heapUsed}}/{{heapTotal}} MB)",
+      "ecsTaskN": "任务 {{n}}",
+      "ecsCpuMem": "CPU: {{cpu}} | 内存: {{memory}}",
+      "availabilityZone": "可用区: {{az}}",
+      "container": "容器: {{name}} ({{status}})",
+      "clusterOverview": "集群概览",
+      "totalNodes": "总节点",
+      "clusterUnavailable": "集群模式不可用",
+      "clusterUnavailableMsg": "Redis 未连接，无法获取集群健康状态",
+      "nodesSection": "节点状态",
+      "currentNodeInfo": "当前节点信息",
+      "systemInfo": "系统信息",
+      "nodeIdLabel": "节点 ID",
+      "environment": "环境",
+      "uptimeLabel": "运行时间",
+      "hostname": "主机名",
+      "platform": "平台",
+      "servicesSection": "服务状态",
+      "servicesSectionAgg": "服务状态 ({{count}} 节点汇总)",
+      "database": "数据库",
+      "avgLatency": "平均延迟: {{ms}}ms",
+      "nodesSuffix": "({{count}} 节点)",
+      "totalPoolValue": "总连接池: {{active}}/{{total}} (空闲: {{idle}}, 等待: {{waiting}})",
+      "latency": "延迟: {{ms}}ms",
+      "connectedNodes": "已连接节点: {{connected}}/{{total}}",
+      "adapter": "适配器: {{status}}",
+      "enabled": "已启用",
+      "notEnabled": "未启用",
+      "connected": "已连接: {{value}}",
+      "totalSocketConnections": "总 Socket 连接: {{count}}",
+      "totalAuthUsers": "总已认证用户: {{count}}",
+      "totalRooms": "总 Rooms: {{rooms}} / 总 SIDs: {{sids}}",
+      "socketConnections": "Socket 连接: {{count}}",
+      "authUsers": "已认证用户: {{count}}",
+      "redisAdapter": "Redis 适配器: {{value}}",
+      "resourcesSection": "资源使用",
+      "resourcesSectionAgg": "资源使用 ({{count}} 节点汇总)",
+      "avgCpuUsage": "平均 CPU 使用率: {{value}}%",
+      "totalCores": "总核心数: {{count}}",
+      "cores": "核心数: {{value}}",
+      "cpuModel": "型号: {{model}}",
+      "loadAvg": "负载: {{value}}",
+      "memory": "内存",
+      "avgSystemMemUsage": "平均系统内存使用率: {{value}}%",
+      "totalProcessHeap": "总进程 Heap: {{used}}/{{total}} MB",
+      "avgProcessHeap": "平均进程 Heap: {{value}} MB",
+      "totalProcessRss": "总进程 RSS: {{value}} MB",
+      "totalSystemMem": "总系统内存: {{used}}/{{total}} MB",
+      "processHeap": "进程 Heap: {{used}}/{{total}} MB",
+      "processRss": "进程 RSS: {{value}} MB",
+      "systemMem": "系统: {{used}}/{{total}} MB",
+      "ecsSection": "ECS 集群",
+      "ecsClusterName": "集群: {{name}}",
+      "desired": "期望",
+      "running": "运行中",
+      "pendingStart": "待启动",
+      "runningTasks": "运行中的任务",
+      "ecsUnavailable": "ECS 信息不可用",
+      "lastUpdate": "最后更新: {{time}}"
+    },
+    "achievementDefs": {
+      "strategy": {
+        "snapshotLabel": "Snapshot（默认，最安全）",
+        "snapshotHint": "只改定义，不动已解锁用户的 XP 历史",
+        "topUpOnlyLabel": "Top-up only（只补不扣）",
+        "topUpOnlyHint": "XP 提高时给已解锁用户补发差额，降低时不扣回",
+        "fullRetroLabel": "Full retro（全量追溯，慎用）",
+        "fullRetroHint": "XP 差额正负都补/扣，可能导致用户降级。需输入管理员密码"
+      },
+      "noImageSelected": "未选择图片",
+      "uploadFailed": "上传失败",
+      "pickImageFailed": "选择图片失败",
+      "saveFailed": "保存失败",
+      "savedTitle": "已保存",
+      "savedSummary": "策略：{{strategy}}\n影响用户：{{affectedUsers}}\nXP 变动：{{xpDelta}}\n新解锁：{{newlyUnlocked}}",
+      "windowBackfilled": "时间窗回填：{{count}}",
+      "reconcileTitle": "触发 Reconcile",
+      "reconcileMessage": "全量对账所有 metric。首次上线 backfill 请选择 Silent，日常修复选择 Normal（会推送 Socket 通知）。",
+      "windowStartLabel": "开始（留空 = 不限下界）",
+      "windowEndLabel": "结束（留空 = 不限上界）",
+      "confirmPasswordPlaceholder": "用于 full_retro 二次验证",
+      "passwordRequired": "Full retro 策略需要输入管理员密码",
+      "xpInvalid": "XP 必须是非负整数",
+      "thresholdInvalid": "阈值必须是非负整数",
+      "sortOrderInvalid": "排序必须是整数",
+      "windowOrderInvalid": "开始时间不能晚于结束时间"
+    },
+    "roles": {
+      "superAdmin": "超级管理员",
+      "platformAdmin": "平台管理员",
+      "platformSupport": "平台客服",
+      "regionalDirector": "区域总监",
+      "regionalManager": "地区经理",
+      "regionalOperator": "区域运营",
+      "storeManager": "店长",
+      "storeEmployee": "店员",
+      "storeFinance": "财务",
+      "storeViewer": "查看员",
+      "salesRep": "销售",
+      "user": "普通用户"
+    },
+    "roleScope": {
+      "platform": "平台级",
+      "regional": "区域级",
+      "provider": "商家级",
+      "user": "用户级"
+    },
+    "scopeType": {
+      "global": "全局",
+      "region": "区域",
+      "user": "用户级"
+    },
+    "searchUser": {
+      "placeholder": "搜索用户昵称、用户名、ID、邮箱、电话"
+    },
+    "userDetail": {
+      "pickRoleRequired": "请选择一个角色",
+      "assignRoleFailed": "分配角色失败",
+      "removeRoleTitle": "确认移除",
+      "removeRoleMessage": "确定要移除用户的 \"{{role}}\" 角色吗？",
+      "removeRoleConfirm": "确定移除",
+      "removeRoleFailed": "移除角色失败",
+      "impersonateFailed": "模拟登录失败",
+      "cannotImpersonateSelf": "不能模拟自己的账户",
+      "unbanTitle": "解除封禁",
+      "unbanMessage": "确定要解除该用户的封禁吗？",
+      "unmuteTitle": "解除禁言",
+      "unmuteMessage": "确定要解除该用户的禁言吗？",
+      "liftConfirm": "确认解除",
+      "unbanSuccess": "封禁已解除",
+      "unmuteSuccess": "禁言已解除",
+      "pickRegionPlaceholder": "请选择区域...",
+      "pickRolePlaceholder": "请选择角色...",
+      "impersonateReasonLabel": "模拟原因（可选）",
+      "impersonateReasonPlaceholder": "例如：用户报告无法查看订单，需要排查问题",
+      "moderation": {
+        "warnTitle": "发送警告",
+        "muteTitle": "禁言用户"
+      },
+      "modNotePlaceholder": "记录操作原因..."
+    },
+    "systemMessage": {
+      "audience": {
+        "all": {
+          "label": "全部用户",
+          "desc": "所有注册用户"
+        },
+        "admin": {
+          "label": "管理员",
+          "desc": "平台管理员"
+        },
+        "regionalManager": {
+          "label": "全体区域经理",
+          "desc": "所有区域经理"
+        },
+        "regionSpecific": {
+          "label": "指定区域",
+          "desc": "指定区域内的所有用户"
+        },
+        "provider": {
+          "label": "全体商家",
+          "desc": "所有商家员工"
+        },
+        "providerSpecific": {
+          "label": "指定商家",
+          "desc": "选择特定商家的员工"
+        },
+        "user": {
+          "label": "普通用户",
+          "desc": "非商家非管理员"
+        },
+        "selected": {
+          "label": "指定用户",
+          "desc": "手动选择接收人"
+        }
+      },
+      "countUsers": "{{count}} 个用户",
+      "countProviders": "{{count}} 个商家",
+      "countRegions": "{{count}} 个区域",
+      "confirmSendTitle": "确认发送",
+      "confirmSendMessage": "将发送给：{{target}}",
+      "sendAction": "发送",
+      "fetchUsersFailed": "获取用户失败",
+      "sent": "消息已发送",
+      "sendError": "发送时发生错误",
+      "titlePlaceholder": "标题",
+      "editBody": "编辑正文",
+      "bodyPlaceholder": "正文内容...",
+      "tapToEditBody": "点击编辑正文内容...",
+      "navLinkPlaceholder": "导航链接（可选）",
+      "imageUrlPlaceholder": "图片 URL（可选）",
+      "searchUsersPlaceholder": "搜索用户...",
+      "searchProvidersPlaceholder": "搜索商家名称..."
+    },
+    "screens": {
+      "systemMessageManagement": "系统消息管理",
+      "roleConfig": "系统角色权限配置",
+      "roleManagement": "系统角色管理",
+      "roleDetail": "角色详情",
+      "systemStatus": "系统状态",
+      "reportDetail": "举报详情",
+      "moderationHistory": "审核历史",
+      "categoryManagement": "分类标签管理",
+      "materials": "物料",
+      "batchDetail": "批次详情",
+      "editCategory": "编辑分类",
+      "newCategory": "新增分类",
+      "subscriptionManagement": "订阅方案管理",
+      "bannerManagement": "首页轮播图管理",
+      "reviewDetail": "审核详情",
+      "achievementDefs": "成就定义管理",
+      "userAchievements": "用户成就面板",
+      "scorecardTemplatePreview": "积分卡模板预览",
+      "unbatchedMaterials": "无批次物料",
+      "providerMaterials": "商家物料"
+    },
+    "systemRoles": {
+      "loadListFailed": "加载角色列表失败",
+      "loadDetailFailed": "加载角色详情失败",
+      "loadConfigFailed": "加载配置失败",
+      "noChanges": "没有修改需要保存",
+      "permissionsUpdated": "权限更新成功",
+      "savePermissionsFailed": "保存权限失败",
+      "configSaved": "配置已保存",
+      "saveConfigFailed": "保存配置失败",
+      "resetTitle": "确认重置",
+      "resetMessage": "确定要放弃所有未保存的更改吗？",
+      "resetConfirm": "确定重置",
+      "syncTitle": "确认同步",
+      "syncMessage": "确定要将当前{{role}}的权限配置同步到所有商家吗？\n\n此操作将更新所有商家的{{role}}角色权限，无法撤销。",
+      "syncConfirm": "确认同步",
+      "syncSuccess": "同步成功",
+      "syncedRoles": "同步了 {{count}} 个角色",
+      "syncFailed": "同步失败"
+    },
+    "permCategory": {
+      "store": "商家管理",
+      "points": "积分管理",
+      "voucher": "卡券管理",
+      "provider": "商家平台",
+      "product": "商品管理",
+      "user": "用户管理",
+      "order": "订单管理",
+      "message": "消息管理",
+      "review": "评价管理",
+      "report": "报表管理",
+      "region": "区域管理",
+      "wallet": "钱包管理",
+      "notification": "通知管理",
+      "system": "系统管理",
+      "providerManagement": "商家管理",
+      "scorecardOperations": "积分卡操作",
+      "dataAnalytics": "数据分析",
+      "userManagement": "用户管理",
+      "systemShort": "系统"
+    },
+    "category": {
+      "loadListFailed": "加载分类列表失败",
+      "disableAction": "禁用",
+      "enableAction": "启用",
+      "confirmActionTitle": "确认{{action}}",
+      "confirmActionMessage": "确定要{{action}}此分类吗？",
+      "nameKeyRequired": "nameKey 不能为空",
+      "updated": "分类已更新",
+      "created": "分类已创建",
+      "nameKeyPlaceholder": "如: japanese, cocktailBar"
+    },
+    "testUsers": {
+      "inputErrorTitle": "输入错误",
+      "countInvalid": "请输入有效的用户数量",
+      "createdTitle": "创建成功",
+      "createdDesc": "成功创建了 {{count}} 个测试用户",
+      "createError": "创建测试用户时出错",
+      "createFailed": "创建失败",
+      "deleteConfirmMessage": "确定要删除所有测试用户吗？此操作不可撤销。",
+      "deletedTitle": "删除成功",
+      "deletedDesc": "成功删除了 {{count}} 个测试用户",
+      "deleteError": "删除测试用户时出错",
+      "deleteFailed": "删除失败",
+      "countPlaceholder": "输入数量",
+      "addButton": "添加测试用户",
+      "deleteAllButton": "删除所有测试用户"
+    },
+    "activityPages": {
+      "confirmArchive": "确定归档？",
+      "confirmDelete": "确定删除？"
+    },
+    "activityList": {
+      "resumed": "已恢复",
+      "review": "审核",
+      "adjust": "调整"
+    },
+    "userAchievements": {
+      "grantFailed": "授予失败",
+      "granted": "已授予「{{name}}」(+{{xp}} XP)",
+      "alreadyOwned": "用户已拥有「{{name}}」",
+      "revokeFailed": "撤销失败",
+      "revokedTitle": "已撤销",
+      "revokedDesc": "已撤销「{{name}}」并扣回 XP",
+      "notePlaceholder": "例如：Weblate 翻译 200+ 条",
+      "confirmRevokeTitle": "确认撤销",
+      "confirmRevokeMessage": "确定撤销「{{name}}」?",
+      "revokeAction": "撤销",
+      "pickAchievementRequired": "请选择要授予的成就"
+    },
+    "banner": {
+      "linkType": {
+        "none": "无",
+        "activity": "活动",
+        "provider": "商家",
+        "url": "链接"
+      },
+      "imageUploaded": "图片上传成功",
+      "deleteConfirm": "确定删除该轮播图？",
+      "titlePlaceholder": "输入标题",
+      "searchActivityPlaceholder": "搜索活动标题..."
+    },
+    "materials": {
+      "notFound": "未找到该物料",
+      "nfcPrompt": "请将手机背面靠近 NFC 物料",
+      "nfcUnsupported": "此设备不支持 NFC",
+      "nfcNoCode": "未读到 CoBook 物料",
+      "nfcNoCodeDesc": "请确认是 CoBook 的 NFC 标签",
+      "nfcReadFailed": "NFC 读取失败，请重试",
+      "countRange": "数量需为 1–1000",
+      "generated": "已生成 {{count}} 个物料",
+      "batchLinksTitle": "本批物料链接",
+      "batchLinksCopied": "已复制 {{count}} 条链接",
+      "linkCopied": "链接已复制",
+      "generateFailed": "生成失败",
+      "codePlaceholder": "输入或粘贴物料码",
+      "batchNameUpdated": "已更新批次名",
+      "updateFailed": "更新失败",
+      "batchEmpty": "本批次没有物料",
+      "exportFailed": "导出失败",
+      "exported": "已导出",
+      "batchLabelPlaceholder": "如「2026Q3 门店 NFC」",
+      "pickProviderFirst": "请先搜索选择商家，或手输商家 UUID",
+      "bound": "已绑定",
+      "bindFailed": "绑定失败",
+      "unbound": "已解绑",
+      "unbindFailed": "解绑失败",
+      "statusUpdated": "已更新状态",
+      "resyncTriggered": "已触发重新同步",
+      "triggerFailed": "触发失败",
+      "providerSearchPlaceholder": "输入商家名称搜索",
+      "status": {
+        "unassigned": "未分配",
+        "active": "已绑定",
+        "disabled": "已停用",
+        "lost": "挂失",
+        "damaged": "已损坏",
+        "retired": "已废弃"
+      },
+      "type": {
+        "qr": "二维码",
+        "nfc": "NFC",
+        "appclipCode": "App Clip Code",
+        "combo": "组合"
+      },
+      "scanAction": "扫码绑定 / 查看",
+      "nfcAction": "NFC 绑定 / 查看",
+      "generateAction": "批量生成物料",
+      "lookupAction": "查看",
+      "batchesTitle": "批次（点进去看组内码、导出 CSV；长按批次行可解散 / 删除）",
+      "emptyList": "还没有物料，点上方批量生成",
+      "searchBatchesPlaceholder": "搜索批次名",
+      "noBatchMatches": "没有匹配的批次",
+      "unnamedBatch": "未命名批次",
+      "sort": {
+        "recent": "最近",
+        "name": "名称",
+        "total": "数量",
+        "unassigned": "未分配多"
+      },
+      "sumTotal": "共 {{count}}",
+      "sumActive": "已绑 {{count}}",
+      "sumUnassigned": "未分配 {{count}}",
+      "sumDisabled": "停用 {{count}}",
+      "sumLost": "挂失 {{count}}",
+      "unbatchedTitle": "无批次",
+      "unbatchedSubtitle": "单独生成或从批次移出的物料",
+      "unbatchedEmpty": "暂无无批次物料",
+      "typeLabel": "类型",
+      "countLabel": "数量（1–1000）",
+      "generateTarget": "生成到",
+      "targetNewBatch": "新批次",
+      "targetExistingBatch": "已有批次",
+      "targetStandalone": "不进批次",
+      "batchNoteLabel": "批次备注（选填）",
+      "generateHint": "生成后弹出整批 /c/{code} 链接，可分享给印刷 / 生成 App Clip Code。批次详情里也能再导出 CSV。",
+      "generateSubmit": "生成",
+      "pickBatchFirst": "请先选择目标批次",
+      "noBatchesOfType": "没有该类型的批次",
+      "dissolveAction": "解散批次",
+      "dissolveConfirmTitle": "解散批次？",
+      "dissolveConfirmMsg": "批内 {{count}} 个物料将移入「无批次」，物料本身不受影响。",
+      "dissolved": "已解散，{{count}} 个物料移入无批次",
+      "deleteBatchAction": "删除批次",
+      "deleteBatchConfirmTitle": "删除批次？",
+      "deleteBatchConfirmMsg": "将永久删除批内 {{count}} 个物料（均为未分配 / 已废弃），印刷的链接将永久失效。此操作不可撤销。",
+      "deleteBatchBlocked": "批内有在用 / 停用 / 挂失 / 损坏物料，不能删除；请先解绑、标废弃，或改用解散",
+      "deletedBatch": "已删除批次及 {{count}} 个物料",
+      "renameTitle": "批次名 / 备注",
+      "renameHint": "点标题改名",
+      "totalCount": "共 {{count}} 个物料",
+      "pickBatch": "选择批次",
+      "moveAction": "移动到批次",
+      "moveOutAction": "移出批次",
+      "moved": "已移动 {{count}} 个物料",
+      "moveFailed": "移动失败",
+      "typeMismatch": "物料类型与目标批次不一致",
+      "mixedTypesCantMove": "所选物料类型不一致，请分开移动",
+      "deleteMaterialAction": "删除",
+      "deleteMaterialConfirmTitle": "删除物料？",
+      "deleteMaterialConfirmMsg": "码 {{code}} 将被永久删除，其链接将永久失效。仅未分配或已废弃物料可删。",
+      "deleteSelectedConfirmTitle": "删除所选物料？",
+      "deleteSelectedConfirmMsg": "将永久删除 {{count}} 个未分配 / 已废弃物料，其链接将永久失效。",
+      "deletedMaterial": "已删除",
+      "deletedCount": "已删除 {{count}} 个物料",
+      "deleteFailed": "删除失败",
+      "notUnassignedCantDelete": "仅未分配或已废弃的物料可删除，请先解绑或标废弃",
+      "multiSelect": "多选",
+      "selectedCount": "已选 {{count}}",
+      "searchInBatch": "搜索码 / 备注 / 商家",
+      "filterAll": "全部",
+      "sortCode": "按码",
+      "sortNewest": "最新",
+      "sortScans": "扫码多",
+      "noMatches": "没有匹配的物料",
+      "addMaterials": "添加物料",
+      "addGenerate": "生成新物料到此批次",
+      "addGenerateStandalone": "生成新物料（不进批次）",
+      "exportCsv": "导出 CSV",
+      "scanShort": "扫 {{count}}",
+      "scanTotal": "累计扫码 {{count}}",
+      "notBound": "尚未绑定商家",
+      "bindSearchLabel": "绑定到商家（搜索店名，全区域）",
+      "pickedProvider": "已选：{{name}}",
+      "orManualUuid": "或手输商家 UUID",
+      "positionLabel": "位置备注（选填，如「前台 / 桌 5」）",
+      "bindAction": "绑定 / 改绑",
+      "unbindAction": "解绑（回收）",
+      "disableAction": "停用",
+      "lostAction": "挂失",
+      "restoreAction": "恢复",
+      "resyncAction": "重新同步",
+      "noProviderError": "商家 UUID 不存在",
+      "appclip": {
+        "pending": "卡待同步",
+        "synced": "卡已同步",
+        "error": "卡同步失败"
+      },
+      "sumDamaged": "损坏 {{count}}",
+      "sumRetired": "废弃 {{count}}",
+      "damageAction": "损坏",
+      "retireAction": "废弃",
+      "retireConfirmTitle": "废弃物料？",
+      "retireConfirmMsg": "码 {{code}} 将标记为废弃：链接立即失效、不可再绑定商家（可恢复撤销）。废弃后可被删除清理。",
+      "retiredCantBind": "物料已废弃，不能绑定；如需重新启用请先恢复",
+      "searchByProvider": "按商家查看绑定物料",
+      "noProviderMatches": "没有匹配的商家",
+      "providerMaterialsSubtitle": "该商家名下绑定 {{count}} 个物料"
+    },
+    "scorecardPreview": {
+      "noLevel": "无等级 (Neutral)",
+      "providerName": "商家名称",
+      "cardName": "卡片名称",
+      "logoUrl": "Logo URL（可选）",
+      "primaryColor": "主色 (HEX)",
+      "accentColor": "强调色 (HEX)",
+      "currentPoints": "当前积分",
+      "qrContent": "QR 内容",
+      "qrPlaceholder": "SCORECARD:xxx 或 URL",
+      "maxPoints": "最大积分（集满章所需）"
+    },
+    "audience": {
+      "idsExample": "例如：{{example}}",
+      "lookbackDays": "回看天数",
+      "categoryIdsPlaceholder": "类目 IDs，例如：{{example}}",
+      "windowDays": "时间窗口（天）",
+      "minDays": "min（天）",
+      "maxDays": "max（天）",
+      "days": "天数",
+      "latitude": "纬度",
+      "longitude": "经度",
+      "radiusKm": "半径 km",
+      "minPoints": "最少积分",
+      "minVouchers": "最少券数"
+    },
+    "subscription": {
+      "invalidNumber": "请输入有效数字",
+      "cacheRefreshed": "缓存已刷新"
+    },
+    "permissionAudit": {
+      "title": "权限变更审计日志",
+      "actor": "操作人：{{name}} (#{{id}})",
+      "target": "目标：{{name}} (#{{id}})",
+      "empty": "暂无权限变更记录"
     }
   },
   "unknown": {
@@ -3366,7 +4878,7 @@
       "title": "需要更新",
       "subtitle": "本次为强制更新，必须升级至最新版本才能继续使用",
       "checkingSystem": "检查系统状态…",
-      "downloading": "正在下载…",
+      "downloading": "正在下载最新资源…",
       "applying": "即将重启应用更新…",
       "errorTitle": "更新失败",
       "errorRetry": "重试",
@@ -3396,8 +4908,39 @@
       "cannotUnlistTitle": "无法下架",
       "usableWindowLabel": "每日可核销时段",
       "usableWindowHint": "仅在此时段到店核销有效（按商家所在时区），不影响兑换",
+      "refundOnExpiryLabel": "过期退还积分",
+      "refundOnExpiryHint": "开启后，此券过期未核销时将自动把所付积分退还给顾客",
+      "refundOnExpiryLocked": "过期退还积分为标准版及以上功能，升级订阅后可对此券开启",
       "usableWindowOvernight": "跨午夜：结束时间为次日",
-      "usableWindowEqual": "起止时间不能相同"
+      "usableWindowEqual": "起止时间不能相同",
+      "validityLabel": "过期期限:",
+      "validityUnit": "天 (7-90)",
+      "redeemedCount": "已兑换: {{times}}次",
+      "finishSorting": "完成排序",
+      "sortHint": "长按并拖动券项可调整默认显示顺序",
+      "unpublished": "未发布",
+      "previewAsCustomer": "顾客视角预览",
+      "previewHint": "以上为顾客领取后在“我的靠谱券”中看到的样式，仅供参考",
+      "publishNeedsInfo": "请先填写券名称并添加图片，再上架",
+      "draftCreated": "已创建未发布草稿，补齐名称与图片后可上架",
+      "addVoucher": "添加靠谱券",
+      "addImage": "点击添加图片",
+      "namePlaceholder": "券名称",
+      "descPlaceholder": "券描述",
+      "validityNoEffectTitle": "提示",
+      "validityNoEffect": "这个修改不会影响已经发放的靠谱券",
+      "selectTypeTitle": "选择券类型",
+      "searchPlaceholder": "搜索靠谱券",
+      "deleteConfirmTitle": "确认删除",
+      "deleteConfirmMessage": "确定要删除这个靠谱券吗？",
+      "deleteSuccessTitle": "删除成功",
+      "deleteSuccessDesc": "凭证已删除",
+      "cannotDeleteTitle": "无法删除",
+      "cannotDeleteMessage": "此优惠券已被以下积分商品绑定，无法删除：\n\n{{products}}\n\n请先解除商品绑定后再删除优惠券。",
+      "deleteFailedTitle": "删除失败",
+      "deleteFailedMessage": "无法删除凭证，请稍后重试",
+      "imagePickFailedTitle": "图片选择失败",
+      "unknownError": "未知错误"
     },
     "detail": {
       "title": "靠谱券详情",
@@ -3426,6 +4969,7 @@
       "qrSection": "使用凭证",
       "qrHint": "请向商家出示此二维码",
       "refundHint": "如需退券，请联系商家协助处理。退券后积分将退还到您的积分卡。",
+      "refundOnExpiryLabel": "过期退积分",
       "voucherCode": "券码",
       "selectHint": "选择一张券查看",
       "provider": "适用商家",
@@ -3462,6 +5006,8 @@
       "term2": "到店出示券码即可使用",
       "term3": "每张券限使用一次，不可叠加",
       "term4": "过期后自动失效，积分将退回",
+      "term4Refund": "过期未核销将自动失效，所付积分会退还",
+      "term4NoRefund": "过期未核销将自动失效，所付积分不予退还",
       "usableWindowTerm": "兑换后仅可在每日 {{window}} 到店核销（按商家时区）",
       "viewProvider": "前往商家页面兑换",
       "redeemNow": "立即兑换"
@@ -3504,7 +5050,19 @@
       "usageNotice1": "兑换后的券可在\"我的-优惠券\"中查看",
       "usageNotice2": "请在有效期内使用，过期作废",
       "usageNotice3": "最终解释权归商家所有"
-    }
+    },
+    "badge": {
+      "new": "新"
+    },
+    "tabs": {
+      "all": "全部",
+      "active": "可使用",
+      "used": "已使用",
+      "expired": "已过期",
+      "expiredLong": "已过期/已退还"
+    },
+    "unnamed": "未命名券",
+    "noDescription": "无描述"
   },
   "level": {
     "merchant": {
@@ -3763,7 +5321,9 @@
     "filterToday": "今日",
     "filterWeek": "近7天",
     "filterMonth": "近30天",
-    "filterAll": "全部"
+    "filterAll": "全部",
+    "quickConfirmTitle": "确认核销这张券？",
+    "viewDetail": "查看详情"
   },
   "scorecardManagement": {
     "permissionError": "权限错误",
@@ -3776,24 +5336,18 @@
     "confirmOperation": "确认操作",
     "confirmAddPoints": "确定要为 {{nickname}} 增加 {{points}} 积分吗？",
     "quickAddPoints": "快速增加{{points}}积分",
-    "currentOperator": "当前操作员",
     "pointsAddedSuccess": "已增加 {{points}} 积分",
     "operationFailedRetry": "操作失败，请重试",
     "operationFailed": "操作失败",
-    "invalidPointsValue": "请输入有效的积分数值",
     "manualAddPoints": "手动增加积分",
-    "manualSubtractPoints": "手动扣除积分",
     "pointsAddSuccess": "积分增加成功",
-    "pointsSubtractSuccess": "积分扣除成功",
     "pointsBalance": "积分余额",
     "earnToastTitle": "+{{points}} 积分已到账",
-    "subtractToastTitle": "积分已扣减",
     "activeDays": "活跃天数",
     "totalEarned": "累计获得",
     "totalSpent": "累计消费",
     "quickActions": "快速操作",
     "customAdd": "自定义增加",
-    "subtractPoints": "扣除积分",
     "operationRecords": "操作记录",
     "totalRecords": "共 {{count}} 条",
     "filteredRecords": "已筛选 {{count}} 条",
@@ -3810,9 +5364,7 @@
     "startScan": "开始扫描",
     "placeQRCodeInFrame": "将二维码放入框内扫描",
     "addPoints": "增加积分",
-    "enterPointsAmount": "输入积分数量",
     "pointsUnit": "积分",
-    "notesOptional": "备注说明（选填）",
     "confirm": "确认操作",
     "pointsActions": "积分操作",
     "addByAmount": "按金额加积分",
@@ -3866,6 +5418,7 @@
   "providerCategories": {
     "selectTitle": "选择分类",
     "selectHint": "长按已选分类设为主分类",
+    "selectHintSingle": "只能选择 1 个分类",
     "restaurant": "餐厅",
     "bar": "酒吧",
     "bubbleTea": "奶茶",
@@ -4388,7 +5941,33 @@
       "message": "消息",
       "provider": "商家",
       "activity": "活动页"
-    }
+    },
+    "picker": {
+      "title": "选择要举报的消息",
+      "subtitle": "选中的消息会作为证据提交给审核团队；也可以不指定消息直接举报。",
+      "selectedCount": "已选 {{count}}/{{max}}",
+      "limitReached": "最多只能选择 {{max}} 条消息",
+      "continue": "继续举报（已选 {{count}} 条）",
+      "skip": "不指定消息，举报此用户",
+      "empty": "这个会话还没有可选的消息",
+      "you": "我",
+      "unknownSender": "对方",
+      "imageSummary": "[图片]",
+      "productSummary": "[商品] {{title}}",
+      "untitled": "未命名商品",
+      "offerSummary": "[出价] {{amount}}",
+      "notDelivered": "未送达，无法作为证据",
+      "anchor": "起点",
+      "selectToHere": "选到这里",
+      "hintPickFirst": "点一条消息作为起点",
+      "clear": "清除",
+      "rangeTooLong": "这段范围有 {{count}} 条，最多只能选 {{max}} 条",
+      "endHere": "选到此",
+      "hintSelectToHere": "点「选到这里」框选证据",
+      "outOfRange": "超出 {{max}} 条上限",
+      "subtitleSelectToHere": "点一条消息，即从最新一条一路选到那里作为证据；也可以不指定消息直接举报。"
+    },
+    "selectedMessagesHint": "已选 {{count}} 条消息作为证据"
   },
   "block": {
     "blockUser": "屏蔽用户",
@@ -4436,22 +6015,29 @@
   "emptyState": {
     "secondhand": {
       "title": "暂无商品",
-      "description": "还没有二手商品，先逛逛吧"
+      "description": "还没有二手商品，先逛逛吧",
+      "action": "发布闲置"
     },
     "watchlist": {
       "title": "收藏夹是空的",
-      "description": "将喜欢的商品添加到收藏"
+      "description": "将喜欢的商品添加到收藏",
+      "action": "去逛闲置"
     },
     "searchNoResults": {
       "title": "没有找到相关商品",
-      "description": "试试其他搜索词或筛选条件"
+      "description": "试试其他搜索词或筛选条件",
+      "action": "浏览全部"
     },
     "voucher": {
       "title": "还没有靠谱券",
-      "description": "点击右上角\"+\"按钮添加"
+      "description": "点击右上角\"+\"按钮添加",
+      "action": "新建靠谱券"
     },
     "voucherSearch": {
       "title": "没有找到匹配的靠谱券"
+    },
+    "myVouchers": {
+      "action": "去逛商家"
     }
   },
   "activityPage": {
@@ -4470,6 +6056,29 @@
       "empty": "暂无活动"
     },
     "editor": {
+      "unsavedTitle": "放弃新建？",
+      "unsavedBody": "你填写的内容尚未保存，返回将丢失。",
+      "discard": "放弃",
+      "sectionTitle": "区块标题",
+      "sectionSubtitle": "区块副标题",
+      "sectionTitlePlaceholder": "输入标题（可选）",
+      "pageTitlePlaceholder": "输入标题",
+      "pageDescriptionPlaceholder": "输入描述（可选）",
+      "richTextContent": "富文本内容",
+      "richTextPlaceholder": "点击编辑富文本内容（支持多语言）",
+      "itemCustomLabel": "自定义标签",
+      "itemCustomLabelPlaceholder": "覆盖默认标题（可选）",
+      "itemCustomDescription": "自定义描述",
+      "itemCustomDescriptionPlaceholder": "覆盖默认描述（可选）",
+      "startDateRequired": "请选择活动开始时间",
+      "endDateRequired": "请选择活动结束时间",
+      "endDateInPast": "结束时间必须晚于当前时间，请重新选择",
+      "endDateBeforeStart": "结束时间必须晚于开始时间",
+      "sectionInvalid": "第 {{index}} 个区块「{{type}}」有必填项未填写，请补全后再提交",
+      "resubmitForReview": "重新提交审核",
+      "submitNeedsDates": "请先填写活动开始和结束时间",
+      "submitNeedsValidDates": "结束时间必须晚于当前时间且晚于开始时间",
+      "pausedHint": "已暂停。可继续编辑；想恢复曝光请点击下方「提交审核」",
       "create": "创建活动页面",
       "edit": "编辑活动页面",
       "pageTitle": "页面标题",
@@ -4556,7 +6165,50 @@
         "note": "补充说明",
         "notePlaceholder": "比如：周年庆希望曝光一周左右…",
         "disclaimer": "以上仅为建议；最终曝光配置由平台运营在审核时决定"
-      }
+      },
+      "tabRedemption": "兑换项目",
+      "tabVoucher": "券",
+      "tabProduct": "商品",
+      "tabProvider": "商家",
+      "searchEntityPlaceholder": "搜索{{target}}...",
+      "imageUploadFailed": "图片上传失败",
+      "uploadedCount": "已上传 {{success}}/{{total}} 张图片",
+      "confirmDeleteItem": "确定删除该项目？",
+      "sectionNotFound": "区块不存在",
+      "collapsePreview": "收起预览",
+      "livePreview": "实时预览",
+      "preview": "预览",
+      "noEditableConfig": "此区块类型暂无可编辑配置",
+      "confirmDeleteImage": "删除这张图片？",
+      "noImageAddBelow": "暂无图片，点击下方添加",
+      "noImage": "暂无图片",
+      "uploadingProgress": "上传中 {{progress}}%",
+      "batchUpload": "批量上传",
+      "linkedItemsCount": "关联项目 ({{count}})",
+      "noLinkedItems": "暂无关联项目",
+      "noResults": "没有找到结果",
+      "enterKeyword": "输入关键词搜索",
+      "sectionList": "区块列表",
+      "itemCount": "{{count}} 个项目",
+      "noSections": "暂无区块，点击上方按钮添加",
+      "previewPage": "预览页面",
+      "confirmDeleteSection": "确定删除该区块？",
+      "pleaseSelect": "请选择",
+      "boolOn": "已开启",
+      "boolOff": "已关闭",
+      "dateTapToSelect": "点击选择",
+      "urlSchemeError": "链接需以 http:// 或 https:// 开头",
+      "openMapPicker": "打开地图选点",
+      "geoLatitude": "纬度",
+      "geoLongitude": "经度",
+      "geoZoom": "缩放",
+      "entityTypeRedemption": "兑换项目",
+      "entityTypeProduct": "商品",
+      "entityTypeProvider": "商家",
+      "entityRefSelected": "已选 {{type}}（点此重选）",
+      "entityRefSelect": "选择 {{type}}",
+      "addListItem": "添加{{label}}",
+      "pointsProgressAutoModeHint": "会员等级目标会自动指向用户的下一级；满级时显示祝贺"
     },
     "template": {
       "galleryTitle": "活动页模板",
@@ -4666,6 +6318,56 @@
       "parentFallback": "上级页面",
       "lifecycleHint": "子页内容跟随主页面发布，无需单独提交或配置曝光。编辑完成后返回上级页面即可。"
     },
+    "countdown": {
+      "days": "天",
+      "hours": "时",
+      "minutes": "分",
+      "seconds": "秒"
+    },
+    "flashSale": {
+      "upcoming": "即将开始",
+      "live": "抢购中",
+      "ended": "已结束",
+      "stockLimit": "仅 {{count}} 份",
+      "revealHint": "开抢时见",
+      "notStarted": "尚未开始",
+      "buyNow": "立即抢购",
+      "untilStart": "距开始",
+      "untilEnd": "距结束",
+      "finished": "活动已结束"
+    },
+    "pointsProgress": {
+      "maxLevel": "恭喜！您已是最高等级{{name}}",
+      "reached": "已达成{{target}}，可立即兑换",
+      "needMore": "再获取 {{needed}} 积分即可兑换{{target}}",
+      "current": "当前积分",
+      "target": "目标",
+      "needed": "还差",
+      "viewDetail": "查看详情",
+      "viewAllTiers": "查看所有等级",
+      "placeholderProviderOnly": "积分进度（仅商家活动页可用，平台活动不显示）",
+      "placeholderLogin": "积分进度（登录后显示个人进度）",
+      "placeholderNoCard": "积分进度（您还没有该商家的积分卡）",
+      "placeholderNoData": "积分进度（暂无数据）"
+    },
+    "loyaltyTier": {
+      "totalPoints": "累计积分 {{points}}",
+      "toNext": "距 {{name}} 还差 {{points}} 积分",
+      "discountBenefit": "满 {{spend}} 元享 {{percent}}% 折扣",
+      "bonusBenefit": "满 {{spend}} 元送 {{points}} 积分",
+      "viewAll": "查看完整特权",
+      "placeholderProviderOnly": "会员等级（仅商家活动页可用）",
+      "placeholderLogin": "会员等级（登录后显示个人等级）",
+      "placeholderNoCard": "会员等级（您还没有该商家的积分卡）"
+    },
+    "voucherTypes": {
+      "cash": "现金券",
+      "discount": "折扣券",
+      "gift": "礼品券",
+      "service": "服务券",
+      "default": "兑换项目"
+    },
+    "pointsUnit": "积分",
     "bundle": {
       "redeemCountBadge": "{{count}} 已兑换",
       "originalPrice": "原价 {{points}} 积分",
@@ -4749,6 +6451,7 @@
       "todayImpressions": "今日曝光",
       "totalImpressions": "总曝光",
       "uniqueUsers": "独立用户",
+      "detailViews": "详情浏览",
       "clickCount": "点击数",
       "conversionCount": "转化数",
       "ctr": "点击率",
@@ -4792,6 +6495,295 @@
       "providerActivities": "本店活动",
       "categoryActivities": "本类目活动",
       "categoryLanding": "相关推荐活动"
+    },
+    "schema": {
+      "_shared": {
+        "alignment": {
+          "left": "左对齐",
+          "center": "居中",
+          "right": "右对齐"
+        },
+        "listLayout": {
+          "list": "列表",
+          "grid": "网格",
+          "horizontal_scroll": "横滑"
+        }
+      },
+      "hero_banner": {
+        "layout": "布局模式",
+        "layout_opt": {
+          "overlay": "叠加",
+          "image_top": "图上文下",
+          "image_bottom": "文上图下"
+        },
+        "backgroundColor": "背景颜色",
+        "height": "高度",
+        "overlayOpacity": "蒙版透明度",
+        "overlayOpacity_hint": "0 到 1，仅 overlay 布局可见",
+        "textAlignment": "文字对齐",
+        "textPosition": "文字位置",
+        "textPosition_opt": {
+          "top": "顶部",
+          "center": "居中",
+          "bottom": "底部"
+        },
+        "ctaText": "按钮文字",
+        "ctaText_ph": "立即参与（留空则不显示）",
+        "ctaLink": "按钮链接"
+      },
+      "notice_bar": {
+        "text": "通知文字",
+        "text_ph": "已有 328 人参与活动",
+        "iconName": "图标",
+        "backgroundColor": "背景颜色",
+        "textColor": "文字颜色",
+        "scrollable": "跑马灯滚动",
+        "speed": "滚动一周耗时",
+        "speed_unit": "秒",
+        "link": "点击跳转链接",
+        "link_ph": "可选 https://..."
+      },
+      "video": {
+        "provider": "视频来源",
+        "provider_opt": {
+          "direct": "直链",
+          "youtube": "YouTube",
+          "bilibili": "B 站"
+        },
+        "url": "视频链接",
+        "posterUrl": "封面图链接",
+        "posterUrl_ph": "可选 https://...",
+        "aspectRatio": "比例",
+        "aspectRatio_opt": {
+          "16_9": "16:9 横屏",
+          "9_16": "9:16 竖屏",
+          "1_1": "1:1 正方形",
+          "4_3": "4:3"
+        },
+        "autoPlay": "自动播放",
+        "autoPlay_hint": "需 muted=true 才会生效（移动端策略）",
+        "muted": "默认静音",
+        "loop": "循环播放"
+      },
+      "featured_single": {
+        "displayStyle": "展示样式",
+        "displayStyle_opt": {
+          "card": "卡片",
+          "fullwidth": "通栏",
+          "banner": "横幅"
+        },
+        "showDescription": "显示描述文字",
+        "ctaText": "按钮文字",
+        "ctaText_ph": "查看详情（留空则不显示）",
+        "ctaLink": "按钮自定义链接",
+        "ctaLink_ph": "默认跳转到所选项目"
+      },
+      "map_location": {
+        "mode": "定位模式",
+        "mode_hint": "自动：地图自动包住下方关联的商家位置；手动：自己设固定中心和缩放",
+        "mode_opt": {
+          "auto": "自动（按关联商家）",
+          "manual": "手动设中心"
+        },
+        "__geo": "地图中心 / 缩放",
+        "__geo_hint": "点「打开地图选点」拖动设置，或手动微调；缩放 0-20（越大越近）",
+        "height": "地图高度",
+        "showUserLocation": "显示用户当前位置"
+      },
+      "image_carousel": {
+        "aspectRatio": "比例",
+        "aspectRatio_opt": {
+          "16_9": "16:9 横屏",
+          "4_3": "4:3",
+          "1_1": "1:1 正方形",
+          "3_4": "3:4 竖屏"
+        },
+        "autoPlay": "自动轮播",
+        "interval": "切换间隔",
+        "showIndicators": "显示指示点"
+      },
+      "countdown": {
+        "targetDate": "目标时间",
+        "label": "标签文字",
+        "label_ph": "距活动结束",
+        "expiredText": "到期文字",
+        "expiredText_ph": "活动已结束",
+        "style": "样式",
+        "style_opt": {
+          "simple": "简约",
+          "flip": "翻牌",
+          "circle": "圆形"
+        },
+        "backgroundColor": "背景颜色",
+        "textColor": "文字颜色"
+      },
+      "divider": {
+        "style": "样式",
+        "style_opt": {
+          "line": "实线",
+          "dashed": "虚线",
+          "dotted": "点线",
+          "space": "留白"
+        },
+        "height": "高度",
+        "color": "颜色",
+        "marginVertical": "上下间距"
+      },
+      "voucher_list": {
+        "layout": "布局",
+        "columns": "网格列数",
+        "showRedeemButton": "显示领取按钮",
+        "maxDisplay": "最多显示数",
+        "maxDisplay_ph": "不限"
+      },
+      "redemption_list": {
+        "layout": "布局",
+        "columns": "网格列数",
+        "showRedeemButton": "显示兑换按钮",
+        "maxDisplay": "最多显示数",
+        "maxDisplay_ph": "不限"
+      },
+      "product_grid": {
+        "columns": "列数",
+        "showPrice": "显示价格",
+        "showLikeButton": "显示收藏按钮",
+        "maxDisplay": "最多显示数",
+        "maxDisplay_ph": "不限"
+      },
+      "provider_list": {
+        "layout": "布局",
+        "layout_opt": {
+          "list": "列表",
+          "card": "卡片",
+          "horizontal_scroll": "横滑"
+        },
+        "showRating": "显示评分",
+        "showDistance": "显示距离",
+        "maxDisplay": "最多显示数",
+        "maxDisplay_ph": "不限"
+      },
+      "stats_counter": {
+        "layout": "布局",
+        "layout_opt": {
+          "row": "横向",
+          "grid": "网格"
+        },
+        "animateOnScroll": "滚动到时数字滚动",
+        "items": "指标",
+        "label": "标签",
+        "label_ph": "已服务用户",
+        "value": "数值",
+        "suffix": "后缀",
+        "suffix_ph": "人 / +",
+        "icon": "图标"
+      },
+      "faq_accordion": {
+        "expandFirst": "默认展开第一项",
+        "expandAll": "默认全部展开",
+        "multiExpand": "允许多项同时展开",
+        "items": "问答",
+        "question": "问题",
+        "answer": "回答"
+      },
+      "qr_code": {
+        "mode": "内容来源",
+        "mode_hint": "url = 直接编码网址；custom_text = 任意文字",
+        "mode_opt": {
+          "url": "链接",
+          "custom_text": "自定义文字"
+        },
+        "value": "内容",
+        "value_ph": "https://... 或 兑换码 / 文字",
+        "label": "说明文字",
+        "label_ph": "扫码立即领取",
+        "size": "尺寸",
+        "fgColor": "前景色",
+        "bgColor": "背景色"
+      },
+      "points_progress": {
+        "targetType": "目标类型",
+        "targetType_opt": {
+          "redemption": "兑换项目",
+          "tier": "会员等级"
+        },
+        "targetEntityId": "目标",
+        "showCurrentPoints": "显示当前积分",
+        "message": "自定义文案",
+        "message_ph": "再获取 {needed} 积分即可兑换 {target}",
+        "message_hint": "占位符：{needed} {current} {target}",
+        "barColor": "进度条颜色"
+      },
+      "loyalty_tier_showcase": {
+        "displayMode": "展示样式",
+        "displayMode_opt": {
+          "compact": "紧凑",
+          "detailed": "详细"
+        },
+        "showProgress": "显示距下一级进度",
+        "showBenefits": "显示当前等级特权",
+        "ctaText": "按钮文字",
+        "ctaText_ph": "查看完整特权",
+        "ctaLink": "按钮自定义链接（默认跳转商家积分卡）"
+      },
+      "flash_sale": {
+        "startTime": "开始时间",
+        "endTime": "结束时间",
+        "stockLimit": "库存信息",
+        "stockLimit_ph": "不显示",
+        "stockLimit_hint": "仅作为 UI 提示；真实库存由 voucher 限额控制",
+        "previewMode": "未开始时显示",
+        "previewMode_opt": {
+          "countdown": "显示倒计时",
+          "reveal_at_start": "开始前隐藏内容"
+        },
+        "ctaText": "按钮文字",
+        "ctaText_ph": "立即抢购",
+        "urgencyColor": "强调色"
+      },
+      "bundle_deal": {
+        "bundleTitle": "套餐名称",
+        "bundleTitle_ph": "超值三件套",
+        "bundlePrice": "套餐价（积分）",
+        "bundlePrice_unit": "积分",
+        "bundlePrice_hint": "商家设定的折扣价。原价由套餐内 voucher 的所需积分自动求和，无需手填",
+        "userLimit": "每人兑换上限",
+        "userLimit_unit": "次",
+        "userLimit_hint": "0 = 不限制；用户达到上限后兑换按钮置灰",
+        "totalLimit": "总兑换上限",
+        "totalLimit_unit": "份",
+        "totalLimit_hint": "0 = 不限制；所有用户累计兑换数达到后整个套餐下架",
+        "displayStyle": "布局",
+        "displayStyle_opt": {
+          "stacked": "竖向堆叠",
+          "side_by_side": "横向并列",
+          "grid": "网格"
+        },
+        "showDiscount": "显示节省积分",
+        "ctaText": "按钮文字",
+        "ctaText_ph": "默认显示\"X 积分兑换套餐\""
+      },
+      "link_button": {
+        "linkType": "跳转类型",
+        "linkType_opt": {
+          "preset": "App 内页面",
+          "external": "外部链接"
+        },
+        "presetKey": "目标页面",
+        "url": "链接地址",
+        "openInApp": "用 App 内浏览器打开",
+        "openInApp_hint": "关闭则用系统浏览器跳出 app",
+        "label": "按钮文字",
+        "label_ph": "留空则用默认文案",
+        "displayStyle": "样式",
+        "displayStyle_opt": {
+          "button": "按钮",
+          "card": "卡片",
+          "banner": "横幅"
+        },
+        "icon": "图标",
+        "icon_hint": "留空则用预设默认图标",
+        "backgroundColor": "背景颜色"
+      }
     }
   },
   "permissionDenied": {
@@ -4896,7 +6888,8 @@
         "social": "社交与客户",
         "content": "内容本地化"
       }
-    }
+    },
+    "cannotCreateMore": "已达到当前订阅方案的数量上限，无法继续创建"
   },
   "achievement": {
     "tab": {
@@ -4924,10 +6917,61 @@
     "xpProgress": "{{current}} / {{next}} XP",
     "xpMax": "{{current}} XP (已满级)",
     "equipHint": "从成就详情装备徽章",
+    "badgeCount": "当前徽章数量 {{count}}",
+    "xpToNext": "还差 {{xp}} XP",
+    "levelMax": "满级",
     "defs": {
       "beta_vanguard": {
         "name": "先遣者",
         "description": "在 CoBook 公测期间注册加入，成为最早与我们同行的先行者。"
+      },
+      "rookie_seller": {
+        "name": "新手卖家",
+        "description": "成功发布第 1 件二手商品。"
+      },
+      "publish_master_i": {
+        "name": "发布达人 I",
+        "description": "累计发布 10 件二手商品。"
+      },
+      "publish_master_ii": {
+        "name": "发布达人 II",
+        "description": "累计发布 50 件二手商品。"
+      },
+      "publish_master_iii": {
+        "name": "发布达人 III",
+        "description": "累计发布 100 件二手商品。"
+      },
+      "review_master_i": {
+        "name": "点评达人 I",
+        "description": "累计完成 10 次评价。"
+      },
+      "review_master_ii": {
+        "name": "点评达人 II",
+        "description": "累计完成 50 次评价。"
+      },
+      "review_master_iii": {
+        "name": "点评达人 III",
+        "description": "累计完成 150 次评价。"
+      },
+      "food_explorer_i": {
+        "name": "美食探索者 I",
+        "description": "累计查看 10 家不同的餐厅。"
+      },
+      "food_explorer_ii": {
+        "name": "美食探索者 II",
+        "description": "累计查看 50 家不同的餐厅。"
+      },
+      "food_explorer_iii": {
+        "name": "美食探索者 III",
+        "description": "累计查看 200 家不同的餐厅。"
+      },
+      "community_translator": {
+        "name": "社区翻译贡献者",
+        "description": "为 CoBook 社区贡献多语言翻译。"
+      },
+      "developer": {
+        "name": "开发者",
+        "description": "CoBook 开发团队成员。"
       }
     }
   },
@@ -4972,7 +7016,9 @@
       "title": "还没有收藏的商家",
       "description": "浏览商家详情，点击爱心收藏感兴趣的商家",
       "filteredTitle": "没有匹配的收藏商家",
-      "filteredDescription": "试试调整搜索词或筛选条件"
+      "filteredDescription": "试试调整搜索词或筛选条件",
+      "clearFilters": "清除筛选",
+      "action": "发现商家"
     }
   },
   "legalHold": {
@@ -5342,8 +7388,8 @@
     "NO_PERMISSION_MODIFY_USER": "无权限修改用户信息",
     "NO_PERMISSION_MANAGE_SUBSCRIPTION": "无权限管理订阅",
     "NO_PERMISSION_MANAGE_USAGE_QUOTA": "无权限管理使用次数",
-    "NO_PERMISSION_MANAGE_REDEEM_CODES": "无权限管理兑换码",
-    "NO_PERMISSION_VIEW_REDEEM_CODES": "无权限查看兑换码",
+    "NO_PERMISSION_MANAGE_REDEEM_CODES": "无权限管理积分补偿",
+    "NO_PERMISSION_VIEW_REDEEM_CODES": "无权限查看积分补偿",
     "NO_PERMISSION_SEND_NOTIFICATIONS": "无权限发送通知",
     "NO_PERMISSION_VIEW_CARDS": "无权限查看卡片",
     "NO_PERMISSION_CREATE_CARDS": "无权限创建卡片",
@@ -5395,7 +7441,26 @@
     "OPERATION_NOT_REFUNDABLE": "该操作不支持撤回",
     "OPERATION_ALREADY_REFUNDED": "该加分已被撤回",
     "OPERATION_OUTSIDE_REFUND_WINDOW": "已超过可撤回时限",
-    "INSUFFICIENT_BALANCE_FOR_REFUND": "顾客积分余额不足，无法撤回"
+    "INSUFFICIENT_BALANCE_FOR_REFUND": "顾客积分余额不足，无法撤回",
+    "OIDC_TOKEN_EXCHANGE_FAILED": "OIDC 授权码交换失败，请重试",
+    "OIDC_TOKEN_INACTIVE": "OIDC 令牌无效，请重试",
+    "OIDC_INTROSPECTION_FAILED": "OIDC 令牌验证失败，请重试",
+    "INVALID_OIDC_SUBJECT": "OIDC 用户标识无效",
+    "OFFER_ALREADY_PENDING": "已有进行中的出价",
+    "OFFER_NOT_PENDING": "该出价已不在待回应状态",
+    "NOT_OFFER_COUNTERPART": "你无权回应这条出价",
+    "CANNOT_OFFER_OWN_PRODUCT": "不能对自己的商品出价",
+    "INVALID_OFFER_AMOUNT": "出价金额无效",
+    "BLOCKED": "由于屏蔽关系，无法完成该操作",
+    "PRODUCT_RESERVED": "商品已被预订",
+    "OFFER_ALREADY_ACCEPTED": "出价已被接受",
+    "IMAGE_LOCKED_UNTIL_REPLY": "对方回复后才能发送图片",
+    "INVALID_IMAGE_MEDIA": "图片校验失败，请重新选择",
+    "HOLIDAY_HOURS_OVERLAP": "所选日期与已有特殊日期重叠",
+    "INVALID_HOLIDAY_RANGE": "日期区间无效",
+    "HOLIDAY_HOURS_REQUIRED": "请为特殊时段添加至少一个有效时间段",
+    "HOLIDAY_HOURS_NOT_FOUND": "该特殊日期不存在或已被删除",
+    "HOLIDAY_HOURS_LIMIT_REACHED": "特殊日期数量已达上限"
   },
   "twoFactor": {
     "title": "两步验证",
@@ -5565,7 +7630,8 @@
         "RESOURCE_DISPATCH_FAILED": "激励发放失败"
       },
       "eachUnit": "每单位：{{reward}}",
-      "validUntil": "有效期至 {{date}}"
+      "validUntil": "有效期至 {{date}}",
+      "invalidDuration": "请输入有效天数（≥1 天）"
     },
     "status": {
       "label": "状态",
@@ -5680,7 +7746,9 @@
       "editInfo": "编辑信息",
       "editInfoTitle": "编辑销售信息",
       "nameRequired": "请填写显示名",
-      "infoSaved": "信息已保存"
+      "infoSaved": "信息已保存",
+      "invalidDuration": "请输入有效天数（≥1 天）",
+      "loadFailed": "加载失败或未找到销售"
     },
     "milestone": {
       "title": "里程碑",
@@ -5841,7 +7909,7 @@
       "statusSuspended": "已暂停",
       "currentStatusLabel": "当前状态",
       "chooseAction": "处置动作",
-      "freezeLevelLabel": "封锁程度（三级防控）",
+      "freezeLevelLabel": "封锁程度",
       "freezeDiscovery": "仅隐藏",
       "freezeEngagement": "冻结新增",
       "freezeFull": "完全冻结",
@@ -5943,20 +8011,254 @@
   },
   "permission": {
     "priming": {
-      "allow": "同意",
-      "deny": "暂不允许",
+      "continue": "继续",
       "camera": {
-        "title": "允许使用相机",
+        "title": "使用相机",
         "body": "CoBook 需要使用相机来扫描商家积分卡二维码以累积和核销积分，并拍照设置头像或商家店铺图片。"
       },
       "location": {
-        "title": "允许使用位置",
+        "title": "使用位置",
         "body": "CoBook 需要使用位置来为你推荐附近的商家和可领取积分卡的门店，并将地图定位到你所在区域。"
       },
       "photoLibrary": {
-        "title": "允许访问相册",
+        "title": "访问相册",
         "body": "CoBook 需要访问相册，以便你设置头像、上传商家积分卡封面与店铺图片，并在消息中发送图片。"
       }
+    },
+    "settings": {
+      "open": "去设置",
+      "cancel": "取消",
+      "camera": {
+        "title": "需要相机权限",
+        "body": "你之前关闭了相机权限。请在系统设置中开启 CoBook 的相机权限，才能扫描积分卡二维码。"
+      },
+      "location": {
+        "title": "需要位置权限",
+        "body": "你之前关闭了位置权限。请在系统设置中开启 CoBook 的位置权限，才能为你推荐附近的商家。"
+      },
+      "photoLibrary": {
+        "title": "需要相册权限",
+        "body": "你之前关闭了相册权限。请在系统设置中开启 CoBook 的相册权限，才能保存或上传图片。"
+      }
     }
+  },
+  "impersonation": {
+    "actionRestrictedTitle": "操作受限",
+    "cannotSendMessage": "模拟用户状态下无法发送消息，请退出模拟状态后再试。",
+    "cannotAccessMessages": "模拟用户状态下无法访问消息功能，请退出模拟状态后再试。",
+    "bannedUserNotice": "被模拟用户处于封禁状态"
+  },
+  "ban": {
+    "titlePermanent": "账号已被永久封禁",
+    "titleTemporary": "账号已被临时封禁",
+    "reasonLabel": "封禁原因",
+    "unbanTimeLabel": "解封时间",
+    "appealHelp": "如对封禁有异议，可前往申诉页面提交申诉（需在浏览器中打开）。",
+    "goToAppeal": "前往申诉"
+  },
+  "socket": {
+    "reconnecting": "连接中…"
+  },
+  "scanner": {
+    "torch": "手电筒",
+    "album": "相册"
+  },
+  "time": {
+    "justNow": "刚刚",
+    "minutesAgo": "{{count}}分钟前",
+    "yesterday": "昨天"
+  },
+  "guest": {
+    "loginToContinue": "登录后即可使用此功能"
+  },
+  "offlineQueue": {
+    "voucherQueuedTitle": "已离线暂存",
+    "voucherQueuedBody": "当前网络不可用，本次核销已暂存到本机。网络恢复后会自动完成核销，请勿重复扫码。",
+    "pointsQueuedTitle": "已离线暂存",
+    "pointsQueuedBody": "当前网络不可用，本次加分已暂存到本机，网络恢复后自动补交，请勿重复操作。",
+    "pendingBanner": "有 {{count}} 笔离线核销/加分待补交，点按立即重试",
+    "flushSuccess": "离线操作已补交",
+    "flushStillOffline": "仍处于离线状态，网络恢复后会自动重试"
+  },
+  "offers": {
+    "myOffersTitle": "我的出价",
+    "makeOfferTitle": "出价",
+    "buyAtListPrice": "按标价想要",
+    "buyAtListPriceTitle": "按标价想要",
+    "buyAtListPriceSuccess": "已按标价发送购买意向",
+    "sendOffer": "发送出价",
+    "sendCounter": "发送还价",
+    "counterTitle": "还价",
+    "counterAgainst": "对方出价 {{amount}}，你可以还一个价",
+    "counterSuccess": "还价已发送",
+    "counterFailed": "还价发送失败，请重试",
+    "createSuccess": "出价已发送",
+    "createFailed": "出价发送失败，请重试",
+    "alreadyPending": "已有进行中的出价",
+    "cannotOfferOwnProduct": "不能对自己的商品出价",
+    "amountLabel": "出价金额",
+    "amountPlaceholder": "如 50",
+    "amountRequired": "请输入出价金额",
+    "amountInvalid": "请输入有效的金额",
+    "amountMaxTwoDecimals": "金额需大于 0，最多两位小数",
+    "amountMustEqualListPrice": "不可议价商品需按标价出价",
+    "aboveListPriceWarn": "高于标价——确认要出这个价吗？",
+    "nonNegotiableHint": "该商品不可议价，将按标价向卖家发送购买意向。",
+    "noteLabel": "附言（可选）",
+    "notePlaceholder": "例如：今天可自取",
+    "listPriceLabel": "标价",
+    "acceptAction": "接受",
+    "counterAction": "还价",
+    "declineAction": "拒绝",
+    "withdrawAction": "撤回",
+    "acceptConfirmTitle": "接受这条出价？",
+    "acceptConfirmMessage": "接受后将以 {{amount}} 与对方达成意向。",
+    "acceptSuccess": "已接受出价",
+    "acceptedTitle": "已接受出价",
+    "declineSuccess": "已拒绝该出价",
+    "withdrawConfirmTitle": "撤回这条出价？",
+    "withdrawConfirmMessage": "撤回后对方将无法再回应。",
+    "withdrawSuccess": "已撤回出价",
+    "reserveAfterAcceptMessage": "把商品标记为已预订？",
+    "reserveLater": "稍后再说",
+    "reserveNow": "标记已预订",
+    "reserveSuccess": "已标记为已预订",
+    "reserveFailed": "预订标记失败，请稍后重试",
+    "reserveAction": "预订",
+    "unreserveAction": "取消预订",
+    "unreserveSuccess": "已取消预订",
+    "reservedHint": "已有买家预订，你仍可继续咨询排队",
+    "myOfferStrip": "我的出价 {{amount}}",
+    "tabSent": "我发出的",
+    "tabReceived": "我收到的",
+    "emptySent": "还没有发出的出价",
+    "emptySentDesc": "在商品详情页点「出价」试试",
+    "emptyReceived": "还没有收到的出价",
+    "emptyReceivedDesc": "买家对你的商品出价后会出现在这里",
+    "loadFailed": "加载失败",
+    "loadFailedDesc": "请检查网络后重试",
+    "counterChain": "还价链",
+    "status": {
+      "pending": "待回应",
+      "accepted": "已接受",
+      "declined": "已拒绝",
+      "withdrawn": "已撤回",
+      "countered": "已还价",
+      "expired": "已过期",
+      "invalidated": "已失效",
+      "unknown": "未知"
+    },
+    "direction": {
+      "buyer": "买家出价",
+      "seller": "卖家还价"
+    },
+    "alreadyAccepted": "你的出价已被接受，无需再次出价",
+    "productReserved": "商品已被预订，暂不接受新出价",
+    "offerAcceptedShort": "出价已接受"
+  },
+  "businessStats": {
+    "singleDayChartHint": "单日时段仅展示数字指标；趋势图表请切换到本周、本月或自定义区间查看",
+    "seriesWindowNote": "趋势图表仅覆盖最近 {{days}} 天的数据，更早的日期不会显示",
+    "noSeriesInRange": "所选时间段内暂无趋势数据",
+    "scansTooltip": "扫码 {{count}} 次"
+  },
+  "review": {
+    "actions": {
+      "delete": "删除评价"
+    },
+    "deleteConfirmMessage": "确定要删除这条评价吗？此操作不可撤销。",
+    "deleteConfirmTitle": "删除评价",
+    "deleteFailed": "删除失败，请稍后重试",
+    "deleteSuccess": "评价已删除",
+    "dim": {
+      "environment": "环境",
+      "overall": "整体",
+      "quality": "内容质量",
+      "service": "服务"
+    },
+    "editMyReview": "编辑我的评价",
+    "emptyCta": "来写第一条评价",
+    "emptyTitle": "还没有评价",
+    "helpful": "有用",
+    "listEnd": "没有更多评价了",
+    "merchantReply": "商家回复",
+    "moreActions": "更多操作",
+    "myReviewBadge": "我的评价",
+    "showOriginal": "显示原文",
+    "sort": {
+      "helpful": "最有用",
+      "latest": "最新",
+      "withImages": "带图"
+    },
+    "stats": {
+      "reviewCount": "{{count}} 条评价",
+      "reviewCount_one": "{{count}} 条评价",
+      "reviewCount_other": "{{count}} 条评价"
+    },
+    "translate": "翻译",
+    "translateFailed": "翻译失败，请稍后重试",
+    "translateRateLimited": "操作太频繁，请稍后再试",
+    "writeCta": "写评价",
+    "writeForm": {
+      "addPhoto": "添加图片",
+      "alreadyExists": "你已评价过该商家，已为你切换到编辑模式",
+      "contentLabel": "评价内容",
+      "contentPlaceholder": "分享你的体验（选填）",
+      "editTitle": "编辑评价",
+      "overallHint": "点击星星评分",
+      "photosLabel": "图片（最多 5 张）",
+      "scoreRequired": "请为所有评分项打分",
+      "subScoresHint": "已按整体评分预填，可单独调整",
+      "submit": "发布评价",
+      "submitFailed": "评价发布失败，请稍后重试",
+      "submitSuccess": "评价发布成功",
+      "title": "写评价",
+      "update": "更新评价",
+      "updateSuccess": "评价更新成功",
+      "uploadFailed": "图片上传失败，请稍后重试"
+    },
+    "manage": {
+      "title": "评价管理",
+      "menuDesc": "查看顾客评价并回复",
+      "filter": {
+        "all": "全部",
+        "unreplied": "未回复",
+        "low": "低分"
+      },
+      "reply": "回复",
+      "replyLocked": "升级解锁回复",
+      "editReply": "编辑回复",
+      "deleteReply": "删除回复",
+      "deleteReplyConfirmTitle": "删除回复",
+      "deleteReplyConfirmMessage": "确定要删除这条回复吗？此操作不可撤销。",
+      "deleteReplySuccess": "回复已删除",
+      "deleteReplyFailed": "删除失败，请稍后重试",
+      "replyEditorTitle": "回复评价",
+      "replyPlaceholder": "写下你的回复……",
+      "replyContentRequired": "请填写回复内容",
+      "replySubmit": "发布回复",
+      "replyUpdate": "更新回复",
+      "replySuccess": "回复已发布",
+      "replyUpdateSuccess": "回复已更新",
+      "replyFailed": "回复失败，请稍后重试",
+      "alreadyReplied": "该评价已有回复，已为你刷新",
+      "reportedPlaceholder": "该评价已因违规被移除",
+      "emptyTitle": "还没有收到评价",
+      "emptyFiltered": "该筛选条件下暂无评价",
+      "noPermission": "你没有权限管理该商家的评价"
+    },
+    "deepLinkNotFound": "未找到该评价（可能已删除）"
+  },
+  "versionBanner": {
+    "title": "当前版本已停止维护",
+    "bodyIos": "点按前往 App Store 更新到最新版本",
+    "bodyAndroid": "点按前往 Google Play 更新到最新版本"
+  },
+  "storeUpdate": {
+    "title": "发现新版本 {{version}}",
+    "subtitleIos": "前往 App Store 获取最新功能与修复",
+    "subtitleAndroid": "前往 Google Play 获取最新功能与修复",
+    "action": "更新",
+    "dismissA11y": "暂不更新"
   }
 }
