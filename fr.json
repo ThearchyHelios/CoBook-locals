@@ -70,7 +70,12 @@
             "redeemableItemsCountSubtitle": "{{count}} article(s) échangeable(s)",
             "redeemableItemsTitle": "Articles échangeables",
             "redeemableItemsEmptySubtitle": "Ajoutez, modifiez des articles échangeables et associez des bons",
-            "manageVouchersSubtitle": "Créez et gérez les bons pour les échanges"
+            "manageVouchersSubtitle": "Créez et gérez les bons pour les échanges",
+            "listNow": "Publier",
+            "listNowLocked": "Complétez les champs requis pour publier",
+            "createAndBindVoucher": "Créer et associer un bon",
+            "voucherCreatedBound": "Bon créé et associé — complétez-le dans la gestion des bons",
+            "sort": "Trier"
         },
         "setup": {
             "title": "Prise en main",
@@ -144,7 +149,9 @@
                     }
                 }
             }
-        }
+        },
+        "showToMerchant": "Présentez ce code QR au commerçant pour valider",
+        "showQrCode": "Afficher le code QR"
     },
     "settings": {
         "title": "Paramètres",
@@ -282,7 +289,7 @@
         "viewChangelog": "Voir les mises à jour",
         "currentUpdateInfo": "Mise à jour actuelle",
         "runtimeVersion": "Version d’exécution",
-        "updateTime": "Dernière mise à jour",
+        "updateTime": "Date de mise à jour",
         "releaseChannel": "Canal de publication",
         "developerConsole": {
             "title": "Console développeur",
@@ -411,7 +418,10 @@
             "verifying": "Vérifier",
             "wrongPassword": "Mot de passe incorrect",
             "socialMismatch": "Ce compte Google / Apple n'est pas lié à ce compte",
-            "failed": "Échec de la vérification. Veuillez réessayer."
+            "failed": "Échec de la vérification. Veuillez réessayer.",
+            "totpRequired": "La validation en deux étapes est activée sur ce compte — saisissez votre code à 6 chiffres",
+            "totpPlaceholder": "Code à 6 chiffres",
+            "totpInvalid": "Code incorrect, veuillez réessayer"
         },
         "setPassword": {
             "title": "Définir le mot de passe",
@@ -460,7 +470,11 @@
         "welcomeTitle": "Bienvenue sur CoBook",
         "welcomeSubtitle": "Connectez-vous pour commencer à utiliser CoBook",
         "socialLoginInfo": "Connexion avec Google, Apple et autres comptes sociaux disponible",
-        "rememberThisDevice": "Se souvenir de cet appareil (sans 2FA la prochaine fois)"
+        "rememberThisDevice": "Se souvenir de cet appareil (sans 2FA la prochaine fois)",
+        "oidcAuthorizationFailed": "Échec de l'autorisation OIDC",
+        "oidcPkceVerifierMissing": "Le code verifier PKCE est manquant",
+        "retryWithReason": "Veuillez réessayer plus tard. Raison : {{reason}}",
+        "retryWithError": "Veuillez réessayer plus tard. Erreur : {{error}}"
     },
     "register": {
         "username": "Nom d'utilisateur",
@@ -627,7 +641,8 @@
         },
         "cancelFollow": "Désabonner",
         "Date": "Date ajoutée",
-        "title": "Relations sociales"
+        "title": "Relations sociales",
+        "followsYou": "Vous suit"
     },
     "common": {
         "error": "Erreur",
@@ -673,7 +688,21 @@
         "disabled": "Désactivé",
         "done": "Terminé",
         "noMore": "Plus aucun élément",
-        "loadFailedRetry": "Échec du chargement — appuyez pour réessayer"
+        "loadFailedRetry": "Échec du chargement — appuyez pour réessayer",
+        "loadingSlowHint": "Chargement en cours — le réseau semble lent",
+        "userAvatar": "Avatar de l'utilisateur",
+        "backToTop": "Retour en haut",
+        "editAvatar": "Modifier l'avatar",
+        "share": "Partager",
+        "actionSuccess": "Opération réussie",
+        "networkError": "Erreur réseau",
+        "operationFailed": "Échec de l’opération",
+        "ok": "OK",
+        "justNow": "À l’instant",
+        "active": "Actif",
+        "inactive": "Inactif",
+        "enabled": "Activé",
+        "loadFailed": "Échec du chargement"
     },
     "secondhand": {
         "loginToViewProductDetails": "Connectez-vous pour voir les détails du produit",
@@ -730,7 +759,104 @@
         "markSoldConfirmMessage": "L'annonce sera masquée de la navigation et de la recherche, mais affichée comme « Vendu » dans vos annonces et les favoris des abonnés. Vous pouvez la remettre en vente à tout moment.",
         "markSoldConfirmOk": "Marquer vendu",
         "markSoldSuccess": "Marqué comme vendu",
-        "groupSoldCount": "{{n}} vendu(s)"
+        "groupSoldCount": "{{n}} vendu(s)",
+        "allRegions": "Toutes les régions",
+        "editSuccess": "Modifications enregistrées",
+        "editFailed": "Échec de l'enregistrement",
+        "unsavedTitle": "Modifications non enregistrées",
+        "unsavedMessage": "Enregistrer vos modifications avant de quitter ?",
+        "discardLeave": "Quitter sans enregistrer",
+        "saveChanges": "Enregistrer",
+        "imagePermissionTitle": "Autorisation photos requise",
+        "imagePermissionMessage": "Veuillez autoriser l'accès aux photos dans Réglages",
+        "goToSettings": "Ouvrir les réglages",
+        "imagePickFailed": "Échec de la sélection d'image",
+        "imageValidateFailed": "Échec de la validation de l'image",
+        "imageKeepAtLeastOne": "Conservez au moins une image",
+        "imageDeleteTitle": "Supprimer l'image",
+        "imageDeleteMessage": "Supprimer cette image ? Cette action est irréversible.",
+        "imageDeleteFailed": "Échec de la suppression",
+        "imageAspectRatioInvalid": "L'image {{index}} a un rapport hauteur/largeur trop extrême, veuillez en choisir une autre",
+        "imageTooSmall": "L'image {{index}} fait moins de 10 Ko et ne répond pas aux exigences",
+        "like": "Ajouter aux favoris",
+        "unlike": "Retirer des favoris",
+        "addImagesFailed": "Échec de l’ajout des images",
+        "statusPickerLabel": "Statut :",
+        "statusListed": "En ligne",
+        "productImagesSection": "Photos du produit",
+        "productInfoSection": "Détails du produit",
+        "unsavedChanges": "Modifications non enregistrées",
+        "saved": "Enregistré",
+        "loginToLike": "Connectez-vous pour ajouter cet article à vos favoris",
+        "loginToMessageSeller": "Connectez-vous pour envoyer un message au vendeur",
+        "loginToViewContact": "Connectez-vous pour voir les coordonnées et contacter le vendeur",
+        "loginToContactSeller": "Connectez-vous pour contacter le vendeur",
+        "loginToViewGroup": "Connectez-vous pour voir ce groupe d'articles",
+        "viewsLabel": "vues",
+        "likesLabel": "j'aime",
+        "sellerLabel": "Vendeur",
+        "descriptionTitle": "Description",
+        "contactMethodTitle": "Contact",
+        "contactViaMessage": "Contacter par message privé",
+        "adminInfoTitle": "Infos administrateur",
+        "adminProductId": "ID du produit",
+        "adminSellerId": "ID du vendeur",
+        "productUnavailableTitle": "Article indisponible",
+        "productUnavailableMessage": "Cet article n'existe pas ou a été retiré.",
+        "loadFailedTitle": "Échec du chargement",
+        "loadFailedMessage": "Impossible de charger l'article. Vérifiez votre connexion et réessayez.",
+        "filter": {
+            "categoryAll": "Tout",
+            "category": {
+                "furniture": "Meubles & Déco",
+                "electronics": "Électronique",
+                "fashion": "Mode",
+                "beauty": "Beauté & Soins",
+                "booksMedia": "Livres & Médias",
+                "sports": "Sport & Plein air",
+                "crafts": "Artisanat",
+                "other": "Autre"
+            },
+            "sort": {
+                "newest": "Récents",
+                "mostLiked": "Populaires",
+                "priceAsc": "Prix croissant",
+                "priceDesc": "Prix décroissant"
+            },
+            "time": {
+                "day1": "Dernières 24 h",
+                "week1": "Cette semaine",
+                "month1": "Ce mois-ci",
+                "months6": "6 derniers mois"
+            },
+            "condition": {
+                "new": "Neuf",
+                "slightWear": "Peu utilisé",
+                "worn": "Utilisé",
+                "damaged": "Endommagé",
+                "incomplete": "Incomplet"
+            },
+            "priceLabel": "Prix",
+            "priceMin": "Prix min",
+            "priceMax": "Prix max"
+        },
+        "statusReserved": "Réservé",
+        "loginToMakeOffer": "Connectez-vous pour faire une offre",
+        "priceDrop": {
+            "a11y": "Prix réduit",
+            "tag": "Prix réduit {{oldPrice}} → {{newPrice}}"
+        },
+        "similarProducts": "Articles similaires",
+        "moreFromSeller": "Plus de ce vendeur",
+        "terminalSoldBanner": "Cet article a été vendu",
+        "terminalDelistedBanner": "Cet article n'est plus disponible",
+        "terminalBannerHint": "Découvrez des articles similaires ci-dessous",
+        "engagement": {
+            "views": "{{n}} vues",
+            "likes": "{{n}} favoris",
+            "inquiries": "{{n}} en discussion",
+            "pendingOffers": "{{n}} offres en attente"
+        }
     },
     "message": {
         "sendmessage": "Envoyer un message",
@@ -758,8 +884,41 @@
         "lastSeenDays": "Vu il y a {{count}}j",
         "empty": {
             "title": "Aucun message",
-            "hint": "Suivez des amis et commencez à discuter !"
-        }
+            "hint": "Suivez des amis et commencez à discuter !",
+            "action": "Trouver des contacts"
+        },
+        "resendFailed": "Échec du renvoi",
+        "checkNetworkRetry": "Vérifiez votre connexion réseau et réessayez",
+        "pinConversation": "Épingler",
+        "unpinConversation": "Désépingler",
+        "tapToResend": "Appuyez pour renvoyer",
+        "resendLabel": "Renvoyer",
+        "sendFailedTapResend": "Échec · Appuyez pour renvoyer",
+        "pinnedSection": "Messages épinglés",
+        "mutualFollowBadge": "Mutuels",
+        "chatWithUser": "Discussion avec {{name}}",
+        "deleteConversationTitle": "Supprimer la discussion",
+        "deleteConversationConfirm": "Tout l'historique de la discussion sera définitivement supprimé pour vous deux, sans retour possible. Supprimer ?",
+        "deleteConversationFailed": "Échec de la suppression",
+        "deleteConversationFailedDesc": "La discussion a été conservée : la suppression a échoué. Vérifiez votre réseau et réessayez.",
+        "selectConversationHint": "Sélectionnez une discussion à gauche pour commencer",
+        "quickChips": {
+            "stillAvailable": "C'est toujours disponible ?",
+            "canNegotiate": "Le prix est-il négociable ?",
+            "canInspect": "Puis-je le voir en personne ?"
+        },
+        "productRefFallback": "[Article] {{title}}",
+        "productContext": {
+            "makeOffer": "Faire une offre"
+        },
+        "productRefCard": {
+            "untitled": "Article"
+        },
+        "imageFallback": "[Image]",
+        "imageExpired": "Image expirée",
+        "imageUploadFailed": "Échec de l'envoi de l'image",
+        "imageLockedUntilReply": "Vous pourrez envoyer des images après leur réponse",
+        "sendImage": "Envoyer une image"
     },
     "mainContent": {
         "navigation": {
@@ -806,7 +965,14 @@
             "manualEntry": "Saisir le code manuellement",
             "manualEntryTitle": "Saisir le code de validation",
             "manualEntryPlaceholder": "Saisissez le code ou le contenu QR complet",
-            "manualEntryConfirm": "Valider"
+            "manualEntryConfirm": "Valider",
+            "album": "Galerie",
+            "openingAlbum": "Ouverture de la galerie…",
+            "recognizing": "Analyse…",
+            "noQrInImage": "Aucun QR code trouvé dans la photo",
+            "unrecognized": "QR code non reconnu",
+            "albumPermissionDenied": "Accès aux photos impossible. Autorisez l'accès aux photos dans les réglages",
+            "rescan": "Scanner à nouveau"
         },
         "discounts": {
             "title": "Réductions %",
@@ -823,7 +989,7 @@
             "nearby": "À proximité",
             "deals": "Promos"
         },
-        "featuredDeals": "Bons plans",
+        "featuredDeals": "Échangez vos points contre des bons",
         "featuredDealsSubtitle": "Bons plans, faciles à obtenir",
         "claimFree": "Obtenir gratuitement",
         "redeemPoints": "Échanger",
@@ -844,20 +1010,45 @@
         "youMayLikeSubtitle": "Basé sur des préférences similaires",
         "seeAll": "Voir tout >",
         "recommendedProducts": "Produits recommandés",
-        "recommendedProductsSubtitle": "Découvrez plus de bonnes affaires"
+        "recommendedProductsSubtitle": "Découvrez plus de bonnes affaires",
+        "ratingNew": "Nouveau",
+        "distanceNearby": "À proximité",
+        "scorecardTag": "Carte de points",
+        "pullToRefresh": "Tirer pour actualiser",
+        "loadFailedTitle": "Impossible de charger l'accueil",
+        "loadFailedHint": "Vérifiez votre connexion puis réessayez",
+        "defaultLocationHint": "Impossible d'obtenir votre position — affichage des commerces autour de la zone par défaut",
+        "showMoreProviders": "Voir plus de commerces",
+        "a11y": {
+            "language": "Changer de langue",
+            "notifications": "Messages système",
+            "notificationsUnread": "Messages système, {{count}} non lus",
+            "scan": "Scanner un code QR",
+            "showCardHint": "Touchez pour présenter votre code"
+        },
+        "myAssets": "Mes cartes et bons",
+        "staleLocationHint": "Votre position est peut-être obsolète — les résultats à proximité peuvent être imprécis",
+        "newUser": {
+            "title": "Obtenez votre première carte de points",
+            "body": "Activez une carte de points chez un commerçant à proximité, cumulez des points et échangez-les contre des bons",
+            "scanAction": "Scanner pour obtenir une carte",
+            "browseAction": "Parcourir les commerces à proximité"
+        },
+        "showMembershipCode": "Présenter mon code",
+        "cardCount": "{{count}} cartes"
     },
     "provider": {
         "main": {
             "completeStoreInfo": "Veuillez compléter les infos commerçant pour être visible par les utilisateurs",
             "overview": "Aperçu",
             "totalActivations": "Total des Activations de Carte de Score",
-            "totalViews": "Total des Vues",
+            "totalViews": "Vues (30 jours)",
             "overallTrend": "Tendance Générale",
             "totalMembers": "Total des Membres",
             "totalRevenue": "Chiffre d'Affaires Total",
             "moreData": "Plus de Données Générales",
             "avgOrderAmount": "Montant Moyen de Commande",
-            "totalVisitors": "Total des Visiteurs",
+            "totalVisitors": "Visiteurs uniques (30j)",
             "couponsIssued": "Total des Coupons Émis",
             "couponsUsed": "Total des Coupons Utilisés",
             "recentActivity": "Activité Récente",
@@ -992,7 +1183,9 @@
             "addPoints": "Ajouter des Points",
             "redeemReward": "Échanger une Récompense",
             "sendNotification": "Envoyer une Notification",
-            "customerList": "Liste des clients"
+            "customerList": "Liste des clients",
+            "lastVisit": "Dernière visite",
+            "visitCount": "Visites"
         },
         "search": {
             "placeholder": "Rechercher café, thé au lait...",
@@ -1119,7 +1312,22 @@
             "title": "Détails du commerçant",
             "description": "Introduction",
             "activityPages": "Activités",
-            "nextDay": "le lendemain"
+            "nextDay": "le lendemain",
+            "reviewsCount": "{{n}} avis",
+            "openNow": "Ouvert",
+            "closedNow": "Fermé",
+            "distanceKm": "{{km}} km",
+            "actionNavigate": "Itinéraire",
+            "actionCall": "Appeler",
+            "actionClaimCard": "Carte de points",
+            "perksVouchersAvailable": "{{n}} bons à échanger",
+            "perksPointsValue": "{{n}} pts",
+            "mapOpenFailed": "Impossible d’ouvrir l’application de plans",
+            "holidayClosed": "Fermé (jour férié)",
+            "specialHoursOpen": "Ouvert · horaires spéciaux",
+            "specialSchedule": "Horaires exceptionnels",
+            "overrideToday": "Aujourd’hui",
+            "overrideClosed": "Fermé"
         },
         "scorecard": {
             "title": "Carte de fidélité",
@@ -1174,7 +1382,10 @@
                 "failed": {
                     "title": "Erreur",
                     "message": "Échec de l’activation de la carte de fidélité, veuillez réessayer plus tard"
-                }
+                },
+                "viewTerms": "Voir les conditions d'adhésion",
+                "hideTerms": "Masquer les conditions",
+                "agreeFootnote": "En activant, vous acceptez les conditions d'adhésion"
             },
             "management": "Gestion des cartes de fidélité",
             "usageLogs": "Journal d’utilisation des points",
@@ -1260,7 +1471,26 @@
                 "unknownProvider": "Commerçant",
                 "loadingScorecard": "Chargement de la carte...",
                 "usableWindowTitle": "Plage de validation : {{window}} chaque jour",
-                "usableWindowHint": "Ce coupon n'est validable en boutique que durant cette plage (fuseau du commerçant) ; l'échange lui-même n'a aucune limite de temps"
+                "usableWindowHint": "Ce coupon n'est validable en boutique que durant cette plage (fuseau du commerçant) ; l'échange lui-même n'a aucune limite de temps",
+                "refundNotEligibleHint": "Validez en boutique avant l'expiration — une fois le bon expiré, les points payés ne seront pas remboursés."
+            },
+            "wallet": {
+                "activateFirst": "Activez d'abord votre carte de fidélité",
+                "appleUnavailable": "Apple Wallet n'est pas disponible — vérifiez que cet appareil le prend en charge",
+                "generateFailed": "Échec de la génération de la carte",
+                "appleAddSuccess": "Ajoutée à Apple Wallet",
+                "autoUpdateHint": "La carte met à jour son solde automatiquement",
+                "addCancelled": "Ajout annulé ou échoué",
+                "unsupportedServer": "Le serveur ne prend pas encore en charge les cartes Apple Wallet",
+                "addFailed": "Échec de l'ajout au portefeuille, veuillez réessayer",
+                "cardInfoIncomplete": "Informations de la carte incomplètes",
+                "googleUrlInvalid": "Lien Google Wallet invalide, veuillez réessayer",
+                "googleOpenFailed": "Impossible d'ouvrir Google Wallet — vérifiez que Google Pay est installé",
+                "googleGenerateFailed": "Échec de la génération de la carte Google Wallet",
+                "googleAddFailed": "Échec de l'ajout à Google Wallet, veuillez réessayer",
+                "addToApple": "Ajouter à Apple Wallet",
+                "addToGoogle": "Ajouter à Google Wallet",
+                "productNotFound": "Produit introuvable"
             }
         },
         "voucher": {
@@ -1339,7 +1569,13 @@
             "descriptionRichHint": "Texte enrichi pris en charge ; les autres langues peuvent être traduites automatiquement une fois la langue principale renseignée.",
             "locationEmpty": "Appuyez pour situer votre commerce sur la carte",
             "locationSelected": "Emplacement marqué sur la carte",
-            "adjustLocation": "Ajuster"
+            "adjustLocation": "Ajuster",
+            "noRejectComment": "L'administrateur n'a pas fourni de précisions. Veuillez vérifier votre demande et la soumettre à nouveau, ou contacter le support en cas de question.",
+            "nameLangLabel": "Nom du commerce — langue principale",
+            "nameLangHint": "Choisissez la langue principale du nom de votre commerce (au moins une requise) ; les autres peuvent rester vides. Vous pourrez modifier le nom plus tard dans « Modifier les informations ».",
+            "ownerId": "Photos de la pièce d'identité",
+            "ownerIdHint": "Téléversez la pièce d'identité du demandeur (propriétaire) — recto et verso, 2 photos maximum. Utilisée uniquement pour la vérification d'identité.",
+            "ownerIdRequired": "Veuillez téléverser vos photos de pièce d'identité (recto et verso)"
         },
         "validation": {
             "addressRequired": "Veuillez saisir l'adresse du commerçant",
@@ -1541,7 +1777,8 @@
             "add_employee_invalid_userid": "Format d'ID utilisateur invalide",
             "add_employee_for_provider": "Ajouter un employé au commerçant suivant",
             "please_select_role": "Veuillez sélectionner un rôle",
-            "no_roles": "Aucun rôle"
+            "no_roles": "Aucun rôle",
+            "select_role": "Sélectionnez un rôle"
         },
         "currentStore": "Magasin actuel",
         "switchFailed": "Échec du changement",
@@ -1694,7 +1931,10 @@
             "coverHint": "La couverture est le visuel principal du commerce, affichée dans les listes, les cartes de fidélité, etc. Utilisez une image large en haute résolution (16:9).",
             "coverRequired": "Veuillez télécharger une image de couverture",
             "coverUploadFailed": "Échec du téléchargement de la couverture, veuillez réessayer",
-            "loadingDescription": "Chargement du contenu multilingue…"
+            "loadingDescription": "Chargement du contenu multilingue…",
+            "providerNameLabel": "Nom du commerce",
+            "tapToEditName": "Appuyez pour modifier le nom du commerce",
+            "loadingName": "Chargement du contenu multilingue…"
         },
         "consultation": {
             "helpGuideTitle": "Guide d'utilisation",
@@ -1870,7 +2110,8 @@
             "scan": "Scanner",
             "addPoints": "Ajouter des points",
             "issueVoucher": "Modifier le coupon",
-            "lookup": "Rechercher"
+            "lookup": "Rechercher",
+            "issueCredential": "Compensation"
         },
         "group": {
             "operations": "Exploitation",
@@ -1935,6 +2176,76 @@
         },
         "location": {
             "locationPermissionDenied": "Autorisation de localisation refusée — localisation impossible"
+        },
+        "holidayHours": {
+            "title": "Horaires des jours fériés",
+            "menuDesc": "Fermetures ou horaires spéciaux — prévenez vos clients à l’avance",
+            "customDate": "Date spéciale",
+            "templatesTitle": "Jours fériés — réglage rapide",
+            "upcomingTitle": "Dates spéciales à venir",
+            "addCustom": "Date personnalisée",
+            "addTitle": "Ajouter une date spéciale",
+            "editTitle": "Modifier la date spéciale",
+            "startDate": "Date de début",
+            "endDate": "Date de fin",
+            "typeClosed": "Fermé toute la journée",
+            "typeModified": "Horaires spéciaux",
+            "labelPlaceholder": "Motif (facultatif, ex. travaux)",
+            "invalidRangeTitle": "Dates invalides",
+            "invalidRangeDesc": "La date de fin ne peut pas précéder la date de début",
+            "zeroSlotDesc": "Les heures de début et de fin ne peuvent pas être identiques",
+            "overlapDesc": "Ces dates chevauchent une date spéciale existante",
+            "saveFailed": "Échec de l’enregistrement, veuillez réessayer",
+            "savedDesc": "Date spéciale enregistrée",
+            "deleteTitle": "Supprimer la date spéciale",
+            "deleteMessage": "Les horaires habituels s’appliqueront de nouveau à cette date.",
+            "deleteFailed": "Échec de la suppression, veuillez réessayer",
+            "deletedDesc": "Date spéciale supprimée",
+            "emptyTitle": "Aucune date spéciale",
+            "emptyDesc": "Fermeture pour un jour férié ou horaires modifiés ? Prévenez vos clients à l’avance pour éviter les déplacements inutiles.",
+            "activeNow": "En vigueur"
+        },
+        "holidays": {
+            "jourDeLAn": "Jour de l'an",
+            "lundiDePaques": "Lundi de Pâques",
+            "feteDuTravail": "Fête du Travail",
+            "victoire1945": "Victoire 1945",
+            "ascension": "Ascension",
+            "lundiDePentecote": "Lundi de Pentecôte",
+            "feteNationale": "Fête nationale",
+            "assomption": "Assomption",
+            "toussaint": "Toussaint",
+            "armistice1918": "Armistice 1918",
+            "noel": "Noël"
+        },
+        "todos": {
+            "title": "À traiter",
+            "unrepliedReviews": "Avis sans réponse"
+        },
+        "materials": {
+            "title": "Mes supports",
+            "menuDesc": "Voir les supports du magasin, créer un QR code et l’exporter en image",
+            "selfQuota": "QR auto-créés {{used}}/{{limit}}",
+            "createSelf": "Créer mon QR code",
+            "createSelfDesc": "Générez un support QR dédié — vos clients le scannent pour ouvrir votre page ; exportez-le en image pour l’imprimer et l’afficher.",
+            "createConfirmTitle": "Créer un support QR ?",
+            "createConfirmMsg": "Chaque commerçant peut auto-créer au plus {{limit}} support QR (ceux émis par la plateforme ne comptent pas). Effet immédiat.",
+            "created": "Créé",
+            "createFailed": "Échec de la création",
+            "selfLimitReached": "Quota d’auto-création épuisé",
+            "originSelf": "Auto-créé",
+            "originAdmin": "Émis par la plateforme",
+            "savePng": "Enregistrer l’image",
+            "saved": "Enregistré dans Photos",
+            "saveFailed": "Échec de l’enregistrement",
+            "shareLink": "Partager le lien",
+            "copyLink": "Copier le lien",
+            "linkCopied": "Lien copié",
+            "scanCount": "{{count}} scans",
+            "empty": "Aucun support. Créez un support QR ou contactez la plateforme pour des supports NFC.",
+            "footerHint": "L’image exportée est une carte carrée (QR code + code court), prête à imprimer et afficher. Les supports physiques (NFC) sont émis et liés par la plateforme.",
+            "pickCardLang": "Langue de la carte",
+            "pickCardLangMsg": "Le texte de l’image exportée utilisera la langue choisie."
         }
     },
     "secondhandSearch": {
@@ -1983,6 +2294,10 @@
             "group": "Groupe de produits",
             "updateFailed": "Échec de la mise à jour",
             "imageLoadFailed": "Échec du chargement de l'image"
+        },
+        "history": {
+            "title": "Recherches récentes",
+            "clear": "Effacer"
         }
     },
     "secondhandMain": {
@@ -1993,7 +2308,13 @@
         "singleProduct": "Produit d'occasion unique",
         "multipleProducts": "Produits d'occasion multiples",
         "warning": "Avertissement",
-        "notImplemented": "Pas encore implémenté"
+        "notImplemented": "Pas encore implémenté",
+        "publishEntry": {
+            "title": "Publier un article",
+            "subtitle": "Choisissez un mode de publication — les brouillons sont enregistrés automatiquement",
+            "singleDesc": "Publiez rapidement un article en trois étapes",
+            "multipleDesc": "Regroupez plusieurs articles en une collection, ajoutez-les un à un, publiez ensemble"
+        }
     },
     "secondhandPublish": {
         "fields": {
@@ -2052,7 +2373,9 @@
         "permissions": {
             "photoTitle": "Autorisation photo requise",
             "photoMessage": "Veuillez autoriser l'accès aux photos dans les paramètres",
-            "goSettings": "Aller aux paramètres"
+            "goSettings": "Aller aux paramètres",
+            "cameraTitle": "Autorisation caméra requise",
+            "cameraMessage": "Veuillez autoriser l'accès à la caméra dans les paramètres"
         },
         "status": {
             "online": "Mettre en vente",
@@ -2064,7 +2387,9 @@
             "imageTooSmall": "Taille de l'image {{index}} inférieure à 10kb, ne répond pas aux exigences",
             "saveDraftFailed": "Échec de l’enregistrement du brouillon",
             "sendpicturefailed": "Échec de l'envoi d'image",
-            "uploadFailed": "Échec du téléchargement, veuillez réessayer plus tard"
+            "uploadFailed": "Échec du téléchargement, veuillez réessayer plus tard",
+            "imageValidationFailed": "Échec de la validation de l'image",
+            "cameraFailed": "Échec de la prise de photo"
         },
         "validation": {
             "nameRequired": "Veuillez entrer le nom du produit",
@@ -2073,7 +2398,8 @@
             "categoryRequired": "Veuillez sélectionner la catégorie de produit",
             "conditionRequired": "Veuillez sélectionner l'état du produit",
             "contactRequired": "Veuillez entrer la méthode de contact",
-            "imageRequired": "Veuillez télécharger au moins une image"
+            "imageRequired": "Veuillez télécharger au moins une image",
+            "statusRequired": "Veuillez sélectionner le statut de l’annonce"
         },
         "success": {
             "title": "Succès",
@@ -2098,7 +2424,25 @@
             "resumeNew": "Nouveau",
             "resumeSaveAndNew": "Enregistrer et nouveau",
             "resumeContinue": "Continuer l'édition",
-            "savedToProfile": "Brouillon enregistré dans Mes occasions"
+            "savedToProfile": "Brouillon enregistré dans Mes occasions",
+            "resumedBanner": "Votre dernier brouillon inachevé a été restauré",
+            "startNew": "Nouveau",
+            "oldDraftKept": "Ancien brouillon conservé dans « Mes annonces »"
+        },
+        "uploader": {
+            "addImage": "Ajouter une image",
+            "takePhoto": "Prendre une photo",
+            "chooseFromLibrary": "Choisir dans la galerie",
+            "dragHint": "Appuyez longuement pour réorganiser — la première image sera la couverture",
+            "keepAtLeastOne": "Au moins une image doit être conservée",
+            "deleteImageTitle": "Supprimer l'image",
+            "deleteImageMessage": "Supprimer cette image ? Cette action est irréversible.",
+            "deleteFailed": "Échec de la suppression"
+        },
+        "imageDedup": {
+            "title": "Image déjà existante",
+            "all": "Les images sélectionnées sont identiques à celles déjà présentes sur cette annonce ; elles ont été réutilisées sans ajout.",
+            "some": "{{deduped}} des {{total}} images sélectionnées correspondent à des images existantes et ont été réutilisées automatiquement."
         }
     },
     "secondhandMultiple": {
@@ -2149,7 +2493,10 @@
             "uploadCoverFailed": "Échec du téléchargement de l'image de couverture",
             "allDelisted": "Tous les articles sélectionnés ont été retirés",
             "partialDelisted": "{{success}} retiré(s), {{failed}} échec(s)",
-            "delistError": "Erreur survenue lors du retrait"
+            "delistError": "Erreur survenue lors du retrait",
+            "batchDelisted": "{{count}} article(s) retiré(s)",
+            "batchDelistedPartial": "{{success}} article(s) retiré(s), {{skipped}} ignoré(s)",
+            "batchAllSkipped": "Tous les articles sélectionnés ont été ignorés (peut-être déjà retirés)"
         },
         "validation": {
             "groupNameRequired": "Veuillez entrer le nom du groupe",
@@ -2162,7 +2509,9 @@
         "resumeTitle": "Reprendre le groupe inachevé ?",
         "resumeBody": "Vous avez un groupe d'occasion inachevé. Choisissez « Continuer l'édition » pour reprendre, ou « Enregistrer et nouveau » — le groupe actuel restera dans Mes occasions, accessible à tout moment.",
         "resumeContinue": "Continuer l'édition",
-        "resumeSaveAndNew": "Enregistrer et nouveau"
+        "resumeSaveAndNew": "Enregistrer et nouveau",
+        "resumedBanner": "Votre dernier groupe de brouillons inachevé a été restauré",
+        "oldGroupKept": "Ancien groupe de brouillons conservé dans « Mes annonces »"
     },
     "admin": {
         "dashboard": {
@@ -2210,7 +2559,9 @@
             "unclaimed": {
                 "title": "Tickets non attribués",
                 "viewAll": "Voir tous les non attribués"
-            }
+            },
+            "hasPending": "Des actions nécessitent votre attention",
+            "noPending": "Rien à traiter pour le moment"
         },
         "userManagement": {
             "title": "Gestion des Utilisateurs",
@@ -2366,7 +2717,10 @@
             "approve": "Approuver",
             "reject": "Rejeter",
             "approveConfirmTitle": "Confirmer l'approbation",
-            "approveConfirmMessage": "Voulez-vous vraiment approuver la demande de mise à jour des informations de ce commerçant ?"
+            "approveConfirmMessage": "Voulez-vous vraiment approuver la demande de mise à jour des informations de ce commerçant ?",
+            "sourceSuffix": "(source)",
+            "aiSuffix": "(traduit par IA)",
+            "localizedPreview": "Aperçu multilingue"
         },
         "providerRequestDetail": {
             "providerName": "Nom commercial",
@@ -2514,7 +2868,9 @@
                 "startFailed": "Échec du démarrage du test",
                 "statusFailed": "Échec de récupération du statut",
                 "abortFailed": "Échec de l'annulation du test"
-            }
+            },
+            "concurrentUsersRange": "Le nombre d’utilisateurs simultanés doit être compris entre 1 et 2000",
+            "durationRange": "La durée du test doit être comprise entre 5 et 60 secondes"
         },
         "complianceHold": {
             "entry": "Limitations RGPD",
@@ -2609,7 +2965,11 @@
                 "send": "Envoyer",
                 "successTitle": "Ticket envoyé",
                 "emptyError": "Veuillez saisir un message"
-            }
+            },
+            "revokeBenefitTitle": "Révoquer l’avantage",
+            "revokeBenefitMessage": "Voulez-vous vraiment révoquer cet avantage ?",
+            "revokeAction": "Révoquer",
+            "daysPlaceholder": "Jours (vide = permanent)"
         },
         "activityReview": {
             "subpages": {
@@ -2750,7 +3110,18 @@
             "reopen": "Rouvrir l'activité",
             "reopenConfirmTitle": "Rouvrir cette activité ?",
             "reopenConfirmDesc": "L'activité sera de nouveau publiée avec une nouvelle date de fin « {{date}} » et exposée aux utilisateurs.",
-            "reopenSuccess": "Activité rouverte"
+            "reopenSuccess": "Activité rouverte",
+            "notePlaceholder": "Notes d’examen, raisons d’exposition particulière, points d’attention, etc.",
+            "rejectReasonPlaceholder": "Ex. : images floues ; contenu avec termes interdits ; …",
+            "forceOffline": "Mettre hors ligne",
+            "forceOfflineConfirm": "Mettre cette activité hors ligne ? Elle sera retirée de l’exposition et archivée.",
+            "forceOfflineDone": "Mise hors ligne effectuée",
+            "approveConfirmDescUnlimited": "Budget : {{budget}}  /  Plage : illimitée (exposition toute la journée)",
+            "dailyExposureWindow": "Plage d’exposition quotidienne",
+            "unlimitedTitle": "Sans plage horaire (exposition toute la journée)",
+            "unlimitedSubtitle": "Une fois activée, cette activité n’est pas limitée à une plage horaire",
+            "startAt": "Début",
+            "endAt": "Fin"
         },
         "slotManagement": {
             "title": "Gestion des emplacements d'activité",
@@ -2823,6 +3194,17 @@
             "refresh": "Actualiser",
             "error": {
                 "fetchFailed": "Échec du chargement. Réessayer."
+            },
+            "slotAnalytics": {
+                "title": "Performance des emplacements",
+                "hint": "Performance de diffusion par emplacement (30 derniers jours, impressions du fil uniquement)",
+                "empty": "Aucune donnée d'emplacement",
+                "impressions": "Impr.",
+                "reach": "Portée",
+                "conversion": "Conv.",
+                "deleted": "Supprimé",
+                "disabled": "Désactivé",
+                "noImpressions": "Non diffusé"
             }
         },
         "forceLogout": {
@@ -2861,7 +3243,11 @@
                 "provider": "Tous les commerçants",
                 "user": "Utilisateurs ordinaires",
                 "providerSpecific": "Commerçant : {{id}}",
-                "regionSpecific": "Région : {{id}}"
+                "regionSpecific": "Région : {{id}}",
+                "permPrefix": "Permission : {{name}}",
+                "personal": "Personnel",
+                "scopeProvider": "Commerçant : {{id}}",
+                "scopeRegion": "Région : {{id}}"
             },
             "action": {
                 "detail": "Détails",
@@ -2926,6 +3312,10 @@
                 "emptyRecipients": "Aucun destinataire",
                 "emptyRead": "Aucun utilisateur ne l'a lu",
                 "emptyRows": "Aucune ligne stockée"
+            },
+            "audienceFilter": {
+                "any": "Tous les types",
+                "permPlaceholder": "Filtrer par permission (facultatif)"
             }
         },
         "socketStressTest": {
@@ -3109,6 +3499,952 @@
             "regionsSection": "Régions",
             "noRegions": "Aucune région à gérer",
             "noRegionsDesc": "Vous pouvez toujours utiliser les outils d’administration auxquels vous avez accès ci-dessous."
+        },
+        "providerRequest": {
+            "emptyList": "Aucune demande pour le moment",
+            "loadError": "Échec du chargement, veuillez réessayer"
+        },
+        "blacklist": {
+            "title": "Liste noire",
+            "noPermission": "Aucune permission pour gérer la liste noire",
+            "segList": "Liste noire",
+            "segPreview": "Analyse des risques",
+            "dimIp": "Adresse IP",
+            "dimDevice": "Appareil",
+            "dimUser": "Utilisateur",
+            "empty": "Aucun blocage actif",
+            "emptyNote": "Si la base de données est indisponible, le backend laisse passer et renvoie une liste vide — les blocages ne sont alors pas appliqués.",
+            "wouldBlockCount": "L'activation du blocage ajouterait {{n}} blocage(s) pour cette fenêtre",
+            "sourceManual": "Manuel",
+            "sourceAuto": "Détection auto",
+            "sourcePenalty": "Récidive",
+            "permanent": "Permanent",
+            "permanentBadge": "Blocage permanent",
+            "expiring": "Bientôt levé",
+            "remaining": "{{time}} restant",
+            "blockedAt": "Bloqué le {{time}}",
+            "operator": "Par #{{id}}",
+            "remainDH": "{{d}} j {{h}} h",
+            "remainHM": "{{h}} h {{m}} min",
+            "remainM": "{{m}} min",
+            "unblock": "Débloquer",
+            "unblockTitle": "Débloquer",
+            "unblockBody": "Débloquer {{id}} ? L'accès est rétabli immédiatement.",
+            "unblockConfirm": "Débloquer",
+            "unblockOk": "Débloqué",
+            "unblockFailed": "Échec du déblocage",
+            "addTitle": "Blocage manuel",
+            "addSubmit": "Confirmer le blocage",
+            "addOk": "Bloqué",
+            "addFailed": "Échec du blocage",
+            "formIncomplete": "Saisissez un identifiant et un motif",
+            "reasonPlaceholder": "Motif (inscrit au journal d'audit — soyez précis)",
+            "duration": "Durée",
+            "ttl1h": "1 heure",
+            "ttl6h": "6 heures",
+            "ttl1d": "1 jour",
+            "ttl7d": "7 jours",
+            "ttlPerm": "Permanent",
+            "permWarning": "Un blocage permanent ne se lève jamais tout seul. Si cette adresse est une sortie partagée d'opérateur, elle exclura durablement de vrais utilisateurs.",
+            "modeOff": "La détection automatique est désactivée. La liste ne contient que des entrées manuelles et de récidive.",
+            "modeObserve": "La détection automatique est en mode observation — les verdicts ne sont qu'inscrits au journal, aucune entrée n'est créée.",
+            "modeEnforce": "La détection automatique bloque — les IP au-dessus du seuil sont bloquées automatiquement (durée croissante selon la récidive, jusqu'à 7 jours).",
+            "previewNote": "Exécute exactement le même algorithme que la tâche planifiée sur la fenêtre récente, en lecture seule — sans bloquer aucune IP ni écrire d'événement d'audit. À consulter avant d'activer le blocage.",
+            "previewFailed": "Échec de l'analyse des risques",
+            "previewEmpty": "Aucun trafic n'a atteint le seuil sur cette fenêtre.",
+            "previewSummary": "{{candidates}} candidats, {{decisions}} verdicts",
+            "vetoed": "Veto : {{reason}}",
+            "wouldBlock": "Serait bloqué une fois le blocage activé",
+            "statsLoaded": "{{n}} chargés",
+            "statsPermanent": "{{n}} permanents",
+            "statsAuto": "{{n}} automatiques",
+            "expiresAtLine": "Expire à {{time}}",
+            "ttlMismatch": "Devrait être levé à {{time}}, mais le cache d’exécution n’a pas de TTL — il ne sera pas levé automatiquement, retrait manuel requis",
+            "userIdNumeric": "La dimension utilisateur n’accepte qu’un ID utilisateur numérique",
+            "formTooLong": "L’identifiant est limité à 128 caractères et la raison à 255 caractères",
+            "win15m": "15 min",
+            "win1h": "1 heure",
+            "win6h": "6 heures",
+            "win24h": "24 heures",
+            "windowRange": "Fenêtre {{from}} – {{to}}",
+            "featTotal": "Requêtes totales",
+            "featUnmatched": "Non appariées",
+            "featUnmatchedPaths": "Chemins non appariés",
+            "featProbeHits": "Chemins de sonde touchés",
+            "featAuthFail": "Échecs d’authentification",
+            "featServerError": "5xx",
+            "featSuccessAuthed": "Succès authentifiés",
+            "featDistinctUsers": "Utilisateurs distincts",
+            "featScannerUa": "UA de scanner",
+            "featMissingUa": "Sans UA",
+            "banTtl": "Si bloqué : {{time}}",
+            "priorOffences": "{{n}} récidives (durée croissante par récidive)",
+            "searchPlaceholder": "Rechercher identifiant / raison",
+            "alreadyBlocked": "Déjà sur liste noire",
+            "banNow": "Ajouter à la liste noire",
+            "banNowConfirm": "Bloquer",
+            "banNowConfirmTitle": "Bloquer l'IP",
+            "banNowConfirmBody": "Ajouter {{ip}} à la liste noire ? Durée {{time}}.",
+            "banNowOk": "Ajouté à la liste noire",
+            "banNowFailed": "Échec du blocage"
+        },
+        "scoreBreakdown": {
+            "title": "Détail du score",
+            "finalScore": "Score final",
+            "notPublished": "Non publié — exclu du classement",
+            "budget": "Base budget",
+            "baseScore": "Score de base",
+            "factorsTitle": "Facteurs de quota restant",
+            "remainingDays": "Jours restants",
+            "remainingImpression": "Impr. restantes",
+            "remainingReach": "Portée restante",
+            "avgRemaining": "Moy. restant",
+            "freshness": "Fraîcheur ×{{mult}}",
+            "freshnessTier": {
+                "day1": "Jour 1",
+                "day2_3": "Jours 1–3",
+                "stable": "Stable",
+                "not_published": "Non publié"
+            },
+            "pinned": "Épinglé",
+            "afterFreshness": "Après fraîcheur",
+            "pinnedBonus": "Bonus épingle",
+            "cachedNote": "Score en cache {{cached}}, synchronisé au prochain recalcul (toutes les 10 min)",
+            "loadFailed": "Échec du chargement",
+            "refresh": "Réessayer"
+        },
+        "tasksQueues": {
+            "title": "Tâches planifiées et files d'attente",
+            "segTasks": "Tâches planifiées",
+            "segQueues": "Files d'attente",
+            "loading": "Chargement…",
+            "loadFailedTitle": "Échec du chargement",
+            "loadFailedTasksDesc": "Impossible de récupérer l'état des tâches planifiées",
+            "loadFailedQueuesDesc": "Impossible de récupérer l'état des files d'attente",
+            "tasksOverview": "Aperçu de la planification",
+            "queuesOverview": "Aperçu des files d'attente",
+            "engineTitle": "Moteur de planification BullMQ",
+            "redisConnected": "Redis connecté",
+            "redisDisconnected": "Redis déconnecté",
+            "taskCount": "{{count}} tâches",
+            "nodeLabel": "Nœud #{{id}}",
+            "kpiActive": "En cours",
+            "kpiWaiting": "En attente",
+            "kpiDelayed": "Différées",
+            "kpiCompleted": "Terminées",
+            "kpiFailed": "Échouées",
+            "filterAll": "Toutes",
+            "filterRunning": "En cours",
+            "filterFailed": "Échouées",
+            "statusRunning": "En cours",
+            "statusLastFailed": "Dernier échec",
+            "statusReady": "Opérationnelle",
+            "statusPending": "En attente",
+            "runSuccess": "Succès",
+            "runFailed": "Échec",
+            "runRunning": "En cours",
+            "runSkipped": "Ignorée",
+            "nextRun": "Prochaine exécution",
+            "lastRun": "Dernière exécution",
+            "never": "Jamais",
+            "justNow": "À l'instant",
+            "soon": "Imminent",
+            "minutesAgo": "il y a {{count}} min",
+            "hoursAgo": "il y a {{count}} h",
+            "daysAgo": "il y a {{count}} j",
+            "inSeconds": "dans {{count}} s",
+            "inMinutes": "dans {{count}} min",
+            "inHours": "dans {{count}} h",
+            "inDays": "dans {{count}} j",
+            "heavyLoad": "Charge lourde",
+            "sensitive": "Sensible",
+            "manualTriggered": "Déclenchement manuel",
+            "cronTriggered": "Déclenchement planifié",
+            "notRunYet": "Jamais exécutée",
+            "runNow": "Exécuter",
+            "runNowConfirmTitle": "Exécuter maintenant",
+            "runNowConfirmMessage": "Exécuter « {{name}} » maintenant ?\nLa tâche sera mise en file comme exécution manuelle ; le résultat sera visible dans l'historique.",
+            "runNowConfirm": "Exécuter",
+            "triggerFailedTitle": "Échec du déclenchement",
+            "triggerFailedDesc": "Le déclenchement de la tâche a échoué",
+            "enqueuedTitle": "Mise en file",
+            "triggerErrorDesc": "Une erreur est survenue lors du déclenchement",
+            "recentRuns": "Exécutions récentes",
+            "noRuns": "Aucun historique d'exécution",
+            "noFailedTasks": "Aucune tâche en échec 🎉",
+            "noMatchingTasks": "Aucune tâche correspondante",
+            "updatedAt": "Mis à jour à {{time}}",
+            "redisUnavailable": "Redis indisponible, impossible de récupérer les files d'attente",
+            "noQueues": "Aucune file d'attente détectée",
+            "queueEmpty": "File d'attente vide, aucune tâche en attente",
+            "jobsHeader": "Détail des tâches",
+            "jobSampleHint": "{{total}} tâches en attente au total, seules les {{shown}} premières sont affichées",
+            "pendingBadge": "{{count}} en attente",
+            "queueIdleBadge": "Inactive",
+            "stateActive": "En cours",
+            "stateWaiting": "En attente",
+            "statePrioritized": "Prioritaire",
+            "stateDelayed": "Différée",
+            "stateFailed": "Échouée",
+            "statePaused": "En pause",
+            "completedCount": "{{count}} terminées",
+            "attempts": "{{count}} tentatives",
+            "enqueuedAgo": "en file {{ago}}",
+            "viewPayload": "Voir les données",
+            "hidePayload": "Masquer les données",
+            "stateCompleted": "Terminée",
+            "completedAgo": "terminée {{ago}}",
+            "failedAgo": "échouée {{ago}}",
+            "viewReturn": "Voir le résultat",
+            "hideReturn": "Masquer le résultat",
+            "recentCompletedHeader": "Terminées récemment",
+            "completedSampleHint": "{{shown}} dernières affichées ({{total}} conservées dans Redis)",
+            "queueNames": {
+                "scheduledTasks": "Tâches planifiées (standard)",
+                "scheduledTasksHeavy": "Tâches planifiées (lourdes)",
+                "pushNotifications": "Notifications push",
+                "translation": "Traduction IA",
+                "mediaProcessing": "Traitement des médias",
+                "searchIndex": "Index de recherche",
+                "achievement": "Succès",
+                "activityPageEvents": "Événements de pages d'activité",
+                "dataExports": "Exports de données",
+                "expoPatchGen": "Génération de correctifs OTA",
+                "appclipSync": "Synchronisation App Clip"
+            },
+            "statusDisabled": "Désactivée",
+            "disableConfirmTitle": "Désactiver la tâche planifiée",
+            "disableConfirmMessage": "Désactiver « {{name}} » ?\nElle ne s’exécutera plus automatiquement (persiste après redémarrage). Le déclenchement manuel reste possible.",
+            "disableConfirm": "Désactiver",
+            "taskEnabledToast": "Tâche activée",
+            "taskDisabledToast": "Tâche désactivée",
+            "toggleFailedTitle": "Échec du changement"
+        },
+        "logs": {
+            "title": "Journaux système",
+            "noPermission": "Accès aux journaux non autorisé",
+            "loadFailed": "Échec du chargement des journaux",
+            "segStream": "Flux",
+            "segOverview": "Vue d'ensemble",
+            "segPipeline": "Pipeline",
+            "filters": "Filtres",
+            "resetAll": "Tout réinitialiser",
+            "clear": "Effacer",
+            "apply": "Terminé",
+            "customRange": "Personnalisé",
+            "searchPlaceholder": "Rechercher message / erreur / chemin",
+            "onlyErrors": "Erreurs seulement",
+            "slowOnly": "Lentes >1s",
+            "requestChain": "Chaîne de requête",
+            "viewChain": "Voir toute la chaîne de journaux de cette requête",
+            "noData": "Aucun journal sur cette période",
+            "presetMinutes": "{{count}} dernières min",
+            "presetHours": "{{count}} dernières h",
+            "presetDays": "{{count}} derniers j",
+            "justNow": "à l'instant",
+            "minutesAgo": "il y a {{count}} min",
+            "hoursAgo": "il y a {{count}} h",
+            "daysAgo": "il y a {{count}} j",
+            "levelFilter": "Niveau",
+            "kindFilter": "Type",
+            "instanceFilter": "Conteneur",
+            "moduleFilter": "Module",
+            "statusFilter": "Classe de statut",
+            "methodFilter": "Méthode HTTP",
+            "minDuration": "Durée minimale",
+            "noLimit": "Sans limite",
+            "userFilter": "ID utilisateur",
+            "userPlaceholder": "ex. 1024",
+            "kpiTotal": "Total des journaux",
+            "kpiErrors": "Erreurs",
+            "kpiErrorRate": "Taux 5xx",
+            "kpiHttp": "Requêtes HTTP",
+            "kpiMax": "La plus lente",
+            "percentilesSkipped": "Volume trop important — les centiles ont été ignorés pour protéger la base de données. Réduisez la période pour voir P50/P95/P99.",
+            "timeline": "Répartition temporelle",
+            "bucketHint": "{{minutes}} min par barre",
+            "legendNormal": "Normal",
+            "legendWarn": "Avertissement",
+            "legendError": "Erreur",
+            "byModule": "Par module",
+            "byInstance": "Par conteneur",
+            "byLevel": "Par niveau",
+            "byStatus": "Par classe de statut",
+            "slowestRoutes": "Endpoints les plus lents",
+            "busiestRoutes": "Endpoints les plus sollicités",
+            "routeMeta": "{{count}} appels · max {{max}} · {{errors}} échecs",
+            "topErrors": "Principales erreurs",
+            "unnamedError": "Erreur sans nom",
+            "timingSplit": "total {{total}} · appli {{app}} · amont {{pre}}",
+            "level": {
+                "debug": "DEBUG",
+                "info": "INFO",
+                "warn": "WARN",
+                "error": "ERROR",
+                "fatal": "FATAL"
+            },
+            "kind": {
+                "http": "HTTP",
+                "app": "Applicatif",
+                "task": "Tâche planifiée",
+                "queue": "File",
+                "security": "Sécurité",
+                "system": "Système"
+            },
+            "field": {
+                "route": "Route",
+                "path": "Chemin",
+                "context": "Source",
+                "instance": "Conteneur",
+                "timing": "Détail des durées",
+                "size": "Taille de réponse",
+                "errorName": "Erreur",
+                "user": "Utilisateur"
+            },
+            "pipe": {
+                "title": "Pipeline de journaux",
+                "on": "Collecte active",
+                "off": "Désactivé",
+                "scopeNote": "Les métriques mémoire et cumulées appartiennent au conteneur qui a répondu à cette requête (il peut changer à chaque rafraîchissement) ; la file d'attente est partagée entre tous les conteneurs.",
+                "respondingBy": "Répondu par le conteneur",
+                "queueDepth": "File Redis en attente",
+                "redisDown": "Redis indisponible",
+                "pending": "En mémoire (ce conteneur)",
+                "pushed": "Total envoyé (ce conteneur)",
+                "inserted": "Total persisté (ce conteneur)",
+                "droppedMem": "Perdus (dépassement mémoire)",
+                "droppedRetry": "Perdus après nouvelle tentative",
+                "restored": "Remis en file après échec",
+                "lastFlush": "Dernière écriture",
+                "retention": "Jours de rétention",
+                "tableRows": "Lignes de la table (approx.)",
+                "oldest": "Journal le plus ancien",
+                "lastError": "Dernière erreur du pipeline"
+            },
+            "retentionWarnAll": "La période sélectionnée de {{days}} jours dépasse la rétention des niveaux les plus bas ({{levels}}) ; ces niveaux ne renvoient que les données de leur propre fenêtre de rétention.",
+            "retentionWarnSelected": "La période sélectionnée de {{days}} jours dépasse la rétention des niveaux sélectionnés ({{levels}}) ; ces niveaux ne renvoient que les données de leur propre fenêtre de rétention.",
+            "responseBody": "Corps de réponse",
+            "redacted": "Champs sensibles masqués",
+            "responseBodyOff": "Les réponses en erreur sont enregistrées automatiquement. Les réponses réussies ne sont pas capturées par défaut (cela ferait gonfler la table et placerait des identifiants actifs dans un stockage interrogeable) — configurez LOG_CAPTURE_BODY_ROUTES côté backend si nécessaire.",
+            "ipFilter": "IP source",
+            "ipPlaceholder": "203.0.113.7 ou 192.168.1. (plage entière)",
+            "ipHint": "Se terminant par . ou *, le préfixe couvre toute la plage ; les jokers ne sont admis qu'à la fin.",
+            "topIps": "Principales IP sources",
+            "tapToFilter": "Toucher pour filtrer",
+            "ipMeta": "{{users}} utilisateurs · {{errors}} erreurs · {{last}}",
+            "anonymous": "anonyme",
+            "anonymousFull": "Anonyme (requête non authentifiée)",
+            "openUserHub": "Actions utilisateur (détail / analyse / audit / bannissement)",
+            "kindAll": "Toutes les sources"
+        },
+        "reportDetail": {
+            "action": {
+                "none": "Aucune sanction",
+                "warn": "Avertissement",
+                "mute": "Mise en sourdine",
+                "banTemporary": "Bannissement temporaire",
+                "banPermanent": "Bannissement définitif",
+                "deleteContent": "Supprimer le contenu"
+            },
+            "confirmResolveTitle": "Confirmer le traitement",
+            "confirmResolveMessage": "Voulez-vous vraiment traiter ce signalement ?",
+            "confirmDismissTitle": "Confirmer le rejet",
+            "confirmDismissMessage": "Voulez-vous vraiment rejeter ce signalement ?",
+            "resolvedToast": "Signalement traité",
+            "dismissedToast": "Signalement rejeté",
+            "notFound": "Signalement introuvable",
+            "sectionInfo": "Informations du signalement",
+            "labelType": "Type",
+            "labelTargetId": "ID de la cible",
+            "labelReason": "Motif",
+            "labelTime": "Date",
+            "labelDescription": "Description détaillée",
+            "sectionUsers": "Utilisateurs concernés",
+            "labelReporter": "Auteur du signalement",
+            "labelTarget": "Utilisateur signalé",
+            "unknownUser": "Inconnu",
+            "reporterHistoryTitle": "Historique de l’auteur — {{name}} #{{id}}",
+            "targetHistoryTitle": "Historique de l’utilisateur signalé — {{name}} #{{id}}",
+            "sectionHandled": "Détails du traitement",
+            "labelHandler": "Traité par",
+            "labelAction": "Mesure prise",
+            "labelHandledAt": "Date de traitement",
+            "labelHandlerNote": "Note de traitement",
+            "sectionHandle": "Traiter le signalement",
+            "primaryPenalty": "Sanction principale",
+            "muteDaysLabel": "Durée de sourdine : {{days}} jours",
+            "banDaysLabel": "Durée du bannissement : {{days}} jours",
+            "minDays": "1 jour",
+            "maxDays": "90 jours",
+            "alsoDeleteContent": "Supprimer aussi le contenu signalé",
+            "handlerNoteOptional": "Note de traitement (facultatif)",
+            "handlerNotePlaceholder": "Notez la raison et les détails de la décision...",
+            "dismissButton": "Rejeter",
+            "resolveButton": "Traiter",
+            "preview": {
+                "sectionContent": "Contenu signalé",
+                "deleted": "Le contenu a été supprimé ou n’existe plus",
+                "sectionProduct": "Produit signalé",
+                "viewProduct": "Voir le produit",
+                "seller": "Vendeur : {{name}}",
+                "statusLabel": "Statut : {{status}}",
+                "sectionReview": "Avis signalé",
+                "anonymous": "Anonyme",
+                "provider": "Commerçant : {{name}}",
+                "deletedByReport": "Supprimé suite à un signalement",
+                "sectionChat": "Historique de discussion (joint au signalement)",
+                "chatNotice": "Le contenu des discussions est réservé à l’examen par CoBook",
+                "messageCount": "{{count}} messages au total",
+                "sectionUser": "Profil de l’utilisateur signalé",
+                "userStats": "Abonnements {{follow}} · Abonnés {{follower}} · Produits {{products}}",
+                "reportedTimes": "Signalé {{count}} fois",
+                "muted": "En sourdine",
+                "sectionActivity": "Page d’activité signalée",
+                "platform": "Plateforme",
+                "reportedBadge": "Signalé",
+                "staleMessage": "Message d'origine supprimé (texte de la capture)",
+                "imageUnavailable": "Image de preuve indisponible ({{reason}})",
+                "snapshotReason": {
+                    "sourceMissing": "image source supprimée",
+                    "copyFailed": "échec de la capture",
+                    "unknown": "raison inconnue"
+                },
+                "snapshotWarning": "Certaines images de preuve n'ont pas pu être conservées",
+                "productRefLabel": "[Article] {{content}}",
+                "viewReview": "Voir l'avis",
+                "viewProvider": "Voir le commerçant",
+                "sectionProvider": "Commerçant signalé",
+                "reviewSnapshotsTitle": "Instantanés des images de l'avis",
+                "reviewSnapshotPartial": "Certaines images de l'avis n'ont pas pu être préservées",
+                "reviewSnapshotFailed": "Les instantanés des images de l'avis n'ont pas pu être préservés",
+                "viewActivity": "Voir la page d'activité",
+                "activityTakenDown": "Retirée",
+                "takedownActivity": "Retirer également cette page d'activité"
+            },
+            "history": {
+                "viewAll": "Tout voir",
+                "empty": "Aucun enregistrement",
+                "asReporter": "Signalements déposés",
+                "asTarget": "Signalements reçus"
+            }
+        },
+        "systemHealth": {
+            "status": {
+                "healthy": "Sain",
+                "degraded": "Dégradé",
+                "unhealthy": "Défaillant",
+                "warning": "Avertissement",
+                "notConfigured": "Non configuré",
+                "error": "Erreur"
+            },
+            "loadFailed": "Échec du chargement de l’état du système",
+            "loading": "Chargement de l’état du système...",
+            "currentNode": "Nœud actuel",
+            "nodeN": "Nœud {{n}}",
+            "uptimeValue": "Temps de fonctionnement : {{value}}",
+            "connectionsValue": "Connexions : {{count}} / Authentifiés : {{auth}}",
+            "stale": "Données obsolètes",
+            "poolValue": "Pool : {{active}}/{{total}} (inactifs : {{idle}}, en attente : {{waiting}})",
+            "cpuMetric": "CPU : {{usage}} % ({{cores}} cœurs)",
+            "memoryMetric": "Mémoire : {{usage}} % (Heap : {{heapUsed}}/{{heapTotal}} Mo)",
+            "ecsTaskN": "Tâche {{n}}",
+            "ecsCpuMem": "CPU : {{cpu}} | Mémoire : {{memory}}",
+            "availabilityZone": "Zone de disponibilité : {{az}}",
+            "container": "Conteneur : {{name}} ({{status}})",
+            "clusterOverview": "Aperçu du cluster",
+            "totalNodes": "Nœuds au total",
+            "clusterUnavailable": "Mode cluster indisponible",
+            "clusterUnavailableMsg": "Redis n’est pas connecté ; l’état de santé du cluster est indisponible",
+            "nodesSection": "État des nœuds",
+            "currentNodeInfo": "Informations du nœud actuel",
+            "systemInfo": "Informations système",
+            "nodeIdLabel": "ID du nœud",
+            "environment": "Environnement",
+            "uptimeLabel": "Temps de fonctionnement",
+            "hostname": "Nom d’hôte",
+            "platform": "Plateforme",
+            "servicesSection": "État des services",
+            "servicesSectionAgg": "État des services (agrégé sur {{count}} nœuds)",
+            "database": "Base de données",
+            "avgLatency": "Latence moyenne : {{ms}} ms",
+            "nodesSuffix": "({{count}} nœuds)",
+            "totalPoolValue": "Pool total : {{active}}/{{total}} (inactifs : {{idle}}, en attente : {{waiting}})",
+            "latency": "Latence : {{ms}} ms",
+            "connectedNodes": "Nœuds connectés : {{connected}}/{{total}}",
+            "adapter": "Adaptateur : {{status}}",
+            "enabled": "Activé",
+            "notEnabled": "Désactivé",
+            "connected": "Connecté : {{value}}",
+            "totalSocketConnections": "Connexions socket au total : {{count}}",
+            "totalAuthUsers": "Utilisateurs authentifiés au total : {{count}}",
+            "totalRooms": "Salles au total : {{rooms}} / SIDs au total : {{sids}}",
+            "socketConnections": "Connexions socket : {{count}}",
+            "authUsers": "Utilisateurs authentifiés : {{count}}",
+            "redisAdapter": "Adaptateur Redis : {{value}}",
+            "resourcesSection": "Utilisation des ressources",
+            "resourcesSectionAgg": "Utilisation des ressources (agrégée sur {{count}} nœuds)",
+            "avgCpuUsage": "Utilisation CPU moyenne : {{value}} %",
+            "totalCores": "Cœurs au total : {{count}}",
+            "cores": "Cœurs : {{value}}",
+            "cpuModel": "Modèle : {{model}}",
+            "loadAvg": "Charge : {{value}}",
+            "memory": "Mémoire",
+            "avgSystemMemUsage": "Utilisation mémoire système moyenne : {{value}} %",
+            "totalProcessHeap": "Heap des processus au total : {{used}}/{{total}} Mo",
+            "avgProcessHeap": "Heap moyen par processus : {{value}} Mo",
+            "totalProcessRss": "RSS des processus au total : {{value}} Mo",
+            "totalSystemMem": "Mémoire système totale : {{used}}/{{total}} Mo",
+            "processHeap": "Heap du processus : {{used}}/{{total}} Mo",
+            "processRss": "RSS du processus : {{value}} Mo",
+            "systemMem": "Système : {{used}}/{{total}} Mo",
+            "ecsSection": "Cluster ECS",
+            "ecsClusterName": "Cluster : {{name}}",
+            "desired": "Souhaitées",
+            "running": "En cours",
+            "pendingStart": "En attente",
+            "runningTasks": "Tâches en cours",
+            "ecsUnavailable": "Informations ECS indisponibles",
+            "lastUpdate": "Dernière mise à jour : {{time}}"
+        },
+        "achievementDefs": {
+            "strategy": {
+                "snapshotLabel": "Snapshot (par défaut, le plus sûr)",
+                "snapshotHint": "Modifie uniquement la définition ; l’historique XP des utilisateurs ayant déjà débloqué n’est pas touché",
+                "topUpOnlyLabel": "Top-up only (compléter sans jamais reprendre)",
+                "topUpOnlyHint": "Si l’XP augmente, les utilisateurs ayant débloqué reçoivent la différence ; aucune reprise en cas de baisse",
+                "fullRetroLabel": "Full retro (rétroactivité totale, à utiliser avec prudence)",
+                "fullRetroHint": "Les écarts d’XP sont appliqués dans les deux sens et peuvent rétrograder des utilisateurs. Mot de passe administrateur requis"
+            },
+            "noImageSelected": "Aucune image sélectionnée",
+            "uploadFailed": "Échec du téléversement",
+            "pickImageFailed": "Échec de la sélection de l’image",
+            "saveFailed": "Échec de l’enregistrement",
+            "savedTitle": "Enregistré",
+            "savedSummary": "Stratégie : {{strategy}}\nUtilisateurs concernés : {{affectedUsers}}\nVariation d’XP : {{xpDelta}}\nNouveaux débloqués : {{newlyUnlocked}}",
+            "windowBackfilled": "Rétro-remplissage de la fenêtre : {{count}}",
+            "reconcileTitle": "Déclencher le reconcile",
+            "reconcileMessage": "Rapproche entièrement toutes les métriques. Choisissez Silent pour le premier backfill, ou Normal pour les corrections courantes (envoie des notifications socket).",
+            "windowStartLabel": "Début (vide = pas de limite basse)",
+            "windowEndLabel": "Fin (vide = pas de limite haute)",
+            "confirmPasswordPlaceholder": "Requis pour confirmer full_retro",
+            "passwordRequired": "La stratégie full retro nécessite le mot de passe administrateur",
+            "xpInvalid": "L’XP doit être un entier positif ou nul",
+            "thresholdInvalid": "Le seuil doit être un entier positif ou nul",
+            "sortOrderInvalid": "L’ordre de tri doit être un entier",
+            "windowOrderInvalid": "La date de début ne peut pas être postérieure à la date de fin"
+        },
+        "roles": {
+            "superAdmin": "Super administrateur",
+            "platformAdmin": "Administrateur de la plateforme",
+            "platformSupport": "Support de la plateforme",
+            "regionalDirector": "Directeur régional",
+            "regionalManager": "Responsable régional",
+            "regionalOperator": "Opérateur régional",
+            "storeManager": "Gérant de boutique",
+            "storeEmployee": "Employé de boutique",
+            "storeFinance": "Finance",
+            "storeViewer": "Observateur",
+            "salesRep": "Commercial",
+            "user": "Utilisateur standard"
+        },
+        "roleScope": {
+            "platform": "Niveau plateforme",
+            "regional": "Niveau régional",
+            "provider": "Niveau commerçant",
+            "user": "Niveau utilisateur"
+        },
+        "scopeType": {
+            "global": "Global",
+            "region": "Région",
+            "user": "Niveau utilisateur"
+        },
+        "searchUser": {
+            "placeholder": "Rechercher par pseudo, nom d’utilisateur, ID, e-mail ou téléphone"
+        },
+        "userDetail": {
+            "pickRoleRequired": "Veuillez sélectionner un rôle",
+            "assignRoleFailed": "Échec de l’attribution du rôle",
+            "removeRoleTitle": "Confirmer le retrait",
+            "removeRoleMessage": "Voulez-vous vraiment retirer le rôle « {{role}} » de cet utilisateur ?",
+            "removeRoleConfirm": "Retirer",
+            "removeRoleFailed": "Échec du retrait du rôle",
+            "impersonateFailed": "Échec de la connexion en tant qu’utilisateur",
+            "cannotImpersonateSelf": "Vous ne pouvez pas usurper votre propre compte",
+            "unbanTitle": "Lever le bannissement",
+            "unbanMessage": "Voulez-vous vraiment lever le bannissement de cet utilisateur ?",
+            "unmuteTitle": "Réactiver la parole",
+            "unmuteMessage": "Voulez-vous vraiment réactiver la parole de cet utilisateur ?",
+            "liftConfirm": "Confirmer",
+            "unbanSuccess": "Bannissement levé",
+            "unmuteSuccess": "Sourdine levée",
+            "pickRegionPlaceholder": "Sélectionnez une région...",
+            "pickRolePlaceholder": "Sélectionnez un rôle...",
+            "impersonateReasonLabel": "Motif de l’usurpation (facultatif)",
+            "impersonateReasonPlaceholder": "Ex. : l’utilisateur signale qu’il ne peut pas voir ses commandes, à vérifier",
+            "moderation": {
+                "warnTitle": "Envoyer un avertissement",
+                "muteTitle": "Mettre l’utilisateur en sourdine"
+            },
+            "modNotePlaceholder": "Notez la raison de cette action..."
+        },
+        "systemMessage": {
+            "audience": {
+                "all": {
+                    "label": "Tous les utilisateurs",
+                    "desc": "Tous les utilisateurs inscrits"
+                },
+                "admin": {
+                    "label": "Administrateurs",
+                    "desc": "Administrateurs de la plateforme"
+                },
+                "regionalManager": {
+                    "label": "Tous les responsables régionaux",
+                    "desc": "Tous les responsables régionaux"
+                },
+                "regionSpecific": {
+                    "label": "Régions spécifiques",
+                    "desc": "Tous les utilisateurs des régions sélectionnées"
+                },
+                "provider": {
+                    "label": "Tous les commerçants",
+                    "desc": "Tout le personnel des commerçants"
+                },
+                "providerSpecific": {
+                    "label": "Commerçants spécifiques",
+                    "desc": "Personnel des commerçants sélectionnés"
+                },
+                "user": {
+                    "label": "Utilisateurs standards",
+                    "desc": "Ni commerçants ni administrateurs"
+                },
+                "selected": {
+                    "label": "Utilisateurs sélectionnés",
+                    "desc": "Choisir les destinataires manuellement"
+                }
+            },
+            "countUsers": "{{count}} utilisateurs",
+            "countProviders": "{{count}} commerçants",
+            "countRegions": "{{count}} régions",
+            "confirmSendTitle": "Confirmer l’envoi",
+            "confirmSendMessage": "Sera envoyé à : {{target}}",
+            "sendAction": "Envoyer",
+            "fetchUsersFailed": "Échec de la récupération des utilisateurs",
+            "sent": "Message envoyé",
+            "sendError": "Une erreur est survenue lors de l’envoi",
+            "titlePlaceholder": "Titre",
+            "editBody": "Modifier le contenu",
+            "bodyPlaceholder": "Contenu du message...",
+            "tapToEditBody": "Touchez pour modifier le contenu...",
+            "navLinkPlaceholder": "Lien de navigation (facultatif)",
+            "imageUrlPlaceholder": "URL de l’image (facultatif)",
+            "searchUsersPlaceholder": "Rechercher des utilisateurs...",
+            "searchProvidersPlaceholder": "Rechercher un commerçant..."
+        },
+        "screens": {
+            "systemMessageManagement": "Messages système",
+            "roleConfig": "Configuration des permissions des rôles",
+            "roleManagement": "Gestion des rôles système",
+            "roleDetail": "Détails du rôle",
+            "systemStatus": "État du système",
+            "reportDetail": "Détails du signalement",
+            "moderationHistory": "Historique de modération",
+            "categoryManagement": "Gestion des catégories",
+            "materials": "Supports",
+            "batchDetail": "Détails du lot",
+            "editCategory": "Modifier la catégorie",
+            "newCategory": "Nouvelle catégorie",
+            "subscriptionManagement": "Formules d’abonnement",
+            "bannerManagement": "Gestion des bannières d’accueil",
+            "reviewDetail": "Détails de l’examen",
+            "achievementDefs": "Définitions des succès",
+            "userAchievements": "Panneau des succès utilisateur",
+            "scorecardTemplatePreview": "Aperçu des modèles de carte de fidélité",
+            "unbatchedMaterials": "Supports sans lot",
+            "providerMaterials": "Supports du commerçant"
+        },
+        "systemRoles": {
+            "loadListFailed": "Échec du chargement de la liste des rôles",
+            "loadDetailFailed": "Échec du chargement des détails du rôle",
+            "loadConfigFailed": "Échec du chargement de la configuration",
+            "noChanges": "Aucune modification à enregistrer",
+            "permissionsUpdated": "Permissions mises à jour",
+            "savePermissionsFailed": "Échec de l’enregistrement des permissions",
+            "configSaved": "Configuration enregistrée",
+            "saveConfigFailed": "Échec de l’enregistrement de la configuration",
+            "resetTitle": "Confirmer la réinitialisation",
+            "resetMessage": "Voulez-vous vraiment abandonner toutes les modifications non enregistrées ?",
+            "resetConfirm": "Réinitialiser",
+            "syncTitle": "Confirmer la synchronisation",
+            "syncMessage": "Voulez-vous vraiment synchroniser la configuration des permissions du rôle {{role}} vers tous les commerçants ?\n\nCette action mettra à jour les permissions du rôle {{role}} de tous les commerçants et est irréversible.",
+            "syncConfirm": "Synchroniser",
+            "syncSuccess": "Synchronisation réussie",
+            "syncedRoles": "{{count}} rôles synchronisés",
+            "syncFailed": "Échec de la synchronisation"
+        },
+        "permCategory": {
+            "store": "Gestion des boutiques",
+            "points": "Gestion des points",
+            "voucher": "Gestion des bons",
+            "provider": "Plateforme commerçant",
+            "product": "Gestion des produits",
+            "user": "Gestion des utilisateurs",
+            "order": "Gestion des commandes",
+            "message": "Gestion des messages",
+            "review": "Gestion des avis",
+            "report": "Rapports",
+            "region": "Gestion des régions",
+            "wallet": "Gestion du portefeuille",
+            "notification": "Gestion des notifications",
+            "system": "Gestion du système",
+            "providerManagement": "Gestion des commerçants",
+            "scorecardOperations": "Opérations sur les cartes de fidélité",
+            "dataAnalytics": "Analyse de données",
+            "userManagement": "Gestion des utilisateurs",
+            "systemShort": "Système"
+        },
+        "category": {
+            "loadListFailed": "Échec du chargement des catégories",
+            "disableAction": "Désactiver",
+            "enableAction": "Activer",
+            "confirmActionTitle": "Confirmer : {{action}}",
+            "confirmActionMessage": "Voulez-vous vraiment {{action}} cette catégorie ?",
+            "nameKeyRequired": "nameKey ne peut pas être vide",
+            "updated": "Catégorie mise à jour",
+            "created": "Catégorie créée",
+            "nameKeyPlaceholder": "Ex. : japanese, cocktailBar"
+        },
+        "testUsers": {
+            "inputErrorTitle": "Saisie invalide",
+            "countInvalid": "Veuillez saisir un nombre d’utilisateurs valide",
+            "createdTitle": "Création réussie",
+            "createdDesc": "{{count}} utilisateurs de test créés avec succès",
+            "createError": "Une erreur est survenue lors de la création des utilisateurs de test",
+            "createFailed": "Échec de la création",
+            "deleteConfirmMessage": "Voulez-vous vraiment supprimer tous les utilisateurs de test ? Cette action est irréversible.",
+            "deletedTitle": "Suppression réussie",
+            "deletedDesc": "{{count}} utilisateurs de test supprimés avec succès",
+            "deleteError": "Une erreur est survenue lors de la suppression des utilisateurs de test",
+            "deleteFailed": "Échec de la suppression",
+            "countPlaceholder": "Saisissez une quantité",
+            "addButton": "Ajouter des utilisateurs de test",
+            "deleteAllButton": "Supprimer tous les utilisateurs de test"
+        },
+        "activityPages": {
+            "confirmArchive": "Archiver cette page ?",
+            "confirmDelete": "Supprimer cette page ?"
+        },
+        "activityList": {
+            "resumed": "Repris",
+            "review": "Examiner",
+            "adjust": "Ajuster"
+        },
+        "userAchievements": {
+            "grantFailed": "Échec de l’attribution",
+            "granted": "« {{name}} » attribué (+{{xp}} XP)",
+            "alreadyOwned": "L’utilisateur possède déjà « {{name}} »",
+            "revokeFailed": "Échec de la révocation",
+            "revokedTitle": "Révoqué",
+            "revokedDesc": "« {{name}} » a été révoqué et l’XP repris",
+            "notePlaceholder": "Ex. : plus de 200 chaînes traduites sur Weblate",
+            "confirmRevokeTitle": "Confirmer la révocation",
+            "confirmRevokeMessage": "Voulez-vous vraiment révoquer « {{name}} » ?",
+            "revokeAction": "Révoquer",
+            "pickAchievementRequired": "Veuillez sélectionner un succès à attribuer"
+        },
+        "banner": {
+            "linkType": {
+                "none": "Aucun",
+                "activity": "Activité",
+                "provider": "Commerçant",
+                "url": "Lien"
+            },
+            "imageUploaded": "Image téléversée",
+            "deleteConfirm": "Supprimer cette bannière ?",
+            "titlePlaceholder": "Saisissez un titre",
+            "searchActivityPlaceholder": "Rechercher un titre d’activité..."
+        },
+        "materials": {
+            "notFound": "Support introuvable",
+            "nfcPrompt": "Approchez le dos du téléphone du support NFC",
+            "nfcUnsupported": "Cet appareil ne prend pas en charge le NFC",
+            "nfcNoCode": "Aucun support CoBook détecté",
+            "nfcNoCodeDesc": "Vérifiez qu’il s’agit bien d’un tag NFC CoBook",
+            "nfcReadFailed": "Échec de la lecture NFC, veuillez réessayer",
+            "countRange": "La quantité doit être comprise entre 1 et 1000",
+            "generated": "{{count}} supports générés",
+            "batchLinksTitle": "Liens de ce lot",
+            "batchLinksCopied": "{{count}} liens copiés",
+            "linkCopied": "Lien copié",
+            "generateFailed": "Échec de la génération",
+            "codePlaceholder": "Saisissez ou collez un code de support",
+            "batchNameUpdated": "Nom du lot mis à jour",
+            "updateFailed": "Échec de la mise à jour",
+            "batchEmpty": "Ce lot ne contient aucun support",
+            "exportFailed": "Échec de l’exportation",
+            "exported": "Exporté",
+            "batchLabelPlaceholder": "Ex. : « NFC boutiques 2026T3 »",
+            "pickProviderFirst": "Recherchez et sélectionnez d’abord un commerçant, ou saisissez son UUID",
+            "bound": "Associé",
+            "bindFailed": "Échec de l’association",
+            "unbound": "Dissocié",
+            "unbindFailed": "Échec de la dissociation",
+            "statusUpdated": "Statut mis à jour",
+            "resyncTriggered": "Resynchronisation déclenchée",
+            "triggerFailed": "Échec du déclenchement",
+            "providerSearchPlaceholder": "Saisissez un nom de commerçant pour rechercher",
+            "status": {
+                "unassigned": "Non attribué",
+                "active": "Associé",
+                "disabled": "Désactivé",
+                "lost": "Déclaré perdu",
+                "damaged": "Endommagé",
+                "retired": "Mis au rebut"
+            },
+            "type": {
+                "qr": "Code QR",
+                "nfc": "NFC",
+                "appclipCode": "App Clip Code",
+                "combo": "Combiné"
+            },
+            "scanAction": "Scanner pour lier / voir",
+            "nfcAction": "NFC lier / voir",
+            "generateAction": "Générer des supports",
+            "lookupAction": "Voir",
+            "batchesTitle": "Lots (touchez pour voir les codes et exporter en CSV ; appui long pour dissoudre / supprimer)",
+            "emptyList": "Aucun support — générez-en ci-dessus",
+            "searchBatchesPlaceholder": "Rechercher un nom de lot",
+            "noBatchMatches": "Aucun lot correspondant",
+            "unnamedBatch": "Lot sans nom",
+            "sort": {
+                "recent": "Récents",
+                "name": "Nom",
+                "total": "Quantité",
+                "unassigned": "Non assignés"
+            },
+            "sumTotal": "{{count}} au total",
+            "sumActive": "{{count}} liés",
+            "sumUnassigned": "{{count}} non assignés",
+            "sumDisabled": "{{count}} désactivés",
+            "sumLost": "{{count}} perdus",
+            "unbatchedTitle": "Sans lot",
+            "unbatchedSubtitle": "Supports générés seuls ou retirés d’un lot",
+            "unbatchedEmpty": "Aucun support sans lot",
+            "typeLabel": "Type",
+            "countLabel": "Quantité (1–1000)",
+            "generateTarget": "Générer dans",
+            "targetNewBatch": "Nouveau lot",
+            "targetExistingBatch": "Lot existant",
+            "targetStandalone": "Sans lot",
+            "batchNoteLabel": "Note du lot (facultatif)",
+            "generateHint": "Après génération, les liens /c/{code} s’affichent pour partage (impression / App Clip Code). Le CSV reste exportable depuis le détail du lot.",
+            "generateSubmit": "Générer",
+            "pickBatchFirst": "Choisissez d’abord un lot cible",
+            "noBatchesOfType": "Aucun lot de ce type",
+            "dissolveAction": "Dissoudre le lot",
+            "dissolveConfirmTitle": "Dissoudre le lot ?",
+            "dissolveConfirmMsg": "Les {{count}} supports passeront dans « Sans lot ». Les supports eux-mêmes ne sont pas modifiés.",
+            "dissolved": "Lot dissous — {{count}} supports déplacés vers « Sans lot »",
+            "deleteBatchAction": "Supprimer le lot",
+            "deleteBatchConfirmTitle": "Supprimer le lot ?",
+            "deleteBatchConfirmMsg": "Supprime définitivement les {{count}} supports du lot (tous non assignés / au rebut) ; les liens imprimés cesseront de fonctionner. Action irréversible.",
+            "deleteBatchBlocked": "Le lot contient des supports actifs / désactivés / perdus / endommagés ; déliez-les ou mettez-les au rebut, ou dissolvez le lot",
+            "deletedBatch": "Lot et {{count}} supports supprimés",
+            "renameTitle": "Nom / note du lot",
+            "renameHint": "touchez le titre pour renommer",
+            "totalCount": "{{count}} supports",
+            "pickBatch": "Choisir un lot",
+            "moveAction": "Déplacer vers un lot",
+            "moveOutAction": "Retirer du lot",
+            "moved": "{{count}} supports déplacés",
+            "moveFailed": "Échec du déplacement",
+            "typeMismatch": "Le type du support ne correspond pas au lot cible",
+            "mixedTypesCantMove": "Types mélangés dans la sélection — déplacez-les séparément",
+            "deleteMaterialAction": "Supprimer",
+            "deleteMaterialConfirmTitle": "Supprimer le support ?",
+            "deleteMaterialConfirmMsg": "Le code {{code}} sera définitivement supprimé et son lien cessera de fonctionner. Seuls les supports non assignés ou au rebut peuvent être supprimés.",
+            "deleteSelectedConfirmTitle": "Supprimer la sélection ?",
+            "deleteSelectedConfirmMsg": "Supprime définitivement {{count}} supports non assignés / au rebut ; leurs liens cesseront de fonctionner.",
+            "deletedMaterial": "Supprimé",
+            "deletedCount": "{{count}} supports supprimés",
+            "deleteFailed": "Échec de la suppression",
+            "notUnassignedCantDelete": "Seuls les supports non assignés ou au rebut peuvent être supprimés — déliez ou mettez au rebut d’abord",
+            "multiSelect": "Sélection",
+            "selectedCount": "{{count}} sélectionnés",
+            "searchInBatch": "Rechercher code / note / commerçant",
+            "filterAll": "Tous",
+            "sortCode": "Par code",
+            "sortNewest": "Récents",
+            "sortScans": "Plus scannés",
+            "noMatches": "Aucun support correspondant",
+            "addMaterials": "Ajouter des supports",
+            "addGenerate": "Générer de nouveaux supports dans ce lot",
+            "addGenerateStandalone": "Générer de nouveaux supports (sans lot)",
+            "exportCsv": "Exporter en CSV",
+            "scanShort": "{{count}} scans",
+            "scanTotal": "{{count}} scans au total",
+            "notBound": "Pas encore lié à un commerçant",
+            "bindSearchLabel": "Lier à un commerçant (recherche par nom, toutes régions)",
+            "pickedProvider": "Sélectionné : {{name}}",
+            "orManualUuid": "Ou saisir l’UUID du commerçant",
+            "positionLabel": "Note d’emplacement (facultatif, ex. « Accueil / Table 5 »)",
+            "bindAction": "Lier / relier",
+            "unbindAction": "Délier (recycler)",
+            "disableAction": "Désactiver",
+            "lostAction": "Déclarer perdu",
+            "restoreAction": "Restaurer",
+            "resyncAction": "Resynchroniser",
+            "noProviderError": "UUID du commerçant introuvable",
+            "appclip": {
+                "pending": "carte à synchroniser",
+                "synced": "carte synchronisée",
+                "error": "échec de synchro carte"
+            },
+            "sumDamaged": "{{count}} endommagés",
+            "sumRetired": "{{count}} au rebut",
+            "damageAction": "Endommagé",
+            "retireAction": "Mettre au rebut",
+            "retireConfirmTitle": "Mettre le support au rebut ?",
+            "retireConfirmMsg": "Le code {{code}} sera mis au rebut : le lien cesse de fonctionner immédiatement et il ne peut plus être lié (restaurable). Les supports au rebut peuvent être supprimés.",
+            "retiredCantBind": "Ce support est au rebut et ne peut pas être lié ; restaurez-le d’abord",
+            "searchByProvider": "Voir les supports par commerçant",
+            "noProviderMatches": "Aucun commerçant correspondant",
+            "providerMaterialsSubtitle": "{{count}} supports liés à ce commerçant"
+        },
+        "scorecardPreview": {
+            "noLevel": "Sans niveau (neutre)",
+            "providerName": "Nom du commerçant",
+            "cardName": "Nom de la carte",
+            "logoUrl": "URL du logo (facultatif)",
+            "primaryColor": "Couleur principale (HEX)",
+            "accentColor": "Couleur d’accent (HEX)",
+            "currentPoints": "Points actuels",
+            "qrContent": "Contenu du QR",
+            "qrPlaceholder": "SCORECARD:xxx ou une URL",
+            "maxPoints": "Points maximum (pour une carte complète)"
+        },
+        "audience": {
+            "idsExample": "Ex. : {{example}}",
+            "lookbackDays": "Jours d’historique",
+            "categoryIdsPlaceholder": "IDs de catégories, ex. : {{example}}",
+            "windowDays": "Fenêtre temporelle (jours)",
+            "minDays": "Min (jours)",
+            "maxDays": "Max (jours)",
+            "days": "Jours",
+            "latitude": "Latitude",
+            "longitude": "Longitude",
+            "radiusKm": "Rayon (km)",
+            "minPoints": "Points minimum",
+            "minVouchers": "Bons minimum"
+        },
+        "subscription": {
+            "invalidNumber": "Veuillez saisir un nombre valide",
+            "cacheRefreshed": "Cache actualisé"
+        },
+        "permissionAudit": {
+            "title": "Journal d’audit des permissions",
+            "actor": "Auteur : {{name}} (#{{id}})",
+            "target": "Cible : {{name}} (#{{id}})",
+            "empty": "Aucun changement de permission pour l’instant"
         }
     },
     "unknown": {
@@ -3155,7 +4491,8 @@
             "windowClosedTitle": "Hors des heures de validation",
             "windowOpensAt": "Ouvre à {{time}}",
             "refundHint": "Pour annuler ce bon, contactez le commerçant — vos points seront recrédités sur votre carte de fidélité.",
-            "selectHint": "Sélectionnez un bon à afficher"
+            "selectHint": "Sélectionnez un bon à afficher",
+            "refundOnExpiryLabel": "Remboursement à l'expiration"
         },
         "list": {
             "showQRCode": "QR Code",
@@ -3220,7 +4557,9 @@
             "term4": "Les points seront remboursés après expiration",
             "viewProvider": "Aller chez le commerçant",
             "redeemNow": "Échanger maintenant",
-            "usableWindowTerm": "Après l'échange, validable en boutique uniquement {{window}} chaque jour (fuseau du commerçant)"
+            "usableWindowTerm": "Après l'échange, validable en boutique uniquement {{window}} chaque jour (fuseau du commerçant)",
+            "term4Refund": "Expire automatiquement s'il n'est pas utilisé — les points payés seront remboursés",
+            "term4NoRefund": "Expire automatiquement s'il n'est pas utilisé — les points payés ne seront pas remboursés"
         },
         "manage": {
             "defaultName": "Nouveau bon",
@@ -3240,8 +4579,51 @@
             "usableWindowLabel": "Plage horaire de validation quotidienne",
             "usableWindowHint": "Validable en boutique uniquement durant cette plage (fuseau du commerçant) ; n'affecte pas l'échange",
             "usableWindowOvernight": "Au-delà de minuit : l'heure de fin est le lendemain",
-            "usableWindowEqual": "Les heures de début et de fin ne peuvent pas être identiques"
-        }
+            "usableWindowEqual": "Les heures de début et de fin ne peuvent pas être identiques",
+            "refundOnExpiryLabel": "Rembourser les points à l'expiration",
+            "refundOnExpiryHint": "Une fois activé, les points payés pour ce bon sont automatiquement remboursés au client s'il expire sans être utilisé",
+            "refundOnExpiryLocked": "Le remboursement à l'expiration est une fonctionnalité Standard et supérieure ; passez à un abonnement supérieur pour l'activer sur ce bon",
+            "validityLabel": "Valide pendant :",
+            "validityUnit": "jours (7–90)",
+            "redeemedCount": "Utilisé : {{times}} fois",
+            "finishSorting": "Terminer le tri",
+            "sortHint": "Appuyez longuement et faites glisser pour ajuster l'ordre d'affichage par défaut",
+            "unpublished": "Non publié",
+            "previewAsCustomer": "Aperçu côté client",
+            "previewHint": "Apparence du bon dans « Mes bons » du client après échange (à titre indicatif)",
+            "publishNeedsInfo": "Ajoutez un nom et une image avant de publier ce bon",
+            "draftCreated": "Brouillon créé (non publié) — ajoutez un nom et une image, puis publiez-le",
+            "addVoucher": "Ajouter un bon",
+            "addImage": "Touchez pour ajouter une image",
+            "namePlaceholder": "Nom du bon",
+            "descPlaceholder": "Description du bon",
+            "validityNoEffectTitle": "Remarque",
+            "validityNoEffect": "Cette modification n'affectera pas les bons déjà émis",
+            "selectTypeTitle": "Choisir le type de bon",
+            "searchPlaceholder": "Rechercher des bons",
+            "deleteConfirmTitle": "Confirmer la suppression",
+            "deleteConfirmMessage": "Supprimer ce bon ?",
+            "deleteSuccessTitle": "Supprimé",
+            "deleteSuccessDesc": "Le bon a été supprimé",
+            "cannotDeleteTitle": "Suppression impossible",
+            "cannotDeleteMessage": "Ce bon est lié aux produits à points suivants et ne peut pas être supprimé :\n\n{{products}}\n\nDissociez d'abord les produits, puis supprimez le bon.",
+            "deleteFailedTitle": "Échec de la suppression",
+            "deleteFailedMessage": "Impossible de supprimer le bon, veuillez réessayer plus tard",
+            "imagePickFailedTitle": "Échec de la sélection de l'image",
+            "unknownError": "Erreur inconnue"
+        },
+        "badge": {
+            "new": "Nouveau"
+        },
+        "tabs": {
+            "all": "Tous",
+            "active": "Valables",
+            "used": "Utilisés",
+            "expired": "Expirés",
+            "expiredLong": "Expirés / Remboursés"
+        },
+        "unnamed": "Bon sans nom",
+        "noDescription": "Aucune description"
     },
     "completeSocialProfile": {
         "subtitle": "Connexion via {{provider}}. Définissez votre nom d’utilisateur et votre mot de passe",
@@ -3301,7 +4683,8 @@
         "discovery": {
             "providers": "Commerçants populaires",
             "products": "Nouveautés"
-        }
+        },
+        "removeFilter": "Retirer le filtre"
     },
     "systemMessage": {
         "title": "Messages système",
@@ -3356,7 +4739,8 @@
         "legacyBannerText": "Catégories principales détectées, appuyez pour corriger",
         "legacyAlertTitle": "Mise à jour des catégories requise",
         "legacyAlertMessage": "Vous aviez sélectionné les catégories principales « {{categories}} ». Seules les sous-catégories sont autorisées désormais. Confirmez pour les retirer, puis resélectionnez les sous-catégories appropriées.",
-        "legacyAlertConfirm": "Confirmer la suppression"
+        "legacyAlertConfirm": "Confirmer la suppression",
+        "selectHintSingle": "Vous ne pouvez sélectionner qu'une seule catégorie"
     },
     "maintenance": {
         "banner": {
@@ -3539,7 +4923,33 @@
             "message": "Message",
             "provider": "Commerçant",
             "activity": "Page d'activité"
-        }
+        },
+        "picker": {
+            "title": "Sélectionner les messages à signaler",
+            "subtitle": "Les messages sélectionnés sont transmis à notre équipe de modération comme preuves. Vous pouvez aussi signaler sans choisir de message.",
+            "selectedCount": "{{count}}/{{max}} sélectionné(s)",
+            "limitReached": "Vous pouvez sélectionner au maximum {{max}} messages",
+            "continue": "Continuer ({{count}} sélectionné(s))",
+            "skip": "Signaler cet utilisateur sans choisir de message",
+            "empty": "Aucun message à sélectionner dans cette conversation",
+            "you": "Moi",
+            "unknownSender": "Interlocuteur",
+            "imageSummary": "[Image]",
+            "productSummary": "[Article] {{title}}",
+            "untitled": "Article sans titre",
+            "offerSummary": "[Offre] {{amount}}",
+            "notDelivered": "Non remis — ne peut servir de preuve",
+            "anchor": "Début",
+            "selectToHere": "Sélectionner jusqu'ici",
+            "hintPickFirst": "Touchez un message pour définir le début",
+            "clear": "Effacer",
+            "rangeTooLong": "Cette plage contient {{count}} messages — {{max}} au maximum",
+            "endHere": "Jusqu'ici",
+            "hintSelectToHere": "Touchez « Sélectionner jusqu'ici » pour choisir les preuves",
+            "outOfRange": "Au-delà de la limite de {{max}} messages",
+            "subtitleSelectToHere": "Touchez un message pour sélectionner comme preuve tout depuis le plus récent jusqu'à celui-ci, ou signalez sans choisir de messages."
+        },
+        "selectedMessagesHint": "{{count}} message(s) joint(s) comme preuves"
     },
     "block": {
         "blockUser": "Bloquer l'utilisateur",
@@ -3577,22 +4987,29 @@
     "emptyState": {
         "secondhand": {
             "title": "Aucun produit",
-            "description": "Pas encore d'articles d'occasion, explorez"
+            "description": "Pas encore d'articles d'occasion, explorez",
+            "action": "Publier un article"
         },
         "watchlist": {
             "title": "Liste de favoris vide",
-            "description": "Ajoutez des articles qui vous plaisent"
+            "description": "Ajoutez des articles qui vous plaisent",
+            "action": "Parcourir les annonces"
         },
         "searchNoResults": {
             "title": "Aucun produit correspondant",
-            "description": "Essayez d'autres mots-clés ou filtres"
+            "description": "Essayez d'autres mots-clés ou filtres",
+            "action": "Tout parcourir"
         },
         "voucher": {
             "title": "Pas encore de coupons",
-            "description": "Appuyez sur \"+\" pour en ajouter"
+            "description": "Appuyez sur \"+\" pour en ajouter",
+            "action": "Créer un coupon"
         },
         "voucherSearch": {
             "title": "Aucun coupon correspondant"
+        },
+        "myVouchers": {
+            "action": "Découvrir les commerçants"
         }
     },
     "captcha": {
@@ -3742,7 +5159,73 @@
             "adminPublish": "Publier maintenant",
             "adminRepublish": "Enregistrer et publier",
             "confirmAdminPublish": "Publier cette page d'activité directement (sans examen, modifiable ensuite) ?",
-            "adminPublished": "Publié"
+            "adminPublished": "Publié",
+            "unsavedTitle": "Abandonner la création ?",
+            "unsavedBody": "Vos modifications ne sont pas enregistrées et seront perdues si vous revenez.",
+            "discard": "Abandonner",
+            "sectionTitle": "Titre du bloc",
+            "sectionSubtitle": "Sous-titre du bloc",
+            "sectionTitlePlaceholder": "Saisir le titre (facultatif)",
+            "pageTitlePlaceholder": "Saisir le titre",
+            "pageDescriptionPlaceholder": "Saisir la description (facultatif)",
+            "richTextContent": "Contenu enrichi",
+            "richTextPlaceholder": "Toucher pour éditer le texte enrichi (multilingue)",
+            "itemCustomLabel": "Libellé personnalisé",
+            "itemCustomLabelPlaceholder": "Remplacer le titre par défaut (facultatif)",
+            "itemCustomDescription": "Description personnalisée",
+            "itemCustomDescriptionPlaceholder": "Remplacer la description par défaut (facultatif)",
+            "startDateRequired": "Veuillez sélectionner l'heure de début",
+            "endDateRequired": "Veuillez sélectionner l'heure de fin",
+            "endDateInPast": "L'heure de fin doit être postérieure à maintenant, veuillez resélectionner",
+            "endDateBeforeStart": "L'heure de fin doit être postérieure à l'heure de début",
+            "sectionInvalid": "Le bloc n°{{index}} « {{type}} » a des champs requis vides ; veuillez compléter avant de soumettre",
+            "resubmitForReview": "Resoumettre pour révision",
+            "submitNeedsDates": "Veuillez d'abord renseigner les heures de début et de fin",
+            "submitNeedsValidDates": "L'heure de fin doit être postérieure à maintenant et au début",
+            "pausedHint": "En pause. Vous pouvez continuer à éditer ; pour reprendre la diffusion, appuyez sur « Soumettre pour révision » ci-dessous",
+            "tabRedemption": "Échange",
+            "tabVoucher": "Bon",
+            "tabProduct": "Produit",
+            "tabProvider": "Commerçant",
+            "searchEntityPlaceholder": "Rechercher {{target}}...",
+            "imageUploadFailed": "Échec du téléversement de l'image",
+            "uploadedCount": "{{success}}/{{total}} images téléversées",
+            "confirmDeleteItem": "Supprimer cet élément ?",
+            "sectionNotFound": "Section introuvable",
+            "collapsePreview": "Masquer l’aperçu",
+            "livePreview": "Aperçu en direct",
+            "preview": "Aperçu",
+            "noEditableConfig": "Ce type de section n’a aucun réglage modifiable",
+            "confirmDeleteImage": "Supprimer cette image ?",
+            "noImageAddBelow": "Aucune image — appuyez ci-dessous pour ajouter",
+            "noImage": "Aucune image",
+            "uploadingProgress": "Téléversement {{progress}} %",
+            "batchUpload": "Téléversement par lot",
+            "linkedItemsCount": "Éléments liés ({{count}})",
+            "noLinkedItems": "Aucun élément lié",
+            "noResults": "Aucun résultat",
+            "enterKeyword": "Saisissez un mot-clé pour rechercher",
+            "sectionList": "Sections",
+            "itemCount": "{{count}} éléments",
+            "noSections": "Aucune section — appuyez sur le bouton ci-dessus pour ajouter",
+            "previewPage": "Aperçu de la page",
+            "confirmDeleteSection": "Supprimer cette section ?",
+            "pleaseSelect": "Sélectionner",
+            "boolOn": "Activé",
+            "boolOff": "Désactivé",
+            "dateTapToSelect": "Appuyez pour choisir",
+            "urlSchemeError": "Le lien doit commencer par http:// ou https://",
+            "openMapPicker": "Choisir sur la carte",
+            "geoLatitude": "Latitude",
+            "geoLongitude": "Longitude",
+            "geoZoom": "Zoom",
+            "entityTypeRedemption": "Échange",
+            "entityTypeProduct": "Produit",
+            "entityTypeProvider": "Commerçant",
+            "entityRefSelected": "{{type}} sélectionné (appuyez pour changer)",
+            "entityRefSelect": "Sélectionner {{type}}",
+            "addListItem": "Ajouter {{label}}",
+            "pointsProgressAutoModeHint": "L’objectif de niveau cible automatiquement le niveau suivant de l’utilisateur ; une félicitation s’affiche au niveau maximum"
         },
         "sectionType": {
             "hero_banner": "Bannière",
@@ -3939,7 +5422,8 @@
             "advancedLocked": "Profil utilisateur + Heure (passer à un forfait supérieur)",
             "advancedLockedHint": "Passer à Premium ou Business pour des données plus détaillées",
             "noTrendData": "Pas encore de données de tendance",
-            "loadFailed": "Aucune donnée ou échec du chargement"
+            "loadFailed": "Aucune donnée ou échec du chargement",
+            "detailViews": "Vues détaillées"
         },
         "list": {
             "viewAnalytics": "Voir stats",
@@ -3988,6 +5472,345 @@
             "createdAt": "Création",
             "updatedAt": "Modification",
             "viewCount": "Vues"
+        },
+        "countdown": {
+            "days": "j",
+            "hours": "h",
+            "minutes": "m",
+            "seconds": "s"
+        },
+        "flashSale": {
+            "upcoming": "Bientôt",
+            "live": "En cours",
+            "ended": "Terminé",
+            "stockLimit": "Plus que {{count}}",
+            "revealHint": "Révélé au début",
+            "notStarted": "Pas encore",
+            "buyNow": "Acheter",
+            "untilStart": "Débute dans",
+            "untilEnd": "Finit dans",
+            "finished": "Événement terminé"
+        },
+        "pointsProgress": {
+            "maxLevel": "Félicitations ! Niveau max {{name}}",
+            "reached": "{{target}} atteint — échangez maintenant",
+            "needMore": "Encore {{needed}} points pour échanger {{target}}",
+            "current": "Actuel",
+            "target": "Objectif",
+            "needed": "Manquant",
+            "viewDetail": "Détails",
+            "viewAllTiers": "Tous les niveaux",
+            "placeholderProviderOnly": "Progression des points (pages d'activité marchand uniquement)",
+            "placeholderLogin": "Progression des points (connectez-vous pour voir)",
+            "placeholderNoCard": "Progression des points (pas encore de carte chez ce marchand)",
+            "placeholderNoData": "Progression des points (aucune donnée)"
+        },
+        "loyaltyTier": {
+            "totalPoints": "{{points}} points cumulés",
+            "toNext": "{{points}} points avant {{name}}",
+            "discountBenefit": "{{percent}}% dès {{spend}}",
+            "bonusBenefit": "{{points}} pts dès {{spend}}",
+            "viewAll": "Tous les avantages",
+            "placeholderProviderOnly": "Niveau de fidélité (pages d'activité marchand uniquement)",
+            "placeholderLogin": "Niveau de fidélité (connectez-vous pour voir)",
+            "placeholderNoCard": "Niveau de fidélité (pas encore de carte chez ce marchand)"
+        },
+        "voucherTypes": {
+            "cash": "Espèces",
+            "discount": "Remise",
+            "gift": "Cadeau",
+            "service": "Service",
+            "default": "Article"
+        },
+        "pointsUnit": "pts",
+        "schema": {
+            "_shared": {
+                "alignment": {
+                    "left": "Gauche",
+                    "center": "Centre",
+                    "right": "Droite"
+                },
+                "listLayout": {
+                    "list": "Liste",
+                    "grid": "Grille",
+                    "horizontal_scroll": "Défilement horizontal"
+                }
+            },
+            "hero_banner": {
+                "layout": "Disposition",
+                "layout_opt": {
+                    "overlay": "Superposition",
+                    "image_top": "Image en haut",
+                    "image_bottom": "Image en bas"
+                },
+                "backgroundColor": "Couleur de fond",
+                "height": "Hauteur",
+                "overlayOpacity": "Opacité du masque",
+                "overlayOpacity_hint": "De 0 à 1, visible uniquement en disposition superposée",
+                "textAlignment": "Alignement du texte",
+                "textPosition": "Position du texte",
+                "textPosition_opt": {
+                    "top": "Haut",
+                    "center": "Centre",
+                    "bottom": "Bas"
+                },
+                "ctaText": "Texte du bouton",
+                "ctaText_ph": "Participer (laisser vide pour masquer)",
+                "ctaLink": "Lien du bouton"
+            },
+            "notice_bar": {
+                "text": "Texte de l'annonce",
+                "text_ph": "328 personnes ont déjà participé",
+                "iconName": "Icône",
+                "backgroundColor": "Couleur de fond",
+                "textColor": "Couleur du texte",
+                "scrollable": "Défilement continu",
+                "speed": "Durée d'un cycle",
+                "speed_unit": "s",
+                "link": "Lien de redirection",
+                "link_ph": "Optionnel https://..."
+            },
+            "video": {
+                "provider": "Source vidéo",
+                "provider_opt": {
+                    "direct": "Lien direct",
+                    "youtube": "YouTube",
+                    "bilibili": "Bilibili"
+                },
+                "url": "Lien vidéo",
+                "posterUrl": "Lien de l'image de couverture",
+                "posterUrl_ph": "Optionnel https://...",
+                "aspectRatio": "Format",
+                "aspectRatio_opt": {
+                    "16_9": "16:9 paysage",
+                    "9_16": "9:16 portrait",
+                    "1_1": "1:1 carré",
+                    "4_3": "4:3"
+                },
+                "autoPlay": "Lecture automatique",
+                "autoPlay_hint": "Nécessite muted=true pour fonctionner (politique mobile)",
+                "muted": "Muet par défaut",
+                "loop": "Lecture en boucle"
+            },
+            "featured_single": {
+                "displayStyle": "Style d'affichage",
+                "displayStyle_opt": {
+                    "card": "Carte",
+                    "fullwidth": "Pleine largeur",
+                    "banner": "Bannière"
+                },
+                "showDescription": "Afficher la description",
+                "ctaText": "Texte du bouton",
+                "ctaText_ph": "Voir les détails (laisser vide pour masquer)",
+                "ctaLink": "Lien personnalisé du bouton",
+                "ctaLink_ph": "Redirige par défaut vers l'élément sélectionné"
+            },
+            "map_location": {
+                "mode": "Mode de positionnement",
+                "mode_hint": "Auto : la carte cadre automatiquement les commerces liés ci-dessous ; Manuel : définissez vous-même le centre et le zoom",
+                "mode_opt": {
+                    "auto": "Auto (selon les commerces liés)",
+                    "manual": "Centre manuel"
+                },
+                "__geo": "Centre / zoom de la carte",
+                "__geo_hint": "Touchez « Ouvrir le sélecteur de carte » pour glisser et régler, ou ajustez manuellement ; zoom 0-20 (plus élevé = plus proche)",
+                "height": "Hauteur de la carte",
+                "showUserLocation": "Afficher la position actuelle de l'utilisateur"
+            },
+            "image_carousel": {
+                "aspectRatio": "Format",
+                "aspectRatio_opt": {
+                    "16_9": "16:9 paysage",
+                    "4_3": "4:3",
+                    "1_1": "1:1 carré",
+                    "3_4": "3:4 portrait"
+                },
+                "autoPlay": "Rotation automatique",
+                "interval": "Intervalle de défilement",
+                "showIndicators": "Afficher les indicateurs"
+            },
+            "countdown": {
+                "targetDate": "Date cible",
+                "label": "Texte du libellé",
+                "label_ph": "Avant la fin de l'événement",
+                "expiredText": "Texte d'expiration",
+                "expiredText_ph": "L'événement est terminé",
+                "style": "Style",
+                "style_opt": {
+                    "simple": "Simple",
+                    "flip": "Bascule",
+                    "circle": "Cercle"
+                },
+                "backgroundColor": "Couleur de fond",
+                "textColor": "Couleur du texte"
+            },
+            "divider": {
+                "style": "Style",
+                "style_opt": {
+                    "line": "Ligne continue",
+                    "dashed": "Tirets",
+                    "dotted": "Pointillés",
+                    "space": "Espace vide"
+                },
+                "height": "Hauteur",
+                "color": "Couleur",
+                "marginVertical": "Espacement vertical"
+            },
+            "voucher_list": {
+                "layout": "Disposition",
+                "columns": "Colonnes de la grille",
+                "showRedeemButton": "Afficher le bouton d'obtention",
+                "maxDisplay": "Nombre max affiché",
+                "maxDisplay_ph": "Illimité"
+            },
+            "redemption_list": {
+                "layout": "Disposition",
+                "columns": "Colonnes de la grille",
+                "showRedeemButton": "Afficher le bouton d'échange",
+                "maxDisplay": "Nombre max affiché",
+                "maxDisplay_ph": "Illimité"
+            },
+            "product_grid": {
+                "columns": "Colonnes",
+                "showPrice": "Afficher le prix",
+                "showLikeButton": "Afficher le bouton favori",
+                "maxDisplay": "Nombre max affiché",
+                "maxDisplay_ph": "Illimité"
+            },
+            "provider_list": {
+                "layout": "Disposition",
+                "layout_opt": {
+                    "list": "Liste",
+                    "card": "Carte",
+                    "horizontal_scroll": "Défilement horizontal"
+                },
+                "showRating": "Afficher la note",
+                "showDistance": "Afficher la distance",
+                "maxDisplay": "Nombre max affiché",
+                "maxDisplay_ph": "Illimité"
+            },
+            "stats_counter": {
+                "layout": "Disposition",
+                "layout_opt": {
+                    "row": "Ligne",
+                    "grid": "Grille"
+                },
+                "animateOnScroll": "Animer les chiffres au défilement",
+                "items": "Indicateurs",
+                "label": "Libellé",
+                "label_ph": "Utilisateurs servis",
+                "value": "Valeur",
+                "suffix": "Suffixe",
+                "suffix_ph": "personnes / +",
+                "icon": "Icône"
+            },
+            "faq_accordion": {
+                "expandFirst": "Déplier le premier élément par défaut",
+                "expandAll": "Tout déplier par défaut",
+                "multiExpand": "Autoriser plusieurs éléments dépliés",
+                "items": "Questions-réponses",
+                "question": "Question",
+                "answer": "Réponse"
+            },
+            "qr_code": {
+                "mode": "Source du contenu",
+                "mode_hint": "url = encode directement une adresse web ; custom_text = texte libre",
+                "mode_opt": {
+                    "url": "Lien",
+                    "custom_text": "Texte personnalisé"
+                },
+                "value": "Contenu",
+                "value_ph": "https://... ou un code d'échange / texte",
+                "label": "Texte explicatif",
+                "label_ph": "Scannez pour obtenir",
+                "size": "Taille",
+                "fgColor": "Couleur de premier plan",
+                "bgColor": "Couleur de fond"
+            },
+            "points_progress": {
+                "targetType": "Type de cible",
+                "targetType_opt": {
+                    "redemption": "Article échangeable",
+                    "tier": "Niveau de fidélité"
+                },
+                "targetEntityId": "Cible",
+                "showCurrentPoints": "Afficher les points actuels",
+                "message": "Message personnalisé",
+                "message_ph": "Gagnez encore {needed} points pour échanger {target}",
+                "message_hint": "Espaces réservés : {needed} {current} {target}",
+                "barColor": "Couleur de la barre de progression"
+            },
+            "loyalty_tier_showcase": {
+                "displayMode": "Style d'affichage",
+                "displayMode_opt": {
+                    "compact": "Compact",
+                    "detailed": "Détaillé"
+                },
+                "showProgress": "Afficher la progression vers le niveau suivant",
+                "showBenefits": "Afficher les avantages du niveau actuel",
+                "ctaText": "Texte du bouton",
+                "ctaText_ph": "Voir tous les avantages",
+                "ctaLink": "Lien personnalisé du bouton (redirige par défaut vers la carte de fidélité du commerce)"
+            },
+            "flash_sale": {
+                "startTime": "Heure de début",
+                "endTime": "Heure de fin",
+                "stockLimit": "Info de stock",
+                "stockLimit_ph": "Masqué",
+                "stockLimit_hint": "Indication visuelle uniquement ; le stock réel est géré par la limite du bon",
+                "previewMode": "Avant le début, afficher",
+                "previewMode_opt": {
+                    "countdown": "Afficher le compte à rebours",
+                    "reveal_at_start": "Masquer le contenu jusqu'au début"
+                },
+                "ctaText": "Texte du bouton",
+                "ctaText_ph": "Acheter maintenant",
+                "urgencyColor": "Couleur d'accentuation"
+            },
+            "bundle_deal": {
+                "bundleTitle": "Nom du lot",
+                "bundleTitle_ph": "Lot de 3 avantageux",
+                "bundlePrice": "Prix du lot (points)",
+                "bundlePrice_unit": "pts",
+                "bundlePrice_hint": "Prix réduit défini par le commerce. Le prix d'origine est calculé automatiquement à partir des points requis par les bons du lot ; aucune saisie manuelle",
+                "userLimit": "Limite d'échange par personne",
+                "userLimit_unit": "fois",
+                "userLimit_hint": "0 = illimité ; le bouton d'échange est grisé une fois la limite atteinte",
+                "totalLimit": "Limite d'échange totale",
+                "totalLimit_unit": "unités",
+                "totalLimit_hint": "0 = illimité ; le lot entier est retiré une fois le total d'échanges atteint",
+                "displayStyle": "Disposition",
+                "displayStyle_opt": {
+                    "stacked": "Empilé",
+                    "side_by_side": "Côte à côte",
+                    "grid": "Grille"
+                },
+                "showDiscount": "Afficher les points économisés",
+                "ctaText": "Texte du bouton",
+                "ctaText_ph": "Affiche par défaut « Échanger le lot contre X points »"
+            },
+            "link_button": {
+                "linkType": "Type de lien",
+                "linkType_opt": {
+                    "preset": "Page dans l'application",
+                    "external": "Lien externe"
+                },
+                "presetKey": "Page cible",
+                "url": "URL du lien",
+                "openInApp": "Ouvrir dans le navigateur intégré",
+                "openInApp_hint": "Désactivé : ouvre dans le navigateur système, hors de l'application",
+                "label": "Texte du bouton",
+                "label_ph": "Laisser vide pour le texte par défaut",
+                "displayStyle": "Style",
+                "displayStyle_opt": {
+                    "button": "Bouton",
+                    "card": "Carte",
+                    "banner": "Bannière"
+                },
+                "icon": "Icône",
+                "icon_hint": "Laisser vide pour l'icône par défaut du préréglage",
+                "backgroundColor": "Couleur de fond"
+            }
         }
     },
     "subscription": {
@@ -4089,7 +5912,8 @@
             "admin": "Admin",
             "trial": "Essai",
             "legacy": "Hérité"
-        }
+        },
+        "cannotCreateMore": "Vous avez atteint la limite de votre abonnement actuel"
     },
     "achievement": {
         "tab": {
@@ -4121,8 +5945,59 @@
             "beta_vanguard": {
                 "name": "Avant-garde",
                 "description": "Inscrit·e pendant la bêta publique de CoBook — parmi les tout premiers à partir à l'aventure avec nous."
+            },
+            "rookie_seller": {
+                "name": "Vendeur débutant",
+                "description": "Vous avez publié votre premier article d'occasion."
+            },
+            "publish_master_i": {
+                "name": "As de la publication I",
+                "description": "10 articles d'occasion publiés au total."
+            },
+            "publish_master_ii": {
+                "name": "As de la publication II",
+                "description": "50 articles d'occasion publiés au total."
+            },
+            "publish_master_iii": {
+                "name": "As de la publication III",
+                "description": "100 articles d'occasion publiés au total."
+            },
+            "review_master_i": {
+                "name": "As de l'avis I",
+                "description": "10 avis rédigés au total."
+            },
+            "review_master_ii": {
+                "name": "As de l'avis II",
+                "description": "50 avis rédigés au total."
+            },
+            "review_master_iii": {
+                "name": "As de l'avis III",
+                "description": "150 avis rédigés au total."
+            },
+            "food_explorer_i": {
+                "name": "Explorateur gourmand I",
+                "description": "10 restaurants différents consultés au total."
+            },
+            "food_explorer_ii": {
+                "name": "Explorateur gourmand II",
+                "description": "50 restaurants différents consultés au total."
+            },
+            "food_explorer_iii": {
+                "name": "Explorateur gourmand III",
+                "description": "200 restaurants différents consultés au total."
+            },
+            "community_translator": {
+                "name": "Traducteur de la communauté",
+                "description": "A contribué des traductions multilingues à la communauté CoBook."
+            },
+            "developer": {
+                "name": "Développeur",
+                "description": "Membre de l'équipe de développement CoBook."
             }
-        }
+        },
+        "badgeCount": "Badges débloqués : {{count}}",
+        "xpToNext": "{{xp}} XP restants",
+        "levelMax": "Niv. max"
     },
     "share": {
         "message": "Découvrez « {{title}} » sur CoBook"
@@ -4142,7 +6017,12 @@
         "findMore": "Découvrir des commerçants",
         "defaultCardName": "Carte de membre",
         "searchPlaceholder": "Rechercher cartes / commerçants",
-        "noResults": "Aucune carte correspondante"
+        "noResults": "Aucune carte correspondante",
+        "openProvider": "Page du commerçant",
+        "showQrOf": "Afficher le code QR de la carte de fidélité de {{name}}",
+        "showMyCard": "Afficher la carte de fidélité",
+        "packSummary": "{{count}} cartes · {{points}} pts au total",
+        "openCenter": "Porte-cartes"
     },
     "secondhandWizard": {
         "next": "Suivant",
@@ -4180,7 +6060,17 @@
             "categoryRequired": "Veuillez choisir une catégorie",
             "conditionRequired": "Veuillez choisir un état",
             "priceRequired": "Veuillez saisir un prix valide (entier positif)",
-            "contactRequired": "Veuillez saisir un moyen de contact"
+            "contactRequired": "Veuillez saisir un moyen de contact",
+            "imagesUploading": "Les photos sont encore en cours de téléversement — patientez un instant ou réessayez"
+        },
+        "stepBasics": {
+            "heading": "Présentez votre article",
+            "hint": "Un titre clair et de bonnes photos aident plus de gens à trouver votre article.",
+            "imagesPendingTitle": "Photos prêtes — elles seront téléversées automatiquement dès que vous saisirez un titre"
+        },
+        "stepDetails": {
+            "heading": "Détails et prix",
+            "hint": "La catégorie, l'état et la région aident les acheteurs à vous trouver ; le prix et le contact concluent la vente."
         }
     },
     "update": {
@@ -4210,7 +6100,7 @@
             "title": "Mise à jour requise",
             "subtitle": "Cette mise à jour est obligatoire — vous devez passer à la dernière version pour continuer",
             "checkingSystem": "Vérification de l'état du système…",
-            "downloading": "Téléchargement…",
+            "downloading": "Téléchargement des dernières ressources…",
             "applying": "Redémarrage pour appliquer la mise à jour…",
             "errorTitle": "Échec de la mise à jour",
             "errorRetry": "Réessayer",
@@ -4474,7 +6364,9 @@
         "filterToday": "Aujourd'hui",
         "filterWeek": "7 jours",
         "filterMonth": "30 jours",
-        "filterAll": "Tout"
+        "filterAll": "Tout",
+        "quickConfirmTitle": "Valider ce coupon ?",
+        "viewDetail": "Voir les détails"
     },
     "scorecardManagement": {
         "permissionError": "Erreur de permission",
@@ -4873,7 +6765,9 @@
             "title": "Aucun commerçant favori pour le moment",
             "description": "Parcourez les commerçants et appuyez sur le cœur pour les ajouter à vos favoris.",
             "filteredTitle": "Aucun favori ne correspond",
-            "filteredDescription": "Essayez d'ajuster votre recherche ou vos filtres."
+            "filteredDescription": "Essayez d'ajuster votre recherche ou vos filtres.",
+            "clearFilters": "Effacer les filtres",
+            "action": "Découvrir des commerçants"
         }
     },
     "legalHold": {
@@ -5237,8 +7131,8 @@
         "NO_PERMISSION_MODIFY_USER": "Pas d'autorisation pour modifier les informations utilisateur",
         "NO_PERMISSION_MANAGE_SUBSCRIPTION": "Pas d'autorisation pour gérer les abonnements",
         "NO_PERMISSION_MANAGE_USAGE_QUOTA": "Pas d'autorisation pour gérer le quota d'utilisation",
-        "NO_PERMISSION_MANAGE_REDEEM_CODES": "Pas d'autorisation pour gérer les codes promo",
-        "NO_PERMISSION_VIEW_REDEEM_CODES": "Pas d'autorisation pour consulter les codes promo",
+        "NO_PERMISSION_MANAGE_REDEEM_CODES": "Pas d'autorisation pour gérer les compensations de points",
+        "NO_PERMISSION_VIEW_REDEEM_CODES": "Pas d'autorisation pour consulter les compensations de points",
         "NO_PERMISSION_SEND_NOTIFICATIONS": "Pas d'autorisation pour envoyer des notifications",
         "NO_PERMISSION_VIEW_CARDS": "Pas d'autorisation pour consulter les cartes",
         "NO_PERMISSION_CREATE_CARDS": "Pas d'autorisation pour créer des cartes",
@@ -5296,7 +7190,26 @@
         "OPERATION_NOT_REFUNDABLE": "Cette opération ne peut pas être annulée",
         "OPERATION_ALREADY_REFUNDED": "Ce crédit a déjà été annulé",
         "OPERATION_OUTSIDE_REFUND_WINDOW": "Le délai d’annulation est dépassé",
-        "INSUFFICIENT_BALANCE_FOR_REFUND": "Le solde du client est insuffisant pour annuler"
+        "INSUFFICIENT_BALANCE_FOR_REFUND": "Le solde du client est insuffisant pour annuler",
+        "OIDC_TOKEN_EXCHANGE_FAILED": "Échec de l'échange du code OIDC, veuillez réessayer",
+        "OIDC_TOKEN_INACTIVE": "Le jeton OIDC est invalide, veuillez réessayer",
+        "OIDC_INTROSPECTION_FAILED": "Échec de la vérification du jeton OIDC, veuillez réessayer",
+        "INVALID_OIDC_SUBJECT": "Identifiant utilisateur OIDC invalide",
+        "OFFER_ALREADY_PENDING": "Vous avez déjà une offre en cours sur cet article",
+        "OFFER_NOT_PENDING": "Cette offre n'est plus en attente",
+        "NOT_OFFER_COUNTERPART": "Vous n'êtes pas autorisé à répondre à cette offre",
+        "CANNOT_OFFER_OWN_PRODUCT": "Vous ne pouvez pas faire une offre sur votre propre annonce",
+        "INVALID_OFFER_AMOUNT": "Montant de l'offre invalide",
+        "BLOCKED": "Cette action est indisponible en raison d'un blocage entre utilisateurs",
+        "PRODUCT_RESERVED": "Article déjà réservé",
+        "OFFER_ALREADY_ACCEPTED": "Offre déjà acceptée",
+        "IMAGE_LOCKED_UNTIL_REPLY": "Vous pourrez envoyer des images après la réponse de votre interlocuteur",
+        "INVALID_IMAGE_MEDIA": "Échec de la validation de l'image, veuillez en choisir une autre",
+        "HOLIDAY_HOURS_OVERLAP": "Ces dates chevauchent une date spéciale existante",
+        "INVALID_HOLIDAY_RANGE": "Plage de dates invalide",
+        "HOLIDAY_HOURS_REQUIRED": "Ajoutez au moins un créneau horaire valide",
+        "HOLIDAY_HOURS_NOT_FOUND": "Cette date spéciale n’existe plus",
+        "HOLIDAY_HOURS_LIMIT_REACHED": "Nombre maximal de dates spéciales atteint"
     },
     "twoFactor": {
         "title": "Authentification à deux facteurs",
@@ -5459,7 +7372,7 @@
             "modelComposite": "Total = somme de (sous-score × poids) − pénalité de risque.",
             "modelPercentile": "Chaque sous-score = votre centile parmi les pairs de la région (classé sur les données réelles, plus haut est meilleur).",
             "modelRecency": "Sur les {{days}} derniers jours ; l'activité récente pèse plus (décroissance de récence).",
-            "modelTiers": "Paliers : ≥80 florissant · ≥60 sain · ≥40 neutre · ≥20 à risque · <20 dormant."
+            "modelTiers": "Paliers : ≥80 florissant · ≥60 sain · ≥40 neutre · ≥20 à risque · <20 dangereux."
         },
         "driver": {
             "windowDays": "Jours",
@@ -5494,7 +7407,42 @@
         "unknownUser": "Utilisateur inconnu",
         "filingColleague": "Déposé par",
         "ticketSubject": "Déposé par",
-        "securityForUser": "Audit de sécurité de l'utilisateur"
+        "securityForUser": "Audit de sécurité de l'utilisateur",
+        "requestLogs": "Journaux de requêtes",
+        "sectionOverview": "Vue d'ensemble",
+        "sectionActions": "Actions",
+        "emailUnverified": "Non vérifié",
+        "unban": "Lever le bannissement",
+        "unbanOk": "Bannissement levé",
+        "unbanFailed": "Échec de la levée",
+        "unbanConfirmTitle": "Lever le bannissement",
+        "unbanConfirmBody": "Lever le bannissement de cet utilisateur ? L'accès est rétabli immédiatement.",
+        "unbanConfirm": "Lever",
+        "activeBan": "Bannissement en cours",
+        "permanent": "permanent",
+        "until": "jusqu'au {{time}}",
+        "bannedBy": "Par {{name}}",
+        "appealTicket": "Ticket d'appel : {{id}}",
+        "pillBannedPerm": "Banni définitivement",
+        "pillMuted": "Muselé",
+        "pillAdmin": "Administrateur",
+        "pillProvider": "Commerçant",
+        "pillTest": "Compte de test",
+        "statRegistered": "Inscrit le",
+        "statLastSeen": "Vu pour la dernière fois",
+        "statEmail": "E-mail",
+        "noDetailPermission": "Aucun droit pour consulter ce profil (permission de gestion des utilisateurs requise).",
+        "cFollowers": "Abonnés",
+        "cFollowing": "Abonnements",
+        "cAgeDays": "Jours inscrits",
+        "rowLinked": "Comptes liés",
+        "linkedNone": "Aucun",
+        "rowPush": "Push",
+        "pushRegistered": "Enregistré",
+        "pushNone": "Non enregistré",
+        "rowMutedUntil": "Muet jusqu'au",
+        "rowSubscribeUntil": "Abonné jusqu'au",
+        "rowProvider": "Marchand"
     },
     "pointsEarned": {
         "title": "Points crédités !",
@@ -5537,7 +7485,11 @@
         "userFollowedDesc": "{{followerName}} vous suit désormais",
         "mutualFollowDesc": "Vous vous suivez mutuellement et pouvez désormais discuter",
         "subscriptionChanged": "Compte mis à jour",
-        "subscriptionChangedDesc": "Votre abonnement/quota de compte a été mis à jour"
+        "subscriptionChangedDesc": "Votre abonnement/quota de compte a été mis à jour",
+        "offerNew": "Nouvelle offre reçue",
+        "offerNewDesc": "Vous avez reçu une offre de {{amount}} — appuyez pour voir",
+        "offerStatusChanged": "Statut de l'offre mis à jour",
+        "offerStatusChangedDesc": "Offre {{amount}} : {{status}}"
     },
     "loginRequired": {
         "bannerTitle": "Connectez-vous pour voir tout le contenu",
@@ -5639,7 +7591,8 @@
                 "RESOURCE_DISPATCH_FAILED": "Échec de l'envoi de l'incitation"
             },
             "eachUnit": "Par unité : {{reward}}",
-            "validUntil": "Valable jusqu'au {{date}}"
+            "validUntil": "Valable jusqu'au {{date}}",
+            "invalidDuration": "Veuillez saisir un nombre de jours valide (au moins 1)"
         },
         "status": {
             "label": "Statut",
@@ -5754,7 +7707,9 @@
             "editInfo": "Modifier",
             "editInfoTitle": "Modifier le commercial",
             "nameRequired": "Nom affiché requis",
-            "infoSaved": "Enregistré"
+            "infoSaved": "Enregistré",
+            "invalidDuration": "Veuillez saisir un nombre de jours valide (au moins 1)",
+            "loadFailed": "Échec du chargement ou commercial introuvable"
         },
         "milestone": {
             "title": "Jalons",
@@ -6020,17 +7975,382 @@
             "allow": "Autoriser",
             "deny": "Plus tard",
             "camera": {
-                "title": "Autoriser l'appareil photo",
+                "title": "Appareil photo",
                 "body": "CoBook utilise l'appareil photo pour scanner les QR codes des cartes de fidélité afin de cumuler et utiliser des points, et pour prendre des photos de profil ou de boutique."
             },
             "location": {
-                "title": "Autoriser la localisation",
+                "title": "Localisation",
                 "body": "CoBook utilise votre position pour vous recommander les commerçants et boutiques proches où collecter des cartes de fidélité, et centrer la carte sur votre zone."
             },
             "photoLibrary": {
-                "title": "Autoriser la photothèque",
+                "title": "Photothèque",
                 "body": "CoBook accède à votre photothèque pour définir votre photo de profil, téléverser des images de cartes de fidélité et de boutiques, et joindre des images aux messages."
+            },
+            "continue": "Continuer"
+        },
+        "settings": {
+            "open": "Ouvrir les réglages",
+            "cancel": "Annuler",
+            "camera": {
+                "title": "Autorisation appareil photo requise",
+                "body": "L'accès à l'appareil photo est désactivé. Activez-le pour CoBook dans les réglages pour scanner les QR codes de fidélité."
+            },
+            "location": {
+                "title": "Autorisation de localisation requise",
+                "body": "L'accès à la localisation est désactivé. Activez-le pour CoBook dans les réglages pour trouver les commerçants à proximité."
+            },
+            "photoLibrary": {
+                "title": "Autorisation photothèque requise",
+                "body": "L'accès à la photothèque est désactivé. Activez-le pour CoBook dans les réglages pour enregistrer ou téléverser des images."
             }
         }
+    },
+    "pointCredential": {
+        "issueEntry": "Émettre une compensation de points",
+        "issueTitle": "Émettre une compensation de points",
+        "issueDisclaimer": "Cette opération enregistre uniquement les points gagnés par le client lors d'un achat en boutique. Ce n'est pas une vente et n'implique aucun paiement dans l'application.",
+        "pointsLabel": "Points",
+        "pointsPlaceholder": "Points à attribuer",
+        "amountLabel": "Montant",
+        "amountPlaceholder": "ex. 28,50",
+        "pointsPreview": "≈ {{points}} pts",
+        "pointsPreviewHint": "Les points sont calculés à partir du montant",
+        "bonusHint": "Le bonus de niveau est ajouté lorsque le client la récupère, selon son niveau",
+        "noteLabel": "Note (facultatif)",
+        "notePlaceholder": "ex. En boutique · Table 5",
+        "invalidAmount": "Veuillez saisir un montant valide",
+        "amountTooSmall": "Montant trop faible pour 1 point",
+        "generate": "Générer",
+        "invalidPoints": "Veuillez saisir un nombre de points valide",
+        "generateError": "Échec de la génération, veuillez réessayer",
+        "pointsAwarded": "Points attribués",
+        "basePointsAwarded": "Points de base",
+        "amountSummary": "Montant",
+        "noteSummary": "Note",
+        "pointsUnit": "pts",
+        "pointsBreakdown": "Base {{base}} + bonus de niveau {{bonus}}",
+        "numericCodeLabel": "ou saisissez ce code manuellement",
+        "numericCodeShort": "Code",
+        "expiresAt": "Valable jusqu'au {{date}}",
+        "photoHint": "📸 Prenez une photo et ouvrez CoBook pour la récupérer une fois connecté",
+        "issueAnother": "En émettre une autre",
+        "done": "Terminé",
+        "myRedemptionsTitle": "Mes compensations récupérées",
+        "issueHistoryTitle": "Historique des compensations",
+        "issueHistoryDesc": "Consultez les compensations émises et leur récupération",
+        "emptyRedemptions": "Aucune récupération pour l'instant",
+        "emptyIssued": "Aucune compensation émise pour l'instant",
+        "loadError": "Échec du chargement, veuillez réessayer",
+        "statusUnclaimed": "À récupérer",
+        "statusClaimed": "Récupérée",
+        "statusExpired": "Expirée",
+        "statusRevoked": "Annulée",
+        "claimedByShort": "Récupérée par",
+        "unknownUser": "Utilisateur",
+        "redeemDrawerEntry": "Compensation de points",
+        "detailTitle": "Détail de la compensation",
+        "reshowTitle": "Montrer à nouveau au client",
+        "reshowHint": "Laissez le client le scanner, ou partagez le lien ci-dessous",
+        "shareLink": "Partager le lien",
+        "shareFailed": "Échec du partage",
+        "redemptionInfo": "Informations de récupération",
+        "creditedPointsLabel": "Points crédités",
+        "redeemedByLabel": "Récupérée par",
+        "redeemedAtLabel": "Récupérée le",
+        "createdAtLabel": "Émis le",
+        "expiresAtLabel": "Valable jusqu'au",
+        "unredeemableHint": "Cette compensation a expiré ou a été annulée et ne peut plus être récupérée",
+        "redeemTitle": "Compensation de points",
+        "redeemIntro": "Saisissez le code à 8 chiffres remis par le commerçant, ou choisissez la photo du QR code, pour ajouter à votre compte les points de fidélité gagnés lors de votre achat en boutique.",
+        "claimDisclaimer": "La compensation de points sert uniquement à enregistrer les points de fidélité gagnés lors d'un achat en boutique. Les points sont une récompense gratuite du commerçant : ils ne peuvent pas être achetés.",
+        "enterCodeTitle": "Saisir le code",
+        "redeemByCode": "Récupérer",
+        "or": "ou",
+        "scanFromAlbum": "Choisir le QR depuis l'album",
+        "codeFormatHint": "Veuillez saisir le code à 8 chiffres",
+        "noQrInImage": "Aucun QR code trouvé dans la photo",
+        "processing": "Récupération en cours…",
+        "redeemSuccess": "Compensation récupérée",
+        "newBalance": "Solde {{balance}}",
+        "redeemAnother": "En récupérer une autre",
+        "redeemFailed": "Échec de la récupération, veuillez réessayer",
+        "pickMerchantTitle": "Confirmez le commerçant",
+        "pickMerchantHint": "Choisissez le commerçant qui vous a remis cette compensation",
+        "cancel": "Annuler",
+        "error": {
+            "WRONG_MERCHANT_SELECTED": "Mauvais commerçant, veuillez réessayer",
+            "CREDENTIAL_ALREADY_CLAIMED": "Cette compensation a déjà été récupérée",
+            "CREDENTIAL_EXPIRED": "Cette compensation a expiré",
+            "CREDENTIAL_REVOKED": "Cette compensation a été annulée",
+            "CREDENTIAL_NOT_FOUND": "Compensation introuvable",
+            "CHALLENGE_EXPIRED": "Délai dépassé, veuillez réessayer",
+            "INVALID_QR_TOKEN": "QR code invalide"
+        },
+        "revokeAction": "Annuler la compensation",
+        "revokeConfirmTitle": "Annuler cette compensation ?",
+        "revokeConfirmMessage": "Une fois annulée, cette compensation ne pourra plus être récupérée. Cette action est irréversible.",
+        "revokeConfirmAction": "Annuler la compensation",
+        "revokeSuccess": "Compensation annulée",
+        "revokeFailed": "Échec de l'annulation. Veuillez réessayer.",
+        "revokeFailedClaimed": "Cette compensation a déjà été récupérée et ne peut pas être annulée.",
+        "revokeFailedExpired": "Cette compensation a expiré et ne peut pas être annulée.",
+        "viewRedeemerScorecard": "Voir la carte de fidélité du client"
+    },
+    "addPoints": {
+        "quickSelect": "Sélection rapide"
+    },
+    "recentMessages": {
+        "searchPlaceholder": "Rechercher des conversations",
+        "noSearchResults": "Aucune conversation correspondante",
+        "empty": {
+            "title": "Aucun message",
+            "hint": "Suivez des amis et commencez à discuter",
+            "action": "Trouver des amis à suivre"
+        }
+    },
+    "providerHome": {
+        "todayTitle": "Aujourd'hui",
+        "todayVerifications": "Vérifiés",
+        "todayPointsIssued": "Points émis",
+        "todayNewCustomers": "Nouveaux clients",
+        "todayViews": "Vues"
+    },
+    "adminServerConfig": {
+        "title": "Serveur backend",
+        "noAccess": "Réservé aux administrateurs de la plateforme",
+        "currentServer": "Serveur actuel",
+        "presets": "Préréglages",
+        "recentlyUsed": "Récemment utilisés",
+        "customUrl": "URL personnalisée",
+        "invalidTitle": "URL invalide",
+        "invalidUrl": "Saisissez une URL valide commençant par http:// ou https://.",
+        "currentBadge": "Actuel",
+        "alreadyActive": "Déjà le serveur actuel",
+        "switchAndRestart": "Changer et redémarrer",
+        "confirmTitle": "Changer et redémarrer ?",
+        "confirmMessage": "L'application va se connecter à {{url}}, effacer votre session actuelle et redémarrer. Continuer ?",
+        "resetTitle": "Rétablir la valeur par défaut ?",
+        "resetMessage": "Rétablir le serveur par défaut {{url}}, effacer votre session actuelle et redémarrer. Continuer ?",
+        "resetDefault": "Rétablir par défaut",
+        "hint": "Changer de serveur efface votre session actuelle et le cache local, puis redémarre l'application. Vous devrez vous reconnecter."
+    },
+    "impersonation": {
+        "actionRestrictedTitle": "Action restreinte",
+        "cannotSendMessage": "Impossible d'envoyer des messages en mode simulation. Quittez le mode simulation et réessayez.",
+        "cannotAccessMessages": "La messagerie est indisponible en mode simulation. Quittez le mode simulation et réessayez.",
+        "bannedUserNotice": "L'utilisateur en cours de simulation est banni"
+    },
+    "ban": {
+        "titlePermanent": "Compte banni définitivement",
+        "titleTemporary": "Compte temporairement banni",
+        "reasonLabel": "Motif du bannissement",
+        "unbanTimeLabel": "Date de levée du bannissement",
+        "appealHelp": "Si vous contestez ce bannissement, vous pouvez soumettre un recours sur la page dédiée (s'ouvre dans le navigateur).",
+        "goToAppeal": "Faire un recours"
+    },
+    "socket": {
+        "reconnecting": "Reconnexion…"
+    },
+    "scanner": {
+        "torch": "Lampe torche",
+        "album": "Galerie"
+    },
+    "time": {
+        "justNow": "À l'instant",
+        "minutesAgo": "il y a {{count}} minutes",
+        "yesterday": "Hier"
+    },
+    "guest": {
+        "loginToContinue": "Connectez-vous pour utiliser cette fonctionnalité"
+    },
+    "offlineQueue": {
+        "voucherQueuedTitle": "Enregistré hors ligne",
+        "voucherQueuedBody": "Réseau indisponible — cette validation a été enregistrée sur cet appareil et sera finalisée automatiquement dès le retour de la connexion. Ne rescannez pas le code.",
+        "pointsQueuedTitle": "Enregistré hors ligne",
+        "pointsQueuedBody": "Réseau indisponible — ces points ont été enregistrés sur cet appareil et seront soumis automatiquement dès le retour de la connexion. Ne répétez pas l'opération.",
+        "pendingBanner": "{{count}} opérations hors ligne en attente — appuyez pour réessayer",
+        "flushSuccess": "Opérations hors ligne soumises",
+        "flushStillOffline": "Toujours hors ligne — nouvel essai automatique au retour de la connexion"
+    },
+    "offers": {
+        "myOffersTitle": "Mes offres",
+        "makeOfferTitle": "Faire une offre",
+        "buyAtListPrice": "Prendre au prix affiché",
+        "buyAtListPriceTitle": "Prendre au prix affiché",
+        "buyAtListPriceSuccess": "Intention d'achat envoyée au prix affiché",
+        "sendOffer": "Envoyer l'offre",
+        "sendCounter": "Envoyer la contre-offre",
+        "counterTitle": "Contre-offre",
+        "counterAgainst": "L'autre partie a proposé {{amount}}, vous pouvez faire une contre-offre",
+        "counterSuccess": "Contre-offre envoyée",
+        "counterFailed": "Échec de l'envoi de la contre-offre, veuillez réessayer",
+        "createSuccess": "Offre envoyée",
+        "createFailed": "Échec de l'envoi de l'offre, veuillez réessayer",
+        "alreadyPending": "Vous avez déjà une offre en cours",
+        "cannotOfferOwnProduct": "Vous ne pouvez pas faire une offre sur votre propre annonce",
+        "amountLabel": "Montant de l'offre",
+        "amountPlaceholder": "ex. 50",
+        "amountRequired": "Veuillez saisir un montant",
+        "amountInvalid": "Veuillez saisir un montant valide",
+        "amountMaxTwoDecimals": "Le montant doit être supérieur à 0, avec au plus deux décimales",
+        "amountMustEqualListPrice": "Les articles à prix fixe doivent être proposés au prix affiché",
+        "aboveListPriceWarn": "Supérieur au prix affiché — êtes-vous sûr de ce montant ?",
+        "nonNegotiableHint": "Cet article n'est pas négociable ; une intention d'achat sera envoyée au vendeur au prix affiché.",
+        "noteLabel": "Message (facultatif)",
+        "notePlaceholder": "ex. Retrait possible aujourd'hui",
+        "listPriceLabel": "Prix affiché",
+        "acceptAction": "Accepter",
+        "counterAction": "Contre-offre",
+        "declineAction": "Refuser",
+        "withdrawAction": "Retirer",
+        "acceptConfirmTitle": "Accepter cette offre ?",
+        "acceptConfirmMessage": "Vous conviendrez d'un accord à {{amount}}.",
+        "acceptSuccess": "Offre acceptée",
+        "acceptedTitle": "Offre acceptée",
+        "declineSuccess": "Offre refusée",
+        "withdrawConfirmTitle": "Retirer cette offre ?",
+        "withdrawConfirmMessage": "Après le retrait, l'autre partie ne pourra plus répondre.",
+        "withdrawSuccess": "Offre retirée",
+        "reserveAfterAcceptMessage": "Marquer l'article comme réservé ?",
+        "reserveLater": "Plus tard",
+        "reserveNow": "Marquer comme réservé",
+        "reserveSuccess": "Marqué comme réservé",
+        "reserveFailed": "Échec de la mise à jour de la réservation, veuillez réessayer plus tard",
+        "reserveAction": "Réserver",
+        "unreserveAction": "Annuler la réservation",
+        "unreserveSuccess": "Réservation annulée",
+        "reservedHint": "Un acheteur a réservé cet article — vous pouvez toujours vous renseigner et patienter",
+        "myOfferStrip": "Mon offre {{amount}}",
+        "tabSent": "Envoyées",
+        "tabReceived": "Reçues",
+        "emptySent": "Aucune offre envoyée",
+        "emptySentDesc": "Essayez « Faire une offre » sur la page d'un article",
+        "emptyReceived": "Aucune offre reçue",
+        "emptyReceivedDesc": "Les offres des acheteurs apparaîtront ici",
+        "loadFailed": "Échec du chargement",
+        "loadFailedDesc": "Vérifiez votre connexion et réessayez",
+        "counterChain": "Chaîne de contre-offres",
+        "status": {
+            "pending": "En attente",
+            "accepted": "Acceptée",
+            "declined": "Refusée",
+            "withdrawn": "Retirée",
+            "countered": "Contre-offre faite",
+            "expired": "Expirée",
+            "invalidated": "Invalidée",
+            "unknown": "Inconnu"
+        },
+        "direction": {
+            "buyer": "Offre de l'acheteur",
+            "seller": "Contre-offre du vendeur"
+        },
+        "alreadyAccepted": "Votre offre a déjà été acceptée — inutile d'en refaire une",
+        "productReserved": "Cet article est réservé et n'accepte plus de nouvelles offres",
+        "offerAcceptedShort": "Offre acceptée"
+    },
+    "businessStats": {
+        "singleDayChartHint": "La vue journalière n'affiche que les indicateurs chiffrés. Passez à Cette semaine, Ce mois ou une période personnalisée pour voir les graphiques de tendance",
+        "seriesWindowNote": "Les graphiques de tendance ne couvrent que les {{days}} derniers jours ; les dates antérieures ne sont pas affichées",
+        "noSeriesInRange": "Aucune donnée de tendance sur la période sélectionnée",
+        "scansTooltip": "{{count}} scans"
+    },
+    "review": {
+        "actions": {
+            "delete": "Supprimer l'avis"
+        },
+        "deleteConfirmMessage": "Voulez-vous vraiment supprimer cet avis ? Cette action est irréversible.",
+        "deleteConfirmTitle": "Supprimer l'avis",
+        "deleteFailed": "Échec de la suppression, veuillez réessayer plus tard",
+        "deleteSuccess": "Avis supprimé",
+        "dim": {
+            "environment": "Environnement",
+            "overall": "Global",
+            "quality": "Qualité",
+            "service": "Service"
+        },
+        "editMyReview": "Modifier mon avis",
+        "emptyCta": "Soyez le premier à donner votre avis",
+        "emptyTitle": "Pas encore d'avis",
+        "helpful": "Utile",
+        "listEnd": "Plus d'autres avis",
+        "merchantReply": "Réponse du commerçant",
+        "moreActions": "Plus d'actions",
+        "myReviewBadge": "Mon avis",
+        "showOriginal": "Afficher l'original",
+        "sort": {
+            "helpful": "Les plus utiles",
+            "latest": "Récents",
+            "withImages": "Avec photos"
+        },
+        "stats": {
+            "reviewCount": "{{count}} avis",
+            "reviewCount_one": "{{count}} avis",
+            "reviewCount_other": "{{count}} avis"
+        },
+        "translate": "Traduire",
+        "translateFailed": "Échec de la traduction, veuillez réessayer plus tard",
+        "translateRateLimited": "Trop de requêtes, veuillez réessayer plus tard",
+        "writeCta": "Écrire un avis",
+        "writeForm": {
+            "addPhoto": "Ajouter une photo",
+            "alreadyExists": "Vous avez déjà évalué ce commerçant — passage en mode édition",
+            "contentLabel": "Votre avis",
+            "contentPlaceholder": "Partagez votre expérience (facultatif)",
+            "editTitle": "Modifier l'avis",
+            "overallHint": "Touchez les étoiles pour noter",
+            "photosLabel": "Photos (5 max)",
+            "scoreRequired": "Veuillez noter toutes les catégories",
+            "subScoresHint": "Prérempli selon la note globale — ajustable individuellement",
+            "submit": "Publier l'avis",
+            "submitFailed": "Échec de la publication de l'avis, veuillez réessayer plus tard",
+            "submitSuccess": "Avis publié",
+            "title": "Écrire un avis",
+            "update": "Mettre à jour l'avis",
+            "updateSuccess": "Avis mis à jour",
+            "uploadFailed": "Échec du téléversement de l'image, veuillez réessayer plus tard"
+        },
+        "manage": {
+            "title": "Gestion des avis",
+            "menuDesc": "Consulter les avis clients et y répondre",
+            "filter": {
+                "all": "Tous",
+                "unreplied": "Sans réponse",
+                "low": "Notes basses"
+            },
+            "reply": "Répondre",
+            "replyLocked": "Débloquer la réponse",
+            "editReply": "Modifier la réponse",
+            "deleteReply": "Supprimer la réponse",
+            "deleteReplyConfirmTitle": "Supprimer la réponse",
+            "deleteReplyConfirmMessage": "Voulez-vous vraiment supprimer cette réponse ? Cette action est irréversible.",
+            "deleteReplySuccess": "Réponse supprimée",
+            "deleteReplyFailed": "Échec de la suppression, veuillez réessayer plus tard",
+            "replyEditorTitle": "Répondre à l'avis",
+            "replyPlaceholder": "Rédigez votre réponse…",
+            "replyContentRequired": "Veuillez saisir votre réponse",
+            "replySubmit": "Publier la réponse",
+            "replyUpdate": "Mettre à jour la réponse",
+            "replySuccess": "Réponse publiée",
+            "replyUpdateSuccess": "Réponse mise à jour",
+            "replyFailed": "Échec de l'envoi de la réponse, veuillez réessayer plus tard",
+            "alreadyReplied": "Cet avis a déjà une réponse — la liste a été actualisée",
+            "reportedPlaceholder": "Cet avis a été supprimé pour non-respect des règles de la communauté",
+            "emptyTitle": "Aucun avis pour le moment",
+            "emptyFiltered": "Aucun avis ne correspond à ce filtre",
+            "noPermission": "Vous n'avez pas l'autorisation de gérer les avis de ce commerçant"
+        },
+        "deepLinkNotFound": "Avis introuvable (il a peut-être été supprimé)"
+    },
+    "versionBanner": {
+        "title": "Cette version n'est plus maintenue",
+        "bodyIos": "Touchez pour obtenir la dernière version sur l'App Store",
+        "bodyAndroid": "Touchez pour obtenir la dernière version sur Google Play"
+    },
+    "storeUpdate": {
+        "title": "Nouvelle version {{version}} disponible",
+        "subtitleIos": "Obtenez les dernières nouveautés et corrections sur l'App Store",
+        "subtitleAndroid": "Obtenez les dernières nouveautés et corrections sur Google Play",
+        "action": "Mettre à jour",
+        "dismissA11y": "Plus tard"
     }
 }
