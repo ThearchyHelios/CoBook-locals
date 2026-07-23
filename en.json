@@ -70,7 +70,12 @@
             "redeemableItemsCountSubtitle": "{{count}} redeemable item(s)",
             "redeemableItemsTitle": "Redeemable Items",
             "redeemableItemsEmptySubtitle": "Add, edit redeemable items and bind vouchers",
-            "manageVouchersSubtitle": "Create and manage vouchers for redemption"
+            "manageVouchersSubtitle": "Create and manage vouchers for redemption",
+            "listNow": "List now",
+            "listNowLocked": "Complete required fields to list",
+            "createAndBindVoucher": "Create & bind a voucher",
+            "voucherCreatedBound": "Voucher created and bound — refine it in Voucher management",
+            "sort": "Sort"
         },
         "setup": {
             "title": "Getting started",
@@ -144,7 +149,9 @@
                     }
                 }
             }
-        }
+        },
+        "showToMerchant": "Show this QR code to the merchant to redeem",
+        "showQrCode": "Show QR code"
     },
     "settings": {
         "title": "Settings",
@@ -411,7 +418,10 @@
             "verifying": "Verify",
             "wrongPassword": "Incorrect password",
             "socialMismatch": "That Google / Apple account is not linked to this account",
-            "failed": "Verification failed. Please try again."
+            "failed": "Verification failed. Please try again.",
+            "totpRequired": "Two-factor authentication is enabled on this account — enter your 6-digit code",
+            "totpPlaceholder": "6-digit code",
+            "totpInvalid": "Incorrect code, please try again"
         },
         "setPassword": {
             "title": "Set Password",
@@ -460,7 +470,11 @@
         "welcomeTitle": "Welcome to CoBook",
         "welcomeSubtitle": "Sign in to start using CoBook",
         "socialLoginInfo": "Google, Apple and other social logins available",
-        "rememberThisDevice": "Remember this device (skip 2FA next time)"
+        "rememberThisDevice": "Remember this device (skip 2FA next time)",
+        "oidcAuthorizationFailed": "OIDC authorization failed",
+        "oidcPkceVerifierMissing": "PKCE code verifier is missing",
+        "retryWithReason": "Please try again later. Reason: {{reason}}",
+        "retryWithError": "Please try again later. Error: {{error}}"
     },
     "register": {
         "username": "Username",
@@ -627,7 +641,8 @@
         },
         "Date": "Added time",
         "cancelFollow": "Unfollow",
-        "title": "Social relationships"
+        "title": "Social relationships",
+        "followsYou": "Follows you"
     },
     "common": {
         "error": "Error",
@@ -673,7 +688,21 @@
         "disabled": "Disabled",
         "done": "Done",
         "noMore": "No more items",
-        "loadFailedRetry": "Failed to load — tap to retry"
+        "loadFailedRetry": "Failed to load — tap to retry",
+        "loadingSlowHint": "Still loading — the network seems slow",
+        "userAvatar": "User avatar",
+        "backToTop": "Back to top",
+        "editAvatar": "Edit avatar",
+        "share": "Share",
+        "actionSuccess": "Action completed",
+        "networkError": "Network error",
+        "operationFailed": "Action failed",
+        "ok": "OK",
+        "justNow": "Just now",
+        "active": "Active",
+        "inactive": "Inactive",
+        "enabled": "Enabled",
+        "loadFailed": "Failed to load"
     },
     "secondhand": {
         "loginToViewProductDetails": "Login to view product details",
@@ -730,7 +759,104 @@
         "markSoldConfirmMessage": "The listing will be hidden from browsing and search, but shown as \"Sold\" in your listings and watchers' favorites. You can restore it to sale anytime.",
         "markSoldConfirmOk": "Mark sold",
         "markSoldSuccess": "Marked as sold",
-        "groupSoldCount": "{{n}} sold"
+        "groupSoldCount": "{{n}} sold",
+        "allRegions": "All regions",
+        "editSuccess": "Changes saved",
+        "editFailed": "Save failed",
+        "unsavedTitle": "Unsaved changes",
+        "unsavedMessage": "Save your changes before leaving?",
+        "discardLeave": "Discard & leave",
+        "saveChanges": "Save changes",
+        "imagePermissionTitle": "Photo permission required",
+        "imagePermissionMessage": "Please allow photo access in Settings",
+        "goToSettings": "Open Settings",
+        "imagePickFailed": "Image selection failed",
+        "imageValidateFailed": "Image validation failed",
+        "imageKeepAtLeastOne": "Keep at least one image",
+        "imageDeleteTitle": "Delete image",
+        "imageDeleteMessage": "Delete this image? This cannot be undone.",
+        "imageDeleteFailed": "Delete failed",
+        "imageAspectRatioInvalid": "Image {{index}} has an extreme aspect ratio, please choose another",
+        "imageTooSmall": "Image {{index}} is smaller than 10 KB and doesn't meet requirements",
+        "like": "Add to favorites",
+        "unlike": "Remove from favorites",
+        "addImagesFailed": "Failed to add images",
+        "statusPickerLabel": "Status:",
+        "statusListed": "Listed",
+        "productImagesSection": "Product photos",
+        "productInfoSection": "Product details",
+        "unsavedChanges": "Unsaved changes",
+        "saved": "Saved",
+        "loginToLike": "Log in to save this item to your favorites",
+        "loginToMessageSeller": "Log in to message the seller",
+        "loginToViewContact": "Log in to view contact details and reach the seller",
+        "loginToContactSeller": "Log in to contact the seller",
+        "loginToViewGroup": "Log in to view this product group",
+        "viewsLabel": "views",
+        "likesLabel": "likes",
+        "sellerLabel": "Seller",
+        "descriptionTitle": "Description",
+        "contactMethodTitle": "Contact",
+        "contactViaMessage": "Contact via direct message",
+        "adminInfoTitle": "Admin info",
+        "adminProductId": "Product ID",
+        "adminSellerId": "Seller ID",
+        "productUnavailableTitle": "Item unavailable",
+        "productUnavailableMessage": "This item doesn't exist or has been delisted.",
+        "loadFailedTitle": "Failed to load",
+        "loadFailedMessage": "Couldn't load the item. Check your connection and try again.",
+        "filter": {
+            "categoryAll": "All",
+            "category": {
+                "furniture": "Furniture & Decor",
+                "electronics": "Electronics",
+                "fashion": "Fashion",
+                "beauty": "Beauty & Skincare",
+                "booksMedia": "Books & Media",
+                "sports": "Sports & Outdoors",
+                "crafts": "Handicrafts",
+                "other": "Other"
+            },
+            "sort": {
+                "newest": "Newest",
+                "mostLiked": "Popular",
+                "priceAsc": "Price: low to high",
+                "priceDesc": "Price: high to low"
+            },
+            "time": {
+                "day1": "Last 24 hours",
+                "week1": "Last week",
+                "month1": "Last month",
+                "months6": "Last 6 months"
+            },
+            "condition": {
+                "new": "New",
+                "slightWear": "Slightly used",
+                "worn": "Used",
+                "damaged": "Damaged",
+                "incomplete": "Incomplete"
+            },
+            "priceLabel": "Price",
+            "priceMin": "Min price",
+            "priceMax": "Max price"
+        },
+        "statusReserved": "Reserved",
+        "loginToMakeOffer": "Log in to make an offer",
+        "priceDrop": {
+            "a11y": "Price dropped",
+            "tag": "Price drop {{oldPrice}} → {{newPrice}}"
+        },
+        "similarProducts": "Similar items",
+        "moreFromSeller": "More from this seller",
+        "terminalSoldBanner": "This item has been sold",
+        "terminalDelistedBanner": "This item is no longer available",
+        "terminalBannerHint": "Check out similar items below",
+        "engagement": {
+            "views": "{{n}} views",
+            "likes": "{{n}} saves",
+            "inquiries": "{{n}} inquiring",
+            "pendingOffers": "{{n}} pending offers"
+        }
     },
     "message": {
         "sendmessage": "Send message",
@@ -758,8 +884,41 @@
         "lastSeenDays": "Last seen {{count}}d ago",
         "empty": {
             "title": "No messages yet",
-            "hint": "Follow friends and start chatting!"
-        }
+            "hint": "Follow friends and start chatting!",
+            "action": "Find people to chat"
+        },
+        "resendFailed": "Resend failed",
+        "checkNetworkRetry": "Check your network connection and try again",
+        "pinConversation": "Pin",
+        "unpinConversation": "Unpin",
+        "tapToResend": "Tap to resend",
+        "resendLabel": "Resend",
+        "sendFailedTapResend": "Failed · Tap to resend",
+        "pinnedSection": "Pinned messages",
+        "mutualFollowBadge": "Mutual",
+        "chatWithUser": "Chat with {{name}}",
+        "deleteConversationTitle": "Delete chat",
+        "deleteConversationConfirm": "This will permanently delete the entire chat history for both of you and cannot be undone. Delete?",
+        "deleteConversationFailed": "Delete failed",
+        "deleteConversationFailedDesc": "The chat was kept — deletion didn't complete. Check your network and try again.",
+        "selectConversationHint": "Select a conversation on the left to start chatting",
+        "quickChips": {
+            "stillAvailable": "Is this still available?",
+            "canNegotiate": "Is the price negotiable?",
+            "canInspect": "Can I see it in person?"
+        },
+        "productRefFallback": "[Item] {{title}}",
+        "productContext": {
+            "makeOffer": "Make offer"
+        },
+        "productRefCard": {
+            "untitled": "Item"
+        },
+        "imageFallback": "[Image]",
+        "imageExpired": "Image expired",
+        "imageUploadFailed": "Image upload failed",
+        "imageLockedUntilReply": "You can send images after they reply",
+        "sendImage": "Send image"
     },
     "mainContent": {
         "navigation": {
@@ -806,7 +965,14 @@
             "manualEntry": "Enter code manually",
             "manualEntryTitle": "Enter verification code",
             "manualEntryPlaceholder": "Enter the code or full QR content",
-            "manualEntryConfirm": "Verify"
+            "manualEntryConfirm": "Verify",
+            "album": "Album",
+            "openingAlbum": "Opening album…",
+            "recognizing": "Scanning…",
+            "noQrInImage": "No QR code found in the photo",
+            "unrecognized": "Unrecognized QR code",
+            "albumPermissionDenied": "Cannot access photos. Please allow photo access in settings",
+            "rescan": "Rescan"
         },
         "discounts": {
             "title": "Discounts %",
@@ -823,7 +989,7 @@
             "nearby": "Nearby",
             "deals": "Deals"
         },
-        "featuredDeals": "Featured Deals",
+        "featuredDeals": "Redeem points for vouchers",
         "featuredDealsSubtitle": "Great deals, easy to claim",
         "claimFree": "Claim Free",
         "redeemPoints": "Redeem",
@@ -844,20 +1010,45 @@
         "youMayLikeSubtitle": "Based on similar user preferences",
         "seeAll": "See All >",
         "recommendedProducts": "Recommended Products",
-        "recommendedProductsSubtitle": "Discover more great finds"
+        "recommendedProductsSubtitle": "Discover more great finds",
+        "ratingNew": "New",
+        "distanceNearby": "Nearby",
+        "scorecardTag": "Points card",
+        "pullToRefresh": "Pull to refresh",
+        "loadFailedTitle": "Couldn't load the home page",
+        "loadFailedHint": "Check your connection and try again",
+        "defaultLocationHint": "We couldn't get your location — showing merchants around the default area",
+        "showMoreProviders": "See more merchants",
+        "a11y": {
+            "language": "Change language",
+            "notifications": "System messages",
+            "notificationsUnread": "System messages, {{count}} unread",
+            "scan": "Scan QR code",
+            "showCardHint": "Tap to show your membership code"
+        },
+        "myAssets": "My cards & vouchers",
+        "staleLocationHint": "Your location may be out of date — nearby results might be inaccurate",
+        "newUser": {
+            "title": "Get your first points card",
+            "body": "Activate a points card at a nearby merchant, earn points and redeem vouchers",
+            "scanAction": "Scan to get a card",
+            "browseAction": "Browse nearby merchants"
+        },
+        "showMembershipCode": "Show membership code",
+        "cardCount": "{{count}} cards"
     },
     "provider": {
         "main": {
             "completeStoreInfo": "Please complete the commercial information to be visible to users",
             "overview": "Overview",
             "totalActivations": "Total Score Card Activations",
-            "totalViews": "Total Views",
+            "totalViews": "Page Views (30 Days)",
             "overallTrend": "Overall Trend",
             "totalMembers": "Total Members",
             "totalRevenue": "Total Revenue",
             "moreData": "More Overall Data",
             "avgOrderAmount": "Average Order Amount",
-            "totalVisitors": "Total Visitors",
+            "totalVisitors": "Unique Visitors (30d)",
             "couponsIssued": "Total Vouchers Issued",
             "couponsUsed": "Total Vouchers Used",
             "recentActivity": "Recent Activity",
@@ -992,7 +1183,9 @@
             "addPoints": "Add Points",
             "redeemReward": "Redeem Reward",
             "sendNotification": "Send Notification",
-            "customerList": "Customer list"
+            "customerList": "Customer list",
+            "lastVisit": "Last visit",
+            "visitCount": "Visits"
         },
         "search": {
             "placeholder": "Search coffee, milk tea...",
@@ -1137,7 +1330,13 @@
             "descriptionRichHint": "Rich text supported; other languages can be auto-translated once the main language is filled in.",
             "locationEmpty": "Tap to mark your store's location on the map",
             "locationSelected": "Location marked on the map",
-            "adjustLocation": "Adjust"
+            "adjustLocation": "Adjust",
+            "noRejectComment": "The administrator did not provide details. Please review your application and resubmit, or contact support if you have questions.",
+            "nameLangLabel": "Store name — primary language",
+            "nameLangHint": "Choose the primary language of your store name (at least one required); the others can be left empty. You can change the name later in Edit Business Info.",
+            "ownerId": "ID photos",
+            "ownerIdHint": "Upload the applicant's (owner's) government ID — front and back, up to 2 photos. Used only for identity verification.",
+            "ownerIdRequired": "Please upload your ID photos (front and back)"
         },
         "validation": {
             "addressRequired": "Please enter the commercial address",
@@ -1230,7 +1429,10 @@
                 "failed": {
                     "title": "Error",
                     "message": "Score card activation failed, please try again later"
-                }
+                },
+                "viewTerms": "View membership terms",
+                "hideTerms": "Hide terms",
+                "agreeFootnote": "By activating you agree to the membership terms"
             },
             "productDetail": "Reedemable items detail",
             "productDetailEdit": "Edit score items detail",
@@ -1316,7 +1518,26 @@
                 "unknownProvider": "Merchant",
                 "loadingScorecard": "Loading scorecard...",
                 "usableWindowTitle": "Redeemable in-store: {{window}} daily",
-                "usableWindowHint": "This voucher is only redeemable in-store during this window (merchant's timezone); claiming itself has no time limit"
+                "usableWindowHint": "This voucher is only redeemable in-store during this window (merchant's timezone); claiming itself has no time limit",
+                "refundNotEligibleHint": "Redeem in-store before it expires — once this voucher expires, the points you paid will not be refunded."
+            },
+            "wallet": {
+                "activateFirst": "Activate your loyalty card first",
+                "appleUnavailable": "Apple Wallet is unavailable — make sure this device supports it",
+                "generateFailed": "Failed to generate the wallet pass",
+                "appleAddSuccess": "Added to Apple Wallet",
+                "autoUpdateHint": "The pass updates its balance automatically",
+                "addCancelled": "Adding was cancelled or failed",
+                "unsupportedServer": "The server does not support Apple Wallet passes yet",
+                "addFailed": "Failed to add to wallet, please try again later",
+                "cardInfoIncomplete": "Loyalty card information is incomplete",
+                "googleUrlInvalid": "Invalid Google Wallet link, please try again later",
+                "googleOpenFailed": "Couldn't open Google Wallet — make sure Google Pay is installed",
+                "googleGenerateFailed": "Failed to generate the Google Wallet pass",
+                "googleAddFailed": "Failed to add to Google Wallet, please try again later",
+                "addToApple": "Add to Apple Wallet",
+                "addToGoogle": "Add to Google Wallet",
+                "productNotFound": "Product not found"
             }
         },
         "detail": {
@@ -1328,7 +1549,22 @@
             "review": "Comment",
             "description2": "Introduction 2 (Test)",
             "activityPages": "Activities",
-            "nextDay": "next day"
+            "nextDay": "next day",
+            "reviewsCount": "{{n}} reviews",
+            "openNow": "Open now",
+            "closedNow": "Closed",
+            "distanceKm": "{{km}} km",
+            "actionNavigate": "Directions",
+            "actionCall": "Call",
+            "actionClaimCard": "Get points card",
+            "perksVouchersAvailable": "{{n}} vouchers to redeem",
+            "perksPointsValue": "{{n}} pts",
+            "mapOpenFailed": "Could not open the maps app",
+            "holidayClosed": "Closed for holiday",
+            "specialHoursOpen": "Open · special hours",
+            "specialSchedule": "Special schedule",
+            "overrideToday": "Today",
+            "overrideClosed": "Closed"
         },
         "voucher": {
             "title": "CoBook vouchers",
@@ -1548,7 +1784,8 @@
                 "description": "Manage coupons, vouchers, etc."
             },
             "add_employee": "Add Employee",
-            "add_employee_title": "Add Employee"
+            "add_employee_title": "Add Employee",
+            "select_role": "Select a role"
         },
         "myPermissions": {
             "title": "My Permissions",
@@ -1698,7 +1935,10 @@
             "coverHint": "The cover is the storefront's main visual, shown in lists, loyalty cards and more. Use a wide high-resolution image (16:9).",
             "coverRequired": "Please upload a cover image",
             "coverUploadFailed": "Cover upload failed, please try again",
-            "loadingDescription": "Loading multilingual content…"
+            "loadingDescription": "Loading multilingual content…",
+            "providerNameLabel": "Store name",
+            "tapToEditName": "Tap to edit store name",
+            "loadingName": "Loading multilingual content…"
         },
         "consultation": {
             "helpGuideTitle": "Help Guide",
@@ -1874,7 +2114,8 @@
             "scan": "Scan",
             "addPoints": "Add Points",
             "issueVoucher": "Edit Voucher",
-            "lookup": "Lookup"
+            "lookup": "Lookup",
+            "issueCredential": "Compensation"
         },
         "group": {
             "operations": "Operations",
@@ -1935,6 +2176,76 @@
         },
         "location": {
             "locationPermissionDenied": "Location permission denied — couldn't locate you"
+        },
+        "holidayHours": {
+            "title": "Holiday hours",
+            "menuDesc": "Closed days or special hours — let customers know in advance",
+            "customDate": "Special date",
+            "templatesTitle": "Public holidays — quick setup",
+            "upcomingTitle": "Upcoming special dates",
+            "addCustom": "Custom date",
+            "addTitle": "Add a special date",
+            "editTitle": "Edit special date",
+            "startDate": "Start date",
+            "endDate": "End date",
+            "typeClosed": "Closed all day",
+            "typeModified": "Special hours",
+            "labelPlaceholder": "Reason (optional, e.g. renovation)",
+            "invalidRangeTitle": "Invalid dates",
+            "invalidRangeDesc": "End date cannot be before the start date",
+            "zeroSlotDesc": "Start and end times cannot be identical",
+            "overlapDesc": "These dates overlap an existing special date",
+            "saveFailed": "Could not save, please try again later",
+            "savedDesc": "Special date saved",
+            "deleteTitle": "Delete special date",
+            "deleteMessage": "Regular opening hours will apply again on this date.",
+            "deleteFailed": "Could not delete, please try again later",
+            "deletedDesc": "Special date deleted",
+            "emptyTitle": "No special dates yet",
+            "emptyDesc": "Closing for a holiday or changing your hours? Tell customers ahead of time so nobody shows up to a closed door.",
+            "activeNow": "Active now"
+        },
+        "holidays": {
+            "jourDeLAn": "New Year's Day",
+            "lundiDePaques": "Easter Monday",
+            "feteDuTravail": "Labour Day",
+            "victoire1945": "Victory in Europe Day",
+            "ascension": "Ascension Day",
+            "lundiDePentecote": "Whit Monday",
+            "feteNationale": "Bastille Day",
+            "assomption": "Assumption Day",
+            "toussaint": "All Saints' Day",
+            "armistice1918": "Armistice Day",
+            "noel": "Christmas Day"
+        },
+        "todos": {
+            "title": "To-dos",
+            "unrepliedReviews": "Unreplied reviews"
+        },
+        "materials": {
+            "title": "My materials",
+            "menuDesc": "View store materials, create a QR code and export it as an image",
+            "selfQuota": "Self-created QR {{used}}/{{limit}}",
+            "createSelf": "Create my QR code",
+            "createSelfDesc": "Generate a dedicated QR material — customers scan it to open your store page; export it as an image to print and display.",
+            "createConfirmTitle": "Create a QR material?",
+            "createConfirmMsg": "Each merchant can self-create up to {{limit}} QR material (platform-issued ones don’t count). It takes effect immediately.",
+            "created": "Created",
+            "createFailed": "Creation failed",
+            "selfLimitReached": "Self-creation quota used up",
+            "originSelf": "Self-created",
+            "originAdmin": "Platform-issued",
+            "savePng": "Save image",
+            "saved": "Saved to Photos",
+            "saveFailed": "Save failed",
+            "shareLink": "Share link",
+            "copyLink": "Copy link",
+            "linkCopied": "Link copied",
+            "scanCount": "{{count}} scans",
+            "empty": "No materials yet. Create a QR material, or contact the platform for NFC materials.",
+            "footerHint": "The exported image is a square material card (QR code + short code), ready to print and display. Physical materials like NFC tags are issued and bound by the platform.",
+            "pickCardLang": "Card language",
+            "pickCardLangMsg": "The text on the exported image will use the selected language."
         }
     },
     "secondhandSearch": {
@@ -1983,6 +2294,10 @@
             "group": "Product group",
             "updateFailed": "Update failed",
             "imageLoadFailed": "Image load failed"
+        },
+        "history": {
+            "title": "Recent searches",
+            "clear": "Clear"
         }
     },
     "secondhandMain": {
@@ -1993,7 +2308,13 @@
         "singleProduct": "Single second-hand product",
         "multipleProducts": "Multiple second-hand products",
         "warning": "Warning",
-        "notImplemented": "Not implemented yet"
+        "notImplemented": "Not implemented yet",
+        "publishEntry": {
+            "title": "List an item",
+            "subtitle": "Pick a publishing mode — drafts save automatically either way",
+            "singleDesc": "Quickly list one item in three steps",
+            "multipleDesc": "Group several items into a collection, add them one by one, publish together"
+        }
     },
     "secondhandPublish": {
         "fields": {
@@ -2052,7 +2373,9 @@
         "permissions": {
             "photoTitle": "Photo permission required",
             "photoMessage": "Please allow photo access in settings",
-            "goSettings": "Go to settings"
+            "goSettings": "Go to settings",
+            "cameraTitle": "Camera permission required",
+            "cameraMessage": "Please allow camera access in settings"
         },
         "status": {
             "online": "Make Available",
@@ -2064,7 +2387,9 @@
             "imageTooSmall": "Image {{index}} size less than 10kb, does not reach requirements",
             "saveDraftFailed": "Save draft failed",
             "sendpicturefailed": "Failed to send image",
-            "uploadFailed": "Upload failed, please try again later"
+            "uploadFailed": "Upload failed, please try again later",
+            "imageValidationFailed": "Image validation failed",
+            "cameraFailed": "Failed to take photo"
         },
         "validation": {
             "nameRequired": "Please enter product name",
@@ -2073,7 +2398,8 @@
             "categoryRequired": "Please select product category",
             "conditionRequired": "Please select product condition",
             "contactRequired": "Please enter contact method",
-            "imageRequired": "Please upload at least one image"
+            "imageRequired": "Please upload at least one image",
+            "statusRequired": "Please select a listing status"
         },
         "success": {
             "title": "Success",
@@ -2098,7 +2424,25 @@
             "resumeNew": "New",
             "resumeSaveAndNew": "Save & new",
             "resumeContinue": "Continue editing",
-            "savedToProfile": "Draft saved to My Secondhand"
+            "savedToProfile": "Draft saved to My Secondhand",
+            "resumedBanner": "Your last unfinished draft has been restored",
+            "startNew": "New",
+            "oldDraftKept": "Previous draft kept in \"My second-hand\""
+        },
+        "uploader": {
+            "addImage": "Add image",
+            "takePhoto": "Take photo",
+            "chooseFromLibrary": "Choose from library",
+            "dragHint": "Long-press to drag and reorder — the first image is the cover",
+            "keepAtLeastOne": "At least one image must be kept",
+            "deleteImageTitle": "Delete image",
+            "deleteImageMessage": "Delete this image? This cannot be undone.",
+            "deleteFailed": "Delete failed"
+        },
+        "imageDedup": {
+            "title": "Image already exists",
+            "all": "The images you selected are identical to ones already on this listing, so they were reused instead of added.",
+            "some": "{{deduped}} of the {{total}} images you selected match existing ones and were reused automatically."
         }
     },
     "secondhandMultiple": {
@@ -2149,7 +2493,10 @@
             "uploadCoverFailed": "Failed to upload cover image",
             "allDelisted": "All selected items delisted",
             "partialDelisted": "Delisted {{success}}, {{failed}} failed",
-            "delistError": "Error occurred during delisting"
+            "delistError": "Error occurred during delisting",
+            "batchDelisted": "{{count}} item(s) delisted",
+            "batchDelistedPartial": "Delisted {{success}} item(s), {{skipped}} skipped",
+            "batchAllSkipped": "All selected items were skipped (possibly already delisted)"
         },
         "validation": {
             "groupNameRequired": "Please enter group name",
@@ -2162,7 +2509,9 @@
         "resumeTitle": "Resume unfinished group?",
         "resumeBody": "You have an unfinished secondhand group. Choose \"Continue editing\" to pick up where you left off, or \"Save & new\" — the current group stays in My Secondhand, available any time.",
         "resumeContinue": "Continue editing",
-        "resumeSaveAndNew": "Save & new"
+        "resumeSaveAndNew": "Save & new",
+        "resumedBanner": "Your last unfinished draft group has been restored",
+        "oldGroupKept": "Previous draft group kept in \"My second-hand\""
     },
     "admin": {
         "dashboard": {
@@ -2210,7 +2559,9 @@
             "unclaimed": {
                 "title": "Unclaimed tickets",
                 "viewAll": "View all unclaimed"
-            }
+            },
+            "hasPending": "There are actions requiring attention",
+            "noPending": "Nothing to handle right now"
         },
         "userManagement": {
             "title": "User Management",
@@ -2366,7 +2717,10 @@
             "approve": "Approve",
             "reject": "Reject",
             "approveConfirmTitle": "Confirm Approval",
-            "approveConfirmMessage": "Are you sure you want to approve this merchant's information update request?"
+            "approveConfirmMessage": "Are you sure you want to approve this merchant's information update request?",
+            "sourceSuffix": "(source)",
+            "aiSuffix": "(AI translated)",
+            "localizedPreview": "Multilingual preview"
         },
         "providerRequestDetail": {
             "status": {
@@ -2514,7 +2868,9 @@
                 "startFailed": "Failed to start test",
                 "statusFailed": "Failed to get test status",
                 "abortFailed": "Failed to abort test"
-            }
+            },
+            "concurrentUsersRange": "Concurrent users must be between 1 and 2000",
+            "durationRange": "Test duration must be between 5 and 60 seconds"
         },
         "complianceHold": {
             "entry": "Compliance holds",
@@ -2609,7 +2965,11 @@
                 "send": "Send",
                 "successTitle": "Ticket sent",
                 "emptyError": "Please enter a message"
-            }
+            },
+            "revokeBenefitTitle": "Revoke entitlement",
+            "revokeBenefitMessage": "Are you sure you want to revoke this entitlement?",
+            "revokeAction": "Revoke",
+            "daysPlaceholder": "Days (empty = permanent)"
         },
         "activityReview": {
             "subpages": {
@@ -2750,7 +3110,18 @@
             "reopen": "Reopen activity",
             "reopenConfirmTitle": "Reopen this activity?",
             "reopenConfirmDesc": "The activity will go live again with a new end date \"{{date}}\" and be exposed to users.",
-            "reopenSuccess": "Activity reopened"
+            "reopenSuccess": "Activity reopened",
+            "notePlaceholder": "Review notes, special exposure reasons, caveats, etc.",
+            "rejectReasonPlaceholder": "E.g. blurry images; content contains prohibited terms; …",
+            "forceOffline": "Force offline",
+            "forceOfflineConfirm": "Force this activity offline? It will be removed from exposure and archived.",
+            "forceOfflineDone": "Taken offline",
+            "approveConfirmDescUnlimited": "Budget: {{budget}}  /  Window: unlimited (all-day exposure)",
+            "dailyExposureWindow": "Daily exposure window",
+            "unlimitedTitle": "No time window (all-day exposure)",
+            "unlimitedSubtitle": "When enabled, this activity is not limited to a time window",
+            "startAt": "Start",
+            "endAt": "End"
         },
         "slotManagement": {
             "title": "Activity Slot Management",
@@ -2823,6 +3194,17 @@
             "refresh": "Refresh",
             "error": {
                 "fetchFailed": "Failed to load. Tap to retry."
+            },
+            "slotAnalytics": {
+                "title": "Slot performance",
+                "hint": "Delivery performance by slot (last 30 days of raw events, feed impressions only)",
+                "empty": "No slot data yet",
+                "impressions": "Impr.",
+                "reach": "Reach",
+                "conversion": "Conv.",
+                "deleted": "Deleted",
+                "disabled": "Disabled",
+                "noImpressions": "No delivery"
             }
         },
         "forceLogout": {
@@ -2861,7 +3243,11 @@
                 "provider": "All Merchants",
                 "user": "Regular Users",
                 "providerSpecific": "Merchant: {{id}}",
-                "regionSpecific": "Region: {{id}}"
+                "regionSpecific": "Region: {{id}}",
+                "permPrefix": "Permission: {{name}}",
+                "personal": "Personal",
+                "scopeProvider": "Merchant: {{id}}",
+                "scopeRegion": "Region: {{id}}"
             },
             "action": {
                 "detail": "Details",
@@ -2926,6 +3312,10 @@
                 "emptyRecipients": "No recipients",
                 "emptyRead": "No users have read it",
                 "emptyRows": "No stored rows"
+            },
+            "audienceFilter": {
+                "any": "All types",
+                "permPlaceholder": "Filter by permission (optional)"
             }
         },
         "socketStressTest": {
@@ -3109,6 +3499,952 @@
             "regionsSection": "Regions",
             "noRegions": "No regions to manage",
             "noRegionsDesc": "You can still use the admin tools you have access to below."
+        },
+        "providerRequest": {
+            "emptyList": "No applications yet",
+            "loadError": "Failed to load, please try again"
+        },
+        "blacklist": {
+            "title": "Blacklist",
+            "noPermission": "No permission to manage the blacklist",
+            "segList": "Blacklist",
+            "segPreview": "Risk scan",
+            "dimIp": "IP address",
+            "dimDevice": "Device",
+            "dimUser": "User",
+            "empty": "No active blocks",
+            "emptyNote": "If the database is unavailable the backend fails open and returns an empty list — bans are not enforced in that case.",
+            "wouldBlockCount": "Enabling enforcement would add {{n}} block(s) for this window",
+            "sourceManual": "Manual",
+            "sourceAuto": "Auto-detected",
+            "sourcePenalty": "Repeat offender",
+            "permanent": "Permanent",
+            "permanentBadge": "Permanent block",
+            "expiring": "Expiring",
+            "remaining": "{{time}} left",
+            "blockedAt": "Blocked {{time}}",
+            "operator": "By #{{id}}",
+            "remainDH": "{{d}}d {{h}}h",
+            "remainHM": "{{h}}h {{m}}m",
+            "remainM": "{{m}}m",
+            "unblock": "Unblock",
+            "unblockTitle": "Unblock",
+            "unblockBody": "Unblock {{id}}? Access is restored immediately.",
+            "unblockConfirm": "Unblock",
+            "unblockOk": "Unblocked",
+            "unblockFailed": "Unblock failed",
+            "addTitle": "Manual block",
+            "addSubmit": "Confirm block",
+            "addOk": "Blocked",
+            "addFailed": "Block failed",
+            "formIncomplete": "Enter both an identifier and a reason",
+            "reasonPlaceholder": "Reason (recorded in the audit trail — be specific)",
+            "duration": "Duration",
+            "ttl1h": "1 hour",
+            "ttl6h": "6 hours",
+            "ttl1d": "1 day",
+            "ttl7d": "7 days",
+            "ttlPerm": "Permanent",
+            "permWarning": "A permanent block never lifts itself. If this address is a carrier-shared egress, it will keep real users out indefinitely.",
+            "modeOff": "Automatic detection is off. The blacklist only holds manual and repeat-offender entries.",
+            "modeObserve": "Automatic detection is running in observe mode — verdicts are recorded to the audit trail only, no entries are created.",
+            "modeEnforce": "Automatic detection is enforcing — IPs above the threshold are blocked automatically (duration escalates with repeat offences, up to 7 days).",
+            "previewNote": "Runs exactly the same algorithm as the scheduled sweep over the recent window as a read-only scan — blocks nothing and writes no audit events. Review this before enabling enforcement.",
+            "previewFailed": "Risk scan failed",
+            "previewEmpty": "No traffic reached the threshold in this window.",
+            "previewSummary": "{{candidates}} candidates, {{decisions}} verdicts",
+            "vetoed": "Vetoed: {{reason}}",
+            "wouldBlock": "Would be blocked once enforcement is on",
+            "statsLoaded": "Loaded {{n}}",
+            "statsPermanent": "Permanent {{n}}",
+            "statsAuto": "Auto-sourced {{n}}",
+            "expiresAtLine": "Expires at {{time}}",
+            "ttlMismatch": "Should lift at {{time}}, but the enforcement cache has no TTL — it will not lift automatically and must be removed manually",
+            "userIdNumeric": "The user dimension only accepts a numeric user ID",
+            "formTooLong": "Identifier is limited to 128 characters and reason to 255 characters",
+            "win15m": "15 min",
+            "win1h": "1 hour",
+            "win6h": "6 hours",
+            "win24h": "24 hours",
+            "windowRange": "Window {{from}} – {{to}}",
+            "featTotal": "Total requests",
+            "featUnmatched": "Unmatched",
+            "featUnmatchedPaths": "Unmatched paths",
+            "featProbeHits": "Probe path hits",
+            "featAuthFail": "Auth failures",
+            "featServerError": "5xx",
+            "featSuccessAuthed": "Authenticated OK",
+            "featDistinctUsers": "Distinct users",
+            "featScannerUa": "Scanner UA",
+            "featMissingUa": "No UA",
+            "banTtl": "If blocked: {{time}}",
+            "priorOffences": "{{n}} prior offences (duration escalates per offence)",
+            "searchPlaceholder": "Search identifier / reason",
+            "alreadyBlocked": "Already blacklisted",
+            "banNow": "Add to blacklist",
+            "banNowConfirm": "Block",
+            "banNowConfirmTitle": "Block IP",
+            "banNowConfirmBody": "Add {{ip}} to the blacklist? Duration {{time}}.",
+            "banNowOk": "Added to blacklist",
+            "banNowFailed": "Block failed"
+        },
+        "scoreBreakdown": {
+            "title": "Score breakdown",
+            "finalScore": "Final score",
+            "notPublished": "Not published — excluded from ranking",
+            "budget": "Budget base",
+            "baseScore": "Quota base score",
+            "factorsTitle": "Remaining quota factors",
+            "remainingDays": "Days left",
+            "remainingImpression": "Impr. left",
+            "remainingReach": "Reach left",
+            "avgRemaining": "Avg remaining",
+            "freshness": "Freshness ×{{mult}}",
+            "freshnessTier": {
+                "day1": "Day 1",
+                "day2_3": "Days 1–3",
+                "stable": "Stable",
+                "not_published": "Not published"
+            },
+            "pinned": "Pinned",
+            "afterFreshness": "After freshness",
+            "pinnedBonus": "Pin bonus",
+            "cachedNote": "Cached score {{cached}}, syncs after next recalc (every 10 min)",
+            "loadFailed": "Failed to load",
+            "refresh": "Retry"
+        },
+        "tasksQueues": {
+            "title": "Scheduled Tasks & Queues",
+            "segTasks": "Scheduled Tasks",
+            "segQueues": "Queues",
+            "loading": "Loading…",
+            "loadFailedTitle": "Load Failed",
+            "loadFailedTasksDesc": "Could not fetch scheduled task status",
+            "loadFailedQueuesDesc": "Could not fetch queue status",
+            "tasksOverview": "Scheduler Overview",
+            "queuesOverview": "Queues Overview",
+            "engineTitle": "BullMQ Scheduler",
+            "redisConnected": "Redis connected",
+            "redisDisconnected": "Redis disconnected",
+            "taskCount": "{{count}} tasks",
+            "nodeLabel": "Node #{{id}}",
+            "kpiActive": "Active",
+            "kpiWaiting": "Waiting",
+            "kpiDelayed": "Delayed",
+            "kpiCompleted": "Completed",
+            "kpiFailed": "Failed",
+            "filterAll": "All",
+            "filterRunning": "Running",
+            "filterFailed": "Failed",
+            "statusRunning": "Running",
+            "statusLastFailed": "Last run failed",
+            "statusReady": "Healthy",
+            "statusPending": "Idle",
+            "runSuccess": "Success",
+            "runFailed": "Failed",
+            "runRunning": "Running",
+            "runSkipped": "Skipped",
+            "nextRun": "Next run",
+            "lastRun": "Last run",
+            "never": "Never",
+            "justNow": "Just now",
+            "soon": "Any moment",
+            "minutesAgo": "{{count}} min ago",
+            "hoursAgo": "{{count}} h ago",
+            "daysAgo": "{{count}} d ago",
+            "inSeconds": "in {{count}} s",
+            "inMinutes": "in {{count}} min",
+            "inHours": "in {{count}} h",
+            "inDays": "in {{count}} d",
+            "heavyLoad": "Heavy",
+            "sensitive": "Sensitive",
+            "manualTriggered": "Manually triggered",
+            "cronTriggered": "Cron triggered",
+            "notRunYet": "Not run yet",
+            "runNow": "Run now",
+            "runNowConfirmTitle": "Run Now",
+            "runNowConfirmMessage": "Run \"{{name}}\" now?\nIt will be enqueued as a manual job; check the run history for the result.",
+            "runNowConfirm": "Run",
+            "triggerFailedTitle": "Trigger Failed",
+            "triggerFailedDesc": "Failed to trigger the task",
+            "enqueuedTitle": "Enqueued",
+            "triggerErrorDesc": "An error occurred while triggering",
+            "recentRuns": "Recent Runs",
+            "noRuns": "No run history yet",
+            "noFailedTasks": "No failed tasks 🎉",
+            "noMatchingTasks": "No matching tasks",
+            "updatedAt": "Updated at {{time}}",
+            "redisUnavailable": "Redis unavailable — queue info cannot be fetched",
+            "noQueues": "No queues discovered yet",
+            "queueEmpty": "Queue is idle, no pending jobs",
+            "jobsHeader": "Job Details",
+            "jobSampleHint": "{{total}} pending in total, showing first {{shown}}",
+            "pendingBadge": "{{count}} pending",
+            "queueIdleBadge": "Idle",
+            "stateActive": "Active",
+            "stateWaiting": "Waiting",
+            "statePrioritized": "Prioritized",
+            "stateDelayed": "Delayed",
+            "stateFailed": "Failed",
+            "statePaused": "Paused",
+            "completedCount": "{{count}} completed",
+            "attempts": "{{count}} attempts",
+            "enqueuedAgo": "enqueued {{ago}}",
+            "viewPayload": "View payload",
+            "hidePayload": "Hide payload",
+            "stateCompleted": "Completed",
+            "completedAgo": "completed {{ago}}",
+            "failedAgo": "failed {{ago}}",
+            "viewReturn": "View result",
+            "hideReturn": "Hide result",
+            "recentCompletedHeader": "Recently Completed",
+            "completedSampleHint": "Showing latest {{shown}} ({{total}} kept in Redis)",
+            "queueNames": {
+                "scheduledTasks": "Scheduled tasks (default)",
+                "scheduledTasksHeavy": "Scheduled tasks (heavy)",
+                "pushNotifications": "Push notifications",
+                "translation": "AI translation",
+                "mediaProcessing": "Media processing",
+                "searchIndex": "Search index",
+                "achievement": "Achievements",
+                "activityPageEvents": "Activity page events",
+                "dataExports": "Data exports",
+                "expoPatchGen": "OTA patch generation",
+                "appclipSync": "App Clip sync"
+            },
+            "statusDisabled": "Disabled",
+            "disableConfirmTitle": "Disable scheduled task",
+            "disableConfirmMessage": "Disable \"{{name}}\"?\nIt will no longer run automatically (persists across restarts). Manual runs remain available.",
+            "disableConfirm": "Disable",
+            "taskEnabledToast": "Task enabled",
+            "taskDisabledToast": "Task disabled",
+            "toggleFailedTitle": "Toggle failed"
+        },
+        "logs": {
+            "title": "System Logs",
+            "noPermission": "No access to system logs",
+            "loadFailed": "Failed to load logs",
+            "segStream": "Stream",
+            "segOverview": "Overview",
+            "segPipeline": "Pipeline",
+            "filters": "Filters",
+            "resetAll": "Reset all",
+            "clear": "Clear",
+            "apply": "Done",
+            "customRange": "Custom",
+            "searchPlaceholder": "Search message / error / path",
+            "onlyErrors": "Errors only",
+            "slowOnly": "Slow only >1s",
+            "requestChain": "Request chain",
+            "viewChain": "View the full log chain for this request",
+            "noData": "No logs in this time range",
+            "presetMinutes": "Last {{count}} min",
+            "presetHours": "Last {{count}}h",
+            "presetDays": "Last {{count}}d",
+            "justNow": "just now",
+            "minutesAgo": "{{count}} min ago",
+            "hoursAgo": "{{count}}h ago",
+            "daysAgo": "{{count}}d ago",
+            "levelFilter": "Level",
+            "kindFilter": "Kind",
+            "instanceFilter": "Container",
+            "moduleFilter": "Module",
+            "statusFilter": "Status class",
+            "methodFilter": "HTTP method",
+            "minDuration": "Min duration",
+            "noLimit": "Any",
+            "userFilter": "User ID",
+            "userPlaceholder": "e.g. 1024",
+            "kpiTotal": "Total logs",
+            "kpiErrors": "Errors",
+            "kpiErrorRate": "5xx rate",
+            "kpiHttp": "HTTP requests",
+            "kpiMax": "Slowest",
+            "percentilesSkipped": "Too much data — percentiles were skipped to protect the database. Narrow the time range to see P50/P95/P99.",
+            "timeline": "Over time",
+            "bucketHint": "{{minutes}} min per bar",
+            "legendNormal": "Normal",
+            "legendWarn": "Warning",
+            "legendError": "Error",
+            "byModule": "By module",
+            "byInstance": "By container",
+            "byLevel": "By level",
+            "byStatus": "By status class",
+            "slowestRoutes": "Slowest endpoints",
+            "busiestRoutes": "Busiest endpoints",
+            "routeMeta": "{{count}} calls · max {{max}} · {{errors}} failed",
+            "topErrors": "Top errors",
+            "unnamedError": "Unnamed error",
+            "timingSplit": "total {{total}} · app {{app}} · pre {{pre}}",
+            "level": {
+                "debug": "DEBUG",
+                "info": "INFO",
+                "warn": "WARN",
+                "error": "ERROR",
+                "fatal": "FATAL"
+            },
+            "kind": {
+                "http": "HTTP",
+                "app": "App",
+                "task": "Scheduled task",
+                "queue": "Queue",
+                "security": "Security",
+                "system": "System"
+            },
+            "field": {
+                "route": "Route",
+                "path": "Path",
+                "context": "Source",
+                "instance": "Container",
+                "timing": "Timing split",
+                "size": "Response size",
+                "errorName": "Error",
+                "user": "User"
+            },
+            "pipe": {
+                "title": "Log pipeline",
+                "on": "Collecting",
+                "off": "Disabled",
+                "scopeNote": "In-memory and cumulative metrics belong to whichever container answered this request (it may differ on each refresh); the queue depth is shared across all containers.",
+                "respondingBy": "Answered by container",
+                "queueDepth": "Redis queue backlog",
+                "redisDown": "Redis unavailable",
+                "pending": "Buffered in memory (this container)",
+                "pushed": "Pushed total (this container)",
+                "inserted": "Persisted total (this container)",
+                "droppedMem": "Dropped on memory overflow",
+                "droppedRetry": "Dropped after retry",
+                "restored": "Requeued after failure",
+                "lastFlush": "Last flush",
+                "retention": "Retention days",
+                "tableRows": "Table rows (approx.)",
+                "oldest": "Oldest entry",
+                "lastError": "Last pipeline error"
+            },
+            "retentionWarnAll": "The selected {{days}}-day range exceeds the retention of lower log levels ({{levels}}); those levels only return data within their own retention window.",
+            "retentionWarnSelected": "The selected {{days}}-day range exceeds the retention of the selected levels ({{levels}}); those levels only return data within their own retention window.",
+            "responseBody": "Response body",
+            "redacted": "Sensitive fields redacted",
+            "responseBodyOff": "Error responses are recorded automatically. Successful responses are not captured by default (it would bloat the table and put live credentials in a queryable store) — set LOG_CAPTURE_BODY_ROUTES on the backend when you need them.",
+            "ipFilter": "Source IP",
+            "ipPlaceholder": "203.0.113.7 or 192.168.1. (whole range)",
+            "ipHint": "Ending with . or * matches the whole prefix range; wildcards are only allowed at the end.",
+            "topIps": "Top source IPs",
+            "tapToFilter": "Tap to filter",
+            "ipMeta": "{{users}} users · {{errors}} errors · {{last}}",
+            "anonymous": "anon",
+            "anonymousFull": "Anonymous (no signed-in user)",
+            "openUserHub": "User actions (detail / analytics / audit / ban)",
+            "kindAll": "All sources"
+        },
+        "reportDetail": {
+            "action": {
+                "none": "No penalty",
+                "warn": "Warning",
+                "mute": "Mute",
+                "banTemporary": "Temporary ban",
+                "banPermanent": "Permanent ban",
+                "deleteContent": "Delete content"
+            },
+            "confirmResolveTitle": "Confirm resolution",
+            "confirmResolveMessage": "Are you sure you want to resolve this report?",
+            "confirmDismissTitle": "Confirm dismissal",
+            "confirmDismissMessage": "Are you sure you want to dismiss this report?",
+            "resolvedToast": "Report resolved",
+            "dismissedToast": "Report dismissed",
+            "notFound": "Report not found",
+            "sectionInfo": "Report information",
+            "labelType": "Type",
+            "labelTargetId": "Target ID",
+            "labelReason": "Reason",
+            "labelTime": "Time",
+            "labelDescription": "Details",
+            "sectionUsers": "Related users",
+            "labelReporter": "Reporter",
+            "labelTarget": "Reported user",
+            "unknownUser": "Unknown",
+            "reporterHistoryTitle": "Reporter history — {{name}} #{{id}}",
+            "targetHistoryTitle": "Reported user history — {{name}} #{{id}}",
+            "sectionHandled": "Resolution details",
+            "labelHandler": "Handled by",
+            "labelAction": "Action taken",
+            "labelHandledAt": "Handled at",
+            "labelHandlerNote": "Handler note",
+            "sectionHandle": "Handle report",
+            "primaryPenalty": "Primary penalty",
+            "muteDaysLabel": "Mute duration: {{days}} days",
+            "banDaysLabel": "Ban duration: {{days}} days",
+            "minDays": "1 day",
+            "maxDays": "90 days",
+            "alsoDeleteContent": "Also delete the reported content",
+            "handlerNoteOptional": "Handler note (optional)",
+            "handlerNotePlaceholder": "Record the reason and details of the decision...",
+            "dismissButton": "Dismiss",
+            "resolveButton": "Resolve",
+            "preview": {
+                "sectionContent": "Reported content",
+                "deleted": "Content has been deleted or no longer exists",
+                "sectionProduct": "Reported product",
+                "viewProduct": "View product",
+                "seller": "Seller: {{name}}",
+                "statusLabel": "Status: {{status}}",
+                "sectionReview": "Reported review",
+                "anonymous": "Anonymous",
+                "provider": "Merchant: {{name}}",
+                "deletedByReport": "Removed after being reported",
+                "sectionChat": "Chat history (uploaded with the report)",
+                "chatNotice": "Chat content is for CoBook review purposes only",
+                "messageCount": "{{count}} messages in total",
+                "sectionUser": "Reported user profile",
+                "userStats": "Following {{follow}} · Followers {{follower}} · Products {{products}}",
+                "reportedTimes": "Reported {{count}} times",
+                "muted": "Muted",
+                "sectionActivity": "Reported activity page",
+                "platform": "Platform",
+                "reportedBadge": "Reported",
+                "staleMessage": "Original message deleted (snapshot text)",
+                "imageUnavailable": "Evidence image unavailable ({{reason}})",
+                "snapshotReason": {
+                    "sourceMissing": "source image deleted",
+                    "copyFailed": "snapshot failed",
+                    "unknown": "reason unknown"
+                },
+                "snapshotWarning": "Some evidence images could not be preserved",
+                "productRefLabel": "[Item] {{content}}",
+                "viewReview": "View Review",
+                "viewProvider": "View Merchant",
+                "sectionProvider": "Reported Merchant",
+                "reviewSnapshotsTitle": "Review Image Snapshots",
+                "reviewSnapshotPartial": "Some review images could not be preserved",
+                "reviewSnapshotFailed": "Review image snapshots could not be preserved",
+                "viewActivity": "View Activity Page",
+                "activityTakenDown": "Taken down",
+                "takedownActivity": "Also take down this activity page"
+            },
+            "history": {
+                "viewAll": "View all",
+                "empty": "No records",
+                "asReporter": "Reports filed",
+                "asTarget": "Reports received"
+            }
+        },
+        "systemHealth": {
+            "status": {
+                "healthy": "Healthy",
+                "degraded": "Degraded",
+                "unhealthy": "Unhealthy",
+                "warning": "Warning",
+                "notConfigured": "Not configured",
+                "error": "Error"
+            },
+            "loadFailed": "Failed to load system status",
+            "loading": "Loading system status...",
+            "currentNode": "Current node",
+            "nodeN": "Node {{n}}",
+            "uptimeValue": "Uptime: {{value}}",
+            "connectionsValue": "Connections: {{count}} / Authenticated: {{auth}}",
+            "stale": "Data is stale",
+            "poolValue": "Pool: {{active}}/{{total}} (idle: {{idle}}, waiting: {{waiting}})",
+            "cpuMetric": "CPU: {{usage}}% ({{cores}} cores)",
+            "memoryMetric": "Memory: {{usage}}% (Heap: {{heapUsed}}/{{heapTotal}} MB)",
+            "ecsTaskN": "Task {{n}}",
+            "ecsCpuMem": "CPU: {{cpu}} | Memory: {{memory}}",
+            "availabilityZone": "Availability zone: {{az}}",
+            "container": "Container: {{name}} ({{status}})",
+            "clusterOverview": "Cluster overview",
+            "totalNodes": "Total nodes",
+            "clusterUnavailable": "Cluster mode unavailable",
+            "clusterUnavailableMsg": "Redis is not connected; cluster health is unavailable",
+            "nodesSection": "Node status",
+            "currentNodeInfo": "Current node info",
+            "systemInfo": "System info",
+            "nodeIdLabel": "Node ID",
+            "environment": "Environment",
+            "uptimeLabel": "Uptime",
+            "hostname": "Hostname",
+            "platform": "Platform",
+            "servicesSection": "Service status",
+            "servicesSectionAgg": "Service status (aggregated over {{count}} nodes)",
+            "database": "Database",
+            "avgLatency": "Average latency: {{ms}} ms",
+            "nodesSuffix": "({{count}} nodes)",
+            "totalPoolValue": "Total pool: {{active}}/{{total}} (idle: {{idle}}, waiting: {{waiting}})",
+            "latency": "Latency: {{ms}} ms",
+            "connectedNodes": "Connected nodes: {{connected}}/{{total}}",
+            "adapter": "Adapter: {{status}}",
+            "enabled": "Enabled",
+            "notEnabled": "Disabled",
+            "connected": "Connected: {{value}}",
+            "totalSocketConnections": "Total socket connections: {{count}}",
+            "totalAuthUsers": "Total authenticated users: {{count}}",
+            "totalRooms": "Total rooms: {{rooms}} / Total SIDs: {{sids}}",
+            "socketConnections": "Socket connections: {{count}}",
+            "authUsers": "Authenticated users: {{count}}",
+            "redisAdapter": "Redis adapter: {{value}}",
+            "resourcesSection": "Resource usage",
+            "resourcesSectionAgg": "Resource usage (aggregated over {{count}} nodes)",
+            "avgCpuUsage": "Average CPU usage: {{value}}%",
+            "totalCores": "Total cores: {{count}}",
+            "cores": "Cores: {{value}}",
+            "cpuModel": "Model: {{model}}",
+            "loadAvg": "Load: {{value}}",
+            "memory": "Memory",
+            "avgSystemMemUsage": "Average system memory usage: {{value}}%",
+            "totalProcessHeap": "Total process heap: {{used}}/{{total}} MB",
+            "avgProcessHeap": "Average process heap: {{value}} MB",
+            "totalProcessRss": "Total process RSS: {{value}} MB",
+            "totalSystemMem": "Total system memory: {{used}}/{{total}} MB",
+            "processHeap": "Process heap: {{used}}/{{total}} MB",
+            "processRss": "Process RSS: {{value}} MB",
+            "systemMem": "System: {{used}}/{{total}} MB",
+            "ecsSection": "ECS cluster",
+            "ecsClusterName": "Cluster: {{name}}",
+            "desired": "Desired",
+            "running": "Running",
+            "pendingStart": "Pending",
+            "runningTasks": "Running tasks",
+            "ecsUnavailable": "ECS info unavailable",
+            "lastUpdate": "Last updated: {{time}}"
+        },
+        "achievementDefs": {
+            "strategy": {
+                "snapshotLabel": "Snapshot (default, safest)",
+                "snapshotHint": "Only updates the definition; unlocked users’ XP history is untouched",
+                "topUpOnlyLabel": "Top-up only (grant, never claw back)",
+                "topUpOnlyHint": "When XP increases, unlocked users receive the difference; decreases are not clawed back",
+                "fullRetroLabel": "Full retro (full backfill, use with caution)",
+                "fullRetroHint": "XP differences are applied both ways and may demote users. Requires the admin password"
+            },
+            "noImageSelected": "No image selected",
+            "uploadFailed": "Upload failed",
+            "pickImageFailed": "Failed to pick an image",
+            "saveFailed": "Save failed",
+            "savedTitle": "Saved",
+            "savedSummary": "Strategy: {{strategy}}\nAffected users: {{affectedUsers}}\nXP delta: {{xpDelta}}\nNewly unlocked: {{newlyUnlocked}}",
+            "windowBackfilled": "Window backfilled: {{count}}",
+            "reconcileTitle": "Trigger reconcile",
+            "reconcileMessage": "Fully reconciles all metrics. Choose Silent for the first launch backfill, or Normal for day-to-day fixes (sends socket notifications).",
+            "windowStartLabel": "Start (empty = no lower bound)",
+            "windowEndLabel": "End (empty = no upper bound)",
+            "confirmPasswordPlaceholder": "Required to confirm full_retro",
+            "passwordRequired": "The full retro strategy requires the admin password",
+            "xpInvalid": "XP must be a non-negative integer",
+            "thresholdInvalid": "The threshold must be a non-negative integer",
+            "sortOrderInvalid": "The sort order must be an integer",
+            "windowOrderInvalid": "The start time cannot be later than the end time"
+        },
+        "roles": {
+            "superAdmin": "Super admin",
+            "platformAdmin": "Platform admin",
+            "platformSupport": "Platform support",
+            "regionalDirector": "Regional director",
+            "regionalManager": "Regional manager",
+            "regionalOperator": "Regional operator",
+            "storeManager": "Store manager",
+            "storeEmployee": "Store employee",
+            "storeFinance": "Finance",
+            "storeViewer": "Viewer",
+            "salesRep": "Sales rep",
+            "user": "Regular user"
+        },
+        "roleScope": {
+            "platform": "Platform level",
+            "regional": "Regional level",
+            "provider": "Merchant level",
+            "user": "User level"
+        },
+        "scopeType": {
+            "global": "Global",
+            "region": "Region",
+            "user": "User level"
+        },
+        "searchUser": {
+            "placeholder": "Search by nickname, username, ID, email or phone"
+        },
+        "userDetail": {
+            "pickRoleRequired": "Please select a role",
+            "assignRoleFailed": "Failed to assign the role",
+            "removeRoleTitle": "Confirm removal",
+            "removeRoleMessage": "Are you sure you want to remove the user’s \"{{role}}\" role?",
+            "removeRoleConfirm": "Remove",
+            "removeRoleFailed": "Failed to remove the role",
+            "impersonateFailed": "Impersonation failed",
+            "cannotImpersonateSelf": "You cannot impersonate your own account",
+            "unbanTitle": "Lift ban",
+            "unbanMessage": "Are you sure you want to lift this user’s ban?",
+            "unmuteTitle": "Unmute",
+            "unmuteMessage": "Are you sure you want to unmute this user?",
+            "liftConfirm": "Confirm",
+            "unbanSuccess": "Ban lifted",
+            "unmuteSuccess": "User unmuted",
+            "pickRegionPlaceholder": "Select a region...",
+            "pickRolePlaceholder": "Select a role...",
+            "impersonateReasonLabel": "Impersonation reason (optional)",
+            "impersonateReasonPlaceholder": "E.g. the user reported they cannot view orders and it needs investigating",
+            "moderation": {
+                "warnTitle": "Send warning",
+                "muteTitle": "Mute user"
+            },
+            "modNotePlaceholder": "Record the reason for this action..."
+        },
+        "systemMessage": {
+            "audience": {
+                "all": {
+                    "label": "All users",
+                    "desc": "Every registered user"
+                },
+                "admin": {
+                    "label": "Admins",
+                    "desc": "Platform administrators"
+                },
+                "regionalManager": {
+                    "label": "All regional managers",
+                    "desc": "Every regional manager"
+                },
+                "regionSpecific": {
+                    "label": "Specific regions",
+                    "desc": "All users within the selected regions"
+                },
+                "provider": {
+                    "label": "All merchants",
+                    "desc": "All merchant staff"
+                },
+                "providerSpecific": {
+                    "label": "Specific merchants",
+                    "desc": "Staff of the selected merchants"
+                },
+                "user": {
+                    "label": "Regular users",
+                    "desc": "Neither merchants nor admins"
+                },
+                "selected": {
+                    "label": "Selected users",
+                    "desc": "Manually pick the recipients"
+                }
+            },
+            "countUsers": "{{count}} users",
+            "countProviders": "{{count}} merchants",
+            "countRegions": "{{count}} regions",
+            "confirmSendTitle": "Confirm sending",
+            "confirmSendMessage": "Will be sent to: {{target}}",
+            "sendAction": "Send",
+            "fetchUsersFailed": "Failed to fetch users",
+            "sent": "Message sent",
+            "sendError": "An error occurred while sending",
+            "titlePlaceholder": "Title",
+            "editBody": "Edit body",
+            "bodyPlaceholder": "Body content...",
+            "tapToEditBody": "Tap to edit the body content...",
+            "navLinkPlaceholder": "Navigation link (optional)",
+            "imageUrlPlaceholder": "Image URL (optional)",
+            "searchUsersPlaceholder": "Search users...",
+            "searchProvidersPlaceholder": "Search merchant names..."
+        },
+        "screens": {
+            "systemMessageManagement": "System messages",
+            "roleConfig": "Role permission configuration",
+            "roleManagement": "System role management",
+            "roleDetail": "Role details",
+            "systemStatus": "System status",
+            "reportDetail": "Report details",
+            "moderationHistory": "Moderation history",
+            "categoryManagement": "Category management",
+            "materials": "Materials",
+            "batchDetail": "Batch details",
+            "editCategory": "Edit category",
+            "newCategory": "New category",
+            "subscriptionManagement": "Subscription plans",
+            "bannerManagement": "Home banner management",
+            "reviewDetail": "Review details",
+            "achievementDefs": "Achievement definitions",
+            "userAchievements": "User achievements panel",
+            "scorecardTemplatePreview": "Scorecard template preview",
+            "unbatchedMaterials": "Unbatched materials",
+            "providerMaterials": "Merchant materials"
+        },
+        "systemRoles": {
+            "loadListFailed": "Failed to load the role list",
+            "loadDetailFailed": "Failed to load role details",
+            "loadConfigFailed": "Failed to load the configuration",
+            "noChanges": "No changes to save",
+            "permissionsUpdated": "Permissions updated",
+            "savePermissionsFailed": "Failed to save permissions",
+            "configSaved": "Configuration saved",
+            "saveConfigFailed": "Failed to save the configuration",
+            "resetTitle": "Confirm reset",
+            "resetMessage": "Are you sure you want to discard all unsaved changes?",
+            "resetConfirm": "Reset",
+            "syncTitle": "Confirm sync",
+            "syncMessage": "Are you sure you want to sync the current {{role}} permission configuration to all merchants?\n\nThis will update the {{role}} role permissions of every merchant and cannot be undone.",
+            "syncConfirm": "Sync",
+            "syncSuccess": "Sync completed",
+            "syncedRoles": "Synced {{count}} roles",
+            "syncFailed": "Sync failed"
+        },
+        "permCategory": {
+            "store": "Store management",
+            "points": "Points management",
+            "voucher": "Voucher management",
+            "provider": "Merchant platform",
+            "product": "Product management",
+            "user": "User management",
+            "order": "Order management",
+            "message": "Message management",
+            "review": "Review management",
+            "report": "Reporting",
+            "region": "Region management",
+            "wallet": "Wallet management",
+            "notification": "Notification management",
+            "system": "System management",
+            "providerManagement": "Merchant management",
+            "scorecardOperations": "Scorecard operations",
+            "dataAnalytics": "Data analytics",
+            "userManagement": "User management",
+            "systemShort": "System"
+        },
+        "category": {
+            "loadListFailed": "Failed to load categories",
+            "disableAction": "Disable",
+            "enableAction": "Enable",
+            "confirmActionTitle": "Confirm: {{action}}",
+            "confirmActionMessage": "Are you sure you want to {{action}} this category?",
+            "nameKeyRequired": "nameKey cannot be empty",
+            "updated": "Category updated",
+            "created": "Category created",
+            "nameKeyPlaceholder": "E.g. japanese, cocktailBar"
+        },
+        "testUsers": {
+            "inputErrorTitle": "Invalid input",
+            "countInvalid": "Please enter a valid number of users",
+            "createdTitle": "Created",
+            "createdDesc": "Successfully created {{count}} test users",
+            "createError": "An error occurred while creating test users",
+            "createFailed": "Creation failed",
+            "deleteConfirmMessage": "Are you sure you want to delete all test users? This cannot be undone.",
+            "deletedTitle": "Deleted",
+            "deletedDesc": "Successfully deleted {{count}} test users",
+            "deleteError": "An error occurred while deleting test users",
+            "deleteFailed": "Deletion failed",
+            "countPlaceholder": "Enter a quantity",
+            "addButton": "Add test users",
+            "deleteAllButton": "Delete all test users"
+        },
+        "activityPages": {
+            "confirmArchive": "Archive this page?",
+            "confirmDelete": "Delete this page?"
+        },
+        "activityList": {
+            "resumed": "Resumed",
+            "review": "Review",
+            "adjust": "Adjust"
+        },
+        "userAchievements": {
+            "grantFailed": "Grant failed",
+            "granted": "Granted \"{{name}}\" (+{{xp}} XP)",
+            "alreadyOwned": "The user already owns \"{{name}}\"",
+            "revokeFailed": "Revocation failed",
+            "revokedTitle": "Revoked",
+            "revokedDesc": "\"{{name}}\" has been revoked and its XP clawed back",
+            "notePlaceholder": "E.g. translated 200+ strings on Weblate",
+            "confirmRevokeTitle": "Confirm revocation",
+            "confirmRevokeMessage": "Are you sure you want to revoke \"{{name}}\"?",
+            "revokeAction": "Revoke",
+            "pickAchievementRequired": "Please select an achievement to grant"
+        },
+        "banner": {
+            "linkType": {
+                "none": "None",
+                "activity": "Activity",
+                "provider": "Merchant",
+                "url": "Link"
+            },
+            "imageUploaded": "Image uploaded",
+            "deleteConfirm": "Delete this banner?",
+            "titlePlaceholder": "Enter a title",
+            "searchActivityPlaceholder": "Search activity titles..."
+        },
+        "materials": {
+            "notFound": "Material not found",
+            "nfcPrompt": "Hold the back of your phone near the NFC material",
+            "nfcUnsupported": "This device does not support NFC",
+            "nfcNoCode": "No CoBook material detected",
+            "nfcNoCodeDesc": "Please make sure it is a CoBook NFC tag",
+            "nfcReadFailed": "NFC read failed, please try again",
+            "countRange": "Quantity must be between 1 and 1000",
+            "generated": "Generated {{count}} materials",
+            "batchLinksTitle": "Links for this batch",
+            "batchLinksCopied": "{{count}} links copied",
+            "linkCopied": "Link copied",
+            "generateFailed": "Generation failed",
+            "codePlaceholder": "Enter or paste a material code",
+            "batchNameUpdated": "Batch name updated",
+            "updateFailed": "Update failed",
+            "batchEmpty": "This batch has no materials",
+            "exportFailed": "Export failed",
+            "exported": "Exported",
+            "batchLabelPlaceholder": "E.g. \"2026Q3 store NFC\"",
+            "pickProviderFirst": "Search and select a merchant first, or enter the merchant UUID",
+            "bound": "Bound",
+            "bindFailed": "Binding failed",
+            "unbound": "Unbound",
+            "unbindFailed": "Unbinding failed",
+            "statusUpdated": "Status updated",
+            "resyncTriggered": "Resync triggered",
+            "triggerFailed": "Trigger failed",
+            "providerSearchPlaceholder": "Type a merchant name to search",
+            "status": {
+                "unassigned": "Unassigned",
+                "active": "Bound",
+                "disabled": "Disabled",
+                "lost": "Reported lost",
+                "damaged": "Damaged",
+                "retired": "Retired"
+            },
+            "type": {
+                "qr": "QR code",
+                "nfc": "NFC",
+                "appclipCode": "App Clip Code",
+                "combo": "Combo"
+            },
+            "scanAction": "Scan to bind / view",
+            "nfcAction": "NFC bind / view",
+            "generateAction": "Generate materials",
+            "lookupAction": "View",
+            "batchesTitle": "Batches (tap to see codes & export CSV; long-press to dissolve / delete)",
+            "emptyList": "No materials yet — generate some above",
+            "searchBatchesPlaceholder": "Search batch name",
+            "noBatchMatches": "No matching batches",
+            "unnamedBatch": "Unnamed batch",
+            "sort": {
+                "recent": "Recent",
+                "name": "Name",
+                "total": "Count",
+                "unassigned": "Unassigned"
+            },
+            "sumTotal": "{{count}} total",
+            "sumActive": "{{count}} bound",
+            "sumUnassigned": "{{count}} unassigned",
+            "sumDisabled": "{{count}} disabled",
+            "sumLost": "{{count}} lost",
+            "unbatchedTitle": "No batch",
+            "unbatchedSubtitle": "Materials generated standalone or moved out of a batch",
+            "unbatchedEmpty": "No unbatched materials",
+            "typeLabel": "Type",
+            "countLabel": "Count (1–1000)",
+            "generateTarget": "Generate into",
+            "targetNewBatch": "New batch",
+            "targetExistingBatch": "Existing batch",
+            "targetStandalone": "No batch",
+            "batchNoteLabel": "Batch note (optional)",
+            "generateHint": "After generating, the /c/{code} links pop up for sharing to print / App Clip Code generation. You can also export CSV from the batch details.",
+            "generateSubmit": "Generate",
+            "pickBatchFirst": "Pick a target batch first",
+            "noBatchesOfType": "No batches of this type",
+            "dissolveAction": "Dissolve batch",
+            "dissolveConfirmTitle": "Dissolve batch?",
+            "dissolveConfirmMsg": "The {{count}} materials will move to “No batch”. The materials themselves are unaffected.",
+            "dissolved": "Dissolved — {{count}} materials moved to “No batch”",
+            "deleteBatchAction": "Delete batch",
+            "deleteBatchConfirmTitle": "Delete batch?",
+            "deleteBatchConfirmMsg": "Permanently deletes the {{count}} materials in this batch (all unassigned / retired); printed links will stop working forever. This cannot be undone.",
+            "deleteBatchBlocked": "Batch contains active / disabled / lost / damaged materials and cannot be deleted; unbind or retire them first, or dissolve instead",
+            "deletedBatch": "Deleted batch and {{count}} materials",
+            "renameTitle": "Batch name / note",
+            "renameHint": "tap title to rename",
+            "totalCount": "{{count}} materials",
+            "pickBatch": "Pick a batch",
+            "moveAction": "Move to batch",
+            "moveOutAction": "Remove from batch",
+            "moved": "Moved {{count}} materials",
+            "moveFailed": "Move failed",
+            "typeMismatch": "Material type does not match the target batch",
+            "mixedTypesCantMove": "Selected materials have mixed types — move them separately",
+            "deleteMaterialAction": "Delete",
+            "deleteMaterialConfirmTitle": "Delete material?",
+            "deleteMaterialConfirmMsg": "Code {{code}} will be permanently deleted and its link will stop working forever. Only unassigned or retired materials can be deleted.",
+            "deleteSelectedConfirmTitle": "Delete selected materials?",
+            "deleteSelectedConfirmMsg": "Permanently deletes {{count}} unassigned / retired materials; their links will stop working forever.",
+            "deletedMaterial": "Deleted",
+            "deletedCount": "Deleted {{count}} materials",
+            "deleteFailed": "Delete failed",
+            "notUnassignedCantDelete": "Only unassigned or retired materials can be deleted — unbind or retire first",
+            "multiSelect": "Select",
+            "selectedCount": "{{count}} selected",
+            "searchInBatch": "Search code / note / merchant",
+            "filterAll": "All",
+            "sortCode": "By code",
+            "sortNewest": "Newest",
+            "sortScans": "Most scans",
+            "noMatches": "No matching materials",
+            "addMaterials": "Add materials",
+            "addGenerate": "Generate new materials into this batch",
+            "addGenerateStandalone": "Generate new materials (no batch)",
+            "exportCsv": "Export CSV",
+            "scanShort": "{{count}} scans",
+            "scanTotal": "{{count}} total scans",
+            "notBound": "Not bound to a merchant yet",
+            "bindSearchLabel": "Bind to merchant (search by name, all regions)",
+            "pickedProvider": "Selected: {{name}}",
+            "orManualUuid": "Or enter merchant UUID",
+            "positionLabel": "Location note (optional, e.g. “Front desk / Table 5”)",
+            "bindAction": "Bind / rebind",
+            "unbindAction": "Unbind (recycle)",
+            "disableAction": "Disable",
+            "lostAction": "Mark lost",
+            "restoreAction": "Restore",
+            "resyncAction": "Resync",
+            "noProviderError": "Merchant UUID not found",
+            "appclip": {
+                "pending": "card pending sync",
+                "synced": "card synced",
+                "error": "card sync failed"
+            },
+            "sumDamaged": "{{count}} damaged",
+            "sumRetired": "{{count}} retired",
+            "damageAction": "Damaged",
+            "retireAction": "Retire",
+            "retireConfirmTitle": "Retire material?",
+            "retireConfirmMsg": "Code {{code}} will be retired: the link stops working immediately and it can no longer be bound (restorable). Retired materials can be deleted for cleanup.",
+            "retiredCantBind": "This material is retired and cannot be bound; restore it first to reuse",
+            "searchByProvider": "View materials by merchant",
+            "noProviderMatches": "No matching merchants",
+            "providerMaterialsSubtitle": "{{count}} materials bound to this merchant"
+        },
+        "scorecardPreview": {
+            "noLevel": "No level (neutral)",
+            "providerName": "Merchant name",
+            "cardName": "Card name",
+            "logoUrl": "Logo URL (optional)",
+            "primaryColor": "Primary color (HEX)",
+            "accentColor": "Accent color (HEX)",
+            "currentPoints": "Current points",
+            "qrContent": "QR content",
+            "qrPlaceholder": "SCORECARD:xxx or a URL",
+            "maxPoints": "Maximum points (needed for a full card)"
+        },
+        "audience": {
+            "idsExample": "E.g. {{example}}",
+            "lookbackDays": "Lookback days",
+            "categoryIdsPlaceholder": "Category IDs, e.g. {{example}}",
+            "windowDays": "Time window (days)",
+            "minDays": "Min (days)",
+            "maxDays": "Max (days)",
+            "days": "Days",
+            "latitude": "Latitude",
+            "longitude": "Longitude",
+            "radiusKm": "Radius (km)",
+            "minPoints": "Minimum points",
+            "minVouchers": "Minimum vouchers"
+        },
+        "subscription": {
+            "invalidNumber": "Please enter a valid number",
+            "cacheRefreshed": "Cache refreshed"
+        },
+        "permissionAudit": {
+            "title": "Permission change audit log",
+            "actor": "Actor: {{name}} (#{{id}})",
+            "target": "Target: {{name}} (#{{id}})",
+            "empty": "No permission changes yet"
         }
     },
     "unknown": {
@@ -3155,7 +4491,8 @@
             "windowClosedTitle": "Outside redemption hours",
             "windowOpensAt": "Opens at {{time}}",
             "refundHint": "Need to cancel this voucher? Please contact the merchant — your points will be refunded to your scorecard.",
-            "selectHint": "Select a voucher to view"
+            "selectHint": "Select a voucher to view",
+            "refundOnExpiryLabel": "Refund on expiry"
         },
         "list": {
             "showQRCode": "Show QR",
@@ -3220,7 +4557,9 @@
             "term4": "Points will be refunded after expiry",
             "viewProvider": "Go to Provider to Redeem",
             "redeemNow": "Redeem Now",
-            "usableWindowTerm": "After claiming, redeemable in-store only {{window}} daily (merchant's timezone)"
+            "usableWindowTerm": "After claiming, redeemable in-store only {{window}} daily (merchant's timezone)",
+            "term4Refund": "Expires automatically if unused — points paid will be refunded",
+            "term4NoRefund": "Expires automatically if unused — points paid will not be refunded"
         },
         "manage": {
             "defaultName": "New voucher",
@@ -3240,8 +4579,51 @@
             "usableWindowLabel": "Daily redeemable hours",
             "usableWindowHint": "Only redeemable in-store during this window (merchant's timezone); does not affect claiming",
             "usableWindowOvernight": "Overnight: end time is the next day",
-            "usableWindowEqual": "Start and end time cannot be the same"
-        }
+            "usableWindowEqual": "Start and end time cannot be the same",
+            "refundOnExpiryLabel": "Refund points on expiry",
+            "refundOnExpiryHint": "When enabled, points paid for this voucher are automatically refunded to the customer if it expires unused",
+            "refundOnExpiryLocked": "Refund-on-expiry is a Standard-and-above feature; upgrade your subscription to enable it for this voucher",
+            "validityLabel": "Valid for:",
+            "validityUnit": "days (7–90)",
+            "redeemedCount": "Redeemed: {{times}} times",
+            "finishSorting": "Finish Sorting",
+            "sortHint": "Long-press and drag items to adjust the default display order",
+            "unpublished": "Unpublished",
+            "previewAsCustomer": "Customer preview",
+            "previewHint": "This is how the voucher appears in the customer's \"My Vouchers\" after redemption (for reference only)",
+            "publishNeedsInfo": "Add a name and an image before listing this voucher",
+            "draftCreated": "Draft created (unpublished) — add a name and image, then list it",
+            "addVoucher": "Add voucher",
+            "addImage": "Tap to add an image",
+            "namePlaceholder": "Voucher name",
+            "descPlaceholder": "Voucher description",
+            "validityNoEffectTitle": "Notice",
+            "validityNoEffect": "This change won't affect vouchers already issued",
+            "selectTypeTitle": "Choose voucher type",
+            "searchPlaceholder": "Search vouchers",
+            "deleteConfirmTitle": "Confirm deletion",
+            "deleteConfirmMessage": "Delete this voucher?",
+            "deleteSuccessTitle": "Deleted",
+            "deleteSuccessDesc": "The voucher has been deleted",
+            "cannotDeleteTitle": "Cannot delete",
+            "cannotDeleteMessage": "This voucher is linked to the following points products and cannot be deleted:\n\n{{products}}\n\nUnlink the products first, then delete the voucher.",
+            "deleteFailedTitle": "Delete failed",
+            "deleteFailedMessage": "Couldn't delete the voucher, please try again later",
+            "imagePickFailedTitle": "Image selection failed",
+            "unknownError": "Unknown error"
+        },
+        "badge": {
+            "new": "New"
+        },
+        "tabs": {
+            "all": "All",
+            "active": "Active",
+            "used": "Used",
+            "expired": "Expired",
+            "expiredLong": "Expired / Refunded"
+        },
+        "unnamed": "Untitled voucher",
+        "noDescription": "No description"
     },
     "completeSocialProfile": {
         "usernameExists": "The username already exists, please choose a different one",
@@ -3421,7 +4803,8 @@
         "discovery": {
             "providers": "Popular merchants",
             "products": "Latest finds"
-        }
+        },
+        "removeFilter": "Remove filter"
     },
     "systemMessage": {
         "title": "System Messages",
@@ -3544,7 +4927,8 @@
         "legacyBannerText": "Legacy main categories detected, tap to fix",
         "legacyAlertTitle": "Category update required",
         "legacyAlertMessage": "You previously selected main categories \"{{categories}}\". Only subcategories are allowed now. Tap confirm to remove them, then re-select the appropriate subcategories.",
-        "legacyAlertConfirm": "Confirm removal"
+        "legacyAlertConfirm": "Confirm removal",
+        "selectHintSingle": "You can select only 1 category"
     },
     "feedback": {
         "list": {
@@ -3993,7 +5377,33 @@
             "message": "Message",
             "provider": "Merchant",
             "activity": "Activity Page"
-        }
+        },
+        "picker": {
+            "title": "Select messages to report",
+            "subtitle": "The messages you select are submitted to our moderation team as evidence. You can also report without picking any message.",
+            "selectedCount": "{{count}}/{{max}} selected",
+            "limitReached": "You can select at most {{max}} messages",
+            "continue": "Continue ({{count}} selected)",
+            "skip": "Report this user without picking messages",
+            "empty": "No messages to select in this conversation yet",
+            "you": "You",
+            "unknownSender": "Other party",
+            "imageSummary": "[Image]",
+            "productSummary": "[Item] {{title}}",
+            "untitled": "Untitled item",
+            "offerSummary": "[Offer] {{amount}}",
+            "notDelivered": "Not delivered — cannot be used as evidence",
+            "anchor": "Start",
+            "selectToHere": "Select to here",
+            "hintPickFirst": "Tap a message to set the start",
+            "clear": "Clear",
+            "rangeTooLong": "This range has {{count}} messages — you can select at most {{max}}",
+            "endHere": "Up to here",
+            "hintSelectToHere": "Tap “Select to here” to pick evidence",
+            "outOfRange": "Beyond the {{max}}-message limit",
+            "subtitleSelectToHere": "Tap a message to select everything from the newest one down to it as evidence, or report without picking messages."
+        },
+        "selectedMessagesHint": "{{count}} message(s) attached as evidence"
     },
     "block": {
         "blockUser": "Block User",
@@ -4031,22 +5441,29 @@
     "emptyState": {
         "secondhand": {
             "title": "No products yet",
-            "description": "No second-hand items available, browse around"
+            "description": "No second-hand items available, browse around",
+            "action": "List an item"
         },
         "watchlist": {
             "title": "Watchlist is empty",
-            "description": "Add items you like to your watchlist"
+            "description": "Add items you like to your watchlist",
+            "action": "Browse listings"
         },
         "searchNoResults": {
             "title": "No matching products found",
-            "description": "Try different keywords or filters"
+            "description": "Try different keywords or filters",
+            "action": "Browse all"
         },
         "voucher": {
             "title": "No vouchers yet",
-            "description": "Tap the \"+\" button to add one"
+            "description": "Tap the \"+\" button to add one",
+            "action": "Create a voucher"
         },
         "voucherSearch": {
             "title": "No matching vouchers found"
+        },
+        "myVouchers": {
+            "action": "Browse merchants"
         }
     },
     "captcha": {
@@ -4196,7 +5613,73 @@
             "adminPublish": "Publish now",
             "adminRepublish": "Save & publish",
             "confirmAdminPublish": "Publish this activity page directly (no review, still editable after)?",
-            "adminPublished": "Published"
+            "adminPublished": "Published",
+            "unsavedTitle": "Discard new page?",
+            "unsavedBody": "Your changes aren't saved and will be lost if you go back.",
+            "discard": "Discard",
+            "sectionTitle": "Section title",
+            "sectionSubtitle": "Section subtitle",
+            "sectionTitlePlaceholder": "Enter title (optional)",
+            "pageTitlePlaceholder": "Enter title",
+            "pageDescriptionPlaceholder": "Enter description (optional)",
+            "richTextContent": "Rich text content",
+            "richTextPlaceholder": "Tap to edit rich text (multilingual)",
+            "itemCustomLabel": "Custom label",
+            "itemCustomLabelPlaceholder": "Override default title (optional)",
+            "itemCustomDescription": "Custom description",
+            "itemCustomDescriptionPlaceholder": "Override default description (optional)",
+            "startDateRequired": "Please select the start time",
+            "endDateRequired": "Please select the end time",
+            "endDateInPast": "End time must be later than now, please reselect",
+            "endDateBeforeStart": "End time must be after start time",
+            "sectionInvalid": "Block #{{index}} \"{{type}}\" has empty required fields; please complete before submitting",
+            "resubmitForReview": "Resubmit for review",
+            "submitNeedsDates": "Please fill in start and end times first",
+            "submitNeedsValidDates": "End time must be later than now and after start time",
+            "pausedHint": "Paused. You can keep editing; to resume exposure, tap \"Submit for review\" below",
+            "tabRedemption": "Redemption",
+            "tabVoucher": "Voucher",
+            "tabProduct": "Product",
+            "tabProvider": "Merchant",
+            "searchEntityPlaceholder": "Search {{target}}...",
+            "imageUploadFailed": "Image upload failed",
+            "uploadedCount": "Uploaded {{success}}/{{total}} images",
+            "confirmDeleteItem": "Delete this item?",
+            "sectionNotFound": "Section not found",
+            "collapsePreview": "Hide Preview",
+            "livePreview": "Live Preview",
+            "preview": "Preview",
+            "noEditableConfig": "This section type has no editable settings",
+            "confirmDeleteImage": "Delete this image?",
+            "noImageAddBelow": "No images yet — tap below to add",
+            "noImage": "No image",
+            "uploadingProgress": "Uploading {{progress}}%",
+            "batchUpload": "Batch Upload",
+            "linkedItemsCount": "Linked Items ({{count}})",
+            "noLinkedItems": "No linked items",
+            "noResults": "No results found",
+            "enterKeyword": "Enter a keyword to search",
+            "sectionList": "Sections",
+            "itemCount": "{{count}} items",
+            "noSections": "No sections yet — tap the button above to add",
+            "previewPage": "Preview Page",
+            "confirmDeleteSection": "Delete this section?",
+            "pleaseSelect": "Select",
+            "boolOn": "On",
+            "boolOff": "Off",
+            "dateTapToSelect": "Tap to select",
+            "urlSchemeError": "Link must start with http:// or https://",
+            "openMapPicker": "Pick on map",
+            "geoLatitude": "Latitude",
+            "geoLongitude": "Longitude",
+            "geoZoom": "Zoom",
+            "entityTypeRedemption": "Redemption",
+            "entityTypeProduct": "Product",
+            "entityTypeProvider": "Merchant",
+            "entityRefSelected": "Selected {{type}} (tap to change)",
+            "entityRefSelect": "Select {{type}}",
+            "addListItem": "Add {{label}}",
+            "pointsProgressAutoModeHint": "The tier goal automatically targets the user’s next level; a congratulation shows at max level"
         },
         "sectionType": {
             "hero_banner": "Banner",
@@ -4393,7 +5876,8 @@
             "advancedLocked": "User Profile + Hourly Analytics (Upgrade to Unlock)",
             "advancedLockedHint": "Upgrade to Premium or Business plan to view more detailed data",
             "noTrendData": "No trend data yet",
-            "loadFailed": "No data or failed to load"
+            "loadFailed": "No data or failed to load",
+            "detailViews": "Detail Views"
         },
         "list": {
             "viewAnalytics": "View Analytics",
@@ -4442,6 +5926,345 @@
             "createdAt": "Created",
             "updatedAt": "Updated",
             "viewCount": "Views"
+        },
+        "countdown": {
+            "days": "d",
+            "hours": "h",
+            "minutes": "m",
+            "seconds": "s"
+        },
+        "flashSale": {
+            "upcoming": "Starting soon",
+            "live": "On sale",
+            "ended": "Ended",
+            "stockLimit": "Only {{count}} left",
+            "revealHint": "Revealed at start",
+            "notStarted": "Not started",
+            "buyNow": "Buy now",
+            "untilStart": "Starts in",
+            "untilEnd": "Ends in",
+            "finished": "Event ended"
+        },
+        "pointsProgress": {
+            "maxLevel": "Congrats! You're at the top tier {{name}}",
+            "reached": "{{target}} reached — redeem now",
+            "needMore": "{{needed}} more points to redeem {{target}}",
+            "current": "Current",
+            "target": "Target",
+            "needed": "Needed",
+            "viewDetail": "View",
+            "viewAllTiers": "View all tiers",
+            "placeholderProviderOnly": "Points progress (merchant activity pages only)",
+            "placeholderLogin": "Points progress (log in to see your progress)",
+            "placeholderNoCard": "Points progress (no loyalty card with this merchant yet)",
+            "placeholderNoData": "Points progress (no data)"
+        },
+        "loyaltyTier": {
+            "totalPoints": "{{points}} total points",
+            "toNext": "{{points}} points to {{name}}",
+            "discountBenefit": "{{percent}}% off over {{spend}}",
+            "bonusBenefit": "{{points}} pts over {{spend}}",
+            "viewAll": "View all benefits",
+            "placeholderProviderOnly": "Membership tier (merchant activity pages only)",
+            "placeholderLogin": "Membership tier (log in to see your tier)",
+            "placeholderNoCard": "Membership tier (no loyalty card with this merchant yet)"
+        },
+        "voucherTypes": {
+            "cash": "Cash",
+            "discount": "Discount",
+            "gift": "Gift",
+            "service": "Service",
+            "default": "Item"
+        },
+        "pointsUnit": "pts",
+        "schema": {
+            "_shared": {
+                "alignment": {
+                    "left": "Left",
+                    "center": "Center",
+                    "right": "Right"
+                },
+                "listLayout": {
+                    "list": "List",
+                    "grid": "Grid",
+                    "horizontal_scroll": "Horizontal scroll"
+                }
+            },
+            "hero_banner": {
+                "layout": "Layout",
+                "layout_opt": {
+                    "overlay": "Overlay",
+                    "image_top": "Image top, text below",
+                    "image_bottom": "Text top, image below"
+                },
+                "backgroundColor": "Background color",
+                "height": "Height",
+                "overlayOpacity": "Overlay opacity",
+                "overlayOpacity_hint": "0 to 1, visible only in overlay layout",
+                "textAlignment": "Text alignment",
+                "textPosition": "Text position",
+                "textPosition_opt": {
+                    "top": "Top",
+                    "center": "Center",
+                    "bottom": "Bottom"
+                },
+                "ctaText": "Button text",
+                "ctaText_ph": "Join now (leave empty to hide)",
+                "ctaLink": "Button link"
+            },
+            "notice_bar": {
+                "text": "Notice text",
+                "text_ph": "328 people have already joined",
+                "iconName": "Icon",
+                "backgroundColor": "Background color",
+                "textColor": "Text color",
+                "scrollable": "Marquee scroll",
+                "speed": "Time per loop",
+                "speed_unit": "sec",
+                "link": "Tap-through link",
+                "link_ph": "Optional https://..."
+            },
+            "video": {
+                "provider": "Video source",
+                "provider_opt": {
+                    "direct": "Direct link",
+                    "youtube": "YouTube",
+                    "bilibili": "Bilibili"
+                },
+                "url": "Video link",
+                "posterUrl": "Poster image link",
+                "posterUrl_ph": "Optional https://...",
+                "aspectRatio": "Aspect ratio",
+                "aspectRatio_opt": {
+                    "16_9": "16:9 landscape",
+                    "9_16": "9:16 portrait",
+                    "1_1": "1:1 square",
+                    "4_3": "4:3"
+                },
+                "autoPlay": "Autoplay",
+                "autoPlay_hint": "Requires muted=true to work (mobile policy)",
+                "muted": "Muted by default",
+                "loop": "Loop"
+            },
+            "featured_single": {
+                "displayStyle": "Display style",
+                "displayStyle_opt": {
+                    "card": "Card",
+                    "fullwidth": "Full width",
+                    "banner": "Banner"
+                },
+                "showDescription": "Show description",
+                "ctaText": "Button text",
+                "ctaText_ph": "View details (leave empty to hide)",
+                "ctaLink": "Custom button link",
+                "ctaLink_ph": "Defaults to the selected item"
+            },
+            "map_location": {
+                "mode": "Positioning mode",
+                "mode_hint": "Auto: the map automatically frames the linked merchants below; Manual: set a fixed center and zoom yourself",
+                "mode_opt": {
+                    "auto": "Auto (by linked merchants)",
+                    "manual": "Set center manually"
+                },
+                "__geo": "Map center / zoom",
+                "__geo_hint": "Tap \"Open map picker\" to drag and set, or fine-tune manually; zoom 0-20 (higher = closer)",
+                "height": "Map height",
+                "showUserLocation": "Show user's current location"
+            },
+            "image_carousel": {
+                "aspectRatio": "Aspect ratio",
+                "aspectRatio_opt": {
+                    "16_9": "16:9 landscape",
+                    "4_3": "4:3",
+                    "1_1": "1:1 square",
+                    "3_4": "3:4 portrait"
+                },
+                "autoPlay": "Auto-rotate",
+                "interval": "Switch interval",
+                "showIndicators": "Show indicators"
+            },
+            "countdown": {
+                "targetDate": "Target time",
+                "label": "Label text",
+                "label_ph": "Until the event ends",
+                "expiredText": "Expired text",
+                "expiredText_ph": "The event has ended",
+                "style": "Style",
+                "style_opt": {
+                    "simple": "Simple",
+                    "flip": "Flip",
+                    "circle": "Circle"
+                },
+                "backgroundColor": "Background color",
+                "textColor": "Text color"
+            },
+            "divider": {
+                "style": "Style",
+                "style_opt": {
+                    "line": "Solid line",
+                    "dashed": "Dashed",
+                    "dotted": "Dotted",
+                    "space": "Blank space"
+                },
+                "height": "Height",
+                "color": "Color",
+                "marginVertical": "Vertical spacing"
+            },
+            "voucher_list": {
+                "layout": "Layout",
+                "columns": "Grid columns",
+                "showRedeemButton": "Show claim button",
+                "maxDisplay": "Max items shown",
+                "maxDisplay_ph": "Unlimited"
+            },
+            "redemption_list": {
+                "layout": "Layout",
+                "columns": "Grid columns",
+                "showRedeemButton": "Show redeem button",
+                "maxDisplay": "Max items shown",
+                "maxDisplay_ph": "Unlimited"
+            },
+            "product_grid": {
+                "columns": "Columns",
+                "showPrice": "Show price",
+                "showLikeButton": "Show favorite button",
+                "maxDisplay": "Max items shown",
+                "maxDisplay_ph": "Unlimited"
+            },
+            "provider_list": {
+                "layout": "Layout",
+                "layout_opt": {
+                    "list": "List",
+                    "card": "Card",
+                    "horizontal_scroll": "Horizontal scroll"
+                },
+                "showRating": "Show rating",
+                "showDistance": "Show distance",
+                "maxDisplay": "Max items shown",
+                "maxDisplay_ph": "Unlimited"
+            },
+            "stats_counter": {
+                "layout": "Layout",
+                "layout_opt": {
+                    "row": "Row",
+                    "grid": "Grid"
+                },
+                "animateOnScroll": "Animate numbers on scroll",
+                "items": "Metrics",
+                "label": "Label",
+                "label_ph": "Users served",
+                "value": "Value",
+                "suffix": "Suffix",
+                "suffix_ph": "people / +",
+                "icon": "Icon"
+            },
+            "faq_accordion": {
+                "expandFirst": "Expand first item by default",
+                "expandAll": "Expand all by default",
+                "multiExpand": "Allow multiple expanded",
+                "items": "Q&A",
+                "question": "Question",
+                "answer": "Answer"
+            },
+            "qr_code": {
+                "mode": "Content source",
+                "mode_hint": "url = encode a web address directly; custom_text = any text",
+                "mode_opt": {
+                    "url": "Link",
+                    "custom_text": "Custom text"
+                },
+                "value": "Content",
+                "value_ph": "https://... or a redemption code / text",
+                "label": "Caption text",
+                "label_ph": "Scan to claim now",
+                "size": "Size",
+                "fgColor": "Foreground color",
+                "bgColor": "Background color"
+            },
+            "points_progress": {
+                "targetType": "Target type",
+                "targetType_opt": {
+                    "redemption": "Redemption item",
+                    "tier": "Membership tier"
+                },
+                "targetEntityId": "Target",
+                "showCurrentPoints": "Show current points",
+                "message": "Custom message",
+                "message_ph": "Earn {needed} more points to redeem {target}",
+                "message_hint": "Placeholders: {needed} {current} {target}",
+                "barColor": "Progress bar color"
+            },
+            "loyalty_tier_showcase": {
+                "displayMode": "Display style",
+                "displayMode_opt": {
+                    "compact": "Compact",
+                    "detailed": "Detailed"
+                },
+                "showProgress": "Show progress to next tier",
+                "showBenefits": "Show current tier perks",
+                "ctaText": "Button text",
+                "ctaText_ph": "View all perks",
+                "ctaLink": "Custom button link (defaults to the merchant loyalty card)"
+            },
+            "flash_sale": {
+                "startTime": "Start time",
+                "endTime": "End time",
+                "stockLimit": "Stock info",
+                "stockLimit_ph": "Hidden",
+                "stockLimit_hint": "UI hint only; actual stock is controlled by the voucher limit",
+                "previewMode": "Before it starts, show",
+                "previewMode_opt": {
+                    "countdown": "Show countdown",
+                    "reveal_at_start": "Hide content until start"
+                },
+                "ctaText": "Button text",
+                "ctaText_ph": "Buy now",
+                "urgencyColor": "Accent color"
+            },
+            "bundle_deal": {
+                "bundleTitle": "Bundle name",
+                "bundleTitle_ph": "Value 3-piece set",
+                "bundlePrice": "Bundle price (points)",
+                "bundlePrice_unit": "pts",
+                "bundlePrice_hint": "The discounted price set by the merchant. The original price is auto-summed from the points required by the bundle's vouchers; no manual entry",
+                "userLimit": "Per-person redemption limit",
+                "userLimit_unit": "times",
+                "userLimit_hint": "0 = no limit; the redeem button is greyed out once the user reaches the limit",
+                "totalLimit": "Total redemption limit",
+                "totalLimit_unit": "units",
+                "totalLimit_hint": "0 = no limit; the whole bundle is removed once total redemptions across all users reach it",
+                "displayStyle": "Layout",
+                "displayStyle_opt": {
+                    "stacked": "Stacked",
+                    "side_by_side": "Side by side",
+                    "grid": "Grid"
+                },
+                "showDiscount": "Show points saved",
+                "ctaText": "Button text",
+                "ctaText_ph": "Defaults to \"Redeem bundle for X points\""
+            },
+            "link_button": {
+                "linkType": "Link type",
+                "linkType_opt": {
+                    "preset": "In-app page",
+                    "external": "External link"
+                },
+                "presetKey": "Target page",
+                "url": "Link URL",
+                "openInApp": "Open in in-app browser",
+                "openInApp_hint": "When off, opens in the system browser outside the app",
+                "label": "Button text",
+                "label_ph": "Leave empty to use the default text",
+                "displayStyle": "Style",
+                "displayStyle_opt": {
+                    "button": "Button",
+                    "card": "Card",
+                    "banner": "Banner"
+                },
+                "icon": "Icon",
+                "icon_hint": "Leave empty to use the preset's default icon",
+                "backgroundColor": "Background color"
+            }
         }
     },
     "subscription": {
@@ -4543,7 +6366,8 @@
             "admin": "Admin",
             "trial": "Trial",
             "legacy": "Legacy"
-        }
+        },
+        "cannotCreateMore": "You've reached the limit of your current subscription plan"
     },
     "achievement": {
         "tab": {
@@ -4575,8 +6399,59 @@
             "beta_vanguard": {
                 "name": "Vanguard",
                 "description": "Joined CoBook during the public beta — one of the very first to set out with us."
+            },
+            "rookie_seller": {
+                "name": "Rookie Seller",
+                "description": "Published your first second-hand item."
+            },
+            "publish_master_i": {
+                "name": "Publishing Pro I",
+                "description": "Published 10 second-hand items in total."
+            },
+            "publish_master_ii": {
+                "name": "Publishing Pro II",
+                "description": "Published 50 second-hand items in total."
+            },
+            "publish_master_iii": {
+                "name": "Publishing Pro III",
+                "description": "Published 100 second-hand items in total."
+            },
+            "review_master_i": {
+                "name": "Review Pro I",
+                "description": "Completed 10 reviews in total."
+            },
+            "review_master_ii": {
+                "name": "Review Pro II",
+                "description": "Completed 50 reviews in total."
+            },
+            "review_master_iii": {
+                "name": "Review Pro III",
+                "description": "Completed 150 reviews in total."
+            },
+            "food_explorer_i": {
+                "name": "Food Explorer I",
+                "description": "Viewed 10 different restaurants in total."
+            },
+            "food_explorer_ii": {
+                "name": "Food Explorer II",
+                "description": "Viewed 50 different restaurants in total."
+            },
+            "food_explorer_iii": {
+                "name": "Food Explorer III",
+                "description": "Viewed 200 different restaurants in total."
+            },
+            "community_translator": {
+                "name": "Community Translator",
+                "description": "Contributed multilingual translations to the CoBook community."
+            },
+            "developer": {
+                "name": "Developer",
+                "description": "A member of the CoBook development team."
             }
-        }
+        },
+        "badgeCount": "Badges unlocked: {{count}}",
+        "xpToNext": "{{xp}} XP to go",
+        "levelMax": "Lv MAX"
     },
     "share": {
         "message": "Check out \"{{title}}\" on CoBook"
@@ -4596,7 +6471,12 @@
         "findMore": "Find Merchants",
         "defaultCardName": "Membership Card",
         "searchPlaceholder": "Search cards / merchants",
-        "noResults": "No matching cards"
+        "noResults": "No matching cards",
+        "openProvider": "Merchant page",
+        "showQrOf": "Show the loyalty card QR code for {{name}}",
+        "showMyCard": "Show loyalty card",
+        "packSummary": "{{count}} cards · {{points}} pts total",
+        "openCenter": "Card wallet"
     },
     "secondhandWizard": {
         "next": "Next",
@@ -4634,7 +6514,17 @@
             "categoryRequired": "Please choose a category",
             "conditionRequired": "Please choose a condition",
             "priceRequired": "Please enter a valid price (positive integer)",
-            "contactRequired": "Please enter a contact method"
+            "contactRequired": "Please enter a contact method",
+            "imagesUploading": "Photos are still uploading — please wait a moment or re-upload"
+        },
+        "stepBasics": {
+            "heading": "Introduce your item",
+            "hint": "A clear title and photos help more people find your item.",
+            "imagesPendingTitle": "Photos ready — they will upload automatically once you enter a title"
+        },
+        "stepDetails": {
+            "heading": "Details & price",
+            "hint": "Category, condition and region help buyers find you; price and contact info close the deal."
         }
     },
     "update": {
@@ -4664,7 +6554,7 @@
             "title": "Update required",
             "subtitle": "This is a mandatory update — you must upgrade to the latest version to continue",
             "checkingSystem": "Checking system status…",
-            "downloading": "Downloading…",
+            "downloading": "Downloading latest resources…",
             "applying": "Restarting to apply the update…",
             "errorTitle": "Update failed",
             "errorRetry": "Retry",
@@ -4808,7 +6698,9 @@
         "filterToday": "Today",
         "filterWeek": "7 days",
         "filterMonth": "30 days",
-        "filterAll": "All"
+        "filterAll": "All",
+        "quickConfirmTitle": "Verify this voucher?",
+        "viewDetail": "View details"
     },
     "scorecardExchangeRule": {
         "screenTitle": "Currency-Points Exchange Rule",
@@ -4873,7 +6765,9 @@
             "title": "No favorite providers yet",
             "description": "Browse providers and tap the heart to save the ones you love.",
             "filteredTitle": "No matching favorites",
-            "filteredDescription": "Try adjusting your search or filters."
+            "filteredDescription": "Try adjusting your search or filters.",
+            "clearFilters": "Clear filters",
+            "action": "Discover merchants"
         }
     },
     "legalHold": {
@@ -5237,8 +7131,8 @@
         "NO_PERMISSION_MODIFY_USER": "No permission to modify user information",
         "NO_PERMISSION_MANAGE_SUBSCRIPTION": "No permission to manage subscriptions",
         "NO_PERMISSION_MANAGE_USAGE_QUOTA": "No permission to manage usage quota",
-        "NO_PERMISSION_MANAGE_REDEEM_CODES": "No permission to manage redeem codes",
-        "NO_PERMISSION_VIEW_REDEEM_CODES": "No permission to view redeem codes",
+        "NO_PERMISSION_MANAGE_REDEEM_CODES": "No permission to manage points compensation",
+        "NO_PERMISSION_VIEW_REDEEM_CODES": "No permission to view points compensation",
         "NO_PERMISSION_SEND_NOTIFICATIONS": "No permission to send notifications",
         "NO_PERMISSION_VIEW_CARDS": "No permission to view cards",
         "NO_PERMISSION_CREATE_CARDS": "No permission to create cards",
@@ -5296,7 +7190,26 @@
         "OPERATION_NOT_REFUNDABLE": "This operation cannot be reversed",
         "OPERATION_ALREADY_REFUNDED": "This credit has already been reversed",
         "OPERATION_OUTSIDE_REFUND_WINDOW": "The reversal window has expired",
-        "INSUFFICIENT_BALANCE_FOR_REFUND": "Customer balance is too low to reverse"
+        "INSUFFICIENT_BALANCE_FOR_REFUND": "Customer balance is too low to reverse",
+        "OIDC_TOKEN_EXCHANGE_FAILED": "OIDC code exchange failed, please try again",
+        "OIDC_TOKEN_INACTIVE": "OIDC token is invalid, please try again",
+        "OIDC_INTROSPECTION_FAILED": "OIDC token verification failed, please try again",
+        "INVALID_OIDC_SUBJECT": "Invalid OIDC user identifier",
+        "OFFER_ALREADY_PENDING": "You already have a pending offer on this item",
+        "OFFER_NOT_PENDING": "This offer is no longer pending",
+        "NOT_OFFER_COUNTERPART": "You are not authorized to respond to this offer",
+        "CANNOT_OFFER_OWN_PRODUCT": "You cannot make an offer on your own listing",
+        "INVALID_OFFER_AMOUNT": "Invalid offer amount",
+        "BLOCKED": "This action is unavailable due to a block between users",
+        "PRODUCT_RESERVED": "Item already reserved",
+        "OFFER_ALREADY_ACCEPTED": "Offer already accepted",
+        "IMAGE_LOCKED_UNTIL_REPLY": "You can send images after the other user replies",
+        "INVALID_IMAGE_MEDIA": "Image validation failed, please choose another one",
+        "HOLIDAY_HOURS_OVERLAP": "These dates overlap an existing special date",
+        "INVALID_HOLIDAY_RANGE": "Invalid date range",
+        "HOLIDAY_HOURS_REQUIRED": "Add at least one valid time slot for special hours",
+        "HOLIDAY_HOURS_NOT_FOUND": "This special date no longer exists",
+        "HOLIDAY_HOURS_LIMIT_REACHED": "You have reached the maximum number of special dates"
     },
     "twoFactor": {
         "title": "Two-factor authentication",
@@ -5459,7 +7372,7 @@
             "modelComposite": "Total = sum of (dimension sub-score × weight) − risk penalty.",
             "modelPercentile": "Each sub-score = your percentile among peers in this region (ranked on the actual data, higher is better).",
             "modelRecency": "Over the last {{days}} days; more recent activity weighs more (recency decay).",
-            "modelTiers": "Tiers: ≥80 thriving · ≥60 healthy · ≥40 neutral · ≥20 at-risk · <20 dormant."
+            "modelTiers": "Tiers: ≥80 thriving · ≥60 healthy · ≥40 neutral · ≥20 at-risk · <20 dangerous."
         },
         "driver": {
             "windowDays": "Days",
@@ -5494,7 +7407,42 @@
         "unknownUser": "Unknown user",
         "filingColleague": "Filed by",
         "ticketSubject": "Filed by",
-        "securityForUser": "User security audit"
+        "securityForUser": "User security audit",
+        "requestLogs": "Request logs",
+        "sectionOverview": "Overview",
+        "sectionActions": "Actions",
+        "emailUnverified": "Unverified",
+        "unban": "Lift ban",
+        "unbanOk": "Ban lifted",
+        "unbanFailed": "Failed to lift the ban",
+        "unbanConfirmTitle": "Lift ban",
+        "unbanConfirmBody": "Lift this user's ban? Access is restored immediately.",
+        "unbanConfirm": "Lift",
+        "activeBan": "Active ban",
+        "permanent": "permanent",
+        "until": "until {{time}}",
+        "bannedBy": "By {{name}}",
+        "appealTicket": "Appeal ticket: {{id}}",
+        "pillBannedPerm": "Permanently banned",
+        "pillMuted": "Muted",
+        "pillAdmin": "Admin",
+        "pillProvider": "Merchant",
+        "pillTest": "Test account",
+        "statRegistered": "Registered",
+        "statLastSeen": "Last seen",
+        "statEmail": "Email",
+        "noDetailPermission": "No permission to view this user's profile (user management permission required).",
+        "cFollowers": "Followers",
+        "cFollowing": "Following",
+        "cAgeDays": "Days registered",
+        "rowLinked": "Linked",
+        "linkedNone": "None",
+        "rowPush": "Push",
+        "pushRegistered": "Registered",
+        "pushNone": "Not registered",
+        "rowMutedUntil": "Muted until",
+        "rowSubscribeUntil": "Subscribed until",
+        "rowProvider": "Merchant"
     },
     "pointsEarned": {
         "title": "Points Earned!",
@@ -5537,7 +7485,11 @@
         "userFollowedDesc": "{{followerName}} followed you",
         "mutualFollowDesc": "You are now mutual followers and can chat normally",
         "subscriptionChanged": "Account Updated",
-        "subscriptionChangedDesc": "Your account subscription/usage has been updated"
+        "subscriptionChangedDesc": "Your account subscription/usage has been updated",
+        "offerNew": "New offer received",
+        "offerNewDesc": "You received an offer of {{amount}} — tap to view",
+        "offerStatusChanged": "Offer status updated",
+        "offerStatusChangedDesc": "Offer {{amount}}: {{status}}"
     },
     "loginRequired": {
         "bannerTitle": "Log in to see the full content",
@@ -5639,7 +7591,8 @@
                 "RESOURCE_DISPATCH_FAILED": "Incentive dispatch failed"
             },
             "eachUnit": "Each unit: {{reward}}",
-            "validUntil": "Valid until {{date}}"
+            "validUntil": "Valid until {{date}}",
+            "invalidDuration": "Please enter a valid number of days (at least 1)"
         },
         "status": {
             "label": "Status",
@@ -5754,7 +7707,9 @@
             "editInfo": "Edit info",
             "editInfoTitle": "Edit sales rep",
             "nameRequired": "Display name required",
-            "infoSaved": "Saved"
+            "infoSaved": "Saved",
+            "invalidDuration": "Please enter a valid number of days (at least 1)",
+            "loadFailed": "Failed to load or sales rep not found"
         },
         "milestone": {
             "title": "Milestones",
@@ -6020,17 +7975,382 @@
             "allow": "Allow",
             "deny": "Not now",
             "camera": {
-                "title": "Allow camera access",
+                "title": "Camera access",
                 "body": "CoBook uses the camera to scan merchant loyalty card QR codes to earn and redeem points, and to take photos for your profile or merchant store."
             },
             "location": {
-                "title": "Allow location access",
+                "title": "Location access",
                 "body": "CoBook uses your location to recommend nearby merchants and stores where you can collect loyalty cards, and to center the map on your area."
             },
             "photoLibrary": {
-                "title": "Allow photo access",
+                "title": "Photo access",
                 "body": "CoBook accesses your photo library so you can set your profile picture, upload loyalty card and store images for merchants, and attach images in chat."
+            },
+            "continue": "Continue"
+        },
+        "settings": {
+            "open": "Open Settings",
+            "cancel": "Cancel",
+            "camera": {
+                "title": "Camera permission needed",
+                "body": "Camera access is currently off. Enable it for CoBook in Settings to scan loyalty card QR codes."
+            },
+            "location": {
+                "title": "Location permission needed",
+                "body": "Location access is currently off. Enable it for CoBook in Settings to find nearby merchants."
+            },
+            "photoLibrary": {
+                "title": "Photo permission needed",
+                "body": "Photo access is currently off. Enable it for CoBook in Settings to save or upload images."
             }
         }
+    },
+    "pointCredential": {
+        "issueEntry": "Issue Points Compensation",
+        "issueTitle": "Issue a points compensation",
+        "issueDisclaimer": "This only records the points the customer earned from an in-store purchase. It is not a sale and involves no in-app payment.",
+        "pointsLabel": "Points",
+        "pointsPlaceholder": "Points to award",
+        "amountLabel": "Amount",
+        "amountPlaceholder": "e.g. 28.50",
+        "pointsPreview": "≈ {{points}} pts",
+        "pointsPreviewHint": "Points are computed from the amount",
+        "bonusHint": "The level bonus is added when the customer claims it, based on their level",
+        "noteLabel": "Note (optional)",
+        "notePlaceholder": "e.g. In-store · Table 5",
+        "invalidAmount": "Please enter a valid amount",
+        "amountTooSmall": "Amount too small for even 1 point",
+        "generate": "Generate",
+        "invalidPoints": "Please enter a valid point amount",
+        "generateError": "Could not generate, please retry",
+        "pointsAwarded": "Points awarded",
+        "basePointsAwarded": "Base points",
+        "amountSummary": "Amount",
+        "noteSummary": "Note",
+        "pointsUnit": "pts",
+        "pointsBreakdown": "Base {{base}} + level bonus {{bonus}}",
+        "numericCodeLabel": "or enter this code manually",
+        "numericCodeShort": "Code",
+        "expiresAt": "Valid until {{date}}",
+        "photoHint": "📸 Take a photo and open CoBook to claim when online",
+        "issueAnother": "Issue another",
+        "done": "Done",
+        "myRedemptionsTitle": "My Claimed Compensations",
+        "issueHistoryTitle": "Compensation History",
+        "issueHistoryDesc": "See the compensations you've issued and their claim status",
+        "emptyRedemptions": "No claims yet",
+        "emptyIssued": "No compensations issued yet",
+        "loadError": "Failed to load, please retry",
+        "statusUnclaimed": "Unclaimed",
+        "statusClaimed": "Claimed",
+        "statusExpired": "Expired",
+        "statusRevoked": "Voided",
+        "claimedByShort": "Claimed by",
+        "unknownUser": "User",
+        "redeemDrawerEntry": "Points Compensation",
+        "detailTitle": "Compensation Detail",
+        "reshowTitle": "Show again to the customer",
+        "reshowHint": "Let the customer scan it, or share the link below",
+        "shareLink": "Share claim link",
+        "shareFailed": "Could not share",
+        "redemptionInfo": "Claim info",
+        "creditedPointsLabel": "Points credited",
+        "redeemedByLabel": "Claimed by",
+        "redeemedAtLabel": "Claimed at",
+        "createdAtLabel": "Issued at",
+        "expiresAtLabel": "Valid until",
+        "unredeemableHint": "This compensation has expired or was voided and can no longer be claimed",
+        "redeemTitle": "Points Compensation",
+        "redeemIntro": "Enter the 8-digit code the merchant gave you, or pick the QR photo from your album, to add the loyalty points you earned from your in-store purchase to your account.",
+        "claimDisclaimer": "Points Compensation only records the loyalty points you already earned from an in-store purchase. Points are a free reward from the merchant — they can't be bought.",
+        "enterCodeTitle": "Enter code",
+        "redeemByCode": "Claim",
+        "or": "or",
+        "scanFromAlbum": "Pick QR from album",
+        "codeFormatHint": "Please enter the 8-digit code",
+        "noQrInImage": "No QR code found in the photo",
+        "processing": "Claiming…",
+        "redeemSuccess": "Claimed",
+        "newBalance": "Balance {{balance}}",
+        "redeemAnother": "Claim another",
+        "redeemFailed": "Claim failed, please retry",
+        "pickMerchantTitle": "Confirm the merchant",
+        "pickMerchantHint": "Pick the merchant who gave you this compensation",
+        "cancel": "Cancel",
+        "error": {
+            "WRONG_MERCHANT_SELECTED": "Wrong merchant, please retry",
+            "CREDENTIAL_ALREADY_CLAIMED": "This compensation was already claimed",
+            "CREDENTIAL_EXPIRED": "This compensation has expired",
+            "CREDENTIAL_REVOKED": "This compensation was voided",
+            "CREDENTIAL_NOT_FOUND": "Compensation not found",
+            "CHALLENGE_EXPIRED": "Timed out, please retry",
+            "INVALID_QR_TOKEN": "Invalid QR code"
+        },
+        "revokeAction": "Void compensation",
+        "revokeConfirmTitle": "Void this compensation?",
+        "revokeConfirmMessage": "Once voided, this compensation can no longer be claimed. This can't be undone.",
+        "revokeConfirmAction": "Void",
+        "revokeSuccess": "Compensation voided",
+        "revokeFailed": "Couldn't void the compensation. Please try again.",
+        "revokeFailedClaimed": "This compensation has already been claimed and can't be voided.",
+        "revokeFailedExpired": "This compensation has expired and can't be voided.",
+        "viewRedeemerScorecard": "View the recipient's loyalty card"
+    },
+    "addPoints": {
+        "quickSelect": "Quick select"
+    },
+    "recentMessages": {
+        "searchPlaceholder": "Search conversations",
+        "noSearchResults": "No matching conversations",
+        "empty": {
+            "title": "No messages yet",
+            "hint": "Follow friends and start chatting",
+            "action": "Find friends to follow"
+        }
+    },
+    "providerHome": {
+        "todayTitle": "Today",
+        "todayVerifications": "Verified",
+        "todayPointsIssued": "Points issued",
+        "todayNewCustomers": "New customers",
+        "todayViews": "Views"
+    },
+    "adminServerConfig": {
+        "title": "Backend Server",
+        "noAccess": "Platform administrators only",
+        "currentServer": "Current Server",
+        "presets": "Presets",
+        "recentlyUsed": "Recently Used",
+        "customUrl": "Custom URL",
+        "invalidTitle": "Invalid URL",
+        "invalidUrl": "Enter a valid URL starting with http:// or https://.",
+        "currentBadge": "Current",
+        "alreadyActive": "Already the current server",
+        "switchAndRestart": "Switch & Restart",
+        "confirmTitle": "Switch and restart?",
+        "confirmMessage": "The app will connect to {{url}}, clear your current session, and restart. Continue?",
+        "resetTitle": "Reset to default?",
+        "resetMessage": "Restore the default server {{url}}, clear your current session, and restart. Continue?",
+        "resetDefault": "Reset to Default",
+        "hint": "Switching servers clears your current session and local cache, then restarts the app. You will need to sign in again."
+    },
+    "impersonation": {
+        "actionRestrictedTitle": "Action restricted",
+        "cannotSendMessage": "Messages cannot be sent while impersonating a user. Exit impersonation and try again.",
+        "cannotAccessMessages": "Messaging is unavailable while impersonating a user. Exit impersonation and try again.",
+        "bannedUserNotice": "The impersonated user is banned"
+    },
+    "ban": {
+        "titlePermanent": "Account permanently banned",
+        "titleTemporary": "Account temporarily banned",
+        "reasonLabel": "Ban reason",
+        "unbanTimeLabel": "Unban date",
+        "appealHelp": "If you believe this ban is a mistake, you can submit an appeal on the appeal page (opens in your browser).",
+        "goToAppeal": "Submit an appeal"
+    },
+    "socket": {
+        "reconnecting": "Reconnecting…"
+    },
+    "scanner": {
+        "torch": "Flashlight",
+        "album": "Album"
+    },
+    "time": {
+        "justNow": "Just now",
+        "minutesAgo": "{{count}} minutes ago",
+        "yesterday": "Yesterday"
+    },
+    "guest": {
+        "loginToContinue": "Log in to use this feature"
+    },
+    "offlineQueue": {
+        "voucherQueuedTitle": "Saved offline",
+        "voucherQueuedBody": "Network unavailable — this verification has been saved on this device and will complete automatically once you're back online. Please don't scan the code again.",
+        "pointsQueuedTitle": "Saved offline",
+        "pointsQueuedBody": "Network unavailable — these points have been saved on this device and will be submitted automatically once you're back online. Please don't repeat the operation.",
+        "pendingBanner": "{{count}} offline operations pending — tap to retry now",
+        "flushSuccess": "Offline operations submitted",
+        "flushStillOffline": "Still offline — will retry automatically when back online"
+    },
+    "offers": {
+        "myOffersTitle": "My Offers",
+        "makeOfferTitle": "Make an Offer",
+        "buyAtListPrice": "Buy at List Price",
+        "buyAtListPriceTitle": "Buy at List Price",
+        "buyAtListPriceSuccess": "Purchase intent sent at list price",
+        "sendOffer": "Send Offer",
+        "sendCounter": "Send Counteroffer",
+        "counterTitle": "Counteroffer",
+        "counterAgainst": "They offered {{amount}} — you can counter",
+        "counterSuccess": "Counteroffer sent",
+        "counterFailed": "Failed to send counteroffer, please try again",
+        "createSuccess": "Offer sent",
+        "createFailed": "Failed to send offer, please try again",
+        "alreadyPending": "You already have a pending offer",
+        "cannotOfferOwnProduct": "You cannot make an offer on your own listing",
+        "amountLabel": "Offer amount",
+        "amountPlaceholder": "e.g. 50",
+        "amountRequired": "Please enter an offer amount",
+        "amountInvalid": "Please enter a valid amount",
+        "amountMaxTwoDecimals": "Amount must be greater than 0, with at most two decimal places",
+        "amountMustEqualListPrice": "Non-negotiable items must be offered at the list price",
+        "aboveListPriceWarn": "Above the list price — are you sure about this amount?",
+        "nonNegotiableHint": "This item is non-negotiable; a purchase intent will be sent to the seller at the list price.",
+        "noteLabel": "Note (optional)",
+        "notePlaceholder": "e.g. Can pick up today",
+        "listPriceLabel": "List price",
+        "acceptAction": "Accept",
+        "counterAction": "Counter",
+        "declineAction": "Decline",
+        "withdrawAction": "Withdraw",
+        "acceptConfirmTitle": "Accept this offer?",
+        "acceptConfirmMessage": "You will agree to a deal at {{amount}}.",
+        "acceptSuccess": "Offer accepted",
+        "acceptedTitle": "Offer accepted",
+        "declineSuccess": "Offer declined",
+        "withdrawConfirmTitle": "Withdraw this offer?",
+        "withdrawConfirmMessage": "After withdrawal the other party can no longer respond.",
+        "withdrawSuccess": "Offer withdrawn",
+        "reserveAfterAcceptMessage": "Mark the item as reserved?",
+        "reserveLater": "Later",
+        "reserveNow": "Mark as reserved",
+        "reserveSuccess": "Marked as reserved",
+        "reserveFailed": "Failed to update reservation, please try again later",
+        "reserveAction": "Reserve",
+        "unreserveAction": "Unreserve",
+        "unreserveSuccess": "Reservation cancelled",
+        "reservedHint": "A buyer has reserved this item — you can still inquire and wait in line",
+        "myOfferStrip": "My offer {{amount}}",
+        "tabSent": "Sent",
+        "tabReceived": "Received",
+        "emptySent": "No offers sent yet",
+        "emptySentDesc": "Try tapping \"Make an Offer\" on a product page",
+        "emptyReceived": "No offers received yet",
+        "emptyReceivedDesc": "Offers from buyers will appear here",
+        "loadFailed": "Failed to load",
+        "loadFailedDesc": "Check your connection and try again",
+        "counterChain": "Counter chain",
+        "status": {
+            "pending": "Pending",
+            "accepted": "Accepted",
+            "declined": "Declined",
+            "withdrawn": "Withdrawn",
+            "countered": "Countered",
+            "expired": "Expired",
+            "invalidated": "Invalidated",
+            "unknown": "Unknown"
+        },
+        "direction": {
+            "buyer": "Buyer's offer",
+            "seller": "Seller's counter"
+        },
+        "alreadyAccepted": "Your offer has already been accepted — no need to offer again",
+        "productReserved": "This item is reserved and not accepting new offers",
+        "offerAcceptedShort": "Offer accepted"
+    },
+    "businessStats": {
+        "singleDayChartHint": "Single-day view shows number metrics only. Switch to This Week, This Month or a custom range to see trend charts",
+        "seriesWindowNote": "Trend charts only cover the last {{days}} days; earlier dates are not shown",
+        "noSeriesInRange": "No trend data in the selected date range",
+        "scansTooltip": "{{count}} scans"
+    },
+    "review": {
+        "actions": {
+            "delete": "Delete review"
+        },
+        "deleteConfirmMessage": "Are you sure you want to delete this review? This action cannot be undone.",
+        "deleteConfirmTitle": "Delete review",
+        "deleteFailed": "Failed to delete, please try again later",
+        "deleteSuccess": "Review deleted",
+        "dim": {
+            "environment": "Environment",
+            "overall": "Overall",
+            "quality": "Quality",
+            "service": "Service"
+        },
+        "editMyReview": "Edit my review",
+        "emptyCta": "Be the first to review",
+        "emptyTitle": "No reviews yet",
+        "helpful": "Helpful",
+        "listEnd": "No more reviews",
+        "merchantReply": "Merchant reply",
+        "moreActions": "More actions",
+        "myReviewBadge": "My review",
+        "showOriginal": "Show original",
+        "sort": {
+            "helpful": "Most helpful",
+            "latest": "Latest",
+            "withImages": "With photos"
+        },
+        "stats": {
+            "reviewCount": "{{count}} reviews",
+            "reviewCount_one": "{{count}} review",
+            "reviewCount_other": "{{count}} reviews"
+        },
+        "translate": "Translate",
+        "translateFailed": "Translation failed, please try again later",
+        "translateRateLimited": "Too many requests, please try again later",
+        "writeCta": "Write a review",
+        "writeForm": {
+            "addPhoto": "Add photo",
+            "alreadyExists": "You have already reviewed this merchant — switched to edit mode",
+            "contentLabel": "Your review",
+            "contentPlaceholder": "Share your experience (optional)",
+            "editTitle": "Edit review",
+            "overallHint": "Tap the stars to rate",
+            "photosLabel": "Photos (up to 5)",
+            "scoreRequired": "Please rate every category",
+            "subScoresHint": "Pre-filled from your overall rating — adjust as needed",
+            "submit": "Post review",
+            "submitFailed": "Failed to post review, please try again later",
+            "submitSuccess": "Review posted",
+            "title": "Write a review",
+            "update": "Update review",
+            "updateSuccess": "Review updated",
+            "uploadFailed": "Image upload failed, please try again later"
+        },
+        "manage": {
+            "title": "Review Management",
+            "menuDesc": "View and reply to customer reviews",
+            "filter": {
+                "all": "All",
+                "unreplied": "Unreplied",
+                "low": "Low ratings"
+            },
+            "reply": "Reply",
+            "replyLocked": "Upgrade to reply",
+            "editReply": "Edit reply",
+            "deleteReply": "Delete reply",
+            "deleteReplyConfirmTitle": "Delete Reply",
+            "deleteReplyConfirmMessage": "Are you sure you want to delete this reply? This action cannot be undone.",
+            "deleteReplySuccess": "Reply deleted",
+            "deleteReplyFailed": "Failed to delete, please try again later",
+            "replyEditorTitle": "Reply to review",
+            "replyPlaceholder": "Write your reply…",
+            "replyContentRequired": "Please enter your reply",
+            "replySubmit": "Post reply",
+            "replyUpdate": "Update reply",
+            "replySuccess": "Reply posted",
+            "replyUpdateSuccess": "Reply updated",
+            "replyFailed": "Failed to post reply, please try again later",
+            "alreadyReplied": "This review already has a reply — the list has been refreshed",
+            "reportedPlaceholder": "This review has been removed for violating community guidelines",
+            "emptyTitle": "No reviews yet",
+            "emptyFiltered": "No reviews match this filter",
+            "noPermission": "You don't have permission to manage this provider's reviews"
+        },
+        "deepLinkNotFound": "Review not found (it may have been deleted)"
+    },
+    "versionBanner": {
+        "title": "This version is no longer supported",
+        "bodyIos": "Tap to get the latest version on the App Store",
+        "bodyAndroid": "Tap to get the latest version on Google Play"
+    },
+    "storeUpdate": {
+        "title": "Version {{version}} is available",
+        "subtitleIos": "Get the latest features and fixes on the App Store",
+        "subtitleAndroid": "Get the latest features and fixes on Google Play",
+        "action": "Update",
+        "dismissA11y": "Not now"
     }
 }
